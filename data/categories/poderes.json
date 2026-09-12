@@ -1,0 +1,557 @@
+[
+  {
+    "id": "poder-ataque-poderoso",
+    "name": "Ataque Poderoso",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "For 1"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Sempre que fizer um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na ...",
+    "description": "Sempre que fizer um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano (+10 se usar uma arma de duas mãos).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 130,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "ataque poderoso",
+      "combate",
+      "poderes de combate",
+      "for 1"
+    ]
+  },
+  {
+    "id": "poder-ataque-preciso",
+    "name": "Ataque Preciso",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "Des 1"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Seus ataques corpo a corpo e à distância têm a margem de ameaça aumentada em +1....",
+    "description": "Seus ataques corpo a corpo e à distância têm a margem de ameaça aumentada em +1.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 130,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "ataque preciso",
+      "combate",
+      "poderes de combate",
+      "des 1"
+    ]
+  },
+  {
+    "id": "poder-acuidade-com-arma",
+    "name": "Acuidade com Arma",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "Des 1"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Quando usa uma arma leve ou uma arma de disparo, você pode usar seu modificador de Destreza em vez d...",
+    "description": "Quando usa uma arma leve ou uma arma de disparo, você pode usar seu modificador de Destreza em vez de Força nos testes de ataque.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 130,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "acuidade com arma",
+      "combate",
+      "poderes de combate",
+      "des 1"
+    ]
+  },
+  {
+    "id": "poder-estilo-de-disparo",
+    "name": "Estilo de Disparo",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "Pontaria"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Se estiver usando uma arma de disparo, você soma o modificador de Destreza nas rolagens de dano....",
+    "description": "Se estiver usando uma arma de disparo, você soma o modificador de Destreza nas rolagens de dano.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 131,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "estilo de disparo",
+      "combate",
+      "poderes de combate",
+      "pontaria"
+    ]
+  },
+  {
+    "id": "poder-estilo-de-duas-armas",
+    "name": "Estilo de Duas Armas",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "Des 2",
+      "treinado em Luta"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Se estiver empunhando duas armas (e atacar com ambas na mesma rodada), você pode fazer um ataque adi...",
+    "description": "Se estiver empunhando duas armas (e atacar com ambas na mesma rodada), você pode fazer um ataque adicional com a arma secundária sofrendo –2 em todos os testes de ataque.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 131,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "estilo de duas armas",
+      "combate",
+      "poderes de combate",
+      "des 2",
+      "treinado em luta"
+    ]
+  },
+  {
+    "id": "poder-estilo-de-uma-arma",
+    "name": "Estilo de Uma Arma",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "treinado em Luta"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e...",
+    "description": "Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e +2 nos testes de ataque.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 131,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "estilo de uma arma",
+      "combate",
+      "poderes de combate",
+      "treinado em luta"
+    ]
+  },
+  {
+    "id": "poder-vitalidade",
+    "name": "Vitalidade",
+    "category": "poder",
+    "subcategory": "Poderes de Destino",
+    "powerType": "Destino",
+    "requirements": [
+      "Con 1"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Destino. Você recebe +1 ponto de vida por nível de personagem e +2 em testes de Fortitude....",
+    "description": "Você recebe +1 ponto de vida por nível de personagem e +2 em testes de Fortitude.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 135,
+        "section": "Poderes: Poderes de Destino",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "vitalidade",
+      "destino",
+      "poderes de destino",
+      "con 1"
+    ]
+  },
+  {
+    "id": "poder-vontade-de-ferro",
+    "name": "Vontade de Ferro",
+    "category": "poder",
+    "subcategory": "Poderes de Destino",
+    "powerType": "Destino",
+    "requirements": [
+      "Sab 1"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Destino. Você recebe +1 ponto de mana por nível de personagem e +2 em testes de Vontade....",
+    "description": "Você recebe +1 ponto de mana por nível de personagem e +2 em testes de Vontade.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 135,
+        "section": "Poderes: Poderes de Destino",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "vontade de ferro",
+      "destino",
+      "poderes de destino",
+      "sab 1"
+    ]
+  },
+  {
+    "id": "poder-surto-heroico",
+    "name": "Surto Heroico",
+    "category": "poder",
+    "subcategory": "Poderes de Destino",
+    "powerType": "Destino",
+    "requirements": [
+      "Nível 5"
+    ],
+    "cost": "5 PM",
+    "deity": null,
+    "summary": "Destino. Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional....",
+    "description": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 135,
+        "section": "Poderes: Poderes de Destino",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "surto heroico",
+      "destino",
+      "poderes de destino",
+      "nível 5"
+    ]
+  },
+  {
+    "id": "poder-foco-em-magia",
+    "name": "Foco em Magia",
+    "category": "poder",
+    "subcategory": "Poderes de Magia",
+    "powerType": "Magia",
+    "requirements": [
+      "Habilidade de lançar magias"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Magia. Escolha uma magia que conheça. O custo dessa magia é reduzido em –1 PM (mínimo 1 PM)....",
+    "description": "Escolha uma magia que conheça. O custo dessa magia é reduzido em –1 PM (mínimo 1 PM).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 137,
+        "section": "Poderes: Poderes de Magia",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "foco em magia",
+      "magia",
+      "poderes de magia",
+      "habilidade de lançar magias"
+    ]
+  },
+  {
+    "id": "poder-magia-acelerada",
+    "name": "Magia Acelerada",
+    "category": "poder",
+    "subcategory": "Poderes de Magia",
+    "powerType": "Magia",
+    "requirements": [
+      "Lançar magias de 2º círculo"
+    ],
+    "cost": "+4 PM",
+    "deity": null,
+    "summary": "Magia. Uma vez por rodada, você pode lançar uma magia com execução de ação padrão ou de movimento como uma ...",
+    "description": "Uma vez por rodada, você pode lançar uma magia com execução de ação padrão ou de movimento como uma ação livre.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 137,
+        "section": "Poderes: Poderes de Magia",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "magia acelerada",
+      "magia",
+      "poderes de magia",
+      "lançar magias de 2º círculo"
+    ]
+  },
+  {
+    "id": "poder-anatomia-insana",
+    "name": "Anatomia Insana",
+    "category": "poder",
+    "subcategory": "Poderes da Tormenta",
+    "powerType": "Tormenta",
+    "requirements": [
+      "1 poder da Tormenta"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Tormenta. Seus órgãos internos são estranhos e mutáveis. Você tem 25% de chance de ignorar o dano extra de ace...",
+    "description": "Seus órgãos internos são estranhos e mutáveis. Você tem 25% de chance de ignorar o dano extra de acertos críticos e ataques furtivos (+25% por dois outros poderes da Tormenta).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 142,
+        "section": "Poderes: Poderes da Tormenta",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "anatomia insana",
+      "tormenta",
+      "poderes da tormenta",
+      "1 poder da tormenta"
+    ]
+  },
+  {
+    "id": "poder-asas-da-tormenta",
+    "name": "Asas da Tormenta",
+    "category": "poder",
+    "subcategory": "Poderes da Tormenta",
+    "powerType": "Tormenta",
+    "requirements": [
+      "4 poderes da Tormenta"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Tormenta. Você desenvolve asas quitinosas e pontiagudas de lefeu. Você pode gastar 1 PM por rodada para voar c...",
+    "description": "Você desenvolve asas quitinosas e pontiagudas de lefeu. Você pode gastar 1 PM por rodada para voar com deslocamento de 12m.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 142,
+        "section": "Poderes: Poderes da Tormenta",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "asas da tormenta",
+      "tormenta",
+      "poderes da tormenta",
+      "4 poderes da tormenta"
+    ]
+  },
+  {
+    "id": "poder-sangue-de-ferro",
+    "name": "Sangue de Ferro",
+    "category": "poder",
+    "subcategory": "Poderes Concedidos",
+    "powerType": "Concedido",
+    "requirements": [],
+    "cost": "1 PM",
+    "deity": "Arsenal",
+    "summary": "Concedido. Você pode gastar 1 PM para receber +2 em rolagens de dano corpo a corpo e Redução de Dano 2 até o fi...",
+    "description": "Você pode gastar 1 PM para receber +2 em rolagens de dano corpo a corpo e Redução de Dano 2 até o final da cena.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 138,
+        "section": "Poderes: Poderes Concedidos",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "sangue de ferro",
+      "concedido",
+      "poderes concedidos"
+    ]
+  },
+  {
+    "id": "poder-coragem-total",
+    "name": "Coragem Total",
+    "category": "poder",
+    "subcategory": "Poderes Concedidos",
+    "powerType": "Concedido",
+    "requirements": [],
+    "cost": null,
+    "deity": "Arsenal, Valkaria, Khalmyr",
+    "summary": "Concedido. Você é imune a efeitos de medo, mágicos ou não. Este poder não afeta o medo de aliados....",
+    "description": "Você é imune a efeitos de medo, mágicos ou não. Este poder não afeta o medo de aliados.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 138,
+        "section": "Poderes: Poderes Concedidos",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "coragem total",
+      "concedido",
+      "poderes concedidos"
+    ]
+  },
+  {
+    "id": "poder-golpe-implacvel",
+    "name": "Golpe Implacável",
+    "category": "poder",
+    "subcategory": "Poderes de Combate",
+    "powerType": "Combate",
+    "requirements": [
+      "Ataque Poderoso",
+      "Luta 5"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Combate. Quando você ataca com Ataque Poderoso e erra o alvo, ainda assim causa metade do dano bônus em raspã...",
+    "description": "Quando você ataca com Ataque Poderoso e erra o alvo, ainda assim causa metade do dano bônus em raspão.",
+    "sources": [
+      {
+        "book": "Heróis de Arton",
+        "page": 80,
+        "section": "Poderes: Poderes de Combate",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "golpe implacável",
+      "combate",
+      "poderes de combate",
+      "ataque poderoso",
+      "luta 5"
+    ]
+  },
+  {
+    "id": "poder-especialista-em-armadilhas",
+    "name": "Especialista em Armadilhas",
+    "category": "poder",
+    "subcategory": "Distinções de Arton",
+    "powerType": "Distinção",
+    "requirements": [
+      "Treinado em Ladinagem",
+      "Ofício (Engenhoquinharia)"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Distinção. Você dominou a arte dos Armadilheiros Mestres de Arton, criando engenhos explosivos, mecânicos e mág...",
+    "description": "Você dominou a arte dos Armadilheiros Mestres de Arton, criando engenhos explosivos, mecânicos e mágicos em combate.",
+    "sources": [
+      {
+        "book": "Heróis de Arton",
+        "page": 117,
+        "section": "Poderes: Distinções de Arton",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "especialista em armadilhas",
+      "distinção",
+      "distinções de arton",
+      "treinado em ladinagem",
+      "ofício (engenhoquinharia)"
+    ]
+  },
+  {
+    "id": "poder-guerreiro-mgico-de-wynna",
+    "name": "Guerreiro Mágico de Wynna",
+    "category": "poder",
+    "subcategory": "Distinções de Arton",
+    "powerType": "Distinção",
+    "requirements": [
+      "Lançar magias arcanas",
+      "Proficiência com armas marciais"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Distinção. Você funde esgrima marcial e feitiçaria, desferindo golpes de espada que conduzem o efeito de magias...",
+    "description": "Você funde esgrima marcial e feitiçaria, desferindo golpes de espada que conduzem o efeito de magias de toque ou área.",
+    "sources": [
+      {
+        "book": "Heróis de Arton",
+        "page": 171,
+        "section": "Poderes: Distinções de Arton",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "guerreiro mágico de wynna",
+      "distinção",
+      "distinções de arton",
+      "lançar magias arcanas",
+      "proficiência com armas marciais"
+    ]
+  },
+  {
+    "id": "poder-professor-de-magia-da-academia-real",
+    "name": "Professor de Magia da Academia Real",
+    "category": "poder",
+    "subcategory": "Distinções de Arton",
+    "powerType": "Distinção",
+    "requirements": [
+      "Misticismo +10",
+      "Conhecimento +10"
+    ],
+    "cost": null,
+    "deity": null,
+    "summary": "Distinção. Você é um mestre acadêmico de Valkaria, ensinando truques eficientes e reduzindo o consumo de PM de ...",
+    "description": "Você é um mestre acadêmico de Valkaria, ensinando truques eficientes e reduzindo o consumo de PM de aliados adjacentes.",
+    "sources": [
+      {
+        "book": "Heróis de Arton",
+        "page": 207,
+        "section": "Poderes: Distinções de Arton",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "poder",
+      "professor de magia da academia real",
+      "distinção",
+      "distinções de arton",
+      "misticismo +10",
+      "conhecimento +10"
+    ]
+  }
+]

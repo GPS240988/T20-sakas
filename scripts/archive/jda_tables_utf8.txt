@@ -1,0 +1,567 @@
+
+========================= Tabela 3-3 Armas =========================
+
+--- PDF Page 149 ---
+Capítulo Três
+Tabela 3-3: Armas
+Armas Simples Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Leves
+Adaga T$ 2 1d4 19 Curto Perfuração 1
+Espada curta T$ 10 1d6 19 — Perfuração 1
+Foice T$ 4 1d6 x3 — Corte 1
+Corpo a Corpo — Uma Mão
+Clava — 1d6 x2 — Impacto 1
+Lança T$ 2 1d6 x2 Curto Perfuração 1
+Maça T$ 12 1d8 x2 — Impacto 1
+Corpo a Corpo — Duas Mãos
+Bordão — 1d6/1d6 x2 — Impacto 2
+Pique T$ 2 1d8 x2 — Perfuração 2
+Tacape — 1d10 x2 — Impacto 2
+Ataque à Distância — Uma Mão
+Azagaia T$ 1 1d6 x2 Médio Perfuração 1
+Besta leve T$ 35 1d8 19 Médio Perfuração 1
+Virotes (20) T$ 2 — — — — 1
+Funda — 1d4 x2 Médio Impacto 1
+Pedras (20) T$ 0,5 — — — — 1
+Ataque à Distância — Duas Mãos
+Arco curto T$ 30 1d6 x3 Médio Perfuração 2
+Flechas (20) T$ 1 — — — — 1
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Leves
+Machadinha T$ 6 1d6 x3 Curto Corte 1
+Corpo a Corpo — Uma Mão
+Cimitarra T$ 15 1d6 18 — Corte 1
+Espada longa T$ 15 1d8 19 — Corte 1
+Florete T$ 20 1d6 18 — Perfuração 1
+Machado de batalha T$ 10 1d8 x3 — Corte 1
+Mangual T$ 8 1d8 x2 — Impacto 1
+Martelo de guerra T$ 12 1d8 x3 — Impacto 1
+Picareta T$ 8 1d6 x4 — Perfuração 1
+Tridente T$ 15 1d8 x2 Curto Perfuração 1
+144
+Juliana Martins jsmartins31@gmail.com
+
+--- PDF Page 150 ---
+Equipamento
+Tabela 3-3: Armas (Continuação)
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Duas Mãos
+Alabarda T$ 10 1d10 x3 — Corte/perfuração 2
+Alfange T$ 75 2d4 18 — Corte 2
+Gadanho T$ 18 2d4 x4 — Corte 2
+Lança montada T$ 10 1d8 x3 — Perfuração 2
+Machado de guerra T$ 20 1d12 x3 — Corte 2
+Marreta T$ 20 3d4 x2 — Impacto 2
+Montante T$ 50 2d6 19 — Corte 2
+Ataque à Distância — Duas Mãos
+Arco longo T$ 100 1d8 x3 Médio Perfuração 2
+Flechas (20) T$ 1 — — — — 1
+Besta pesada T$ 50 1d12 19 Médio Perfuração 2
+Virotes (20) T$ 2 — — — — 1
+Armas Exóticas Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Uma Mão
+Chicote T$ 2 1d3 x2 — Corte 1
+Espada bastarda T$ 35 1d10/1d12 19 — Corte 1
+Katana T$ 100 1d8/1d10 19 — Corte 1
+Machado anão T$ 30 1d10 x3 — Corte 1
+Corpo a Corpo — Duas Mãos
+Corrente de espinhos T$ 25 2d4/2d4 19 — Corte 2
+Machado táurico T$ 50 2d8 x3 — Corte 2
+Ataque à Distância — Uma Mão
+Rede T$ 20 — — Curto — 1
+Armas de Fogo Preço Dano Crítico Alcance Tipo Espaços
+Ataque à Distância — Leve
+Pistola T$ 250 2d6 19/x3 Curto Perfuração 1
+Balas (20) T$ 20 — — — — 1
+Ataque à Distância — Duas Mãos
+Mosquete T$ 500 2d8 19/x3 Médio Perfuração 2
+Balas (20) T$ 20 — — — — 1
+145
+Juliana Martins jsmartins31@gmail.com
+
+========================= Tabela 3-4 Municoes =========================
+
+--- PDF Page 156 ---
+Equipamento
+Arcos longos
+Arcos curtos
+Bestas leves
+Bestas pesadas
+Pistolas
+Mosquetes
+VirotesFlechas
+Fundas
+Bombas
+Balas
+Munições
+Projéteis usados em armas de disparo. Munição 
+é vendida em pacotes com projéteis suficientes para 
+20 ataques. Sempre que você faz um ataque com 
+uma arma de disparo, a munição é perdida, inde-
+pendentemente de o ataque acertar ou não.
+Pacotes de munições podem receber melhorias e 
+encantos como armas (mas efeitos de munições não 
+acumulam com os da arma de disparo). O aumento 
+no preço de um pacote de munição superior ou mági-
+co é metade do aumento de uma arma (uma munição 
+com uma melhoria, por exemplo, custa +T$ 150, em 
+vez de +T$ 300).
+Balas. Uma bolsa com 20 balas (pequenas esfe-
+ras de chumbo) e pólvora. Recarregar uma pistola ou 
+um mosquete é uma ação padrão.
+Flechas. Uma aljava com 20 flechas, hastes de 
+madeira com ponta metálica e penas para estabilizar 
+o voo. Recarregar um arco com uma flecha é uma 
+ação livre.
+Pedras. Um saco de couro com 20 pedras 
+polidas. Recar regar uma funda com uma pedra de 
+qualquer tipo é uma ação de movimento.
+Virotes. Uma aljava com 20 setas de madeira. 
+Recarregar uma besta leve é uma ação de movimento; 
+já recarregar uma besta pesada é uma ação padrão.
+Tabela 3-4: Munições
+Item Preço Espaços
+Balas T$ 20 1
+Flechas T$ 1 1
+Pedras T$ 0,5 1
+Virotes T$ 2 1
+151
+Juliana Martins jsmartins31@gmail.com
+
+========================= Tabela 3-5 Armaduras e Escudos =========================
+
+--- PDF Page 158 ---
+Equipamento
+Tabela 3-5: Armaduras & Escudos
+Armaduras e Escudos Preço
+Bônus 
+na Defesa
+Penalidade 
+de Armadura Espaços
+Armaduras Leves
+Armadura acolchoada T$ 5 +1 0 2
+Armadura de couro T$ 20 +2 0 2
+Couro batido T$ 35 +3 –1 2
+Gibão de peles T$ 25 +4 –3 2
+Couraça T$ 500 +5 –4 2
+Armaduras Pesadas
+Brunea T$ 50 +5 –2 5
+Cota de malha T$ 150 +6 –2 5
+Loriga segmentada T$ 250 +7 –3 5
+Meia armadura T$ 600 +8 –4 5
+Armadura completa T$ 3.000 +10 –5 5
+Escudos
+Escudo leve T$ 5 +1 –1 1
+Escudo pesado T$ 15 +2 –2 2
+Penalidade de Armadura. Por seu peso 
+e rigidez, a maioria das armaduras dificulta o uso 
+de perícias que demandam agilidade. Aplique a 
+penalidade de armadura em testes de Acrobacia, 
+Furtividade e Ladinagem (e em testes de Atletismo 
+para natação). Penalidades de armaduras e escudos 
+se acumulam.
+Espaço. Quantos espaços a armadura ou escu -
+do ocupa, importante para a capacidade de carga do 
+personagem.
+Brunea Cota de malha Loriga segmentada Meia armadura
+153
+Juliana Martins jsmartins31@gmail.com
+
+========================= Tabela 3-6 Itens Gerais =========================
+
+--- PDF Page 161 ---
+Capítulo Três
+Tabela 3-6: Itens Gerais
+Item Preço Espaços Item Preço Espaços
+Equipamento de Aventura Vestuário (continuação)
+Água benta T$ 10 0,5 Chapéu arcano T$ 50 1
+Algemas T$ 15 1 Enfeite de elmo T$ 15 1
+Arpéu T$ 5 1 Farrapos de ermitão T$ 1 1
+Bandoleira de poções T$ 20 1 Gorro de ervas T$ 75 1
+Barraca T$ 10 1 Luva de pelica T$ 5 1
+Corda T$ 1 1 Manopla T$ 10 1
+Espelho T$ 10 1 Manto camuflado T$ 12 1
+Lampião T$ 7 1 Manto eclesiástico T$ 20 1
+Mochila T$ 2 — Robe místico T$ 50 1
+Mochila de aventureiro T$ 50 — Sapatos de camurça T$ 8 1
+Óleo T$ 0,1 0,5 Tabardo T$ 10 1
+Organizador de pergaminhos T$ 25 1 Traje da corte T$ 100 1
+Pé de cabra T$ 2 1 Traje de viajante T$ 10 —
+Saco de dormir T$ 1 1 Veste de seda T$ 25 1
+Símbolo sagrado T$ 5 1
+Tocha T$ 0,1 1 Esotéricos
+Vara de madeira (3m) T$ 0,2 1 Bolsa de pó T$ 300 1
+Cajado arcano T$ 1.000 2
+Ferramentas Cetro elemental T$ 750 1
+Alaúde élfico T$ 300 1 Costela de lich T$ 300 1
+Coleção de livros T$ 75 1 Dedo de ente T$ 200 1
+Equipamento de viagem T$ 10 1 Luva de ferro T$ 150 1
+Estojo de disfarces T$ 50 1 Medalhão de prata T$ 750 1
+Flauta mística T$ 150 1 Orbe cristalino T$ 750 1
+Gazua T$ 5 1 Tomo hermético T$ 1.500 1
+Instrumentos de <ofício> T$ 30 1 Varinha arcana T$ 100 1
+Instrumento musical T$ 35 1
+Luneta T$ 100 1 Alquímicos — Preparados
+Maleta de medicamentos T$ 50 1 Ácido T$ 10 0,5
+Sela T$ 20 1 Bálsamo restaurador T$ 10 0,5
+Tambor das profundezas T$ 80 1 Bomba T$ 50 0,5
+Cosmético T$ 30 0,5
+Vestuário Elixir do amor T$ 100 0,5
+Andrajos de aldeão T$ 1 1 Essência de mana T$ 50 0,5
+Bandana T$ 5 1 Fogo alquímico T$ 10 0,5
+Botas reforçadas T$ 20 1 Pó do desaparecimento T$ 100 0,5
+Camisa bufante T$ 25 1
+Capa esvoaçante T$ 25 1 Alquímicos — Catalisadores
+Capa pesada T$ 15 1 Baga-de-fogo T$ 30 0,5
+Casaco longo T$ 20 1 Dente-de-dragão T$ 45 0,5
+156
+Juliana Martins jsmartins31@gmail.com
+
+--- PDF Page 162 ---
+Equipamento
+Tabela 3-6: Itens Gerais (Continuação)
+Item Preço Espaços Item Preço Espaços
+Alquímicos — Catalisadores (continuação) Animais
+Essência abissal T$ 150 0,5 Alforje T$ 30 —
+Líquen lilás T$ 30 0,5 Cão de caça T$ 150 —
+Musgo púrpura T$ 45 0,5 Cavalo T$ 75 —
+Ossos de monstro T$ 45 0,5 Cavalo de guerra T$ 400 —
+Pó de cristal T$ 30 0,5 Estábulo (por dia) T$ 0,1 —
+Pó de giz T$ 30 0,5 Pônei T$ 5 —
+Ramo verdejante T$ 45 0,5 Pônei de guerra T$ 30 —
+Saco de sal T$ 45 0,5 Trobo T$ 60 —
+Seixo de âmbar T$ 30 0,5
+Terra de cemitério T$ 30 0,5 Veículos
+Balão goblin T$ 200 —
+Alquímicos — Venenos Carroça T$ 150 —
+Beladona T$ 1.500 0,5 Carruagem T$ 500 —
+Bruma sonolenta T$ 150 0,5 Canoa T$ 70 —
+Cicuta T$ 60 0,5 Veleiro T$ 10.000 —
+Essência de sombra T$ 100 0,5
+Névoa tóxica T$ 30 0,5 Serviços
+Peçonha comum T$ 15 0,5 Estadia (por noite)
+Peçonha concentrada T$ 90 0,5 comum T$ 0,5 —
+Peçonha potente T$ 600 0,5 confortável T$ 4 —
+Pó de lich T$ 3.000 0,5 luxuosa T$ 20 —
+Riso de Nimb T$ 150 0,5 Condução
+terrestre T$ 0,5 por km —
+Alimentação marítima T$ 0,1 por km —
+Batata valkariana T$ 2 0,5 aérea T$ 10 por km —
+Gorad quente T$ 18 0,5 Curandeiro T$ 5 —
+Macarrão de Yuvalin T$ 6 0,5 Magia
+Prato do aventureiro T$ 1 0,5 1º círculo T$ 10 —
+Ração de viagem (por dia) T$ 0,5 0,5 2º círculo T$ 90 —
+Refeição comum T$ 0,3 0,5 3º círculo T$ 360 —
+Sopa de peixe T$ 1 0,5 Mensageiro T$ 0,5 por km —
+sabem onde vão passar a noite. Dormir ao relento 
+sem um acampamento e um saco de dormir diminui 
+sua recuperação de PV e PM (veja a página 106).
+Símbolo Sagrado. Um medalhão de madeira 
+ou metal com o símbolo de uma divindade. Se você 
+estiver vestindo (normalmente com uma corrente 
+ao redor do pescoço) ou empunhando o símbolo 
+sagrado de um deus do qual é devoto, recebe +1 em 
+testes de resistência.
+Tocha. Um bastão de madeira com algum 
+combustível na ponta (geralmente trapos embebidos 
+em parafina). Acender uma tocha é uma ação padrão. 
+Ela ilumina um raio de 9m e dura uma cena. Pode 
+ser usada como uma arma simples leve (dano 1d4 de 
+impacto mais 1 de fogo, crítico x2).
+Vara de Madeira. Uma haste com 3m de 
+comprimento. Útil para alcançar pontos distantes, 
+mas frágil demais para servir como arma.
+157
+Juliana Martins jsmartins31@gmail.com
+
+========================= Tabela 3-8 Melhorias e 3-9 Materiais =========================
+
+--- PDF Page 170 ---
+Equipamento
+Energético. Catalisadores alquímicos inseri-
+dos no item fazem com que ele potencialize ener -
+gias mágicas. Suas magias que causam dano causam 
++1d6 pontos de dano do mesmo de tipo.
+Equilibrada. Uma arma equilibrada é forjada 
+com o balanço perfeito, o que facilita movimentos 
+complexos. Ela fornece +2 em testes de manobras 
+(desarmar, quebrar etc.).
+Espinhosa (Armadura). Uma armadura 
+coberta de espinhos é uma visão impressionante — 
+principalmente se os espinhos estiverem banhados 
+com o sangue dos inimigos! Se o usuário agarrar ou 
+for agarrado por uma criatura, causa dano de per -
+furação nesta criatura igual a sua Força. O dano é 
+causado quando a manobra é feita e no início de cada 
+turno do personagem, enquanto ela for mantida.
+Espinhoso (Escudo). Aumenta o dano de 
+um ataque com escudo em um passo.
+Harmonizada (Arma). A arma foi banhada 
+em óleos alquímicos que a deixaram sintonizada 
+com a aura de seu usuário. Escolha uma habilidade 
+ativada ao se fazer um ataque ou usar a ação agredir 
+e que custe pontos de mana. Esta habilidade tem seu 
+custo em PM reduzido em –1 se utilizada com esta 
+arma. Pré-requisito: outra melhoria qualquer.
+Harmonizado (Esotérico). Escolha uma 
+magia. Seu custo diminui em –1 PM. Você pode 
+mudar a magia afetada pelo item com um ritual que 
+exige um dia e T$ 100 em ingredientes.
+Injeção Alquímica. Um minúsculo frasco 
+de cerâmica ou vidro é inserido ao longo da arma, 
+junto com um mecanismo injetor ativado por 
+impacto. Um ataque que acerte causa seu dano 
+normal e libera uma carga de um preparado (como 
+ácido ou fogo alquímico) ou de água benta, que 
+atinge o alvo automaticamente. A melhoria tem 
+espaço para 2 doses. Carregá-la exige uma ação 
+completa e o gasto dos itens com os quais você 
+quiser carregá-la.
+Macabro. O macabro é pintado com sangue 
+seco, esculpido na forma de uma caveira ou decorado 
+com pedaços de orelhas, dedos e olhos. Essa apa-
+rência assustadora fornece +2 em Intimidação, mas 
+impõe uma penalidade de –2 em Diplomacia.
+Maciça. A arma é feita com material denso, fa-
+zendo com que seus golpes tenham impacto terrível. 
+O multiplicador de crítico da arma aumenta em 1 
+ponto. Uma arma não pode ser maciça e precisa.
+Material Especial. A arma, armadura, 
+escudo ou item esotérico é feito de, ou banhado 
+Tabela 3-8: Melhorias
+Melhoria Efeito
+Melhorias para armas
+Certeira +1 nos testes de ataque
+Pungente +2 nos testes de ataque
+Cruel +1 nas rolagens de dano
+Atroz +2 nas rolagens de dano
+Equilibrada +2 em testes de manobras
+Harmonizada Custo de habilidades de 
+ataque diminui em –1 PM
+Injeção alquímica Gera efeito de preparado
+Maciça +1 no multiplicador de crítico
+Material especial Conforme o material
+Mira telescópica Aumenta alcance da arma
+Precisa +1 na margem de ameaça
+Melhorias para armaduras e escudos
+Ajustada –1 na penalidade de armadura
+Sob medida –2 na penalidade de armadura
+Delicada Aplica 1 ponto de Des na Defesa
+Espinhosa (armadura) Causa dano com agarrar
+Espinhoso (escudo) Aumenta dano do escudo
+Material especial Conforme o material
+Polida +5 na Defesa na primeira rodada
+Reforçada +1 na Defesa, 
++1 na penalidade de armadura
+Selada +1 nos testes de resistência
+Melhorias para esotéricos
+Canalizador +1 no limite de PM
+Energético +1d6 no dano de magias
+Harmonizado Custo de uma magia 
+diminui em –1 PM
+Material especial Conforme o material
+Poderoso +1 na CD de suas magias
+Vigilante +2 na Defesa
+Melhorias para ferramentas e vestuário
+Aprimorado +1 em testes de perícia
+Melhorias para qualquer das categorias acima
+Banhado a ouro +2 em Diplomacia
+Cravejado de gemas +2 em Enganação
+Discreto –1 espaço, +5 para ocultar
+Macabro +2 em Intimidação, 
+–2 em Diplomacia
+165
+Juliana Martins jsmartins31@gmail.com
+
+--- PDF Page 171 ---
+Capítulo Três
+com, um material especial. Cada material fornece 
+um benefício, cumulativo com outros benefícios de 
+melhorias, mas possui um preço adicional que deve 
+ser pago além do preço da melhoria. Veja a seção a 
+seguir para a descrição dos materiais especiais. Fa-
+bricar um item de material especial é uma melhoria 
+porque materiais especiais exigem um trabalho mais 
+complexo do que materiais comuns.
+Mira Telescópica. Aumenta o alcance da 
+arma em uma categoria (de curto para médio, de 
+médio para longo) e o alcance da habilidade Ataque 
+Furtivo para médio. Esta melhoria só pode ser aplica-
+da em armas de disparo (exceto fundas).
+Poderoso. A CD para resistir a suas magias 
+aumenta em +1.
+Polida. A armadura ou escudo foi feito com 
+metais reluzentes. Além de bonita, a luz refletida 
+ofusca inimigos. Em ambientes iluminados, o 
+bônus de Defesa do item aumenta em +5, mas 
+apenas na primeira rodada de combate — após isso, 
+os inimigos se acostumam ao reflexo.
+Precisa. Cuidado especial foi tomado ao 
+temperar o aço desta arma, para que seu fio se 
+mantenha sempre como uma navalha. A margem de 
+ameaça aumenta em 1 ponto. Uma arma não pode 
+ser precisa e maciça.
+Pungente. Temperada diversas vezes para 
+adquirir o fio ou o equilíbrio perfeito, a arma fornece 
++2 nos testes de ataque. Pré-requisito: Certeira.
+Reforçada. Se for uma armadura, o item 
+possui uma camada adicional de tecido, malha mais 
+densa ou placas mais grossas. Se for um escudo, 
+possui uma chapa mais espessa. O bônus na Defesa 
+e a penalidade de armadura do item aumentam em 1. 
+Um item não pode ser reforçado e delicado.
+Selada. A armadura foi forjada de forma a 
+proteger todo o corpo do usuário, sem deixar espaço 
+para nem mesmo um alfinete! Esta melhoria fornece 
+um bônus de +1 em testes de resistência, mas só 
+pode ser aplicado em armaduras pesadas.
+Sob Medida. Embora muitas armaduras sejam 
+feitas especificamente para um usuário, esta passou 
+por um período extenso de ajustes e refinamento, 
+adequando-se com perfeição ao seu corpo. Reduz a 
+penalidade  de armadura em 2, mas apenas para o 
+usuário específico (para outros, comporta-se como 
+um item ajustado). Pré-requisito: Ajustada.
+Vigilante. O item usa parte de sua mana pes-
+soal para gerar um campo que desvia ataques. Você 
+recebe +2 na Defesa.
+Materiais Especiais
+Armas, armaduras, escudos e esotéricos podem 
+ser feitos ou banhados de um material especial. 
+Para isso, o item precisa ter a melhoria material es-
+pecial e você precisa pagar o preço extra do material 
+escolhido, conforme a tabela 3-9.
+Aço-Rubi
+Este metal tem a aparência de vidro avermelhado, 
+mas é duro como aço. Aço-rubi é caríssimo e comer-
+cializado apenas por uma guilda de ferreiros de Dohe-
+rimm. Os anões mantém a origem deste material em 
+segredo, mas suspeita-se de que ele seja minerado das 
+profundezas de uma área de Tormenta.
+Arma. A arma ignora 10 pontos de redução de 
+dano, além de ignorar a imunidade a crítico de lefeu.
+Armadura e Escudo. Fornece uma chance 
+de ignorar o dano extra de acertos críticos e ataques 
+furtivos: armaduras leves e escudos, 25% (1 em 
+1d4); armaduras pesadas, 50% (qualquer valor par 
+em qualquer dado), cumulativas entre si.
+Esotérico. Quando lança uma magia que cau-
+sa dano, ela ignora 10 pontos de redução de dano, 
+além de ignorar as imunidades a dano de lefeu.
+Adamante
+Encontrado apenas em meteoritos (e por isso 
+também chamado de “ferro-meteórico”), o adamante 
+é um metal escuro, fosco e mais denso que o aço.
+Arma. Aumenta o dano em um passo.
+Armadura e Escudo. Fornece redução de 
+dano: armaduras leves e escudos, RD 2; armaduras 
+pesadas, RD 5.
+Esotérico. Quando lança uma magia que 
+causa dano, você pode pagar +1 PM para rolar nova-
+mente qualquer resultado 1 na rolagem de dano dela.
+Gelo eterno
+As gélidas Montanhas Uivantes produzem gelo 
+que nunca derrete. Expedições de aventureiros 
+exploram essa região glacial perigosa à caça deste 
+material fantástico.
+Arma. Causa +2 pontos de dano por frio.
+Armadura e Escudo. Fornece redução de 
+fogo: armaduras leves e escudos, redução 5; armadu-
+ras pesadas, redução 10.
+Esotérico. Quando lança uma magia de frio 
+que causa dano, você pode rolar novamente qualquer 
+resultado 1 na rolagem de dano dela.
+166
+Juliana Martins jsmartins31@gmail.com
+
+--- PDF Page 172 ---
+Equipamento
+Madeira Tollon
+A Floresta de Tollon produz um tipo de madeira 
+negra, dura como aço e dotada de propriedades má-
+gicas. Apenas armas de madeira — arcos, bordões, 
+clavas, lanças, piques e tacapes —, escudos leves e 
+esotéricos podem ser feitos com madeira T ollon.
+Arma. Conta como mágica para vencer redução 
+de dano. Além disso, habilidades ativadas ao se fazer 
+um ataque ou usar a ação agredir têm seu custo em 
+PM reduzido em –1.
+Escudo e Esotérico. Fornece resistência a 
+magia +2.
+Matéria Vermelha
+Qualquer material de origem lefeu — desde suas 
+garras e carapaças, até minérios e partes de estrutu -
+ras encontradas em áreas de Tormenta — apresenta 
+propriedades parecidas, sendo conhecido como “ma-
+téria vermelha”. Estes itens assustadores impõem ao 
+usuário penalidade de –2 em perícias baseadas em 
+Carisma (exceto Intimidação).
+Arma. Causa +1d6 de dano extra. Porém, sem-
+pre que você acerta um ataque com a arma, perde 
+1 ponto de vida. Lefou e lefeu são imunes tanto ao 
+dano extra de matéria vermelha quanto à perda de 
+vida por usar armas desse material.
+Armadura e Escudo. Por sua aparência 
+“borrada”, fornecem chance de falha para cada ata-
+que: 10% para escudos e armaduras leves, 25% para 
+armaduras pesadas (cumulativas entre si). Lefeu 
+ignoram este efeito.
+Esotérico. Você e todos os seus inimigos em 
+alcance curto sofrem –2 em testes de resistência 
+contra efeitos mágicos.
+Mitral
+Metal raro e valioso, o mitral é prateado, bri-
+lhante e mais leve que aço. Itens de mitral ocupam 
+–1 espaço (mínimo 1).
+Arma. Aumenta sua margem de ameaça em 1. 
+Por exemplo, uma espada longa de mitral tem mar -
+gem de ameaça 18-20.
+Armadura e Escudo. Tem sua penalidade de 
+armadura diminuída em 2. Armaduras pesadas de 
+mitral permitem que você aplique até dois pontos de 
+sua Destreza na Defesa.
+Esotérico. Permite que você pague +2 PM ao 
+lançar uma magia para aumentar a CD dela em +2.
+Tabela 3-9: Preço Adicional de Materiais Especiais
+Item Aço-Rubi Adamante
+Gelo 
+Eterno
+Madeira 
+Tollon
+Matéria 
+Vermelha Mitral
+Arma + T$ 6.000 + T$ 3.000 + T$ 600 + T$ 1.500 + T$ 1.500 + T$ 1.500
+Armadura leve + T$ 3.000 + T$ 6.000 + T$ 1.500 — + T$ 6.000 + T$ 1.500
+Armadura pesada + T$ 6.000 + T$ 18.000 + T$ 3.000 — + T$ 18.000 + T$ 12.000
+Escudo + T$ 3.000 + T$ 6.000 + T$ 1.500 + T$ 1.500 + T$ 6.000 + T$ 1.500
+Esotéricos + T$ 6.000 + T$ 3.000 + T$ 3.000 + T$ 1.500 + T$ 3.000 + T$ 3.000
+Fabricando Itens Superiores
+Itens superiores só podem ser fabricados 
+por personagens com a habilidade 
+Fabricar Item Superior (veja a página 
+68). A fabricação deles segue a mesma 
+regra de itens normais, porém, de acordo 
+com o número de melhorias, o preço e a 
+CD do teste de Ofício aumentam (veja a 
+Tabela 3-7).
+Por exemplo, o preço de uma couraça é T$ 
+500. Fabricá-la exige um gasto de T$ 166 
+(um terço do preço) e um teste de Ofício 
+contra CD 15. Já o preço de uma couraça 
+com duas melhorias é T$ 3.500 (T$ 500 + 
+T$ 3.000 das duas melhorias). Fabricá-la 
+exige um gasto de T$ 1.166 (um terço do 
+preço) e um teste de Ofício contra CD 25 
+(15 da CD base + 10 das duas melhorias).
+É possível adicionar melhorias a um item. 
+Você paga a diferença de acordo com o novo 
+número de melhorias. Por exemplo, para 
+adicionar a terceira melhoria a um item que 
+já possui duas, você precisa pagar mais T$ 
+2.000 (um terço da diferença de três para 
+duas melhorias). Além disso, deve fazer 
+um teste de Ofício contra a CD do número 
+de melhorias que o item passará a ter e, se 
+falhar por 5 ou mais, estraga o item.
+167
+Juliana Martins jsmartins31@gmail.com

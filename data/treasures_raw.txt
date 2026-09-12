@@ -1,0 +1,471 @@
+=== PÁGINA 333 ===
+Recompensas
+A maneira como o grupo encontra o tesouro fica 
+a seu critério. Você pode simplesmente descrever 
+“depois de derrotar os gnolls, vocês vasculham suas 
+bolsas e encontram...” ou preparar algo mais elabo -
+rado. Por exemplo, bandidos que ataquem o grupo 
+em uma estrada provavelmente não estarão carre-
+gando o seu tesouro consigo. Em vez disso, podem 
+ter um esconderijo próximo onde guardam o fruto 
+de seus roubos. Depois de derrotar os bandidos, os 
+personagens podem vasculhar as redondezas 
+em busca desse esconderijo. Outro exemplo: 
+em uma aventura que envolva explorar um an-
+tigo templo, você pode determinar que o te-
+souro de todos os combates está em uma sala 
+trancada e protegida por armadilhas. Ao der-
+rotar guardas em um corredor, o grupo 
+não encontrará nenhum  tesouro. Mas, 
+se conseguirem aces -
+so a essa câmara, te-
+rão todo o tesouro 
+de uma só vez. Ou, 
+ainda, em vez de en-
+contrar tesouro de ini-
+migos derrotados, o gru-
+po pode receber um valor 
+equivalente como pagamen-
+to por seu empregador. As pos-
+sibilidades são diversas. E, é claro, em 
+vez de rolar, você pode escolher um tesouro, 
+usando a tabela como guia.
+Recompensas 
+Fora de Jogo
+Você pode premiar não apenas 
+os personagens, mas os 
+próprios jogadores. Dedi-
+cação ao jogo (limpar a sala 
+depois da partida, comprar 
+os refrigerantes, mandar 
+mensagens para marcar a sessão...) 
+ou outras contribuições podem valer 
+uma recompensa. Se quiser fazer isso, 
+conceda 1 PM temporário ou outro 
+pequeno bônus aos mais prestativos.
+A profissão de aventureiro é perigosa, mas traz 
+grandes recompensas. Com os espólios de inimigos 
+caídos e os pagamentos por missões completadas, 
+um herói pode se tornar tão rico quanto um rei.
+Tesouro em Combate
+Para determinar o tesouro de um com-
+bate, faça os jogadores rolarem duas vezes 
+na Tabela 8-1 (veja as páginas 328 e 
+329), uma vez na coluna Dinheiro 
+e outra na coluna Itens, na linha 
+equivalente ao ND da criatura 
+derrotada. Assim, se o grupo der-
+rotou um necromante (ND 7), 
+deve rolar duas vezes na li-
+nha do ND 7, uma na coluna 
+de Dinheiro e outra na de 
+Itens (os jogadores deci-
+dem entre si quem rola). 
+Se o grupo tiver derrota-
+do mais de uma criatura, 
+rola uma vez para cada 
+criatura ou, de acordo com 
+o mestre, uma vez na linha 
+equivalente ao nível de desafio 
+do combate.
+A descrição da criatu-
+ra indica o tesouro que ela 
+fornece. “Nenhum” indica 
+que a criatura não traz te-
+souro; nesse caso, não use a 
+tabela. “Padrão” indica tesou-
+ro típico; use a tabela sem 
+modificação. “Metade” indi-
+ca que a criatura tem pou-
+cos tesouros; use a tabe-
+la, mas divida pela metade 
+quaisquer resultados ro-
+lados na coluna Dinheiro. 
+Por fim, “Dobro” significa 
+que a criatura tem muitos 
+tesouros. Role duas vezes 
+em cada coluna da tabela.
+Tesouros
+Rexthor, o Rexthor, o 
+Campeão das Campeão das 
+Profundezas: Profundezas: 
+vencedor vencedor 
+de muitas de muitas 
+batalhasbatalhas
+327
+Juliana Martins jsmartins31@gmail.com
+=== PÁGINA 334 ===
+Capítulo Oito
+Tabela 8-1: Tesouro por Nível de Desafio
+ND d% Dinheiro d% Itens
+1/4 01-30 — 01-50 —
+31-70 1d6x10 TC 51-75 Diverso
+71-95 1d4x100 TC 76-100 Equipamento
+96-100 1d6x10 T$
+1/2 01-25 — 01-45 —
+26-70 2d6x10 TC 46-70 Diverso
+71-95 2d8x10 T$ 71-100 Equipamento
+96-100 1d4x100 T$
+1 01-20 — 01-40 —
+21-70 3d8x10 T$ 41-65 Diverso
+71-95 4d12x10 T$ 66-90 Equipamento
+96-100 1 riqueza menor 91-100 1 poção
+2 01-15 — 01-30 —
+16-55 3d10x10 T$ 31-40 Diverso
+56-85 2d4x100 T$ 41-70 Equipamento
+86-95 2d6+1x100 T$ 71-90 1 poção
+96-100 1 riqueza menor 91-100 Superior (1 melhoria)
+3 01-10 — 01-25 —
+11-20 4d12x10 T$ 26-35 Diverso
+21-60 1d4x100 T$ 36-60 Equipamento
+61-90 1d8x10 TO 61-85 1 poção
+91-100 1d3 riquezas menores 86-100 Superior (1 melhoria)
+4 01-10 — 01-20 —
+11-50 1d6x100 T$ 21-30 Diverso
+51-80 1d12x100 T$ 31-55 Equipamento2D
+81-90 1 riqueza menor+% 56-80 1 poção+%
+91-100 1d3 riquezas menores+% 81-100 Superior (1 melhoria)2D
+5 01-15 — 01-20 —
+16-65 1d8x100 T$ 21-70 1 poção
+66-95 3d4x10 TO 71-90 Superior (1 melhoria)
+96-100 1 riqueza média 91-100 Superior (2 melhorias)
+6 01-15 — 01-20 —
+16-60 2d6x100 T$ 21-65 1 poção+%
+61-90 2d10x100 T$ 66-95 Superior (1 melhoria)
+91-100 1d3+1 riquezas menores 96-100 Superior (2 melhorias)2D
+7 01-10 — 01-20 —
+11-60 2d8x100 T$ 21-60 1d3 poções
+61-90 2d12x10 TO 61-90 Superior (2 melhorias)
+91-100 1d4+1 riquezas menores 91-100 Superior (3 melhorias)
+8 01-10 — 01-20 —
+11-55 2d10x100 T$ 21-75 1d3 poções
+56-95 1d4+1 riquezas menores 76-95 Superior (2 melhorias)
+96-100 1 riqueza média+% 96-100 Superior (3 melhorias)2D
+9 01-10 — 01-20 —
+11-35 1 riqueza média 21-70 1 poção+% 
+36-85 4d6x100 T$ 71-95 Superior (3 melhorias)
+86-100 1d3 riquezas médias 96-100 Mágico (menor)
+328
+Juliana Martins jsmartins31@gmail.com
+=== PÁGINA 335 ===
+Recompensas
+Tabela 8-1: Tesouro por Nível de Desafio (Continuação)
+ND d% Dinheiro d% Itens
+10 01-10 — 01-50 —
+11-30 4d6x100 T$ 51-75 1d3+1 poções
+31-85 4d10x10 TO 76-90 Superior (3 melhorias)
+86-100 1d3+1 riquezas médias 91-100 Mágico (menor)
+11 01-10 — 01-45 —
+11-45 2d4x1.000 T$ 46-70 1d4+1 poções
+46-85 1d3 riquezas médias 71-90 Superior (3 melhorias)
+86-100 2d6x100 TO 91-100 Mágico (menor)2D
+12 01-10 — 01-45 —
+11-45 1 riqueza média+% 46-70 1d3+1 poções+%
+46-80 2d6x1.000 T$ 71-85 Superior (4 melhorias)
+81-100 1d4+1 riquezas médias 86-100 Mágico (menor)
+13 01-10 — 01-40 —
+11-45 4d4x1.000 T$ 41-65 1d4+1 poções+%
+46-80 1d3+1 riquezas médias 66-95 Superior (4 melhorias)
+81-100 4d6x100 TO 96-100 Mágico (médio)
+14 01-10 — 01-40 —
+11-45 1d3+1 riquezas médias 41-65 1d4+1 poções+%
+46-80 3d6x1.000 T$ 66-90 Superior (4 melhorias)
+81-100 1 riqueza maior 91-100 Mágico (médio)
+15 01-10 — 01-35 —
+11-45 1 riqueza média+% 36-45 1d6+1 poções
+46-80 2d10x1.000 T$ 46-85 Superior (4 melhorias)2D
+81-100 1d4x1.000 TO 86-100 Mágico (médio)
+16 01-10 — 01-35 —
+11-40 3d6x1.000 T$ 36-45 1d6+1 poções+%
+41-75 3d10x100 TO 46-80 Superior (4 melhorias)2D
+76-100 1d3 riquezas maiores 81-100 Mágico (médio)
+17 01-05 — 01-20 —
+06-40 4d6x1.000 T$ 21-40 Mágico (menor)
+41-75 1d3 riquezas médias+% 41-80 Mágico (médio)
+76-100 2d4x1.000 TO 81-100 Mágico (maior)
+18 01-05 — 01-15 —
+06-40 4d10x1.000 T$ 16-40 Mágico (menor)2D
+41-75 1 riqueza maior 41-70 Mágico (médio)
+76-100 1d3+1 riquezas maiores 71-100 Mágico (maior)
+19 01-05 — 01-10 —
+06-40 4d12x1.000 T$ 11-40 Mágico (menor)2D
+41-75 1 riqueza maior+% 41-60 Mágico (médio)2D
+76-100 1d12x1.000 TO 61-100 Mágico (maior)
+20 01-05 — 01-05 —
+06-40 2d4x1.000 TO 06-40 Mágico (menor)2D
+41-75 1d3 riquezas maiores 41-50 Mágico (médio)2D
+76-100 1d3+1 riquezas maiores+% 51-100 Mágico (maior)2D
++% Na rolagem de d% para determinar o tipo de riqueza ou poção, você recebe +20%. Resultados acima de 100% contam como 100%.
+2D Na rolagem para definir o tipo de equipamento ou item mágico, você pode rolar 2d6 e escolher um deles. Por exemplo, se rolar um 2 
+e um 6 para definir o tipo de equipamento, você pode escolher entre uma arma e um esotérico.
+329
+Juliana Martins jsmartins31@gmail.com
+=== PÁGINA 336 ===
+Capítulo Oito
+Tabela 8-2: Riquezas
+Menor Média Maior Valor (T$) Exemplos
+01-25 — — 4d4 (10) Ágata ou hematita (1/2); barril de farinha ou gaiola com galinhas (5).
+26-40 — — 1d4x10 
+(25)
+Quartzo rosa ou topázio (1/2); caixa de tabaco ou rolo de linho (1);
+jarro de especiarias, como canela, gorad, pimenta ou sal (2);
+41-55 01-10 — 2d4x10 
+(50)
+Bracelete de ouro finamente trabalhado (1/2); estatueta de osso 
+ou marfim entalhado ou rolo de seda (1); vaso de prata (2).
+56-70 11-30 — 4d6x10 
+(140)
+Ametista ou pérola branca (1/2); lingote de prata ou cálice de prata 
+com gemas de lápis-lazúli (1); tapeçaria grande e bem-feita de lã (5).
+71-85 31-50 01-05 1d6x100
+(350)
+Alexandrita ou pérola negra (1/2); espada cerimonial ornada com prata 
+e gema negra no cabo ou pente de prata com pedras preciosas (1).
+86-95 51-65 06-15 2d6x100
+(700)
+Pente em forma de dragão com olhos de gema vermelha (1); 
+harpa de madeira exótica com ornamentos de zircão e marfim (5).
+96-99 66-80 16-25 2d8x100
+(900)
+Opala negra ou tapa-olho com um olho falso de safira (1/2); luva 
+bordada e adornada com gemas ou pingente de opala vermelha com 
+corrente de ouro (1); lingote de ouro ou pintura antiga (2).
+100 81-90 26-40 4d10x100
+(2.200)
+Esmeralda verde ou pingente de safira (1/2); caixinha de 
+música de ouro ou tornozeleira com gemas (1); manto bordado 
+em veludo e seda com inúmeras pedras preciosas (2).
+— 91-95 41-60 6d12x100
+(3.900)
+Anel de prata e safira ou correntinha com pequenas pérolas rosas, 
+diamante branco (1/2); ídolo de ouro puro maciço (5).
+— 96-99 61-75 2d10x1.000 
+(11.000)
+Anel de ouro e rubi ou diamante vermelho (1/2);  
+conjunto de taças de ouro decoradas com esmeraldas (2).
+— 100 76-85 6d8x1.000 
+(27.000)
+Coroa de ouro adornada com centenas de gemas, pertencente a 
+um antigo monarca (1); baú de mitral com coleção de diamantes (2).
+— — 86-95 1d10x10.000 
+(55.000)
+Arca de madeira reforçada repleta de lingotes de 
+prata e ouro, além de pedras preciosas de vários tipos (20).
+— — 96-100 4d12x10.000 
+(260.000)
+Uma sala forrada de moedas! Mover todo esse dinheiro 
+exige trabalhadores e carroças (ou outra ideia por parte 
+dos jogadores), além de atrair a atenção de bandidos, 
+coletores de impostos e aproveitadores de vários tipos...
+Resultados da Tabela
+Dinheiro. O grupo encontra moedas ou riquezas.
+• Moedas. Você pode apenas descrever o valor 
+(“Vocês encontram 25 TO”) ou detalhar mais 
+(“Vocês encontram 25 Tibares de ouro da época do 
+Rei-Imperador Phylidio, o Tranquilo. Tais moedas 
+são muito valiosas hoje”).
+• Riquezas. O grupo encontra um ou mais itens 
+sem uso prático, mas valiosos. Role 1d% na Tabela 
+8-2 para determinar o valor de venda de cada riqueza. 
+A tabela traz exemplos de itens e, entre parênteses, 
+quantos espaços eles ocupam.
+Moedas e riquezas podem ser usadas como 
+elementos de aventura. Por exemplo, se o grupo 
+derrota mercenários contratados por um barão 
+corrupto, pode encontrar moedas com a efígie do 
+nobre, ligando-o os bandidos a ele.
+Itens. O grupo encontra um item diverso, um 
+equipamento, um equipamento superior, uma ou mais 
+poções ou um item mágico.
+• Diverso. Role na Tabela 8-3, na página se-
+guinte, para determinar qual item o grupo encontra.
+• Equipamento. Role 1d6 para determinar o tipo 
+de equipamento: 1–3), arma; 4–5) armadura ou 
+escudo; 6) esotérico. Então role na Tabela 8-4 , na 
+página seguinte, para determinar o item específico.
+• Superior. Role para determinar se é uma arma, 
+armadura/escudo ou esotérico, como acima. Então, 
+para cada melhoria do item, role uma vez na Tabela 
+8-5: Itens Superiores, na página 332.
+• Poções. Veja a página 341.
+• Mágico. Role 1d6 para determinar o tipo de 
+item: 1–2) arma (página 336); 3) armadura/escudo 
+(página 339); 4–6) acessório (página 342).
+330
+Juliana Martins jsmartins31@gmail.com
+=== PÁGINA 337 ===
+Recompensas
+Tabela 8-3: Itens Diversos
+d% Item
+01-02 Ácido
+03-04 Água benta
+05 Alaúde élfico
+06 Algemas
+07-08 Baga-de-fogo
+09-23 Bálsamo restaurador
+24 Bandana
+25 Bandoleira de poções
+26-30 Bomba
+31 Botas reforçadas
+32 Camisa bufante
+33 Capa esvoaçante
+34 Capa pesada
+35 Casaco longo
+36 Chapéu arcano
+37-38 Coleção de livros
+39-40 Cosmético
+41-42 Dente-de-dragão
+43 Enfeite de elmo
+44 Elixir do amor
+45-46 Equipamento de viagem
+47-56 Essência de mana
+57 Estojo de disfarces
+58 Farrapos de ermitão
+59 Flauta mística
+60-66 Fogo alquímico
+67 Gorro de ervas
+68-69 Líquen lilás
+70 Luneta
+71 Luva de pelica
+72-73 Maleta de medicamentos
+74 Manopla
+75 Manto eclesiástico
+76-78 Mochila de aventureiro
+79-80 Musgo púrpura
+81 Organizador de pergaminhos
+82-83 Ossos de monstro
+84-85 Pó de cristal
+86-87 Pó de giz
+88 Pó do desaparecimento
+89 Robe místico
+90-91 Saco de sal
+92 Sapatos de camurça
+93-94 Seixo de âmbar
+95 Sela
+96 Tabardo
+97 Traje da corte
+98-99 Terra de cemitério
+100 Veste de seda
+Tabela 8-4: Equipamento
+d% Arma d% Arma
+01-03 Adaga 56 Katana
+04-05 Alabarda 57-59 Lança
+06-07 Alfange 60 Lança montada
+08-10 Arco curto 61-63 Maça
+11-13 Arco longo 64-66 Machadinha
+14-15 Azagaia 67 Machado anão
+16 Balas (20) 68-70 Machado de batalha
+17-18 Besta leve 71-73 Machado de guerra
+19-20 Besta pesada 74 Machado táurico
+21-23 Bordão 75-76 Mangual
+24 Chicote 77 Marreta
+25-27 Cimitarra 78-80 Martelo de guerra
+28-30 Clava 81-83 Montante
+31 Corrente de espinhos 84 Mosquete
+32-33 Espada bastarda 85 Pedras (20)
+34-38 Espada curta 86-88 Picareta
+39-43 Espada longa 89-90 Pique
+44-46 Flechas (20) 91-92 Pistola
+47-49 Florete 93 Rede
+50-51 Foice 94-96 Tacape
+52-53 Funda 97-98 Tridente
+54-55 Gadanho 99-100 Virotes (20)
+d% Armadura
+01-05 Couro
+06-10 Brunea
+11-25 Completa
+26-30 Cota de malha
+31-45 Couraça
+46-55 Couro batido
+56-65 Escudo leve
+66-80 Escudo pesado
+81-85 Gibão de peles
+86-90 Loriga segmentada
+91-100 Meia armadura
+d% Esotérico
+01-10 Bolsa de pó
+11-25 Cajado arcano
+26-35 Cetro elemental
+36-42 Costela de lich
+43-50 Dedo de ente
+51-55 Luva de ferro
+56-65 Medalhão de prata
+66-75 Orbe cristalino
+76-85 Tomo hermético
+86-100 Varinha arcana
+331
+Juliana Martins jsmartins31@gmail.com
+=== PÁGINA 338 ===
+Capítulo Oito
+Tesouro em Outras Situações
+O mestre pode fornecer tesouros por outras si-
+tuações que não envolvam combate — normalmente 
+na forma de recompensas por atos realizados pelo 
+grupo. Se os personagens resgatam o filho de uma 
+mercadora, ela pode presenteá-los com tesouro.
+Esta também é uma forma de garantir que o 
+grupo receba o tesouro devido por uma aventura. 
+Se os personagens são convocados por um rei para 
+acabar com uma infestação de aparições, podem pas-
+sar a aventura sem ganhar nada (pois aparições são 
+criaturas com tesouro “nenhum”). Para resolver isso, 
+no fim da aventura o rei pode recompensá-los com 
+um valor equivalente ao que teriam ganhado pelos 
+combates, se aparições possuíssem tesouro padrão.
+Controlando a Riqueza
+É importante controlar a riqueza do grupo. Per -
+sonagens com dinheiro demais para seu nível terão 
+acesso a itens que não deveriam ter, tornando os 
+desafios fáceis. Da mesma forma, um grupo muito 
+pobre terá dificuldade para sobreviver!
+A tabela ao lado apresenta o tesouro médio que 
+o grupo deve receber a cada cena com uma ameaça. 
+A palavra-chave é “médio” — os personagens não 
+precisam ganhar esse valor exato. Mas, se passarem 
+por muitas cenas sem tesouro, faça com que recebam 
+esse valor em outra ocasião (como visto em “Tesou-
+ro em Outras Situações”). Por outro lado, se estão 
+muito ricos, devem passar por uma série de cenas 
+sem tesouro, até a situação se normalizar. Um grupo 
+de quatro personagens deve vencer quatro ameaças 
+de ND igual ao seu nível para subir para o próximo. 
+Assim, ao longo de cada nível, um grupo deve con -
+quistar quatro vezes o valor na tabela.
+Outra maneira de garantir que o grupo tenha 
+riqueza apropriada é comparar seu nível e riqueza 
+com a Tabela 3-1: Dinheiro Inicial. Um perso-
+nagem de 10º nível, por exemplo, deve ter posses que 
+somam perto de T$ 13.000. Se tiver muito mais ou 
+muito menos, algo está errado e precisa ser ajustado.
+Tabela 8-5: Itens Superiores
+d% Armas d% Armaduras/Escudos d% Esotéricos
+01-10 Atroz1 01-15 Ajustada 01-04 Banhado a ouro
+11-13 Banhada a ouro 16-19 Banhada a ouro 05-19 Canalizador
+14-23 Certeira 20-23 Cravejada de gemas 20-23 Cravejado de gemas
+24-26 Cravejada de gemas 24-28 Delicada 24-27 Discreto
+27-36 Cruel 29-32 Discreta 28-42 Energético
+37-39 Discreta 33-37 Espinhos 43-57 Harmonizado
+40-44 Equilibrada 38-40 Macabra 58-60 Macabro
+45-48 Harmonizada 41-50 Material especial2 61-69 Material especial2
+49-53 Injeção alquímica 51-55 Polida 70-85 Poderoso
+54-55 Macabra 56-80 Reforçada 86-100 Vigilante
+56-65 Maciça 81-90 Selada
+66-75 Material especial2 91-100 Sob medida1
+76-80 Mira telescópica 1Conta como duas melhorias. Se o item só possuir uma, role novamente.
+81-90 Precisa 2Role 1d6 para definir o material: 1) aço-rubi, 2) adamante, 
+3) gelo eterno, 4) madeira Tollon, 5) matéria vermelha, 6) mitral.91-100 Pungente1
+Tabela 8-6: 
+Tesouro Médio por Cena
+Nível Tesouro Nível Tesouro
+1º T$ 300 11º T$ 8.000
+2º T$ 300 12º T$ 9.000
+3º T$ 400 13º T$ 13.000
+4º T$ 1.000 14º T$ 17.000
+5º T$ 1.000 15º T$ 22.000
+6º T$ 2.000 16º T$ 22.000
+7º T$ 2.000 17º T$ 40.000
+8º T$ 3.000 18º T$ 50.000
+9º T$ 3.000 19º T$ 60.000
+10º T$ 6.000 20º T$ 72.000
+332
+Juliana Martins jsmartins31@gmail.com

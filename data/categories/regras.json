@@ -1,0 +1,234 @@
+[
+  {
+    "id": "regra-acao-padrao",
+    "name": "Ação Padrão",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Tipos de Ações",
+    "summary": "Uma ação padrão representa a coisa mais importante que você faz em seu turno. Atacar com uma arma ou lançar uma magia comum são os...",
+    "description": "Uma ação padrão representa a coisa mais importante que você faz em seu turno. Atacar com uma arma ou lançar uma magia comum são os exemplos mais típicos de ações padrão.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "ação",
+      "ação padrão",
+      "turno"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acao-de-movimento",
+    "name": "Ação de Movimento",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Tipos de Ações",
+    "summary": "Uma ação de movimento representa deslocamento físico ou manipulação rápida de objetos. Exemplos: andar até o seu deslocamento, sac...",
+    "description": "Uma ação de movimento representa deslocamento físico ou manipulação rápida de objetos. Exemplos: andar até o seu deslocamento, sacar ou guardar uma arma, levantar-se do chão, abrir uma porta não trancada.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "ação",
+      "movimento",
+      "deslocamento",
+      "sacar arma"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acao-completa",
+    "name": "Ação Completa",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Tipos de Ações",
+    "summary": "Uma ação completa consome todo o seu esforço e tempo do turno. Se fizer uma ação completa, você não pode fazer nenhuma ação padrão...",
+    "description": "Uma ação completa consome todo o seu esforço e tempo do turno. Se fizer uma ação completa, você não pode fazer nenhuma ação padrão nem de movimento. Exemplos: Investida, Golpe de Misericórdia, Correr.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "ação",
+      "ação completa",
+      "investida",
+      "correr"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acao-livre",
+    "name": "Ação Livre",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Tipos de Ações",
+    "summary": "Ações livres consomem pouquíssimo tempo e esforço. Você pode realizar qualquer quantidade razoável de ações livres por turno, a cr...",
+    "description": "Ações livres consomem pouquíssimo tempo e esforço. Você pode realizar qualquer quantidade razoável de ações livres por turno, a critério do mestre. Exemplos: falar uma frase curta, soltar um item empunhado.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "ação",
+      "ação livre"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-reacao",
+    "name": "Reação",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Tipos de Ações",
+    "summary": "Uma reação é uma resposta instantânea a um gatilho específico, que pode acontecer fora do seu turno. Você só pode reagir se não es...",
+    "description": "Uma reação é uma resposta instantânea a um gatilho específico, que pode acontecer fora do seu turno. Você só pode reagir se não estiver indefeso ou sob efeito que impeça ações. Exemplos: teste de Reflexos contra uma bola de fogo, teste de Percepção contra Furtividade.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "ação",
+      "reação",
+      "resposta"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-investida",
+    "name": "Investida",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Ações Completas",
+    "summary": "Você avança até o dobro de seu deslocamento em linha reta e faz um ataque corpo a corpo no final do movimento. Você recebe +2 no t...",
+    "description": "Você avança até o dobro de seu deslocamento em linha reta e faz um ataque corpo a corpo no final do movimento. Você recebe +2 no teste de ataque, mas sofre –2 na Defesa até o início do seu próximo turno.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "investida",
+      "ação completa",
+      "ataque corpo a corpo"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-golpe-de-misericordia",
+    "name": "Golpe de Misericórdia",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Ações Completas",
+    "summary": "Você desfere um golpe letal contra um alvo indefeso adjacente. Como uma ação completa, você acerta automaticamente e causa um acer...",
+    "description": "Você desfere um golpe letal contra um alvo indefeso adjacente. Como uma ação completa, você acerta automaticamente e causa um acerto crítico automático. O alvo deve fazer um teste de Fortitude (CD 10 + dano sofrido) ou morre imediatamente.",
+    "relatedIds": [
+      "condicao-indefeso"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo: Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "combate",
+      "golpe de misericórdia",
+      "indefeso",
+      "morte",
+      "crítico"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acumulo-de-bonus",
+    "name": "Acúmulo de Bônus e Efeitos",
+    "category": "regra",
+    "chapter": "Regras do Jogo",
+    "subchapter": "Benefícios e Penalidades",
+    "summary": "Bônus de mesma fonte (duas magias, dois itens com o mesmo encanto, ou a mesma habilidade usada duas vezes) NÃO se acumulam — apliq...",
+    "description": "Bônus de mesma fonte (duas magias, dois itens com o mesmo encanto, ou a mesma habilidade usada duas vezes) NÃO se acumulam — aplique apenas o maior. Bônus de tipos e fontes diferentes (um item, uma magia e uma habilidade de classe) se acumulam normalmente. Penalidades sempre se acumulam, a menos que venham da mesma condição ou efeito idêntico.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 226,
+        "section": "Capítulo: Regras do Jogo",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "regras",
+      "acúmulo",
+      "bônus",
+      "magias",
+      "itens"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-descanso",
+    "name": "Descanso e Recuperação",
+    "category": "regra",
+    "chapter": "Jogando",
+    "subchapter": "Recuperação",
+    "summary": "Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM). Condições de descanso: 1) Ruim (acampamento ex...",
+    "description": "Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM). Condições de descanso: 1) Ruim (acampamento exposto): PV e PM = nível; 2) Normal (estalagem comum, barraca confortável): PV e PM = dobro do nível; 3) Confortável (quarto de luxo, mansão): PV e PM = triplo do nível; 4) Luxuoso (palácio): PV e PM = quatro vezes o nível.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 224,
+        "section": "Capítulo: Jogando",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "descanso",
+      "recuperação",
+      "pv",
+      "pm",
+      "cura",
+      "estalagem"
+    ],
+    "subcategory": "Combate"
+  }
+]

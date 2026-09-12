@@ -1,0 +1,335 @@
+
+========================= Ameacas Tabela 3-1 Armas e 3-2 Armaduras =========================
+
+--- PDF Page 395 ---
+394
+rebites e/ou cravos. É uma arma versátil, fornecendo 
++2 em testes para derrubar ou empurrar. 
+Traque. Esta arma, feita com sucata e materiais 
+de segunda mão, é suscetível a falhar nos piores mo-
+mentos. Se errar um ataque com um resul tado ímpar 
+no d20, ela é avariada. Recarregá-la é uma ação padrão.
+Zarabatana. Pequeno tubo oco usado para 
+disparar dardos. Causa dano mínimo, mas é excelente 
+para inocular venenos; a CD para resistir ao veneno 
+dos dardos aumenta em +2. Um pacote de munição 
+contém 20 dardos, custa T$ 2 e ocupa 0,5 espaço. 
+Tabela 3-1: Novas Armas
+Armas Simples Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Porrete T$ 2 1d6 x2 — Impacto 1
+Ataque à Distância - Uma Mão
+Zarabatana T$ 5 1d3 x2 Curto Perfuração 1
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Neko-te T$ 10 1d4 19 — Corte 1
+Corpo a Corpo - Uma Mão
+Gládio T$ 12 1d6 19/x3 — Perfuração 1
+Corpo a Corpo - Duas Mãos
+Tetsubo T$ 20 1d10 X2 — Impacto 2
+Armas de Fogo* Preço Dano Crítico Alcance Tipo Espaços
+Ataque à Distância - Leve
+Traque T$ 75 2d6 19/x3 Curto Perfuração 1
+Ataque à Distância - Duas Mãos
+Arcabuz T$ 800 2d10 19/x3 Médio Perfuração 2
+Bacamarte T$ 450 4d6 19/x3 Especial Perfuração 2
+Armas Exóticas Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Uma Mão
+Açoite finntroll T$ 30 1d8 x2 — Corte 1
+Espada vespa T$ 75 2d4 18 — Corte ou Perfuração 1
+Pistola-punhal T$300 ** ** ** Perfuração 1
+Mordida do diabo T$ 30 1d4 x2 — Perfuração 1
+Presa de serpente T$ 1.000 1d8 17 — Corte 1
+Corpo a Corpo - Duas Mãos
+Lança de fogo T$ 1.000 ** ** ** Perfuração 2
+Ataque à Distância - Leve
+Shuriken T$ 1 1d4 x2 Curto Perfuração 0,5
+Ataque à Distância - Uma Mão
+Arpão T$ 30 1d10 x3 Curto Perfuração 1
+*Todas as armas de fogo usam balas (veja Tormenta20, p. 151) como munição.
+**Veja descrição da arma.
+não pode receber a melhoria material especial e exige 
+treinamento especial para ser empunhada sem quebrar, 
+por isso é uma arma exótica. É uma arma ágil. 
+Shuriken. Pequenos projéteis metálicos para 
+arremesso, em forma de estrelas ou dardos. Uma vez 
+por rodada, quando ataca com uma shuriken, você pode 
+gastar 1 PM para fazer um ataque adicional de shuriken 
+contra o mesmo alvo. Se tiver Arremesso Múltiplo, em 
+vez disso você não paga PM para usar esse poder. 
+Tetsubo. Uma versão mais pesada e sofisticada 
+do tacape, geralmente reforçado com anéis metálicos, 
+
+--- PDF Page 396 ---
+395
+Armadura de Ossos.  Os nezumi e outros 
+povos são conhecidos por produzir estas armaduras 
+sinistras. Combinando um aspecto assustador e 
+ener gias negativas de ossadas, esta armadura fornece 
++1 em Intimidação e na CD de seus efeitos de medo 
+(cumulativo com a melhoria macabra).
+Armadura de Quitina. Feita com carapaças 
+selecionadas de grandes insetos, esta armadura dos 
+povos-trovão é mais leve que suas contrapartes me-
+tálicas. Embora seja uma armadura pesada, não reduz 
+o deslocamento do usuário.
+Escudo de Couro. Por sua leveza, este escudo é 
+popular entre velocis e ubaneri. É feito com uma arma-
+ção de madeira esticando uma membrana de couro (ou 
+outro material flexível) e amarrado ao braço, impedindo 
+o uso dessa mão. Contra ataques à distância, o bônus 
+na Defesa do escudo aumenta em +2. Entretanto, ele 
+é muito leve para ser usado como arma.
+Veste de Teia de Aranha. Feita com teia de 
+aranha gigante, esta veste é cinza-escura, maleável e 
+silenciosa, mas também forte como aço. Fornece +5 
+em Furtividade, mas não pode receber a melhoria 
+material especial.
+Armaduras e Escudos
+Armadura de Ossos
+Veste de Teia de Aranha
+Escudos de Couro
+Armadura de Quitina
+Tabela 3-2: Novas Armaduras e Escudos
+Armaduras Leves Preço Defesa Penalidade Espaços
+Armadura de ossos T$ 120 +3 -2 2
+Veste de teia de aranha T$ 3.000 +4 0 2
+Armaduras Pesadas Preço Defesa Penalidade Espaços
+Armadura de quitina T$ 350 +7 -3 5
+Escudos Preço Defesa Penalidade Espaços
+Escudo de couro T$ 3 +1 -1 1
+
+========================= Ameacas Tabela 3-3 Itens Gerais =========================
+
+--- PDF Page 399 ---
+398
+Item Preço Espaços Item Preço Espaços
+Alimentação Alquímicos - Preparados
+Algravia T$ 3 — Bálsamo de drogadora T$ 60 0,5
+Banquete de canceronte T$ 36 — Bomba de fumaça T$ 15 0,5
+Coc-au-triz T$ 54 — Elixir quimérico T$ 120 0,5
+Cozido de serpe T$ 12 — Éter elemental T$ 60 0,5
+Gorlogg ensopado T$ 6 — Isca putrefata T$ 60 0,5
+Omelete monstruosa T$ 3 — Lágrima pétrea T$ 30 0,5
+Sashimi de kraken T$ 60 — Óleo de baleia T$ 30 0,5
+Animais Óleo de besouro T$ 50 0,5
+Bulette T$ 500 — Pó azul T$ 150 0,5
+Capivara T$ 60 — Alquímicos - Catalisadores
+Corcel do deserto T$ 150 — Corrosivo mineral T$ 150 0,5
+Dromedário T$ 75 — Gelo extremo T$ 150 0,5
+Elefante T$ 1.500 — Pedaço de língua T$ 30 0,5
+Hiena T$ 220 — Raio cristalizado T$ 150 0,5
+Leão T$ 800 — Alquímicos - Venenos
+Rinoceronte T$ 600 — Esporos de cogumelo T$ 75 0,5
+Urso pardo T$ 300 — Peçonha anciã T$ 1.800 0,5
+Equipamento de Aventura Peçonha irritante T$ 10 0,5
+Caixa de voz T$ 50 1 Veneno batráquio T$ 30 0,5
+Corda de teia T$ 100 1 Vestuário
+Dente de wisphago T$ 100 1 Garra feroz T$ 60 1
+Esotéricos Manto do mantor T$ 450 1
+Ankh solar T$ 450 1 Manto pesado T$ 10 1
+Tomo de guerra T$ 300 1 Sombreiro T$ 10 1
+Tomo do rancor T$ 750 1 Traje selako T$ 90 1
+Tabela 3-3: Novos Itens Gerais
+Gorlogg Ensopado. Criado nas cozinhas de 
+Yuvalin por Rizzelena, chef élfica de grande talento, este 
+é um ensopado altamente nutritivo. Em sua próxima 
+noite de sono, você aumenta a sua recuperação de PV 
+e PM em +1 por nível.
+Omelete Monstruosa. Dizem que este prato 
+foi inventado por aventureiros presos em uma ca-
+verna cheia de ovos. Desde então, tornou-se popular 
+entre aqueles de baixa seletividade alimentar, ou 
+muita coragem. É feita com ovos de qualquer praga 
+monstruosa, mas variações mais refinadas usam 
+ovos de corcel de Kally e outras feras dracônicas 
+menores. Você recebe +2 em rolagens de dano e 
+–2 em testes de perícias baseadas em Sabedoria, 
+cumulativo com outros itens. Se feita com ovos de 
+dragão, muda para +5 e –5. E garante que você será 
+caçado por uma mamãe dragoa furiosa…
+Sashimi de Kraken.  Esta iguaria exótica foi 
+criada pelos maiores chefs de Tamu-ra. Você recebe 
++2 em Diplomacia, cumulativo com outros itens, e 5 
+PM temporários. Dificilmente encontrada em cidades 
+longe do mar.
+
+--- PDF Page 400 ---
+399
+Animais
+Estes animais são raros, restritos a povos ou 
+regiões específicas, mas podem ocasionalmente ser 
+encontrados à venda. Todos são parceiros iniciantes.
+Bulette. Temperamental e feroz, esta fera pode 
+ser adquirida de mercadores na Grande Savana, no 
+Deserto da Perdição ou em Doherimm — em outros 
+lugares, atinge o dobro do preço. Pode ser usado 
+como um parceiro montaria.
+Capivara. Simpática, amistosa e dotada de longos 
+e afiados dentes, a capivara é muito apreciada por 
+ginetes Pequenos como hynne e goblins. Pode ser 
+usado como um parceiro montaria por personagens 
+Pequenos e Minúsculos.
+Corcel do Deserto. Tipo de cavalo insetoide 
+encontrado na Grande Savana e no Deserto da Perdição. 
+Pode ser usado como um parceiro montaria.
+Dromedário. Disponível em regiões áridas ou 
+montanhosas, pode ser um parceiro montaria.
+Elefante. Grande demais para ambientes 
+urbanos, é empregado como animal de trabalho em 
+áreas abertas, como fazendas e áreas de mineração. 
+Pode ser usado como um parceiro montaria.
+Hiena. Embora sejam mais comuns entre gnolls, 
+hienas podem ocasionalmente ser domesticadas por 
+outros povos. Uma hiena pode ser usada como um 
+parceiro especial (veja p. 119) por personagens treina-
+dos em Adestramento, ou montaria por personagens 
+Pequenos e Minúsculos.
+Leão. Considerado símbolo de nobreza e força, 
+o majestoso leão pode ser treinado para aceitar um 
+cavaleiro, sendo usado como um parceiro montaria.
+Rinoceronte. Eram animais de gado dos anões 
+quando estes ainda viviam na superfície; hoje são 
+selvagens e perigosos, de difícil domesticação. Podem 
+ser usados como parceiros montaria, mas raramente 
+são encontrados à venda.
+Urso Pardo. Este robusto predador pode ser en-
+contrado em várias regiões de Arton. Ainda que incomum, 
+pode ser empregado como um parceiro montaria.
+Itens Superiores
+Novas Melhorias
+Multifuncional (ferramenta ou ves -
+tuário). Esta melhoria só pode ser aplicada em um 
+item que modifica uma perícia (fornecendo bônus ou 
+reduzindo penalidade). Escolha outra perícia que usa 
+o mesmo atributo-chave; o item passa a funcionar 
+também para a segunda perícia escolhida (mas não 
+se aplica a testes de ataque).
+Penetrante (arma). A arma ignora 5 pontos 
+da redução de dano. Pré-requisito: cruel.
+Materiais Especiais
+Casco de Monstro
+Os cascos protetores de certos monstros podem 
+substituir aço e outros materiais rígidos, embora 
+sejam mais frágeis; ao sofrer dano de impacto, um 
+item mundano feito de casco de monstro sofre 1 ponto 
+a mais por dado de dano.
+Arma. Conta como uma arma primitiva para a 
+magia Armamento da Natureza e efeitos semelhantes.
+Armadura e Escudo. Têm sua penalidade de 
+armadura diminuída em 1. Armaduras pesadas de 
+casco permitem aplicar 1 ponto de Destreza na Defesa.
+Esotérico.  Quando lança uma magia, você 
+recebe redução de dano 5 contra o próximo dano que 
+sofrer até sua próxima rodada.
+Couraça de Kaiju
+Ainda mais raro que couro dracônico, este material 
+pode ser empregado para fabricar itens superiores de 
+grande poder. Jamais encontrado à venda, sendo obtido 
+apenas a partir de um kaiju abatido.
+Arma (exige uma peça). O dano aumenta um 
+passo. Além disso, quando faz um ataque, se o alvo 
+usar um efeito que reduz o dano desse ataque (como 
+Durão ou Escamas Supremas), você pode gastar 2 PM 
+para ignorar o efeito. Isso não se aplica a RD.
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): RD 10/mágico. Armadura pesada 
+(exige três peças): RD 20/mágico.
+Esotérico (exige uma peça). Quando lança 
+uma magia que causa dano, você pode gastar 2 PM para 
+ignorar efeitos dos alvos que reduzem o dano dessa magia, 
+como Durão ou Evasão (exceto redução de dano e o 
+efeito de passar no teste de resistência contra a magia).
+Couro de Bulette
+Este couro raramente é encontrado à venda; 
+quando não é curtido e tratado logo após a extração, 
+perde suas qualidades especiais.
+Armadura. Armadura leve (exige uma peça): fornece 
+deslocamento de escavação igual à metade de seu deslo-
+camento normal e redução de ácido 5. Armadura pesada 
+(exige três peças): como acima, mas a redução de ácido é 10.
+
+========================= Ameacas Tabela 3-4 Materiais =========================
+
+--- PDF Page 401 ---
+400
+Esotérico (exige uma peça). Quando lança 
+uma magia de ácido que causa dano, você pode rolar 
+novamente qualquer resultado 1 nas rolagens de dano 
+(mesmo em rodadas subsequentes).
+Cristal de Sol
+Utilizados pelos ursos das neves para armazenar 
+calor, estes cristais perdem suas propriedades em 
+algumas semanas quando não utilizados, tornando 
+difícil encontrá-los à venda.
+Arma (exige uma peça). Só pode ser aplicado 
+a armas de corte ou perfuração. A arma causa +2 
+pontos de dano por fogo.
+Armadura e Escudo (exige uma peça).  
+Quando faz um teste de resistência contra um efeito 
+de frio, você pode rolar dois dados e usar o melhor 
+resultado.
+Esotérico (exige uma peça). Quando lança 
+uma magia de fogo, você pode gastar 1 PM. Se fizer 
+isso, criaturas que falhem em seu teste de resistência 
+contra a magia ficam em chamas (se a magia já deixa 
+a vítima em chamas, em vez disso o dano das chamas 
+aumenta em +1d6 cumulativo).
+Lanajuste
+Também chamado de coral-de-ferro, é encontrado 
+em paredões afiados banhados pelo mar em Khubar. 
+Mais conhecido por seu uso em lâminas afiadas, o 
+lanajuste também é empregado em outros itens.
+Arma. Ataques com a arma ignoram penalidades 
+por combate submerso. Além disso, pode ser utilizada 
+por devotos do Oceano sem violar suas obrigações 
+e restrições.
+Armadura e Escudo. Fornece redução de corte: 
+armaduras leves e escudos, redução 5; armaduras 
+pesadas, redução 10.
+Esotérico. Quando lança uma magia que causa 
+dano de corte, você pode rolar novamente qualquer 
+resultado 1 na rolagem de dano.
+Pena de Kraken
+Esse material vítreo extraído da concha interna de 
+um kraken é extremamente afiado. Em seu estado bruto, 
+é quebradiço e difícil de transportar sem equipamento 
+adequado, sendo assim raramente encontrado à venda.
+Arma (exige uma peça). Quando faz um acerto 
+crítico, o dano aumenta dois passos (antes de ser 
+multiplicado).
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): quando uma criatura erra um ataque 
+corpo a corpo contra você, perde 5 pontos de vida. 
+Armadura pesada (exige três peças): quando uma criatura 
+erra um ataque corpo a corpo contra você, perde 10 
+pontos de vida.
+Esotérico (exige uma peça). Se o item 
+fornece algum bônus numérico, ele aumenta em +1. 
+Pr ata
+Embora seja muito maleável, a prata pode ser 
+usada para revestir objetos e conceder propriedades 
+quase mágicas. Por ser usada como revestimento, prata 
+pode ser combinada com um segundo material especial 
+(cada um contando como uma melhoria separada).
+Arma. Causa +2 pontos de dano em espíritos 
+e mortos-vivos e é considerada mágica para atacar 
+essas criaturas.
+Armadura e Escudo. Fornece redução de dano 
+causado por espíritos e mortos-vivos: armaduras leves 
+e escudos, RD 5; armaduras pesadas, RD 10.
+Tabela 3-4: Novos Materiais Especiais
+Material* Arma Armadura Leve Armadura Pesada Escudo Esotérico
+Casco de monstro +T$ 750 +T$ 750 + T$ 6.000 +T$ 750 +T$ 6.000
+Lanajuste +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 +T$ 3.000
+Prata +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 + T$ 400
+* Materiais não listados são raros e não são encontrados à venda.
+Espada de Coral
+Fabricada com uma técnica secreta mantida 
+pela Irmandade dos Pescadores, uma espada 
+de coral é uma cimitarra feita de lanajuste. 
+Além dos benefícios do material especial, ela 
+tem fio extremamente agudo; em um acerto 
+crítico, deixa a vítima sangrando. Quando 
+aplicado desta forma, este material especial 
+custa +T$ 1.800 (em vez de T$ 600).

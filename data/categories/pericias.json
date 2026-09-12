@@ -1,0 +1,713 @@
+[
+  {
+    "id": "pericia-acrobacia",
+    "name": "Acrobacia",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": true,
+    "summary": "[DES] Penalidade de Armadura. Você consegue fazer proezas acrobáticas como equilíbrio, amortecer queda, escapar de amarras e passar por espa...",
+    "description": "Você consegue fazer proezas acrobáticas como equilíbrio, amortecer queda, escapar de amarras e passar por espaço apertado.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 120,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "acrobacia",
+      "des",
+      "penalidade de armadura"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-adestramento",
+    "name": "Adestramento",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[CAR] Treinada. Você sabe cuidar de animais e monstros irracionais, ensinando truques, acalmando feras e manejando montarias....",
+    "description": "Você sabe cuidar de animais e monstros irracionais, ensinando truques, acalmando feras e manejando montarias.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 120,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "adestramento",
+      "car",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-atletismo",
+    "name": "Atletismo",
+    "category": "pericia",
+    "keyAttribute": "FOR",
+    "onlyTrained": false,
+    "armorPenalty": true,
+    "summary": "[FOR] Penalidade de Armadura. Você usa sua força física para correr, escalar, nadar e saltar grandes distâncias ou alturas....",
+    "description": "Você usa sua força física para correr, escalar, nadar e saltar grandes distâncias ou alturas.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 120,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "atletismo",
+      "for",
+      "penalidade de armadura"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-atuacao",
+    "name": "Atuação",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[CAR] Treinada. Você sabe cantar, dançar, atuar, contar histórias e entreter plateias, além de impressionar nobres....",
+    "description": "Você sabe cantar, dançar, atuar, contar histórias e entreter plateias, além de impressionar nobres.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 121,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "atuação",
+      "car",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-cavalgar",
+    "name": "Cavalgar",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[DES] Você sabe conduzir montarias comuns como cavalos, trobos e grifos, inclusive durante o combate montado....",
+    "description": "Você sabe conduzir montarias comuns como cavalos, trobos e grifos, inclusive durante o combate montado.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 121,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "cavalgar",
+      "des"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-conhecimento",
+    "name": "Conhecimento",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[INT] Treinada. Você possui saber acadêmico sobre história, lendas, geografia, ciências naturais e culturas de Arton....",
+    "description": "Você possui saber acadêmico sobre história, lendas, geografia, ciências naturais e culturas de Arton.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 122,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "conhecimento",
+      "int",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-cura",
+    "name": "Cura",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[SAB] Você sabe tratar ferimentos, estabilizar moribundos, cuidar de doentes e prestar primeiros socorros....",
+    "description": "Você sabe tratar ferimentos, estabilizar moribundos, cuidar de doentes e prestar primeiros socorros.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 122,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "cura",
+      "sab"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-diplomacia",
+    "name": "Diplomacia",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[CAR] Você persuade pessoas com argumentos racionais, etiqueta, negociação de preços e resolução de conflitos....",
+    "description": "Você persuade pessoas com argumentos racionais, etiqueta, negociação de preços e resolução de conflitos.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 123,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "diplomacia",
+      "car"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-enganacao",
+    "name": "Enganação",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[CAR] Você mente com convicção, disfarça-se, forja documentos, cria distrações e realiza a manobra Fintar....",
+    "description": "Você mente com convicção, disfarça-se, forja documentos, cria distrações e realiza a manobra Fintar.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 123,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "enganação",
+      "car"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-fortitude",
+    "name": "Fortitude",
+    "category": "pericia",
+    "keyAttribute": "CON",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[CON] Sua resistência física contra venenos, doenças, fadiga, privação de ar e magias de morte ou vigor....",
+    "description": "Sua resistência física contra venenos, doenças, fadiga, privação de ar e magias de morte ou vigor.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 124,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "fortitude",
+      "con"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-furtividade",
+    "name": "Furtividade",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": true,
+    "summary": "[DES] Penalidade de Armadura. Você se esgueira nas sombras, move-se silenciosamente e oculta-se dos sentidos alheios....",
+    "description": "Você se esgueira nas sombras, move-se silenciosamente e oculta-se dos sentidos alheios.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 124,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "furtividade",
+      "des",
+      "penalidade de armadura"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-guerra",
+    "name": "Guerra",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[INT] Treinada. Você entende de táticas militares, logística, cerco, reconhecimento de terreno e liderança marcial em combate....",
+    "description": "Você entende de táticas militares, logística, cerco, reconhecimento de terreno e liderança marcial em combate.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 124,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "guerra",
+      "int",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-iniciativa",
+    "name": "Iniciativa",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[DES] Sua velocidade de reação ao perigo no começo de combates e cenas de ação....",
+    "description": "Sua velocidade de reação ao perigo no começo de combates e cenas de ação.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 125,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "iniciativa",
+      "des"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-intimidacao",
+    "name": "Intimidação",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[CAR] Você coage outros pelo medo, presença física ameaçadora ou violência psicológica para obter cooperação ou desm...",
+    "description": "Você coage outros pelo medo, presença física ameaçadora ou violência psicológica para obter cooperação ou desmoralizar inimigos.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 125,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "intimidação",
+      "car"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-intuicao",
+    "name": "Intuição",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[SAB] Você percebe segundas intenções, lê linguagem corporal, detecta mentiras e prevê reações instintivas....",
+    "description": "Você percebe segundas intenções, lê linguagem corporal, detecta mentiras e prevê reações instintivas.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 125,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "intuição",
+      "sab"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-investigacao",
+    "name": "Investigação",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[INT] Você busca pistas, vasculha cenas de crime, decifra enigmas e reúne informações em vilas e cidades....",
+    "description": "Você busca pistas, vasculha cenas de crime, decifra enigmas e reúne informações em vilas e cidades.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 126,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "investigação",
+      "int"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-jogatina",
+    "name": "Jogatina",
+    "category": "pericia",
+    "keyAttribute": "CAR",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[CAR] Treinada. Você conhece regras de jogos de azar, calcula probabilidades, trapaceia e percebe trapaças alheias....",
+    "description": "Você conhece regras de jogos de azar, calcula probabilidades, trapaceia e percebe trapaças alheias.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 126,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "jogatina",
+      "car",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-ladinagem",
+    "name": "Ladinagem",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": true,
+    "armorPenalty": true,
+    "summary": "[DES] Treinada. Penalidade de Armadura. Você bate carteiras, abre fechaduras com gazuas, desarma armadilhas e sabota mecanismos....",
+    "description": "Você bate carteiras, abre fechaduras com gazuas, desarma armadilhas e sabota mecanismos.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 126,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "ladinagem",
+      "des",
+      "treinada",
+      "penalidade de armadura"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-luta",
+    "name": "Luta",
+    "category": "pericia",
+    "keyAttribute": "FOR",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[FOR] Sua perícia em combate corpo a corpo (com armas marciais, armas simples ou desarmado) e para realizar e resist...",
+    "description": "Sua perícia em combate corpo a corpo (com armas marciais, armas simples ou desarmado) e para realizar e resistir a Manobras de Combate.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 127,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "luta",
+      "for"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-misticismo",
+    "name": "Misticismo",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[INT] Treinada. Você compreende a teoria mágica, identifica magias lançadas, analisa itens arcanos e lida com fenômenos sobren...",
+    "description": "Você compreende a teoria mágica, identifica magias lançadas, analisa itens arcanos e lida com fenômenos sobrenaturais.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 127,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "misticismo",
+      "int",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-nobreza",
+    "name": "Nobreza",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[INT] Treinada. Você conhece a heráldica, genealogia, leis, etiqueta da alta corte e a política das nações do Reinado....",
+    "description": "Você conhece a heráldica, genealogia, leis, etiqueta da alta corte e a política das nações do Reinado.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 128,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "nobreza",
+      "int",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-oficio",
+    "name": "Ofício",
+    "category": "pericia",
+    "keyAttribute": "INT",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[INT] Treinada. Você sabe fabricar, avaliar e consertar itens de uma profissão específica (ex: Alquimia, Armaria, Culinária, E...",
+    "description": "Você sabe fabricar, avaliar e consertar itens de uma profissão específica (ex: Alquimia, Armaria, Culinária, Engenharia).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 128,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "ofício",
+      "int",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-percepcao",
+    "name": "Percepção",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[SAB] Sua acuidade sensorial para notar criaturas escondidas, ouvir ruídos distantes e avistar perigos....",
+    "description": "Sua acuidade sensorial para notar criaturas escondidas, ouvir ruídos distantes e avistar perigos.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 128,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "percepção",
+      "sab"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-pilotagem",
+    "name": "Pilotagem",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[DES] Treinada. Você sabe conduzir veículos terrestres, aquáticos ou aéreos (como carruagens, navios e balões de ar quente)....",
+    "description": "Você sabe conduzir veículos terrestres, aquáticos ou aéreos (como carruagens, navios e balões de ar quente).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 129,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "pilotagem",
+      "des",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-pontaria",
+    "name": "Pontaria",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[DES] Sua habilidade em ataques à distância (arcos, bestas, armas de fogo e arremesso)....",
+    "description": "Sua habilidade em ataques à distância (arcos, bestas, armas de fogo e arremesso).",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 129,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "pontaria",
+      "des"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-reflexos",
+    "name": "Reflexos",
+    "category": "pericia",
+    "keyAttribute": "DES",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[DES] Sua agilidade para esquivar de explosões, armadilhas de mola, desabamentos e magias de área....",
+    "description": "Sua agilidade para esquivar de explosões, armadilhas de mola, desabamentos e magias de área.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 129,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "reflexos",
+      "des"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-religiao",
+    "name": "Religião",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": true,
+    "armorPenalty": false,
+    "summary": "[SAB] Treinada. Você conhece os dogmas do Panteão, ritos sagrados, símbolos divinos e a hierarquia eclesiástica de Arton....",
+    "description": "Você conhece os dogmas do Panteão, ritos sagrados, símbolos divinos e a hierarquia eclesiástica de Arton.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 129,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "religião",
+      "sab",
+      "treinada"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-sobrevivência",
+    "name": "Sobrevivência",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[SAB] Você sabe rastrear presas, forragear comida e água, orientar-se no ermo e prever o clima....",
+    "description": "Você sabe rastrear presas, forragear comida e água, orientar-se no ermo e prever o clima.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 130,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "sobrevivência",
+      "sab"
+    ],
+    "subcategory": "Perícias Gerais"
+  },
+  {
+    "id": "pericia-vontade",
+    "name": "Vontade",
+    "category": "pericia",
+    "keyAttribute": "SAB",
+    "onlyTrained": false,
+    "armorPenalty": false,
+    "summary": "[SAB] Sua força de vontade e sanidade contra efeitos mentais, ilusões, fascínio, possessões e magias psíquicas....",
+    "description": "Sua força de vontade e sanidade contra efeitos mentais, ilusões, fascínio, possessões e magias psíquicas.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 130,
+        "section": "Capítulo 2: Perícias & Poderes",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "perícia",
+      "vontade",
+      "sab"
+    ],
+    "subcategory": "Perícias Gerais"
+  }
+]

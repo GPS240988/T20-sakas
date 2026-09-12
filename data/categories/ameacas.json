@@ -1,0 +1,398 @@
+[
+  {
+    "id": "ameaca-goblin-salteador",
+    "name": "Goblin Salteador",
+    "category": "ameaca",
+    "subcategory": "Ameaça Lacaio",
+    "threatLevel": "ND 1/4",
+    "threatLevelNumeric": 0.25,
+    "creatureType": "Humanoide (Goblin) 1",
+    "size": "Pequeno",
+    "role": "Lacaio",
+    "initiative": 3,
+    "perception": 1,
+    "defense": 14,
+    "fortitude": 1,
+    "reflexes": 4,
+    "will": 0,
+    "hp": 6,
+    "mp": 0,
+    "speed": "9m",
+    "attacks": [
+      {
+        "name": "Adaga",
+        "type": "Padrão",
+        "description": "Corpo a corpo +4 (1d4+1, 19/x2)."
+      },
+      {
+        "name": "Arco Curto",
+        "type": "Padrão",
+        "description": "À distância +4 (1d6, x3, alcance médio)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Rato das Sombras",
+        "type": "Passiva",
+        "description": "Não sofre penalidade em testes de Furtividade por se mover no deslocamento normal."
+      }
+    ],
+    "attributes": {
+      "for": 10,
+      "des": 15,
+      "con": 12,
+      "int": 10,
+      "sab": 10,
+      "car": 8
+    },
+    "summary": "ND 1/4 (Humanoide (Goblin) 1). Def: 14, PV: 6. Pequenos saqueadores cruéis que emboscam caravanas e viajantes descuidados nas estradas do...",
+    "description": "Pequenos saqueadores cruéis que emboscam caravanas e viajantes descuidados nas estradas do Reinado.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 296,
+        "section": "Ameaças: Ameaça Lacaio",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "goblin salteador",
+      "nd 1/4",
+      "humanoide (goblin) 1",
+      "pequeno",
+      "lacaio"
+    ]
+  },
+  {
+    "id": "ameaca-esqueleto-guardiao",
+    "name": "Esqueleto Guardião",
+    "category": "ameaca",
+    "subcategory": "Ameaça Lacaio",
+    "threatLevel": "ND 1/2",
+    "threatLevelNumeric": 0.5,
+    "creatureType": "Morto-vivo 2",
+    "size": "Médio",
+    "role": "Lacaio",
+    "initiative": 2,
+    "perception": 0,
+    "defense": 16,
+    "fortitude": 2,
+    "reflexes": 3,
+    "will": 1,
+    "hp": 12,
+    "mp": 0,
+    "speed": "9m",
+    "attacks": [
+      {
+        "name": "Espada Curta",
+        "type": "Padrão",
+        "description": "Corpo a corpo +5 (1d6+2, 19/x2)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Resistência a Dano",
+        "type": "Passiva",
+        "description": "RD 5 a corte e perfuração (ossos secos e duros). Imunidade a frio e efeitos mentais."
+      }
+    ],
+    "attributes": {
+      "for": 14,
+      "des": 14,
+      "con": 12,
+      "int": 6,
+      "sab": 10,
+      "car": 6
+    },
+    "summary": "ND 1/2 (Morto-vivo 2). Def: 16, PV: 12. Ossadas animadas por magia profana de Tenebra que guardam tumbas e ruínas ancestrais....",
+    "description": "Ossadas animadas por magia profana de Tenebra que guardam tumbas e ruínas ancestrais.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 298,
+        "section": "Ameaças: Ameaça Lacaio",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "esqueleto guardião",
+      "nd 1/2",
+      "morto-vivo 2",
+      "médio",
+      "lacaio"
+    ]
+  },
+  {
+    "id": "ameaca-ogro-da-montanha",
+    "name": "Ogro da Montanha",
+    "category": "ameaca",
+    "subcategory": "Ameaça Solo",
+    "threatLevel": "ND 3",
+    "threatLevelNumeric": 3,
+    "creatureType": "Humanoide (Gigante) 6",
+    "size": "Grande",
+    "role": "Solo",
+    "initiative": 1,
+    "perception": 2,
+    "defense": 18,
+    "fortitude": 10,
+    "reflexes": 3,
+    "will": 2,
+    "hp": 75,
+    "mp": 0,
+    "speed": "9m",
+    "attacks": [
+      {
+        "name": "Clava Gigante",
+        "type": "Padrão",
+        "description": "Corpo a corpo +11 (2d8+8, x2, alcance 3m)."
+      },
+      {
+        "name": "Arremessar Pedra",
+        "type": "Padrão",
+        "description": "À distância +5 (1d10+8, alcance médio)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Pancada Brutal",
+        "type": "Reação",
+        "description": "Quando o ogro acerta um ataque corpo a corpo, pode fazer uma manobra Derrubar como ação livre."
+      }
+    ],
+    "attributes": {
+      "for": 22,
+      "des": 8,
+      "con": 18,
+      "int": 6,
+      "sab": 10,
+      "car": 6
+    },
+    "summary": "ND 3 (Humanoide (Gigante) 6). Def: 18, PV: 75. Brutos colossais com pele cinzenta e força descomunal que esmagam aventureiros com clavas ...",
+    "description": "Brutos colossais com pele cinzenta e força descomunal que esmagam aventureiros com clavas maciças.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 305,
+        "section": "Ameaças: Ameaça Solo",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "ogro da montanha",
+      "nd 3",
+      "humanoide (gigante) 6",
+      "grande",
+      "solo"
+    ]
+  },
+  {
+    "id": "ameaca-dragao-vermelho-adulto",
+    "name": "Dragão Vermelho Adulto",
+    "category": "ameaca",
+    "subcategory": "Ameaça Chefe",
+    "threatLevel": "ND 15",
+    "threatLevelNumeric": 15,
+    "creatureType": "Monstro (Dragão, Fogo) 20",
+    "size": "Enorme",
+    "role": "Chefe",
+    "initiative": 18,
+    "perception": 24,
+    "defense": 42,
+    "fortitude": 26,
+    "reflexes": 20,
+    "will": 22,
+    "hp": 580,
+    "mp": 60,
+    "speed": "12m, voo 24m",
+    "attacks": [
+      {
+        "name": "Mordida Flamejante",
+        "type": "Padrão",
+        "description": "Corpo a corpo +28 (3d8+18 mais 2d6 de fogo, 19/x2)."
+      },
+      {
+        "name": "Garras (2x)",
+        "type": "Padrão",
+        "description": "Corpo a corpo +26 (2d6+14, 19/x2)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Sopro Vulcânico",
+        "type": "Padrão (Custa 4 PM)",
+        "description": "Cone de 18m de chamas. Causa 14d12 pontos de dano de fogo (Reflexos CD 32 reduz à metade)."
+      },
+      {
+        "name": "Presença Aterradora",
+        "type": "Livre",
+        "description": "Inimigos em alcance médio devem passar em Vontade (CD 28) ou ficam apavorados."
+      }
+    ],
+    "attributes": {
+      "for": 32,
+      "des": 14,
+      "con": 26,
+      "int": 18,
+      "sab": 18,
+      "car": 22
+    },
+    "summary": "ND 15 (Monstro (Dragão, Fogo) 20). Def: 42, PV: 580. Os soberanos terríveis dos céus e das montanhas vulcânicas de Arton, com hálito capaz de d...",
+    "description": "Os soberanos terríveis dos céus e das montanhas vulcânicas de Arton, com hálito capaz de derreter fortalezas de ferro.",
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 318,
+        "section": "Ameaças: Ameaça Chefe",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "dragão vermelho adulto",
+      "nd 15",
+      "monstro (dragão, fogo) 20",
+      "enorme",
+      "chefe"
+    ]
+  },
+  {
+    "id": "ameaca-ushabti-da-morte",
+    "name": "Ushabti da Morte",
+    "category": "ameaca",
+    "subcategory": "Ameaça Especial",
+    "threatLevel": "ND 8",
+    "threatLevelNumeric": 8,
+    "creatureType": "Construto 12",
+    "size": "Médio",
+    "role": "Especial",
+    "initiative": 10,
+    "perception": 12,
+    "defense": 28,
+    "fortitude": 16,
+    "reflexes": 10,
+    "will": 8,
+    "hp": 180,
+    "mp": 20,
+    "speed": "9m",
+    "attacks": [
+      {
+        "name": "Khopesh Amaldiçoada",
+        "type": "Padrão",
+        "description": "Corpo a corpo +18 (1d8+12 mais 2d6 de trevas, 19/x2)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Maldição das Areias",
+        "type": "Reação",
+        "description": "Criaturas atingidas devem passar em Fortitude (CD 24) ou ficam fatigadas e envelhecidas."
+      },
+      {
+        "name": "Imunidade a Construtos",
+        "type": "Passiva",
+        "description": "Imune a venenos, doenças, sono, paralisia e acertos críticos."
+      }
+    ],
+    "attributes": {
+      "for": 24,
+      "des": 12,
+      "con": 20,
+      "int": 10,
+      "sab": 14,
+      "car": 8
+    },
+    "summary": "ND 8 (Construto 12). Def: 28, PV: 180. Estátua funerária viva esculpida em granito negro e ouro, guardiã dos segredos mortos do D...",
+    "description": "Estátua funerária viva esculpida em granito negro e ouro, guardiã dos segredos mortos do Deserto da Perdição.",
+    "sources": [
+      {
+        "book": "Ameaças de Arton",
+        "page": 138,
+        "section": "Ameaças: Ameaça Especial",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "ushabti da morte",
+      "nd 8",
+      "construto 12",
+      "médio",
+      "especial"
+    ]
+  },
+  {
+    "id": "ameaca-cria-da-tormenta-lefeu",
+    "name": "Cria da Tormenta (Lefeu)",
+    "category": "ameaca",
+    "subcategory": "Ameaça Solo",
+    "threatLevel": "ND 10",
+    "threatLevelNumeric": 10,
+    "creatureType": "Monstro (Aberração, Lefeu) 14",
+    "size": "Grande",
+    "role": "Solo",
+    "initiative": 14,
+    "perception": 16,
+    "defense": 32,
+    "fortitude": 18,
+    "reflexes": 16,
+    "will": 20,
+    "hp": 240,
+    "mp": 30,
+    "speed": "12m",
+    "attacks": [
+      {
+        "name": "Tentáculos Vermelhos (4x)",
+        "type": "Padrão",
+        "description": "Corpo a corpo +20 (1d10+10 mais corrosão da realidade, 19/x2)."
+      }
+    ],
+    "specialAbilities": [
+      {
+        "name": "Insanidade da Tempestade",
+        "type": "Passiva",
+        "description": "Qualquer criatura que olhe para a cria deve fazer um teste de Vontade (CD 26) ou sofre 2d6 de dano psíquico e fica confusa."
+      },
+      {
+        "name": "Matéria Vermelha Viva",
+        "type": "Passiva",
+        "description": "RD 10 (exceto armas de Aço-Rubi). Regeneração 10 PV por rodada."
+      }
+    ],
+    "attributes": {
+      "for": 26,
+      "des": 18,
+      "con": 22,
+      "int": 16,
+      "sab": 16,
+      "car": 6
+    },
+    "summary": "ND 10 (Monstro (Aberração, Lefeu) 14). Def: 32, PV: 240. Horror indescritível forjado na matéria corrompida da tempestade rubra, imune a venenos e ...",
+    "description": "Horror indescritível forjado na matéria corrompida da tempestade rubra, imune a venenos e com regeneração bizarra.",
+    "sources": [
+      {
+        "book": "Ameaças de Arton",
+        "page": 240,
+        "section": "Ameaças: Ameaça Solo",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "ameaça",
+      "monstro",
+      "cria da tormenta (lefeu)",
+      "nd 10",
+      "monstro (aberração, lefeu) 14",
+      "grande",
+      "solo"
+    ]
+  }
+]

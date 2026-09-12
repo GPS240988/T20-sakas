@@ -1,0 +1,1032 @@
+
+=== PDF_PAGE_391 ===
+389
+bando estarão em condições de uso após um combate). 
+Para o tesouro, mantenha a categoria (metade, padrão, 
+dobro), mas use a linha apropriada ao ND do bando. Se 
+o tesouro inclui algum item ou recurso especial, ajuste 
+a CD para extrair conforme o novo ND e aumente as 
+quantidades do tesouro conforme adequado ao número 
+de criaturas. Em alguns casos, você pode limitar esse 
+aumento; se o bando for muito grande, pode não haver 
+tempo suficiente para extrair todos os recursos antes 
+de eles se estragarem, por exemplo.
+8) Ajustes Finais. Para conferir se o bando 
+está adequado como ameaça, compare-o com outras 
+criaturas de ND semelhante. Você pode fazer alguns 
+ajustes, como aumentar o número de ataques se o 
+dano estiver muito baixo ou adicionar resistências e 
+imunidades para aumentar suas defesas.
+Exemplo de criação de bando: Cardume de Aquin’ne
+Neste exemplo, vamos transformar um simpático 
+aquin’ne (veja p. 88) em um bando chamado cardume 
+de aquin’ne. Para isso, vamos executar os passos a 
+seguir.
+1) Composição do Bando. Para começar, 
+definimos a composição do bando. Algo entre oito a 
+doze aquin’ne parece bom para um cardume dessas 
+criaturas.
+2) Determine o ND.  Por sua composição, 
+esse bando parece ligeiramente mais poderoso que 
+um aquin’ne individual. ND 5 (3 pontos acima de 
+um aquin’ne, e o suficiente para transformá-lo em 
+veterano) parece um bom valor.
+3) Ajuste o Tamanho.  Um aquin’ne é uma 
+criatura Pequena, então um bom tamanho para um 
+bando com aproximadamente dez indivíduos é Médio. 
+Isso afeta seus valores de manobras de combate e 
+Furtividade.
+4) Ajuste as Estatísticas de Combate.  
+Um aquin’ne é um lacaio de ND 2. Verificando suas 
+estatísticas de combate, vemos que seu ataque é 
++13 (1 ponto abaixo do ataque de uma criatura de 
+seu papel e ND). Para definir o ataque do cardume, 
+consultamos a linha de um lacaio de ND 5 e usamos 
+esse valor, aplicando a diferença de 1 entre o ataque 
+de um aquin’ne e o de seu ND original. Assim, o 
+cardume de aquin’ne terá ataque +19. Para as demais 
+estatísticas de combate, basta repetir esse processo. 
+Por fim, o dano do cardume será 4d4+12 (o dobro 
+do dano de um aquin’ne individual, devido ao seu 
+aumento de 1 patamar).
+5) Perícias. O cardume de aquin’ne é uma 
+criatura de ND 5, 3 pontos acima do ND 2 de um 
+aquin’ne padrão. Isso significa um aumento de +1 
+em todas as suas perícias.
+6) Habilidades de Bando. Como o cardume 
+é uma criatura de patamar veterano, podemos adi-
+cionar uma habilidade. Para deixar as coisas simples 
+e representar sua forma aquática, escolhemos a 
+habilidade Varrer.
+7) Equipamento e Tesouro. Aquin’ne não 
+possuem equipamento, então isso não será alterado no 
+cardume. Entretanto, fornecem um recurso especial: 
+1 dose de éter elemental. Assim, ajustamos a CD para 
+extrair esse recurso para 20 (refletindo o aumento 
+no ND do bando) e aumentamos a quantidade de 
+doses para 2d4 (representando que nem todas as doses 
+poderão ser aproveitadas). 
+Após essas etapas, temos uma nova criatura.
+Cardume de Aquin’ne 
+Espírito (elemental) Médio  
+Iniciativa +5, Percepção +5, visão no escuro
+Defesa 23, Fort +14, Ref +11, Von +6, imunidade a acertos 
+críticos e efeitos de atordoamento, cansaço, frio, meta -
+bolismo e paralisia, vulnerabilidade a fogo
+Pontos de Vida 40
+Deslocamento 9m (6q), natação 15m (10q) 
+Corpo a Corpo [Bando] Tentáculo hídrico x2 +19 (4d4+12 
+corte).
+Afogar Uma criatura agarrada pelo cardume de aquin’ne é 
+considerada submersa até se soltar.
+Agarrar Aprimorado (Livre) Tentáculo hídrico (teste +21).
+Redemoinho de Maresia (Padrão) O cardume toca um 
+objeto adjacente, que perde 10 PV (Ref CD 20 evita).
+Varrer (Livre) Uma vez por rodada, quando o cardume de 
+aquin’ne faz um ataque corpo a corpo e reduz os pontos 
+de vida do alvo para 0 ou menos, pode realizar um ataque 
+adicional contra outra criatura dentro do seu alcance.
+For 4, Des 2, Con 2, Int –2, Sab 2, Car –2
+Perícias Atletismo +7 (+15 para nadar), Furtividade +3 (+13 
+na água).
+Tesouro 2d4 doses de éter elemental (frio)  (CD 20 para 
+extrair).
+ND 5
+
+=== PDF_PAGE_392 ===
+3
+CAPÍTULO
+
+
+=== PDF_PAGE_393 ===
+
+
+=== PDF_PAGE_394 ===
+392
+A
+rton é um mundo rico em povos e cultu-
+ras, cada um capaz de forjar ferramentas 
+próprias, para a guerra e para a vida. 
+Este capítulo contém itens especiais 
+ligados a esses seres, além de novas magias, itens 
+mágicos e recursos extraídos de criaturas.
+Armas
+Açoite Finntroll. Feito de tiras de couro com 
+farpas de aço nas pontas, é também um instrumento 
+de tortura. Uma criatura que sofra dano do açoite 
+sofre –2 em testes de perícia e rolagens de dano por 
+1 rodada (metabolismo). 
+Arcabuz. Versão mais pesada e mais potente do 
+mosquete. Por seu peso e recuo, é uma arma desba-
+lanceada. Recarregar um arcabuz é uma ação padrão. 
+Arpão. Instrumento de pesca convertido em arma, 
+esta haste tem rebarbas em uma extremidade e uma 
+corda na outra. Se causar dano com um ataque, o arpão 
+fica preso no alvo. Enquanto você segura a corda, sempre 
+que o alvo se move, você pode fazer um teste de Força 
+oposto. Se você vencer, o alvo só pode se mover até o 
+limite da corda (9m). Ele pode se soltar gastando uma 
+ação de movimento, mas perde 1d10 PV . O arpão é uma 
+arma de arremesso; pode ser usado como arma corpo 
+a corpo, mas com penalidade de –5 no teste de ataque. 
+Esta arma é permitida para devotos do Oceano e se 
+beneficia de poderes concedidos que afetam essas armas.
+Bacamarte. Esta arma de fogo tem boca larga, 
+capaz de espalhar a munição como um cone de 6m 
+(seu alcance máximo). Para atacar, faça um ataque à 
+distância e compare com a Defesa de cada criatura na 
+área. Recarregar exige uma ação completa e 2 balas.
+Espada Vespa. Esta arma estranha é feita com 
+três ferrões de vespas gigantes, presos a uma estru -
+tura de ossos em forma de “H”. Pode-se pressionar a 
+empunhadura para unir os ferrões, como uma arma de 
+corte; ou separá-los, para dano de perfuração.
+Gládio. Espada de lâmina curta, mas pesada,  
+sem guarda. A ponta é muito afiada, capaz de infligir 
+ferimentos precisos e letais. É uma das armas padrão 
+dos legionários do Império de T auron.
+Lança de Fogo. Esta arma é formada por um 
+longo cano com uma coronha de madeira e uma 
+lâmina pontiaguda em sua extremidade. A lança de 
+fogo é uma arma híbrida que pode ser usada em dois 
+modos: como uma arma corpo a corpo alongada (dano 
+1d10, crítico x3) ou como uma arma de fogo (dano 
+2d8, crítico 19/x3, alcance médio). Quando faz um 
+ataque com a lança de fogo em modo corpo a corpo, 
+você pode acionar seu mecanismo para disparar a 
+bala; se acertar, causa +2d8 pontos de dano. Quando 
+faz um ataque com ela em modo arma de fogo contra 
+Porretes
+Mordida do Diabo Gládios
+Presa de Serpente
+Espada Vespa
+Neko-te
+Açoite Finntroll
+
+=== PDF_PAGE_395 ===
+393
+um oponente adjacente, você causa +1d8 pontos de 
+dano. Para atacar com ela como arma de fogo, você 
+deve também ter proficiência em armas de fogo, ou 
+é considerado não proficiente na arma. Recarregar a 
+lança de fogo é uma ação padrão.
+Mordida do Diabo. Esta arma é formada por 
+um aparato em forma de mandíbula preso a uma em-
+punhadura. A mandíbula pode ser usada para agarrar 
+e, graças a uma longa corrente, pode se destacar do 
+cabo e alcançar alvos a até 3m. Por exigir movimentos 
+precisos e coordenados, é uma arma exótica. A mordida 
+pode ser feita de metal, mas ossos e dentes de feras 
+aquáticas também são usados. É uma arma ágil e versá-
+til, fornecendo +2 em testes para agarrar e desarmar.
+Neko-te. Uma luva com garras metálicas na 
+palma e no dorso. Fornece +2 em testes de Atletismo 
+para escalar e conta como uma mão livre para isso. 
+Além disso, se você estiver usando duas neko-te, seu 
+deslocamento ao escalar aumenta em +1,5m.
+Pistola-Punhal. Esta arma é formada por uma 
+lâmina pontiaguda com um mecanismo acoplado que 
+armazena uma bala. A pistola-punhal é uma arma 
+híbrida que pode ser usada em dois modos: como uma 
+arma corpo a corpo ágil (dano 1d6, crítico 18) ou como 
+uma arma de fogo (dano 2d6, crítico 19/x3, alcance 
+curto). Quando faz um ataque com a pistola-punhal em 
+modo corpo a corpo, você pode acionar seu mecanismo 
+para disparar a bala; se acertar, causa +2d6 pontos 
+de dano. Para atacar com ela em modo arma de fogo, 
+você deve também ter proficiência em armas de fogo, 
+ou é considerado não proficiente com ela. Recarregar 
+a pistola-punhal é uma ação padrão.
+Porrete. Um pedaço sólido de madeira, coberto 
+por uma camada grossa de lã. Um porrete causa dano 
+não letal.
+Presa de Serpente. Espada de obsidiana, um 
+vidro vulcânico negro formado quando a lava es fria 
+rapidamente. Por sua origem, as voracis acreditam 
+que esse material é uma dádiva da Divina Serpente. 
+Mais afiada que o aço, causa ferimentos terríveis; 
+em um acerto crítico, o dano aumenta em um passo 
+(antes de ser multiplicado). Uma presa de serpente 
+Tetsubo Arpões
+Zarabatanas Pistolas-Punhal
+Bacamartes
+Arcabuzes
+Lança de Fogo
+Traques
+Shurikens
+Nova Habilidade 
+de Armas: Híbrida 
+Uma arma híbrida possui dois ou mais 
+modos de uso. Quando usa a arma, você 
+considera apenas as características do modo 
+que está usando e aplica apenas habilidades 
+e efeitos que afetem este modo. Trocar de 
+modo é uma ação de movimento (ou livre, se 
+você tiver Saque Rápido). Aplicar melhorias 
+e encantos em uma arma híbrida custa o 
+dobro do preço em tibares.
+
+=== PDF_PAGE_396 ===
+394
+rebites e/ou cravos. É uma arma versátil, fornecendo 
++2 em testes para derrubar ou empurrar. 
+Traque. Esta arma, feita com sucata e materiais 
+de segunda mão, é suscetível a falhar nos piores mo-
+mentos. Se errar um ataque com um resul tado ímpar 
+no d20, ela é avariada. Recarregá-la é uma ação padrão.
+Zarabatana. Pequeno tubo oco usado para 
+disparar dardos. Causa dano mínimo, mas é excelente 
+para inocular venenos; a CD para resistir ao veneno 
+dos dardos aumenta em +2. Um pacote de munição 
+contém 20 dardos, custa T$ 2 e ocupa 0,5 espaço. 
+Tabela 3-1: Novas Armas
+Armas Simples Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Porrete T$ 2 1d6 x2 — Impacto 1
+Ataque à Distância - Uma Mão
+Zarabatana T$ 5 1d3 x2 Curto Perfuração 1
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Neko-te T$ 10 1d4 19 — Corte 1
+Corpo a Corpo - Uma Mão
+Gládio T$ 12 1d6 19/x3 — Perfuração 1
+Corpo a Corpo - Duas Mãos
+Tetsubo T$ 20 1d10 X2 — Impacto 2
+Armas de Fogo* Preço Dano Crítico Alcance Tipo Espaços
+Ataque à Distância - Leve
+Traque T$ 75 2d6 19/x3 Curto Perfuração 1
+Ataque à Distância - Duas Mãos
+Arcabuz T$ 800 2d10 19/x3 Médio Perfuração 2
+Bacamarte T$ 450 4d6 19/x3 Especial Perfuração 2
+Armas Exóticas Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Uma Mão
+Açoite finntroll T$ 30 1d8 x2 — Corte 1
+Espada vespa T$ 75 2d4 18 — Corte ou Perfuração 1
+Pistola-punhal T$300 ** ** ** Perfuração 1
+Mordida do diabo T$ 30 1d4 x2 — Perfuração 1
+Presa de serpente T$ 1.000 1d8 17 — Corte 1
+Corpo a Corpo - Duas Mãos
+Lança de fogo T$ 1.000 ** ** ** Perfuração 2
+Ataque à Distância - Leve
+Shuriken T$ 1 1d4 x2 Curto Perfuração 0,5
+Ataque à Distância - Uma Mão
+Arpão T$ 30 1d10 x3 Curto Perfuração 1
+*Todas as armas de fogo usam balas (veja Tormenta20, p. 151) como munição.
+**Veja descrição da arma.
+não pode receber a melhoria material especial e exige 
+treinamento especial para ser empunhada sem quebrar, 
+por isso é uma arma exótica. É uma arma ágil. 
+Shuriken. Pequenos projéteis metálicos para 
+arremesso, em forma de estrelas ou dardos. Uma vez 
+por rodada, quando ataca com uma shuriken, você pode 
+gastar 1 PM para fazer um ataque adicional de shuriken 
+contra o mesmo alvo. Se tiver Arremesso Múltiplo, em 
+vez disso você não paga PM para usar esse poder. 
+Tetsubo. Uma versão mais pesada e sofisticada 
+do tacape, geralmente reforçado com anéis metálicos, 
+
+=== PDF_PAGE_397 ===
+395
+Armadura de Ossos.  Os nezumi e outros 
+povos são conhecidos por produzir estas armaduras 
+sinistras. Combinando um aspecto assustador e 
+ener gias negativas de ossadas, esta armadura fornece 
++1 em Intimidação e na CD de seus efeitos de medo 
+(cumulativo com a melhoria macabra).
+Armadura de Quitina. Feita com carapaças 
+selecionadas de grandes insetos, esta armadura dos 
+povos-trovão é mais leve que suas contrapartes me-
+tálicas. Embora seja uma armadura pesada, não reduz 
+o deslocamento do usuário.
+Escudo de Couro. Por sua leveza, este escudo é 
+popular entre velocis e ubaneri. É feito com uma arma-
+ção de madeira esticando uma membrana de couro (ou 
+outro material flexível) e amarrado ao braço, impedindo 
+o uso dessa mão. Contra ataques à distância, o bônus 
+na Defesa do escudo aumenta em +2. Entretanto, ele 
+é muito leve para ser usado como arma.
+Veste de Teia de Aranha. Feita com teia de 
+aranha gigante, esta veste é cinza-escura, maleável e 
+silenciosa, mas também forte como aço. Fornece +5 
+em Furtividade, mas não pode receber a melhoria 
+material especial.
+Armaduras e Escudos
+Armadura de Ossos
+Veste de Teia de Aranha
+Escudos de Couro
+Armadura de Quitina
+Tabela 3-2: Novas Armaduras e Escudos
+Armaduras Leves Preço Defesa Penalidade Espaços
+Armadura de ossos T$ 120 +3 -2 2
+Veste de teia de aranha T$ 3.000 +4 0 2
+Armaduras Pesadas Preço Defesa Penalidade Espaços
+Armadura de quitina T$ 350 +7 -3 5
+Escudos Preço Defesa Penalidade Espaços
+Escudo de couro T$ 3 +1 -1 1
+
+=== PDF_PAGE_398 ===
+396
+Itens Gerais
+Equipamento de Aventura
+Caixa de Voz. Este complexo mecanismo tem 
+1d4 cargas: quando usa uma habilidade de bardo ou 
+nobre com alcance curto ou médio, você pode gastar 
+uma carga para aumentar seu alcance em um passo. 
+Segredo de engenharia da Supremacia Purista, este item 
+não pode ser fabricado, sendo encontrado apenas nos 
+destroços de corcéis e carruagens de comando.
+Corda de Teia. Feita de teia de aranha gigante, 
+esta corda de 10m funciona como uma corda normal, 
+mas é mais resistente. Arrebentá-la exige 5 pontos de 
+dano de corte ou um teste de Força (CD 28).
+Dente de Wisphago. Um dente de wisphago 
+pode ser vestido como um amuleto. Quando faz um 
+teste de resistência contra uma magia arcana, você 
+pode gastar o amuleto para rolar novamente esse teste 
+com um bônus de +2. Uma vez ativado, o amuleto se 
+desfaz. Um dente de wisphago não pode ser fabricado.
+Gema de Força. Parte de certos engenhos da 
+Supremacia, esta gema tem 1d4 cargas. Empunhando 
+a gema, você pode gastar uma ação padrão e uma carga 
+para produzir um domo semelhante ao efeito básico 
+da magia Campo de Força. Alternativamente, quando 
+lança essa magia, você pode empulhá-lo e usar uma 
+carga para reduzir seu custo em –2 PM. Encontrada 
+nos destroços de corcéis e carruagens de comando, 
+esta gema não pode ser fabricada.
+Vestuário
+Garra Feroz. Estas pinças de insetos gigantes, 
+presas com tiras de couro, funcionam como uma 
+manopla (Tormenta20, p. 159), mas seus benefícios 
+também se aplicam a uma garra ou a uma arma natural 
+de um personagem sob efeito de habilidades como 
+Forma Selvagem.
+Manto do Mantor. Este manto, feito a partir do 
+couro de um mantor, oferece parte de sua furtividade. Na 
+escuridão completa fornece camuflagem total, mesmo 
+contra criaturas que vejam no escuro.
+Manto Pesado. Estas vestes pesadas com 
+um grande capuz oferecem proteção contra o sol e 
+contra claridade em excesso. Você recebe imunidade 
+a condição ofuscado e, mesmo durante o dia, não é 
+considerado sob luz solar ou semelhante.
+Sombreiro. Tipo de chapéu com abas muito 
+largas, comum nas proximidades de Smokestone. 
+Fornece resistência a efeitos de sentidos +2.
+Traje Selako. Feito com couro de selako, este 
+traje fornece parte das capacidades desses predadores. 
+Você recebe +2 em testes de Atletismo para nadar e 
++3m em seu deslocamento de natação.
+Esotéricos
+Ankh Solar. Este item raro é encontrado em 
+corpos embalsamados no Deserto da Perdição. Pode 
+ser usado como arma leve simples corpo a corpo (dano 
+1d6, crítico 19, corte). Suas magias que tenham testes 
+de resistência recebem o seguinte aprimoramento: 
++2 PM. Além do normal, criaturas que falham na 
+resistência não podem recuperar PV por 1 rodada.
+Tomo de Guerra.  Quando lança uma magia 
+de evocação, você recebe +1 PM para gastar em 
+aprimoramentos.
+Tomo do Rancor. Suas magias de dano recebem 
+o seguinte aprimoramento: +2 PM. Além do normal, 
+quando lança uma magia de dano, ela causa +2d8+2 
+pontos de dano de corte, impacto ou perfuração, a 
+sua escolha.
+Alquímicos
+Preparados
+Bálsamo de Drogadora. Produzido por 
+curandeiras dos povos-trovão, este pote de cerâmica 
+contém uma pasta gosmenta. Aplicá-la é uma ação 
+completa e cura 4d6+4 PV .
+Bomba de Fumaça. Saco de estopa com pavio, 
+contendo uma pólvora especial que produz mais fu-
+maça do que fogo. Segue as mesmas regras da bomba, 
+mas, em vez de causar dano, emite uma nuvem de 
+fumaça espessa com 6m de raio, que obscurece toda 
+a visão e dura até o fim da cena. Criaturas a até 1,5m 
+têm camuflagem leve e criaturas a partir de 3m têm 
+camuflagem total.
+Elixir Quimérico. Beber este elixir é uma 
+ação padrão; até o fim da cena, você ganha uma arma 
+natural de mordida (dano 1d6, crítico x2, perfuração). 
+Uma vez por rodada, quando usa a ação agredir para 
+atacar com outra arma, pode gastar 1 PM para fazer 
+um ataque corpo a corpo extra com a mordida. Se já 
+possui uma mordida, seu dano aumenta em um passo.
+Éter Elemental. Extraído de elementais, este 
+líquido viscoso tem cor e textura relacionados ao ele-
+mento de origem. Uma dose é suficiente para cobrir 
+uma arma corpo a corpo ou 20 munições; aplicá-lo é 
+uma ação padrão e faz a arma (ou as munições) causar 
++1d4 pontos de dano do tipo do dano elemental até 
+o fim da cena. Múltiplas doses não são cumulativas.
+
+=== PDF_PAGE_399 ===
+397
+Isca Putrefata. Frasco de restos mortais diluídos 
+em uma solução macabra. Você pode gastar uma ação 
+padrão para arremessar a isca em um local ou criatura 
+em alcance médio. A isca se gruda ao alvo (Ref CD Des 
+evita) e dura 1d6 rodadas. Durante esse tempo, cada 
+morto-vivo não inteligente em alcance curto é atraído 
+(Von CD Des evita), gastando todas as suas ações para 
+se deslocar até a isca. Quando a alcança, fica fascinado 
+ou, se a isca estiver presa a uma criatura, a ataca.
+Lágrima Pétrea. Este líquido cristalino tem o 
+poder de devolver criaturas à sua forma original. Você 
+pode gastar uma ação padrão para aplicá-lo em uma 
+criatura adjacente ou arremessá-lo em uma criatura 
+em alcance curto; uma dose remove todos os efeitos 
+de metamorfose (Ref CD Des evita).
+Óleo de Baleia. Este antigo preparado é um 
+destilado de gordura de baleia. Você pode usar uma 
+ação padrão para aplicar o óleo em uma arma ou pacote 
+de munições para ignorar penalidades de combate 
+submerso com esse item até o fim da cena.
+Óleo de Besouro. O líquido do terrível be -
+souro-do-óleo pode ser usado em lampiões (dobro 
+da duração e área de iluminação) e explosivos. Para 
+usar um frasco, você precisa empunhá-lo, gastar uma 
+ação de movimento para acender seu pavio e uma ação 
+padrão para arremessá-lo em alcance curto. Criaturas a 
+até 3m do ponto atingido sofrem 4d6 pontos de dano 
+de fogo e ficam em chamas (Ref CD Des reduz o dano 
+à metade e evita a condição).
+Pó Azul. Saquinho de couro com pó feito a 
+partir de uma planta exótica de Galrasia, capaz de 
+absorver energia mágica ambiente. Inalar o pó é uma 
+ação completa e recupera 2d4 PM.
+Catalisadores
+Corrosivo Mineral. Pasta mineral corrosiva 
+produzida com ingredientes naturais. Aumenta os dados 
+de dano de magias de ácido em uma categoria: d4 para 
+d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).
+Gelo Extremo. Cristais minerais que eliminam 
+todo o calor ao redor. Aumenta os dados de dano de 
+magias de frio em uma categoria: d4 para d6, d6 para 
+d8, d8 para d10 e d10 para d12 (máximo).
+Pedaço de Língua. Glândulas que podem ser 
+usadas como um catalisador que fornece +1 na CD 
+dos testes de Fortitude para resistir a suas magias.
+Raio Cristalizado. Eletricidade gerada por 
+elementais e outros seres mágicos pode ser solidificada 
+na forma de pequenos cristais. Aumenta os dados de 
+dano de magias de eletricidade em uma categoria: d4 para 
+d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).
+Venenos
+Esporos de Cogumelo.  Extraído de certos 
+cogumelos e criaturas aparentadas, causa breve mas 
+perigosa paralisia. Inalação, vítima fica paralisada (lenta) 
+por 1 rodada, depois imune a paralisia por este veneno pela cena.
+Peçonha Anciã. Veneno poderoso, extraído de 
+serpes anciãs, capaz de afetar até criaturas imunes. 
+Contato, perde 3d12 PV por rodada durante 3 rodadas e 
+ignora imunidade a venenos (perde 3d12 PV).
+Peçonha Irritante. Este veneno leve, produ-
+zido por diversas criaturas, tem efeito brando mas que 
+não pode ser resistido. Contato, perde 1d6 PV .
+Veneno Batráquio. Produzida a partir da saliva 
+de sapos gigantes, esta gosma machuca e enjoa. Contato, 
+perde 1d12 PV e fica enjoado por 1 rodada (perde 1d6 PV).
+Alimentação
+Algravia. Bebida alcoólica adocicada feita da sei-
+va de feras-cactos. Você recebe +1 em perícias baseadas 
+em Carisma, cumulativo com outros itens. Múltiplas 
+doses são cumulativas entre si, mas intoxicantes; para 
+cada dose além da primeira no mesmo dia, você deve 
+fazer um teste de Fortitude (CD 15 + 5 para cada 
+dose anterior). Em caso de falha, você fica enjoado e 
+perde todos os bônus de alimentação até o fim do dia.
+Banquete de Canceronte. Um canceronte 
+adulto é suficiente para produzir um pequeno ban-
+quete. Você recebe 1d4+1 dados de auxílio. Sempre 
+que realizar um teste de perícia, você pode gastar 
+1d4 e adicionar o resultado como bônus no teste. Se 
+o banquete for preparado por um personagem com 
+o poder Mestre Cuca, os dados de auxílio se tornam 
+d6. Este prato requer carne fresca de canceronte, 
+sendo assim raramente encontrado longe de grandes 
+cidades costeiras.
+Coc-au-Triz. Ovos de cocatriz são ingredientes 
+mágicos poderosos, e esta guloseima reflete esse poder; 
+é um ninho de fios de ovos assados e gratinados. Ao 
+consumir, escolha uma habilidade com custo em PM. 
+Seu custo diminui em –1 PM. 
+Cozido de Serpe. Quando cozida por várias 
+horas em uma sopa específica, a carne da serpe fica 
+livre de seu veneno natural. Diferente de outros 
+alimentos, preparar este cozido é um teste estendido 
+de Ofício (cozinheiro) com CD 20, que requer 3 su -
+cessos antes de 3 falhas. Se preparado com sucesso, 
+fornece+1 em todos os testes de perícia, cumulativo 
+com outros itens. Se falhar, os ingredientes são 
+consumidos e você é envenenado (perde 1d12 pontos 
+de vida por rodada durante 3 rodadas; Fort CD 20 
+reduz para 1 rodada).
+
+=== PDF_PAGE_400 ===
+398
+Item Preço Espaços Item Preço Espaços
+Alimentação Alquímicos - Preparados
+Algravia T$ 3 — Bálsamo de drogadora T$ 60 0,5
+Banquete de canceronte T$ 36 — Bomba de fumaça T$ 15 0,5
+Coc-au-triz T$ 54 — Elixir quimérico T$ 120 0,5
+Cozido de serpe T$ 12 — Éter elemental T$ 60 0,5
+Gorlogg ensopado T$ 6 — Isca putrefata T$ 60 0,5
+Omelete monstruosa T$ 3 — Lágrima pétrea T$ 30 0,5
+Sashimi de kraken T$ 60 — Óleo de baleia T$ 30 0,5
+Animais Óleo de besouro T$ 50 0,5
+Bulette T$ 500 — Pó azul T$ 150 0,5
+Capivara T$ 60 — Alquímicos - Catalisadores
+Corcel do deserto T$ 150 — Corrosivo mineral T$ 150 0,5
+Dromedário T$ 75 — Gelo extremo T$ 150 0,5
+Elefante T$ 1.500 — Pedaço de língua T$ 30 0,5
+Hiena T$ 220 — Raio cristalizado T$ 150 0,5
+Leão T$ 800 — Alquímicos - Venenos
+Rinoceronte T$ 600 — Esporos de cogumelo T$ 75 0,5
+Urso pardo T$ 300 — Peçonha anciã T$ 1.800 0,5
+Equipamento de Aventura Peçonha irritante T$ 10 0,5
+Caixa de voz T$ 50 1 Veneno batráquio T$ 30 0,5
+Corda de teia T$ 100 1 Vestuário
+Dente de wisphago T$ 100 1 Garra feroz T$ 60 1
+Esotéricos Manto do mantor T$ 450 1
+Ankh solar T$ 450 1 Manto pesado T$ 10 1
+Tomo de guerra T$ 300 1 Sombreiro T$ 10 1
+Tomo do rancor T$ 750 1 Traje selako T$ 90 1
+Tabela 3-3: Novos Itens Gerais
+Gorlogg Ensopado. Criado nas cozinhas de 
+Yuvalin por Rizzelena, chef élfica de grande talento, este 
+é um ensopado altamente nutritivo. Em sua próxima 
+noite de sono, você aumenta a sua recuperação de PV 
+e PM em +1 por nível.
+Omelete Monstruosa. Dizem que este prato 
+foi inventado por aventureiros presos em uma ca-
+verna cheia de ovos. Desde então, tornou-se popular 
+entre aqueles de baixa seletividade alimentar, ou 
+muita coragem. É feita com ovos de qualquer praga 
+monstruosa, mas variações mais refinadas usam 
+ovos de corcel de Kally e outras feras dracônicas 
+menores. Você recebe +2 em rolagens de dano e 
+–2 em testes de perícias baseadas em Sabedoria, 
+cumulativo com outros itens. Se feita com ovos de 
+dragão, muda para +5 e –5. E garante que você será 
+caçado por uma mamãe dragoa furiosa…
+Sashimi de Kraken.  Esta iguaria exótica foi 
+criada pelos maiores chefs de Tamu-ra. Você recebe 
++2 em Diplomacia, cumulativo com outros itens, e 5 
+PM temporários. Dificilmente encontrada em cidades 
+longe do mar.
+
+=== PDF_PAGE_401 ===
+399
+Animais
+Estes animais são raros, restritos a povos ou 
+regiões específicas, mas podem ocasionalmente ser 
+encontrados à venda. Todos são parceiros iniciantes.
+Bulette. Temperamental e feroz, esta fera pode 
+ser adquirida de mercadores na Grande Savana, no 
+Deserto da Perdição ou em Doherimm — em outros 
+lugares, atinge o dobro do preço. Pode ser usado 
+como um parceiro montaria.
+Capivara. Simpática, amistosa e dotada de longos 
+e afiados dentes, a capivara é muito apreciada por 
+ginetes Pequenos como hynne e goblins. Pode ser 
+usado como um parceiro montaria por personagens 
+Pequenos e Minúsculos.
+Corcel do Deserto. Tipo de cavalo insetoide 
+encontrado na Grande Savana e no Deserto da Perdição. 
+Pode ser usado como um parceiro montaria.
+Dromedário. Disponível em regiões áridas ou 
+montanhosas, pode ser um parceiro montaria.
+Elefante. Grande demais para ambientes 
+urbanos, é empregado como animal de trabalho em 
+áreas abertas, como fazendas e áreas de mineração. 
+Pode ser usado como um parceiro montaria.
+Hiena. Embora sejam mais comuns entre gnolls, 
+hienas podem ocasionalmente ser domesticadas por 
+outros povos. Uma hiena pode ser usada como um 
+parceiro especial (veja p. 119) por personagens treina-
+dos em Adestramento, ou montaria por personagens 
+Pequenos e Minúsculos.
+Leão. Considerado símbolo de nobreza e força, 
+o majestoso leão pode ser treinado para aceitar um 
+cavaleiro, sendo usado como um parceiro montaria.
+Rinoceronte. Eram animais de gado dos anões 
+quando estes ainda viviam na superfície; hoje são 
+selvagens e perigosos, de difícil domesticação. Podem 
+ser usados como parceiros montaria, mas raramente 
+são encontrados à venda.
+Urso Pardo. Este robusto predador pode ser en-
+contrado em várias regiões de Arton. Ainda que incomum, 
+pode ser empregado como um parceiro montaria.
+Itens Superiores
+Novas Melhorias
+Multifuncional (ferramenta ou ves -
+tuário). Esta melhoria só pode ser aplicada em um 
+item que modifica uma perícia (fornecendo bônus ou 
+reduzindo penalidade). Escolha outra perícia que usa 
+o mesmo atributo-chave; o item passa a funcionar 
+também para a segunda perícia escolhida (mas não 
+se aplica a testes de ataque).
+Penetrante (arma). A arma ignora 5 pontos 
+da redução de dano. Pré-requisito: cruel.
+Materiais Especiais
+Casco de Monstro
+Os cascos protetores de certos monstros podem 
+substituir aço e outros materiais rígidos, embora 
+sejam mais frágeis; ao sofrer dano de impacto, um 
+item mundano feito de casco de monstro sofre 1 ponto 
+a mais por dado de dano.
+Arma. Conta como uma arma primitiva para a 
+magia Armamento da Natureza e efeitos semelhantes.
+Armadura e Escudo. Têm sua penalidade de 
+armadura diminuída em 1. Armaduras pesadas de 
+casco permitem aplicar 1 ponto de Destreza na Defesa.
+Esotérico.  Quando lança uma magia, você 
+recebe redução de dano 5 contra o próximo dano que 
+sofrer até sua próxima rodada.
+Couraça de Kaiju
+Ainda mais raro que couro dracônico, este material 
+pode ser empregado para fabricar itens superiores de 
+grande poder. Jamais encontrado à venda, sendo obtido 
+apenas a partir de um kaiju abatido.
+Arma (exige uma peça). O dano aumenta um 
+passo. Além disso, quando faz um ataque, se o alvo 
+usar um efeito que reduz o dano desse ataque (como 
+Durão ou Escamas Supremas), você pode gastar 2 PM 
+para ignorar o efeito. Isso não se aplica a RD.
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): RD 10/mágico. Armadura pesada 
+(exige três peças): RD 20/mágico.
+Esotérico (exige uma peça). Quando lança 
+uma magia que causa dano, você pode gastar 2 PM para 
+ignorar efeitos dos alvos que reduzem o dano dessa magia, 
+como Durão ou Evasão (exceto redução de dano e o 
+efeito de passar no teste de resistência contra a magia).
+Couro de Bulette
+Este couro raramente é encontrado à venda; 
+quando não é curtido e tratado logo após a extração, 
+perde suas qualidades especiais.
+Armadura. Armadura leve (exige uma peça): fornece 
+deslocamento de escavação igual à metade de seu deslo-
+camento normal e redução de ácido 5. Armadura pesada 
+(exige três peças): como acima, mas a redução de ácido é 10.
+
+=== PDF_PAGE_402 ===
+400
+Esotérico (exige uma peça). Quando lança 
+uma magia de ácido que causa dano, você pode rolar 
+novamente qualquer resultado 1 nas rolagens de dano 
+(mesmo em rodadas subsequentes).
+Cristal de Sol
+Utilizados pelos ursos das neves para armazenar 
+calor, estes cristais perdem suas propriedades em 
+algumas semanas quando não utilizados, tornando 
+difícil encontrá-los à venda.
+Arma (exige uma peça). Só pode ser aplicado 
+a armas de corte ou perfuração. A arma causa +2 
+pontos de dano por fogo.
+Armadura e Escudo (exige uma peça).  
+Quando faz um teste de resistência contra um efeito 
+de frio, você pode rolar dois dados e usar o melhor 
+resultado.
+Esotérico (exige uma peça). Quando lança 
+uma magia de fogo, você pode gastar 1 PM. Se fizer 
+isso, criaturas que falhem em seu teste de resistência 
+contra a magia ficam em chamas (se a magia já deixa 
+a vítima em chamas, em vez disso o dano das chamas 
+aumenta em +1d6 cumulativo).
+Lanajuste
+Também chamado de coral-de-ferro, é encontrado 
+em paredões afiados banhados pelo mar em Khubar. 
+Mais conhecido por seu uso em lâminas afiadas, o 
+lanajuste também é empregado em outros itens.
+Arma. Ataques com a arma ignoram penalidades 
+por combate submerso. Além disso, pode ser utilizada 
+por devotos do Oceano sem violar suas obrigações 
+e restrições.
+Armadura e Escudo. Fornece redução de corte: 
+armaduras leves e escudos, redução 5; armaduras 
+pesadas, redução 10.
+Esotérico. Quando lança uma magia que causa 
+dano de corte, você pode rolar novamente qualquer 
+resultado 1 na rolagem de dano.
+Pena de Kraken
+Esse material vítreo extraído da concha interna de 
+um kraken é extremamente afiado. Em seu estado bruto, 
+é quebradiço e difícil de transportar sem equipamento 
+adequado, sendo assim raramente encontrado à venda.
+Arma (exige uma peça). Quando faz um acerto 
+crítico, o dano aumenta dois passos (antes de ser 
+multiplicado).
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): quando uma criatura erra um ataque 
+corpo a corpo contra você, perde 5 pontos de vida. 
+Armadura pesada (exige três peças): quando uma criatura 
+erra um ataque corpo a corpo contra você, perde 10 
+pontos de vida.
+Esotérico (exige uma peça). Se o item 
+fornece algum bônus numérico, ele aumenta em +1. 
+Pr ata
+Embora seja muito maleável, a prata pode ser 
+usada para revestir objetos e conceder propriedades 
+quase mágicas. Por ser usada como revestimento, prata 
+pode ser combinada com um segundo material especial 
+(cada um contando como uma melhoria separada).
+Arma. Causa +2 pontos de dano em espíritos 
+e mortos-vivos e é considerada mágica para atacar 
+essas criaturas.
+Armadura e Escudo. Fornece redução de dano 
+causado por espíritos e mortos-vivos: armaduras leves 
+e escudos, RD 5; armaduras pesadas, RD 10.
+Tabela 3-4: Novos Materiais Especiais
+Material* Arma Armadura Leve Armadura Pesada Escudo Esotérico
+Casco de monstro +T$ 750 +T$ 750 + T$ 6.000 +T$ 750 +T$ 6.000
+Lanajuste +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 +T$ 3.000
+Prata +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 + T$ 400
+* Materiais não listados são raros e não são encontrados à venda.
+Espada de Coral
+Fabricada com uma técnica secreta mantida 
+pela Irmandade dos Pescadores, uma espada 
+de coral é uma cimitarra feita de lanajuste. 
+Além dos benefícios do material especial, ela 
+tem fio extremamente agudo; em um acerto 
+crítico, deixa a vítima sangrando. Quando 
+aplicado desta forma, este material especial 
+custa +T$ 1.800 (em vez de T$ 600).
+
+=== PDF_PAGE_403 ===
+401
+Esotérico. Suas magias causam +2 pontos de 
+dano em espíritos e mortos-vivos.
+Quitina Razza
+Cobiçada por caçadores de monstros, que a con-
+sideram um grande troféu, esta quitina raramente 
+é encontrada à venda; a única forma de obter este 
+material é abater um razza’kham. 
+Arma (exige uma peça). Sempre que rolar 
+o resultado máximo em um dado do dano básico da 
+arma, role um dado extra, repetindo o processo a cada 
+resultado máximo.
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): concede +2 em Percepção e seu 
+bônus na Defesa aumenta em 1. Armadura pesada (exigem 
+três peças): concede +5 em Percepção e seu bônus na 
+Defesa aumenta em 2.
+Esotérico (exige uma peça). Sempre que 
+rolar o resultado máximo em um dado do dano básico 
+da magia (sem contar aprimoramentos e outros 
+efeitos), role um dado extra, repetindo o processo 
+a cada resultado máximo.
+recursos naturais
+Certas criaturas, como dragões, elementais e 
+monstros peçonhentos, fornecem recursos específicos 
+como parte de seus tesouros. Entretanto, existem 
+outros materiais de grande utilidade que podem ser 
+extraídos de ameaças. Esta seção apresenta regras 
+opcionais para mestres que desejam usar esse tipo de 
+tesouro em suas aventuras.
+Recursos naturais podem ser incluídos em qualquer 
+criatura que já não possua um recurso especial, e podem 
+complementar seu tesouro normal ou substituí-lo (a 
+critério do mestre). Para usar um desses recursos, escolha 
+um tipo apropriado à criatura em questão. Alternati-
+vamente, você pode rolar na linha referente ao tipo da 
+criatura na Tabela 3-5: Recursos Naturais. A 
+quantidade de recursos fornecida depende do tamanho 
+da criatura; criaturas Pequenas e Médias fornecem 1 
+unidade do recurso, criaturas Grandes e Enormes 
+fornecem 2 unidades e criaturas Colossais fornecem 5 
+unidades. Criaturas Minúsculas são muito pequenas para 
+produzir recursos. Embora seja possível extrair recursos 
+de criaturas inteligentes, isso pode ser considerado um 
+tabu, um crime ou simplesmente um ato hediondo, 
+dependendo de onde os aventureiros estiverem.
+Recursos naturais são extraídos como recursos 
+especiais; exigem uma hora de trabalho e um sucesso 
+em um teste de Sobrevivência ou de um Ofício rela-
+cionado ao recurso, com CD 15 + ND da criatura. Em 
+caso de falha, os recursos são estragados.
+Tipos de Recursos
+A variedade de recursos existentes em Arton é 
+tão vasta quanto sua fauna. A seguir são descritos 
+os mais comuns, mas você pode expandir esta lista 
+conforme adequado à sua campanha. Use os recursos 
+descritos aqui e nas fichas de ameaças como base para 
+suas ideias.
+A descrição de cada recurso indica seus usos. Para 
+recursos que podem ser empregados como matéria-
+-prima, seu valor, bem como o grau de qualidade dos 
+itens que podem ser fabricados com ele, depende do 
+patamar da ameaça da qual foi extraído.
+Carapaça. Diversos tipos de carapaças servem 
+como matéria-prima para couraças, lorigas segmenta-
+das, meias armaduras, armaduras completas e escudos 
+pesados. Esses itens contam como itens naturais para 
+devotos de Allihanna, mas são mais frágeis que metal; 
+cada vez que você sofre um acerto crítico, há 10% (1 
+em 1d10) de chance de que o item seja destruído. 
+Um item mágico ou feito inteiramente de peças de 
+uma criatura lenda não sofre esse efeito.
+Tabela 3-5: Recursos Naturais
+Tipo de 
+Criatura (1d6) Carapaça Couro Fonte Ingrediente Mantimento Osso Sucata
+Animal 1 2-3 — — 4-5 6 —
+Construto 1-2 — 3 — — — 6
+Espírito* — — 1-3 4-6 — — —
+Humanoide 1 2 3 — 4 5-6 —
+Monstro 1 2 3 4 5 6 —
+Morto-vivo 1 — 2-3 — — 4-6 —
+* Use essa linha para criaturas incorpóreas de qualquer tipo.
+
+=== PDF_PAGE_404 ===
+402
+Couro. Serve como matéria-prima para armadu-
+ras acolchoadas, armaduras de couro, gibões de peles 
+e escudos leves. Ao fabricar uma versão mágica desses 
+itens, você pode gastar 10 peças de couro de lendas 
+para reduzir o custo do item em –1 PM.
+Fonte. Das penas de uma fênix às presas de 
+um vampiro, várias criaturas carregam uma fagulha 
+mística que pode ser usada como matéria-prima de 
+itens esotéricos. Além disso, ao fabricar um acessório 
+mágico, você pode gastar 10 fontes de lendas para 
+reduzir o custo do item em –1 PM.
+Ingrediente. Diversas criaturas produzem subs-
+tâncias que podem ser empregadas como ingredientes 
+para itens alquímicos e poções mágicas, independente 
+de seu patamar.
+Mantimento.  Carne, leite, ovos e outros 
+materiais podem ser usados como alimentos. Cada 
+porção alimenta quatro pessoas; mantimentos de 
+uma criatura iniciante contam como uma refeição 
+comum, de uma criatura veterana ou campeã contam 
+como um prato especial (determinado pelo mestre) 
+e de uma criatura lenda contam como dois pratos 
+especiais (com efeitos cumulativos).
+Osso. Ossos das mais variadas partes de criaturas 
+servem como matéria-prima de armas. Peças de pata-
+mar veterano também podem ser usadas nas melhorias 
+espinhoso ou macabro. Além disso, ao fabricar uma 
+maça do terror ou um item tumular ou assustador, você 
+pode pode gastar 10 peças de osso de lendas para 
+reduzir o custo do item em –1 PM.
+Sucata. Partes de golens e outras criaturas 
+artificiais servem como matéria-prima de engenhocas 
+e itens de metal. Além disso, quando fabrica uma 
+engenhoca, você pode gastar uma peça de sucata para 
+receber um bônus no teste de Ofício (cumulativo com 
+bônus de outros itens), conforme o patamar da criatura: 
+veterano, +2; campeão, +5; lenda, +10.
+Novos Itens 
+Mágicos
+Chifre de Unicórnio
+Um chifre de unicórnio é um poderoso item má-
+gico de cura. Se estiver empunhando o chifre, você 
+pode lançar Curar Ferimentos e Purificação ; caso já 
+conheça essas magias, seu custo diminui em –1 PM, 
+cumulativo com outras reduções. Ele também pode 
+ser usado para lançar a magia Segunda Chance, mas 
+perde todos os poderes após isso. Por fim, ele pode 
+ser empunhado como uma espada curta formidável.
+Mesmo sem seus poderes, o chifre pode ser trans-
+formado em 12 doses de pó de chifre, um poderoso 
+ingrediente para preparados e poções. Misturar uma 
+dose desse pó aos ingredientes de um preparado ou 
+poção aumenta cada dado de cura do efeito do item 
+em dois passos (até um máximo de d12).
+Ainda que o simples ato de portar um chifre de 
+unicórnio não seja necessariamente maligno, muitos 
+devotos, sobretudo de Allihanna e Marah, poderão 
+questionar a origem do chifre. Chifres de unicórnio não 
+podem ser fabricados, e são obtidos apenas de um 
+unicórnio morto. Acessório maior, preço T$ 120.000.
+Fragmento de Filactério
+Mesmo após a destruição do filactério de um 
+lich, uma parte do poder mágico da criatura pode 
+permanecer, geralmente em seu maior fragmento. 
+Um fragmento de filactério conta como uma costela de 
+lich poderosa que fornece +20 PM (somente após um 
+dia de uso). Um fragmento só pode ser obtido de um 
+filactério estilhaçado e não pode ser fabricado. Acessório 
+maior, preço T$ 90.000.
+Grilhão de Descrença
+Esta armadura completa reforçada e selada contém 
+uma forte maldição divina: uma vez vestida, não pode 
+ser retirada. Qualquer criatura que chegue a 0 PV 
+vestindo esta armadura não pode ser ressuscitada 
+e se torna um guerreiro perpétuo (veja p. 139). Se 
+de alguma forma a maldição for removida (como 
+por dissipar o item ou quebrar a maldição), ela se 
+transforma numa armadura completa reforçada e selada com 
+um encanto aleatório (veja Tormenta20, p. 338). Uma 
+armadura grilhão de descrença não pode ser fabricada e é 
+encontrada apenas em guerreiros perpétuos. Armadura 
+específica menor, preço T$ 24.000.
+Tabela 3-6: Tipos de  
+Recursos Naturais
+Patamar da Ameaça Valor/Qualidade
+Iniciante T$ 20 para itens normais
+Veterano T$ 100 para itens superiores
+Campeão T$ 500 para itens mágicos
+Lenda T$ 2.500 para itens mágicos
+
+=== PDF_PAGE_405 ===
+403
+Lancinante Revisado
+Em algumas campanhas, o encanto 
+lancinante (Tormenta20, p. 336) pode gerar 
+valores de dano bastante elevados. Se quiser 
+limitar esses valores, particularmente para 
+campanhas mais desafiadoras, use a seguinte 
+versão opcional desse encanto.
+Lancinante. A arma inflige ferimentos 
+mortais. Quando faz um acerto crítico, o 
+bônus em dano fornecido pelo encanto 
+dilacerante também é multiplicado. Por 
+exemplo, um machado de batalha lancinante 
+causa +30 pontos de dano em um acerto 
+crítico. Pré-requisito: dilacerante.
+que é um dos mais poderosos itens do Arquilich Ferren 
+Asloth. Capaz de conceder habilidades arcanas incríveis 
+fornece ao usuário +50 PM (somente após um dia de 
+uso), aumenta em +5 a CD para resistir a suas magias 
+arcanas e permite utilizar a habilidade Conhecimento 
+Sequestrado (CD Int, veja p. 294).
+Tamanho poder, entretanto, não passa de uma 
+armadilha. Em sua obsessão pela vida eterna, Ferren 
+aprisionou uma pequena parte de sua essência neste 
+amuleto, fazendo com que ele funcione como um 
+segundo filactério. No início de cada dia em que estiver 
+usando o amuleto, o portador deve fazer um teste 
+de Vontade (CD 20 + 1 por dia adicional). Se falhar, 
+começa a ter pensamentos cruéis, que o incentivam 
+a buscar mais poder a qualquer custo. Se falhar uma 
+segunda vez, torna-se dependente do amuleto e não 
+consegue mais removê-lo por vontade própria (e fica 
+agressivo caso outra pessoa tente fazê-lo). Por fim, se 
+falhar uma terceira vez, sua alma é destruída. Quando 
+isso acontecer, se Ferren estiver destruído, o fragmento 
+de sua alma armazenado no amuleto se apossa do 
+corpo do portador, trazendo o Arquilich de volta à 
+existência. O portador passa automaticamente no teste 
+de Vontade sempre que tiver matado um conjurador 
+arcano no dia anterior.
+Rompedor da Realidade
+Este artefato lefeu é um machado de guerra gigante 
+atroz pungente anticriatura (não lefeu) magnífico de matéria 
+vermelha. Ataques com ele ignoram redução de dano, 
+fortificação e imunidade a acertos críticos. Além disso, 
+seus golpes distorcem a vítima: uma criatura atingida 
+pela arma perde 1 ponto cumulativo de um atributo 
+aleatório permanentemente (Fort CD For evita). Um 
+não lefeu que empunhe o Rompedor fica debilitado até 
+o fim da cena.
+pilão ConspurcadO
+Este pequeno pilão de madeira de aparência sinistra 
+é decorado com símbolos místicos entalhados e frag-
+mentos de ossos encravados. Conta como uma costela 
+de lich. Além dos benefícios desse esotérico, o custo de 
+suas magias de encantamento e necromancia lançadas 
+pela varinha diminui em –1 PM e a CD para resistir a 
+elas aumenta em +2. Acessório médio, preço T$ 21.000.
+Pistola Demoníaca
+Esta pistola ameaçadora formidável e profana não pode 
+ser fabricada por nenhum meio conhecido por mortais 
+e só pode ser obtida através de um pacto com um 
+demônio da pólvora (veja p. 255). Uma pistola demoníaca 
+está sempre carregada e não precisa de munição. Uma 
+vez por dia, em um momento escolhido pelo mestre 
+(ou na primeira ocasião em que houver outras pessoas 
+próximas), o portador da arma é atingido pelo impulso 
+homicida de disparar contra uma criatura inteligente 
+aleatória à vista (incluindo aliados). O portador pode 
+resistir a esse impulso por este dia passando em um 
+teste de Vontade (CD 25). Qualquer medida para evitar 
+acidentes (manter a pistola guardada, descarregada ou 
+mesmo trancada e fora de alcance) fracassa automatica-
+mente; quando o portador cede ao impulso assassino, 
+a arma surge magicamente em suas mãos. Caso o 
+portador da pistola seja morto, a arma desaparece. 
+Arma específica média, preço T$ 72.250.
+Uyzrrak Da’ukthra 
+Este machado de guerra magnífico aumentado atroz de 
+adamante é marcado com escrita goblinoide em sua 
+lâmina e aparenta já ter visto inúmeras batalhas. Quando 
+empunhado por um duyshidakk, causa +2d8 pontos 
+de dano contra qualquer criatura não duyshidakk e 
+recebe um encanto adicional, conforme o elemento 
+do círculo intermediário do Akzath mais próximo do 
+portador: Luz, Sagrado; Nós, Piedoso; Dentro, Defensor; 
+Estagnação, Excruciante; Trevas, Profano; Fora, Arremesso; 
+Eles, Dilacerante; Movimento, Energético. A critério do 
+mestre, se o portador do machado se tornar mais pró-
+ximo de outro elemento, o encanto muda de acordo. 
+Arma específica média, preço T$ 78.050.
+Novos Artefatos
+Amuleto do Abutre
+Este pingente de ouro em formato de abutre é um 
+poderoso amuleto arcano, cuja origem sombria é cercada 
+de mistério. Sabe-se que ele surgiu na mesma época 
+em que Ferren Asloth realizou seu famigerado ritual e 

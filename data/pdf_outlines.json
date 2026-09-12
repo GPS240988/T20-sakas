@@ -1,0 +1,4120 @@
+{
+  "Jogo do Ano": {
+    "total_pages": 407,
+    "outline": [
+      {
+        "title": "Sobrecapa",
+        "page": 1
+      },
+      {
+        "title": "Sobre os Autores",
+        "page": 2
+      },
+      {
+        "title": "Capa",
+        "page": 3
+      },
+      {
+        "title": "Mapa de Arton",
+        "page": 4
+      },
+      {
+        "title": "Folha de Rosto",
+        "page": 7
+      },
+      {
+        "title": "Créditos",
+        "page": 8
+      },
+      {
+        "title": "Sumário",
+        "page": 9
+      },
+      {
+        "title": "Prefácio",
+        "page": 10
+      },
+      {
+        "title": "Introdução",
+        "page": 12
+      },
+      [
+        {
+          "title": "O Que É Tormenta20?",
+          "page": 14
+        },
+        [
+          {
+            "title": "Mecânica Básica",
+            "page": 15
+          },
+          {
+            "title": "Começando",
+            "page": 15
+          }
+        ],
+        {
+          "title": "Termos Importantes",
+          "page": 17
+        },
+        {
+          "title": "20 Coisas a Saber",
+          "page": 18
+        }
+      ],
+      {
+        "title": "Capítulo 1: Construção de Personagem",
+        "page": 20
+      },
+      [
+        {
+          "title": "Conceito de Personagem",
+          "page": 22
+        },
+        {
+          "title": "Atributos Básicos",
+          "page": 23
+        },
+        {
+          "title": "Raças",
+          "page": 24
+        },
+        [
+          {
+            "title": "Humano",
+            "page": 25
+          },
+          {
+            "title": "Anão",
+            "page": 26
+          },
+          {
+            "title": "Dahllan",
+            "page": 27
+          },
+          {
+            "title": "Elfo",
+            "page": 28
+          },
+          {
+            "title": "Goblin",
+            "page": 29
+          },
+          {
+            "title": "Lefou",
+            "page": 30
+          },
+          {
+            "title": "Minotauro",
+            "page": 31
+          },
+          {
+            "title": "Qareen",
+            "page": 32
+          },
+          {
+            "title": "Suraggel",
+            "page": 36
+          },
+          {
+            "title": "Sílfide",
+            "page": 36
+          },
+          {
+            "title": "Sereia/tritão",
+            "page": 35
+          },
+          {
+            "title": "Osteon",
+            "page": 35
+          },
+          {
+            "title": "Medusa",
+            "page": 34
+          },
+          {
+            "title": "Kliren",
+            "page": 34
+          },
+          {
+            "title": "Hynne",
+            "page": 33
+          },
+          {
+            "title": "Golem",
+            "page": 33
+          },
+          {
+            "title": "Trog",
+            "page": 37
+          }
+        ],
+        {
+          "title": "Classes",
+          "page": 38
+        },
+        [
+          {
+            "title": "Escolhendo sua Classe",
+            "page": 38
+          },
+          {
+            "title": "Características das Classes",
+            "page": 38
+          },
+          {
+            "title": "Nível de Personagem",
+            "page": 39
+          },
+          [
+            {
+              "title": "Subindo de Nível",
+              "page": 41
+            },
+            [
+              {
+                "title": "Multiclasse",
+                "page": 41
+              }
+            ]
+          ],
+          {
+            "title": "Arcanista",
+            "page": 42
+          },
+          {
+            "title": "Bárbaro",
+            "page": 46
+          },
+          {
+            "title": "Bardo",
+            "page": 49
+          },
+          {
+            "title": "Bucaneiro",
+            "page": 52
+          },
+          {
+            "title": "Caçador",
+            "page": 55
+          },
+          {
+            "title": "Cavaleiro",
+            "page": 58
+          },
+          {
+            "title": "Clérigo",
+            "page": 62
+          },
+          {
+            "title": "Druida",
+            "page": 66
+          },
+          {
+            "title": "Guerreiro",
+            "page": 70
+          },
+          {
+            "title": "Inventor",
+            "page": 73
+          },
+          {
+            "title": "Ladino",
+            "page": 78
+          },
+          {
+            "title": "Lutador",
+            "page": 81
+          },
+          {
+            "title": "Nobre",
+            "page": 84
+          },
+          {
+            "title": "Paladino",
+            "page": 87
+          }
+        ],
+        {
+          "title": "Origens",
+          "page": 91
+        },
+        [
+          {
+            "title": "Acólito",
+            "page": 91
+          },
+          {
+            "title": "Amigos dos Animais",
+            "page": 91
+          },
+          {
+            "title": "Amnésico",
+            "page": 92
+          },
+          {
+            "title": "Aristocrata",
+            "page": 92
+          },
+          {
+            "title": "Artesão",
+            "page": 92
+          },
+          {
+            "title": "Artista",
+            "page": 92
+          },
+          {
+            "title": "Assistente de Laboratório",
+            "page": 93
+          },
+          {
+            "title": "Batedor",
+            "page": 94
+          },
+          {
+            "title": "Capanga",
+            "page": 94
+          },
+          {
+            "title": "Charlatão",
+            "page": 94
+          },
+          {
+            "title": "Circense",
+            "page": 95
+          },
+          {
+            "title": "Criminoso",
+            "page": 95
+          },
+          {
+            "title": "Curandeiro",
+            "page": 95
+          },
+          {
+            "title": "Eremita",
+            "page": 95
+          },
+          {
+            "title": "Escravo",
+            "page": 95
+          },
+          {
+            "title": "Estudioso",
+            "page": 96
+          },
+          {
+            "title": "Fazendeiro",
+            "page": 96
+          },
+          {
+            "title": "Forasteiro",
+            "page": 96
+          },
+          {
+            "title": "Gladiador",
+            "page": 96
+          },
+          {
+            "title": "Guarda",
+            "page": 97
+          },
+          {
+            "title": "Herdeiro",
+            "page": 97
+          },
+          {
+            "title": "Herói Camponês",
+            "page": 97
+          },
+          {
+            "title": "Marujo",
+            "page": 98
+          },
+          {
+            "title": "Mateiro",
+            "page": 98
+          },
+          {
+            "title": "Membro de Guilda",
+            "page": 98
+          },
+          {
+            "title": "Mercador",
+            "page": 99
+          },
+          {
+            "title": "Minerador",
+            "page": 99
+          },
+          {
+            "title": "Nômade",
+            "page": 99
+          },
+          {
+            "title": "Pivete",
+            "page": 99
+          },
+          {
+            "title": "Refugiado",
+            "page": 99
+          },
+          {
+            "title": "Seguidor",
+            "page": 100
+          },
+          {
+            "title": "Selvagem",
+            "page": 100
+          },
+          {
+            "title": "Soldado",
+            "page": 100
+          },
+          {
+            "title": "Taverneiro",
+            "page": 100
+          },
+          {
+            "title": "Trabalhador",
+            "page": 101
+          },
+          {
+            "title": "Sua Própria Origem",
+            "page": 101
+          }
+        ],
+        {
+          "title": "Deuses",
+          "page": 102
+        },
+        [
+          {
+            "title": "Escolhendo seu Deus",
+            "page": 102
+          },
+          {
+            "title": "Características dos Deuses",
+            "page": 102
+          },
+          {
+            "title": "Aharadak",
+            "page": 102
+          },
+          {
+            "title": "Allihanna",
+            "page": 103
+          },
+          {
+            "title": "Arsenal",
+            "page": 104
+          },
+          {
+            "title": "Azgher",
+            "page": 104
+          },
+          {
+            "title": "Hyninn",
+            "page": 104
+          },
+          {
+            "title": "Kallyadranoch",
+            "page": 105
+          },
+          {
+            "title": "Khalmyr",
+            "page": 105
+          },
+          {
+            "title": "Lena",
+            "page": 105
+          },
+          {
+            "title": "Lin-Wu",
+            "page": 106
+          },
+          {
+            "title": "Marah",
+            "page": 107
+          },
+          {
+            "title": "Megalokk",
+            "page": 107
+          },
+          {
+            "title": "Nimb",
+            "page": 108
+          },
+          {
+            "title": "Oceano",
+            "page": 108
+          },
+          {
+            "title": "Sszzaas",
+            "page": 109
+          },
+          {
+            "title": "Tanna-Toh",
+            "page": 109
+          },
+          {
+            "title": "Tenebra",
+            "page": 110
+          },
+          {
+            "title": "Thwor",
+            "page": 110
+          },
+          {
+            "title": "Thyatis",
+            "page": 110
+          },
+          {
+            "title": "Valkaria",
+            "page": 111
+          },
+          {
+            "title": "Wynna",
+            "page": 111
+          }
+        ],
+        {
+          "title": "Toques Finais",
+          "page": 112
+        },
+        [
+          {
+            "title": "Características Derivadas",
+            "page": 112
+          },
+          {
+            "title": "Descrição",
+            "page": 113
+          },
+          {
+            "title": "Alinhamento",
+            "page": 115
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 2: Perícias & Poderes",
+        "page": 118
+      },
+      [
+        {
+          "title": "Perícias",
+          "page": 120
+        },
+        [
+          {
+            "title": "Acrobacia",
+            "page": 121
+          },
+          {
+            "title": "Adestramento",
+            "page": 121
+          },
+          {
+            "title": "Atletismo",
+            "page": 122
+          },
+          {
+            "title": "Atuação",
+            "page": 122
+          },
+          {
+            "title": "Cavalgar",
+            "page": 122
+          },
+          {
+            "title": "Conhecimento",
+            "page": 123
+          },
+          {
+            "title": "Cura",
+            "page": 123
+          },
+          {
+            "title": "Diplomacia",
+            "page": 124
+          },
+          {
+            "title": "Enganação",
+            "page": 124
+          },
+          {
+            "title": "Fortitude",
+            "page": 125
+          },
+          {
+            "title": "Furtividade",
+            "page": 125
+          },
+          {
+            "title": "Guerra",
+            "page": 125
+          },
+          {
+            "title": "Iniciativa",
+            "page": 125
+          },
+          {
+            "title": "Intimidação",
+            "page": 126
+          },
+          {
+            "title": "Intuição",
+            "page": 126
+          },
+          {
+            "title": "Investigação",
+            "page": 126
+          },
+          {
+            "title": "Jogatina",
+            "page": 126
+          },
+          {
+            "title": "Ladinagem",
+            "page": 126
+          },
+          {
+            "title": "Luta",
+            "page": 127
+          },
+          {
+            "title": "Misticismo",
+            "page": 127
+          },
+          {
+            "title": "Nobreza",
+            "page": 127
+          },
+          {
+            "title": "Ofício",
+            "page": 127
+          },
+          {
+            "title": "Percepção",
+            "page": 128
+          },
+          {
+            "title": "Pilotagem",
+            "page": 128
+          },
+          {
+            "title": "Pontaria",
+            "page": 128
+          },
+          {
+            "title": "Reflexos",
+            "page": 128
+          },
+          {
+            "title": "Religião",
+            "page": 128
+          },
+          {
+            "title": "Sobrevivência",
+            "page": 129
+          },
+          {
+            "title": "Vontade",
+            "page": 129
+          }
+        ],
+        {
+          "title": "Poderes Gerais",
+          "page": 130
+        },
+        [
+          {
+            "title": "Poderes de Combate",
+            "page": 130
+          },
+          {
+            "title": "Poderes de Destino",
+            "page": 135
+          },
+          {
+            "title": "Poderes de Magia",
+            "page": 137
+          },
+          {
+            "title": "Poderes Concedidos",
+            "page": 138
+          },
+          {
+            "title": "Poderes da Tormenta",
+            "page": 142
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 3: Equipamento",
+        "page": 144
+      },
+      [
+        {
+          "title": "Equipamento Inicial",
+          "page": 146
+        },
+        {
+          "title": "Riqueza & Moedas",
+          "page": 146
+        },
+        {
+          "title": "Usando & Carregando",
+          "page": 147
+        },
+        {
+          "title": "Armas",
+          "page": 148
+        },
+        {
+          "title": "Armaduras & Escudos",
+          "page": 158
+        },
+        {
+          "title": "Itens Gerais",
+          "page": 161
+        },
+        [
+          {
+            "title": "Equipamento de Aventura",
+            "page": 161
+          },
+          {
+            "title": "Ferramentas",
+            "page": 164
+          },
+          {
+            "title": "Vestuário",
+            "page": 165
+          },
+          {
+            "title": "Esotéricos",
+            "page": 165
+          },
+          {
+            "title": "Alquímicos",
+            "page": 166
+          },
+          {
+            "title": "Alimentação",
+            "page": 168
+          },
+          {
+            "title": "Animais",
+            "page": 168
+          },
+          {
+            "title": "Veículos",
+            "page": 169
+          },
+          {
+            "title": "Serviços",
+            "page": 169
+          }
+        ],
+        {
+          "title": "Itens Superiores",
+          "page": 170
+        },
+        [
+          {
+            "title": "Melhorias",
+            "page": 170
+          },
+          {
+            "title": "Materiais Especiais",
+            "page": 172
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 4: Magia",
+        "page": 174
+      },
+      [
+        {
+          "title": "Classificação",
+          "page": 176
+        },
+        {
+          "title": "Aprendendo Magias",
+          "page": 176
+        },
+        {
+          "title": "Lançando Magias",
+          "page": 176
+        },
+        {
+          "title": "Características de Magias",
+          "page": 178
+        },
+        {
+          "title": "Anulando Magias",
+          "page": 179
+        },
+        {
+          "title": "Lista de Magias Arcanas",
+          "page": 180
+        },
+        {
+          "title": "Lista de Magias Divinas",
+          "page": 182
+        },
+        {
+          "title": "Descrição das Magias",
+          "page": 184
+        }
+      ],
+      {
+        "title": "Capítulo 5: Jogando",
+        "page": 218
+      },
+      [
+        {
+          "title": "O Papel do Jogador",
+          "page": 220
+        },
+        {
+          "title": "Regras do Jogo",
+          "page": 226
+        },
+        [
+          {
+            "title": "Testes",
+            "page": 226
+          },
+          {
+            "title": "Testes Estendidos",
+            "page": 228
+          },
+          {
+            "title": "Habilidades",
+            "page": 230
+          },
+          {
+            "title": "Habilidades Gerais",
+            "page": 234
+          },
+          [
+            {
+              "title": "Agarrar Aprimorado",
+              "page": 234
+            },
+            {
+              "title": "Cura Acelerada",
+              "page": 234
+            },
+            {
+              "title": "Deslocamento de Escalada",
+              "page": 234
+            },
+            {
+              "title": "Deslocamento de Escavação",
+              "page": 234
+            },
+            {
+              "title": "Deslocamento de Natação",
+              "page": 234
+            },
+            {
+              "title": "Deslocamento de Voo",
+              "page": 235
+            },
+            {
+              "title": "Faro",
+              "page": 235
+            },
+            {
+              "title": "Fortificação",
+              "page": 235
+            },
+            {
+              "title": "Imunidade",
+              "page": 235
+            },
+            {
+              "title": "Incorpóreo",
+              "page": 235
+            },
+            {
+              "title": "Percepção às Cegas",
+              "page": 235
+            },
+            {
+              "title": "Redução de Dano (RD)",
+              "page": 235
+            },
+            {
+              "title": "Resistência a <Efeito>",
+              "page": 235
+            },
+            {
+              "title": "Visão na Penumbra",
+              "page": 235
+            },
+            {
+              "title": "Visão no Escuro",
+              "page": 235
+            },
+            {
+              "title": "Vulnerabilidade a Dano",
+              "page": 235
+            }
+          ]
+        ],
+        {
+          "title": "Combate",
+          "page": 236
+        },
+        [
+          {
+            "title": "Estatísticas de Combate",
+            "page": 236
+          },
+          {
+            "title": "A Rodada de Combate",
+            "page": 239
+          },
+          {
+            "title": "Ferimentos & Morte",
+            "page": 242
+          },
+          {
+            "title": "Movimentação",
+            "page": 244
+          },
+          {
+            "title": "Situações Especiais",
+            "page": 244
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 6: O Mestre",
+        "page": 246
+      },
+      [
+        {
+          "title": "Como Mestrar",
+          "page": 248
+        },
+        {
+          "title": "Sessões, Aventuras e Campanhas",
+          "page": 254
+        },
+        [
+          {
+            "title": "Estruturando uma Aventura",
+            "page": 254
+          },
+          {
+            "title": "Cenas",
+            "page": 258
+          },
+          {
+            "title": "Estruturando uma Campanha",
+            "page": 260
+          }
+        ],
+        {
+          "title": "NPCs",
+          "page": 263
+        },
+        [
+          {
+            "title": "Regras para NPCs",
+            "page": 265
+          },
+          {
+            "title": "Parceiros",
+            "page": 266
+          }
+        ],
+        {
+          "title": "Ambientes de Aventura",
+          "page": 269
+        },
+        [
+          {
+            "title": "Masmorras",
+            "page": 269
+          },
+          {
+            "title": "Os Ermos",
+            "page": 272
+          },
+          {
+            "title": "Ambientes Urbanos",
+            "page": 276
+          }
+        ],
+        {
+          "title": "Tempo entre Aventuras",
+          "page": 282
+        },
+        [
+          {
+            "title": "Sumários",
+            "page": 282
+          },
+          {
+            "title": "Jogando Solos",
+            "page": 282
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 7: Ameaças",
+        "page": 286
+      },
+      [
+        {
+          "title": "Construindo Combates",
+          "page": 288
+        },
+        [
+          {
+            "title": "Criaturas",
+            "page": 288
+          }
+        ],
+        {
+          "title": "Masmorras",
+          "page": 292
+        },
+        {
+          "title": "Ermos",
+          "page": 295
+        },
+        {
+          "title": "Os Puristas",
+          "page": 300
+        },
+        {
+          "title": "Reinos dos Mortos",
+          "page": 303
+        },
+        {
+          "title": "Os Duyshidakk",
+          "page": 306
+        },
+        {
+          "title": "Os Sszzaazitas",
+          "page": 310
+        },
+        {
+          "title": "Os Trolls Nobres",
+          "page": 313
+        },
+        {
+          "title": "Os Dragões",
+          "page": 316
+        },
+        {
+          "title": "A Tormenta",
+          "page": 320
+        },
+        {
+          "title": "Perigos",
+          "page": 323
+        },
+        [
+          {
+            "title": "Perigos Complexos",
+            "page": 326
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 8: Recompensas",
+        "page": 330
+      },
+      [
+        {
+          "title": "Pontos de Experiência",
+          "page": 332
+        },
+        {
+          "title": "Tesouros",
+          "page": 333
+        },
+        [
+          {
+            "title": "Tesouro em Combate",
+            "page": 333
+          },
+          {
+            "title": "Tesouro em Outras Situações",
+            "page": 338
+          },
+          {
+            "title": "Controlando a Riqueza",
+            "page": 338
+          }
+        ],
+        {
+          "title": "Itens Mágicos",
+          "page": 339
+        },
+        [
+          {
+            "title": "Usando Itens Mágicos",
+            "page": 339
+          },
+          {
+            "title": "Fabricando Itens Mágicos",
+            "page": 339
+          },
+          {
+            "title": "Destruindo Itens Mágicos",
+            "page": 340
+          },
+          {
+            "title": "Armas",
+            "page": 341
+          },
+          {
+            "title": "Armaduras & Escudos",
+            "page": 344
+          },
+          {
+            "title": "Poções & Pergaminhos",
+            "page": 347
+          },
+          {
+            "title": "Acessórios",
+            "page": 348
+          }
+        ],
+        {
+          "title": "Artefatos",
+          "page": 352
+        }
+      ],
+      {
+        "title": "Capítulo 9: Mundo de Arton",
+        "page": 356
+      },
+      [
+        {
+          "title": "História Parcial",
+          "page": 358
+        },
+        {
+          "title": "O Reinado",
+          "page": 364
+        },
+        [
+          {
+            "title": "Deheon, o Reino Capital",
+            "page": 364
+          },
+          {
+            "title": "Bielefeld, o Reino dos Cavaleiros",
+            "page": 366
+          },
+          {
+            "title": "Wynlla, o Reino da Magia",
+            "page": 368
+          },
+          {
+            "title": "Namalkah, o Reino dos Cavalos",
+            "page": 369
+          },
+          {
+            "title": "Ahlen, o Reino da Intriga",
+            "page": 370
+          },
+          {
+            "title": "Zakharov, o Reino das Armas",
+            "page": 371
+          },
+          {
+            "title": "Pondsmânia, o Reino das Fadas",
+            "page": 372
+          },
+          {
+            "title": "A Academia Arcana",
+            "page": 373
+          },
+          {
+            "title": "Vectora, o Mercado nas Nuvens",
+            "page": 374
+          }
+        ],
+        {
+          "title": "Além do Reinado",
+          "page": 376
+        },
+        [
+          {
+            "title": "A Supremacia Purista",
+            "page": 376
+          },
+          {
+            "title": "A Conflagração do Aço",
+            "page": 377
+          },
+          {
+            "title": "Aslothia, o Reino dos Mortos",
+            "page": 377
+          },
+          {
+            "title": "Repúblicas Livres de Sambúrdia",
+            "page": 377
+          },
+          {
+            "title": "Os Feudos de Trebuck",
+            "page": 378
+          },
+          {
+            "title": "Sckharshantallas, o Reino do Dragão",
+            "page": 378
+          },
+          {
+            "title": "As Sanguinárias",
+            "page": 379
+          },
+          {
+            "title": "As Uivantes",
+            "page": 380
+          },
+          {
+            "title": "Ermos Púrpuras",
+            "page": 381
+          },
+          {
+            "title": "O Império de Tauron",
+            "page": 382
+          },
+          {
+            "title": "As Ruínas de Tyrondir",
+            "page": 384
+          },
+          {
+            "title": "Salistick",
+            "page": 386
+          },
+          {
+            "title": "Svalas",
+            "page": 387
+          },
+          {
+            "title": "As Catacumbas de Leverick",
+            "page": 387
+          },
+          {
+            "title": "Doherimm, o Reino dos Anões",
+            "page": 388
+          },
+          {
+            "title": "A Tragédia Élfica",
+            "page": 389
+          },
+          {
+            "title": "Os Três Mares",
+            "page": 390
+          },
+          {
+            "title": "Khubar",
+            "page": 390
+          },
+          {
+            "title": "Galrasia, o Mundo Perdido",
+            "page": 391
+          },
+          {
+            "title": "Lamnor, o Continente Bestial",
+            "page": 392
+          },
+          {
+            "title": "O Império de Jade",
+            "page": 394
+          },
+          {
+            "title": "Moreania",
+            "page": 395
+          },
+          {
+            "title": "A Tormenta",
+            "page": 396
+          }
+        ]
+      ],
+      {
+        "title": "Playtesters",
+        "page": 398
+      },
+      {
+        "title": "Apêndice: Lista de Condições",
+        "page": 400
+      },
+      {
+        "title": "Índice Remissivo",
+        "page": 402
+      },
+      {
+        "title": "Ficha de Personagem",
+        "page": 406
+      },
+      {
+        "title": "4ª Capa",
+        "page": 407
+      }
+    ]
+  },
+  "Ameacas": {
+    "total_pages": 436,
+    "outline": [
+      {
+        "title": "Capa",
+        "page": 1
+      },
+      {
+        "title": "Créditos",
+        "page": 4
+      },
+      {
+        "title": "Sumário",
+        "page": 5
+      },
+      {
+        "title": "Prefácio: Sonho Monstruoso",
+        "page": 8
+      },
+      {
+        "title": "Introdução: Mundo Ameaçador",
+        "page": 10
+      },
+      [
+        {
+          "title": "O Que É uma \"Ameaça\"?",
+          "page": 10
+        },
+        {
+          "title": "Construindo Desafios",
+          "page": 10
+        }
+      ],
+      {
+        "title": "Capítulo 1: Ameaças",
+        "page": 12
+      },
+      [
+        {
+          "title": "Fichas de Criaturas",
+          "page": 14
+        },
+        {
+          "title": "Tipos de Criaturas",
+          "page": 15
+        },
+        {
+          "title": "Habilidades Gerais",
+          "page": 16
+        },
+        {
+          "title": "Áreas de Tormenta",
+          "page": 20
+        },
+        [
+          {
+            "title": "Alma Acorrentada",
+            "page": 20
+          },
+          {
+            "title": "Armadilhas Vivas",
+            "page": 21
+          },
+          {
+            "title": "Bruxo da Tormenta",
+            "page": 22
+          },
+          {
+            "title": "Enxame Infernal",
+            "page": 23
+          },
+          {
+            "title": "Esmagador Coletivo",
+            "page": 24
+          },
+          {
+            "title": "Infecto",
+            "page": 24
+          },
+          {
+            "title": "Lefeu",
+            "page": 26
+          },
+          [
+            {
+              "title": "Veridak",
+              "page": 26
+            },
+            {
+              "title": "Hurobakk",
+              "page": 26
+            },
+            {
+              "title": "Burodron",
+              "page": 27
+            },
+            {
+              "title": "Morgadrel",
+              "page": 28
+            },
+            {
+              "title": "Ezzayn",
+              "page": 29
+            }
+          ],
+          {
+            "title": "Gatzvalith, Lorde da Tormenta",
+            "page": 30
+          }
+        ],
+        {
+          "title": "Brutos & Indomáveis",
+          "page": 32
+        },
+        [
+          {
+            "title": "Meio-Orc",
+            "page": 32
+          },
+          {
+            "title": "Orc",
+            "page": 34
+          },
+          {
+            "title": "Orc Mutante",
+            "page": 35
+          },
+          {
+            "title": "Orc Xamã",
+            "page": 37
+          },
+          {
+            "title": "Sapo Atroz",
+            "page": 37
+          },
+          {
+            "title": "Tabrachi",
+            "page": 38
+          },
+          {
+            "title": "Trog",
+            "page": 39
+          },
+          {
+            "title": "Trog Anão",
+            "page": 41
+          },
+          {
+            "title": "Ogro",
+            "page": 42
+          }
+        ],
+        {
+          "title": "Capangas & Bandoleiros",
+          "page": 44
+        },
+        [
+          {
+            "title": "Bandido",
+            "page": 44
+          },
+          {
+            "title": "Capanga",
+            "page": 45
+          },
+          {
+            "title": "Chefe do Crime",
+            "page": 46
+          },
+          {
+            "title": "Clérigo de Hyninn",
+            "page": 47
+          },
+          {
+            "title": "Devoto de Hyninn",
+            "page": 49
+          },
+          {
+            "title": "Gatuno",
+            "page": 50
+          },
+          {
+            "title": "Duplo",
+            "page": 52
+          }
+        ],
+        {
+          "title": "Culto de Aharadak",
+          "page": 54
+        },
+        [
+          {
+            "title": "Acólito da Agonia",
+            "page": 54
+          },
+          {
+            "title": "Aspecto de Aharadak",
+            "page": 55
+          },
+          {
+            "title": "Fanático Lefou",
+            "page": 57
+          },
+          {
+            "title": "Reishid",
+            "page": 58
+          },
+          {
+            "title": "Senhor do Gigante Rubro",
+            "page": 59
+          },
+          {
+            "title": "Zyrrinaz",
+            "page": 60
+          },
+          {
+            "title": "Templos\nde Aharadak",
+            "page": 62
+          },
+          [
+            {
+              "title": "Dádivas de Aharadak",
+              "page": 62
+            }
+          ],
+          {
+            "title": "Avatar de Aharadak",
+            "page": 64
+          }
+        ],
+        {
+          "title": "Dragões",
+          "page": 66
+        },
+        [
+          {
+            "title": "Dragão Menor",
+            "page": 66
+          },
+          {
+            "title": "Dragão Adulto",
+            "page": 69
+          },
+          {
+            "title": "Dragão Venerável",
+            "page": 71
+          },
+          {
+            "title": "Dragão Feral",
+            "page": 74
+          },
+          {
+            "title": "Dragão Bicéfalo",
+            "page": 74
+          },
+          {
+            "title": "Dragão-Real",
+            "page": 76
+          },
+          {
+            "title": "Modificando Dragões",
+            "page": 77
+          },
+          {
+            "title": "Sckhar, Dragão-Rei do Fogo",
+            "page": 78
+          }
+        ],
+        {
+          "title": "Duyshidakk",
+          "page": 80
+        },
+        [
+          {
+            "title": "Bugbear",
+            "page": 80
+          },
+          {
+            "title": "Bruxa Goblin",
+            "page": 81
+          },
+          {
+            "title": "Gangue Goblin￼",
+            "page": 82
+          },
+          {
+            "title": "Goblin-Bomba",
+            "page": 83
+          },
+          {
+            "title": "Goblin de Ferro",
+            "page": 84
+          },
+          {
+            "title": "Hobgoblin Atirador",
+            "page": 85
+          },
+          {
+            "title": "Hobgoblin Comandante Tático",
+            "page": 86
+          },
+          {
+            "title": "Hobgoblin Gladiador",
+            "page": 87
+          },
+          {
+            "title": "Sangue do Ayrrak",
+            "page": 88
+          }
+        ],
+        {
+          "title": "Elementais",
+          "page": 90
+        },
+        [
+          {
+            "title": "Elemental da Água",
+            "page": 90
+          },
+          [
+            {
+              "title": "Aquin’ne",
+              "page": 90
+            },
+            {
+              "title": "Corgann",
+              "page": 91
+            },
+            {
+              "title": "Namasqall",
+              "page": 92
+            }
+          ],
+          {
+            "title": "Elemental do Ar",
+            "page": 93
+          },
+          [
+            {
+              "title": "T’Peel",
+              "page": 93
+            },
+            {
+              "title": "Rarvnaak",
+              "page": 94
+            },
+            {
+              "title": "Hallus’tir",
+              "page": 95
+            }
+          ],
+          {
+            "title": "Elemental do Fogo",
+            "page": 96
+          },
+          [
+            {
+              "title": "Pakk",
+              "page": 96
+            },
+            {
+              "title": "Ber-baram",
+              "page": 97
+            },
+            {
+              "title": "Serpentaar",
+              "page": 97
+            }
+          ],
+          {
+            "title": "Elemental da Terra",
+            "page": 98
+          },
+          [
+            {
+              "title": "Terrier",
+              "page": 98
+            },
+            {
+              "title": "Pamgra",
+              "page": 99
+            },
+            {
+              "title": "Tanaloom",
+              "page": 100
+            }
+          ],
+          {
+            "title": "Elemental Corrompido",
+            "page": 102
+          }
+        ],
+        {
+          "title": "Ermos",
+          "page": 104
+        },
+        [
+          {
+            "title": "Bulette",
+            "page": 104
+          },
+          {
+            "title": "Carrasco de Lena",
+            "page": 105
+          },
+          {
+            "title": "Centauro",
+            "page": 106
+          },
+          [
+            {
+              "title": "Centauro Chefe",
+              "page": 106
+            },
+            {
+              "title": "Centauro Xamã de Megalokk",
+              "page": 107
+            }
+          ],
+          {
+            "title": "Ente",
+            "page": 108
+          },
+          {
+            "title": "Estirge",
+            "page": 109
+          },
+          {
+            "title": "Fera-Cacto",
+            "page": 110
+          },
+          {
+            "title": "Lagarto Perseguidor",
+            "page": 112
+          },
+          {
+            "title": "Tendrículo",
+            "page": 113
+          },
+          {
+            "title": "Rhandomm",
+            "page": 114
+          }
+        ],
+        {
+          "title": "Gnolls",
+          "page": 116
+        },
+        [
+          {
+            "title": "Gnoll Caçador de Cabeças",
+            "page": 116
+          },
+          {
+            "title": "Gnoll Capanga",
+            "page": 117
+          },
+          {
+            "title": "Gnoll Líder de Alcateia",
+            "page": 118
+          },
+          {
+            "title": "Gnoll Xamã",
+            "page": 120
+          },
+          {
+            "title": "Hiena",
+            "page": 121
+          },
+          {
+            "title": "Matrona Gnoll",
+            "page": 122
+          },
+          {
+            "title": "Gnoll Vuul'rak",
+            "page": 124
+          }
+        ],
+        {
+          "title": "Golens",
+          "page": 126
+        },
+        [
+          {
+            "title": "Gárgula",
+            "page": 126
+          },
+          {
+            "title": "Golem de Barro",
+            "page": 127
+          },
+          {
+            "title": "Golem de Bronze",
+            "page": 128
+          },
+          {
+            "title": "Golem de Carne",
+            "page": 129
+          },
+          {
+            "title": "Golem de Espelhos",
+            "page": 130
+          },
+          {
+            "title": "Golem de Ferro",
+            "page": 131
+          },
+          {
+            "title": "Golem de Matéria Vermelha",
+            "page": 132
+          },
+          {
+            "title": "Golem de Pedra",
+            "page": 133
+          },
+          {
+            "title": "Instrumento Divino",
+            "page": 134
+          },
+          {
+            "title": "Soldado Mecânico",
+            "page": 135
+          },
+          {
+            "title": "Golens Despertos",
+            "page": 136
+          }
+        ],
+        {
+          "title": "Igreja de Arsenal",
+          "page": 138
+        },
+        [
+          {
+            "title": "Coletor de Arsenal",
+            "page": 138
+          },
+          {
+            "title": "Forjador Litúrgico",
+            "page": 139
+          },
+          {
+            "title": "Guerreiro Perpétuo",
+            "page": 141
+          },
+          {
+            "title": "Kishin",
+            "page": 141
+          },
+          {
+            "title": "Sacerdote de Guerra",
+            "page": 142
+          },
+          {
+            "title": "Kishinauros",
+            "page": 144
+          }
+        ],
+        {
+          "title": "Igreja de Kallyadranoch",
+          "page": 146
+        },
+        [
+          {
+            "title": "Cavaleiro de Kallyadranoch",
+            "page": 146
+          },
+          {
+            "title": "Clérigo de Kally",
+            "page": 147
+          },
+          {
+            "title": "Corcel de Kally",
+            "page": 149
+          },
+          {
+            "title": "Dracomante",
+            "page": 150
+          },
+          {
+            "title": "Kallyanach",
+            "page": 152
+          },
+          {
+            "title": "Avatar de Kallyadranach",
+            "page": 154
+          }
+        ],
+        {
+          "title": "Império de Jade",
+          "page": 156
+        },
+        [
+          {
+            "title": "Kabuto",
+            "page": 156
+          },
+          {
+            "title": "Kaijin",
+            "page": 158
+          },
+          {
+            "title": "Kappa",
+            "page": 160
+          },
+          {
+            "title": "Mashin",
+            "page": 161
+          },
+          {
+            "title": "Nezumi",
+            "page": 162
+          },
+          {
+            "title": "Oni",
+            "page": 164
+          },
+          {
+            "title": "Tengu",
+            "page": 165
+          },
+          {
+            "title": "Dragão Celestial",
+            "page": 167
+          }
+        ],
+        {
+          "title": "Império de Tauron",
+          "page": 170
+        },
+        [
+          {
+            "title": "Arqueiro Escravo",
+            "page": 170
+          },
+          {
+            "title": "Centurião",
+            "page": 171
+          },
+          {
+            "title": "Fúria de Tauron",
+            "page": 172
+          },
+          {
+            "title": "Gladiador Táurico",
+            "page": 173
+          },
+          {
+            "title": "Legionário",
+            "page": 174
+          },
+          {
+            "title": "Legionário Insano",
+            "page": 175
+          },
+          {
+            "title": "Minauro",
+            "page": 176
+          },
+          {
+            "title": "Governador Corrupto",
+            "page": 178
+          }
+        ],
+        {
+          "title": "Kobolds",
+          "page": 180
+        },
+        [
+          {
+            "title": "Armadilhas Kobolds",
+            "page": 180
+          },
+          {
+            "title": "Cão de Kally ",
+            "page": 181
+          },
+          {
+            "title": "Enxame Larval ",
+            "page": 182
+          },
+          {
+            "title": "Kobold ",
+            "page": 182
+          },
+          {
+            "title": "Kobold Bruto ",
+            "page": 186
+          },
+          {
+            "title": "Kobold Explosivo",
+            "page": 186
+          },
+          {
+            "title": "Kobold Xamã",
+            "page": 187
+          },
+          {
+            "title": "Kobold-Mãe",
+            "page": 188
+          },
+          {
+            "title": "Vagalhão Kobold",
+            "page": 190
+          }
+        ],
+        {
+          "title": "Mascotes & Familiares",
+          "page": 192
+        },
+        [
+          {
+            "title": "Bogum",
+            "page": 192
+          },
+          {
+            "title": "Escudeiro",
+            "page": 193
+          },
+          {
+            "title": "Fofo",
+            "page": 194
+          },
+          {
+            "title": "Gambá",
+            "page": 194
+          },
+          {
+            "title": "Homúnculo",
+            "page": 195
+          },
+          {
+            "title": "Kill’Bone",
+            "page": 196
+          },
+          {
+            "title": "Tentacute",
+            "page": 196
+          },
+          {
+            "title": "Verilêmur & Malafex",
+            "page": 198
+          }
+        ],
+        {
+          "title": "Masmorras",
+          "page": 200
+        },
+        [
+          {
+            "title": "Asa-Assassina",
+            "page": 200
+          },
+          {
+            "title": "Cocatriz",
+            "page": 201
+          },
+          {
+            "title": "Harpia",
+            "page": 202
+          },
+          {
+            "title": "Glop",
+            "page": 203
+          },
+          [
+            {
+              "title": "Glop",
+              "page": 203
+            },
+            {
+              "title": "Glooop",
+              "page": 203
+            },
+            {
+              "title": "Mamãe Glop",
+              "page": 204
+            }
+          ],
+          {
+            "title": "Mantor",
+            "page": 205
+          },
+          {
+            "title": "Mímico",
+            "page": 205
+          },
+          {
+            "title": "Quimera",
+            "page": 206
+          },
+          {
+            "title": "Slark",
+            "page": 207
+          },
+          {
+            "title": "Tigre-de-Hyninn",
+            "page": 208
+          },
+          {
+            "title": "Brawar",
+            "page": 210
+          }
+        ],
+        {
+          "title": "Montarias",
+          "page": 212
+        },
+        [
+          {
+            "title": "Baleote",
+            "page": 212
+          },
+          {
+            "title": "Capivara",
+            "page": 213
+          },
+          {
+            "title": "Cavalo",
+            "page": 214
+          },
+          [
+            {
+              "title": "Cavalo de Carga",
+              "page": 214
+            },
+            {
+              "title": "Cavalo de Montaria",
+              "page": 214
+            },
+            {
+              "title": "Cavalo de Guerra",
+              "page": 214
+            },
+            {
+              "title": "Cavalo de Namalkah",
+              "page": 215
+            }
+          ],
+          {
+            "title": "Cavalo Glacial",
+            "page": 215
+          },
+          {
+            "title": "Corcel do Deserto",
+            "page": 216
+          },
+          {
+            "title": "Dromedário",
+            "page": 217
+          },
+          {
+            "title": "Elefante",
+            "page": 218
+          },
+          {
+            "title": "Gorlogg",
+            "page": 218
+          },
+          {
+            "title": "Grandes Felinos",
+            "page": 219
+          },
+          [
+            {
+              "title": "Leão",
+              "page": 219
+            },
+            {
+              "title": "Pantera",
+              "page": 220
+            },
+            {
+              "title": "Tigre",
+              "page": 220
+            }
+          ],
+          {
+            "title": "Rinoceronte",
+            "page": 221
+          },
+          {
+            "title": "Tatu-Montanha",
+            "page": 222
+          },
+          {
+            "title": "Trobo",
+            "page": 222
+          },
+          {
+            "title": "Tumarkhân",
+            "page": 223
+          },
+          {
+            "title": "Urso",
+            "page": 224
+          },
+          [
+            {
+              "title": "Urso Panda",
+              "page": 225
+            },
+            {
+              "title": "Urso Pardo",
+              "page": 225
+            },
+            {
+              "title": "Urso das Cavernas",
+              "page": 226
+            }
+          ],
+          {
+            "title": "Warg",
+            "page": 226
+          },
+          {
+            "title": "Unicórnio",
+            "page": 228
+          }
+        ],
+        {
+          "title": "Mortos-Vivos",
+          "page": 230
+        },
+        [
+          {
+            "title": "Carniçal",
+            "page": 230
+          },
+          {
+            "title": "Esqueleto",
+            "page": 231
+          },
+          {
+            "title": "Fantasma",
+            "page": 233
+          },
+          {
+            "title": "Garra-Zumbi",
+            "page": 235
+          },
+          {
+            "title": "Lívido",
+            "page": 236
+          },
+          {
+            "title": "Mortalha",
+            "page": 237
+          },
+          {
+            "title": "Múmia",
+            "page": 238
+          },
+          {
+            "title": "Senhor das Múmias",
+            "page": 238
+          },
+          {
+            "title": "Necrodraco",
+            "page": 240
+          },
+          {
+            "title": "Tarso, Dragão-Rei dos Mortos",
+            "page": 242
+          }
+        ],
+        {
+          "title": "Mundo Perdido",
+          "page": 244
+        },
+        [
+          {
+            "title": "Árvore-Matilha",
+            "page": 244
+          },
+          {
+            "title": "Burafonte",
+            "page": 244
+          },
+          {
+            "title": "Deinonico",
+            "page": 246
+          },
+          {
+            "title": "Espada-da-Floresta",
+            "page": 247
+          },
+          {
+            "title": "Galhada",
+            "page": 248
+          },
+          {
+            "title": "Gali-Gali",
+            "page": 249
+          },
+          {
+            "title": "Grande Battham",
+            "page": 249
+          },
+          {
+            "title": "Raagoran",
+            "page": 250
+          },
+          {
+            "title": "Tuntram",
+            "page": 251
+          },
+          {
+            "title": "Rei Tirano",
+            "page": 252
+          }
+        ],
+        {
+          "title": "Piratas & Pistoleiros",
+          "page": 254
+        },
+        [
+          {
+            "title": "Afogado",
+            "page": 254
+          },
+          {
+            "title": "Armeiro de Tenebra",
+            "page": 255
+          },
+          {
+            "title": "Demônio da Pólvora",
+            "page": 257
+          },
+          {
+            "title": "Goblin de Sombreiro",
+            "page": 258
+          },
+          {
+            "title": "Homem-Piranha",
+            "page": 258
+          },
+          {
+            "title": "Pirata",
+            "page": 260
+          },
+          {
+            "title": "Pistoleiro de Smokestone",
+            "page": 262
+          },
+          {
+            "title": "Sahuagin",
+            "page": 263
+          },
+          {
+            "title": "Chapéu-Preto",
+            "page": 264
+          },
+          {
+            "title": "Lobo do Mar",
+            "page": 265
+          }
+        ],
+        {
+          "title": "Povos-Trovão",
+          "page": 266
+        },
+        [
+          {
+            "title": "Ceratops",
+            "page": 266
+          },
+          {
+            "title": "Pteros",
+            "page": 267
+          },
+          {
+            "title": "Velocis",
+            "page": 269
+          },
+          {
+            "title": "Voracis",
+            "page": 271
+          },
+          {
+            "title": "Totens do Trovão",
+            "page": 273
+          }
+        ],
+        {
+          "title": "Puristas",
+          "page": 276
+        },
+        [
+          {
+            "title": "Arcano de Guerra",
+            "page": 276
+          },
+          {
+            "title": "Caçador de Impuros",
+            "page": 277
+          },
+          {
+            "title": "Carruagem de Comando",
+            "page": 278
+          },
+          {
+            "title": "Dançarino de Guerra",
+            "page": 280
+          },
+          {
+            "title": "Purificado",
+            "page": 281
+          },
+          {
+            "title": "Soldado Blindado",
+            "page": 282
+          },
+          {
+            "title": "O Exército Purista",
+            "page": 283
+          },
+          [
+            {
+              "title": "Comandante",
+              "page": 283
+            }
+          ],
+          {
+            "title": "Soldado Superior",
+            "page": 284
+          }
+        ],
+        {
+          "title": "Reino dos Mortos",
+          "page": 286
+        },
+        [
+          {
+            "title": "Alzeras",
+            "page": 286
+          },
+          {
+            "title": "Cemitério Vivo",
+            "page": 287
+          },
+          {
+            "title": "Chacal-Zumbi",
+            "page": 288
+          },
+          {
+            "title": "Mercenário de Aslothia",
+            "page": 290
+          },
+          {
+            "title": "Morgue’raz",
+            "page": 291
+          },
+          {
+            "title": "Wisphago",
+            "page": 292
+          },
+          {
+            "title": "Lich",
+            "page": 293
+          },
+          {
+            "title": "Arquilich Ferren Asloth",
+            "page": 296
+          }
+        ],
+        {
+          "title": "Reinos de Moreania",
+          "page": 298
+        },
+        [
+          {
+            "title": "Búfalo-de-Guerra",
+            "page": 298
+          },
+          {
+            "title": "Hippossauro",
+            "page": 299
+          },
+          {
+            "title": "Mantícora",
+            "page": 300
+          },
+          {
+            "title": "Otyugh",
+            "page": 301
+          },
+          {
+            "title": "Yidishan",
+            "page": 301
+          },
+          {
+            "title": "Moreau",
+            "page": 303
+          },
+          [
+            {
+              "title": "Habilidades de Raça",
+              "page": 305
+            }
+          ]
+        ],
+        {
+          "title": "Sanguinárias",
+          "page": 308
+        },
+        [
+          {
+            "title": "Cerianthar",
+            "page": 308
+          },
+          {
+            "title": "Grande Tachygloss",
+            "page": 309
+          },
+          {
+            "title": "Oxxdon",
+            "page": 310
+          },
+          {
+            "title": "Razza’Kham",
+            "page": 311
+          },
+          {
+            "title": "Serpe",
+            "page": 312
+          },
+          {
+            "title": "Uraghian",
+            "page": 313
+          },
+          {
+            "title": "Kaiju",
+            "page": 314
+          }
+        ],
+        {
+          "title": "Sob as Ondas",
+          "page": 316
+        },
+        [
+          {
+            "title": "Canceronte",
+            "page": 316
+          },
+          {
+            "title": "Elfo-do-Mar",
+            "page": 317
+          },
+          {
+            "title": "Enguia Rainha",
+            "page": 319
+          },
+          {
+            "title": "Irukanjin",
+            "page": 320
+          },
+          {
+            "title": "Nereida",
+            "page": 322
+          },
+          {
+            "title": "Peixe-Recife",
+            "page": 323
+          },
+          {
+            "title": "Platan",
+            "page": 324
+          },
+          {
+            "title": "Selako",
+            "page": 324
+          },
+          {
+            "title": "Kraken",
+            "page": 326
+          },
+          {
+            "title": "Pliorex",
+            "page": 327
+          }
+        ],
+        {
+          "title": "Sszzaazitas",
+          "page": 328
+        },
+        [
+          {
+            "title": "Adorador de Sszzaas",
+            "page": 328
+          },
+          {
+            "title": "Elemental do Veneno",
+            "page": 330
+          },
+          {
+            "title": "Górgona",
+            "page": 331
+          },
+          {
+            "title": "Nagah Arcanista",
+            "page": 332
+          },
+          {
+            "title": "Nagah Dormente",
+            "page": 333
+          },
+          {
+            "title": "Nagah Defensor",
+            "page": 334
+          },
+          {
+            "title": "Nagah Retalhador",
+            "page": 334
+          },
+          {
+            "title": "Nagah Sacerdotisa",
+            "page": 336
+          },
+          {
+            "title": "Rival Espelho",
+            "page": 336
+          },
+          {
+            "title": "Zumbi Peçonha",
+            "page": 337
+          },
+          {
+            "title": "Sszzaazita Celebrante & Nastarrath",
+            "page": 338
+          }
+        ],
+        {
+          "title": "Trolls Nobres",
+          "page": 340
+        },
+        [
+          {
+            "title": "Arcanista Finntroll",
+            "page": 340
+          },
+          {
+            "title": "Defeituoso",
+            "page": 341
+          },
+          {
+            "title": "Mycotann",
+            "page": 342
+          },
+          {
+            "title": "Opressor Finntroll",
+            "page": 343
+          },
+          {
+            "title": "Perdigueiro Troll",
+            "page": 345
+          },
+          {
+            "title": "Protetor-Refém",
+            "page": 346
+          },
+          {
+            "title": "Cavaleiro Finntroll",
+            "page": 346
+          },
+          {
+            "title": "Sacerdote Finntroll",
+            "page": 348
+          }
+        ],
+        {
+          "title": "Uivantes",
+          "page": 350
+        },
+        [
+          {
+            "title": "Carcaju",
+            "page": 350
+          },
+          {
+            "title": "Golem de Nor",
+            "page": 350
+          },
+          {
+            "title": "Mamute",
+            "page": 352
+          },
+          {
+            "title": "Minotauro da Manada",
+            "page": 353
+          },
+          {
+            "title": "Ogro Furioso",
+            "page": 354
+          },
+          {
+            "title": "Soterrado",
+            "page": 355
+          },
+          {
+            "title": "Stagh",
+            "page": 356
+          },
+          {
+            "title": "Urso das Neves",
+            "page": 356
+          },
+          {
+            "title": "Verme do Gelo",
+            "page": 358
+          }
+        ],
+        {
+          "title": "Novos Perigos",
+          "page": 360
+        },
+        [
+          {
+            "title": "Ar Saturado",
+            "page": 360
+          },
+          {
+            "title": "Área Desencantada",
+            "page": 360
+          },
+          {
+            "title": "Areia Movediça",
+            "page": 360
+          },
+          {
+            "title": "Armadilhas",
+            "page": 360
+          },
+          {
+            "title": "Dejetos Alquímicos",
+            "page": 361
+          },
+          {
+            "title": "Doenças",
+            "page": 361
+          },
+          {
+            "title": "Eletricidade",
+            "page": 362
+          },
+          {
+            "title": "Fenômenos Rubros",
+            "page": 362
+          },
+          {
+            "title": "Lodo Negro",
+            "page": 363
+          },
+          {
+            "title": "Maldições",
+            "page": 363
+          },
+          {
+            "title": "Rio Congelado",
+            "page": 364
+          },
+          {
+            "title": "Perigos Complexos",
+            "page": 364
+          }
+        ],
+        {
+          "title": "Chefe Final",
+          "page": 370
+        },
+        [
+          {
+            "title": "Criando um Chefe Final",
+            "page": 370
+          },
+          {
+            "title": "Rei da Arena",
+            "page": 370
+          },
+          [
+            {
+              "title": "Arenas",
+              "page": 371
+            }
+          ]
+        ]
+      ],
+      {
+        "title": "Capítulo 2: Regras Avançadas de Ameaças",
+        "page": 374
+      },
+      [
+        {
+          "title": "Regras Adicionais",
+          "page": 376
+        },
+        [
+          {
+            "title": "Criaturas e Ataques",
+            "page": 376
+          },
+          {
+            "title": "CD de Habilidades",
+            "page": 377
+          },
+          {
+            "title": "Ameaças e Morte",
+            "page": 377
+          },
+          {
+            "title": "Condições de Itens",
+            "page": 377
+          },
+          {
+            "title": "Parceiros de Ameaças",
+            "page": 377
+          },
+          {
+            "title": "Recompensas \npor Vários Inimigos",
+            "page": 378
+          },
+          {
+            "title": "Criaturas S e S+",
+            "page": 378
+          },
+          {
+            "title": "Magias sem Custo",
+            "page": 378
+          },
+          {
+            "title": "Magias Simuladas",
+            "page": 378
+          }
+        ],
+        {
+          "title": "Manual de Criação de Ameaças",
+          "page": 379
+        },
+        [
+          {
+            "title": "Como Modificar Criaturas",
+            "page": 389
+          },
+          {
+            "title": "Como Criar Bandos",
+            "page": 390
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 3: Bazar Monstruoso",
+        "page": 392
+      },
+      [
+        {
+          "title": "Armas",
+          "page": 394
+        },
+        {
+          "title": "Armaduras e Escudos",
+          "page": 397
+        },
+        {
+          "title": "Itens Gerais",
+          "page": 398
+        },
+        {
+          "title": "Itens Superiores",
+          "page": 401
+        },
+        [
+          {
+            "title": "Novas Melhorias",
+            "page": 401
+          },
+          {
+            "title": "Materiais Especiais",
+            "page": 401
+          }
+        ],
+        {
+          "title": "Recursos Naturais",
+          "page": 403
+        },
+        [
+          {
+            "title": "Tipos de Recursos",
+            "page": 403
+          }
+        ],
+        {
+          "title": "Novos Itens Mágicos",
+          "page": 404
+        },
+        [
+          {
+            "title": "Chifre de Unicórnio",
+            "page": 404
+          },
+          {
+            "title": "Fragmento de Filactério",
+            "page": 404
+          },
+          {
+            "title": "Grilhão de Descrença",
+            "page": 404
+          },
+          {
+            "title": "Pilão Conspurcado",
+            "page": 405
+          },
+          {
+            "title": "Pistola Demoníaca",
+            "page": 405
+          },
+          {
+            "title": "Uyzrrak da'Ukthra",
+            "page": 405
+          }
+        ],
+        {
+          "title": "Novos Artefatos",
+          "page": 405
+        },
+        [
+          {
+            "title": "Amuleto do Abutre",
+            "page": 405
+          },
+          {
+            "title": "Rompedor da Realidade",
+            "page": 405
+          }
+        ],
+        {
+          "title": "Novas Magias",
+          "page": 406
+        },
+        [
+          {
+            "title": "Açoite Flamejante",
+            "page": 406
+          },
+          {
+            "title": "Dardo Gélido",
+            "page": 406
+          },
+          {
+            "title": "Invocar Fagulha Elemental",
+            "page": 406
+          },
+          {
+            "title": "Jato Corrosivo",
+            "page": 406
+          },
+          {
+            "title": "Katana Celestial",
+            "page": 406
+          },
+          {
+            "title": "Momento de Tormenta",
+            "page": 406
+          },
+          {
+            "title": "Transformação em Dragão",
+            "page": 407
+          }
+        ]
+      ],
+      {
+        "title": "Lista de Apoiadores",
+        "page": 408
+      },
+      {
+        "title": "Apêndice A: Raças e Parceiros",
+        "page": 418
+      },
+      {
+        "title": "Apêndice B: Criaturas \npor Ordem Alfabética",
+        "page": 420
+      },
+      {
+        "title": "Apêndice C: Criaturas por ND",
+        "page": 422
+      },
+      {
+        "title": "Apêndice D: Encontros Aleatórios",
+        "page": 424
+      },
+      [
+        {
+          "title": "Terreno: Aquático",
+          "page": 425
+        },
+        {
+          "title": "Terreno: Ártico",
+          "page": 425
+        },
+        {
+          "title": "Terreno: Área de Tormenta",
+          "page": 426
+        },
+        {
+          "title": "Terreno: Colina",
+          "page": 426
+        },
+        {
+          "title": "Terreno: Deserto",
+          "page": 427
+        },
+        {
+          "title": "Terreno: Floresta",
+          "page": 427
+        },
+        {
+          "title": "Terreno: Montanha",
+          "page": 428
+        },
+        {
+          "title": "Terreno: Pântano",
+          "page": 428
+        },
+        {
+          "title": "Terreno: Planície",
+          "page": 429
+        },
+        {
+          "title": "Terreno: Subterrâneo",
+          "page": 429
+        },
+        {
+          "title": "Terreno: Urbano",
+          "page": 430
+        },
+        {
+          "title": "Aslothia",
+          "page": 430
+        },
+        {
+          "title": "Estradas do Reinado",
+          "page": 431
+        },
+        {
+          "title": "Galrasia",
+          "page": 431
+        },
+        {
+          "title": "Império de Tauron",
+          "page": 432
+        },
+        {
+          "title": "Sanguinárias",
+          "page": 432
+        },
+        {
+          "title": "Supremacia Purista",
+          "page": 433
+        },
+        {
+          "title": "Ruínas de Tyrondir/Lamnor",
+          "page": 433
+        },
+        {
+          "title": "Encontros por Região",
+          "page": 434
+        }
+      ],
+      {
+        "title": "4ª Capa",
+        "page": 436
+      }
+    ]
+  },
+  "Atlas": {
+    "total_pages": 484,
+    "outline": [
+      {
+        "title": "Capa",
+        "page": 1
+      },
+      {
+        "title": "Folha de Rosto",
+        "page": 4
+      },
+      {
+        "title": "Créditos",
+        "page": 8
+      },
+      {
+        "title": "Sumário",
+        "page": 9
+      },
+      {
+        "title": "Prefácio: A Primeira Lição",
+        "page": 10
+      },
+      {
+        "title": "Introdução: Boas-vindas a Arton",
+        "page": 12
+      },
+      [
+        {
+          "title": "Uma Breve História de Arton",
+          "page": 14
+        },
+        [
+          {
+            "title": "O Início de Tudo",
+            "page": 14
+          },
+          {
+            "title": "História Antiga",
+            "page": 22
+          },
+          {
+            "title": "História Recente",
+            "page": 27
+          }
+        ],
+        {
+          "title": "Tempo & Calendário",
+          "page": 32
+        },
+        {
+          "title": "Linha do Tempo",
+          "page": 36
+        }
+      ],
+      {
+        "title": "Capítulo 1: O Reinado",
+        "page": 46
+      },
+      [
+        {
+          "title": "O Que É o Reinado?",
+          "page": 48
+        },
+        {
+          "title": "Deheon",
+          "page": 54
+        },
+        {
+          "title": "Valkaria",
+          "page": 70
+        },
+        {
+          "title": "Bielefeld",
+          "page": 80
+        },
+        {
+          "title": "Namalkah",
+          "page": 96
+        },
+        {
+          "title": "Wynlla",
+          "page": 108
+        },
+        {
+          "title": "Ahlen",
+          "page": 120
+        },
+        {
+          "title": "Zakharov",
+          "page": 136
+        },
+        {
+          "title": "Pondsmânia",
+          "page": 148
+        },
+        {
+          "title": "Academia Arcana",
+          "page": 162
+        },
+        {
+          "title": "Vectora",
+          "page": 167
+        }
+      ],
+      {
+        "title": "Capítulo 2: Além do Reinado",
+        "page": 172
+      },
+      [
+        {
+          "title": "Supremacia Purista",
+          "page": 176
+        },
+        {
+          "title": "Conflagração do Aço",
+          "page": 188
+        },
+        {
+          "title": "Aslothia",
+          "page": 194
+        },
+        {
+          "title": "Repúblicas Livres de Sambúrdia",
+          "page": 208
+        },
+        {
+          "title": "Salistick",
+          "page": 220
+        },
+        {
+          "title": "Svalas",
+          "page": 232
+        },
+        {
+          "title": "Feudos de Trebuck",
+          "page": 237
+        },
+        {
+          "title": "Triunphus",
+          "page": 248
+        },
+        {
+          "title": "Sckharshantallas",
+          "page": 253
+        },
+        {
+          "title": "Montanhas Sanguinárias",
+          "page": 264
+        },
+        {
+          "title": "Montanhas Uivantes",
+          "page": 269
+        },
+        {
+          "title": "Ermos Púrpuras",
+          "page": 274
+        },
+        {
+          "title": "Floresta de Tollon",
+          "page": 279
+        },
+        {
+          "title": "Império de Tauron",
+          "page": 284
+        },
+        {
+          "title": "Nova Malpetrim",
+          "page": 302
+        },
+        {
+          "title": "Smokestone",
+          "page": 308
+        },
+        {
+          "title": "Ruínas de Tyrondir",
+          "page": 314
+        },
+        {
+          "title": "Catacumbas de Leverick",
+          "page": 319
+        }
+      ],
+      {
+        "title": "Capítulo 3: Além de Arton",
+        "page": 324
+      },
+      [
+        {
+          "title": "Lamnor",
+          "page": 328
+        },
+        {
+          "title": "Khalifor",
+          "page": 340
+        },
+        {
+          "title": "Khubar",
+          "page": 344
+        },
+        {
+          "title": "Galrasia",
+          "page": 352
+        },
+        {
+          "title": "Os Três Mares",
+          "page": 357
+        },
+        {
+          "title": "Ubani",
+          "page": 364
+        },
+        {
+          "title": "Halak-Tûr",
+          "page": 374
+        },
+        {
+          "title": "Tamu-ra",
+          "page": 386
+        },
+        {
+          "title": "Moreania",
+          "page": 396
+        },
+        {
+          "title": "Doherimm",
+          "page": 408
+        },
+        {
+          "title": "Éter Divino",
+          "page": 420
+        }
+      ],
+      {
+        "title": "Capítulo 4: Organizações",
+        "page": 424
+      },
+      [
+        {
+          "title": "Exércitos & Mercenários",
+          "page": 426
+        },
+        {
+          "title": "Igrejas & Ordens",
+          "page": 433
+        },
+        {
+          "title": "Guildas & Irmandades",
+          "page": 441
+        }
+      ],
+      {
+        "title": "Capítulo 5: Vida em Arton",
+        "page": 448
+      },
+      [
+        {
+          "title": "A Sociedade Artoniana",
+          "page": 450
+        },
+        {
+          "title": "Viagens & Estradas",
+          "page": 452
+        },
+        {
+          "title": "Dinheiro & Comércio",
+          "page": 453
+        },
+        {
+          "title": "Um Dia Típico de um Camponês no Reinado",
+          "page": 456
+        },
+        {
+          "title": "Arte & Cultura",
+          "page": 458
+        },
+        {
+          "title": "Lei & Ordem",
+          "page": 467
+        },
+        {
+          "title": "Vida de Aventureiro",
+          "page": 470
+        }
+      ],
+      {
+        "title": "Apêndice: Origens Regionais",
+        "page": 472
+      },
+      [
+        {
+          "title": "Tabela: Origens Regionais",
+          "page": 475
+        }
+      ],
+      {
+        "title": "4ª Capa",
+        "page": 484
+      }
+    ]
+  },
+  "Herois": {
+    "total_pages": 332,
+    "outline": [
+      {
+        "title": "Capa",
+        "page": 1
+      },
+      {
+        "title": "Créditos",
+        "page": 4
+      },
+      {
+        "title": "Sumário",
+        "page": 5
+      },
+      {
+        "title": "Prefácio",
+        "page": 6
+      },
+      {
+        "title": "Sobre este Livro",
+        "page": 7
+      },
+      {
+        "title": "Capítulo 1: Campeões de Arton",
+        "page": 8
+      },
+      [
+        {
+          "title": "Novas Raças",
+          "page": 10
+        },
+        [
+          {
+            "title": "Duende",
+            "page": 10
+          },
+          {
+            "title": "Eiradaan",
+            "page": 14
+          },
+          {
+            "title": "Galokk",
+            "page": 15
+          },
+          {
+            "title": "Meio-Elfo",
+            "page": 16
+          },
+          {
+            "title": "Sátiro",
+            "page": 17
+          }
+        ],
+        {
+          "title": "Nova Classe: Treinador",
+          "page": 18
+        },
+        [
+          {
+            "title": "O Melhor Amigo",
+            "page": 22
+          }
+        ],
+        {
+          "title": "Classes Variantes",
+          "page": 24
+        },
+        [
+          {
+            "title": "Alquimista",
+            "page": 24
+          },
+          {
+            "title": "Atleta",
+            "page": 26
+          },
+          {
+            "title": "Burguês",
+            "page": 27
+          },
+          {
+            "title": "Duelista",
+            "page": 29
+          },
+          {
+            "title": "Ermitão",
+            "page": 31
+          },
+          {
+            "title": "Inovador",
+            "page": 32
+          },
+          {
+            "title": "Machado de Pedra",
+            "page": 34
+          },
+          {
+            "title": "Magimarcialista",
+            "page": 35
+          },
+          {
+            "title": "Necromante",
+            "page": 36
+          },
+          {
+            "title": "Santo",
+            "page": 39
+          },
+          {
+            "title": "Seteiro",
+            "page": 40
+          },
+          {
+            "title": "Usurpador",
+            "page": 42
+          },
+          {
+            "title": "Vassalo",
+            "page": 43
+          },
+          {
+            "title": "Ventanista",
+            "page": 46
+          }
+        ],
+        {
+          "title": "Novas Origens",
+          "page": 48
+        },
+        [
+          {
+            "title": "Bacharel",
+            "page": 48
+          },
+          {
+            "title": "Boticário",
+            "page": 49
+          },
+          {
+            "title": "Caçador de Ratos",
+            "page": 49
+          },
+          {
+            "title": "Cão de Briga",
+            "page": 50
+          },
+          {
+            "title": "Carcereiro",
+            "page": 50
+          },
+          {
+            "title": "Carpinteiro de Guilda",
+            "page": 50
+          },
+          {
+            "title": "Catador da Catástrofe",
+            "page": 50
+          },
+          {
+            "title": "Chef Hynne",
+            "page": 50
+          },
+          {
+            "title": "Cirurgião-Barbeiro",
+            "page": 51
+          },
+          {
+            "title": "Citadino Abastado",
+            "page": 51
+          },
+          {
+            "title": "Cocheiro",
+            "page": 51
+          },
+          {
+            "title": "Construtor",
+            "page": 51
+          },
+          {
+            "title": "Contrabandista",
+            "page": 52
+          },
+          {
+            "title": "Coureiro",
+            "page": 52
+          },
+          {
+            "title": "Escriba",
+            "page": 52
+          },
+          {
+            "title": "Espião",
+            "page": 52
+          },
+          {
+            "title": "Ferreiro Militar",
+            "page": 53
+          },
+          {
+            "title": "Freira",
+            "page": 53
+          },
+          {
+            "title": "Goradista",
+            "page": 53
+          },
+          {
+            "title": "Insciente",
+            "page": 53
+          },
+          {
+            "title": "Interrogador",
+            "page": 53
+          },
+          {
+            "title": "Ladrão de Túmulos",
+            "page": 54
+          },
+          {
+            "title": "Menestrel",
+            "page": 54
+          },
+          {
+            "title": "Mensageiro",
+            "page": 54
+          },
+          {
+            "title": "Náufrago",
+            "page": 54
+          },
+          {
+            "title": "Padeiro",
+            "page": 54
+          },
+          {
+            "title": "Pedinte",
+            "page": 55
+          },
+          {
+            "title": "Pescador",
+            "page": 55
+          },
+          {
+            "title": "Servo",
+            "page": 55
+          },
+          {
+            "title": "Suporte de Tropas",
+            "page": 55
+          }
+        ],
+        {
+          "title": "Novos Poderes de Classe",
+          "page": 56
+        },
+        [
+          {
+            "title": "Arcanista",
+            "page": 56
+          },
+          {
+            "title": "Bárbaro",
+            "page": 58
+          },
+          {
+            "title": "Bardo",
+            "page": 59
+          },
+          {
+            "title": "Bucaneiro",
+            "page": 61
+          },
+          {
+            "title": "Caçador",
+            "page": 63
+          },
+          {
+            "title": "Cavaleiro",
+            "page": 64
+          },
+          {
+            "title": "Clérigo",
+            "page": 66
+          },
+          {
+            "title": "Druida",
+            "page": 68
+          },
+          {
+            "title": "Guerreiro",
+            "page": 70
+          },
+          {
+            "title": "Inventor",
+            "page": 72
+          },
+          {
+            "title": "Ladino",
+            "page": 73
+          },
+          {
+            "title": "Lutador",
+            "page": 75
+          },
+          {
+            "title": "Nobre",
+            "page": 77
+          },
+          {
+            "title": "Paladino",
+            "page": 78
+          }
+        ],
+        {
+          "title": "Novos Poderes Gerais",
+          "page": 80
+        },
+        [
+          {
+            "title": "Poderes de Combate",
+            "page": 80
+          },
+          {
+            "title": "Poderes de Destino",
+            "page": 82
+          },
+          {
+            "title": "Poderes de Magia",
+            "page": 84
+          },
+          {
+            "title": "Poderes da Tormenta",
+            "page": 85
+          },
+          {
+            "title": "Poderes de Raça",
+            "page": 86
+          },
+          {
+            "title": "Poderes de Grupo",
+            "page": 94
+          }
+        ],
+        {
+          "title": "Tabelas para Personagens",
+          "page": 98
+        },
+        [
+          {
+            "title": "Nomes de Personagens",
+            "page": 98
+          },
+          {
+            "title": "Aparência",
+            "page": 100
+          },
+          {
+            "title": "Trejeitos",
+            "page": 101
+          },
+          {
+            "title": "Objetivos",
+            "page": 102
+          },
+          {
+            "title": "Nomes para Montarias e Mascotes",
+            "page": 103
+          },
+          {
+            "title": "Nomes para Guildas e Bandos",
+            "page": 103
+          }
+        ]
+      ],
+      {
+        "title": "Capítulo 2: Distinções",
+        "page": 104
+      },
+      [
+        {
+          "title": "Distinções em Jogo",
+          "page": 106
+        },
+        {
+          "title": "Usando Distinções",
+          "page": 107
+        },
+        {
+          "title": "Aeronauta Goblin",
+          "page": 108
+        },
+        {
+          "title": "Algoz da Tormenta",
+          "page": 111
+        },
+        {
+          "title": "Amazona",
+          "page": 114
+        },
+        {
+          "title": "Armadilheiro Mestre",
+          "page": 117
+        },
+        {
+          "title": "Arqueiro de Lenórienn",
+          "page": 120
+        },
+        {
+          "title": "Bruxo da Tormenta",
+          "page": 123
+        },
+        {
+          "title": "Caçador de Cabeças",
+          "page": 126
+        },
+        {
+          "title": "Caçador de Dragões",
+          "page": 129
+        },
+        {
+          "title": "Campeão de Dojo",
+          "page": 132
+        },
+        {
+          "title": "Capitão do Conclave Pirata",
+          "page": 135
+        },
+        {
+          "title": "Carteador",
+          "page": 138
+        },
+        {
+          "title": "Cavaleiro do Corvo",
+          "page": 141
+        },
+        {
+          "title": "Cavaleiro Feérico",
+          "page": 144
+        },
+        {
+          "title": "Chapéu-Preto",
+          "page": 147
+        },
+        {
+          "title": "Cobaia dos Médicos Monstros",
+          "page": 150
+        },
+        {
+          "title": "Dracomante Real",
+          "page": 153
+        },
+        {
+          "title": "Drogadora",
+          "page": 156
+        },
+        {
+          "title": "Engenhoqueiro Goblin",
+          "page": 159
+        },
+        {
+          "title": "Escapista Magnífico",
+          "page": 162
+        },
+        {
+          "title": "Gigante Furioso",
+          "page": 165
+        },
+        {
+          "title": "Ginete de Namalkah",
+          "page": 168
+        },
+        {
+          "title": "Guerreiro Mágico",
+          "page": 171
+        },
+        {
+          "title": "Infiltrador de Wynlla",
+          "page": 174
+        },
+        {
+          "title": "Mago da Ordem do Vazio",
+          "page": 177
+        },
+        {
+          "title": "Mago de Batalha de Wynlla",
+          "page": 180
+        },
+        {
+          "title": "Médico de Salistick",
+          "page": 183
+        },
+        {
+          "title": "Mestre Bêbado",
+          "page": 186
+        },
+        {
+          "title": "Mestre Cozinheiro",
+          "page": 189
+        },
+        {
+          "title": "Mestre dos Desejos",
+          "page": 192
+        },
+        {
+          "title": "Mestre Mahou-Jutsu",
+          "page": 195
+        },
+        {
+          "title": "Mosqueteiro de Rishantor",
+          "page": 198
+        },
+        {
+          "title": "Mutagenista",
+          "page": 201
+        },
+        {
+          "title": "Pistoleiro de Smokestone",
+          "page": 204
+        },
+        {
+          "title": "Professor de Magia",
+          "page": 207
+        },
+        {
+          "title": "Senador",
+          "page": 210
+        },
+        {
+          "title": "Vigarista",
+          "page": 213
+        }
+      ],
+      {
+        "title": "Capítulo 3: Arsenal dos Heróis",
+        "page": 216
+      },
+      [
+        {
+          "title": "Novos Equipamentos",
+          "page": 218
+        },
+        [
+          {
+            "title": "Armas",
+            "page": 218
+          },
+          {
+            "title": "Armaduras & Escudos",
+            "page": 225
+          },
+          {
+            "title": "Itens Gerais",
+            "page": 229
+          },
+          [
+            {
+              "title": "Equipamento de Aventura",
+              "page": 229
+            },
+            {
+              "title": "Ferramentas",
+              "page": 233
+            },
+            {
+              "title": "Vestuário",
+              "page": 234
+            },
+            {
+              "title": "Esotéricos",
+              "page": 236
+            },
+            {
+              "title": "Alquímicos",
+              "page": 236
+            },
+            {
+              "title": "Aparatos",
+              "page": 237
+            },
+            {
+              "title": "Alimentação",
+              "page": 238
+            },
+            {
+              "title": "Animais",
+              "page": 239
+            },
+            {
+              "title": "Serviços",
+              "page": 240
+            }
+          ],
+          {
+            "title": "Itens Superiores",
+            "page": 241
+          },
+          {
+            "title": "Capangas",
+            "page": 242
+          },
+          {
+            "title": "Veículos",
+            "page": 243
+          }
+        ],
+        {
+          "title": "Bases",
+          "page": 246
+        },
+        [
+          {
+            "title": "Adquirindo uma Base",
+            "page": 246
+          },
+          {
+            "title": "Características de uma Base",
+            "page": 247
+          },
+          {
+            "title": "Cômodos",
+            "page": 248
+          },
+          {
+            "title": "Mobílias",
+            "page": 252
+          }
+        ],
+        {
+          "title": "Novas Magias Arcanas",
+          "page": 254
+        },
+        {
+          "title": "Novos Itens Mágicos",
+          "page": 258
+        },
+        [
+          {
+            "title": "Armas",
+            "page": 258
+          },
+          {
+            "title": "Armaduras & Escudos",
+            "page": 260
+          },
+          {
+            "title": "Esotéricos",
+            "page": 262
+          },
+          {
+            "title": "Acessórios",
+            "page": 264
+          },
+          {
+            "title": "Itens Inteligentes",
+            "page": 271
+          },
+          {
+            "title": "Itens Amaldiçoados",
+            "page": 273
+          }
+        ],
+        {
+          "title": "Artefatos",
+          "page": 276
+        }
+      ],
+      {
+        "title": "Capítulo 4: Regras Opcionais",
+        "page": 280
+      },
+      [
+        {
+          "title": "Atributos Variados",
+          "page": 282
+        },
+        {
+          "title": "Raças Abertas",
+          "page": 283
+        },
+        {
+          "title": "Devoções Abertas",
+          "page": 283
+        },
+        {
+          "title": "Complicações",
+          "page": 284
+        },
+        {
+          "title": "Idades Variadas",
+          "page": 290
+        },
+        {
+          "title": "Objetivos Heroicos",
+          "page": 294
+        },
+        {
+          "title": "Papéis no Grupo",
+          "page": 296
+        },
+        {
+          "title": "Combate Avançado",
+          "page": 298
+        },
+        [
+          {
+            "title": "Tabela: Acertos Críticos",
+            "page": 300
+          },
+          {
+            "title": "Tabela: Teste de Morte",
+            "page": 302
+          },
+          {
+            "title": "Tabela: Falhas Críticas",
+            "page": 304
+          }
+        ],
+        {
+          "title": "Culinária Avançada",
+          "page": 307
+        },
+        {
+          "title": "Exploração de Masmorras",
+          "page": 312
+        },
+        {
+          "title": "Domínios",
+          "page": 316
+        },
+        [
+          {
+            "title": "Tornando-se Regente",
+            "page": 316
+          },
+          {
+            "title": "Características dos Domínios",
+            "page": 316
+          },
+          [
+            {
+              "title": "Construções",
+              "page": 318
+            },
+            {
+              "title": "Unidades Militares",
+              "page": 324
+            }
+          ],
+          {
+            "title": "Turnos de Domínio",
+            "page": 325
+          },
+          {
+            "title": "Domínios Místicos",
+            "page": 327
+          },
+          {
+            "title": "Eventos Aleatórios",
+            "page": 327
+          }
+        ],
+        {
+          "title": "Lista de Regras Opcionais",
+          "page": 330
+        }
+      ],
+      {
+        "title": "4ª Capa",
+        "page": 332
+      }
+    ]
+  }
+}

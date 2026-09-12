@@ -1,0 +1,168 @@
+[
+  {
+    "id": "origem-cidadao-de-valkaria",
+    "name": "Cidadão de Valkaria",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Valkaria / Deheon",
+    "benefits": [
+      "+1 em testes de Diplomacia e Conhecimento",
+      "Poder Geral à escolha ou 1 perícia adicional"
+    ],
+    "summary": "[Valkaria / Deheon] Benefícios: +1 em testes de Diplomacia e Conhecimento, Poder Geral à escolha ou 1 perícia adicional. Você nasceu na maior metrópole do continente, acostumado à diversidade cultural, intrigas ...",
+    "description": "Você nasceu na maior metrópole do continente, acostumado à diversidade cultural, intrigas de nobres e comércio frenético. Benefícios Regionais: +1 em testes de Diplomacia e Conhecimento; Poder Geral à escolha ou 1 perícia adicional",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 472,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "cidadão de valkaria",
+      "valkaria / deheon"
+    ]
+  },
+  {
+    "id": "origem-forjador-de-zakharov",
+    "name": "Forjador de Zakharov",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Zakharov (Reino das Armas)",
+    "benefits": [
+      "Proficiência com armas de fogo ou armas marciais",
+      "+2 em testes de Ofício (Armaria/Ferraria)",
+      "Começa com uma arma de aço superior"
+    ],
+    "summary": "[Zakharov (Reino das Armas)] Benefícios: Proficiência com armas de fogo ou armas marciais, +2 em testes de Ofício (Armaria/Ferraria). Você foi criado sob o som dos martelos e bigornas do Reino das Armas, conhecendo os segred...",
+    "description": "Você foi criado sob o som dos martelos e bigornas do Reino das Armas, conhecendo os segredos dos melhores forjadores de Arton. Benefícios Regionais: Proficiência com armas de fogo ou armas marciais; +2 em testes de Ofício (Armaria/Ferraria); Começa com uma arma de aço superior",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 473,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "forjador de zakharov",
+      "zakharov (reino das armas)"
+    ]
+  },
+  {
+    "id": "origem-estudioso-de-wynlla",
+    "name": "Estudioso de Wynlla",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Wynlla (Reino da Magia)",
+    "benefits": [
+      "+2 PM no 1º nível",
+      "+2 em testes de Misticismo",
+      "Conhece 1 magia arcana de 1º círculo adicional"
+    ],
+    "summary": "[Wynlla (Reino da Magia)] Benefícios: +2 PM no 1º nível, +2 em testes de Misticismo. Nascido sob a bênção da Deusa da Magia, você enxerga os fluxos do éter arcano em cada aspe...",
+    "description": "Nascido sob a bênção da Deusa da Magia, você enxerga os fluxos do éter arcano em cada aspecto da vida cotidiana. Benefícios Regionais: +2 PM no 1º nível; +2 em testes de Misticismo; Conhece 1 magia arcana de 1º círculo adicional",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 474,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "estudioso de wynlla",
+      "wynlla (reino da magia)"
+    ]
+  },
+  {
+    "id": "origem-nmade-do-deserto-da-perdicao",
+    "name": "Nômade do Deserto da Perdição",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Deserto da Perdição",
+    "benefits": [
+      "Resistência a calor extremo",
+      "+2 em testes de Sobrevivência e Cavalgar",
+      "Proficiência com Alfange"
+    ],
+    "summary": "[Deserto da Perdição] Benefícios: Resistência a calor extremo, +2 em testes de Sobrevivência e Cavalgar. Acostumado ao sol impiedoso, tempestades de areia e perigos ancestrais enterrados nas duna...",
+    "description": "Acostumado ao sol impiedoso, tempestades de areia e perigos ancestrais enterrados nas dunas sem fim. Benefícios Regionais: Resistência a calor extremo; +2 em testes de Sobrevivência e Cavalgar; Proficiência com Alfange",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 476,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "nômade do deserto da perdição",
+      "deserto da perdição"
+    ]
+  },
+  {
+    "id": "origem-guerreiro-de-yuden",
+    "name": "Guerreiro de Yuden",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Yuden (Exército com uma Nação)",
+    "benefits": [
+      "+2 em testes de Guerra e Intimidação",
+      "+1 em testes de ataque com armas marciais de corte"
+    ],
+    "summary": "[Yuden (Exército com uma Nação)] Benefícios: +2 em testes de Guerra e Intimidação, +1 em testes de ataque com armas marciais de corte. Criado sob disciplina militar implacável e doutrina bélica do exército mais temido do Rein...",
+    "description": "Criado sob disciplina militar implacável e doutrina bélica do exército mais temido do Reinado. Benefícios Regionais: +2 em testes de Guerra e Intimidação; +1 em testes de ataque com armas marciais de corte",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 478,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "guerreiro de yuden",
+      "yuden (exército com uma nação)"
+    ]
+  },
+  {
+    "id": "origem-habitante-das-montanhas-uivantes",
+    "name": "Habitante das Montanhas Uivantes",
+    "category": "origem_distincao",
+    "subcategory": "Origens Regionais",
+    "regionOrDeity": "Montanhas Uivantes (Reino do Gelo)",
+    "benefits": [
+      "Resistência a Frio 5",
+      "+2 em Fortitude contra clima severo",
+      "Proficiência com Machado de Batalha"
+    ],
+    "summary": "[Montanhas Uivantes (Reino do Gelo)] Benefícios: Resistência a Frio 5, +2 em Fortitude contra clima severo. Forjado no frio mortal das geleiras eternas sob a bênção do Deus do Frio e da Montanha....",
+    "description": "Forjado no frio mortal das geleiras eternas sob a bênção do Deus do Frio e da Montanha. Benefícios Regionais: Resistência a Frio 5; +2 em Fortitude contra clima severo; Proficiência com Machado de Batalha",
+    "sources": [
+      {
+        "book": "Atlas de Arton",
+        "page": 480,
+        "section": "Atlas de Arton: Origens Regionais",
+        "version": "+"
+      }
+    ],
+    "tags": [
+      "origem regional",
+      "atlas",
+      "habitante das montanhas uivantes",
+      "montanhas uivantes (reino do gelo)"
+    ]
+  }
+]

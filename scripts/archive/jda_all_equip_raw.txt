@@ -1,0 +1,2046 @@
+
+--- PDF INDEX 143 (PAGE 144) ---
+CAPÍTULO
+EquipamentoEquipamento
+3
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 144 (PAGE 145) ---
+“O homem não pode cumprir a tarefa sem a ferramenta. Seja esta tarefa 
+matar, seja governar.”
+— Thwor Khoshkothruk
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 145 (PAGE 146) ---
+Capítulo Três
+E
+spadas afiadas e armaduras resplan -
+decentes. Símbolos sagrados e tomos 
+ancestrais. Ou simplesmente um bom 
+prato de comida!
+Aventureiros precisam de diversos equipamentos 
+em suas missões. Este capítulo descreve os itens e 
+serviços mundanos encontrados em Arton.
+Equipamento Inicial
+Personagens de 1º nível começam com os itens 
+fornecidos pela sua origem e os itens a seguir.
+• Uma mochila, um saco de dormir e um traje 
+de viajante.
+• Uma arma simples a sua escolha. Se você tiver 
+proficiência com armas marciais, também começa 
+com uma arma marcial a sua escolha.
+• Uma armadura de couro, couro 
+batido ou gibão de peles, a sua esco -
+lha. Se você tiver proficiência com 
+armaduras pesadas, em vez disso 
+pode começar com uma brunea. Se 
+tiver proficiência com escudos, começa 
+também com um escudo leve. Exceção: 
+arcanistas começam sem armadura.
+• T$ 4d6, que você pode usar para 
+comprar itens ou guardar para usar na aventura.
+Personagens de Alto Nível
+Personagens acima do 1º nível começam com 
+mais dinheiro, conforme a tabela abaixo.
+Riqueza & Moedas
+O Tibar (T$) é a moeda padrão do Reinado. 
+Trata-se de uma peça redonda de prata com 1,5 cm 
+de diâmetro. A cunhagem traz em um lado o rosto 
+de Tibar, o Deus do Comércio — um rei com cabelos 
+encaracolados e uma joia em forma de olho na coroa; 
+e no outro lado o mesmo rosto, mas sem a coroa. 
+Em Arton, ao jogar “cara ou coroa”, o costume é 
+escolher “coroa ou não coroa”.
+A moeda foi criada por Quindogar Tolliannor, 
+primeiro conselheiro real de Deheon e adepto ar -
+doroso das artes da barganha e negociação. Ficou tão 
+popular que Tollianor passou a ser conhecido pelo 
+nome de sua criação e ascendeu como Deus Menor 
+do Comércio. Atualmente, ele tenta “negociar” uma 
+posição no Panteão. Acredita-se que manter um 
+Tibar no bolso ou no pescoço (como um 
+amuleto) garante boa fortuna.
+Nem todos os reinos seguem o 
+padrão do Tibar. Em alguns lugares, 
+devido à escassez de prata, o Tibar de 
+cobre é usado como moeda padrão. Em 
+outros, o valor do Tibar pode apresen-
+tar flutuações — provocando grande ag-
+itação entre as guildas de comerciantes, 
+falsificadores e contrabandistas.
+Por padrão, todos os preços de itens e servi-
+ços são exibidos em T$. Entretanto, existem duas 
+variações da moeda: o Tibar de cobre (TC), que 
+vale um décimo do T$, utilizado por camponeses 
+e plebeus, e o Tibar de Ouro (TO), que vale T$ 
+10, utilizado por aristocratas, grandes mercadores 
+e aventureiros poderosos.
+Troca & comércio
+No Reinado, o comércio é organizado por guildas 
+mercantes. As guildas decidem quem pode vender o 
+quê e o valor dos produtos e serviços que controlam, 
+o que garante um padrão nos preços. Em lugares 
+afastados, ermos ou sob o domínio de tiranos, po -
+rém, os preços podem variar muito.
+No geral, personagens podem comprar itens 
+pelos preços listados nas tabelas e vendê-los pela 
+metade desses preços. Em certos lugares, o mestre 
+pode determinar que os itens são mais caros, estão 
+disponíveis em quantidades limitadas ou não estão 
+disponíveis (veja o Capítulo 6). Comprando ou 
+vendendo, os valores podem ser melhorados através 
+de barganha (veja a perícia Diplomacia).
+Tabela 3-1: Dinheiro Inicial
+ 
+Nível
+Dinheiro 
+Inicial (T$)
+ 
+Nível
+Dinheiro 
+Inicial (T$)
+1º 4d6 11º 19.000
+2º 300 12º 27.000
+3º 600 13º 36.000
+4º 1.000 14º 49.000
+5º 2.000 15º 66.000
+6º 3.000 16º 88.000
+7º 5.000 17º 110.000
+8º 7.000 18º 150.000
+9º 10.000 19º 200.000
+10º 13.000 20º 260.000
+140
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 146 (PAGE 147) ---
+Equipamento
+Usando & Carregando
+Equipamento é extremamente útil, mas há um 
+limite de quantos itens você pode usar ou carregar 
+ao mesmo tempo.
+Limites de Uso
+Alguns itens precisam ser empunhados para serem 
+usados. Isso inclui armas, escudos, itens alquímicos 
+e outros, como tochas e varinhas. Você pode empu-
+nhar apenas um item em cada mão, ou seja, pode 
+empunhar no máximo dois itens ao mesmo tempo 
+(supondo que você tenha duas mãos). Você pode 
+guardar um item empunhado com uma ação de 
+movimento ou largá-lo no chão com uma ação livre.
+Itens que não são empunhados precisam ser ves-
+tidos. Você pode receber os benefícios de no máximo 
+quatro itens vestidos simultaneamente — há um 
+limite para a quantidade de objetos com os quais é 
+possível lidar ao mesmo tempo. Se você vestir um 
+quinto item, ele não fornecerá seu benefício até que 
+você remova outro. Vestir ou despir um item é uma 
+ação de movimento (e você ainda precisa gastar outra 
+ação de movimento para guardá-lo ou uma ação livre 
+para largá-lo no chão). Note que esse limite se aplica 
+apenas a itens com benefícios mecânicos — você 
+pode vestir seu traje de viajante, ou outra roupa que 
+não forneça bônus, sem que isso afete seu limite.
+Limites de Carga
+A quantidade de equipamento que você pode 
+carregar é medida em espaços de itens. Por padrão, um 
+item ocupa 1 espaço. Porém, há exceções:
+• Itens alquímicos, poções, pergaminhos e 
+outros itens muitos leves ou pequenos ocupam meio 
+espaço. Ou seja, dois desses itens ocupam 1 espaço.
+• Armas de duas mãos, armaduras leves, es-
+cudos pesados, criaturas Minúsculas e outros itens 
+pesados ou volumosos ocupam 2 espaços.
+• Armaduras pesadas, criaturas Pequenas e 
+outros itens muito pesados ou volumosos, como um 
+barril ou baú, ocupam 5 espaços.
+• Itens extremamente pesados ou volumosos, 
+como uma criatura Média, ocupam 10 espaços. Itens 
+ainda maiores podem ocupar mais espaços ou serem 
+impossíveis de carregar, a critério do mestre.
+• Cada mil moedas, independentemente do 
+tipo, ocupam 1 espaço.
+Você pode carregar 10 espaços +2 por ponto 
+de Força (ou –1 por ponto de Força negativo). Se 
+ultrapassar esse limite, fica sobrecarregado — sofre 
+penalidade de armadura –5 e seu deslocamento é 
+reduzido em –3m. Você não pode carregar mais do 
+que o dobro do seu limite. Assim, um personagem 
+com Força 2 pode carregar até 14 espaços sem pena-
+lidade, e até 28 espaços ficando sobrecarregado. Ele 
+não pode carregar mais de 28 espaços de itens.
+A regra considera que você possui uma mochila 
+onde carregar seu equipamento. A própria mochila 
+não ocupa espaço. De forma similar, recipientes cuja 
+única função seja carregar outros itens não ocupam 
+espaço. Por exemplo, a bainha de uma espada está 
+incluída no espaço da própria espada. Porém, reci-
+pientes que forneçam benefícios próprios, como uma 
+bandoleira de poções, ocupam espaço.
+Por fim, a critério do mestre, pequenos itens 
+que não possuem efeito em jogo — ou seja, que são 
+meramente “cosméticos” — não precisam ser consi-
+derados. Você pode carregar um traje de viajante (ou 
+outra roupa que não forneça um benefício) sem que 
+isso ocupe espaço.
+Carga: Bastidores
+A regra de carga existe para adicionar um 
+elemento tático ao jogo, fazendo com que 
+o jogador precise escolher o que levar em 
+cada aventura — ou o que abandonar, caso 
+encontre um item valioso mas já esteja 
+com seus espaços ocupados. O mestre pode 
+ignorar essa regra, desde que os jogadores 
+não abusem. Nada de sair por aí com 50 
+essências de mana!
+A regra usa espaços em vez de peso para 
+considerar tanto peso quanto volume, e 
+para simplificar os cálculos. Obviamente, 
+a regra é abstrata. Em caso de dúvida, 
+o mestre deve decidir o que achar mais 
+coerente. Lembre-se da filosofia básica: 1 
+item = 1 espaço. Para definir o que é “um 
+item”, pense em termos de funcionalidade. 
+Uma espada e sua bainha ocupam apenas 
+1 espaço porque a bainha sozinha não tem 
+utilidade. Porém, uma bainha mágica, com 
+poderes, ocupa um espaço próprio. Isso 
+pode não fazer muito sentido em termos 
+simulacionistas, mas é um preço pequeno 
+a se pagar pela simplicidade. Se isso 
+incomodá-lo, considere que a bainha mágica 
+é mais pesada, precisa de mais cuidados etc.
+141
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 147 (PAGE 148) ---
+Capítulo Três
+Armas são classificadas de acordo com a proficiên-
+cia necessária para usá-la (simples, marciais, exóticas 
+ou de fogo), propósito (ataque corpo a corpo ou à dis-
+tância) e empunhadura (leve, uma mão ou duas mãos).
+Proficiência
+Armas Simples. Armas de manejo fácil, como 
+adagas, clavas e lanças. Todos os personagens sabem 
+usar armas simples.
+Armas Marciais. Espadas, machados e outras 
+armas de uso específico de combatentes. Bárbaros, 
+bardos, bucaneiros, caçadores, cavaleiros, guerreiros, 
+nobres e paladinos sabem usar armas marciais.
+Armas Exóticas. Armas difíceis de dominar, 
+como a corrente de espinhos e a espada bastarda. 
+Exigem treinamento específico.
+Armas de Fogo. Armas de pólvora são raras 
+em Arton, por isso exigem treinamento específico.
+Penalidade por Não Proficiência. Se você atacar com 
+uma arma com a qual não seja proficiente, sofre –5 
+nos testes de ataque.
+Todas as criaturas são proficientes em ataques 
+desarmados e em suas armas naturais (veja quadro).
+Propósito
+Corpo a Corpo. Podem ser usadas para atacar 
+alvos adjacentes. Para atacar com uma arma de com-
+bate corpo a corpo, faça um teste de Luta. Quando 
+você ataca com uma arma corpo a corpo, soma sua 
+Força às rolagens de dano.
+Ataque à Distância. Podem ser usadas para 
+atacar alvos adjacentes ou à distância. Para atacar com 
+uma arma de combate à distância, faça um teste de 
+Pontaria. São subdivididas em de arremesso e de disparo.
+Arremesso. A própria arma é atirada, como uma 
+adaga ou azagaia. Sacar uma arma de arremesso é uma 
+ação de movimento. Quando você ataca com uma arma 
+de arremesso, soma sua Força às rolagens de dano.
+Disparo. A arma dispara um projétil, como um 
+arco atira flechas. Sacar a munição de uma arma de 
+disparo é uma ação livre. Recarregar uma arma de 
+disparo exige as duas mãos. Quando ataca com uma 
+arma de disparo, não soma nenhum valor de atributo 
+às rolagens de dano.
+Empunhadura
+Leve. Esta arma é usada com uma mão e se 
+beneficia do poder Acuidade com Arma.
+Uma mão. Esta arma é usada com uma mão, 
+deixando a outra mão livre para outros fins.
+Duas mãos. Esta arma é usada com as duas 
+mãos. Livrar uma mão é uma ação livre. Reempu -
+nhá-la é uma ação de movimento (ou livre, se você 
+puder sacá-la dessa forma).
+Características das Armas
+Preço. Inclui acessórios básicos, como bainhas 
+para lâminas e aljavas para flechas.
+Dano. Quando você acerta um ataque, rola o 
+dano indicado (acrescente modificadores, se houver). 
+O resultado é subtraído dos pontos de vida do alvo.
+O dano na tabela se refere a armas normais, para 
+criaturas Pequenas e Médias. Veja a Tabela 3-2: 
+Dano de Armas para armas menores ou maiores.
+Crítico. Quando você acerta um ataque 
+rolando um 20 natural (ou seja, o dado mostra um 
+20), faz um acerto crítico. Neste caso, multiplique 
+os dados de dano por 2. Bônus numéricos e dados 
+extras (como pela habilidade Ataque Furtivo) não 
+são multiplicados. Por exemplo, um dano de 1d8+3 
+torna-se 2d8+3 com um acerto crítico.
+Certas armas fazem críticos em margem maior 
+que 20 ou multiplicam o dano por um valor maior que 
+2. Em geral, armas mais precisas (bestas, espadas...) 
+têm margem maior, enquanto armas mais penetrantes 
+(arcos, machados...) têm multiplicador maior.
+Efeitos que aumentam a margem de ameaça 
+diminuem o número necessário para conseguir um 
+crítico. Já efeitos que aumentam o multiplicador de 
+crítico são acrescentados ao número do multiplicador.
+19. A arma tem margem de ameaça 19 ou 20.
+18. A arma tem margem de ameaça 18, 19 ou 20.
+x2, x3, x4. A arma causa dano dobrado, triplicado 
+ou quadruplicado em caso de acerto crítico.
+19/x3. A arma tem margem de ameaça 19 ou 20 
+e causa dano triplicado em caso de acerto crítico.
+Armas
+142
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 148 (PAGE 149) ---
+Equipamento
+Tabela 3-2: Dano de Armas
+–2 Passos –1 Passo Normal +1 Passo +2 Passos +3 Passos
+1 1d2 1d3 1d4 1d6 1d8
+1d2 1d3 1d4 1d6 1d8 1d10
+1d3 1d4 1d6 1d8 1d10 1d12
+1d4 1d6 1d8 ou 2d4 1d10 1d12 3d6
+1d6 1d8 1d10 1d12 3d6 4d6
+1d8 1d10 1d12, 2d6 ou 3d4 3d6 4d6 4d8
+1d10 2d6 2d8 3d8 4d8 4d10
+2d6 2d8 2d10 3d10 4d10 4d12 (máximo)
+Alcance. Armas com alcance podem ser 
+usadas para ataques à distância. As categorias de al-
+cance são curto (9m, ou 6 quadrados em um mapa), 
+médio (30m ou 20 quadrados) e longo (90m ou 60 
+quadrados). Você pode atacar dentro do alcance sem 
+sofrer penalidades. Você pode atacar até o dobro do 
+alcance, mas sofre –5 no teste de ataque. Armas 
+sem alcance podem ser arremessadas em alcance 
+curto com –5 no teste de ataque.
+Tipo. Armas tipicamente causam dano por corte 
+(C), impacto (I) ou perfuração (P). Certas criaturas 
+são resistentes ou imunes a certos tipos de dano.
+Espaço. Quantos espaços a arma ocupa, impor-
+tante para a capacidade de carga do personagem.
+Habilidades de Armas
+Algumas armas possuem uma ou mais das habi-
+lidades a seguir. Habilidades de armas aparecem em 
+itálico no texto, para facilitar sua identificação.
+Adaptável. Uma arma de uma mão com esta 
+habilidade pode ser usada com as duas mãos para 
+aumentar seu dano em um passo.
+Ágil. Pode ser usada com Acuidade com Arma, 
+mesmo não sendo uma arma leve.
+Alongada. Dobra o alcance natural do atacan-
+te, mas não permite atacar um adversário adjacente.
+Desbalanceada. Impõe uma penalidade de 
+–2 em testes de ataque.
+Dupla. Pode ser usada com Estilo de Duas 
+Armas (e poderes similares) para fazer ataques 
+adicionais, como se fosse uma arma de uma mão e 
+uma arma leve. Cada “ponta” conta como uma arma 
+separada para efeitos de melhorias e encantos.
+Versátil. Fornece bônus em uma ou mais 
+manobras (cumulativo com outros bônus de itens), 
+conforme a arma.
+Passos de Dano
+Alguns efeitos podem aumentar ou diminuir o 
+dano da arma em um ou mais “passos”. Por exemplo, 
+armas aumentadas, usadas por criaturas Grandes 
+(veja a página 106), causam um passo a mais de 
+dano. Sempre que precisar aumentar ou diminuir o 
+dano de uma arma em um ou mais passos, consulte 
+a Tabela 3-2: Dano de Armas.
+Ataques Desarmados 
+& Armas Naturais
+Um ataque desarmado é um soco, chute ou 
+qualquer outro golpe que use seu próprio 
+corpo e que não seja uma arma natural. Um 
+ataque desarmado é considerado uma arma 
+leve corpo a corpo que causa dano de impacto 
+não letal (1d3 pontos de dano para criaturas 
+Pequenas e Médias) e não é afetado por efeitos 
+que mencionem especificamente objetos ou 
+armas empunhadas. Uma criatura só possui 
+um único ataque desarmado (mas pode 
+escolher qual parte do corpo utiliza cada vez 
+que o desfere).
+Armas naturais representam partes 
+específicas do corpo de uma criatura que 
+podem ser usadas para desferir ataques, 
+como chifres, garras ou uma poderosa 
+mordida. Armas naturais são consideradas 
+armas leves corpo a corpo e, assim como 
+ataques desarmados, não são afetadas por 
+efeitos que afetem especificamente objetos 
+(uma arma natural não pode ser desarmada 
+ou quebrada, por exemplo) ou que afetem 
+armas que precisam ser empunhadas. A 
+quantidade e tipo de dano de cada arma 
+natural é apresentada em sua descrição.
+143
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 149 (PAGE 150) ---
+Capítulo Três
+Tabela 3-3: Armas
+Armas Simples Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Leves
+Adaga T$ 2 1d4 19 Curto Perfuração 1
+Espada curta T$ 10 1d6 19 — Perfuração 1
+Foice T$ 4 1d6 x3 — Corte 1
+Corpo a Corpo — Uma Mão
+Clava — 1d6 x2 — Impacto 1
+Lança T$ 2 1d6 x2 Curto Perfuração 1
+Maça T$ 12 1d8 x2 — Impacto 1
+Corpo a Corpo — Duas Mãos
+Bordão — 1d6/1d6 x2 — Impacto 2
+Pique T$ 2 1d8 x2 — Perfuração 2
+Tacape — 1d10 x2 — Impacto 2
+Ataque à Distância — Uma Mão
+Azagaia T$ 1 1d6 x2 Médio Perfuração 1
+Besta leve T$ 35 1d8 19 Médio Perfuração 1
+Virotes (20) T$ 2 — — — — 1
+Funda — 1d4 x2 Médio Impacto 1
+Pedras (20) T$ 0,5 — — — — 1
+Ataque à Distância — Duas Mãos
+Arco curto T$ 30 1d6 x3 Médio Perfuração 2
+Flechas (20) T$ 1 — — — — 1
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Leves
+Machadinha T$ 6 1d6 x3 Curto Corte 1
+Corpo a Corpo — Uma Mão
+Cimitarra T$ 15 1d6 18 — Corte 1
+Espada longa T$ 15 1d8 19 — Corte 1
+Florete T$ 20 1d6 18 — Perfuração 1
+Machado de batalha T$ 10 1d8 x3 — Corte 1
+Mangual T$ 8 1d8 x2 — Impacto 1
+Martelo de guerra T$ 12 1d8 x3 — Impacto 1
+Picareta T$ 8 1d6 x4 — Perfuração 1
+Tridente T$ 15 1d8 x2 Curto Perfuração 1
+144
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 150 (PAGE 151) ---
+Equipamento
+Tabela 3-3: Armas (Continuação)
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Duas Mãos
+Alabarda T$ 10 1d10 x3 — Corte/perfuração 2
+Alfange T$ 75 2d4 18 — Corte 2
+Gadanho T$ 18 2d4 x4 — Corte 2
+Lança montada T$ 10 1d8 x3 — Perfuração 2
+Machado de guerra T$ 20 1d12 x3 — Corte 2
+Marreta T$ 20 3d4 x2 — Impacto 2
+Montante T$ 50 2d6 19 — Corte 2
+Ataque à Distância — Duas Mãos
+Arco longo T$ 100 1d8 x3 Médio Perfuração 2
+Flechas (20) T$ 1 — — — — 1
+Besta pesada T$ 50 1d12 19 Médio Perfuração 2
+Virotes (20) T$ 2 — — — — 1
+Armas Exóticas Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo — Uma Mão
+Chicote T$ 2 1d3 x2 — Corte 1
+Espada bastarda T$ 35 1d10/1d12 19 — Corte 1
+Katana T$ 100 1d8/1d10 19 — Corte 1
+Machado anão T$ 30 1d10 x3 — Corte 1
+Corpo a Corpo — Duas Mãos
+Corrente de espinhos T$ 25 2d4/2d4 19 — Corte 2
+Machado táurico T$ 50 2d8 x3 — Corte 2
+Ataque à Distância — Uma Mão
+Rede T$ 20 — — Curto — 1
+Armas de Fogo Preço Dano Crítico Alcance Tipo Espaços
+Ataque à Distância — Leve
+Pistola T$ 250 2d6 19/x3 Curto Perfuração 1
+Balas (20) T$ 20 — — — — 1
+Ataque à Distância — Duas Mãos
+Mosquete T$ 500 2d8 19/x3 Médio Perfuração 2
+Balas (20) T$ 20 — — — — 1
+145
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 151 (PAGE 152) ---
+Capítulo Três
+Descrição das Armas
+Adaga. Esta faca afiada é usada por muitos 
+habitantes adultos do Reinado, embora seja favorita 
+de ladrões e assassinos, por ser facilmente escondida 
+(fornece +5 em testes de Ladinagem para ocultá-la). 
+Quando ataca com uma adaga, você pode usar sua 
+Destreza em vez de Força nos testes de ataque. Uma 
+adaga pode ser arremessada.
+Alabarda. Uma haste de madeira com 2m de 
+comprimento e uma lâmina de machado na ponta. A 
+alabarda é uma arma alongada.
+Alfange. Uma versão maior da cimitarra, esta 
+espada de lâmina larga e curva é bastante usada por 
+guerreiros do Deserto da Perdição.
+Arco Curto. Uma arma antiga e comum, este 
+arco é usado primariamente como ferramenta de 
+caça, embora seja usado como arma de guerra por 
+milícias, bandidos e exércitos menos equipados. 
+Pode ser usado montado.
+Arco Longo. Este arco reforçado tem a al-
+tura de uma pessoa. Ao contrário da versão curta, 
+é primariamente uma arma de guerra. Por ter uma 
+puxada pesada, permite que você aplique sua Força 
+às rolagens de dano (ao contrário de outras armas de 
+disparo). Porém, um arco longo não pode ser usado 
+se você estiver montado.
+Azagaia. Uma lança leve e flexível, própria 
+para arremesso. Pode ser usada como arma corpo a 
+corpo, mas você sofre uma penalidade de –5 no teste 
+de ataque.
+Besta Leve. Um arco montado sobre uma 
+coronha de madeira com um gatilho, a besta leve 
+é uma arma que dispara virotes com grande po -
+tência. Recarregar uma besta leve é uma ação de 
+movimento.
+Besta Pesada. Versão maior e mais potente 
+da besta leve. Recarregar uma besta pesada é uma 
+ação padrão.
+Espadas bastardas
+Espadas longas
+Espadas curtas
+Adagas
+Cimitarras
+Alfanges
+Manoplas
+Katana
+146
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 152 (PAGE 153) ---
+Equipamento
+Bordão. Um cajado apreciado por viajantes e 
+camponeses por sua praticidade e fácil acesso (seu 
+preço é zero). O bordão é uma arma dupla.
+Chicote. Esta arma pode ser usada para atacar 
+inimigos a até 4,5m e pode se enroscar nas mãos, 
+pernas ou armas de seus adversários. O chicote é 
+uma arma ágil e versátil, fornecendo +2 em testes 
+para derrubar ou desarmar.
+Cimitarra. Espada com a lâmina curva e muito 
+afiada. A cimitarra é uma arma ágil.
+Clava. Um pedaço de madeira empunhado 
+como arma, geralmente usado por bárbaros ou cria-
+turas brutais — ou como arma improvisada, como 
+um galho de árvore ou pedaço de mobília. Sendo fácil 
+de conseguir, seu preço é zero.
+Corrente de Espinhos. Esta arma pode 
+ser usada para atacar inimigos a até 4,5m e pode 
+se enroscar nas mãos, pernas ou armas de seus 
+adversários. A corrente de espinhos é uma arma 
+ágil, dupla e versátil, fornecendo +2 em testes para 
+derrubar ou desarmar.
+Espada Bastarda. Maior e mais pesada que 
+a espada longa, esta arma é tradicionalmente usada 
+pelos cavaleiros de Bielefeld. A espada bastarda é 
+uma arma adaptável. É muito grande para ser usada 
+com uma só mão sem treinamento especial; por isso 
+Armas Improvisadas
+Atacar com um objeto que não tenha 
+sido feito para lutar (cadeiras, garrafas 
+quebradas...) provoca penalidade de –2 
+no teste de ataque. Via de regra, armas 
+improvisadas causam 1d6 pontos de 
+dano, com crítico x2, mas esses valores 
+podem mudar de acordo com o mestre. 
+O tipo de dano é determinado pelo 
+mestre (impacto para cadeira, corte para 
+garrafa quebrada...).
+MontantesFloretes
+GadanhosFoices
+Fogo alquímicoÁgua benta Ácido
+147
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 153 (PAGE 154) ---
+Capítulo Três
+é uma arma exótica. Ela pode ser usada como uma 
+arma marcial de duas mãos.
+Espada Curta. O tipo mais comum de espada, 
+usada por guardas ou como arma secundária de guer-
+reiros mais capazes. Mede entre 40 e 50cm.
+Espada Longa. Arma típica de soldados e 
+guerreiros, esta espada de dois gumes tem lâmina 
+reta medindo entre 80cm e 1m.
+Florete. A lâmina leve e fina desta espada torna 
+a arma muito precisa. O florete é uma arma ágil.
+Foice. Originalmente um instrumento agrícola, 
+consiste de uma lâmina curva presa a um cabo de 
+madeira. Uma arma tradicional de druidas.
+Funda. Uma simples tira de couro usada para 
+arremessar pedras polidas. Na falta de munição ade-
+quada, pode disparar pedras comuns, mas o dano é 
+reduzido em um passo. Recarregar uma funda é uma 
+ação de movimento. Ao contrário de outras armas 
+de disparo, você aplica sua Força a rolagens de dano 
+com uma funda.
+Gadanho. Outra ferramenta agrícola, o ga-
+danho é uma versão maior da foice, para uso com 
+as duas mãos. Foi criada para ceifar cereais, mas 
+também pode ceifar vidas.
+Katana. A espada tradicional do samurai tem 
+lâmina levemente curva e apenas um gume. A katana 
+é uma arma adaptável e ágil. É muito grande para 
+ser empunhada com uma só mão sem treinamento 
+especial; por isso, é uma arma exótica. Ela pode ser 
+usada como uma arma marcial de duas mãos.
+Lança. Qualquer arma feita com uma haste de 
+madeira e uma ponta afiada, natural ou metálica. Por 
+sua facilidade de fabricação, é muito comum entre 
+orcs, kobolds, trogloditas e outras raças menos civili-
+zadas. Uma lança pode ser arremessada.
+Lança Montada. A lança montada é uma 
+arma alongada. Se você estiver montado, pode usá-la 
+Machado táurico
+Machados de batalha
+Machados 
+de guerra
+Machadinhas
+Machado anão
+Picaretas
+Alabardas
+148
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 154 (PAGE 155) ---
+Equipamento
+com apenas uma mão. Além disso, quando usada 
+numa investida montada, causa +2d8 pontos de 
+dano (note que dados extras não são multiplicados 
+em caso de acerto crítico).
+Maça. Bastão com um peso cheio de protube-
+râncias na ponta, a maça é usada por clérigos que 
+fazem votos de não derramar sangue. De fato, um 
+golpe de maça nem sempre derrama sangue, mas 
+esmaga ossos.
+Machadinha. Ferramenta útil para cortar 
+madeira e também inimigos. Uma machadinha pode 
+ser arremessada.
+Machado Anão. A arma preferida de onze 
+entre dez guerreiros anões. Um machado anão é 
+muito grande para ser usado com uma só mão sem 
+treinamento especial; por isso é uma arma exótica. Ele 
+pode ser usado como uma arma marcial de duas mãos.
+Machado de Batalha. Adaptado do ma-
+chado de lenhador, este não é um instrumento para 
+corte de árvores, mas sim uma arma capaz de causar 
+ferimentos terríveis.
+Machado de Guerra. Este imenso machado 
+de lâmina dupla é uma arma extremamente perigosa.
+Machado Táurico. Uma haste comprida com 
+uma lâmina extremamente grossa na ponta, esta é 
+uma arma ancestral dos minotauros. Um machado 
+táurico é uma arma desbalanceada. Além disso, é mui-
+to grande para ser usado sem treinamento especial; 
+por isso, é uma arma exótica.
+Mangual. Uma haste metálica ligada a uma 
+corrente com uma esfera de aço na ponta, que pode 
+se enroscar na arma do adversário. O mangual é uma 
+arma versátil, fornecendo +2 em testes para desarmar.
+Marreta. Uma haste de madeira resistente 
+com uma pesada cabeça de metal ou pedra.
+Martelo de Guerra. Outra ferramenta 
+adaptada para combate, esta é a arma favorita de 
+quase todos os anões que não usam machados.
+Clavas
+Tacapes
+Maças
+Martelo de guerra
+Tridentes
+Manguais
+Bordões
+Corrente 
+de espinhos
+Marreta
+149
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 155 (PAGE 156) ---
+Capítulo Três
+Montante. Enorme e pesada, esta espada de 
+1,5m de comprimento é uma arma poderosa.
+Mosquete. Uma arma de fogo de uso difícil, 
+mas com poder devastador. Recarregar um mosquete 
+é uma ação padrão.
+Picareta. Usada por mineradores, esta ferra-
+menta quebra pedras com facilidade. Imagine o que 
+pode fazer com carne e osso!
+Pique. Essencialmente uma lança muito longa. 
+O pique é uma arma alongada.
+Pistola. A arma de fogo mais comum. Recarre-
+gar uma pistola é uma ação padrão.
+Rede. A rede tem pequenos dentes em sua tra-
+ma e uma corda para controlar os inimigos presos. Se 
+você acertar um ataque com a rede, não causa dano. 
+Em vez disso, a vítima fica enredada (deslocamento 
+reduzido à metade, não pode correr nem fazer inves-
+tidas e sofre –2 na Defesa e em testes de ataque).
+Enquanto você estiver segurando a corda, sem -
+pre que a vítima se mover você pode fazer um teste 
+de Força oposto contra ela como uma reação. Se você 
+vencer, a vítima só pode se mover até o limite da 
+corda (alcance curto).
+A vítima pode se soltar com uma ação completa 
+e um teste de Força ou Acrobacia (CD 20). A rede 
+tem 5 pontos de vida e, se rasgar, qualquer criatura 
+enredada se solta automaticamente. A rede só pode 
+ser usada contra criaturas no máximo uma categoria 
+de tamanho maior que você.
+Tacape. Versão maior e/ou com pregos de uma 
+clava. Usado por bárbaros e humanoides bestiais, 
+não é uma arma elegante, mas faz o serviço.
+Tridente. Uma lança com três pontas, favorita 
+de povos marinhos e gladiadores e própria para pren-
+der as pernas do oponente. O tridente é uma arma 
+versátil, fornecendo +2 em testes para derrubar. Um 
+tridente pode ser arremessado.
+Piques
+Lanças montadas
+Lanças
+AzagaiasRede
+ Chicote
+150
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 156 (PAGE 157) ---
+Equipamento
+Arcos longos
+Arcos curtos
+Bestas leves
+Bestas pesadas
+Pistolas
+Mosquetes
+VirotesFlechas
+Fundas
+Bombas
+Balas
+Munições
+Projéteis usados em armas de disparo. Munição 
+é vendida em pacotes com projéteis suficientes para 
+20 ataques. Sempre que você faz um ataque com 
+uma arma de disparo, a munição é perdida, inde-
+pendentemente de o ataque acertar ou não.
+Pacotes de munições podem receber melhorias e 
+encantos como armas (mas efeitos de munições não 
+acumulam com os da arma de disparo). O aumento 
+no preço de um pacote de munição superior ou mági-
+co é metade do aumento de uma arma (uma munição 
+com uma melhoria, por exemplo, custa +T$ 150, em 
+vez de +T$ 300).
+Balas. Uma bolsa com 20 balas (pequenas esfe-
+ras de chumbo) e pólvora. Recarregar uma pistola ou 
+um mosquete é uma ação padrão.
+Flechas. Uma aljava com 20 flechas, hastes de 
+madeira com ponta metálica e penas para estabilizar 
+o voo. Recarregar um arco com uma flecha é uma 
+ação livre.
+Pedras. Um saco de couro com 20 pedras 
+polidas. Recar regar uma funda com uma pedra de 
+qualquer tipo é uma ação de movimento.
+Virotes. Uma aljava com 20 setas de madeira. 
+Recarregar uma besta leve é uma ação de movimento; 
+já recarregar uma besta pesada é uma ação padrão.
+Tabela 3-4: Munições
+Item Preço Espaços
+Balas T$ 20 1
+Flechas T$ 1 1
+Pedras T$ 0,5 1
+Virotes T$ 2 1
+151
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 157 (PAGE 158) ---
+Capítulo Três
+Armaduras & Escudos
+Armaduras são classificadas em leves e pesadas, de 
+acordo com a sua facilidade de uso e mobilidade.
+Armaduras Leves. Feitas de tecido, couro ou 
+peles, oferecem pouca proteção, mas muita liberdade 
+de movimentos. Vestir ou remover uma armadura 
+leve é uma ação completa.
+Armaduras Pesadas. Feitas de cota de 
+malha (trama com anéis metálicos) ou placas de 
+aço. Oferecem maior proteção, mas restringem seus 
+movimentos. Se usar uma armadura pesada, você 
+não aplica sua Destreza na Defesa e tem seu deslo -
+camento reduzido em 3m. Vestir ou remover uma 
+armadura pesada demora cinco minutos. Dormir de 
+armadura pesada deixa você fatigado pelo dia.
+Escudos. Existem escudos leves e pesados. 
+Um personagem proficiente em escudo sabe usar 
+ambos. Colocar ou tirar um escudo de qualquer tipo 
+é uma ação de movimento.
+Ataque com Escudo. Caso possua proficiência em 
+armas marciais, você pode usar um escudo para 
+atacar, mas perde seu bônus na Defesa até seu 
+próximo turno se fizer isso. Escudos leves causam 
+1d4 pontos de dano e pesados causam 1d6 pontos de 
+dano (ambos impacto, crítico x2). Escudos podem 
+ser reduzidos, aumentados ou gigantes (veja p. 106) 
+mas não contam como armas.
+Penalidade por Não Proficiência. Um 
+personagem vestindo uma armadura ou empunhando 
+escudo que não saiba usar aplica a penalidade da arma-
+dura em todas as perícias baseadas em Força e Destreza.
+Características das Armaduras e Escudos
+Preço. Este é o preço por armaduras completas 
+— “partes” de armaduras não costumam ser vendi-
+das separadamente e não fornecem proteção quando 
+usadas de forma avulsa.
+Bônus na Defesa. Cada armadura fornece 
+um bônus na Defesa do usuário. Quanto mais 
+pesada, maior o bônus. Não se pode vestir uma 
+armadura sobre outra. Pode-se usar armadura e 
+escudo ao mesmo tempo (os bônus se acumulam), 
+mas não dois escudos.
+Armadura acolchoada Armadura de couro Couro batido Gibão de peles
+152
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 158 (PAGE 159) ---
+Equipamento
+Tabela 3-5: Armaduras & Escudos
+Armaduras e Escudos Preço
+Bônus 
+na Defesa
+Penalidade 
+de Armadura Espaços
+Armaduras Leves
+Armadura acolchoada T$ 5 +1 0 2
+Armadura de couro T$ 20 +2 0 2
+Couro batido T$ 35 +3 –1 2
+Gibão de peles T$ 25 +4 –3 2
+Couraça T$ 500 +5 –4 2
+Armaduras Pesadas
+Brunea T$ 50 +5 –2 5
+Cota de malha T$ 150 +6 –2 5
+Loriga segmentada T$ 250 +7 –3 5
+Meia armadura T$ 600 +8 –4 5
+Armadura completa T$ 3.000 +10 –5 5
+Escudos
+Escudo leve T$ 5 +1 –1 1
+Escudo pesado T$ 15 +2 –2 2
+Penalidade de Armadura. Por seu peso 
+e rigidez, a maioria das armaduras dificulta o uso 
+de perícias que demandam agilidade. Aplique a 
+penalidade de armadura em testes de Acrobacia, 
+Furtividade e Ladinagem (e em testes de Atletismo 
+para natação). Penalidades de armaduras e escudos 
+se acumulam.
+Espaço. Quantos espaços a armadura ou escu -
+do ocupa, importante para a capacidade de carga do 
+personagem.
+Brunea Cota de malha Loriga segmentada Meia armadura
+153
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 159 (PAGE 160) ---
+Capítulo Três
+Descrição das Armaduras e Escudos
+Armadura Acolchoada. Uma túnica al-
+mofadada feita em linho ou lã. É a armadura mais 
+leve, mas protege todo o corpo, fornecendo +2 em 
+Fortitude.
+Armadura Completa. A mais forte e pesada 
+das armaduras, formada por placas de metal forjadas 
+e encaixadas de modo a cobrir o corpo inteiro. Inclui 
+uma túnica acolchoada para ser usada sob as placas. 
+Correias e fivelas distribuem o peso da armadura 
+pelo corpo inteiro.
+Esta armadura precisa ser feita sob medida para 
+cada usuário; um ferreiro cobra T$ 200 para adaptar 
+uma armadura completa a um novo usuário.
+Armadura de Couro. O peitoral desta ar -
+madura é feito de couro curtido em óleo fervente, 
+para ficar mais rígido, enquanto as demais partes são 
+feitas de couro flexível.
+Brunea. Colete de couro coberto com pla-
+quetas de metal sobrepostas, como escamas de um 
+peixe. Por ser barata de produzir, é a armadura mais 
+utilizada no Reinado por soldados de infantaria e 
+guardas de castelo.
+Cota de Malha. Longa veste de anéis metá -
+licos interligados, formando uma malha flexível e 
+resistente, que vai até os joelhos.
+Couraça. A mais robusta das armaduras leves, 
+formada por uma placa metálica que protege o peito 
+e as costas, presa sobre um casaco de couro.
+Couro Batido. Versão mais pesada da arma-
+dura de couro, reforçada com rebites de metal.
+Escudo Leve. Tipicamente feito de madeira, 
+este escudo é amarrado no antebraço, deixando a 
+mão livre. Você pode carregar um objeto na mão que 
+empunha o escudo, mas não manusear uma arma.
+Escudo Pesado. Normalmente feito de aço, 
+este escudo é preso ao antebraço e também deve ser 
+empunhado com firmeza, impedindo o usuário de 
+usar aquela mão.
+Gibão de Peles. Usada principalmente por 
+bárbaros e selvagens, esta armadura é formada por 
+várias camadas de peles e couro de animais.
+Loriga Segmentada. Composta por tiras 
+horizontais de metal, esta armadura pesada é muito 
+utilizada por legionários do Império de T auron.
+Meia Armadura. Uma cota de malha refor -
+çada com placas de metal.
+Couraças
+Escudos 
+pesados
+Armadura completa Escudos leves
+154
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 160 (PAGE 161) ---
+Equipamento
+Além de armas e armaduras, outros itens são 
+úteis para aventureiros. Itens gerais são divididos em 
+nove categorias: equipamento de aventura, ferramentas, 
+vestuário, esotéricos, alquímicos, alimentação, animais, 
+veículos e serviços.
+Alguns itens precisam ser empunhados para 
+serem usados; outros, precisam ser vestidos (veja 
+“Limites de Uso”, na página 141, para as regras 
+de uso de itens). Itens que permitem um teste de 
+resistência seguem as mesmas regras de testes de 
+resistência de habilidades (veja a página 227).
+Equipamento de aventura
+Utensílios úteis para exploradores de masmorras. 
+A CD para fabricar qualquer desses itens é 15.
+Água Benta. Produzida com a magia Abençoar 
+Alimentos, esta água sagrada é um poderoso recurso na 
+luta contra o mal. Para usar a água benta, você gasta 
+uma ação padrão e escolhe um morto-vivo ou abissal 
+em alcance curto (a água benta é inofensiva contra 
+outras criaturas). O alvo sofre 2d10 pontos de dano 
+de luz (Reflexos CD Sab reduz à metade).
+Algemas. Um par de algemas para criaturas 
+Médias. Prender uma criatura que não esteja indefesa 
+exige empunhar a algema, agarrar o alvo (veja “Ma-
+nobras de Combate”, no Capítulo 5) e vencer um 
+novo teste de agarrar contra ela. Você pode prender 
+os dois pulsos da pessoa (–5 em testes que exijam o 
+uso das mãos, impede conjuração) ou um dos pulsos 
+dela em um objeto imóvel adjacente, caso haja, para 
+impedir que ela se mova. Escapar das algemas exige 
+uma ação completa e um teste de Acrobacia contra 
+CD 30 ou de Força contra CD 25 — ou ter as chaves...
+Arpéu. Um gancho de aço amarrado na ponta 
+de uma corda para se fixar em muros, janelas, para-
+peitos de prédios... Prender um arpéu exige um teste 
+de Pontaria (CD 15). Subir um muro com a ajuda de 
+uma corda fornece +5 no teste de Atletismo.
+Bandoleira de Poções. Um cinto de couro 
+com bolsos que comportam pequenos frascos. Se 
+você estiver vestindo uma bandoleira, pode sacar 
+itens alquímicos e poções como uma ação livre.
+Itens gerais
+Barraca. Esta barraca de lona conta como um 
+saco de dormir para duas pessoas e fornece +2 em 
+testes de Sobrevivência para acampar.
+Corda. Um rolo com 10 metros de corda de 
+cânhamo, o mesmo tipo usado em navios. Possui di-
+versas utilidades: pode ajudar a descer um buraco ou 
+muro (+5 em testes de Atletismo nessas situações), 
+amarrar pessoas etc. Dar um nó firme ou especial 
+(por exemplo, capaz de deslizar, se desfazer com 
+um puxão etc.) exige um teste de Destreza (CD 15). 
+Arrebentar a corda exige 2 pontos de dano de corte 
+ou uma ação padrão e um teste de Força (CD 20).
+Espelho. Este pequeno espelho possui diversas 
+utilidades: observar cantos, fazer sinais de luz e, 
+claro, garantir que você esteja apresentável.
+Lampião. Um cilindro com uma alça e duas 
+portinholas. Uma chama alimentada por óleo é acesa 
+dentro do cilindro e uma das portinholas aberta deixa 
+a luz sair. Acender um lampião é uma ação padrão e 
+sua luz ilumina um raio com 15m. Carregar um lam-
+pião com óleo é uma ação padrão e ele dura uma cena.
+Mochila. Uma bolsa de lona com tiras para ser 
+carregada nas costas. Não conta como item vestido.
+Mochila de Aventureiro. Feita de couro 
+resistente, esta mochila é repleta de bolsos para pren-
+der equipamento. Vestir uma mochila de aventureiro 
+aumenta sua capacidade de carga em 2 espaços (ela 
+própria não gasta um espaço).
+Óleo. Um frasco com óleo inflamável para 
+lampião. Você pode atirar o frasco em uma criatura 
+em alcance curto com uma ação padrão. Se ela sofrer 
+dano de fogo até o fim do seu próximo turno, sofre 
+1d6 pontos de dano extra e fica em chamas.
+Organizador de Pergaminhos. Um estojo 
+de madeira ou couro rígido. Se você estiver vestindo 
+um organizador de pergaminhos, pode sacar perga-
+minhos como uma ação livre.
+Pé de Cabra. Esta barra de ferro fornece +5 
+em testes de Força para abrir portas, janelas e baús 
+fechados. Um pé de cabra pode ser usado como arma, 
+com as estatísticas de uma clava.
+Saco de Dormir. Um colchão com uma co -
+berta fina o bastante para ser enrolada e amarrada, 
+é especialmente útil para aventureiros, que nunca 
+155
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 161 (PAGE 162) ---
+Capítulo Três
+Tabela 3-6: Itens Gerais
+Item Preço Espaços Item Preço Espaços
+Equipamento de Aventura Vestuário (continuação)
+Água benta T$ 10 0,5 Chapéu arcano T$ 50 1
+Algemas T$ 15 1 Enfeite de elmo T$ 15 1
+Arpéu T$ 5 1 Farrapos de ermitão T$ 1 1
+Bandoleira de poções T$ 20 1 Gorro de ervas T$ 75 1
+Barraca T$ 10 1 Luva de pelica T$ 5 1
+Corda T$ 1 1 Manopla T$ 10 1
+Espelho T$ 10 1 Manto camuflado T$ 12 1
+Lampião T$ 7 1 Manto eclesiástico T$ 20 1
+Mochila T$ 2 — Robe místico T$ 50 1
+Mochila de aventureiro T$ 50 — Sapatos de camurça T$ 8 1
+Óleo T$ 0,1 0,5 Tabardo T$ 10 1
+Organizador de pergaminhos T$ 25 1 Traje da corte T$ 100 1
+Pé de cabra T$ 2 1 Traje de viajante T$ 10 —
+Saco de dormir T$ 1 1 Veste de seda T$ 25 1
+Símbolo sagrado T$ 5 1
+Tocha T$ 0,1 1 Esotéricos
+Vara de madeira (3m) T$ 0,2 1 Bolsa de pó T$ 300 1
+Cajado arcano T$ 1.000 2
+Ferramentas Cetro elemental T$ 750 1
+Alaúde élfico T$ 300 1 Costela de lich T$ 300 1
+Coleção de livros T$ 75 1 Dedo de ente T$ 200 1
+Equipamento de viagem T$ 10 1 Luva de ferro T$ 150 1
+Estojo de disfarces T$ 50 1 Medalhão de prata T$ 750 1
+Flauta mística T$ 150 1 Orbe cristalino T$ 750 1
+Gazua T$ 5 1 Tomo hermético T$ 1.500 1
+Instrumentos de <ofício> T$ 30 1 Varinha arcana T$ 100 1
+Instrumento musical T$ 35 1
+Luneta T$ 100 1 Alquímicos — Preparados
+Maleta de medicamentos T$ 50 1 Ácido T$ 10 0,5
+Sela T$ 20 1 Bálsamo restaurador T$ 10 0,5
+Tambor das profundezas T$ 80 1 Bomba T$ 50 0,5
+Cosmético T$ 30 0,5
+Vestuário Elixir do amor T$ 100 0,5
+Andrajos de aldeão T$ 1 1 Essência de mana T$ 50 0,5
+Bandana T$ 5 1 Fogo alquímico T$ 10 0,5
+Botas reforçadas T$ 20 1 Pó do desaparecimento T$ 100 0,5
+Camisa bufante T$ 25 1
+Capa esvoaçante T$ 25 1 Alquímicos — Catalisadores
+Capa pesada T$ 15 1 Baga-de-fogo T$ 30 0,5
+Casaco longo T$ 20 1 Dente-de-dragão T$ 45 0,5
+156
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 162 (PAGE 163) ---
+Equipamento
+Tabela 3-6: Itens Gerais (Continuação)
+Item Preço Espaços Item Preço Espaços
+Alquímicos — Catalisadores (continuação) Animais
+Essência abissal T$ 150 0,5 Alforje T$ 30 —
+Líquen lilás T$ 30 0,5 Cão de caça T$ 150 —
+Musgo púrpura T$ 45 0,5 Cavalo T$ 75 —
+Ossos de monstro T$ 45 0,5 Cavalo de guerra T$ 400 —
+Pó de cristal T$ 30 0,5 Estábulo (por dia) T$ 0,1 —
+Pó de giz T$ 30 0,5 Pônei T$ 5 —
+Ramo verdejante T$ 45 0,5 Pônei de guerra T$ 30 —
+Saco de sal T$ 45 0,5 Trobo T$ 60 —
+Seixo de âmbar T$ 30 0,5
+Terra de cemitério T$ 30 0,5 Veículos
+Balão goblin T$ 200 —
+Alquímicos — Venenos Carroça T$ 150 —
+Beladona T$ 1.500 0,5 Carruagem T$ 500 —
+Bruma sonolenta T$ 150 0,5 Canoa T$ 70 —
+Cicuta T$ 60 0,5 Veleiro T$ 10.000 —
+Essência de sombra T$ 100 0,5
+Névoa tóxica T$ 30 0,5 Serviços
+Peçonha comum T$ 15 0,5 Estadia (por noite)
+Peçonha concentrada T$ 90 0,5 comum T$ 0,5 —
+Peçonha potente T$ 600 0,5 confortável T$ 4 —
+Pó de lich T$ 3.000 0,5 luxuosa T$ 20 —
+Riso de Nimb T$ 150 0,5 Condução
+terrestre T$ 0,5 por km —
+Alimentação marítima T$ 0,1 por km —
+Batata valkariana T$ 2 0,5 aérea T$ 10 por km —
+Gorad quente T$ 18 0,5 Curandeiro T$ 5 —
+Macarrão de Yuvalin T$ 6 0,5 Magia
+Prato do aventureiro T$ 1 0,5 1º círculo T$ 10 —
+Ração de viagem (por dia) T$ 0,5 0,5 2º círculo T$ 90 —
+Refeição comum T$ 0,3 0,5 3º círculo T$ 360 —
+Sopa de peixe T$ 1 0,5 Mensageiro T$ 0,5 por km —
+sabem onde vão passar a noite. Dormir ao relento 
+sem um acampamento e um saco de dormir diminui 
+sua recuperação de PV e PM (veja a página 106).
+Símbolo Sagrado. Um medalhão de madeira 
+ou metal com o símbolo de uma divindade. Se você 
+estiver vestindo (normalmente com uma corrente 
+ao redor do pescoço) ou empunhando o símbolo 
+sagrado de um deus do qual é devoto, recebe +1 em 
+testes de resistência.
+Tocha. Um bastão de madeira com algum 
+combustível na ponta (geralmente trapos embebidos 
+em parafina). Acender uma tocha é uma ação padrão. 
+Ela ilumina um raio de 9m e dura uma cena. Pode 
+ser usada como uma arma simples leve (dano 1d4 de 
+impacto mais 1 de fogo, crítico x2).
+Vara de Madeira. Uma haste com 3m de 
+comprimento. Útil para alcançar pontos distantes, 
+mas frágil demais para servir como arma.
+157
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 163 (PAGE 164) ---
+Capítulo Três
+Fe rr amentas
+Itens desta categoria afetam testes de perícia, 
+eliminando penalidades ou fornecendo bônus. A CD 
+para fabricar qualquer ferramenta é 20.
+Alaúde Élfico. Feito com madeira de alta 
+qualidade e manufatura delicada, este alaúde gera 
+notas vívidas e emocionantes. Enquanto empunha 
+este item, você pode usar a habilidade Inspiração 
+como uma ação de movimento. Conta como um 
+instrumento musical.
+Coleção de Livros. Uma pequena coleção 
+de tomos e tratados sobre um assunto. Fornece +1 
+em Conhecimento, Guerra, Misticismo, 
+Nobreza ou Religião (definido quando 
+o item é comprado ou fabricado).
+Equipamento de Viagem.  
+Um saco de lona contendo instru-
+mentos úteis para sobreviver 
+nos ermos, como pederneira 
+(pedra para fazer fogo), panelas e talheres para co -
+zinhar, anzól e linha para pescar e uma pequena pá. 
+Um personagem sem este item sofre –5 em testes 
+de Sobrevivência para fazer um acampamento. Não 
+inclui saco de dormir ou barraca.
+Estojo de Disfarces. Um conjunto de 
+cosméticos, tintas para cabelo e algumas próteses 
+simples (como bigodes e narizes falsos). Um perso -
+nagem sem este item sofre –5 em testes de Engana-
+ção para disfarce.
+Flauta Mística. Um instrumento delicado, 
+repleto de runas e pequenas gemas místicas. Um 
+bardo que empunhe este item aumenta a CD para 
+resistir às magias lançadas por ele em +1. Conta 
+como um instrumento musical.
+Gazua. Uma barra fina de ferro, com a ponta 
+torta ou em forma de gancho. Um personagem sem 
+este item sofre –5 em testes de Ladinagem para 
+abrir fechaduras.
+Instrumentos de <Ofício>. Existe uma 
+versão deste item para cada perícia de Ofício. Por 
+exemplo, martelo, pregos e serrote para Ofício 
+(carpinteiro), pergaminhos em branco, tinta e 
+pena para Ofício (escriba) e assim por diante. Um 
+personagem sem os instrumentos de seu Ofício 
+sofre –5 nessa perícia.
+Instrumento Musical. Um instrumento 
+típico, como um bandolim, flauta ou lira. Veja o 
+quadro acima para as regras deste item.
+Luneta. Este instrumento valioso consiste 
+de um cilindro metálico com duas lentes. Fornece 
++5 em testes de Percepção para observar coisas em 
+alcance longo ou além.
+Maleta de Medicamentos. Caixa de ma-
+deira com ervas, unguentos, bandagens e outros 
+materiais úteis. Um personagem sem este item sofre 
+–5 em Cura.
+Sela. Uma peça de couro e pelego colocada 
+sobre o lombo da montaria, sobre a qual o cavaleiro 
+se senta. Inclui arreios para conduzir o animal. Um 
+personagem montado em uma montaria sem sela 
+sofre –5 em testes de Cavalgar. Usada no animal, a 
+sela não ocupa espaço de carga do personagem.
+Tambor das Profundezas. Um instru-
+mento típico de anões de Doherimm, capaz de 
+sons graves e retumbantes. Enquanto empunha 
+este item, o alcance da habilidade Inspiração e de 
+qualquer Música de Bardo é dobrado. Conta como 
+um instrumento musical.
+Instrumentos Musicais
+Alguns itens da categoria ferramentas 
+são instrumentos musicais. Tais itens são de 
+grande importância para bardos e possuem 
+as regras a seguir.
+• Você precisa empunhar um instrumento 
+musical com as duas mãos para receber 
+seus benefícios e para usar Músicas de 
+Bardo (veja a página 45).
+• Instrumentos musicais podem ser 
+usados como esotéricos por bardos 
+(permitindo que lance magias usando a 
+mão que empunha o instrumento).
+• Instrumentos musicais podem receber 
+melhorias de ferramentas (contam 
+como itens ligados a Atuação) e de 
+esotéricos (mas afetam apenas magias 
+lançadas por bardos).
+158
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 164 (PAGE 165) ---
+Equipamento
+Vestuário
+Todos os itens desta seção precisam ser vestidos 
+para fornecerem seus benefícios. A CD para fabricar 
+qualquer vestuário é 20.
+Andrajos de Aldeão. Roupas típicas de 
+camponês. Consiste de camisa larga e calças soltas ou 
+blusa e saia e não inclui botas — os mais pobres an-
+dam descalços. Fornece +2 em testes de Investigação 
+para interrogar (ninguém se importa com o que um 
+aldeão escuta) e, se você possuir o poder Aparência 
+Inofensiva, a CD para resistir a ele aumenta em +2. 
+Porém, impõe –2 em perícias baseadas em Carisma 
+contra pessoas que se importam com classe social.
+Bandana. Um lenço tipicamente usado por 
+bandidos e piratas. Fornece +1 em Intimidação.
+Botas Reforçadas. Grossas e resistentes, 
+estas botas de cano alto protegem contra perigos do 
+terreno. Aumentam seu deslocamento em +1,5m se 
+ele for reduzido por terreno difícil (após a redução).
+Camisa Bufante. Blusa colorida, com mangas 
+e golas longas e encrespadas. Fornece +1 em Atuação.
+Capa Esvoaçante. Favorita entre heróis ou-
+sados, esta capa de seda produz movimentos amplos 
+e chamativos, que fornecem +1 em Enganação.
+Capa Pesada. Uma capa de couro grossa e 
+resistente. Protege e aquece o corpo, fornecendo +1 
+em Fortitude.
+Casaco Longo. Feito de peles ou couro grosso 
+forrado com lã, e impermeabilizado com óleo, este 
+casaco é quente e pesado. Fornece +5 em testes de 
+Fortitude para resistir a efeitos de frio, mas impõe 
+penalidade de armadura de –2.
+Chapéu Arcano. Com pinturas e bordados 
+de símbolos místicos, este chapéu pontudo ajuda a 
+canalizar energias mágicas. Ele fornece +1 ponto de 
+mana, mas apenas se você possuir a habilidade de 
+classe Caminho do Arcanista.
+Enfeite de Elmo.  Um adorno chamativo, 
+como crina de cavalo, plumas, asas ou um totem de 
+animal. Fornece resistência a medo +2.
+Farrapos de Ermitão. Trapos “adornados” 
+com plantas e raízes. Uma pessoa vestindo farrapos 
+de ermitão não parece muito civilizada, e sofre –2 
+em Diplomacia e em testes de Investigação para 
+interrogar. Entretanto, recebe +2 em Adestramento.
+Gorro de Ervas. Formado por duas cama-
+das de tecido, este chapéu é preenchido com ervas 
+preparadas para auxiliar a concentração do usuário. 
+Fornece +1 em Vontade.
+Luva de Pelica. Estas luvas delicadas preser -
+vam o tato e impedem que o suor deixe os dedos 
+escorregadios. Fornecem +1 em Ladinagem.
+Manopla. Luva metálica que permite socos 
+mais perigosos — o dano de seus ataques desarma-
+dos torna-se letal. Uma manopla conta como uma 
+arma para receber melhorias e encantos para usá-los 
+em seus ataques desarmados.
+Manto Camuflado. Um manto camuflado é 
+feito para um tipo de terreno específico (veja a habi-
+lidade Explorador, na página 51). Por exemplo, um 
+manto camuflado para floresta pode ser verde e mar-
+rom e coberto de folhas, enquanto um manto urbano 
+pode ser cinza ou negro. Usar um manto camuflado 
+no terreno correto fornece +2 em Furtividade.
+Manto Eclesiástico. Um manto típico de 
+igrejas e templos. Fornece +1 em Religião.
+Robe Místico. Um manto longo, adornado 
+com temas arcanos. Fornece +1 em Misticismo.
+Sapatos de Camurça. Leves e resistentes, 
+aprimoram o equilíbrio e a firmeza dos pés, forne -
+cendo +1 em Acrobacia.
+Tabardo. Uma peça de tecido usada como 
+um colete, cobrindo o peito e as costas. Geralmente 
+ostenta a heráldica de um reino, igreja, casa nobre 
+ou ordem de cavaleiros. Fornece +1 em Diplomacia.
+Traje da Corte. Roupas de luxo, feitas sob 
+medida e adequadas à nobreza e realeza. Inclui algu-
+mas joias, como aneis e colares. Em certos ambientes 
+(um baile, um salão de palácio), um personagem que 
+não esteja vestindo este item sofre –5 em perícias 
+baseadas em Carisma.
+Traje de Viajante. Inclui botas, calças ou 
+saias, cinto, camisa de linho e capa com capuz. A 
+roupa padrão de aventureiros.
+Veste de Seda. Esta roupa leve e elegante 
+deixa seus movimentos os mais livres possíveis. 
+Fornece +1 em Reflexos.
+Esotéricos
+Itens utilizados por conjuradores para lançar ma-
+gias de forma mais eficiente. Para usar um esotérico, 
+você precisa empunhá-lo com a mão que usará para 
+gesticular ao lançar a magia. Uma magia só pode 
+receber os benefícios de um esotérico por vez. A CD 
+para fabricar qualquer esotérico é 20 e para fabricá-lo 
+você deve ser treinado em Misticismo.
+Bolsa de Pó. Uma bolsa com pó multicolorido, 
+fabricado a partir das pétalas trituradas de flores que 
+159
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 165 (PAGE 166) ---
+Capítulo Três
+nascem apenas na Pondsmânia. Quando lança uma 
+magia de encantamento ou ilusão, você recebe +2 
+PM para gastar em aprimoramentos.
+Cajado Arcano. Um cajado típico, feito de 
+madeira de boa qualidade e entalhado com runas. 
+O limite de PM que você pode gastar em magias 
+arcanas e a CD para resistir a elas aumentam em +1. 
+Para fornecer seus benefícios, um cajado precisa ser 
+empunhado com as duas mãos. Ele pode ser usado 
+como arma, com as estatísticas de um bordão.
+Cetro Elemental. Este cetro possui uma 
+pedra preciosa em sua ponta: esmeralda (ácido), 
+topázio (eletricidade), rubi (fogo) ou safira (frio). 
+Quando lança uma magia que causa dano do tipo da 
+pedra, o dano aumenta em um dado do mesmo tipo.
+Costela de Lich. Esta varinha é feita a partir 
+do osso de um morto-vivo. Quando lança uma magia, 
+ela causa +1d6 pontos de dano de trevas. Se estiver 
+empunhando esta varinha você não recupera PV por 
+efeitos mágicos de cura.
+Dedo de Ente. Uma varinha feita da madeira 
+de uma árvore senciente. Sempre que gastar pelo 
+menos 1 PM para lançar uma magia, role 1d4. Com 
+um resultado 4, você recupera 1 PM.
+Luva de Ferro. Um conjunto de dedais inter-
+ligados por correntes. Suas magias arcanas pessoais 
+que concedem bônus na Defesa ou em testes de 
+resistências têm esse bônus aumentado em +1.
+Medalhão de Prata. Gravado com uma runa 
+pessoal do conjurador, este medalhão de prata dimi-
+nui em –1 PM o custo de magias de alcance pessoal.
+Orbe Cristalino. Esta esfera perfeita con -
+centra seu poder mágico. O limite de PM que você 
+pode gastar em magias arcanas aumenta em +1.
+Tomo Hermético. Um livro de tratados que 
+aumentam a sua compreensão sobre uma escola de 
+magia específica. A CD para resistir a suas magias 
+arcanas dessa escola aumenta em +2.
+Varinha Arcana. Uma varinha típica, feita de 
+madeira de boa qualidade e entalhada com runas. A 
+CD para resistir a suas magias arcanas aumenta em +1.
+Alquímicos
+Inclui preparados, catalisadores e venenos.
+Preparados
+Itens de uso único que geram efeitos variados 
+quando usados. A CD para fabricar qualquer prepa-
+rado é 15.
+Ácido. Frasco de vidro contendo um ácido al-
+químico altamente corrosivo. Para usar o ácido, você 
+gasta uma ação padrão e escolhe uma criatura em 
+alcance curto. Essa criatura sofre 2d4 pontos de dano 
+de ácido (Reflexos CD Des reduz à metade).
+Bálsamo Restaurador. Uma pasta verde e 
+fedorenta, feita de ervas medicinais. Usá-la é uma 
+ação completa e recupera 2d4 pontos de vida.
+Bomba. Uma granada rudimentar. Para usar a 
+bomba, você precisa empunhá-la, gastar uma ação de 
+movimento para acender seu pavio e uma ação padrão 
+para arremessá-la em um ponto em alcance curto. 
+Criaturas a até 3m desse ponto sofrem 6d6 pontos de 
+dano de impacto (Reflexos CD Des reduz à metade).
+Cosmético. Perfume ou maquiagem. Usá-lo 
+é uma ação completa e fornece +2 em testes de 
+perícias baseadas em Carisma até o fim da cena.
+Elixir do Amor. Um humanoide que beba 
+este líquido adocicado fica apaixonado pela primeira 
+criatura que enxergar (condição enfeitiçado; Vontade 
+CD Car anula). O efeito dura 1d3 dias.
+Essência de Mana. Esta poção feita de ervas 
+raras e compostos alquímicos recupera energia pes-
+soal. Beber a essência de mana é uma ação padrão e 
+recupera 1d4 pontos de mana.
+Fogo Alquímico. Frasco de cerâmica con -
+tendo uma substância que entra em combustão em 
+contato com o ar. Para usar o fogo alquímico, você 
+gasta uma ação padrão e escolhe uma criatura em 
+alcance curto. Essa criatura sofre 1d6 pontos de dano 
+de fogo e fica em chamas. Um teste de Reflexos (CD 
+Des) reduz o dano à metade e evita as chamas.
+Pó do Desaparecimento. Uma criatura ou 
+objeto coberto por este pó torna-se invisível (como 
+em Invisibilidade) por 2d6 rodadas. O usuário não 
+sabe quando a invisibilidade vai terminar.
+Catalisadores
+Substâncias preparadas através de processos 
+alquímicos, catalisadores são itens de uso único que 
+melhoram o efeito de uma magia quando ela é lançada.
+Você precisa estar empunhando um catalisador 
+para usá-lo e só pode usar um catalisador por vez. 
+Reduções de custo de catalisadores acumulam com 
+outras reduções de custo. Catalisadores que aumen-
+tam o dano só funcionam em magias que já causem 
+dano. A CD para fabricar qualquer catalisador é 15 e 
+para fabricá-lo você deve ser treinado em Misticismo.
+Baga-de-Fogo. Pequeno fruto vermelho, apre-
+ciado por seu sabor picante. Usado como catalisador, 
+adiciona +1d6 de dano de fogo a magias.
+160
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 166 (PAGE 167) ---
+Equipamento
+Dente-de-Dragão. Uma flor comum em re-
+giões montanhosas, especialmente nas Sanguinárias, 
+possui formato parecido com uma presa de monstro. 
+Suas propriedades místicas aumentam o dano de 
+magias em um dado do mesmo tipo.
+Essência Abissal. Um líquido espesso, pro -
+duzido através do sangue de criaturas demoníacas. 
+Aumenta os dados de dano de magias de fogo em 
+uma categoria — d4 para d6, d6 para d8, d8 para d10 
+e d10 para d12 (o máximo).
+Líquen Lilás. Esta estranha planta tem aspec-
+to cristalino e cresce em abundância na região das 
+Uivantes. Adiciona +1d6 de dano de frio a magias.
+Musgo Púrpura. Encontrado em florestas 
+fechadas, esse fungo cintilante possui propriedades 
+que fornecem +2 na CD de magias de ilusão.
+Ossos de Monstro. Pequenas falanges de 
+criaturas monstruosas, tratadas com óleos alquími-
+cos. Fornece +2 na CD de magias de necromancia. 
+Pó de Cristal. Uma pitada de pó de um mine-
+ral cristalino puro, como quartzo ou topázio. Diminui 
+o custo de magias de encantamento em –1 PM.
+Pó de Giz. Calcário esmagado em pó, uma 
+substância comum que, usada como catalisador, 
+diminui o custo de magias de convocação em –1 PM.
+Ramo Verdejante. Esta combinação de ervas 
+potencializa magias de cura, aumentando sua cura 
+em +1 PV por dado.
+Saco de Sal. Um pequeno saco de couro com sal 
+marinho. Fornece +2 na CD de magias de abjuração.
+Seixo de Âmbar. Essa “gema” feita de seiva 
+de árvore fossilizada diminui o custo de magias de 
+transmutação em –1 PM.
+Terra de Cemitério.  Um punhado de terra 
+cinzenta, colhida à noite de um cemitério. Adiciona 
++1d6 de dano de trevas a magias.
+Venenos
+Substâncias naturais ou preparadas perigosas 
+para seres vivos. Exceto se indicado o contrário, a 
+CD para fabricar qualquer veneno é 20.
+Beladona. Planta extremamente tóxica que 
+afeta o sistema nervoso da vítima. Ingestão, vítima fica 
+paralisada (lenta) por 3 rodadas. A CD para fabricar e para 
+resistir a este veneno aumenta em +5.
+Bruma Sonolenta. Um gás sonífero. Inalação, 
+vítima fica inconsciente (enjoada por 1 rodada).
+Cicuta. Planta cuja ingestão pode causar 
+náusea, dores e até morte. Ingestão, perde 1d12 PV por 
+rodada durante 3 rodadas (perde 1d12 PV).
+Essência de Sombra. Produzido a partir de 
+compostos alquímicos que canalizam energia de 
+trevas. Contato, vítima fica debilitada (fraca).
+Névoa Tóxica. Este gás verde queima e corrói 
+a pele e os pulmões. Inalação, perde 1d12 PV por rodada 
+durante 3 rodadas (perde 1d12 PV).
+Peçonha Comum. Veneno típico, 
+extraído de animais ou plantas tóxicas. 
+Contato, perde 1d12 PV .
+Regras de Venenos
+Venenos são classificados de acordo com o 
+método de inoculação.
+Contato. Inoculados via um ataque 
+que acerte (ou se a vítima toca o objeto 
+envenenado). Aplicar um veneno em uma 
+arma exige uma ação de movimento e 
+uma rolagem de 1d6. Se você rolar 1, se 
+envenena acidentalmente (mas veja o poder 
+Venefício). O veneno permanece na arma 
+até acertar um ataque ou até o fim da cena 
+(o que acontecer primeiro).
+Inalação. Inoculados via respiração. São 
+armazenados em frascos que podem ser 
+arremessados em alcance curto. Quando o 
+frasco se quebra, libera o veneno num cubo 
+com 3m de lado. Todas as criaturas na área 
+são expostas — prender a respiração não 
+impede a inoculação, pois o veneno pode 
+entrar por canais lacrimais, membranas 
+nasais e outras partes do corpo.
+Ingestão. Inoculados através da ingestão 
+de comida ou bebida.
+Uma criatura exposta a um veneno deve 
+fazer um teste de Fortitude (CD definida 
+pelo aplicador do veneno, atributo-chave 
+Int). Se falhar, sofre o efeito do veneno 
+(efeitos em parênteses afetam vítimas que 
+passem no teste de resistência). Efeitos 
+que não sejam instantâneos, como perda 
+de PV recorrente ou condições, deixam a 
+vítima com a condição envenenada, e curar 
+esta condição encerra quaisquer efeitos de 
+veneno (mas não recupera PV perdidos).
+161
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 167 (PAGE 168) ---
+Capítulo Três
+Peçonha Concentrada. Dose concentrada 
+da peçonha comum. Contato, perde 1d12 PV por rodada 
+durante 3 rodadas (perde 1d12 PV).
+Peçonha Potente. Veneno poderoso, extraí-
+do de animais ou plantas perigosos. Contato, perde 
+2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).
+Pó de Lich. Veneno letal, usado para assas-
+sinar alvos poderosos. Ingestão, perde 4d12 PV por 
+rodada durante 5 rodadas (perde 4d12 PV). A CD para 
+fabricar e para resistir a este veneno aumenta em +5.
+Riso de Nimb. Este gás púrpura faz a vítima 
+rir descontroladamente e agir de forma caótica. 
+Inalação, vítima fica confusa (lenta por 1 rodada).
+Alimentação
+Batata Valkariana. Batatas cortadas em 
+tiras e mergulhadas em óleo fervente. Gordurentas e 
+pouco nutritivas, são o tipo de prato que só é servido 
+numa metrópole como Valkaria. Apesar disso, são 
+gostosas e deixam qualquer um empolgado. Você 
+recebe +1d6 em um teste a sua escolha realizado até 
+o fim do dia. Para não esquecer, deixe 1d6 em cima 
+da sua ficha. De preferência, amarelo.
+Gorad Quente. Gorad e leite, servidos 
+quentes. Não tem erro. O gorad ativa o cérebro, 
+fornecendo +2 PM temporários.
+Macarrão de Yuvalin. Yuvalin é uma cidade 
+mineradora em Zakharov, na fronteira com as Mon-
+tanhas Uivantes. Seus habitantes criaram este prato 
+reforçado (macarrão, bacon e creme de leite!) para 
+encarar suas árduas jornadas de trabalho nas minas. 
+Delicioso, o prato se espalhou por outras cidades e 
+reinos. Você recebe +5 PV temporários.
+Prato do Aventureiro. Um cozido de 
+galinha com legumes, esta é uma refeição simples, 
+mas nutritiva. Em sua próxima noite de sono, você 
+aumenta a sua recuperação de pontos de vida em +1 
+por nível.
+Ração de Viagem. Própria para viagens, uma 
+porção desta ração alimenta uma pessoa por um 
+dia. É feita de alimentos conservados, como carne 
+defumada, frutas secas, pão, queijo e biscoitos. Se 
+mantida seca dura bastante, mas quando molhada se 
+estraga em 24 horas.
+Refeição Comum. Uma refeição típica in-
+clui pão, queijo, cozido de carne ou galinha com 
+legumes e uma caneca de bebida, geralmente cidra, 
+vinho ou cerveja.
+Sopa de Peixe. Um cozido de peixe com 
+verduras. É um prato humilde, mas garante um 
+descanso relaxante. Em sua próxima noite de sono, 
+você aumenta a sua recuperação de pontos de mana 
+em +1 por nível.
+Animais
+Animais funcionam como parceiros (veja a 
+página 260). Animais comprados são parceiros ini-
+ciantes. Para parceiros de maior nível, você precisa 
+adquiri-los através de uma habilidade.
+Alforje. Sacos de couro feitos para serem 
+presos em uma sela. Permitem que um parceiro 
+montaria carregue até 10 espaços de item para você.
+Cão de Caça. Este cachorro valente e leal 
+pode ser usado como parceiro perseguidor por per -
+sonagens treinados em Adestramento ou montaria 
+por personagens Pequenos e Minúsculos.
+Cavalo. A montaria mais comum no Reinado. 
+Pode ser usado como parceiro montaria (veja a 
+página 262). Cavalos sem treinamento se assustam 
+facilmente, sendo necessário um teste de Cavalgar 
+(CD 20) por rodada para permanecer montado 
+durante um combate. Cavalos de guerra dispensam 
+esse teste.
+Estábulo. Inclui alimentação para o animal.
+Pônei. A montaria mais comum entre raças 
+Pequenas. Pode ser usado como parceiro montaria 
+Pratos Especiais
+A seção Alimentação traz pratos especiais, 
+refeições feitas com ingredientes selecio -
+nados e que fornecem um benefício. Um 
+prato especial deve ser consumido ao ser 
+comprado ou fabricado. Seu bônus dura 
+um dia e você só pode receber um bônus 
+de alimentação por dia.
+Note que, se estiver usando a regra de 
+custo de vida (veja a página 277), você 
+não precisa se preocupar com a alimen-
+tação de seu personagem — refeições 
+corriqueiras são apenas pano de fundo. 
+Assim, use pratos especiais apenas 
+quando quiser um benefício — e estiver 
+disposto a pagar por ele!
+Fabricar um prato especial leva 1 hora 
+e exige um teste de Ofício (cozinheiro) 
+contra CD 15. Você pode sofrer –5 no teste 
+para fabricar até cinco pratos (pagando o 
+custo de todos).
+162
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 168 (PAGE 169) ---
+Equipamento
+(veja a página 262). Pôneis sem treinamento se 
+assustam facilmente, sendo necessário um teste 
+de Cavalgar (CD 20) por rodada para permanecer 
+montado durante um combate. Pôneis de guerra 
+dispensam esse teste.
+Trobo. Estas enormes aves, também chamadas 
+de pássaros-touros, são parecidas com avestruzes 
+com chifres, couro e cascos. Não têm asas. Possuem 
+poucas penas, que servem apenas como ornamento. 
+Muito dóceis, trobos são usados em áreas rurais 
+como animais de carga e tração, mas também podem 
+ser usados como montaria (veja a página 262).
+Veículos
+Balão Goblin. Feito de imensas bolsas de 
+couro e outros tecidos remendados, com uma gôn-
+dola parecida com um grande cesto, o balão goblin 
+é um engenho tecnológico sem igual em Arton. Um 
+balão tem tamanho Enorme, deslocamento voo 12m, 
+Defesa 5 (+ Des do baloeiro), 100 PV e pode carregar 
+até 8 criaturas Médias ou 160 espaços. Ao contrário 
+do que possa parecer, quedas de balões raramente 
+são fatais. Quando o balão perde mais da metade de 
+seus PV , começa a perder ar e flutua lentamente na 
+direção do solo. Cada ocupante sofre 4d6 pontos de 
+dano de impacto (Ref CD 15 reduz à metade). Um 
+balão só cai de forma perigosa caso perca todos os 
+seus PV . Neste caso, os ocupantes sofrem dano nor-
+mal pela queda, de acordo com a altura. Remendar 
+um balão em pleno voo exige uma ação completa e 
+um teste de Ofício (artesão) contra CD 15. Se você 
+passar no teste, recupera 1d8 PV do balão.
+Carroça. Veículo de duas ou quatro rodas, 
+aberto, normalmente usado para transportar cargas 
+pesadas. É puxada por dois cavalos ou um trobo. 
+Inclui os arreios necessários para controlar os ani-
+mais. Uma carroça tem tamanho Grande, desloca-
+mento 9m, Defesa 8 (+ Des do condutor), 50 PV e 
+pode carregar até 4 criaturas Médias ou 80 espaços.
+Carruagem. Veículo de quatro rodas, capaz 
+de transportar até quatro pessoas em uma cabine 
+fechada, mais dois condutores do lado de fora. É 
+puxada por dois cavalos ou um trobo. Inclui os 
+arreios necessários para controlar os animais. Tem 
+as mesmas estatísticas de uma carroça, mas fornece 
+cobertura leve a seus passageiros.
+Canoa. Construída a partir de um único tronco 
+de árvore, é a mais simples das embarcações. Tem 
+as mesmas estatísticas de uma carroça, mas com 
+deslocamento de natação.
+Veleiro. Com três mastros, é o típico navio 
+de viagem, muito popular entre mercadores.
+Serviços
+Hospedagem
+Estalagens e tavernas são lugares onde aventu-
+reiros descansam ou se preparam para suas próximas 
+missões. Estalagens são como hospedarias, onde se 
+pode alugar quartos para dormir e fazer refeições. 
+Tavernas são como bares, com refeições, bebidas e às 
+vezes espetáculos, geralmente realizados por bardos, 
+além de bons lugares para conseguir informações. As 
+estadias a seguir têm preços por noite, incluem uma 
+refeição comum e determinam sua recuperação de 
+PV e PM (veja mais na página 106).
+Comum. Um espaço no salão comunal. Se tiver 
+sorte, o taverneiro deixará a lareira acesa para que 
+você não passe frio. Pelo menos não ficará sozinho — 
+pulgas e ratos lhe farão companhia. A refeição consiste 
+de pão, sopa e água. Recupera 1 PV e 1 PM por nível.
+Confortável. Um quarto pequeno, mas pri-
+vativo, com uma cama com colchão de palha e um 
+baú para guardar seus pertences. A refeição inclui 
+pão, queijo, cozido de galinha com legumes e cerveja 
+ou vinho (aguado). Recupera 2 PV e 2 PM por nível.
+Luxuosa. Um quarto grande, com colchão 
+de algodão ou penas, cortinas nas janelas, uma 
+bacia de água quente para banho e outros luxos. A 
+refeição inclui carne, frutas, doces e uma taça de 
+vinho de boa safra. Acomodações desta categoria 
+estão disponíveis apenas nas melhores estalagens, 
+normalmente apenas em cidades e metrópoles. 
+Recupera 3 PV e 3 PM por nível.
+Outros Serviços
+Condução. Inclui viagens terrestres (em 
+carroças), marítimas (em navios) ou aéreas (balões 
+goblins). Viajar em balões goblins é arriscado: a cada 
+100 km há 1 chance em 20 de queda (não fatal).
+Curandeiro. O preço para você receber cuida-
+dos prolongados ou tratamento contra uma doença 
+ou veneno (veja a página 117). Isso considera que 
+você vai até a casa do curandeiro ou onde quer que 
+ele receba seus pacientes — curandeiros não aceitam 
+acompanhar aventureiros em suas jornadas.
+Mensageiro. Inclui mensagens entregues a 
+pé, por cavaleiros ou navios.
+Magias. Este é o preço para lançar uma magia 
+em uma situação comum. Ou seja, você vai até o con-
+jurador e lançar a magia não oferece risco para ele. Se 
+você pedir ao conjurador para acompanhá-lo numa 
+aventura, a resposta padrão será “não, obrigado”.
+163
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 169 (PAGE 170) ---
+Capítulo Três
+Itens superiores são equipamentos de alta qua-
+lidade, fabricados com as melhores técnicas e ma-
+térias-primas. Em termos de jogo, itens superiores 
+possuem de uma a quatro melhorias. Cada melhoria 
+fornece um benefício, mas aumenta o preço do item. 
+Por exemplo, uma espada longa normal custa T$ 15. 
+Uma espada longa superior com uma melhoria custa 
+T$ 315. Já uma espada longa com quatro melhorias 
+custa incríveis T$ 18.015!
+Itens com uma melhoria são caros, mas ainda 
+relativamente comuns. Por exemplo, um castelo 
+poderoso e próspero pode equipar seus guardas 
+com armas com uma melhoria. Itens com duas 
+melhorias são muito valiosos, e nunca são produ-
+zidos em grande quantidade. O capitão da guarda 
+do mesmo castelo pode ter um item com duas 
+melhorias. Já itens com três ou quatro melhorias 
+são obras-primas, tão ou mais famosos quanto 
+seus portadores. O senhor ou a senhora do castelo 
+do exemplo talvez tenha um item assim, e ele 
+provavelmente terá sido uma herança passada de 
+geração em geração.
+Melhorias
+Apenas itens das categorias armas, armaduras e 
+escudos, ferramentas, vestuário e esotéricos podem 
+receber melhorias. As melhorias para cada categoria 
+de item estão listadas na Tabela 3-8. Cada melhoria 
+só pode ser aplicada uma vez a um mesmo item.
+Ajustada. Feito com peças medidas com 
+precisão, o item tem a sua penalidade de armadura 
+diminuída em 1.
+Aprimorado. O item é construído de forma 
+cuidadosa e com os melhores materiais. Esta me-
+lhoria só pode ser aplicada a uma ferramenta ou 
+vestuário que modifique uma perícia (reduza uma 
+penalidade ou forneça um bônus) e fornece um bônus 
+de +1 nessa perícia (ou aumenta o bônus fornecido 
+em +1). Por exemplo, uma maleta de medicamentos 
+aprimorada fornece +1 em Cura e uma luva de pelica 
+aprimorada fornece +2 em Ladinagem.
+Atroz. A arma é um amontoado de pontas, 
+ganchos e protuberâncias. É difícil empunhá-la sem 
+se machucar, mas ela fornece +2 nas rolagens de 
+dano. Pré-requisito: Cruel.
+Banhado a Ouro. Uma melhoria favorita de 
+nobres pomposos ou de aventureiros que acabaram 
+de enriquecer. Fornece +2 em Diplomacia. O mestre 
+pode mudar o bônus para uma penalidade de –2 con-
+tra pessoas que desprezam ostentação. Além disso, 
+pode atrair a cobiça de ladrões.
+Canalizador. O esotérico possui uma gema 
+mística que permite que você canalize mais mana do 
+que normalmente seria capaz. O máximo de PM que 
+você pode gastar em magias aumenta em +1.
+Certeira. Fabricada para ser mais precisa e 
+balanceada, a arma fornece +1 nos testes de ataque.
+Cravejado de Gemas. É fácil ser persuadido 
+por alguém opulento o bastante para ostentar um 
+item cravejado de gemas. Fornece +2 em Enganação. 
+Assim como um item banhado a ouro, um item 
+cravejado de gemas pode atrair a cobiça de ladrões.
+Cruel. Rebarbas, espinhos e até mesmo lâmi-
+nas adicionais compõem uma arma cruel. Ela fornece 
++1 nas rolagens de dano.
+Delicada. Apenas os materiais mais leves 
+foram usados nesta armadura. As placas têm a es-
+pessura mínima necessária para oferecer a proteção 
+que devem. Esta melhoria só pode ser aplicada a 
+armaduras pesadas e permite que o personagem 
+aplique 1 ponto de sua Destreza na Defesa (ou de 
+outro atributo, caso o utilize em vez de Des). Uma 
+armadura não pode ser delicada e reforçada.
+Discreto. O item é disfarçado como outro 
+item inócuo (como um florete escondido em uma 
+bengala) ou modificado para ser telescópico (po -
+dendo se dobrar em si mesmo para ocupar menos 
+espaço). O item ocupa –1 espaço (mínimo 1) e for -
+nece +5 em testes de Ladinagem para ser ocultado.
+Itens Superiores
+Tabela 3-7: Preço de Melhorias
+Número de 
+Melhorias
+Aumento 
+no Preço
+Aumento 
+na CD
+1 + T$ 300 +5
+2 + T$ 3.000 +10
+3 + T$ 9.000 +15
+4 + T$ 18.000 +20
+164
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 170 (PAGE 171) ---
+Equipamento
+Energético. Catalisadores alquímicos inseri-
+dos no item fazem com que ele potencialize ener -
+gias mágicas. Suas magias que causam dano causam 
++1d6 pontos de dano do mesmo de tipo.
+Equilibrada. Uma arma equilibrada é forjada 
+com o balanço perfeito, o que facilita movimentos 
+complexos. Ela fornece +2 em testes de manobras 
+(desarmar, quebrar etc.).
+Espinhosa (Armadura). Uma armadura 
+coberta de espinhos é uma visão impressionante — 
+principalmente se os espinhos estiverem banhados 
+com o sangue dos inimigos! Se o usuário agarrar ou 
+for agarrado por uma criatura, causa dano de per -
+furação nesta criatura igual a sua Força. O dano é 
+causado quando a manobra é feita e no início de cada 
+turno do personagem, enquanto ela for mantida.
+Espinhoso (Escudo). Aumenta o dano de 
+um ataque com escudo em um passo.
+Harmonizada (Arma). A arma foi banhada 
+em óleos alquímicos que a deixaram sintonizada 
+com a aura de seu usuário. Escolha uma habilidade 
+ativada ao se fazer um ataque ou usar a ação agredir 
+e que custe pontos de mana. Esta habilidade tem seu 
+custo em PM reduzido em –1 se utilizada com esta 
+arma. Pré-requisito: outra melhoria qualquer.
+Harmonizado (Esotérico). Escolha uma 
+magia. Seu custo diminui em –1 PM. Você pode 
+mudar a magia afetada pelo item com um ritual que 
+exige um dia e T$ 100 em ingredientes.
+Injeção Alquímica. Um minúsculo frasco 
+de cerâmica ou vidro é inserido ao longo da arma, 
+junto com um mecanismo injetor ativado por 
+impacto. Um ataque que acerte causa seu dano 
+normal e libera uma carga de um preparado (como 
+ácido ou fogo alquímico) ou de água benta, que 
+atinge o alvo automaticamente. A melhoria tem 
+espaço para 2 doses. Carregá-la exige uma ação 
+completa e o gasto dos itens com os quais você 
+quiser carregá-la.
+Macabro. O macabro é pintado com sangue 
+seco, esculpido na forma de uma caveira ou decorado 
+com pedaços de orelhas, dedos e olhos. Essa apa-
+rência assustadora fornece +2 em Intimidação, mas 
+impõe uma penalidade de –2 em Diplomacia.
+Maciça. A arma é feita com material denso, fa-
+zendo com que seus golpes tenham impacto terrível. 
+O multiplicador de crítico da arma aumenta em 1 
+ponto. Uma arma não pode ser maciça e precisa.
+Material Especial. A arma, armadura, 
+escudo ou item esotérico é feito de, ou banhado 
+Tabela 3-8: Melhorias
+Melhoria Efeito
+Melhorias para armas
+Certeira +1 nos testes de ataque
+Pungente +2 nos testes de ataque
+Cruel +1 nas rolagens de dano
+Atroz +2 nas rolagens de dano
+Equilibrada +2 em testes de manobras
+Harmonizada Custo de habilidades de 
+ataque diminui em –1 PM
+Injeção alquímica Gera efeito de preparado
+Maciça +1 no multiplicador de crítico
+Material especial Conforme o material
+Mira telescópica Aumenta alcance da arma
+Precisa +1 na margem de ameaça
+Melhorias para armaduras e escudos
+Ajustada –1 na penalidade de armadura
+Sob medida –2 na penalidade de armadura
+Delicada Aplica 1 ponto de Des na Defesa
+Espinhosa (armadura) Causa dano com agarrar
+Espinhoso (escudo) Aumenta dano do escudo
+Material especial Conforme o material
+Polida +5 na Defesa na primeira rodada
+Reforçada +1 na Defesa, 
++1 na penalidade de armadura
+Selada +1 nos testes de resistência
+Melhorias para esotéricos
+Canalizador +1 no limite de PM
+Energético +1d6 no dano de magias
+Harmonizado Custo de uma magia 
+diminui em –1 PM
+Material especial Conforme o material
+Poderoso +1 na CD de suas magias
+Vigilante +2 na Defesa
+Melhorias para ferramentas e vestuário
+Aprimorado +1 em testes de perícia
+Melhorias para qualquer das categorias acima
+Banhado a ouro +2 em Diplomacia
+Cravejado de gemas +2 em Enganação
+Discreto –1 espaço, +5 para ocultar
+Macabro +2 em Intimidação, 
+–2 em Diplomacia
+165
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 171 (PAGE 172) ---
+Capítulo Três
+com, um material especial. Cada material fornece 
+um benefício, cumulativo com outros benefícios de 
+melhorias, mas possui um preço adicional que deve 
+ser pago além do preço da melhoria. Veja a seção a 
+seguir para a descrição dos materiais especiais. Fa-
+bricar um item de material especial é uma melhoria 
+porque materiais especiais exigem um trabalho mais 
+complexo do que materiais comuns.
+Mira Telescópica. Aumenta o alcance da 
+arma em uma categoria (de curto para médio, de 
+médio para longo) e o alcance da habilidade Ataque 
+Furtivo para médio. Esta melhoria só pode ser aplica-
+da em armas de disparo (exceto fundas).
+Poderoso. A CD para resistir a suas magias 
+aumenta em +1.
+Polida. A armadura ou escudo foi feito com 
+metais reluzentes. Além de bonita, a luz refletida 
+ofusca inimigos. Em ambientes iluminados, o 
+bônus de Defesa do item aumenta em +5, mas 
+apenas na primeira rodada de combate — após isso, 
+os inimigos se acostumam ao reflexo.
+Precisa. Cuidado especial foi tomado ao 
+temperar o aço desta arma, para que seu fio se 
+mantenha sempre como uma navalha. A margem de 
+ameaça aumenta em 1 ponto. Uma arma não pode 
+ser precisa e maciça.
+Pungente. Temperada diversas vezes para 
+adquirir o fio ou o equilíbrio perfeito, a arma fornece 
++2 nos testes de ataque. Pré-requisito: Certeira.
+Reforçada. Se for uma armadura, o item 
+possui uma camada adicional de tecido, malha mais 
+densa ou placas mais grossas. Se for um escudo, 
+possui uma chapa mais espessa. O bônus na Defesa 
+e a penalidade de armadura do item aumentam em 1. 
+Um item não pode ser reforçado e delicado.
+Selada. A armadura foi forjada de forma a 
+proteger todo o corpo do usuário, sem deixar espaço 
+para nem mesmo um alfinete! Esta melhoria fornece 
+um bônus de +1 em testes de resistência, mas só 
+pode ser aplicado em armaduras pesadas.
+Sob Medida. Embora muitas armaduras sejam 
+feitas especificamente para um usuário, esta passou 
+por um período extenso de ajustes e refinamento, 
+adequando-se com perfeição ao seu corpo. Reduz a 
+penalidade  de armadura em 2, mas apenas para o 
+usuário específico (para outros, comporta-se como 
+um item ajustado). Pré-requisito: Ajustada.
+Vigilante. O item usa parte de sua mana pes-
+soal para gerar um campo que desvia ataques. Você 
+recebe +2 na Defesa.
+Materiais Especiais
+Armas, armaduras, escudos e esotéricos podem 
+ser feitos ou banhados de um material especial. 
+Para isso, o item precisa ter a melhoria material es-
+pecial e você precisa pagar o preço extra do material 
+escolhido, conforme a tabela 3-9.
+Aço-Rubi
+Este metal tem a aparência de vidro avermelhado, 
+mas é duro como aço. Aço-rubi é caríssimo e comer-
+cializado apenas por uma guilda de ferreiros de Dohe-
+rimm. Os anões mantém a origem deste material em 
+segredo, mas suspeita-se de que ele seja minerado das 
+profundezas de uma área de Tormenta.
+Arma. A arma ignora 10 pontos de redução de 
+dano, além de ignorar a imunidade a crítico de lefeu.
+Armadura e Escudo. Fornece uma chance 
+de ignorar o dano extra de acertos críticos e ataques 
+furtivos: armaduras leves e escudos, 25% (1 em 
+1d4); armaduras pesadas, 50% (qualquer valor par 
+em qualquer dado), cumulativas entre si.
+Esotérico. Quando lança uma magia que cau-
+sa dano, ela ignora 10 pontos de redução de dano, 
+além de ignorar as imunidades a dano de lefeu.
+Adamante
+Encontrado apenas em meteoritos (e por isso 
+também chamado de “ferro-meteórico”), o adamante 
+é um metal escuro, fosco e mais denso que o aço.
+Arma. Aumenta o dano em um passo.
+Armadura e Escudo. Fornece redução de 
+dano: armaduras leves e escudos, RD 2; armaduras 
+pesadas, RD 5.
+Esotérico. Quando lança uma magia que 
+causa dano, você pode pagar +1 PM para rolar nova-
+mente qualquer resultado 1 na rolagem de dano dela.
+Gelo eterno
+As gélidas Montanhas Uivantes produzem gelo 
+que nunca derrete. Expedições de aventureiros 
+exploram essa região glacial perigosa à caça deste 
+material fantástico.
+Arma. Causa +2 pontos de dano por frio.
+Armadura e Escudo. Fornece redução de 
+fogo: armaduras leves e escudos, redução 5; armadu-
+ras pesadas, redução 10.
+Esotérico. Quando lança uma magia de frio 
+que causa dano, você pode rolar novamente qualquer 
+resultado 1 na rolagem de dano dela.
+166
+Juliana Martins jsmartins31@gmail.com
+--- PDF INDEX 172 (PAGE 173) ---
+Equipamento
+Madeira Tollon
+A Floresta de Tollon produz um tipo de madeira 
+negra, dura como aço e dotada de propriedades má-
+gicas. Apenas armas de madeira — arcos, bordões, 
+clavas, lanças, piques e tacapes —, escudos leves e 
+esotéricos podem ser feitos com madeira T ollon.
+Arma. Conta como mágica para vencer redução 
+de dano. Além disso, habilidades ativadas ao se fazer 
+um ataque ou usar a ação agredir têm seu custo em 
+PM reduzido em –1.
+Escudo e Esotérico. Fornece resistência a 
+magia +2.
+Matéria Vermelha
+Qualquer material de origem lefeu — desde suas 
+garras e carapaças, até minérios e partes de estrutu -
+ras encontradas em áreas de Tormenta — apresenta 
+propriedades parecidas, sendo conhecido como “ma-
+téria vermelha”. Estes itens assustadores impõem ao 
+usuário penalidade de –2 em perícias baseadas em 
+Carisma (exceto Intimidação).
+Arma. Causa +1d6 de dano extra. Porém, sem-
+pre que você acerta um ataque com a arma, perde 
+1 ponto de vida. Lefou e lefeu são imunes tanto ao 
+dano extra de matéria vermelha quanto à perda de 
+vida por usar armas desse material.
+Armadura e Escudo. Por sua aparência 
+“borrada”, fornecem chance de falha para cada ata-
+que: 10% para escudos e armaduras leves, 25% para 
+armaduras pesadas (cumulativas entre si). Lefeu 
+ignoram este efeito.
+Esotérico. Você e todos os seus inimigos em 
+alcance curto sofrem –2 em testes de resistência 
+contra efeitos mágicos.
+Mitral
+Metal raro e valioso, o mitral é prateado, bri-
+lhante e mais leve que aço. Itens de mitral ocupam 
+–1 espaço (mínimo 1).
+Arma. Aumenta sua margem de ameaça em 1. 
+Por exemplo, uma espada longa de mitral tem mar -
+gem de ameaça 18-20.
+Armadura e Escudo. Tem sua penalidade de 
+armadura diminuída em 2. Armaduras pesadas de 
+mitral permitem que você aplique até dois pontos de 
+sua Destreza na Defesa.
+Esotérico. Permite que você pague +2 PM ao 
+lançar uma magia para aumentar a CD dela em +2.
+Tabela 3-9: Preço Adicional de Materiais Especiais
+Item Aço-Rubi Adamante
+Gelo 
+Eterno
+Madeira 
+Tollon
+Matéria 
+Vermelha Mitral
+Arma + T$ 6.000 + T$ 3.000 + T$ 600 + T$ 1.500 + T$ 1.500 + T$ 1.500
+Armadura leve + T$ 3.000 + T$ 6.000 + T$ 1.500 — + T$ 6.000 + T$ 1.500
+Armadura pesada + T$ 6.000 + T$ 18.000 + T$ 3.000 — + T$ 18.000 + T$ 12.000
+Escudo + T$ 3.000 + T$ 6.000 + T$ 1.500 + T$ 1.500 + T$ 6.000 + T$ 1.500
+Esotéricos + T$ 6.000 + T$ 3.000 + T$ 3.000 + T$ 1.500 + T$ 3.000 + T$ 3.000
+Fabricando Itens Superiores
+Itens superiores só podem ser fabricados 
+por personagens com a habilidade 
+Fabricar Item Superior (veja a página 
+68). A fabricação deles segue a mesma 
+regra de itens normais, porém, de acordo 
+com o número de melhorias, o preço e a 
+CD do teste de Ofício aumentam (veja a 
+Tabela 3-7).
+Por exemplo, o preço de uma couraça é T$ 
+500. Fabricá-la exige um gasto de T$ 166 
+(um terço do preço) e um teste de Ofício 
+contra CD 15. Já o preço de uma couraça 
+com duas melhorias é T$ 3.500 (T$ 500 + 
+T$ 3.000 das duas melhorias). Fabricá-la 
+exige um gasto de T$ 1.166 (um terço do 
+preço) e um teste de Ofício contra CD 25 
+(15 da CD base + 10 das duas melhorias).
+É possível adicionar melhorias a um item. 
+Você paga a diferença de acordo com o novo 
+número de melhorias. Por exemplo, para 
+adicionar a terceira melhoria a um item que 
+já possui duas, você precisa pagar mais T$ 
+2.000 (um terço da diferença de três para 
+duas melhorias). Além disso, deve fazer 
+um teste de Ofício contra a CD do número 
+de melhorias que o item passará a ter e, se 
+falhar por 5 ou mais, estraga o item.
+167
+Juliana Martins jsmartins31@gmail.com

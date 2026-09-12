@@ -1,0 +1,206 @@
+[
+  {
+    "id": "manobra-agarrar",
+    "name": "Agarrar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta (ataque corpo a corpo) oposto pelo teste de Luta do alvo.",
+    "summary": "Você usa uma mão livre para segurar o alvo. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, o alvo fica a...",
+    "description": "Você usa uma mão livre para segurar o alvo. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, o alvo fica agarrado. Um personagem agarrado fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Para se soltar, a criatura agarrada precisa gastar uma ação padrão e passar em um teste de Luta ou Acrobacia oposto ao seu teste de Luta. Manter a manobra nas rodadas seguintes exige gastar uma ação padrão e passar em um novo teste de Luta oposto.",
+    "relatedIds": [
+      "condicao-agarrado",
+      "condicao-desprevenido",
+      "condicao-imovel"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "luta",
+      "agarrar",
+      "imobilizar"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-atropelar",
+    "name": "Atropelar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo.",
+    "summary": "Você avança contra o alvo montado ou correndo. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo. Se vencer, vo...",
+    "description": "Você avança contra o alvo montado ou correndo. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo. Se vencer, você derruba o alvo e pode continuar seu movimento até o limite do seu deslocamento, inclusive passando pelo espaço ocupado por ele. Se perder, você é impedido de avançar e seu movimento termina.",
+    "relatedIds": [
+      "condicao-caido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "movimento",
+      "derrubar",
+      "atropelar",
+      "investida"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-derrubar",
+    "name": "Derrubar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo.",
+    "summary": "Você faz uma rasteira ou golpe corporal para fazer o alvo cair. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do al...",
+    "description": "Você faz uma rasteira ou golpe corporal para fazer o alvo cair. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo. Se você vencer, o alvo cai no chão e fica caído.",
+    "relatedIds": [
+      "condicao-caido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "derrubar",
+      "caído",
+      "rasteira"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-desarmar",
+    "name": "Desarmar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta oposto pelo teste de Luta do alvo.",
+    "summary": "Você atinge a arma ou item empunhado pelo alvo para fazê-lo soltar o objeto. Faça um teste de Luta oposto pelo teste de Luta do al...",
+    "description": "Você atinge a arma ou item empunhado pelo alvo para fazê-lo soltar o objeto. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, a arma ou item cai no chão no mesmo quadrado do alvo. Se você tiver uma mão livre e vencer por 5 ou mais, pode ficar com o item para si.",
+    "relatedIds": [
+      "condicao-desarmado"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "desarmar",
+      "arma",
+      "item"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-empurrar",
+    "name": "Empurrar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta oposto pelo teste de Atletismo ou Luta do alvo.",
+    "summary": "Você empurra o alvo para afastá-lo. Faça um teste de Luta oposto pelo teste de Atletismo ou Luta do alvo. Se vencer, você empurra ...",
+    "description": "Você empurra o alvo para afastá-lo. Faça um teste de Luta oposto pelo teste de Atletismo ou Luta do alvo. Se vencer, você empurra o alvo 1,5m mais 1,5m para cada 5 pontos de diferença no teste. Você pode avançar junto com o alvo para empurrá-lo ainda mais longe.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "empurrar",
+      "posicionamento",
+      "afastar"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-fintar",
+    "name": "Fintar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Enganação oposto pelo teste de Percepção do alvo.",
+    "summary": "Você faz um movimento falso para confundir o oponente. Faça um teste de Enganação oposto pelo teste de Percepção do alvo. Se vence...",
+    "description": "Você faz um movimento falso para confundir o oponente. Faça um teste de Enganação oposto pelo teste de Percepção do alvo. Se vencer, o alvo fica desprevenido contra o seu próximo ataque até o final do seu próximo turno.",
+    "relatedIds": [
+      "condicao-desprevenido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "enganação",
+      "fintar",
+      "desprevenido",
+      "ataque furtivo"
+    ],
+    "subcategory": "Manobras de Combate"
+  },
+  {
+    "id": "manobra-quebrar",
+    "name": "Quebrar",
+    "category": "manobra",
+    "actionType": "Ação Padrão",
+    "opposedTest": "Teste de Luta oposto pelo teste de Luta do alvo empunhando o item.",
+    "summary": "Você atinge um item que o alvo está empunhando ou vestindo para danificá-lo. Faça um teste de Luta oposto pelo teste de Luta do al...",
+    "description": "Você atinge um item que o alvo está empunhando ou vestindo para danificá-lo. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, causa o dano do seu ataque diretamente no item. Veja as regras de quebrando objetos na página 242.",
+    "relatedIds": [
+      "condicao-quebrado"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 239,
+        "section": "Capítulo 5: Combate - Manobras de Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "manobra",
+      "combate",
+      "ação padrão",
+      "quebrar",
+      "dano a itens",
+      "escudo"
+    ],
+    "subcategory": "Manobras de Combate"
+  }
+]

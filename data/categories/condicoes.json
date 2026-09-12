@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "condicao-abalado",
+    "name": "Abalado",
+    "category": "condicao",
+    "type": "Medo",
+    "summary": "O personagem sofre –2 em testes de perícia. Se ficar abalado novamente, em vez disso fica apavorado.",
+    "description": "O personagem sofre –2 em testes de perícia. Se ficar abalado novamente, em vez disso fica apavorado.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "abalado",
+      "medo"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-agarrado",
+    "name": "Agarrado",
+    "category": "condicao",
+    "type": "Movimento",
+    "summary": "O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra...",
+    "description": "O personagem fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.",
+    "relatedIds": [
+      "manobra-agarrar",
+      "condicao-desprevenido",
+      "condicao-imovel"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "agarrado",
+      "movimento"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-alquebrado",
+    "name": "Alquebrado",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O custo em pontos de mana das habilidades do personagem aumenta em +1.",
+    "description": "O custo em pontos de mana das habilidades do personagem aumenta em +1.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "alquebrado",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-apavorado",
+    "name": "Apavorado",
+    "category": "condicao",
+    "type": "Medo",
+    "summary": "O personagem sofre –5 em testes de perícia e não pode se aproximar voluntariamente da fonte do medo.",
+    "description": "O personagem sofre –5 em testes de perícia e não pode se aproximar voluntariamente da fonte do medo.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "apavorado",
+      "medo"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-atordoado",
+    "name": "Atordoado",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem fica desprevenido e não pode fazer ações.",
+    "description": "O personagem fica desprevenido e não pode fazer ações.",
+    "relatedIds": [
+      "condicao-desprevenido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "atordoado",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-caido",
+    "name": "Caído",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre –5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com out...",
+    "description": "O personagem sofre –5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com outras condições). Além disso, sofre –5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m.",
+    "relatedIds": [
+      "manobra-derrubar",
+      "manobra-atropelar"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "caído"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-cego",
+    "name": "Cego",
+    "category": "condicao",
+    "type": "Sentidos",
+    "summary": "O personagem fica desprevenido e lento, não pode fazer testes de Percepção para observar e sofre –5 em testes de perícias baseadas...",
+    "description": "O personagem fica desprevenido e lento, não pode fazer testes de Percepção para observar e sofre –5 em testes de perícias baseadas em Força ou Destreza. Todos os alvos de seus ataques recebem camuflagem total. Você é considerado cego enquanto estiver em escuridão total, a menos que tenha visão no escuro.",
+    "relatedIds": [
+      "condicao-desprevenido",
+      "condicao-lento"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "cego",
+      "sentidos"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-confuso",
+    "name": "Confuso",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem comporta-se de modo aleatório. No início de seu turno, role 1d6: 1) Movimenta-se em uma direção aleatória; 2-3) Não p...",
+    "description": "O personagem comporta-se de modo aleatório. No início de seu turno, role 1d6: 1) Movimenta-se em uma direção aleatória; 2-3) Não pode fazer ações e balbucia incoerentemente; 4-5) Ataca a criatura mais próxima ou a si mesmo se não houver criatura; 6) Age normalmente.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "confuso",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-debilitado",
+    "name": "Debilitado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre –5 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se f...",
+    "description": "O personagem sofre –5 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se ficar debilitado novamente, fica inconsciente.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "debilitado"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-desprevenido",
+    "name": "Desprevenido",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre –5 na Defesa e em Reflexos. Você fica desprevenido contra inimigos que não possa ver.",
+    "description": "O personagem sofre –5 na Defesa e em Reflexos. Você fica desprevenido contra inimigos que não possa ver.",
+    "relatedIds": [
+      "manobra-fintar"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "desprevenido"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-doente",
+    "name": "Doente",
+    "category": "condicao",
+    "type": "Metabólica",
+    "summary": "Sob efeito de uma enfermidade. Efeitos variam conforme a doença (veja Perigos, pág. 293).",
+    "description": "Sob efeito de uma enfermidade. Efeitos variam conforme a doença (veja Perigos, pág. 293).",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "doente",
+      "metabólica"
+    ],
+    "subcategory": "Condições Metabólicas"
+  },
+  {
+    "id": "condicao-em-chamas",
+    "name": "Em Chamas",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre 1d6 pontos de dano de fogo no início de seus turnos. Pode apagar o fogo gastando uma ação padrão e passando em ...",
+    "description": "O personagem sofre 1d6 pontos de dano de fogo no início de seus turnos. Pode apagar o fogo gastando uma ação padrão e passando em um teste de Reflexos (CD 15) ou se jogando no chão e rolando (recebe +5 no teste, mas fica caído).",
+    "relatedIds": [
+      "condicao-caido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "em chamas"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-enfeiticado",
+    "name": "Enfeitiçado",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem se torna prestativo em relação à fonte da condição. Ele não luta pela fonte, mas a enxerga como um amigo querido e fa...",
+    "description": "O personagem se torna prestativo em relação à fonte da condição. Ele não luta pela fonte, mas a enxerga como um amigo querido e faz tudo ao seu alcance para protegê-la e obedecê-la, desde que não vá contra sua natureza básica.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "enfeitiçado",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-enjoado",
+    "name": "Enjoado",
+    "category": "condicao",
+    "type": "Metabólica",
+    "summary": "O personagem só pode realizar uma ação padrão ou de movimento por turno (não ambas).",
+    "description": "O personagem só pode realizar uma ação padrão ou de movimento por turno (não ambas).",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 400,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "enjoado",
+      "metabólica"
+    ],
+    "subcategory": "Condições Metabólicas"
+  },
+  {
+    "id": "condicao-enredado",
+    "name": "Enredado",
+    "category": "condicao",
+    "type": "Movimento",
+    "summary": "O personagem fica lento, vulnerável e sofre –2 em testes de ataque.",
+    "description": "O personagem fica lento, vulnerável e sofre –2 em testes de ataque.",
+    "relatedIds": [
+      "condicao-lento",
+      "condicao-vulneravel"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "enredado",
+      "movimento"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-envenenado",
+    "name": "Envenenado",
+    "category": "condicao",
+    "type": "Metabólica",
+    "summary": "Sob efeito de uma toxina. Efeitos variam conforme o veneno (veja a página 297).",
+    "description": "Sob efeito de uma toxina. Efeitos variam conforme o veneno (veja a página 297).",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "envenenado",
+      "metabólica"
+    ],
+    "subcategory": "Condições Metabólicas"
+  },
+  {
+    "id": "condicao-esmorecido",
+    "name": "Esmorecido",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem sofre –5 em testes de atributos mentais (Inteligência, Sabedoria, Carisma) e de perícias baseadas nesses atributos.",
+    "description": "O personagem sofre –5 em testes de atributos mentais (Inteligência, Sabedoria, Carisma) e de perícias baseadas nesses atributos.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "esmorecido",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-exausto",
+    "name": "Exausto",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem fica debilitado, lento e vulnerável. Se ficar exausto novamente, fica inconsciente.",
+    "description": "O personagem fica debilitado, lento e vulnerável. Se ficar exausto novamente, fica inconsciente.",
+    "relatedIds": [
+      "condicao-debilitado",
+      "condicao-lento",
+      "condicao-vulneravel",
+      "condicao-inconsciente"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "exausto"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-fascinado",
+    "name": "Fascinado",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem sofre –5 em Percepção e não pode fazer ações exceto observar a fonte do fascínio. Qualquer ação hostil contra o perso...",
+    "description": "O personagem sofre –5 em Percepção e não pode fazer ações exceto observar a fonte do fascínio. Qualquer ação hostil contra o personagem ou seus aliados encerra a condição.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "fascinado",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-fatigado",
+    "name": "Fatigado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem fica fraco e vulnerável. Se ficar fatigado novamente, em vez disso fica exausto.",
+    "description": "O personagem fica fraco e vulnerável. Se ficar fatigado novamente, em vez disso fica exausto.",
+    "relatedIds": [
+      "condicao-fraco",
+      "condicao-vulneravel",
+      "condicao-exausto"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "fatigado"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-fraco",
+    "name": "Fraco",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre –2 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se f...",
+    "description": "O personagem sofre –2 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se ficar fraco novamente, em vez disso fica debilitado.",
+    "relatedIds": [
+      "condicao-debilitado"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "fraco"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-frustrado",
+    "name": "Frustrado",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem sofre –2 em testes de atributos mentais (Inteligência, Sabedoria, Carisma) e de perícias baseadas nesses atributos. S...",
+    "description": "O personagem sofre –2 em testes de atributos mentais (Inteligência, Sabedoria, Carisma) e de perícias baseadas nesses atributos. Se ficar frustrado novamente, em vez disso fica esmorecido.",
+    "relatedIds": [
+      "condicao-esmorecido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "frustrado",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-imóvel",
+    "name": "Imóvel",
+    "category": "condicao",
+    "type": "Movimento",
+    "summary": "O deslocamento do personagem se torna 0m e ele não pode se movimentar.",
+    "description": "O deslocamento do personagem se torna 0m e ele não pode se movimentar.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "imóvel",
+      "movimento"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-inconsciente",
+    "name": "Inconsciente",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem fica indefeso e não pode fazer ações, inclusive reações. Balbucia inconscientemente ou fica totalmente apagado.",
+    "description": "O personagem fica indefeso e não pode fazer ações, inclusive reações. Balbucia inconscientemente ou fica totalmente apagado.",
+    "relatedIds": [
+      "condicao-indefeso"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "inconsciente"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-indefeso",
+    "name": "Indefeso",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem fica desprevenido, sofre –10 na Defesa, falha automaticamente em testes de Reflexos e pode sofrer golpes de misericór...",
+    "description": "O personagem fica desprevenido, sofre –10 na Defesa, falha automaticamente em testes de Reflexos e pode sofrer golpes de misericórdia.",
+    "relatedIds": [
+      "condicao-desprevenido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "indefeso"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-lento",
+    "name": "Lento",
+    "category": "condicao",
+    "type": "Movimento",
+    "summary": "O deslocamento do personagem é reduzido à metade e ele não pode correr ou fazer investidas.",
+    "description": "O deslocamento do personagem é reduzido à metade e ele não pode correr ou fazer investidas.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "lento",
+      "movimento"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-ofuscado",
+    "name": "Ofuscado",
+    "category": "condicao",
+    "type": "Sentidos",
+    "summary": "O personagem sofre –2 em testes de ataque e em testes de Percepção para observar.",
+    "description": "O personagem sofre –2 em testes de ataque e em testes de Percepção para observar.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "ofuscado",
+      "sentidos"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-paralisado",
+    "name": "Paralisado",
+    "category": "condicao",
+    "type": "Movimento",
+    "summary": "O personagem fica imóvel e indefeso e só pode realizar ações puramente mentais.",
+    "description": "O personagem fica imóvel e indefeso e só pode realizar ações puramente mentais.",
+    "relatedIds": [
+      "condicao-imovel",
+      "condicao-indefeso"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "paralisado",
+      "movimento"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-pasmo",
+    "name": "Pasmo",
+    "category": "condicao",
+    "type": "Mental",
+    "summary": "O personagem não pode fazer ações.",
+    "description": "O personagem não pode fazer ações.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "pasmo",
+      "mental"
+    ],
+    "subcategory": "Condições Mentais"
+  },
+  {
+    "id": "condicao-petrificado",
+    "name": "Petrificado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem se transforma em pedra. Fica inconsciente e recebe redução de dano 10.",
+    "description": "O personagem se transforma em pedra. Fica inconsciente e recebe redução de dano 10.",
+    "relatedIds": [
+      "condicao-inconsciente"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "petrificado"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-sangrando",
+    "name": "Sangrando",
+    "category": "condicao",
+    "type": "Metabólica",
+    "summary": "No início de seu turno, o personagem deve fazer um teste de Constituição (CD 15). Se falhar, perde 1d6 pontos de vida e continua s...",
+    "description": "No início de seu turno, o personagem deve fazer um teste de Constituição (CD 15). Se falhar, perde 1d6 pontos de vida e continua sangrando. Se passar, estabiliza e para de sangrar.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "sangrando",
+      "metabólica"
+    ],
+    "subcategory": "Condições Metabólicas"
+  },
+  {
+    "id": "condicao-sobrecarregado",
+    "name": "Sobrecarregado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre penalidade de armadura –5 e seu deslocamento é reduzido em 3m.",
+    "description": "O personagem sofre penalidade de armadura –5 e seu deslocamento é reduzido em 3m.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "sobrecarregado"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-surdo",
+    "name": "Surdo",
+    "category": "condicao",
+    "type": "Sentidos",
+    "summary": "O personagem não pode fazer testes de Percepção para ouvir e sofre –5 em testes de Iniciativa. Além disso, sofre –2 em testes de V...",
+    "description": "O personagem não pode fazer testes de Percepção para ouvir e sofre –5 em testes de Iniciativa. Além disso, sofre –2 em testes de Vontade contra efeitos sonoros ou dependentes de fala.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "surdo",
+      "sentidos"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-surpreendido",
+    "name": "Surpreendido",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem fica desprevenido e não pode realizar ações na primeira rodada de combate.",
+    "description": "O personagem fica desprevenido e não pode realizar ações na primeira rodada de combate.",
+    "relatedIds": [
+      "condicao-desprevenido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "surpreendido"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-vulnerável",
+    "name": "Vulnerável",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem sofre –2 na Defesa.",
+    "description": "O personagem sofre –2 na Defesa.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 401,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "vulnerável"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-machucado",
+    "name": "Machucado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem está com metade ou menos de seus pontos de vida máximos. Certas habilidades e perigos têm efeitos especiais contra pe...",
+    "description": "O personagem está com metade ou menos de seus pontos de vida máximos. Certas habilidades e perigos têm efeitos especiais contra personagens machucados.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 240,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "machucado"
+    ],
+    "subcategory": "Condições de Saúde"
+  },
+  {
+    "id": "condicao-moribundo",
+    "name": "Moribundo",
+    "category": "condicao",
+    "type": null,
+    "summary": "Um personagem com 0 ou menos pontos de vida está inconsciente e sangrando. No início de cada turno, deve fazer um teste de Constit...",
+    "description": "Um personagem com 0 ou menos pontos de vida está inconsciente e sangrando. No início de cada turno, deve fazer um teste de Constituição (CD 15). Se falhar, perde 1d6 PV. Se passar, estabiliza.",
+    "relatedIds": [
+      "condicao-inconsciente",
+      "condicao-sangrando"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 242,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "moribundo"
+    ],
+    "subcategory": "Condições de Saúde"
+  },
+  {
+    "id": "condicao-morto",
+    "name": "Morto",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem morre quando seus pontos de vida negativos chegam à metade de seus PV máximos (ou ao falhar em três testes de Constit...",
+    "description": "O personagem morre quando seus pontos de vida negativos chegam à metade de seus PV máximos (ou ao falhar em três testes de Constituição enquanto moribundo). Sua alma deixa o corpo rumo ao reino de seu deus padroeiro.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 242,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "morto"
+    ],
+    "subcategory": "Condições de Saúde"
+  },
+  {
+    "id": "condicao-asfixiado",
+    "name": "Asfixiado",
+    "category": "condicao",
+    "type": null,
+    "summary": "Sem ar para respirar (sufocando ou afogando-se). Um personagem pode prender a respiração por um número de rodadas igual ao dobro d...",
+    "description": "Sem ar para respirar (sufocando ou afogando-se). Um personagem pode prender a respiração por um número de rodadas igual ao dobro de sua Constituição. Após isso, deve fazer um teste de Fortitude por rodada (CD 15 + 1 por teste anterior). Se falhar, fica inconsciente e perde 1d6 PV por rodada até respirar ou morrer.",
+    "relatedIds": [
+      "condicao-inconsciente"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 244,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "asfixiado"
+    ],
+    "subcategory": "Condições de Saúde"
+  },
+  {
+    "id": "condicao-desarmado",
+    "name": "Desarmado",
+    "category": "condicao",
+    "type": null,
+    "summary": "O personagem não está empunhando nenhuma arma. Ao atacar desarmado sem possuir habilidades específicas, o ataque é considerado des...",
+    "description": "O personagem não está empunhando nenhuma arma. Ao atacar desarmado sem possuir habilidades específicas, o ataque é considerado desarmado e causa dano não letal.",
+    "relatedIds": [
+      "manobra-desarmar"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "desarmado"
+    ],
+    "subcategory": "Condições Físicas"
+  },
+  {
+    "id": "condicao-quebrado",
+    "name": "Quebrado",
+    "category": "condicao",
+    "type": null,
+    "summary": "Um item que tenha seus pontos de vida reduzidos a 0 fica quebrado. Não pode ser usado até ser consertado (com a perícia Ofício).",
+    "description": "Um item que tenha seus pontos de vida reduzidos a 0 fica quebrado. Não pode ser usado até ser consertado (com a perícia Ofício).",
+    "relatedIds": [
+      "manobra-quebrar"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 242,
+        "section": "Apêndice: Condições / Combate",
+        "version": ""
+      }
+    ],
+    "tags": [
+      "condição",
+      "status",
+      "combate",
+      "quebrado"
+    ],
+    "subcategory": "Condições Físicas"
+  }
+]

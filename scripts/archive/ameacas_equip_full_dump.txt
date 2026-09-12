@@ -1,0 +1,1545 @@
+
+============================== PDF PAGE 390 (Book page ~389) ==============================
+389
+bando estarão em condições de uso após um combate). 
+Para o tesouro, mantenha a categoria (metade, padrão, 
+dobro), mas use a linha apropriada ao ND do bando. Se 
+o tesouro inclui algum item ou recurso especial, ajuste 
+a CD para extrair conforme o novo ND e aumente as 
+quantidades do tesouro conforme adequado ao número 
+de criaturas. Em alguns casos, você pode limitar esse 
+aumento; se o bando for muito grande, pode não haver 
+tempo suficiente para extrair todos os recursos antes 
+de eles se estragarem, por exemplo.
+8) Ajustes Finais. Para conferir se o bando 
+está adequado como ameaça, compare-o com outras 
+criaturas de ND semelhante. Você pode fazer alguns 
+ajustes, como aumentar o número de ataques se o 
+dano estiver muito baixo ou adicionar resistências e 
+imunidades para aumentar suas defesas.
+Exemplo de criação de bando: Cardume de Aquin’ne
+Neste exemplo, vamos transformar um simpático 
+aquin’ne (veja p. 88) em um bando chamado cardume 
+de aquin’ne. Para isso, vamos executar os passos a 
+seguir.
+1) Composição do Bando. Para começar, 
+definimos a composição do bando. Algo entre oito a 
+doze aquin’ne parece bom para um cardume dessas 
+criaturas.
+2) Determine o ND.  Por sua composição, 
+esse bando parece ligeiramente mais poderoso que 
+um aquin’ne individual. ND 5 (3 pontos acima de 
+um aquin’ne, e o suficiente para transformá-lo em 
+veterano) parece um bom valor.
+3) Ajuste o Tamanho.  Um aquin’ne é uma 
+criatura Pequena, então um bom tamanho para um 
+bando com aproximadamente dez indivíduos é Médio. 
+Isso afeta seus valores de manobras de combate e 
+Furtividade.
+4) Ajuste as Estatísticas de Combate.  
+Um aquin’ne é um lacaio de ND 2. Verificando suas 
+estatísticas de combate, vemos que seu ataque é 
++13 (1 ponto abaixo do ataque de uma criatura de 
+seu papel e ND). Para definir o ataque do cardume, 
+consultamos a linha de um lacaio de ND 5 e usamos 
+esse valor, aplicando a diferença de 1 entre o ataque 
+de um aquin’ne e o de seu ND original. Assim, o 
+cardume de aquin’ne terá ataque +19. Para as demais 
+estatísticas de combate, basta repetir esse processo. 
+Por fim, o dano do cardume será 4d4+12 (o dobro 
+do dano de um aquin’ne individual, devido ao seu 
+aumento de 1 patamar).
+5) Perícias. O cardume de aquin’ne é uma 
+criatura de ND 5, 3 pontos acima do ND 2 de um 
+aquin’ne padrão. Isso significa um aumento de +1 
+em todas as suas perícias.
+6) Habilidades de Bando. Como o cardume 
+é uma criatura de patamar veterano, podemos adi-
+cionar uma habilidade. Para deixar as coisas simples 
+e representar sua forma aquática, escolhemos a 
+habilidade Varrer.
+7) Equipamento e Tesouro. Aquin’ne não 
+possuem equipamento, então isso não será alterado no 
+cardume. Entretanto, fornecem um recurso especial: 
+1 dose de éter elemental. Assim, ajustamos a CD para 
+extrair esse recurso para 20 (refletindo o aumento 
+no ND do bando) e aumentamos a quantidade de 
+doses para 2d4 (representando que nem todas as doses 
+poderão ser aproveitadas). 
+Após essas etapas, temos uma nova criatura.
+Cardume de Aquin’ne 
+Espírito (elemental) Médio  
+Iniciativa +5, Percepção +5, visão no escuro
+Defesa 23, Fort +14, Ref +11, Von +6, imunidade a acertos 
+críticos e efeitos de atordoamento, cansaço, frio, meta -
+bolismo e paralisia, vulnerabilidade a fogo
+Pontos de Vida 40
+Deslocamento 9m (6q), natação 15m (10q) 
+Corpo a Corpo [Bando] Tentáculo hídrico x2 +19 (4d4+12 
+corte).
+Afogar Uma criatura agarrada pelo cardume de aquin’ne é 
+considerada submersa até se soltar.
+Agarrar Aprimorado (Livre) Tentáculo hídrico (teste +21).
+Redemoinho de Maresia (Padrão) O cardume toca um 
+objeto adjacente, que perde 10 PV (Ref CD 20 evita).
+Varrer (Livre) Uma vez por rodada, quando o cardume de 
+aquin’ne faz um ataque corpo a corpo e reduz os pontos 
+de vida do alvo para 0 ou menos, pode realizar um ataque 
+adicional contra outra criatura dentro do seu alcance.
+For 4, Des 2, Con 2, Int –2, Sab 2, Car –2
+Perícias Atletismo +7 (+15 para nadar), Furtividade +3 (+13 
+na água).
+Tesouro 2d4 doses de éter elemental (frio)  (CD 20 para 
+extrair).
+ND 5
+
+============================== PDF PAGE 391 (Book page ~390) ==============================
+3
+CAPÍTULO
+
+
+============================== PDF PAGE 392 (Book page ~391) ==============================
+
+
+============================== PDF PAGE 393 (Book page ~392) ==============================
+392
+A
+rton é um mundo rico em povos e cultu-
+ras, cada um capaz de forjar ferramentas 
+próprias, para a guerra e para a vida. 
+Este capítulo contém itens especiais 
+ligados a esses seres, além de novas magias, itens 
+mágicos e recursos extraídos de criaturas.
+Armas
+Açoite Finntroll. Feito de tiras de couro com 
+farpas de aço nas pontas, é também um instrumento 
+de tortura. Uma criatura que sofra dano do açoite 
+sofre –2 em testes de perícia e rolagens de dano por 
+1 rodada (metabolismo). 
+Arcabuz. Versão mais pesada e mais potente do 
+mosquete. Por seu peso e recuo, é uma arma desba-
+lanceada. Recarregar um arcabuz é uma ação padrão. 
+Arpão. Instrumento de pesca convertido em arma, 
+esta haste tem rebarbas em uma extremidade e uma 
+corda na outra. Se causar dano com um ataque, o arpão 
+fica preso no alvo. Enquanto você segura a corda, sempre 
+que o alvo se move, você pode fazer um teste de Força 
+oposto. Se você vencer, o alvo só pode se mover até o 
+limite da corda (9m). Ele pode se soltar gastando uma 
+ação de movimento, mas perde 1d10 PV . O arpão é uma 
+arma de arremesso; pode ser usado como arma corpo 
+a corpo, mas com penalidade de –5 no teste de ataque. 
+Esta arma é permitida para devotos do Oceano e se 
+beneficia de poderes concedidos que afetam essas armas.
+Bacamarte. Esta arma de fogo tem boca larga, 
+capaz de espalhar a munição como um cone de 6m 
+(seu alcance máximo). Para atacar, faça um ataque à 
+distância e compare com a Defesa de cada criatura na 
+área. Recarregar exige uma ação completa e 2 balas.
+Espada Vespa. Esta arma estranha é feita com 
+três ferrões de vespas gigantes, presos a uma estru -
+tura de ossos em forma de “H”. Pode-se pressionar a 
+empunhadura para unir os ferrões, como uma arma de 
+corte; ou separá-los, para dano de perfuração.
+Gládio. Espada de lâmina curta, mas pesada,  
+sem guarda. A ponta é muito afiada, capaz de infligir 
+ferimentos precisos e letais. É uma das armas padrão 
+dos legionários do Império de T auron.
+Lança de Fogo. Esta arma é formada por um 
+longo cano com uma coronha de madeira e uma 
+lâmina pontiaguda em sua extremidade. A lança de 
+fogo é uma arma híbrida que pode ser usada em dois 
+modos: como uma arma corpo a corpo alongada (dano 
+1d10, crítico x3) ou como uma arma de fogo (dano 
+2d8, crítico 19/x3, alcance médio). Quando faz um 
+ataque com a lança de fogo em modo corpo a corpo, 
+você pode acionar seu mecanismo para disparar a 
+bala; se acertar, causa +2d8 pontos de dano. Quando 
+faz um ataque com ela em modo arma de fogo contra 
+Porretes
+Mordida do Diabo Gládios
+Presa de Serpente
+Espada Vespa
+Neko-te
+Açoite Finntroll
+
+============================== PDF PAGE 394 (Book page ~393) ==============================
+393
+um oponente adjacente, você causa +1d8 pontos de 
+dano. Para atacar com ela como arma de fogo, você 
+deve também ter proficiência em armas de fogo, ou 
+é considerado não proficiente na arma. Recarregar a 
+lança de fogo é uma ação padrão.
+Mordida do Diabo. Esta arma é formada por 
+um aparato em forma de mandíbula preso a uma em-
+punhadura. A mandíbula pode ser usada para agarrar 
+e, graças a uma longa corrente, pode se destacar do 
+cabo e alcançar alvos a até 3m. Por exigir movimentos 
+precisos e coordenados, é uma arma exótica. A mordida 
+pode ser feita de metal, mas ossos e dentes de feras 
+aquáticas também são usados. É uma arma ágil e versá-
+til, fornecendo +2 em testes para agarrar e desarmar.
+Neko-te. Uma luva com garras metálicas na 
+palma e no dorso. Fornece +2 em testes de Atletismo 
+para escalar e conta como uma mão livre para isso. 
+Além disso, se você estiver usando duas neko-te, seu 
+deslocamento ao escalar aumenta em +1,5m.
+Pistola-Punhal. Esta arma é formada por uma 
+lâmina pontiaguda com um mecanismo acoplado que 
+armazena uma bala. A pistola-punhal é uma arma 
+híbrida que pode ser usada em dois modos: como uma 
+arma corpo a corpo ágil (dano 1d6, crítico 18) ou como 
+uma arma de fogo (dano 2d6, crítico 19/x3, alcance 
+curto). Quando faz um ataque com a pistola-punhal em 
+modo corpo a corpo, você pode acionar seu mecanismo 
+para disparar a bala; se acertar, causa +2d6 pontos 
+de dano. Para atacar com ela em modo arma de fogo, 
+você deve também ter proficiência em armas de fogo, 
+ou é considerado não proficiente com ela. Recarregar 
+a pistola-punhal é uma ação padrão.
+Porrete. Um pedaço sólido de madeira, coberto 
+por uma camada grossa de lã. Um porrete causa dano 
+não letal.
+Presa de Serpente. Espada de obsidiana, um 
+vidro vulcânico negro formado quando a lava es fria 
+rapidamente. Por sua origem, as voracis acreditam 
+que esse material é uma dádiva da Divina Serpente. 
+Mais afiada que o aço, causa ferimentos terríveis; 
+em um acerto crítico, o dano aumenta em um passo 
+(antes de ser multiplicado). Uma presa de serpente 
+Tetsubo Arpões
+Zarabatanas Pistolas-Punhal
+Bacamartes
+Arcabuzes
+Lança de Fogo
+Traques
+Shurikens
+Nova Habilidade 
+de Armas: Híbrida 
+Uma arma híbrida possui dois ou mais 
+modos de uso. Quando usa a arma, você 
+considera apenas as características do modo 
+que está usando e aplica apenas habilidades 
+e efeitos que afetem este modo. Trocar de 
+modo é uma ação de movimento (ou livre, se 
+você tiver Saque Rápido). Aplicar melhorias 
+e encantos em uma arma híbrida custa o 
+dobro do preço em tibares.
+
+============================== PDF PAGE 395 (Book page ~394) ==============================
+394
+rebites e/ou cravos. É uma arma versátil, fornecendo 
++2 em testes para derrubar ou empurrar. 
+Traque. Esta arma, feita com sucata e materiais 
+de segunda mão, é suscetível a falhar nos piores mo-
+mentos. Se errar um ataque com um resul tado ímpar 
+no d20, ela é avariada. Recarregá-la é uma ação padrão.
+Zarabatana. Pequeno tubo oco usado para 
+disparar dardos. Causa dano mínimo, mas é excelente 
+para inocular venenos; a CD para resistir ao veneno 
+dos dardos aumenta em +2. Um pacote de munição 
+contém 20 dardos, custa T$ 2 e ocupa 0,5 espaço. 
+Tabela 3-1: Novas Armas
+Armas Simples Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Porrete T$ 2 1d6 x2 — Impacto 1
+Ataque à Distância - Uma Mão
+Zarabatana T$ 5 1d3 x2 Curto Perfuração 1
+Armas Marciais Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Leve
+Neko-te T$ 10 1d4 19 — Corte 1
+Corpo a Corpo - Uma Mão
+Gládio T$ 12 1d6 19/x3 — Perfuração 1
+Corpo a Corpo - Duas Mãos
+Tetsubo T$ 20 1d10 X2 — Impacto 2
+Armas de Fogo* Preço Dano Crítico Alcance Tipo Espaços
+Ataque à Distância - Leve
+Traque T$ 75 2d6 19/x3 Curto Perfuração 1
+Ataque à Distância - Duas Mãos
+Arcabuz T$ 800 2d10 19/x3 Médio Perfuração 2
+Bacamarte T$ 450 4d6 19/x3 Especial Perfuração 2
+Armas Exóticas Preço Dano Crítico Alcance Tipo Espaços
+Corpo a Corpo - Uma Mão
+Açoite finntroll T$ 30 1d8 x2 — Corte 1
+Espada vespa T$ 75 2d4 18 — Corte ou Perfuração 1
+Pistola-punhal T$300 ** ** ** Perfuração 1
+Mordida do diabo T$ 30 1d4 x2 — Perfuração 1
+Presa de serpente T$ 1.000 1d8 17 — Corte 1
+Corpo a Corpo - Duas Mãos
+Lança de fogo T$ 1.000 ** ** ** Perfuração 2
+Ataque à Distância - Leve
+Shuriken T$ 1 1d4 x2 Curto Perfuração 0,5
+Ataque à Distância - Uma Mão
+Arpão T$ 30 1d10 x3 Curto Perfuração 1
+*Todas as armas de fogo usam balas (veja Tormenta20, p. 151) como munição.
+**Veja descrição da arma.
+não pode receber a melhoria material especial e exige 
+treinamento especial para ser empunhada sem quebrar, 
+por isso é uma arma exótica. É uma arma ágil. 
+Shuriken. Pequenos projéteis metálicos para 
+arremesso, em forma de estrelas ou dardos. Uma vez 
+por rodada, quando ataca com uma shuriken, você pode 
+gastar 1 PM para fazer um ataque adicional de shuriken 
+contra o mesmo alvo. Se tiver Arremesso Múltiplo, em 
+vez disso você não paga PM para usar esse poder. 
+Tetsubo. Uma versão mais pesada e sofisticada 
+do tacape, geralmente reforçado com anéis metálicos, 
+
+============================== PDF PAGE 396 (Book page ~395) ==============================
+395
+Armadura de Ossos.  Os nezumi e outros 
+povos são conhecidos por produzir estas armaduras 
+sinistras. Combinando um aspecto assustador e 
+ener gias negativas de ossadas, esta armadura fornece 
++1 em Intimidação e na CD de seus efeitos de medo 
+(cumulativo com a melhoria macabra).
+Armadura de Quitina. Feita com carapaças 
+selecionadas de grandes insetos, esta armadura dos 
+povos-trovão é mais leve que suas contrapartes me-
+tálicas. Embora seja uma armadura pesada, não reduz 
+o deslocamento do usuário.
+Escudo de Couro. Por sua leveza, este escudo é 
+popular entre velocis e ubaneri. É feito com uma arma-
+ção de madeira esticando uma membrana de couro (ou 
+outro material flexível) e amarrado ao braço, impedindo 
+o uso dessa mão. Contra ataques à distância, o bônus 
+na Defesa do escudo aumenta em +2. Entretanto, ele 
+é muito leve para ser usado como arma.
+Veste de Teia de Aranha. Feita com teia de 
+aranha gigante, esta veste é cinza-escura, maleável e 
+silenciosa, mas também forte como aço. Fornece +5 
+em Furtividade, mas não pode receber a melhoria 
+material especial.
+Armaduras e Escudos
+Armadura de Ossos
+Veste de Teia de Aranha
+Escudos de Couro
+Armadura de Quitina
+Tabela 3-2: Novas Armaduras e Escudos
+Armaduras Leves Preço Defesa Penalidade Espaços
+Armadura de ossos T$ 120 +3 -2 2
+Veste de teia de aranha T$ 3.000 +4 0 2
+Armaduras Pesadas Preço Defesa Penalidade Espaços
+Armadura de quitina T$ 350 +7 -3 5
+Escudos Preço Defesa Penalidade Espaços
+Escudo de couro T$ 3 +1 -1 1
+
+============================== PDF PAGE 397 (Book page ~396) ==============================
+396
+Itens Gerais
+Equipamento de Aventura
+Caixa de Voz. Este complexo mecanismo tem 
+1d4 cargas: quando usa uma habilidade de bardo ou 
+nobre com alcance curto ou médio, você pode gastar 
+uma carga para aumentar seu alcance em um passo. 
+Segredo de engenharia da Supremacia Purista, este item 
+não pode ser fabricado, sendo encontrado apenas nos 
+destroços de corcéis e carruagens de comando.
+Corda de Teia. Feita de teia de aranha gigante, 
+esta corda de 10m funciona como uma corda normal, 
+mas é mais resistente. Arrebentá-la exige 5 pontos de 
+dano de corte ou um teste de Força (CD 28).
+Dente de Wisphago. Um dente de wisphago 
+pode ser vestido como um amuleto. Quando faz um 
+teste de resistência contra uma magia arcana, você 
+pode gastar o amuleto para rolar novamente esse teste 
+com um bônus de +2. Uma vez ativado, o amuleto se 
+desfaz. Um dente de wisphago não pode ser fabricado.
+Gema de Força. Parte de certos engenhos da 
+Supremacia, esta gema tem 1d4 cargas. Empunhando 
+a gema, você pode gastar uma ação padrão e uma carga 
+para produzir um domo semelhante ao efeito básico 
+da magia Campo de Força. Alternativamente, quando 
+lança essa magia, você pode empulhá-lo e usar uma 
+carga para reduzir seu custo em –2 PM. Encontrada 
+nos destroços de corcéis e carruagens de comando, 
+esta gema não pode ser fabricada.
+Vestuário
+Garra Feroz. Estas pinças de insetos gigantes, 
+presas com tiras de couro, funcionam como uma 
+manopla (Tormenta20, p. 159), mas seus benefícios 
+também se aplicam a uma garra ou a uma arma natural 
+de um personagem sob efeito de habilidades como 
+Forma Selvagem.
+Manto do Mantor. Este manto, feito a partir do 
+couro de um mantor, oferece parte de sua furtividade. Na 
+escuridão completa fornece camuflagem total, mesmo 
+contra criaturas que vejam no escuro.
+Manto Pesado. Estas vestes pesadas com 
+um grande capuz oferecem proteção contra o sol e 
+contra claridade em excesso. Você recebe imunidade 
+a condição ofuscado e, mesmo durante o dia, não é 
+considerado sob luz solar ou semelhante.
+Sombreiro. Tipo de chapéu com abas muito 
+largas, comum nas proximidades de Smokestone. 
+Fornece resistência a efeitos de sentidos +2.
+Traje Selako. Feito com couro de selako, este 
+traje fornece parte das capacidades desses predadores. 
+Você recebe +2 em testes de Atletismo para nadar e 
++3m em seu deslocamento de natação.
+Esotéricos
+Ankh Solar. Este item raro é encontrado em 
+corpos embalsamados no Deserto da Perdição. Pode 
+ser usado como arma leve simples corpo a corpo (dano 
+1d6, crítico 19, corte). Suas magias que tenham testes 
+de resistência recebem o seguinte aprimoramento: 
++2 PM. Além do normal, criaturas que falham na 
+resistência não podem recuperar PV por 1 rodada.
+Tomo de Guerra.  Quando lança uma magia 
+de evocação, você recebe +1 PM para gastar em 
+aprimoramentos.
+Tomo do Rancor. Suas magias de dano recebem 
+o seguinte aprimoramento: +2 PM. Além do normal, 
+quando lança uma magia de dano, ela causa +2d8+2 
+pontos de dano de corte, impacto ou perfuração, a 
+sua escolha.
+Alquímicos
+Preparados
+Bálsamo de Drogadora. Produzido por 
+curandeiras dos povos-trovão, este pote de cerâmica 
+contém uma pasta gosmenta. Aplicá-la é uma ação 
+completa e cura 4d6+4 PV .
+Bomba de Fumaça. Saco de estopa com pavio, 
+contendo uma pólvora especial que produz mais fu-
+maça do que fogo. Segue as mesmas regras da bomba, 
+mas, em vez de causar dano, emite uma nuvem de 
+fumaça espessa com 6m de raio, que obscurece toda 
+a visão e dura até o fim da cena. Criaturas a até 1,5m 
+têm camuflagem leve e criaturas a partir de 3m têm 
+camuflagem total.
+Elixir Quimérico. Beber este elixir é uma 
+ação padrão; até o fim da cena, você ganha uma arma 
+natural de mordida (dano 1d6, crítico x2, perfuração). 
+Uma vez por rodada, quando usa a ação agredir para 
+atacar com outra arma, pode gastar 1 PM para fazer 
+um ataque corpo a corpo extra com a mordida. Se já 
+possui uma mordida, seu dano aumenta em um passo.
+Éter Elemental. Extraído de elementais, este 
+líquido viscoso tem cor e textura relacionados ao ele-
+mento de origem. Uma dose é suficiente para cobrir 
+uma arma corpo a corpo ou 20 munições; aplicá-lo é 
+uma ação padrão e faz a arma (ou as munições) causar 
++1d4 pontos de dano do tipo do dano elemental até 
+o fim da cena. Múltiplas doses não são cumulativas.
+
+============================== PDF PAGE 398 (Book page ~397) ==============================
+397
+Isca Putrefata. Frasco de restos mortais diluídos 
+em uma solução macabra. Você pode gastar uma ação 
+padrão para arremessar a isca em um local ou criatura 
+em alcance médio. A isca se gruda ao alvo (Ref CD Des 
+evita) e dura 1d6 rodadas. Durante esse tempo, cada 
+morto-vivo não inteligente em alcance curto é atraído 
+(Von CD Des evita), gastando todas as suas ações para 
+se deslocar até a isca. Quando a alcança, fica fascinado 
+ou, se a isca estiver presa a uma criatura, a ataca.
+Lágrima Pétrea. Este líquido cristalino tem o 
+poder de devolver criaturas à sua forma original. Você 
+pode gastar uma ação padrão para aplicá-lo em uma 
+criatura adjacente ou arremessá-lo em uma criatura 
+em alcance curto; uma dose remove todos os efeitos 
+de metamorfose (Ref CD Des evita).
+Óleo de Baleia. Este antigo preparado é um 
+destilado de gordura de baleia. Você pode usar uma 
+ação padrão para aplicar o óleo em uma arma ou pacote 
+de munições para ignorar penalidades de combate 
+submerso com esse item até o fim da cena.
+Óleo de Besouro. O líquido do terrível be -
+souro-do-óleo pode ser usado em lampiões (dobro 
+da duração e área de iluminação) e explosivos. Para 
+usar um frasco, você precisa empunhá-lo, gastar uma 
+ação de movimento para acender seu pavio e uma ação 
+padrão para arremessá-lo em alcance curto. Criaturas a 
+até 3m do ponto atingido sofrem 4d6 pontos de dano 
+de fogo e ficam em chamas (Ref CD Des reduz o dano 
+à metade e evita a condição).
+Pó Azul. Saquinho de couro com pó feito a 
+partir de uma planta exótica de Galrasia, capaz de 
+absorver energia mágica ambiente. Inalar o pó é uma 
+ação completa e recupera 2d4 PM.
+Catalisadores
+Corrosivo Mineral. Pasta mineral corrosiva 
+produzida com ingredientes naturais. Aumenta os dados 
+de dano de magias de ácido em uma categoria: d4 para 
+d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).
+Gelo Extremo. Cristais minerais que eliminam 
+todo o calor ao redor. Aumenta os dados de dano de 
+magias de frio em uma categoria: d4 para d6, d6 para 
+d8, d8 para d10 e d10 para d12 (máximo).
+Pedaço de Língua. Glândulas que podem ser 
+usadas como um catalisador que fornece +1 na CD 
+dos testes de Fortitude para resistir a suas magias.
+Raio Cristalizado. Eletricidade gerada por 
+elementais e outros seres mágicos pode ser solidificada 
+na forma de pequenos cristais. Aumenta os dados de 
+dano de magias de eletricidade em uma categoria: d4 para 
+d6, d6 para d8, d8 para d10 e d10 para d12 (máximo).
+Venenos
+Esporos de Cogumelo.  Extraído de certos 
+cogumelos e criaturas aparentadas, causa breve mas 
+perigosa paralisia. Inalação, vítima fica paralisada (lenta) 
+por 1 rodada, depois imune a paralisia por este veneno pela cena.
+Peçonha Anciã. Veneno poderoso, extraído de 
+serpes anciãs, capaz de afetar até criaturas imunes. 
+Contato, perde 3d12 PV por rodada durante 3 rodadas e 
+ignora imunidade a venenos (perde 3d12 PV).
+Peçonha Irritante. Este veneno leve, produ-
+zido por diversas criaturas, tem efeito brando mas que 
+não pode ser resistido. Contato, perde 1d6 PV .
+Veneno Batráquio. Produzida a partir da saliva 
+de sapos gigantes, esta gosma machuca e enjoa. Contato, 
+perde 1d12 PV e fica enjoado por 1 rodada (perde 1d6 PV).
+Alimentação
+Algravia. Bebida alcoólica adocicada feita da sei-
+va de feras-cactos. Você recebe +1 em perícias baseadas 
+em Carisma, cumulativo com outros itens. Múltiplas 
+doses são cumulativas entre si, mas intoxicantes; para 
+cada dose além da primeira no mesmo dia, você deve 
+fazer um teste de Fortitude (CD 15 + 5 para cada 
+dose anterior). Em caso de falha, você fica enjoado e 
+perde todos os bônus de alimentação até o fim do dia.
+Banquete de Canceronte. Um canceronte 
+adulto é suficiente para produzir um pequeno ban-
+quete. Você recebe 1d4+1 dados de auxílio. Sempre 
+que realizar um teste de perícia, você pode gastar 
+1d4 e adicionar o resultado como bônus no teste. Se 
+o banquete for preparado por um personagem com 
+o poder Mestre Cuca, os dados de auxílio se tornam 
+d6. Este prato requer carne fresca de canceronte, 
+sendo assim raramente encontrado longe de grandes 
+cidades costeiras.
+Coc-au-Triz. Ovos de cocatriz são ingredientes 
+mágicos poderosos, e esta guloseima reflete esse poder; 
+é um ninho de fios de ovos assados e gratinados. Ao 
+consumir, escolha uma habilidade com custo em PM. 
+Seu custo diminui em –1 PM. 
+Cozido de Serpe. Quando cozida por várias 
+horas em uma sopa específica, a carne da serpe fica 
+livre de seu veneno natural. Diferente de outros 
+alimentos, preparar este cozido é um teste estendido 
+de Ofício (cozinheiro) com CD 20, que requer 3 su -
+cessos antes de 3 falhas. Se preparado com sucesso, 
+fornece+1 em todos os testes de perícia, cumulativo 
+com outros itens. Se falhar, os ingredientes são 
+consumidos e você é envenenado (perde 1d12 pontos 
+de vida por rodada durante 3 rodadas; Fort CD 20 
+reduz para 1 rodada).
+
+============================== PDF PAGE 399 (Book page ~398) ==============================
+398
+Item Preço Espaços Item Preço Espaços
+Alimentação Alquímicos - Preparados
+Algravia T$ 3 — Bálsamo de drogadora T$ 60 0,5
+Banquete de canceronte T$ 36 — Bomba de fumaça T$ 15 0,5
+Coc-au-triz T$ 54 — Elixir quimérico T$ 120 0,5
+Cozido de serpe T$ 12 — Éter elemental T$ 60 0,5
+Gorlogg ensopado T$ 6 — Isca putrefata T$ 60 0,5
+Omelete monstruosa T$ 3 — Lágrima pétrea T$ 30 0,5
+Sashimi de kraken T$ 60 — Óleo de baleia T$ 30 0,5
+Animais Óleo de besouro T$ 50 0,5
+Bulette T$ 500 — Pó azul T$ 150 0,5
+Capivara T$ 60 — Alquímicos - Catalisadores
+Corcel do deserto T$ 150 — Corrosivo mineral T$ 150 0,5
+Dromedário T$ 75 — Gelo extremo T$ 150 0,5
+Elefante T$ 1.500 — Pedaço de língua T$ 30 0,5
+Hiena T$ 220 — Raio cristalizado T$ 150 0,5
+Leão T$ 800 — Alquímicos - Venenos
+Rinoceronte T$ 600 — Esporos de cogumelo T$ 75 0,5
+Urso pardo T$ 300 — Peçonha anciã T$ 1.800 0,5
+Equipamento de Aventura Peçonha irritante T$ 10 0,5
+Caixa de voz T$ 50 1 Veneno batráquio T$ 30 0,5
+Corda de teia T$ 100 1 Vestuário
+Dente de wisphago T$ 100 1 Garra feroz T$ 60 1
+Esotéricos Manto do mantor T$ 450 1
+Ankh solar T$ 450 1 Manto pesado T$ 10 1
+Tomo de guerra T$ 300 1 Sombreiro T$ 10 1
+Tomo do rancor T$ 750 1 Traje selako T$ 90 1
+Tabela 3-3: Novos Itens Gerais
+Gorlogg Ensopado. Criado nas cozinhas de 
+Yuvalin por Rizzelena, chef élfica de grande talento, este 
+é um ensopado altamente nutritivo. Em sua próxima 
+noite de sono, você aumenta a sua recuperação de PV 
+e PM em +1 por nível.
+Omelete Monstruosa. Dizem que este prato 
+foi inventado por aventureiros presos em uma ca-
+verna cheia de ovos. Desde então, tornou-se popular 
+entre aqueles de baixa seletividade alimentar, ou 
+muita coragem. É feita com ovos de qualquer praga 
+monstruosa, mas variações mais refinadas usam 
+ovos de corcel de Kally e outras feras dracônicas 
+menores. Você recebe +2 em rolagens de dano e 
+–2 em testes de perícias baseadas em Sabedoria, 
+cumulativo com outros itens. Se feita com ovos de 
+dragão, muda para +5 e –5. E garante que você será 
+caçado por uma mamãe dragoa furiosa…
+Sashimi de Kraken.  Esta iguaria exótica foi 
+criada pelos maiores chefs de Tamu-ra. Você recebe 
++2 em Diplomacia, cumulativo com outros itens, e 5 
+PM temporários. Dificilmente encontrada em cidades 
+longe do mar.
+
+============================== PDF PAGE 400 (Book page ~399) ==============================
+399
+Animais
+Estes animais são raros, restritos a povos ou 
+regiões específicas, mas podem ocasionalmente ser 
+encontrados à venda. Todos são parceiros iniciantes.
+Bulette. Temperamental e feroz, esta fera pode 
+ser adquirida de mercadores na Grande Savana, no 
+Deserto da Perdição ou em Doherimm — em outros 
+lugares, atinge o dobro do preço. Pode ser usado 
+como um parceiro montaria.
+Capivara. Simpática, amistosa e dotada de longos 
+e afiados dentes, a capivara é muito apreciada por 
+ginetes Pequenos como hynne e goblins. Pode ser 
+usado como um parceiro montaria por personagens 
+Pequenos e Minúsculos.
+Corcel do Deserto. Tipo de cavalo insetoide 
+encontrado na Grande Savana e no Deserto da Perdição. 
+Pode ser usado como um parceiro montaria.
+Dromedário. Disponível em regiões áridas ou 
+montanhosas, pode ser um parceiro montaria.
+Elefante. Grande demais para ambientes 
+urbanos, é empregado como animal de trabalho em 
+áreas abertas, como fazendas e áreas de mineração. 
+Pode ser usado como um parceiro montaria.
+Hiena. Embora sejam mais comuns entre gnolls, 
+hienas podem ocasionalmente ser domesticadas por 
+outros povos. Uma hiena pode ser usada como um 
+parceiro especial (veja p. 119) por personagens treina-
+dos em Adestramento, ou montaria por personagens 
+Pequenos e Minúsculos.
+Leão. Considerado símbolo de nobreza e força, 
+o majestoso leão pode ser treinado para aceitar um 
+cavaleiro, sendo usado como um parceiro montaria.
+Rinoceronte. Eram animais de gado dos anões 
+quando estes ainda viviam na superfície; hoje são 
+selvagens e perigosos, de difícil domesticação. Podem 
+ser usados como parceiros montaria, mas raramente 
+são encontrados à venda.
+Urso Pardo. Este robusto predador pode ser en-
+contrado em várias regiões de Arton. Ainda que incomum, 
+pode ser empregado como um parceiro montaria.
+Itens Superiores
+Novas Melhorias
+Multifuncional (ferramenta ou ves -
+tuário). Esta melhoria só pode ser aplicada em um 
+item que modifica uma perícia (fornecendo bônus ou 
+reduzindo penalidade). Escolha outra perícia que usa 
+o mesmo atributo-chave; o item passa a funcionar 
+também para a segunda perícia escolhida (mas não 
+se aplica a testes de ataque).
+Penetrante (arma). A arma ignora 5 pontos 
+da redução de dano. Pré-requisito: cruel.
+Materiais Especiais
+Casco de Monstro
+Os cascos protetores de certos monstros podem 
+substituir aço e outros materiais rígidos, embora 
+sejam mais frágeis; ao sofrer dano de impacto, um 
+item mundano feito de casco de monstro sofre 1 ponto 
+a mais por dado de dano.
+Arma. Conta como uma arma primitiva para a 
+magia Armamento da Natureza e efeitos semelhantes.
+Armadura e Escudo. Têm sua penalidade de 
+armadura diminuída em 1. Armaduras pesadas de 
+casco permitem aplicar 1 ponto de Destreza na Defesa.
+Esotérico.  Quando lança uma magia, você 
+recebe redução de dano 5 contra o próximo dano que 
+sofrer até sua próxima rodada.
+Couraça de Kaiju
+Ainda mais raro que couro dracônico, este material 
+pode ser empregado para fabricar itens superiores de 
+grande poder. Jamais encontrado à venda, sendo obtido 
+apenas a partir de um kaiju abatido.
+Arma (exige uma peça). O dano aumenta um 
+passo. Além disso, quando faz um ataque, se o alvo 
+usar um efeito que reduz o dano desse ataque (como 
+Durão ou Escamas Supremas), você pode gastar 2 PM 
+para ignorar o efeito. Isso não se aplica a RD.
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): RD 10/mágico. Armadura pesada 
+(exige três peças): RD 20/mágico.
+Esotérico (exige uma peça). Quando lança 
+uma magia que causa dano, você pode gastar 2 PM para 
+ignorar efeitos dos alvos que reduzem o dano dessa magia, 
+como Durão ou Evasão (exceto redução de dano e o 
+efeito de passar no teste de resistência contra a magia).
+Couro de Bulette
+Este couro raramente é encontrado à venda; 
+quando não é curtido e tratado logo após a extração, 
+perde suas qualidades especiais.
+Armadura. Armadura leve (exige uma peça): fornece 
+deslocamento de escavação igual à metade de seu deslo-
+camento normal e redução de ácido 5. Armadura pesada 
+(exige três peças): como acima, mas a redução de ácido é 10.
+
+============================== PDF PAGE 401 (Book page ~400) ==============================
+400
+Esotérico (exige uma peça). Quando lança 
+uma magia de ácido que causa dano, você pode rolar 
+novamente qualquer resultado 1 nas rolagens de dano 
+(mesmo em rodadas subsequentes).
+Cristal de Sol
+Utilizados pelos ursos das neves para armazenar 
+calor, estes cristais perdem suas propriedades em 
+algumas semanas quando não utilizados, tornando 
+difícil encontrá-los à venda.
+Arma (exige uma peça). Só pode ser aplicado 
+a armas de corte ou perfuração. A arma causa +2 
+pontos de dano por fogo.
+Armadura e Escudo (exige uma peça).  
+Quando faz um teste de resistência contra um efeito 
+de frio, você pode rolar dois dados e usar o melhor 
+resultado.
+Esotérico (exige uma peça). Quando lança 
+uma magia de fogo, você pode gastar 1 PM. Se fizer 
+isso, criaturas que falhem em seu teste de resistência 
+contra a magia ficam em chamas (se a magia já deixa 
+a vítima em chamas, em vez disso o dano das chamas 
+aumenta em +1d6 cumulativo).
+Lanajuste
+Também chamado de coral-de-ferro, é encontrado 
+em paredões afiados banhados pelo mar em Khubar. 
+Mais conhecido por seu uso em lâminas afiadas, o 
+lanajuste também é empregado em outros itens.
+Arma. Ataques com a arma ignoram penalidades 
+por combate submerso. Além disso, pode ser utilizada 
+por devotos do Oceano sem violar suas obrigações 
+e restrições.
+Armadura e Escudo. Fornece redução de corte: 
+armaduras leves e escudos, redução 5; armaduras 
+pesadas, redução 10.
+Esotérico. Quando lança uma magia que causa 
+dano de corte, você pode rolar novamente qualquer 
+resultado 1 na rolagem de dano.
+Pena de Kraken
+Esse material vítreo extraído da concha interna de 
+um kraken é extremamente afiado. Em seu estado bruto, 
+é quebradiço e difícil de transportar sem equipamento 
+adequado, sendo assim raramente encontrado à venda.
+Arma (exige uma peça). Quando faz um acerto 
+crítico, o dano aumenta dois passos (antes de ser 
+multiplicado).
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): quando uma criatura erra um ataque 
+corpo a corpo contra você, perde 5 pontos de vida. 
+Armadura pesada (exige três peças): quando uma criatura 
+erra um ataque corpo a corpo contra você, perde 10 
+pontos de vida.
+Esotérico (exige uma peça). Se o item 
+fornece algum bônus numérico, ele aumenta em +1. 
+Pr ata
+Embora seja muito maleável, a prata pode ser 
+usada para revestir objetos e conceder propriedades 
+quase mágicas. Por ser usada como revestimento, prata 
+pode ser combinada com um segundo material especial 
+(cada um contando como uma melhoria separada).
+Arma. Causa +2 pontos de dano em espíritos 
+e mortos-vivos e é considerada mágica para atacar 
+essas criaturas.
+Armadura e Escudo. Fornece redução de dano 
+causado por espíritos e mortos-vivos: armaduras leves 
+e escudos, RD 5; armaduras pesadas, RD 10.
+Tabela 3-4: Novos Materiais Especiais
+Material* Arma Armadura Leve Armadura Pesada Escudo Esotérico
+Casco de monstro +T$ 750 +T$ 750 + T$ 6.000 +T$ 750 +T$ 6.000
+Lanajuste +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 +T$ 3.000
+Prata +T$ 600 +T$ 1.500 +T$ 3.000 +T$ 1.500 + T$ 400
+* Materiais não listados são raros e não são encontrados à venda.
+Espada de Coral
+Fabricada com uma técnica secreta mantida 
+pela Irmandade dos Pescadores, uma espada 
+de coral é uma cimitarra feita de lanajuste. 
+Além dos benefícios do material especial, ela 
+tem fio extremamente agudo; em um acerto 
+crítico, deixa a vítima sangrando. Quando 
+aplicado desta forma, este material especial 
+custa +T$ 1.800 (em vez de T$ 600).
+
+============================== PDF PAGE 402 (Book page ~401) ==============================
+401
+Esotérico. Suas magias causam +2 pontos de 
+dano em espíritos e mortos-vivos.
+Quitina Razza
+Cobiçada por caçadores de monstros, que a con-
+sideram um grande troféu, esta quitina raramente 
+é encontrada à venda; a única forma de obter este 
+material é abater um razza’kham. 
+Arma (exige uma peça). Sempre que rolar 
+o resultado máximo em um dado do dano básico da 
+arma, role um dado extra, repetindo o processo a cada 
+resultado máximo.
+Armadura e Escudo. Armadura leve e escudo 
+(exigem uma peça): concede +2 em Percepção e seu 
+bônus na Defesa aumenta em 1. Armadura pesada (exigem 
+três peças): concede +5 em Percepção e seu bônus na 
+Defesa aumenta em 2.
+Esotérico (exige uma peça). Sempre que 
+rolar o resultado máximo em um dado do dano básico 
+da magia (sem contar aprimoramentos e outros 
+efeitos), role um dado extra, repetindo o processo 
+a cada resultado máximo.
+recursos naturais
+Certas criaturas, como dragões, elementais e 
+monstros peçonhentos, fornecem recursos específicos 
+como parte de seus tesouros. Entretanto, existem 
+outros materiais de grande utilidade que podem ser 
+extraídos de ameaças. Esta seção apresenta regras 
+opcionais para mestres que desejam usar esse tipo de 
+tesouro em suas aventuras.
+Recursos naturais podem ser incluídos em qualquer 
+criatura que já não possua um recurso especial, e podem 
+complementar seu tesouro normal ou substituí-lo (a 
+critério do mestre). Para usar um desses recursos, escolha 
+um tipo apropriado à criatura em questão. Alternati-
+vamente, você pode rolar na linha referente ao tipo da 
+criatura na Tabela 3-5: Recursos Naturais. A 
+quantidade de recursos fornecida depende do tamanho 
+da criatura; criaturas Pequenas e Médias fornecem 1 
+unidade do recurso, criaturas Grandes e Enormes 
+fornecem 2 unidades e criaturas Colossais fornecem 5 
+unidades. Criaturas Minúsculas são muito pequenas para 
+produzir recursos. Embora seja possível extrair recursos 
+de criaturas inteligentes, isso pode ser considerado um 
+tabu, um crime ou simplesmente um ato hediondo, 
+dependendo de onde os aventureiros estiverem.
+Recursos naturais são extraídos como recursos 
+especiais; exigem uma hora de trabalho e um sucesso 
+em um teste de Sobrevivência ou de um Ofício rela-
+cionado ao recurso, com CD 15 + ND da criatura. Em 
+caso de falha, os recursos são estragados.
+Tipos de Recursos
+A variedade de recursos existentes em Arton é 
+tão vasta quanto sua fauna. A seguir são descritos 
+os mais comuns, mas você pode expandir esta lista 
+conforme adequado à sua campanha. Use os recursos 
+descritos aqui e nas fichas de ameaças como base para 
+suas ideias.
+A descrição de cada recurso indica seus usos. Para 
+recursos que podem ser empregados como matéria-
+-prima, seu valor, bem como o grau de qualidade dos 
+itens que podem ser fabricados com ele, depende do 
+patamar da ameaça da qual foi extraído.
+Carapaça. Diversos tipos de carapaças servem 
+como matéria-prima para couraças, lorigas segmenta-
+das, meias armaduras, armaduras completas e escudos 
+pesados. Esses itens contam como itens naturais para 
+devotos de Allihanna, mas são mais frágeis que metal; 
+cada vez que você sofre um acerto crítico, há 10% (1 
+em 1d10) de chance de que o item seja destruído. 
+Um item mágico ou feito inteiramente de peças de 
+uma criatura lenda não sofre esse efeito.
+Tabela 3-5: Recursos Naturais
+Tipo de 
+Criatura (1d6) Carapaça Couro Fonte Ingrediente Mantimento Osso Sucata
+Animal 1 2-3 — — 4-5 6 —
+Construto 1-2 — 3 — — — 6
+Espírito* — — 1-3 4-6 — — —
+Humanoide 1 2 3 — 4 5-6 —
+Monstro 1 2 3 4 5 6 —
+Morto-vivo 1 — 2-3 — — 4-6 —
+* Use essa linha para criaturas incorpóreas de qualquer tipo.
+
+============================== PDF PAGE 403 (Book page ~402) ==============================
+402
+Couro. Serve como matéria-prima para armadu-
+ras acolchoadas, armaduras de couro, gibões de peles 
+e escudos leves. Ao fabricar uma versão mágica desses 
+itens, você pode gastar 10 peças de couro de lendas 
+para reduzir o custo do item em –1 PM.
+Fonte. Das penas de uma fênix às presas de 
+um vampiro, várias criaturas carregam uma fagulha 
+mística que pode ser usada como matéria-prima de 
+itens esotéricos. Além disso, ao fabricar um acessório 
+mágico, você pode gastar 10 fontes de lendas para 
+reduzir o custo do item em –1 PM.
+Ingrediente. Diversas criaturas produzem subs-
+tâncias que podem ser empregadas como ingredientes 
+para itens alquímicos e poções mágicas, independente 
+de seu patamar.
+Mantimento.  Carne, leite, ovos e outros 
+materiais podem ser usados como alimentos. Cada 
+porção alimenta quatro pessoas; mantimentos de 
+uma criatura iniciante contam como uma refeição 
+comum, de uma criatura veterana ou campeã contam 
+como um prato especial (determinado pelo mestre) 
+e de uma criatura lenda contam como dois pratos 
+especiais (com efeitos cumulativos).
+Osso. Ossos das mais variadas partes de criaturas 
+servem como matéria-prima de armas. Peças de pata-
+mar veterano também podem ser usadas nas melhorias 
+espinhoso ou macabro. Além disso, ao fabricar uma 
+maça do terror ou um item tumular ou assustador, você 
+pode pode gastar 10 peças de osso de lendas para 
+reduzir o custo do item em –1 PM.
+Sucata. Partes de golens e outras criaturas 
+artificiais servem como matéria-prima de engenhocas 
+e itens de metal. Além disso, quando fabrica uma 
+engenhoca, você pode gastar uma peça de sucata para 
+receber um bônus no teste de Ofício (cumulativo com 
+bônus de outros itens), conforme o patamar da criatura: 
+veterano, +2; campeão, +5; lenda, +10.
+Novos Itens 
+Mágicos
+Chifre de Unicórnio
+Um chifre de unicórnio é um poderoso item má-
+gico de cura. Se estiver empunhando o chifre, você 
+pode lançar Curar Ferimentos e Purificação ; caso já 
+conheça essas magias, seu custo diminui em –1 PM, 
+cumulativo com outras reduções. Ele também pode 
+ser usado para lançar a magia Segunda Chance, mas 
+perde todos os poderes após isso. Por fim, ele pode 
+ser empunhado como uma espada curta formidável.
+Mesmo sem seus poderes, o chifre pode ser trans-
+formado em 12 doses de pó de chifre, um poderoso 
+ingrediente para preparados e poções. Misturar uma 
+dose desse pó aos ingredientes de um preparado ou 
+poção aumenta cada dado de cura do efeito do item 
+em dois passos (até um máximo de d12).
+Ainda que o simples ato de portar um chifre de 
+unicórnio não seja necessariamente maligno, muitos 
+devotos, sobretudo de Allihanna e Marah, poderão 
+questionar a origem do chifre. Chifres de unicórnio não 
+podem ser fabricados, e são obtidos apenas de um 
+unicórnio morto. Acessório maior, preço T$ 120.000.
+Fragmento de Filactério
+Mesmo após a destruição do filactério de um 
+lich, uma parte do poder mágico da criatura pode 
+permanecer, geralmente em seu maior fragmento. 
+Um fragmento de filactério conta como uma costela de 
+lich poderosa que fornece +20 PM (somente após um 
+dia de uso). Um fragmento só pode ser obtido de um 
+filactério estilhaçado e não pode ser fabricado. Acessório 
+maior, preço T$ 90.000.
+Grilhão de Descrença
+Esta armadura completa reforçada e selada contém 
+uma forte maldição divina: uma vez vestida, não pode 
+ser retirada. Qualquer criatura que chegue a 0 PV 
+vestindo esta armadura não pode ser ressuscitada 
+e se torna um guerreiro perpétuo (veja p. 139). Se 
+de alguma forma a maldição for removida (como 
+por dissipar o item ou quebrar a maldição), ela se 
+transforma numa armadura completa reforçada e selada com 
+um encanto aleatório (veja Tormenta20, p. 338). Uma 
+armadura grilhão de descrença não pode ser fabricada e é 
+encontrada apenas em guerreiros perpétuos. Armadura 
+específica menor, preço T$ 24.000.
+Tabela 3-6: Tipos de  
+Recursos Naturais
+Patamar da Ameaça Valor/Qualidade
+Iniciante T$ 20 para itens normais
+Veterano T$ 100 para itens superiores
+Campeão T$ 500 para itens mágicos
+Lenda T$ 2.500 para itens mágicos
+
+============================== PDF PAGE 404 (Book page ~403) ==============================
+403
+Lancinante Revisado
+Em algumas campanhas, o encanto 
+lancinante (Tormenta20, p. 336) pode gerar 
+valores de dano bastante elevados. Se quiser 
+limitar esses valores, particularmente para 
+campanhas mais desafiadoras, use a seguinte 
+versão opcional desse encanto.
+Lancinante. A arma inflige ferimentos 
+mortais. Quando faz um acerto crítico, o 
+bônus em dano fornecido pelo encanto 
+dilacerante também é multiplicado. Por 
+exemplo, um machado de batalha lancinante 
+causa +30 pontos de dano em um acerto 
+crítico. Pré-requisito: dilacerante.
+que é um dos mais poderosos itens do Arquilich Ferren 
+Asloth. Capaz de conceder habilidades arcanas incríveis 
+fornece ao usuário +50 PM (somente após um dia de 
+uso), aumenta em +5 a CD para resistir a suas magias 
+arcanas e permite utilizar a habilidade Conhecimento 
+Sequestrado (CD Int, veja p. 294).
+Tamanho poder, entretanto, não passa de uma 
+armadilha. Em sua obsessão pela vida eterna, Ferren 
+aprisionou uma pequena parte de sua essência neste 
+amuleto, fazendo com que ele funcione como um 
+segundo filactério. No início de cada dia em que estiver 
+usando o amuleto, o portador deve fazer um teste 
+de Vontade (CD 20 + 1 por dia adicional). Se falhar, 
+começa a ter pensamentos cruéis, que o incentivam 
+a buscar mais poder a qualquer custo. Se falhar uma 
+segunda vez, torna-se dependente do amuleto e não 
+consegue mais removê-lo por vontade própria (e fica 
+agressivo caso outra pessoa tente fazê-lo). Por fim, se 
+falhar uma terceira vez, sua alma é destruída. Quando 
+isso acontecer, se Ferren estiver destruído, o fragmento 
+de sua alma armazenado no amuleto se apossa do 
+corpo do portador, trazendo o Arquilich de volta à 
+existência. O portador passa automaticamente no teste 
+de Vontade sempre que tiver matado um conjurador 
+arcano no dia anterior.
+Rompedor da Realidade
+Este artefato lefeu é um machado de guerra gigante 
+atroz pungente anticriatura (não lefeu) magnífico de matéria 
+vermelha. Ataques com ele ignoram redução de dano, 
+fortificação e imunidade a acertos críticos. Além disso, 
+seus golpes distorcem a vítima: uma criatura atingida 
+pela arma perde 1 ponto cumulativo de um atributo 
+aleatório permanentemente (Fort CD For evita). Um 
+não lefeu que empunhe o Rompedor fica debilitado até 
+o fim da cena.
+pilão ConspurcadO
+Este pequeno pilão de madeira de aparência sinistra 
+é decorado com símbolos místicos entalhados e frag-
+mentos de ossos encravados. Conta como uma costela 
+de lich. Além dos benefícios desse esotérico, o custo de 
+suas magias de encantamento e necromancia lançadas 
+pela varinha diminui em –1 PM e a CD para resistir a 
+elas aumenta em +2. Acessório médio, preço T$ 21.000.
+Pistola Demoníaca
+Esta pistola ameaçadora formidável e profana não pode 
+ser fabricada por nenhum meio conhecido por mortais 
+e só pode ser obtida através de um pacto com um 
+demônio da pólvora (veja p. 255). Uma pistola demoníaca 
+está sempre carregada e não precisa de munição. Uma 
+vez por dia, em um momento escolhido pelo mestre 
+(ou na primeira ocasião em que houver outras pessoas 
+próximas), o portador da arma é atingido pelo impulso 
+homicida de disparar contra uma criatura inteligente 
+aleatória à vista (incluindo aliados). O portador pode 
+resistir a esse impulso por este dia passando em um 
+teste de Vontade (CD 25). Qualquer medida para evitar 
+acidentes (manter a pistola guardada, descarregada ou 
+mesmo trancada e fora de alcance) fracassa automatica-
+mente; quando o portador cede ao impulso assassino, 
+a arma surge magicamente em suas mãos. Caso o 
+portador da pistola seja morto, a arma desaparece. 
+Arma específica média, preço T$ 72.250.
+Uyzrrak Da’ukthra 
+Este machado de guerra magnífico aumentado atroz de 
+adamante é marcado com escrita goblinoide em sua 
+lâmina e aparenta já ter visto inúmeras batalhas. Quando 
+empunhado por um duyshidakk, causa +2d8 pontos 
+de dano contra qualquer criatura não duyshidakk e 
+recebe um encanto adicional, conforme o elemento 
+do círculo intermediário do Akzath mais próximo do 
+portador: Luz, Sagrado; Nós, Piedoso; Dentro, Defensor; 
+Estagnação, Excruciante; Trevas, Profano; Fora, Arremesso; 
+Eles, Dilacerante; Movimento, Energético. A critério do 
+mestre, se o portador do machado se tornar mais pró-
+ximo de outro elemento, o encanto muda de acordo. 
+Arma específica média, preço T$ 78.050.
+Novos Artefatos
+Amuleto do Abutre
+Este pingente de ouro em formato de abutre é um 
+poderoso amuleto arcano, cuja origem sombria é cercada 
+de mistério. Sabe-se que ele surgiu na mesma época 
+em que Ferren Asloth realizou seu famigerado ritual e 
+
+============================== PDF PAGE 405 (Book page ~404) ==============================
+404
+novas
+Magias
+Açoite Flamejante
+Arcana 1 (convocação)
+Execução: padrão; Alcance: pesso-
+al; Efeito: açoite de chamas criado 
+em sua mão (veja texto); Duração: 
+sustentada; Resistência: Reflexos 
+reduz parcial.
+Um açoite de fogo surge em uma 
+de suas mãos com a qual possa 
+empunhar uma arma (essa mão fica 
+ocupada pela duração da magia). 
+Você pode usar uma ação padrão 
+para causar 2d6 pontos de dano de 
+fogo com o açoite em uma criatura 
+em alcance curto e deixá-la em cha-
+mas e enredada enquanto estiver 
+em chamas dessa forma. Passar na 
+resistência reduz o dano à metade 
+e evita as chamas.
++2 PM: muda a execução para 
+movimento.
++2 PM: muda o dano para 4d6. 
+Requer 2° círculo.
++5 PM: muda o dano para 6d6. 
+Requer 3° círculo.
+Dardo Gélido
+Arcana 1 (Evocação)
+Execução: padrão; Alcance: curto; 
+Alvo: 1 criatura; Duração: instantâ-
+nea; Resistência: Fortitude parcial.
+Você dispara um dardo de gelo 
+contra o alvo, que sofre 2d6 pontos 
+de dano de frio e fica lento por 1 
+rodada. Passar no teste de resistên-
+cia reduz o dano à metade e evita 
+a condição.
++1 PM: aumenta o dano em +1d6.
++1 PM: aumenta o número de alvos 
+em +1 (total de alvos limitado pelo 
+círculo máximo de magia que você 
+pode lançar).
+Invocar Fagulha Elemental
+Arcana 2 (Convocação)
+Execução: completa; Alcance : 
+curto; Efeito: familiar elemental; 
+Duração: sustentada.
+Você transforma uma porção de um 
+elemento inerte em uma criatura 
+elemental Pequena do tipo do ele-
+mento alvo. Por exemplo, lançar 
+esta magia em um copo de água cria 
+um elemental da água. Você pode 
+criar elementais do ar, da água, do 
+fogo e da terra com esta magia. O 
+elemental obedece a todos os seus 
+comandos e funciona como um 
+familiar comum (veja Familiares, 
+em Tormenta20, p. 38) ou elemental 
+(veja Elementais). O elemental 
+auxilia apenas você e não conta em 
+seu limite de parceiros.
++1 PM: além do normal, o elemen-
+tal fornece redução 10 contra o dano 
+correspondente a seu tipo.
++2 PM:  em vez do normal, o 
+elemental recebe a habilidade de 
+dois familiares, um comum e um 
+elemental.
+Jato Corrosivo
+Arcana 1 (Evocação)
+Execução: padrão; Alcance : pes-
+soal; Área: linha de 9m; Duração: 
+instantânea; Resistência: Reflexos 
+reduz à metade.
+Você dispara um jato, que causa 2d6 
+pontos de dano de ácido às criaturas 
+na área. Contra construtos e objetos 
+soltos, a magia causa +1 ponto de 
+dano por dado.
++1 PM: aumenta o dano em +1d6.
++1 PM: muda a resistência para Re-
+flexos parcial. Se passar, a criatura 
+reduz o dano à metade; se falhar, 
+fica vulnerável.
+Katana Celestial
+Divina 5 (Evocação)
+Execução: padrão; Alcance: pes -
+soal; Área: linha de 60m ou duas 
+linhas de 30m; Duração: instantâ-
+nea; Resistência: Reflexos parcial.
+Um golpe vindo dos céus risca o 
+campo de batalha. Se escolher duas 
+linhas, cada uma deve seguir em 
+uma direção diferente, criando um 
+corte em “V”. Criaturas na área 
+sofrem 12d8 pontos de dano de luz 
+(ou 12d12, se forem mortos-vivos) 
+e ficam cegas e surdas até o fim da 
+cena (Reflexos reduz à metade e 
+evita as condições).
++3 PM: aumenta o dano em +2d8 
+(ou +2d12 contra mortos-vivos). 
++6 PM: muda a área para uma 
+linha de 120m ou quatro linhas 
+de 30m em direções opostas, 
+formando um “X”.
+Momento de Tormenta
+Universal 2 (Convocação)
+Execução: completa; Alcance: pes-
+soal; Área: cubo de 30m; Duração: 
+sustentada; Resistência: veja texto.
+
+============================== PDF PAGE 406 (Book page ~405) ==============================
+405
+A critério do mestre, a magia Conjurar Mortos-vivos pode 
+ser usada para invocar outros tipos de mortos-vivos, 
+usando os aprimoramentos descritos a seguir.
++2 PM (Apenas Arcanos): em vez de esqueletos, 
+conjura soterrados. Requer 3° círculo.
+Soterrado: como esqueletos, mas causam dano de frio. 
+Além disso, criaturas atingidas por um soterrado devem 
+passar num teste de Fortitude ou ficam enredadas por 
+1 rodada.
++3 PM: em vez de esqueletos, conjura fúrias de Tauron. 
+Requer 3º círculo.
+Fúria de Tauron: como esqueletos, mas têm tamanho 
+Pequeno, deslocamento de voo 12m, a habilidade 
+incorpóreo, Des 5, Defesa 18 e causam 1d6 pontos 
+de dano de trevas mais 1d6 pontos de dano de 
+fogo. Além disso, criaturas vivas atingidas ficam 
+Conjurar Mortos-vivos: Novos Aprimoramentos
+desprevenidas por 1 rodada e em chamas (Fort CD 
+igual à da magia evita).
++3 PM (Apenas Devotos de Arsenal): em vez 
+de esqueletos, conjura guerreiros perpétuos. Requer 
+3º círculo.
+Guerreiro Perpétuo: como esqueletos, mas têm For 5, 
+Des 4, Defesa 33, a habilidade incorpóreo e causam 
+3d6 pontos de dano de impacto duas vezes por ação.
++3 PM (Apenas Devotos de Sszzaas): em vez de 
+esqueletos, conjura zumbis peçonha. Requer 3º círculo.
+Zumbi Peçonha: como esqueletos, mas têm For 3, Des 1, 
+Defesa 25 e causam 1d8+1 pontos de dano de trevas 
+mais perda de 2d6 PV por veneno. Além disso, criaturas 
+atingidas por um zumbi peçonha ficam atordoadas por 
+1 rodada (apenas uma vez por cena) e depois fracas 
+(Fort reduz para fracas por 1 rodada).
+Uma nuvem rubra surge acima do 
+conjurador. Uma vez por turno, você 
+pode gastar uma ação de movimento 
+para fazer a nuvem manifestar um 
+dos fenômenos a seguir.
+Chuva ácida. Gotas corrosivas cau-
+sam 6d4 pontos de dano de ácido 
+em todas as criaturas na área.
+Neblina venenosa. Uma neblina faz 
+com que todas as criaturas na 
+área percam 2d12 PV por veneno 
+(Fortitude evita).
+Raios escarlates. Até 6 inimigos ale-
+atórios na área sofrem 6d8 pontos 
+de dano de eletricidade (Reflexos 
+reduz à metade).
+Pesadelos reais. Cada criatura na área 
+sofre 4d6 pontos de dano psíquico 
+e perde 1d4 PM (Vontade reduz o 
+dano à metade e evita a perda de PM).
+Esta magia só pode ser aprendida e 
+lançada por conjuradores que tenham 
+observado uma área de Tormenta 
+pelo menos uma vez. Sua divulgação 
+é proibida e seu uso é permitido 
+apenas em áreas controladas na 
+Academia Arcana e outros lugares 
+restritos, para estudar o fenômeno 
+da Tormenta. Usar esta magia em 
+qualquer outro ponto do Reinado é 
+um crime enquadrado na décima-pri-
+meira infração do Vigintílogo.
++3 PM: aumenta o dano em +1 
+dado do mesmo tipo.
++5 PM: além do normal, criaturas 
+na área ficam alquebradas enquanto 
+permanecerem na área.
++5 PM (Apenas Devotos de 
+Aharadak): muda a área para 
+círculo de 1km de raio. 
+Transformação em Dragão
+Arcana 4 (Tr ansmut ação)
+Execução: completa; Alcance:  
+pessoal; Alvo: você; Duração:  
+sustentada.
+Esta magia invoca o poder de um 
+dragão, causando mutações no 
+conjurador que o tornam semelhante 
+a uma criatura dracônica. Você 
+recebe +2 em Força, Constitui -
+ção, Inteligência e Carisma (esse 
+aumento não oferece PV , PM ou 
+perícias adicionais), +5 na Defesa 
+e redução 30 contra o elemento do 
+sopro do dragão cujo componente 
+material você usou. Uma vez por 
+rodada, você pode gastar uma ação 
+padrão para exalar um sopro que 
+causa 8d6+8 pontos de dano do ele-
+mento correspondente em um cone 
+de 9m (Reflexos reduz à metade). 
+Componente Material: uma peça de 
+couro de dragão ou uma escama de 
+dragão no valor de T$ 1.000.
++2 PM: aumenta o dano do sopro 
+em +1d6+1.
++2 PM: aumenta o bônus na Defesa 
+em +1.
++6 PM: além do normal, asas de 
+couro brotam de suas costas. Você 
+recebe deslocamento de voo 18m.
++3 PM: você recebe uma arma 
+natural de mordida (1d6, crítico x2, 
+corte). Uma vez por rodada, quando 
+usa a ação agredir para atacar com 
+outra arma, você pode gastar 1 PM 
+para fazer um ataque corpo a corpo 
+extra com a mordida. Se já possuir 
+uma mordida, em vez disso seu 
+dano aumenta em dois passos.
++3 PM: o bônus em atributos se 
+torna +4.
+
+============================== PDF PAGE 407 (Book page ~406) ==============================
+406
+lista de Apoiadores
+Ace Barros • Adrian de Oliveira Araujo • Adriano “Bun3K0” • Aguiar • Akkiel Art • Alan Cardoso Quirosa • Alan Felipe Ferreira • Alan 
+Santos • Alessandro Wellington Martins Serapião Silva • Alexandre Sarmento • Alexandre Signori • Alexsander Cardoso de Oliveira • Allan 
+Vieira • Allanjsp • Allyson Vitor • Alone Karasu • Altair Seis • Altemar Almeida Silva • Amarildo Marinho de V . Júnior • Amaro Peixoto Neto 
+• Ana Giovannetti • Anderson Bombardelli • Anderson Nunes Machado • André Guilherme • André Gustavo Carvalho Campanhã • André 
+Leonel Fernandes • André Luiz Velar Santos • André Marski • André Riella • Angelo de Vargas Correa • Antoni Quequetto • Arasfin D’Auriem 
+• Ariane Thiele • Ariel Leonardo Alencar Leitão • Arito Araújo • Armada de Vectora • Arthur Fanini Carneiro • Arthur Guilherme Barreiros 
+• Arthur Santana Calderon • Arthur Teixeira • Artur Albuquerque • Asthonc • Astrodoufo P . • Aubrey Leonelli • Aury de Oliveira Filho • 
+Babi Amaral • Balter Gaspar • Bedaque • Bernardo Augusto Gonçalves de Cerqueira • Brunna Fernanda Freire Bezerra da Cruz • Bruno Araujo 
+Barros • Bruno Artur • Bruno Carvalho • Bruno de Jesus Farias Silva • Bruno Esteves • Bruno Leão Pereira • Bruno Milão • Bruno Noguerol 
+• Bruno Oliveira • Bruno Pacheco Lopes da Silva • Bruno Passuello • Bruno Perissotti • Bruno Thomé Borghi • Bruno Trejes • Bryan Proença 
+Ferreira • Cadu Colan • Caio Gennari • Caio Peixoto • Caio Santiago • Caio Torres • Caio Vinícius Borges da Silva • Camillo F Franco • Carlos 
+Bruno Lemos • Carlos Frederico Ferreira do Monte Veiga • Carlos Henrique Santos do Carmo • Cassiano Cordeiro Alves • Cassio Segantin 
+Garcia • Cassius Nunes Fucilini • Cauan Marques Batista • Cauê Cunha • Chadbullet • Chiappri • Clayton Kirchleitner • Cléo Fernando 
+Martins Machado • Cleyton da Silva Nery • Clonerpg • Crisley Duarte • Cristiana Sbardella Tamamoto • Dan Galahad • Daniel Guimarães • 
+Daniel Silveira de Lemos • Danilo Nóbrega Benicio • Danilo Santos • Danilo Silva do Nascimento • Dannilo Silva • Darkest Warriors • David 
+Ribeiro Moreira • David Ross Wright Ferreira Domingues • Deryk Souza • Diego “Drugue” Queiros • Diego de Niro • Diego Gregório de 
+Castro • Diego Lopes • Diego Sala • Dion do Casas E Humanos • Djonathan Metelo • Douglas Nascimento • Duarte • Duda Vila Nova • 
+Edson Mielker Júnior • Edu Moraes • Eduardo Cayto Oliveira da Silva • Eduardo Chagas • Eduardo Lemos • Eduardo Lucas • Eduardo Lucena 
+• Eduardo Martinez • Eduardo Rodrigo da Cruz • El Bandana • Elder Costa • Eliberto Luiz • Elton Sabbrac • Emanoel “Uz Calvuz” Frota • 
+Emanuel Victor Brebal • Enzo Emanuel • Eric Souza • Erick Barros • Erick Danny Goulart Oliveira • Everton Francisco • Fábio Cunha Braga 
+• Fabio Junior • Fábio Pinto Machado • Fabio Regis • Fabrício Silva de Amorim • Fabrícius Viana Maia • Fagner Ferreira • Felipe do E. Santo 
+• Felipe Franco Cesar • Felipe Melo • Felipe Vilarinho • Felipe Wellington • Fernando Amaro Linhares • Fernando Júnior • Fernando Silva 
+Lima • Filipe Itagiba • Flávio Augusto de Menezes Rodrigues • Flavio Felix Jr • Francisco Lucas Silva Bezerra de Andrade • Francisco Otavio 
+Nascimento Lima • Fred Carneiro • Frederico Roque Abreu Nogueira • Gabriel • Gabriel Almeida • Gabriel Amaral Abreu • Gabriel Beghelli 
+• Gabriel Bomfim • Gabriel Bonz • Gabriel de Almeida • Gabriel de Oliveira • Gabriel Felipe • Gabriel Gasperini • Gabriel Gonçalves Mattos 
+Santini • Gabriel Lupp • Gabriel Marques • Gabriel Oliveira • Gabriel Rech “Recherzia” • Gabriel Santos • Gabriel Spok • Gabriel Veit • 
+Gabriel Xavier • Giordano Havel • Giovani dos Santos • Giovanni Silva Rizzi • Gislayne Vernillo • Glauber Isaias Pinheiro Dantas • Guilda 
+Cinzas da Fênix • Guilherme Albanez • Guilherme Ansante Alayão • Guilherme Barwinski • Guilherme Batista • Guilherme da Silva Castro 
+• Guilherme França Moreira • Guilherme Lopes de Camargo • Guilherme Willer • Guilherme Zambelli • Gustav Beier • Gustavo “Starboy” 
+• Gustavo Almeida Caldas • Gustavo Amaral Miranda • Gustavo Freire Schafhauser • Gustavo Jardim de Souza • Gustavo Pazeto • Gustavo 
+R. Grosch • Gustavo Yukio Hayashida • Gustavo Zwicker • Henrique Foster • Henrique Martins • Henrique Moryta • Henrique Rodrigues • 
+Henrique Rorato • Herick Vinnycius • Hetdan Cassimiro • Higor M. L. Deni • Huggo Henrique Alves • Hugo Persechini • Humberto Quirino 
+• Idelto Costa • Igor • Igor de Faria Porfírio • Igor Rosa de Melo • Igor Santos • Ingrid Candy • Ismael Alcântara da Silva • Italo da Silva • Its 
+Sounds Grape • Ivan Almeida da Silva • Ivan Paiva • Ivan Zanutto Bastos • Jackson Callado • Jão Paulo • Jean Carlos Alves dos Santos • 
+Jeferson Kolling • Jefferson Ap. Silva • Jefferson Nunes Silva • Jeovany Nascimento • João Guarçoni Brito • João Henrique dos Anjos Cardoso 
+• João Lucas Rodrigues da Silva • João Maia • João Marcos B.R. • João Paulo Pereira de Jesus • João Pedro Areco Jorge • João Vicente Prior 
+Kraemer • João Vitor Ranzeti da Silva • João Vitor Scandaroli Balieiro • Joaquim Gonçalves Guimarães Junior • Johanes Skyler • Jonas Lima 
+• Jonatas Monteiro Fernandes • Jonathan Nicolas Corrêa • Jorge Azevedo • Jorge Guilherme Xavier • Jorge Ramos • José Licio S. da C. Jr. • 
+José Vitor de Oliveira Santos • Joseph Oliveira • Júlio N. S. Filho • Kahpyrotus • Kapo • Karen Soarele • Kefferson • Keven Carvalho • Kittzu 
+• Klaus Gunther • Kpistrano • Krysthian Magnus • Leandro Carvalho • Leandro Miranda • Leonardo “ Ahnão” Domingues • Leonardo Afonso 
+• Leonardo Bonfim Silva Reis • Leonardo Leite • Leonardo Mendonça da Silva • Leonardo Neri Souza Oliveira • Leonardo Ogama • Lores 
+Siqueira • Lucas Bastos Periera • Lucas Batista da Silva • Lucas Cassiano • Lucas Freire • Lucas Gabriel Cardoso Alves • Lucas Jaques • Lucas 
+Marconi Brito • Lucas Otaviano • Lucas Paragod • Lucas Piovesana • Lucas Senra • Lucas Serrano de Andrade • Luís Vítor Oliveira Antunes 
+• Luiz Braun • Luiz Felipe Aguinsky • Luiza de Andrade Silva • Lux D’Arc • Lyon Gaultier • Marcelo da Cruz • Marcio Pagliarde • Marco 
+Antonio Fogaça • Marco Ferreira • Marco Hungria • Marco Monteiro • Marcos Banachi • Marcus  Vinicius Lima Sousa • Marcus Vinicius 
+Barbosa • Marlon Kierecz • Master Booey • Mateus A2S • Mateus Brasil Miranda • Matheus Bonfim • Matheus Carlos de Souza • Matheus 
+Curzel • Matheus da Silva Reis • Matheus Farias • Matheus Felipe G Piãotquewicz • Matheus Lemos. • Matheus Luchini Dutra • Matheus 
+Repiso Vieira da Rocha • Matheus Ulisses Xenofonte • Mauricio A de S Oliveira • Maury Abreu • Me’Ah Azdra • Michael Serra • Mizoumiqui 
+• Morndraug Rhîwion • Nathan Mihael Tomelin Eggert • Neoark- Guilda dos Caçadores Ark • Nickolas Daniel Santos Bento • Nicolas Mateus 
+Salvador Pereira • O Serju • Omar Geraldo Lopes Diniz • Os Mal Aventurados • Otávio Barbosa Pereira • Pablo Pochmann • Papyrus Gameplay 
+Nível 1
+venceram a iniciativa
+ 
+livro que você tem em mãos foi produzido a partir do financiamento coletivo 
+#ColecaoArton, realizada de maio a junho de 2023. A seguir estão os nomes 
+de todos que fizeram parte dessa história.
+Nível 1
+O
+
+============================== PDF PAGE 408 (Book page ~407) ==============================
+407
+• Patrick da Silva Barcelos • Paulo Fernandes • Paulo Lorenzo • Paulo S. A. Júnior • Paulo Segundo • Paulo Silva • Paulo Vitor Coelho • Pedro 
+Átila Moreira Simões • Pedro Cícero Eduardo Nesso • Pedro Feio • Pedro Fortini • Pedro Giannini • Pedro Henrique França • Pedro Maciel • 
+Perdigotinho Br • Péricles da Cunha Lopes • Picles de Kally • Rafael Alves de Oliveira • Rafael Augusto Rocha Maia • Rafael Breia • Rafael 
+Brito • Rafael Chagas Vieira • Rafael Cruz • Rafael da Silva Zanobine • Rafael de França • Rafael de Jesus Alves • Rafael Galdino • Rafael 
+Peleteiro • Rafael Pessoa • Rafael Ribeiro • Rafael Rodrigues Michetti • Rafael Souza • Rafael Vinicius Pita • Ramon Ragne Rodrigues dos 
+Santos • Ramon Trevizan • Ramonfreitas Monteiro • Ranieri Gadelha • Raoni Pires • Raphael Carvalho Souza Rodrigues • Raphael Loureiro 
+• Raphael Montero • Raul Natalejr • Raumi Niji • Raziel • Renan Costa Viana • Renan de Freitas Testa • Renan Henrique • Renarte Dantas 
+• Renato Caio Iezzi • Renato Luis de Alencar Caldas • Ricardo Mioshi • Ricardo Rc • Ricardo Rique • Ricardo Rodrigues de Araujo • Ricardo 
+Tristão Porfirio • Roberto • Roberto Melo • Robson Maciel • Rodrigo Fernandes de Freitas • Rodrigo Mendonça • Rodrigo Monteiro • Rodrigo 
+Nabais • Rodrigo Rodrigues • Rodrigo Santos da Silva • Roni Marques • Rosinha Fernandes • Ruina do Tempo • Rulho • Ryu Silva • Salomão 
+Barreira Santiago • Samuel Hamilton Belém Cruz • Sanderson Goes • Sandro Duarte • Sandro Menegon • Sávio Henrique Araujo Guimarães 
+• Sávio Linhares • Sedryc Rodrigues • Septimus de Carvalho Meneses Júnior • Sergio Chagas • Seventhorc042 • Sim • Simone T uzi • Snam 
+• Solano Pereira D’Oliveira • Sumato • T . K. Pereira • Taigo Brito • Tais Baierle • Talis Uelisson da Silva • Tayguara Ferreira • Tayrone Duque 
+Esteves • Thales Sousa dos Santos • Thiago • Thiago de Mello • Thiago de Souza • Thiago Fernandes Borges • Thiago Glayner Cunha Rodrigues 
+• Thiago Pereira • Thiago Ucelli de Miranda • Thiago Viana • Tiago “Sephblade” Ribeiro • Tiago Alexandrino • Tiago Marques • Tiago 
+Resemblink • Valdemar de Carvalho Cunha • Valkarya de Pelotas • Vanguarda Rompe-Tempestade • Victor Burkert • Victor Paceli • Victor 
+Rocha • Vilto Reis • Vinicius Bird (Bird) • Vinícius de Jesus Gonçalves • Vinicíus Dias • Vinícius Gomes • Vinicius Jordão • Vinícius Polachini 
+Mayer Freitas de Jesus • Vinicius Sousa Araujo • Vinícius Titae • Vitor F . Almeida • Vitor Felicio • Vitor Godoi Mendes • Vitor Martinussi • 
+Vitor Mello • Vítor Nascimento • Vítor Pochmann • Vitor Resende Santos • Vitor Sanches • Wallace Fagundes Lopes • Wellington Barros 
+Moraes • Welton Oliveira • Wesley Soares Alves da Silva • Weslley Felix • Whitewolfsnows • Wicttor Picanço Rios • William Ulisses Barbosa 
+• Willian Marques da Silva • Willian Pereira • Winardlley Nardson Lima • X Burg • Yago17F • Ygor Panta • Yuri Palla Spagnol • Yuri Pugliesi 
+• Zyrotot
+A Guarda da Noite • A Patota de Valkaria • Adalberto Oliveira • Adnan Soler • Adriano Barros • Adriano Ribeiro • Airton Munhoz 
+Vieira • Alberto Calil Elias Junior • Alessandry • Alex “ Allidan” Prado • Alex Avilez • Alex Seraphim - Zeta • Alex Souza de Azeredo 
+• Alexander Fernandes • Alexandre Fonseca • Alexandre Mainenti Leal Lopes • Alexandre Mori • Alexandre Petean Arena • Alexandre 
+Rezende Ribeiro • Alexandre Santos Marques • Alvaro Junior • Anauã Mota • Anderson Costa Rodrigues • Anderson de Mello Ogliari 
+• Anderson The Joker • Anderson Veiga Sales • Andre Abreu • André do Valle Medeiros • André Higuti • André Luiz Alves dos Santos 
+• André Macedo Matos • André Machado (Iscúter) • André Pontes • André Verol • Andrei Fernandes • Andrei Gabriel Caprioli • 
+Andrey Kenji Takaki • Angelo Severo • Antônio Barbosa de Lima Neto • Antônio Fernandes • Antônio Márcio Pereira • Antonio 
+Mourão • Antonio Rodrigues Pereira Neto • Apio • Araujo Capslock • Arcana Soul • Ariel Alves Dutra • Arthur 9S • Arthur Cantuaria 
+• Arthur de Andrade Arend • Arthur Endres Daher • Arthur Indrath • Arthur Nagae • Arthur Navarro • Arthur Ribeiro de Souza 
+Lima • Arthur Santos do Nascimento • Arthur Vilela • Artonrockers • Artur “T uxo” Esteves • Augusto Rückert • Augusto Torres dos 
+Santos • Axel Junior • Axl “Darth” Fontes • Bárbara Cristina Rossalli Rocha • Bernardo Silveira Freitas • Breno Berardo Monteiro • 
+Breno Taveira • Brule Bassani • Brunno Rett • Bruno Boffo Locatelli • Bruno Brinca de Jesus Limeira • Bruno Emerson Furtado • 
+Bruno Fernandes Alves Junior • Bruno Henrique Godoi • Bruno Júnior Silas dos Santos • Bruno Lenzi • Bruno Rech de Oliveira • 
+Bruno Resende Machado • Bruno Rivera • Bruno Rocco • Bruno Silva • Bruno Teixeira Maldonado • Bryan Sousa de Oliveira • Cadu 
+Areia • Cainã Morellato • Caio Grangeiro Ferraz • Caio Penning • Caio Vinícius • Caleo Pires Bittencourt • Camila Rosa • Carlos 
+Haefliger • Carlos Henrique de Araujo Sousa • Carlos T . Grillo • Cássia Kelly Santos Barbosa • Cássius Great • Cesar Hitos Araujo 
+• Cesar Monteiro • César Ricci • Cian Barreto • Cláudio Chill Lacerda • Clênio Paulo Resende • Clóvis Amaral Matzembacker • 
+Cristiano “Leishmaniose” Delira • Dan Cruz • Daniel “Heukjo” Toledo • Daniel “Talude” • Daniel Alves Vieira • Daniel Bonaldo • 
+Daniel Coutinho • Daniel da Silveira Ferro Campos • Daniel Diego Lacerda Cirilo • Daniel Esdras de Andrade Uchoa • Daniel Folador 
+• Daniel Freitas Gonçalves • Daniel Maprelian • Daniel Poleti • Daniel Quintanilha • Danielle Fredini • Danilo Batista da Silva • 
+Danilo G Muniz • Danilo Henrique Fonseca Menezes • Danilo Medeiros de Farias • Danrley Quisinski • Davi de Lima Cecilio • Davi 
+Jucimon • Davi Nóbrega • Davi Rios Valdez • Davi Taumaturgo • David Loures • David Trindade Galiego • Débora Mazetto • Denis 
+Pinto Barboza • Diego Alves da Silva • Diego dos Santos Frota Fernandes • Diego Henrique • Diego Matos Moura • Diogo Boccardi 
+• Dojuan • Douglas Inacio de Moraes • Douglas Monteiro de Castro • Douglas Toseto • Dyego Medeiros • Eccher Gabriel • Éder Gil 
+• Edgar Parra dos Santos Rocha • Eduardo “Sushizinho” Dias Fernandes Filho • Eduardo Fabro • Eduardo O. Lazzarotti • Eduardo 
+Oliveira Schimidt • Eduardo Seguro • Eduardo Veiga • Eduardo&Gabriela Rocha • Emerson Henrique da Silva • Eno-Brad • Eric 
+Ellison • Erick Ferreira • Érico Alexandre • Erike Victor S da Silva • Estêvão Rendeiro • Eugênio Paiva Filho • Everaldo Anjodatormenta 
+• Ewerton Bernardes Souza Gomes • Ezequiel Alves / Luiz Felipe Magalhães. • F . Valverde Rodriguez • Fabinho Machado • Fabio 
+Candido • Fabio Elizeire da Cunha • Fábio Frazão • Fabio Pombo Freitas • Fábio Silva Marques • Fabrício Costa • Fabricio Moreira 
+de Abreu da Costa • Fagner Meurer • Felipe “Grimmnir” Brito • Felipe Albergaria Cendón • Felipe Brasil • Felipe Cavalcante • Felipe 
+Cesar • Felipe Eleutério Hoffman • Felipe Inada • Felipe Leal Campos de Freitas • Felipe Lisboa • Felipe Molina Garcia • Felipe 
+Nogueira (Sutando Tsukai) • Felipe Oliveira • Felipe Paes Leme • Felipe Peinado • Felipe R. Brasil • Felipe Respeita • Felipe Soares 
+• Felype Barcellos • Fenax • Fernando “Fellearon” Dutra • Fernando “Huligin” Moura • Fernando Bilhiere • Fernando Brauner • 
+Fernando Henrique Filgueira Martins • Fernando Ribeiro • Fernando Wecker • Filipe Ferreira Podolsky Ballespi • Francisco Teixeira 
+• Franklyn Varzon • Franz Andrade • Frederico Luis Lima Rosa • Gabriel “Pitre” • Gabriel Abreu • Gabriel Almeida Braga Fernandes 
+• Gabriel Barroso Mirço • Gabriel Carvalhido • Gabriel Dargains • Gabriel de Oliveira Alves • Gabriel Isoton Pistorello • Gabriel 
+Lordones • Gabriel Martins (Muinoob) • Gabriel Matavelli Nicolini Teixeira • Gabriel Moreira • Gabriel Patricio dos Santos • Gabriel 
+Patzer • Gabriel Prado (@Hermod_Studio) • Gabriel Santos • Gabriel Santos Passos • Gabriel Vandarte Casadei • George Neto • 
+Ghoppe • Giuliano Peluso Marques • Gladson Duquet Hiboe Caldas • Glauco Schmitt • Gmuhrof • Gregorio de Almeida Fonseca • 
+Groxo! • Grupo Não Sabemos Que Sexta! • Guilda Chronos • Guilda do Elo de Fogo • Guilherme (Red_Ninja8) • Guilherme Alvarez 
+Rodrigues• Guilherme Amato Marinho • Guilherme Barbero Alves • Guilherme Batista das Dores • Guilherme Boareto • Guilherme 
+Correa Virtuoso • Guilherme Dias de Oliveira Ferreira • Guilherme Freires Alves • Guilherme Gambera Giannucci • Guilherme 
+venceram a iniciativa
+Nível 2
+
+
+============================== PDF PAGE 409 (Book page ~408) ==============================
+408
+Guimarães • Guilherme Knecht • Guilherme Lopes • Guilherme Menezes Rodrigues • Guilherme Moraes • Guilherme Morato • 
+Guilherme Moyna • Guilherme Nascimento • Guilherme Pires • Guilherme San Martins • Guilherme Tenório Rosalem da Silva • 
+Gustavo Araújo Mariano • Gustavo Augusto Buzineli • Gustavo Barbosa • Gustavo Bortone Guimarães • Gustavo Conopca Lievore 
+• Gustavo Faillace de Amorim • Gustavo Foletto • Gustavo Machado de Freitas • Gustavo Mijoler • Gustavo Moreira Magalhães • 
+Gustavo Pochmann Paim • Guto • Guto Leite • Hanani Tallyson • Harrison Yunes • Heat Diamond • Hebrano Gabriel • Hector Soares 
+Zimmermann • Hélio Albino • Hélio Brito • Henrique Ceron Netto • Henrique Estevam de Matos • Henrique Ramos • Henrique 
+Rodrigues da Silva • Herik Giammaria • Hortência Diniz • Hudson “ Acimerick” Doria • Hudson Silva • Hugo Melo • Hugo Pitanga 
+• Hugo Yuri Tordin Dantas • Humberto Meale • Hunter Porto • Hyperion David • Iago Souza da Costa • Ian Hashimoto • Ian Leite 
+• Iarley Lobo • Ícaro Holanda de Aguiar • Ícaro Santana • Ignacio Coqueiro Schroeder • Igor ‘’Maisel’’ Lopes • Igor Castelo • Igor 
+de Souza Mendes • Igor Henrique Fernandes de Araújo • Igor Santos • Íris Firmino Cardoso • Irmandade do Gatomacaco • Irmão do 
+Geogeo • Isabelle Arcanjo • Isla Santos • Israel Silva • Italo Braga • Italo Lima • Jackson Luiz Rosa • Jacqson Santos • Jáder Tófoli 
+• Jameson Silva • Jane Kelly Passos da Silva • Jardel Florencio • Jean Ricieri • Jef Ferraz • Jeferson Rodrigues • Jefferson Brito • Jersey 
+Kakashi • Jhonny Campos de Britto • Joan Silva Guedes de Souza • João “Kodashi” Oliveira • João “Mestre Pepino” Kreusch • João 
+Carlos Souza Junior • João Colisse • João de Arina • João Heytor • João Lucena • João Moisés Bertolini Rosa • João Pedro Duarte 
+Martinez • João Policastro • João Severo • João Victor Lessa • Joelson Souza • Jonas Araujo • Jonas Custódio • Jonathan Rodrigo 
+Sousa Santos • Jonathas Loro Leal • Jones Souza • Jorge Alberto • Jorge Augusto Souza • Jorge Machado • José R. Cerqueira • José 
+Taveira • José Vagner Ferreira dos Santos Júnior • Josevan “Nino” Silva • Julio Cesar M. Di Giovanni • Julius E O Diamante Inquebrável 
+• Julius Vieira • Jurossimples • Jv Mendonça • Kaike Salim • Kaio Felipe • Katiucha Barcelos • Kelly Trindade • Kellyanne Pontes 
+Cordeiro • Khayo Honorato • Laíse Britto • Lamarck Heinsch • Laybson Plismenn • Lê Santos • Leandro Colissi • Leandro de França 
+Moreira • Leandro Jose dos Santos • Leandro Saioneti Santos • Leif Breno • Lena Freire • Leonardo “Kairos” Bezerra • Leonardo 
+Agulhari Alonso • Leonardo Cerbarro • Leonardo Cesário Abdala Tavares • Leonardo Graboski Lutz • Leonardo S. Trevisan • Leonardo 
+Souza de Moura • Lhavif Jogesk • Linderval Pereira Soares Júnior • Lipin Melo • Logan Fábio • Luan Angeli • Luan de Carvalho • 
+Luan Ferreira Lima • Luan Manavello Pedroso da Silva • Luan Oliveira Rpg • Lucas “Lokisora” • Lucas Barbosa Lins • Lucas Barcellos 
+• Lucas Barroso • Lucas Batman • Lucas Coutinho • Lucas Cunha • Lucas de Freitas • Lucas dos Santos Wahl • Lucas Estoller • 
+Lucas Evangelista • Lucas Felipe Vieira • Lucas Ferreira • Lucas Figueiredo • Lucas Giannella • Lucas Henrique Silva • Lucas Leal 
+da Silva • Lucas Manfredini Cordeiro Vaz • Lucas Metropolo • Lucas Sá Teles dos Anjos • Lucas Tavares Juns dos Santos • Lucas 
+Travessin de Sá • Lucas Valentim Berganton Câmara • Lucas Venega dos Santos • Luciano Dias • Luciano Vellasco • Lugh Iborath • 
+Luiz Braz da Silva Junior • Luiz Carlos dos Santos Giordano • Luiz Eduardo Giacon • Luiz Fernando de Macedo Curi • Luiz Mauro 
+Maciel • Lukas Wyllis Louza de Oliveira • Maccloud • Marcel Ribeiro-Dantas • Marcello Guerreiro • Marcelo  Sanfins • Marcelo 
+Augusto Amin Correia • Marcelo Henrique da Silva • Marcelo Pereira Neves • Marcelo Rodrigues • Marcio Machado Matos • Marco 
+Antonio Linares • Marco Aurélio Figueiredo • Marco Palhares de Barros • Marcos Andrade Marques • Marcos Bandeira • Marcos Céo 
+• Marcos Rodrigo dos Santos • Marcos Souza Leite Junior • Marcos-San • Marcus Alves Pedrosa Júnior • Marcus Rosado • Marcus 
+Vinícius Kleiman • Marina Kunst • Marina Lima • Mário Brandes Silva • Mário Torres • Mark Nog • Markus Fergomsi • Marlos C. 
+Machado • Marvin “Elias” C. Melo Soares • Mateus Barreto • Mateus Cabral dos Santos • Mateus Queiroz • Mateus Schmitz Venturini 
+• Matheus Colidio • Matheus Esteves Vargas Liguori • Matheus Fernando Silveira • Matheus Gomes Augusto de Oliveira • Matheus 
+Hilário • Matheus Maciel • Matheus Marian • Matheus Martins de Sousa • Matheus Pereira Gondim • Matheus Pires Vrechi • Matheus 
+Veloso • Maurílio Bonora Jr. • Max Cal. • Meowchado • Mesa Em Conflito • Mestre Zigui • Mestreoogway12 • Michele Tainara Flores 
+Corrêa • Miguel Alvarez • Miguel Bessa • Miguel Eduardo • Miguelito • Mike Mike • Mochila de Criança • Murilo Lamegal • Murilo 
+Rodrigues • Mylena Machado • Nahibs • Natã Rossi Milhomem • Natan Fernandes • Nestor Moreno • Nicholas Santana Santos • 
+Nick Scabello • Nicolas Fukuyama • Nicolas Vieira • Nomias • Odilon Santana Neto • Odmir Fortes • Orlando Rodrigues Maltaro • 
+Os Piratas de Mirrah • Os Sem Saida E A Mestra Lady Purple • Pablo Garcia Schuabb • Patrick Eloize • Pattrick Pinheiro • Paulo 
+André • Paulo Eduardo • Paulo Eduardo R. Sousa • Paulo Felipe Gonzalez Lopez Rodrigues • Paulo Henrique • Paulo Henrique Farias 
+dos Santos • Paulo Henrique Freire Ribeiro de Santana • Paulo Henrique Mesquita de Oliveira • Paulo Jr • Paulo Nadal Pupo • Paulo 
+Reis • Paulo Victor de Souza Simão • Paulo Weber Louvem Gomes • Pedro Barbosa • Pedro Daniel Corrêa Ferreira • Pedro Henrique 
+Eliseu Mota • Pedro Henrique Leite Gomes • Pedro Iwai • Pedro Licursi • Pedro Lima • Pedro Lopes de Souza • Pedro Mamede • 
+Pedro Martins - Firchens • Pedro Netto • Philipe-Moebogass • Philippe Correia • Pietro Borges Tiecher • Pietro Vicari • Pkn Lucas 
+H. • R. Souza • Rafa Duarte • Rafael Baldo • Rafael Barreto de Meneses • Rafael Cardoso Steiner • Rafael de Melo Ferreira Monteiro 
+• Rafael Lopes Galdino • Rafael M Telerman • Rafael Machado • Rafael Marréga Rezende • Rafael Noguchi • Rafael Papa • Rafael 
+Saldanha • Rafael Thiele Galarza • Raíssa Areal • Rakaze • Ralf Damasceno • Ramon Assis • Ramon Cruz • Ramon Soprani Alves 
+Dias • Raony Borges • Raphael Albuquerque Cavalcanti Novaes • Raphael Martins Machado • Raul Calixto Gonçalves • Rayan Braúna 
+• Rebeca Pastl • Reggis Ramos • Regis Roque • Renan Augusto Ferreira Soares • Renan Cordeiro Costa • Renan Pereira Gerber • 
+Renan Pin • Renan Sousa Xavier • Renata Gilaberte • Renato Augusto Mazzon Costa • Renato Lima Alves • Renato Luciano de Góis 
+• Renato Mendonça • Renato Nodari • Renato Potz de Oliveira Assis • Renato Ramos da Silva Dantas • Resistência dos Ratos • 
+Rhenan Pereira Santos • Ribeiroth • Ricardo Juliano • Ricardo Malchiaffava • Ricardo Medeiros • Robert da Silva Souza • Roberto 
+Barros Magalhães Numeriano • Robertoamajanis • Robson Bernardes • Rodolfo Assis Lisboa • Rodolfo Machado • Rodrigo ‘Leitordemapa’ 
+Zeymer Auad • Rodrigo “Elfo” Moerira • Rodrigo “Gilgamesh Orby” Francisco • Rodrigo Araújo (Pai da Sarah) • Rodrigo Bandeira 
+• Rodrigo Calejon • Rodrigo Müller Camatta • Rodrigo Salvador • Rodrigo Santos • Rodrigo Schmidt • Rogerio Aparecido Campanari 
+Xavier • Rogerio Basile • Rogerio Buzelli • Rômulo Brasileiro • Ronaldo Ferreira Magalhães Marques • Rubens Andriotta • Ruffus 
+Blackden • Ruslan L. T . Schwab • Ryther Nero • Samuel Batista • Samuel Pedro • Saulo Daniel Ferreira Pontes • Saulo Feitosa • Saulo 
+Paiva • Savieto • Seraphyroth • Sergio Lopes • Sidgley Santana de Oliveira • Silvino Pereira de Amorim Neto • Silvio Inácio da Silva 
+Filho • Silvio Romero Tavares Neiva Coelho • Sonhador Renegado • Suimin Sentai • Sulleman Martiniano • Super Tenorio • Tácio 
+Schaeppi de Lima E Silva • Taguma • Tales Carvalho Pereira • Tassiane Foxy • Tekaz • Tellis Marquini Navas • Tetsu Hagane • Thaian 
+Truci • Thauan Lobianco Rodrigues • Thenessi Freitas Matta • Thiago Alves de Amorim Oliveira • Thiago C Gonçalves • Thiago 
+Escobar • Thiago Felipe Castro Carrenho • Thiago Figueiredo • Thiago Gehrt de Novaes • Thiago Lins Costa • Thiago Rangel • 
+Thiago Teles de Castro • Thierre Cardinelli • Thomaz Ch • Tiago Feltz Cardoso Moreira • Tiago Lima • Tiago Monnerat de F . Lopes 
+• Tito Lívio L F Souza • Tochas Nas Sombras • Tortaretardada • Trololox • Tzo • Vagner Planello • Val Armanelli • Valdo Alves • 
+Valtrudes Júnior Conceição Andrade • Vernon Simões • Vicente Fonseca • Victor • Victor Augusto Soares Gonzalles • Victor Bethonico 
+• Victor Guimo • Victor Hugo Sanvido • Victor Marcell da Silva Rodrigues • Victor Moebus Farias • Victor Pastore • Victória Isoppo 
+• Vinialmanegra • Vinícius Araújo • Vinícius Borian • Vinícius Cayres Salles • Vinicius Figueiredo • Vinicius Guedes da Silva • 
+Vinícius Macuco • Vinicius Mattos • Vinicius Rodrigues de Sales • Vinicius Saburo Spolaor Aguena • Vininityy • Vitor • Vitor Augusto 
+do Carmo Sousa • Vitor Freitag • Vitor Gabriel • Vitor Louzada • Vitor Moraes • Vitor Pombo • Vitor Santos Ferreira • Waldik Rosa 
+• Wallace Rodrigues de Souza • Walter Passos Vasconcellos Neto • Wanderson de Carvalho Leite • Wefferson David • Wellington 
+Almeida • Wellington Morais • Wellington Silva • Welton Gouveia • Wesley Novaes • Wesley Santana • Weslley Schneider Faria 
+Rodrigues • Wilker Sousa • Will Junior • William Araujo Ferreira • Willian de Amorim Camargo • Willian Sagas • Willyann Hipolito 
+Lugli • Xtra Enemies Rpg • Yago Magalhães • Yan Constantino • Yasmin Goulart • Ytalo Viana Suruagy • Yuri Mazzini
+
+============================== PDF PAGE 410 (Book page ~409) ==============================
+409
+venceram a iniciativa
+Nível 3
+A Firma dos Touros Negros • Abraão Maciel Neto • Adalberto Neto • Adriano Chamberlain Neves • Adriano Silva • Alan Carvalho • Álan 
+D. Gomes • Alana Andrade • Alecksander de Souza Oliveira • Alerrandro Adrian • Alex Chang • Alex Cuenca • Alex H. Santos • Alex 
+Sapiência • Alexandra Ramos • Alexandre Bastos • Alexandre Cassemiro Mendes • Alexandre Feitosa • Alexandre Jannuzzi • Alexandre 
+Silva Bueno • Alexandre Ubiali Almeida • Alexandre Vieira Alves • Alexandro Rodrigues • Alexis Cristiano Vilas Bôas • Alexsander Trapp 
+Lessa • Alonso Marinho Horta • Alyeno • Anderson Fortes • Anderson Rosa Cecilio de Oliveira • Anderson Thelles • Andre Alves Soares 
+• Andre Barbalho • André Barrozo • André Botelho • André Dorte • Andre Fernandes Patez Santiago • André Kiyoshi Takahashi • André 
+Luiz Silva de Castro • André Mendo • André Salomão • André Tosta • Andrés Senatore • Andrey de Sousa Sanches • Angelo Castelan • 
+Anito Kerber Junior • Anthony Ramos Rocha • Antonio Cavichiolli • Antonio Mombrini • Ariel Felizardo Goes • Armindo Andrade Sousa 
+Júnior • Aroni da Luz de Oliveira • Arthur Basso • Arthur Breno Silva Rosa • Arthur Gabriel de Freitas Dantas Morais • Arthur Gonçalves 
+• Arthur Harangoso • Arthur Takao Correia Takehara • Arthur Zimmer Dias • Aryandson da Silva • Augusto “Weiss” Duarte • Augusto 
+Seixas Silva • Ayrton Luiz de Souza • Bernardo Andrade • Bernardo de Oliveira Kloss • Bernardo Mendes Barlach • Bertran Evarini • 
+Bethanos • Breno C. Dumas • Breno Costa Fernandes • Breno Filo • Breno Nunes de Sena Keller • Breno Vieira Trovão • Bruna Farias • 
+Bruna Lucchini Gallucci de Souza • Bruna Romagnollo Gonzales • Bruna Torrezan Escudo Furado • Bruno Baruffi • Bruno Belloc Nunes 
+Schlatter • Bruno Bitencourt Oliveira • Bruno Giordano • Bruno Meneghetti • Bruno Pinto • Bruno Rezende de Abreu • Bruno Sargi • 
+Bruno Teixeira • Bruno Veloso • Bruno Vieira • Bruno Vinicius Sanchez de Souza • Brunosteve Canavezi • C410 S4Nt0S • Cadu Nakandakare 
+• Caio Augusto Santos Castro • Caio Caldeira • Caio Mendes • Caio Palhares • Caio S. Lobo • Caio Silva Santana • Caio Vincenzo • Caíque 
+Roxxxal • Carlos Daniel Ferreira da Silva • Carlos dos Santos • Carlos Eduardo Pedrosa • Carlos Gonçalves • Carlos Henrique Mesquita 
+do Prado • Cassio Pereira • Cauã Martins • Cesar Aizawa Peres • Cesar Garrido Aguiar • Cfguimaraes • Chewiechangas • Chorão Beligote 
+• Christian Nogueira • Christofe Cardoso • Christopher Pavan Andrade • Cj Saguini • Claudio Magno de Brito • Claudio Quessada • 
+Cloves Meneghin • Confraria da Liberdade • Covil do Dragão Podcast • Crazytorrada77 • Cristhian Heck • Cristian Drovas • Daniel Andrade 
+Miranda • Daniel Campos Caporossi • Daniel Carcuschinski • Daniel Cavalheiro Serra Verde • Daniel de Castro • Daniel Doria • Daniel 
+Greco Duarte • Daniel L Cohim • Daniel Oliveira • Daniel Ribeiro • Daniel Romero da Escóssia Pinheiro • Daniel Sergio dos Santos • 
+Daniel Torres • Daniel Vantil • Danilo Jaques V . Bonfim • Danilo Martins • Danilo Sampaio • Danyel “Thablo” Pablo • David Torres Offrede 
+• David Walter Santos Barros • Daviz0Rd • Davyson Calazans • Dean Felipe Silva Farias • Débora Maria de Oliveira Borges • Deives Junior 
+• Denilson Medeiros da Silva • Denis Carvalho • Denis Oliveira • Denis Silva • Detoner, O Mago • Diamond Chaos • Diego Adão • Diego 
+Custódio de Souza • Diego Noura • Diogo Weffort de Oliveira Rossato • Djow • Douglas Kaneda do Seborpg • Douglas Lenfers • Douglas 
+Limeira • Douglas Lomar • Douglas Mareli • Dragões Carmesim • Dudu, Mestre da Guilda Sussurros da Tempestade • Dyego Assis • Éder 
+Fialho • Eder Lage • Éderson “Feio” Rodrigues • Edmundo Soares • Edson José Toledo • Edson Shad • Edu Cazorla • Edu Guimarães • 
+Eduardo Cronemberger • Eduardo Gabriel Sebastiany • Eduardo Lucio Paschoalino • Eduardo Nunes Davi de Souza • Eduardo Pavan • 
+Eduardo Wohlers • Eduardo Zimerer • Edvalter Neves • Elias Leite Freitas • Elias S. Silva • Elias Simões • Elias Souza da Silva • Eliezer 
+Longo Zavoli • Elis Rodrigues Oliveira • Elivaldo Sapucaia • Elton Rigotto Genari • Eltonreges Ribeiro • Emerson Sevilha • Emerson 
+Xavier • Endi Souza Ganem • Enzo Murilo Melo Cassimiro • Enzo Scarpatti • Eric Antunes • Eric Araújo Teixeira • Erick “Nick” Hora • 
+Erik de Souza Scheffer • Escudo Furado • Everton Carnelosso • Everton E. de Matos • Exo Ludier (Egm) • Expedição Aos Planos • Fábio 
+Abrão • Fábio Apolônio da Silva • Fábio Baistrochi Cardoso • Fabio Caetano de Souza • Fabio Grile • Fabio Ornelas Costa • Fabio Rögelin 
+Vaz • Fábio Santiago • Fabio Terço • Fabio Zagnoli • Fabricio da Silva Hoepers • Fabrício de Oliveira • Felipe Barros Dantas • Felipe de 
+Souza Macias • Felipe Farinhaw • Felipe Ferreira Mainardi • Felipe Gullo • Felipe Jales • Felipe Lira Fernandes • Felipe Lopes • Felipe Maia 
+• Felipe Perez • Felipe Queiroz • Felipe Rodrigues Ferrari • Felipe Schimidt Tomazini • Felipe Vieira • Fernando Almeida • Fernando 
+Barbosa • Fernando de Souza Alves • Fernando Mateus Ferreira Vale dos Santos • Fernando Soutelino • Fil Mesquita • Filipe Conde • 
+Filipe Moreira Nunes • Filipe Muller Lohn • Filipe Santos • Fiorde Bettega • Flávio Junio • Flora Angella • Francion Claudino Busana • 
+Francisco Ceccon de Lima • Francisco Duque • Francisco José Marques • Frederico Fetter • G Force Farm • Gabriel Assunção • Gabriel 
+Attie • Gabriel Azenha Fachim • Gabriel Bohn Silva • Gabriel Caldieraro Lencina • Gabriel Cartaxo • Gabriel Chagas • Gabriel Cholodovskis 
+Machado • Gabriel da Rosa Hentschke • Gabriel de Oliveira Silva • Gabriel Di Genova Nieto Losano • Gabriel dos Santos Barbosa • Gabriel 
+Feitosa • Gabriel Fontana de Lima • Gabriel M.Miranda • Gabriel Madeira Pessoa • Gabriel Magno • Gabriel Mascarenhas de Souza • 
+Gabriel Mendonça Guilherme • Gabriel Nunes Domingos • Gabriel Rodrigues Cassa • Gabriel Rodrigues Menino da Costa • Gabriel Sales 
+• Gabriel Scarssi Krupp • Gabriel Souza • Gabriel Torres • Galerinha • George Carlos Gonçalves da Silva • Getulio Barros Thiesen • Gil 
+Me Desenha! • Gilvan Gouvea • Giordano Lima • Giovane Araújo • Giovanni Fadiga • Giovanni Raffaele Grosso • Giulia Araújo Chaves • 
+Giuliano Vieira • Glauber Rocha • Gramos • Guasca Rugby Clube • Guilda dos Dragões Mansos • Guilherme • Guilherme da Silva Alves 
+• Guilherme das Neves Teixeira • Guilherme Greschuk Moser • Guilherme Inojosa • Guilherme Lacombe Oliva da Fonseca • Guilherme 
+Luiz de Marchi • Guilherme Marques • Guilherme Morais • Guilherme Nascimento • Guilherme Nobre Bernardo • Guilherme Pinto Reis 
+• Guilherme Ramires • Guilherme Souza • Guilherme Tanaka • Guilherme Tavares Raposo • Guilherme Tolotti • Gustavo “ Autopeel” Estrela 
+• Gustavo Cardoso • Gustavo Chagas • Gustavo Fernandes • Gustavo Gomes • Gustavo Gonçalves Nascimento • Gustavo Harten • Gustavo 
+João Rodrigues Sicchieri Ziotti Pinto • Gustavo Reis • Gustavo Ribeiro Moreira Pestana • Gustavo Rocha • Gustavo S Teixeira • Gustavo 
+Trelha Valério • Hangar do Kowalski • Heitor Pooli Barbosa • Helder “Madclown” Poubel • Helder Isidio Santos da Silva • Helder Pereira 
+• Helljard • Heloísa Zanardi • Helton Garcia Cordeiro • Henrique Andrade Mariani • Henrique da Silva Cardoso • Henrique E Fernando 
+Takeda • Henrique Gavioli • Henrique Gustavo Oliveira • Henrique Kamantschek Watanabe • Henrique Lima • Henrique Milanezi • Herege 
+• Hess Grigorowitschs • Hickpatoloko • Higor Lobão • Hugo Agapito • Hugo Cesar • Hugo Ribeiro da Silva • Hugor Soares de Melo • 
+Iago Giglio • Ian Diniz • Ian Garcia Ribeiro • Ian Henrique Ruviaro Alberti • Igor Luiz Mantovani Rigotto • Igor Nobre Benício • Igor Silva 
+• Igor Vieira Chacon • Ióri Rodrigues Junqueira • Isabelle Dias Sousa • Isac Batista Guilherme • Israel Ivys Giffoni • Israel Pinho • Ítalo 
+Corrêa • Iuri “Meckthi” • Iuri Ullmann • Ivan T urtera • Jansem Targino • Jarbas Trindade • Jean Carlo de Oliveira Lopes • Jean Virginio • 
+Jeferson da Rosa • Jeferson Dantas • Jeffeson Falcão • Jéssica Dorigoni Portugal • Jéssica Niohanne • Jessica Ribeiro • Jeú Anderson & 
+Bernardo • Jhonatam Fernandes Golim • Jhonatas Guelfi • Jhonnatan Guilherme • João “Flamereaper” Breder • João Cabral • João Guilherme 
+“Rypeez” Oliveira • Joao Lobo • João Lucas Iorio da Silva Vieira • João Neto • João Paulo Antenor • João Paulo da Silva Pessoa • João Paulo 
+Maia • João Paulo Marques de Freitas Darkshineider • João Paulo Naldi • João Prates • João Ramos • João Saccoman • João Tavares de 
+Souza Neto • João Victor Pereira de Oliveira Portilho Mello • João Victor Siqueira Perovano • João Vitor Borges Guedes • João Vitor Silva 

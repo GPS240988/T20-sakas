@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Reference PDFs (large documents, keep out of the repo)
+*.pdf
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+
+# Vite cache
+.vite/
