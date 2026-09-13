@@ -1,5 +1,5 @@
-import React from 'react';
-import { X, Bookmark, ExternalLink } from 'lucide-react';
+import React, { useState } from 'react';
+import { X, Bookmark, ExternalLink, Copy, Check } from 'lucide-react';
 import type { 
   T20CanonicalEntity, 
   SpellEntity, 
@@ -10,6 +10,7 @@ import type {
   TreasureTableEntity
 } from '../types/t20_schema';
 import { getEntityById, formatBookName } from '../data/database';
+import { formatEntityToClipboardText } from '../utils/clipboardFormatter';
 
 interface EntityModalProps {
   entity: T20CanonicalEntity | null;
@@ -26,7 +27,16 @@ export const EntityModal: React.FC<EntityModalProps> = ({
   onToggleFavorite,
   onSelectRelatedEntity
 }) => {
+  const [copied, setCopied] = useState(false);
+
   if (!entity) return null;
+
+  const handleCopyContent = () => {
+    const text = formatEntityToClipboardText(entity);
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const renderSpecificDetails = () => {
     // 1. Magia
@@ -157,44 +167,48 @@ export const EntityModal: React.FC<EntityModalProps> = ({
                 <h4 style={{ color: 'var(--accent-gold)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem', fontSize: '0.92rem', fontWeight: '700' }}>
                   💰 Rolagem de Dinheiro (D%)
                 </h4>
-                <table className="treasure-table">
-                  <thead>
-                    <tr>
-                      <th>D% (01-100)</th>
-                      <th>Moedas / Riquezas</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {moneyEntries.map((entry, idx) => (
-                      <tr key={idx}>
-                        <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
-                        <td>{entry.label.replace(/^Dinheiro \(\d{2}-\d{2}%\):\s*/, '')}</td>
+                <div className="treasure-table-wrapper">
+                  <table className="treasure-table">
+                    <thead>
+                      <tr>
+                        <th>D% (01-100)</th>
+                        <th>Moedas / Riquezas</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {moneyEntries.map((entry, idx) => (
+                        <tr key={idx}>
+                          <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
+                          <td>{entry.label.replace(/^Dinheiro \(\d{2}-\d{2}%\):\s*/, '')}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               <div className="treasure-section-box">
                 <h4 style={{ color: 'var(--accent-ruby)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem', fontSize: '0.92rem', fontWeight: '700' }}>
                   🎒 Rolagem de Itens (D%)
                 </h4>
-                <table className="treasure-table">
-                  <thead>
-                    <tr>
-                      <th>D% (01-100)</th>
-                      <th>Equipamentos / Itens Mágicos</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {itemEntries.map((entry, idx) => (
-                      <tr key={idx}>
-                        <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
-                        <td>{entry.label.replace(/^Item \(\d{2}-\d{2}%\):\s*/, '')}</td>
+                <div className="treasure-table-wrapper">
+                  <table className="treasure-table">
+                    <thead>
+                      <tr>
+                        <th>D% (01-100)</th>
+                        <th>Equipamentos / Itens Mágicos</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {itemEntries.map((entry, idx) => (
+                        <tr key={idx}>
+                          <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
+                          <td>{entry.label.replace(/^Item \(\d{2}-\d{2}%\):\s*/, '')}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -204,24 +218,26 @@ export const EntityModal: React.FC<EntityModalProps> = ({
       return (
         <div className="treasure-table-view">
           <h4 style={{ marginBottom: '0.6rem', color: 'var(--text-primary)', fontWeight: '700' }}>Faixas de Sorteio no Dado Percentual (D%):</h4>
-          <table className="treasure-table">
-            <thead>
-              <tr>
-                <th style={{ width: '100px' }}>D% (01-100)</th>
-                <th style={{ minWidth: '180px' }}>Item / Resultado</th>
-                <th>Efeito & Regra Mecânica Completa</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tr.entries.map((entry, idx) => (
-                <tr key={idx}>
-                  <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
-                  <td style={{ fontWeight: '600', color: 'var(--accent-gold)' }}>{entry.label}</td>
-                  <td style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.45' }}>{entry.description}</td>
+          <div className="treasure-table-wrapper">
+            <table className="treasure-table">
+              <thead>
+                <tr>
+                  <th style={{ width: '100px' }}>D% (01-100)</th>
+                  <th style={{ minWidth: '180px' }}>Item / Resultado</th>
+                  <th>Efeito & Regra Mecânica Completa</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {tr.entries.map((entry, idx) => (
+                  <tr key={idx}>
+                    <td className="d100-cell">{entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}</td>
+                    <td style={{ fontWeight: '600', color: 'var(--accent-gold)' }}>{entry.label}</td>
+                    <td style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.45' }}>{entry.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       );
     }
@@ -288,6 +304,13 @@ export const EntityModal: React.FC<EntityModalProps> = ({
             <h2 className="modal-title">{entity.name}</h2>
           </div>
           <div className="modal-header-actions">
+            <button 
+              className={`copy-btn ${copied ? 'copy-success' : ''}`}
+              onClick={handleCopyContent}
+              title={copied ? 'Copiado!' : 'Copiar todo o conteúdo do modal'}
+            >
+              {copied ? <Check size={20} className="text-gold" /> : <Copy size={20} />}
+            </button>
             <button 
               className={`favorite-btn ${isFavorite ? 'favorite-active' : ''}`}
               onClick={onToggleFavorite}

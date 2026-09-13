@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { X, ShieldAlert, Search, ChevronDown, ChevronUp } from 'lucide-react';
+import { X, ShieldAlert, Search, ChevronDown, ChevronUp, Copy, Check } from 'lucide-react';
 
 // ============================================================================
 // Dados canônicos das condições — Tormenta20 (Jogo do Ano), pág. 394–395
@@ -220,6 +220,24 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
     setExpandedIndex(prev => (prev === idx ? null : idx));
   };
 
+  const [copied, setCopied] = useState<boolean>(false);
+
+  const handleCopyContent = () => {
+    const lines: string[] = [];
+    lines.push(`========================================`);
+    lines.push(`CONDIÇÕES DE JOGO (TORMENTA20)`);
+    lines.push(`========================================\n`);
+
+    filteredConditions.forEach(cond => {
+      lines.push(`• ${cond.name.toUpperCase()}`);
+      lines.push(`  ${cond.description}\n`);
+    });
+
+    navigator.clipboard.writeText(lines.join('\n'));
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -236,9 +254,18 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
             </span>
             <h2 className="modal-title">Condições</h2>
           </div>
-          <button className="modal-close-btn" onClick={onClose} aria-label="Fechar">
-            <X size={24} />
-          </button>
+          <div className="modal-header-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button 
+              className={`copy-btn ${copied ? 'copy-success' : ''}`}
+              onClick={handleCopyContent}
+              title={copied ? 'Copiado!' : 'Copiar todas as condições'}
+            >
+              {copied ? <Check size={20} className="text-gold" /> : <Copy size={20} />}
+            </button>
+            <button className="modal-close-btn" onClick={onClose} aria-label="Fechar">
+              <X size={24} />
+            </button>
+          </div>
         </div>
 
         {/* ── Search / Filter ── */}

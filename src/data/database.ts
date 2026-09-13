@@ -10,11 +10,12 @@ export const CONSOLIDATION_AUDIT = auditData;
 // canonica, mas nao sao navegaveis nem retornam em resultados).
 //   - pericia .............. excluida (Perícias)
 //   - origem_distincao ..... excluida (Origens & Lore)
+//   - ameaca ............... excluida (Ameaças)
 //
 // Alem disso, 'manobra' e 'regra' sao EXIBIDAS na interface, porem NAO
 // CLICAVEIS (ver flag `clickable: false` em CATEGORIES_LIST).
 // ---------------------------------------------------------------------------
-export const DISABLED_CATEGORIES: EntityCategory[] = ['pericia', 'origem_distincao'];
+export const DISABLED_CATEGORIES: EntityCategory[] = ['pericia', 'origem_distincao', 'ameaca'];
 
 export function isCategoryEnabled(cat: EntityCategory): boolean {
   return !DISABLED_CATEGORIES.includes(cat);
@@ -110,13 +111,13 @@ export const CATEGORIES_LIST: CategoryMetadata[] = [
   { id: 'poder', label: 'Poderes', iconName: 'Zap', count: CANONICAL_DATABASE.filter(e => e.category === 'poder').length, badgeClass: 'badge-ruby' },
   { id: 'condicao', label: 'Condições', iconName: 'Activity', count: CANONICAL_DATABASE.filter(e => e.category === 'condicao').length, badgeClass: 'badge-ruby' },
   { id: 'manobra', label: 'Manobras', iconName: 'Swords', count: CANONICAL_DATABASE.filter(e => e.category === 'manobra').length, badgeClass: 'badge-gold', clickable: false },
-  { id: 'ameaca', label: 'Ameaças', iconName: 'Skull', count: CANONICAL_DATABASE.filter(e => e.category === 'ameaca').length, badgeClass: 'badge-ruby' },
+  { id: 'ameaca', label: 'Ameaças', iconName: 'Skull', count: CANONICAL_DATABASE.filter(e => e.category === 'ameaca').length, badgeClass: 'badge-ruby', enabled: false },
   { id: 'regra', label: 'Regras de Mesa', iconName: 'Scroll', count: CANONICAL_DATABASE.filter(e => e.category === 'regra').length, badgeClass: 'badge-parchment', clickable: false }
 ];
 
 /** Categorias efetivamente navegáveis (exclui as desabilitadas). */
 export const CATEGORIES_ENABLED_LIST: CategoryMetadata[] = CATEGORIES_LIST.filter(
-  cat => cat.enabled !== false
+  cat => cat.enabled !== false && (cat.id === 'todas' || isCategoryEnabled(cat.id as EntityCategory))
 );
 
 /** Categorias exibidas na UI, porém não selecionáveis. */

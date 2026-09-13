@@ -38,6 +38,9 @@ interface CategoryFilterProps {
   onSelectSubcategory: (subcat: string | 'todas') => void;
   onSelectItemType: (type: string | 'todas') => void;
   onSelectBook: (bookId: string | 'todos') => void;
+  onMinPriceChange?: (val: number | '') => void;
+  onMaxPriceChange?: (val: number | '') => void;
+  onSelectPricePreset?: (min: number | '', max: number | '') => void;
   onResetFilters: () => void;
 }
 
@@ -62,18 +65,24 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onSelectSubcategory,
   onSelectItemType,
   onSelectBook,
+  onMinPriceChange,
+  onMaxPriceChange,
+  onSelectPricePreset,
   onResetFilters
 }) => {
   const subcategories = getSubcategoriesForCategory(filters.category);
   const itemTypes = getItemTypesForCategory(filters.category, filters.subcategory);
 
+  const showPriceFilter = filters.category === 'equipamento';
+  const showSubcategories = subcategories.length > 0 && filters.category !== 'todas';
+  const showItemTypes = itemTypes.length > 1 && filters.subcategory !== 'todas';
+
   const hasActiveFacets = 
     filters.subcategory !== 'todas' || 
     filters.itemType !== 'todas' ||
-    filters.book !== 'todos';
-
-  const showSubcategories = subcategories.length > 0 && filters.category !== 'todas';
-  const showItemTypes = itemTypes.length > 1 && filters.subcategory !== 'todas';
+    filters.book !== 'todos' ||
+    (filters.minPrice !== undefined && filters.minPrice !== '') ||
+    (filters.maxPrice !== undefined && filters.maxPrice !== '');
 
   const totalCatCount = dynamicCounts.getCategoryCount(filters.category);
   const totalSubcatCount = dynamicCounts.getSubcategoryCount(filters.category, filters.subcategory);
@@ -194,6 +203,34 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               </select>
             </div>
           )}
+
+          {/* Combo 5: Faixa de Preço (Exclusivo Equipamentos - Mobile) */}
+          {showPriceFilter && (
+            <div className="mobile-select-group" style={{ gridColumn: '1 / -1' }}>
+              <label className="mobile-select-label">
+                <Coins size={13} /> Faixa de Preço (Tibares - T$)
+              </label>
+              <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+                <input
+                  type="number"
+                  placeholder="Mín T$"
+                  className="mobile-select-combo"
+                  value={filters.minPrice ?? ''}
+                  onChange={e => onMinPriceChange?.(e.target.value ? Number(e.target.value) : '')}
+                  style={{ flex: 1 }}
+                />
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>até</span>
+                <input
+                  type="number"
+                  placeholder="Máx T$"
+                  className="mobile-select-combo"
+                  value={filters.maxPrice ?? ''}
+                  onChange={e => onMaxPriceChange?.(e.target.value ? Number(e.target.value) : '')}
+                  style={{ flex: 1 }}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -255,7 +292,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
         </div>
 
         {/* 2. Painel de Subfiltros Diretos */}
-        {(showSubcategories || showItemTypes) && (
+        {(showSubcategories || showItemTypes || showPriceFilter) && (
           <div className="streamlined-filter-panel parchment-card">
             <div className="streamlined-panel-header">
               <div className="streamlined-panel-title">
@@ -327,6 +364,66 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                       </button>
                     );
                   })}
+                </div>
+              </div>
+            )}
+
+            {/* Faixa de Valor (Exclusivo Equipamentos) */}
+            {showPriceFilter && (
+              <div className="filter-pill-row price-filter-row">
+                <div className="filter-row-prefix">
+                  <Coins size={14} className="text-gold" />
+                  <span>Faixa de Valor:</span>
+                </div>
+                <div className="filter-pills-container" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                  <button
+                    className={`pill-btn ${(!filters.minPrice && !filters.maxPrice) ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectPricePreset?.('', '')}
+                  >
+                    Todas
+                  </button>
+                  <button
+                    className={`pill-btn ${(filters.minPrice === '' && filters.maxPrice === 10) ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectPricePreset?.('', 10)}
+                  >
+                    Até T$ 10
+                  </button>
+                  <button
+                    className={`pill-btn ${(filters.minPrice === 10 && filters.maxPrice === 100) ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectPricePreset?.(10, 100)}
+                  >
+                    T$ 10–100
+                  </button>
+                  <button
+                    className={`pill-btn ${(filters.minPrice === 100 && filters.maxPrice === 1000) ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectPricePreset?.(100, 1000)}
+                  >
+                    T$ 100–1.000
+                  </button>
+                  <button
+                    className={`pill-btn ${(filters.minPrice === 1000 && filters.maxPrice === '') ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectPricePreset?.(1000, '')}
+                  >
+                    T$ 1.000+
+                  </button>
+
+                  <div className="price-inputs-inline" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', marginLeft: '0.4rem' }}>
+                    <input
+                      type="number"
+                      placeholder="Mín (T$)"
+                      value={filters.minPrice ?? ''}
+                      onChange={e => onMinPriceChange?.(e.target.value ? Number(e.target.value) : '')}
+                      style={{ width: '85px', padding: '0.22rem 0.4rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid var(--border-parchment)', background: 'var(--bg-surface)' }}
+                    />
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>até</span>
+                    <input
+                      type="number"
+                      placeholder="Máx (T$)"
+                      value={filters.maxPrice ?? ''}
+                      onChange={e => onMaxPriceChange?.(e.target.value ? Number(e.target.value) : '')}
+                      style={{ width: '85px', padding: '0.22rem 0.4rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid var(--border-parchment)', background: 'var(--bg-surface)' }}
+                    />
+                  </div>
                 </div>
               </div>
             )}

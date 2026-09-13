@@ -22,6 +22,9 @@ export function App() {
     setSubcategory,
     setItemType,
     setBook,
+    setMinPrice,
+    setMaxPrice,
+    setPriceRange,
     resetFilters,
     dynamicCounts,
     results,
@@ -60,6 +63,9 @@ export function App() {
           onSelectSubcategory={setSubcategory}
           onSelectItemType={setItemType}
           onSelectBook={setBook}
+          onMinPriceChange={setMinPrice}
+          onMaxPriceChange={setMaxPrice}
+          onSelectPricePreset={setPriceRange}
           onResetFilters={resetFilters}
         />
 

@@ -1544,3 +1544,90 @@
   padding: 0 0.3rem;
   border-radius: var(--radius-full);
 }
+
+/* ==========================================================================
+   TABLE RESPONSIVENESS & FRAMING (ENQUADRAMENTO EM DISPOSITIVOS MOBILES)
+   ========================================================================== */
+.treasure-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.5rem 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-parchment);
+}
+
+.treasure-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.treasure-table th {
+  background: var(--bg-surface-muted);
+  color: var(--accent-gold);
+  font-weight: 700;
+  padding: 0.55rem;
+  border: 1px solid var(--border-parchment);
+  text-align: left;
+}
+
+.treasure-table td {
+  padding: 0.5rem;
+  border: 1px solid var(--border-parchment);
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   BOTÃO DE COPIAR CONTEÚDO DOS MODAIS (COPY TO CLIPBOARD)
+   ========================================================================== */
+.copy-btn {
+  background: var(--bg-surface-muted);
+  border: 1px solid var(--border-parchment);
+  color: var(--text-secondary);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.copy-btn:hover {
+  background: var(--bg-surface-hover);
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  transform: translateY(-1px);
+}
+
+.copy-btn.copy-success {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* ==========================================================================
+   FILTRO DE FAIXA DE VALOR (EXCLUSIVO EQUIPAMENTOS)
+   ========================================================================== */
+.price-filter-row {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--border-parchment);
+}
+
+.price-inputs-inline input {
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: border-color var(--transition-fast);
+}
+
+.price-inputs-inline input:focus {
+  outline: none;
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}

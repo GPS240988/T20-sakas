@@ -78,18 +78,33 @@ function parseMoneyFormula(rawFormula: string): {
   multiplier: number;
   currency: string;
 } | null {
-  const normalized = rawFormula
-    .replace(/(\d+)\.(\d{3})/g, '$1$2') // 1.000 -> 1000
-    .replace(/x/gi, '*');               // x -> *
+  if (!rawFormula) return null;
 
-  const match = normalized.match(/\(?(\d+)d(\d+)(?:\+(\d+))?\)?\s*(?:\*\s*)?(\d+)?\s*(TC|T\$|TO)?/i);
+  // 1. Normalizar multiplicadores (x, X, × \u00d7, · \u00b7) -> * e pontos de milhar
+  const normalized = rawFormula
+    .replace(/[\u00d7\u00b7xX]/g, '*')
+    .replace(/(\d+)\.(\d{3})/g, '$1$2')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // 2. Extrair a moeda (TC, TO, T$, TS)
+  let currency = 'T$';
+  if (/\bTC\b/i.test(normalized) || /cobre/i.test(normalized)) {
+    currency = 'TC';
+  } else if (/\bTO\b/i.test(normalized) || /ouro/i.test(normalized)) {
+    currency = 'TO';
+  } else {
+    currency = 'T$';
+  }
+
+  // 3. Capturar expressão de dados (ex: 1d8, 2d6+1, 4d12) e multiplicador
+  const match = normalized.match(/\(?(\d+)d(\d+)(?:\s*\+\s*(\d+))?\)?(?:\s*\*\s*(\d+))?/i);
   if (!match) return null;
 
   const diceCount = parseInt(match[1], 10);
   const diceSides = parseInt(match[2], 10);
   const bonus = match[3] ? parseInt(match[3], 10) : 0;
   const multiplier = match[4] ? parseInt(match[4], 10) : 1;
-  const currency = (match[5] || 'T$').toUpperCase();
 
   return { diceCount, diceSides, bonus, multiplier, currency };
 }
@@ -133,7 +148,7 @@ export function evaluateMoneyRoll(nd: string, rawD100: number | string): MoneyRo
     tableId: table.id
   });
 
-  if (label === 'Nenhum' || formula === '0 T$' || formula.includes('0 T$')) {
+  if (label === 'Nenhum' || formula === '0 T$' || /^0\s*T\$$/i.test(formula.trim())) {
     return {
       nd,
       d100: numD100,

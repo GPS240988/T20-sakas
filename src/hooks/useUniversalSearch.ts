@@ -7,6 +7,27 @@ export interface SearchFilters {
   subcategory: string | 'todas';
   itemType: string | 'todas';
   book: string | 'todos';
+  minPrice?: number | '';
+  maxPrice?: number | '';
+}
+
+export function parseEquipmentPrice(priceStr?: string): number | null {
+  if (!priceStr) return null;
+  const match = priceStr.match(/(\d[\d\.,]*)/);
+  if (!match) return null;
+  let raw = match[1];
+  if (raw.includes('.') && raw.includes(',')) {
+    raw = raw.replace(/\./g, '').replace(',', '.');
+  } else if (raw.includes('.')) {
+    const parts = raw.split('.');
+    if (parts[parts.length - 1].length === 3) {
+      raw = parts.join('');
+    }
+  } else if (raw.includes(',')) {
+    raw = raw.replace(',', '.');
+  }
+  const val = parseFloat(raw);
+  return isNaN(val) ? null : val;
 }
 
 function checkItemMatchesQuery(item: any, q: string): boolean {
@@ -97,6 +118,17 @@ export function useUniversalSearch() {
         }
       }
 
+      // 4.5. Filtro de Faixa de Valor (Exclusivo para Equipamentos)
+      if (item.category === 'equipamento' && (filters.category === 'equipamento' || filters.category === 'todas')) {
+        const price = parseEquipmentPrice((item as any).tableData?.price);
+        if (filters.minPrice !== undefined && filters.minPrice !== '') {
+          if (price === null || price < Number(filters.minPrice)) return false;
+        }
+        if (filters.maxPrice !== undefined && filters.maxPrice !== '') {
+          if (price === null || price > Number(filters.maxPrice)) return false;
+        }
+      }
+
       // 5. Se não houver texto na busca, retorna aprovado pelos filtros
       if (!q) return true;
 
@@ -124,6 +156,18 @@ export function useUniversalSearch() {
       return checkItemMatchesQuery(item, q);
     };
 
+    const matchesPrice = (item: any) => {
+      if (item.category !== 'equipamento') return true;
+      const price = parseEquipmentPrice((item as any).tableData?.price);
+      if (filters.minPrice !== undefined && filters.minPrice !== '') {
+        if (price === null || price < Number(filters.minPrice)) return false;
+      }
+      if (filters.maxPrice !== undefined && filters.maxPrice !== '') {
+        if (price === null || price > Number(filters.maxPrice)) return false;
+      }
+      return true;
+    };
+
     const getBookCount = (bookId: string) => {
       return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, bookId)) return false;
@@ -134,6 +178,7 @@ export function useUniversalSearch() {
           const val = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype;
           if (val !== filters.itemType) return false;
         }
+        if (!matchesPrice(item)) return false;
         return matchesQuery(item);
       }).length;
     };
@@ -142,6 +187,7 @@ export function useUniversalSearch() {
       return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, filters.book)) return false;
         if (catId !== 'todas' && item.category !== catId) return false;
+        if (!matchesPrice(item)) return false;
         return matchesQuery(item);
       }).length;
     };
@@ -151,6 +197,7 @@ export function useUniversalSearch() {
         if (!matchesBook(item, filters.book)) return false;
         if (category !== 'todas' && item.category !== category) return false;
         if (subcat !== 'todas' && item.subcategory !== subcat) return false;
+        if (!matchesPrice(item)) return false;
         return matchesQuery(item);
       }).length;
     };
@@ -165,6 +212,7 @@ export function useUniversalSearch() {
           const val = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype;
           if (val !== type) return false;
         }
+        if (!matchesPrice(item)) return false;
         return matchesQuery(item);
       }).length;
     };
@@ -182,7 +230,9 @@ export function useUniversalSearch() {
       ...prev,
       category: cat, 
       subcategory: 'todas',
-      itemType: 'todas'
+      itemType: 'todas',
+      minPrice: cat === 'equipamento' ? prev.minPrice : '',
+      maxPrice: cat === 'equipamento' ? prev.maxPrice : ''
     }));
   };
 
@@ -208,13 +258,27 @@ export function useUniversalSearch() {
     }));
   };
 
+  const setMinPrice = (val: number | '') => {
+    setFilters(prev => ({ ...prev, minPrice: val }));
+  };
+
+  const setMaxPrice = (val: number | '') => {
+    setFilters(prev => ({ ...prev, maxPrice: val }));
+  };
+
+  const setPriceRange = (min: number | '', max: number | '') => {
+    setFilters(prev => ({ ...prev, minPrice: min, maxPrice: max }));
+  };
+
   const resetFilters = () => {
     setQuery('');
     setFilters({
       category: 'todas',
       subcategory: 'todas',
       itemType: 'todas',
-      book: 'todos'
+      book: 'todos',
+      minPrice: '',
+      maxPrice: ''
     });
   };
 
@@ -226,6 +290,9 @@ export function useUniversalSearch() {
     setSubcategory,
     setItemType,
     setBook,
+    setMinPrice,
+    setMaxPrice,
+    setPriceRange,
     resetFilters,
     dynamicCounts,
     results: filteredResults,

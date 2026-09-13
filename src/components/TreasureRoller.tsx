@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Dices, Coins, Sparkles, ListOrdered, Eye, ArrowLeft } from 'lucide-react';
+import { X, Dices, Coins, Sparkles, ListOrdered, Eye, ArrowLeft, Copy, Check } from 'lucide-react';
 import { 
   evaluateMoneyRoll, 
   resolveItemChain, 
@@ -25,8 +25,47 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
 
   // Estado para visualização do Sub-modal de Tabela Referenciada
   const [viewingTableId, setViewingTableId] = useState<string | null>(null);
+  const [copied, setCopied] = useState<boolean>(false);
 
   if (!isOpen) return null;
+
+  const handleCopyContent = () => {
+    const lines: string[] = [];
+    lines.push(`========================================`);
+    lines.push(`GERADOR E SIMULADOR DE TESOUROS - ND ${selectedNd}`);
+    lines.push(`========================================\n`);
+
+    if (moneyResult) {
+      lines.push(`[DINHEIRO (D% ${moneyRoll})]`);
+      lines.push(`• Total: ${moneyResult.totalFormatted}`);
+      lines.push(`• Faixa Sorteada: ${moneyResult.label}`);
+      if (moneyResult.breakdown) lines.push(`• Cálculo: ${moneyResult.breakdown}`);
+      lines.push('');
+    } else {
+      lines.push(`[DINHEIRO]: Nenhum sorteio realizado.\n`);
+    }
+
+    if (itemResult) {
+      lines.push(`[ITEM (D% ${itemRoll})]`);
+      lines.push(`• Item Sorteado: ${itemResult.finalItemName}`);
+      if (itemResult.finalItemPrice) lines.push(`• Valor: ${itemResult.finalItemPrice}`);
+      if (itemResult.finalItemCategory) lines.push(`• Categoria: ${itemResult.finalItemCategory}`);
+      lines.push(`• Descrição / Efeito:\n${itemResult.finalItemDescription}\n`);
+      if (itemResult.traceSteps && itemResult.traceSteps.length > 0) {
+        lines.push(`• Passos de Sorteio:`);
+        itemResult.traceSteps.forEach(s => {
+          lines.push(`  Passo ${s.stepIndex}: ${s.title} (D% ${s.d100Rolled}) -> ${s.resultLabel}`);
+        });
+        lines.push('');
+      }
+    } else {
+      lines.push(`[ITEM]: Nenhum sorteio realizado.\n`);
+    }
+
+    navigator.clipboard.writeText(lines.join('\n'));
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   // 1. Sorteio Exclusivo de Dinheiro
   const handleRollMoneyOnly = () => {
@@ -97,9 +136,18 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
             <span className="badge badge-gold"><Coins size={14} /> Recompensas</span>
             <h2 className="modal-title" style={{ fontSize: '1.25rem' }}>Tesouros</h2>
           </div>
-          <button className="modal-close-btn" onClick={onClose} title="Fechar simulador">
-            <X size={24} />
-          </button>
+          <div className="modal-header-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button 
+              className={`copy-btn ${copied ? 'copy-success' : ''}`}
+              onClick={handleCopyContent}
+              title={copied ? 'Copiado!' : 'Copiar todo o resultado do simulador'}
+            >
+              {copied ? <Check size={20} className="text-gold" /> : <Copy size={20} />}
+            </button>
+            <button className="modal-close-btn" onClick={onClose} title="Fechar simulador">
+              <X size={24} />
+            </button>
+          </div>
         </div>
 
         <div className="treasure-roller-body" style={{ padding: '1rem' }}>
@@ -412,30 +460,32 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                 {tableToView.description || tableToView.summary}
               </p>
 
-              <table className="treasure-table" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
-                <thead>
-                  <tr style={{ background: 'var(--bg-surface-muted)' }}>
-                    <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)', width: '90px', textAlign: 'center' }}>D% (01-100)</th>
-                    <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)', minWidth: '180px' }}>Item / Resultado</th>
-                    <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)' }}>Efeito & Descrição Mecânica</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tableToView.entries.map((entry, idx) => (
-                    <tr key={idx} style={{ background: idx % 2 === 0 ? 'var(--bg-surface)' : 'var(--bg-surface-muted)' }}>
-                      <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontWeight: '700', color: 'var(--accent-gold)', textAlign: 'center' }}>
-                        {entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}
-                      </td>
-                      <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontWeight: '700', color: 'var(--text-primary)' }}>
-                        {entry.label}
-                      </td>
-                      <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
-                        {entry.description}
-                      </td>
+              <div className="treasure-table-wrapper">
+                <table className="treasure-table" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+                  <thead>
+                    <tr style={{ background: 'var(--bg-surface-muted)' }}>
+                      <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)', width: '90px', textAlign: 'center' }}>D% (01-100)</th>
+                      <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)', minWidth: '180px' }}>Item / Resultado</th>
+                      <th style={{ padding: '0.5rem', border: '1px solid var(--border-parchment)' }}>Efeito & Descrição Mecânica</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {tableToView.entries.map((entry, idx) => (
+                      <tr key={idx} style={{ background: idx % 2 === 0 ? 'var(--bg-surface)' : 'var(--bg-surface-muted)' }}>
+                        <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontWeight: '700', color: 'var(--accent-gold)', textAlign: 'center' }}>
+                          {entry.d100Min.toString().padStart(2, '0')}-{entry.d100Max.toString().padStart(2, '0')}
+                        </td>
+                        <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontWeight: '700', color: 'var(--text-primary)' }}>
+                          {entry.label}
+                        </td>
+                        <td style={{ padding: '0.45rem', border: '1px solid var(--border-parchment)', fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
+                          {entry.description}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             <div className="table-modal-footer" style={{ marginTop: '1.2rem', paddingTop: '0.8rem', borderTop: '1px solid var(--border-parchment)', textAlign: 'right' }}>
