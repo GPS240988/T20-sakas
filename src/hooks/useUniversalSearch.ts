@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { CANONICAL_DATABASE } from '../data/database';
+import { VISIBLE_DATABASE } from '../data/database';
 import type { EntityCategory } from '../types/t20_schema';
 
 export interface SearchFilters {
@@ -63,7 +63,7 @@ export function useUniversalSearch() {
   const filteredResults = useMemo(() => {
     const q = query.trim().toLowerCase();
     
-    return CANONICAL_DATABASE.filter(item => {
+    return VISIBLE_DATABASE.filter(item => {
       // 1. Filtro de Livro Oficial
       if (filters.book !== 'todos') {
         const matchesBook = item.sources?.some(s => {
@@ -125,7 +125,7 @@ export function useUniversalSearch() {
     };
 
     const getBookCount = (bookId: string) => {
-      return CANONICAL_DATABASE.filter(item => {
+      return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, bookId)) return false;
         if (filters.category !== 'todas' && item.category !== filters.category) return false;
         if (filters.subcategory !== 'todas' && item.subcategory !== filters.subcategory) return false;
@@ -139,7 +139,7 @@ export function useUniversalSearch() {
     };
 
     const getCategoryCount = (catId: string) => {
-      return CANONICAL_DATABASE.filter(item => {
+      return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, filters.book)) return false;
         if (catId !== 'todas' && item.category !== catId) return false;
         return matchesQuery(item);
@@ -147,7 +147,7 @@ export function useUniversalSearch() {
     };
 
     const getSubcategoryCount = (category: string, subcat: string) => {
-      return CANONICAL_DATABASE.filter(item => {
+      return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, filters.book)) return false;
         if (category !== 'todas' && item.category !== category) return false;
         if (subcat !== 'todas' && item.subcategory !== subcat) return false;
@@ -156,7 +156,7 @@ export function useUniversalSearch() {
     };
 
     const getItemTypeCount = (category: string, subcategory: string, type: string) => {
-      return CANONICAL_DATABASE.filter(item => {
+      return VISIBLE_DATABASE.filter(item => {
         if (!matchesBook(item, filters.book)) return false;
         if (category !== 'todas' && item.category !== category) return false;
         if (subcategory !== 'todas' && item.subcategory !== subcategory) return false;
@@ -229,6 +229,6 @@ export function useUniversalSearch() {
     resetFilters,
     dynamicCounts,
     results: filteredResults,
-    totalCount: CANONICAL_DATABASE.length
+    totalCount: VISIBLE_DATABASE.length
   };
 }

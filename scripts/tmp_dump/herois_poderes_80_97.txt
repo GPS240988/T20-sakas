@@ -1,0 +1,1483 @@
+
+===== PAGE_INDEX_79 (printed 80) =====
+78
+Capítulo 1
+NOVOS PODERES GERAIS
+Poderes de Combate
+Arremesso Devastador
+Quando faz um ataque à distância com uma arma 
+de arremesso, você pode gastar 1 PM. Se fizer isso e 
+acertar o ataque, além do dano você faz uma manobra 
+derrubar ou empurrar contra o alvo, usando o resultado 
+do ataque como o teste de manobra. Pré-requisito:  
+Arremesso Potente.
+Ataque com o cabo
+Uma vez por rodada, quando usa a ação agredir 
+enquanto empunha uma arma alongada, você pode 
+gastar 1 PM. Se fizer isso, pode fazer um ataque extra 
+com o cabo da arma. Você usa as mesmas estatísticas 
+de um ataque normal da arma, mas seu dano básico 
+se torna 1d6 (impacto) e seu crítico se torna x2. 
+Pré-requisito: Estilo de Arma Longa.
+Ataque em Arco
+Quando faz um ataque corpo a corpo, você pode 
+gastar 2 PM. Se fizer isso, seu ataque pode acertar 
+até três criaturas adjacentes entre si que estejam 
+em seu alcance (faça um único teste de ataque e 
+compare-o com a Defesa de cada criatura). Se você 
+estiver atacando um bando, em vez disso seu ataque 
+causa 50% a mais de dano. Pré-requisitos: treinado em 
+Luta, 4º nível de personagem.
+Bravura Indômita
+Se estiver adjacente a dois ou mais inimigos aptos 
+a atacá-lo, você recebe +2 em testes de ataque e na 
+margem de ameaça. Pré-requisito: treinado em Vontade.
+Briga de Rua
+Você sabe chutar áreas sensíveis dos inimigos e 
+usar outros truques sujos. Uma vez por rodada, quando 
+faz uma finta, você pode gastar 1 PM. Se fizer isso e 
+vencer o teste oposto da finta, além dos efeitos de 
+fintar, você pode fazer um ataque desarmado contra 
+o alvo como uma ação livre. Se acertar esse ataque, 
+causa +2d6 pontos de dano. Pré-requisito:  Briga ou 
+Estilo Desarmado.
+Chuva de Golpes
+Quando ataca com duas armas empunhadas 
+usando o poder Estilo de Duas Armas, você pode fazer 
+um ataque desarmado adicional. Pré-requisitos: Briga 
+ou Estilo Desarmado, Estilo de Duas Armas.
+Catafr actário
+Antigos guerreiros montados de Lamnor, os 
+catafractários eram famosos por suas táticas defensivas. 
+Embora suas unidades não existam mais, suas técnicas 
+perduraram. Se estiver montado e vestindo armadura 
+pesada, você recebe +1 na Defesa por nível de parceiro 
+de sua montaria. Pré-requisitos: Encouraçado, Ginete.
+Contr a-Ataque
+Uma vez por rodada, se uma criatura atacá-lo e 
+errar, você pode gastar 2 PM para fazer um ataque 
+corpo a corpo contra essa criatura. Pré-requisito:  
+Combate Defensivo.
+Coragem Aguerrida
+Quando estiver com metade ou menos de seus 
+PV totais, você recebe +2 em testes de perícia e na 
+Defesa. Pré-requisito: treinado em Vontade.
+Corte Lacerante
+Quando ataca com uma arma corpo a corpo de 
+corte, você pode gastar 2 PM. Se acertar o ataque, você 
+causa +1d10 pontos de dano e o alvo fica sangrando. 
+Pré-requisito: treinado em Luta.
+Defesa Armada
+Sua arma é tão grande que funciona como um 
+escudo, protegendo-o dos ataques de seus inimigos! 
+Se estiver usando uma arma corpo a corpo de duas 
+mãos, você recebe +2 na Defesa e em Fortitude. 
+Pré-requisito: Estilo de Duas Mãos.
+Encastelado
+Se estiver usando uma armadura pesada, você 
+recebe redução de dano 2. Essa RD aumenta em 
++1 para cada outro poder que você possua que 
+tenha Encouraçado como pré-requisito. Pré-requisitos: 
+Encouraçado, 5º nível de personagem.
+
+===== PAGE_INDEX_80 (printed 81) =====
+79
+Campeões de Arton
+Escudo Heroico
+Você pode empunhar e soltar seu escudo como 
+ação livre e, quando ataca com ele, pode tratá-lo 
+como uma arma de arremesso com alcance curto. 
+Sempre que arremessa o escudo, você pode gastar 
+1 PM. Se fizer isso e acertar o ataque, você pode 
+fazer com que ele retorne à sua mão (pegá-lo é 
+uma reação) ou ricocheteie contra outro alvo; nesse 
+caso, você faz um novo ataque à distância com uma 
+penalidade cumulativa de –5. Você pode continuar 
+atacando novos alvos até recuperar o escudo ou 
+errar um ataque. Pré-requisito: Ataque com Escudo.
+Estocada  Pungente
+Quando ataca com uma arma corpo a corpo de 
+perfuração, você pode gastar 2 PM. Se acertar, o alvo 
+sofre –5 em rolagens de dano por 1 rodada. Pré-requisito: 
+treinado em Luta.
+Estudar o Adversário
+Na primeira vez na rodada em que erra um ataque, 
+você recebe um bônus cumulativo de +2 em testes 
+de ataque contra o mesmo alvo até o fim da cena. 
+Pré-requisito: Int 1.
+Firula Inspiradora
+Você pode gastar uma ação de movimento e 1 PM 
+para realizar uma firula qualquer (girar sua arma, fazer 
+uma dancinha…). Faça um teste de Atuação (CD 10). 
+Se passar, você recebe +1 em testes de perícia e na 
+Defesa, +1 adicional para cada 10 pontos pelos quais 
+o resultado do teste exceder a CD, até o início do seu 
+próximo turno.
+Matador de Monstros
+Você recebe +1d10 nas rolagens de dano 
+contra criaturas de tamanho Grande ou maior, e essas 
+criaturas não recebem bônus por tamanho em testes 
+de manobras de combate contra você. Pré-requisito: 5º 
+nível de personagem.
+Mobilidade
+Quando usa a ação movimentar-se e percorre 
+pelo menos 6m, você recebe +2 em testes de ataque 
+e na Defesa até o início do seu próximo turno. 
+Pré-requisito: Esquiva.
+Na Mosca
+Se fizer um ataque à distância, você pode gastar 
+1 PM. Se acertar o ataque, você causa um dado extra 
+de dano do mesmo tipo (por exemplo, com uma 
+besta pesada, causa +1d12). Pré-requisito: Estilo de 
+Arremesso ou Estilo de Disparo.
+Pancada Estonteante
+Quando ataca com uma arma corpo a corpo de 
+impacto, você pode gastar 2 PM. Se você acertar o 
+ataque, o alvo fica desprevenido por uma rodada (ou 
+seja, até o fim do seu próximo turno). Pré-requisito: 
+treinado em Luta.
+Precisão Letal
+A margem de ameaça de seus ataques aumenta 
+em +1. Pré-requisito: 11º nível de personagem.
+Sanguinário
+Sempre que você causar 10 ou mais pontos de 
+dano em um ou mais inimigos, recebe um bônus 
+cumulativo de +1 em rolagens de dano até o fim da 
+cena (limitado pela sua Força).
+Sentinela Implacável
+Uma vez por rodada, se você estiver empunhando 
+uma arma de disparo carregada e um inimigo se 
+mover dentro do alcance da arma, você pode gastar 2 
+PM para fazer um ataque contra essa criatura usando 
+essa arma. Pré-requisitos: Sab 1, treinado em Iniciativa 
+e Percepção, Estilo de Disparo.
+Sequência de Golpes
+Você desfere uma tempestade de golpes, usando 
+a força de um movimento para impulsionar o outro, 
+sem dar chance para sua vítima reagir. Quando você 
+acerta um ataque corpo a corpo em uma criatura, recebe 
+um bônus cumulativo de +1 em testes de ataque e 
+rolagens de dano contra a mesma criatura nesse turno 
+(limitado pela sua Força).
+Truque  DA MÃO LESTA
+Se estiver usando uma arma corpo a corpo em 
+uma mão e nada na outra, você pode trocar a arma 
+de mãos rapidamente para confundir um inimigo 
+adjacente. Esse inimigo fica desprevenido até o fim 
+do seu turno e, se você acertá-lo nesse turno, seu 
+dano com a arma aumenta em dois passos. Você 
+pode usar este poder uma vez por inimigo em cada 
+cena. Pré-requisito: Estilo de Uma Arma.
+
+
+===== PAGE_INDEX_81 (printed 82) =====
+80
+Capítulo 1
+Poderes de Destino
+Alma Livre
+Arton tem muitas maravilhas a serem exploradas, 
+muitos caminhos a serem percorridos — e você não 
+é louco de se prender a um só. Escolha uma classe. 
+Você pode escolher um poder dessa classe como se 
+pertencesse a ela (para efeitos de nível na classe 
+desse poder, considere seu nível de personagem −4). 
+Note que você não recebe o poder, apenas o direito 
+de escolhê-lo mais tarde.
+Andarilho Urbano
+Nas tavernas mais sujas e nos becos mais escuros... 
+você está em casa. Se estiver em uma cidade, você 
+recebe +2 na Defesa, em Enganação e em Investigação.
+Carícias Revigorantes
+Você sabe como aliviar as dores e tristezas de uma 
+pessoa. Você pode gastar 1 minuto e 2 PM para recuperar 
+2d4 PM de uma criatura adjacente. Uma mesma criatura 
+só pode receber os benefícios deste poder uma vez por 
+dia. Pré-requisitos: Car 2, Sedução Lasciva.
+Diligente
+Você pode gastar uma ação de movimento para se 
+concentrar na tarefa à frente. Se fizer isso, recebe +2 
+em um teste de perícia (exceto testes de ataque) que 
+exija no máximo uma ação completa para ser realizado 
+e que seja realizado até o fim do seu próximo turno.
+Foco em Habilidade
+Escolha uma habilidade. A CD para resistir a essa 
+habilidade aumenta em +2. Você pode escolher este 
+poder outras vezes para habilidades diferentes. Este 
+poder não pode ser aplicado a magias (mas veja Foco 
+em Magia e Especialização em Magia).
+Grandão
+Você conta como uma categoria de tamanho 
+maior para propósitos do modificador de Furtividade 
+e manobras, espaço ocupado e alcance natural. Além 
+disso, sua capacidade de carga aumenta em 5 espaços. 
+Pré-requisito: Con 2.
+Herói dos Sete Instrumentos
+Você aprendeu de tudo um pouco e um pouco 
+de tudo. Você recebe um bônus de +1 em testes de 
+perícias nas quais não é treinado. No 7º nível esse bônus 
+aumenta para +2 e, no 15º nível, aumenta para +3.
+Impostor
+Graças a seu extremo charme e autoconfiança, 
+você consegue convencer outras pessoas — e você 
+mesmo! — de que tem certas habilidades que, na 
+verdade, não possui. Uma vez por cena, quando faz 
+um teste de perícia que exija no máximo uma ação 
+completa para ser realizado, você pode gastar 2 PM para 
+usar Enganação no lugar dessa perícia. Pré-requisitos: 
+Car 3, Foco em Perícia (Enganação).
+Liderança Inspiradora
+Seu magnetismo pessoal deixa seus seguidores 
+ávidos para ajudá-lo. Você gasta uma ação padrão (em 
+vez de completa) para posicionar seus capangas em 
+combate. Além disso, uma vez por rodada, pode gastar 
+uma ação livre para fazê-los movimentar-se ou causar 
+dano (mas continua só podendo fazê-los causar dano 
+uma vez por rodada; veja p. 240). Pré-requisitos: Car 1.
+Meditação Autoafirmativa
+Você pode entrar em um transe hipnótico no qual 
+convence a si mesmo de que possui certas habilidades. 
+Para usar este poder, você deve escolher um benefício 
+da tabela abaixo e meditar por 1 dia. No fim do dia, 
+faça um teste de Carisma (CD conforme o benefício 
+escolhido). Se passar, você adquire esse benefício por 
+uma semana ou até usar este poder novamente.
+Benefício CD
+“Eu sei lutar. ” +1 em testes de ataque 15
+“Eu sei lutar muito bem. ” +2 em testes de ataque 20
+“Por Anilatir, como eu luto bem!” 
++3 em testes de ataque
+25
+“Ninguém toca em mim. ” +2 na Defesa 20
+“Nada me afeta. ” +5 em testes de resistência 20
+“Eu sei fazer isso. ” 
+Torna-se treinado em uma perícia
+17
+“Eu sou bom demais!” Pode usar um 
+poder cujos pré-requisitos você cumpra
+22
+Enquanto medita, você fica fascinado. Você pode 
+meditar por mais de um dia; nesse caso, cada dia 
+fornece um bônus de +1 no teste de Carisma, até um 
+máximo de +7 para uma semana. Mestres malvados 
+podem exigir testes de Fortitude para personagens 
+que passem vários dias sem se alimentar (veja “Fome 
+e Sede”, Tormenta20, p. 319). Pré-requisitos: Sab 1, Car 
+1, 5º nível de personagem.
+Pose Assustadora
+Você recebe +2 em Intimidação e pode gastar 
+1 PM para assustar como uma ação de movimento. 
+Pré-requisitos: Car 1, treinado em Intimidação.
+
+===== PAGE_INDEX_82 (printed 83) =====
+81
+Campeões de Arton
+Poder Pré-requisitos
+Arremesso Devastador Arremesso Potente
+Ataque com o Cabo Estilo de Arma Longa
+Ataque em Arco Luta, 4º nível de 
+personagem
+Bravura Indômita —
+Briga de Rua Estilo Desarmado
+Chuva de Golpes Briga ou Estilo Desarmado, 
+Estilo de Duas Armas
+Catafractário Encouraçado, Ginete
+Contra-Ataque Combate Defensivo
+Coragem Aguerrida —
+Corte Lacerante Luta
+Defesa Armada Estilo de Duas Mãos
+Encastelado Encouraçado
+Escudo Heroico Ataque com Escudo
+Poder Pré-requisitos
+Estocada Pungente Luta
+Estudar o Adversário Int 1
+Firula Inspiradora —
+Matador de Monstros 5º nível de personagem
+Mobilidade Esquiva
+Na Mosca Estilo de Disparo ou 
+Estilo de Arremesso
+Pancada Estonteante Luta
+Precisão Letal 11º nível de personagem
+Sanguinário —
+Sentinela Implacável Sab 1, Iniciativa, Percepção, 
+Estilo de Disparo
+Sequência de Golpes —
+Truque da Mão Lesta Estilo de Uma Arma
+Tabela 1-18: Poderes de Combate
+Poder Pré-requisitos
+Alma Livre —
+ Andarilho Urbano —
+Carícias Revigorantes Car 2, Sedução Lasciva
+Diligente —
+Foco em Habilidade —
+Grandão Con  2
+ Herói dos 
+Sete Instrumentos —
+Tabela 1-19: Poderes de Destino
+Poder Pré-requisitos
+Impostor Car 3, Foco em 
+Perícia (Enganação)
+Liderança Inspiradora Car 1
+Meditação Autoafirmativa Sab 1, Car 1,
+ 5º nível de personagem
+Pose Assustadora Car 1, Intimidação
+Sedução Lasciva Car 1, Enganação
+Ventriloquismo Atuação , Enganação
+Poder Pré-requisitos
+Barreira Mística Lançar magias
+Esoterismo Lançar magias de 2º círculo
+Estilo Esotérico  Luta, Misticismo , 
+5º nível de personagem
+Encantar Itens Menores Misticismo ou Religião, 
+lançar magias de 3º círculo
+Encantar Itens Médios Encantar Itens Menores, 
+lançar magias de 4º círculo
+Encantar Itens Maiores Encantar Itens Médios, 
+lançar magias de 5º círculo
+Tabela 1-20: Poderes de Magia
+Poder Pré-requisitos
+Especialização em Magia Foco em Magia
+Explosão Fulgente Lançar magias
+Gênese Elemental Lançar magias de 2º círculo
+Magia Dividida Lançar magias de 2º círculo
+Magia Suspensa Lançar magias de 2º círculo
+Miasma Tóxico Lançar magias
+Prisão Gélida Lançar magias
+Trovão Retumbante Lançar magias
+
+===== PAGE_INDEX_83 (printed 84) =====
+82
+Capítulo 1
+Sedução Lasciva
+Você pode seduzir pessoas com olhares, palavras, 
+dança… Faça um teste de Enganação oposto pelo teste 
+de Vontade de seu alvo. Se você vencer, o alvo fica 
+enfeitiçado por 1 dia (se voce falhar, não pode mais 
+tentar com esse alvo nessa cena). Usar este poder gasta 
+alguns minutos de interação e 3 PM. Pré-requisitos: Car 
+1, treinado em Enganação.
+Ventriloquismo
+Você pode gastar 1 PM para fazer sua voz parecer 
+vir de outro lugar (como de outra criatura, de uma 
+estátua, de trás de uma porta, do fim de um corredor...) 
+por 1 rodada. De acordo com o mestre, se um uso 
+deste poder gerar uma situação muito suspeita, você 
+precisará fazer um teste de Enganação oposto pela 
+Intuição de quem está tentando enganar. Se a criatura 
+vencê-lo, percebe que o som vem de você. Pré-requisitos: 
+treinado em Atuação e Enganação.
+Poderes de Magia
+Barreira Mística 
+Você usa a energia residual da conjuração de 
+feitiços para materializar escudos capazes de protegê-lo 
+de ataques físicos. Quando lança uma magia, você pode 
+gastar 1 PM. Se fizer isso, você recebe +4 na Defesa 
+até o início do seu próximo turno. e
+Esoterismo
+Quando lança uma magia, você pode pagar 2 
+PM para canalizá-la através de dois itens esotéricos 
+diferentes simultaneamente, recebendo os benefícios 
+de ambos. Pré-requisito: lançar magias de 2º círculo.
+Estilo Esotérico
+Uma vez por rodada, quando faz a ação agredir em 
+corpo a corpo enquanto empunha um item esotérico, 
+você pode gastar 2 PM para lançar uma magia como 
+uma ação livre. A magia precisa ter execução original 
+de movimento, padrão ou completa. Pré-requisitos:  
+treinado em Luta e Misticismo, 5º nível de personagem.
+Encantar Itens Menores
+Você pode encantar itens mágicos menores 
+permanentes. Fazer isso segue as mesmas regras para 
+fabricar esses itens, mas você usa Misticismo (se lança 
+magias arcanas) ou Religião (se lança magias divinas) 
+no lugar de Ofício e precisa já possuir o item base (você 
+não fabrica o item, apenas adiciona os efeitos mágicos a 
+ele). Pré-requisitos: lançar magias de 3º círculo, treinado 
+em Misticismo ou Religião. e
+Encantar Itens Médios
+Como Encantar Itens Menores, mas você pode 
+encantar itens médios. Pré-requisitos: lançar magias de 
+4º círculo, Encantar Itens Menores. e
+Encantar Itens Maiores
+Como Encantar Itens Menores, mas você pode 
+encantar itens maiores. Pré-requisitos: lançar magias 
+de 5º círculo, Encantar Itens Médios. e
+Especialização em Magia
+Escolha uma magia que possa lançar. A CD para 
+resistir a essa magia aumenta em +2. Pré-requisito:  
+Foco em Magia com a magia escolhida.
+Explosão Fulgente Aprimoramento
+Suas chamas mágicas emitem um brilho intenso. 
+Um alvo que falhe no teste de resistência fica cego 
+por 1 rodada (ou ofuscado, se já ficou cego por este 
+aprimoramento nessa cena). Este aprimoramento só 
+pode ser aplicado em magias que causam dano de 
+fogo e permitem testes de resistência. Custo: +1 PM. 
+Gênese Elemental Aprimoramento
+Além do normal, a magia cria 1d4 (+1 por cír -
+culo) capangas elementais Pequenos em espaços de-
+socupados adjacentes ao alvo ou dentro da área de 
+efeito da magia (deslocamento 9m, Defesa 15, dano 
+1d6+1 do tipo da magia, imunidade a atordoamen-
+to, cansaço, dano do seu elemento, dano não letal, 
+efeitos de metabolismo e paralisia). Eles desapare-
+cem quando são reduzidos a 0 PV ou no fim da cena. 
+Custo: +3 PM. Pré-requisito: lançar magias de 2° círculo.
+Magia Dividida Aprimoramento
+A área da magia é dividida em duas, cada uma 
+com metade do tamanho da original, que não podem 
+se sobrepor. Por exemplo, uma Bola de Fogo (raio de 
+6m) pode ser dividida em duas áreas com 3m de raio. 
+Custo: +2 PM. Pré-requisito: lançar magias de 2° círculo.
+Magia Suspensa  
+Quando lança uma magia com execução de ação 
+de movimento ou padrão, você pode aumentar sua 
+execução para uma ação completa ou para 2 ou 3 
+rodadas. Se fizer isso, a CD para resistir à magia 
+aumenta respectivamente em +1, +2 ou +5.
+Miasma Tóxico Aprimoramento
+A magia exala vapores nocivos. Um alvo que falhe 
+no teste de resistência fica enjoado por 1 rodada. Este 
+aprimoramento só pode ser aplicado em magias que 
+causam dano de ácido e permitem testes de resistência. 
+Custo: +1 PM.
+
+===== PAGE_INDEX_84 (printed 85) =====
+83
+Campeões de Arton
+outros poderes da Tormenta que você possui, a cura 
+aumenta em +1d6+1 e a CD aumenta em +1.
+Simetria Radial
+Aos poucos, seu físico se rearranjou, abandonando 
+a anatomia artoniana quase que por completo. Seus 
+olhos ficam em lados opostos da cabeça e sua boca 
+fica no topo. Seu tórax adquiriu forma tubular e 
+seus braços e pernas são distribuídos em seu corpo 
+de forma que você não tem mais dois “lados”. Você 
+não pode ser flanqueado ou ficar caído e recebe um 
+bônus de +5 para evitar ser agarrado. Pré-requisito: 
+quatro outros poderes da Tormenta.
+Tempo Místico
+Você é capaz de acessar uma pequena parte 
+do controle dos lefeu sobre o tempo. Uma vez por 
+rodada, quando você lança uma magia com execução 
+de movimento, padrão ou completa, pode gastar 2 PM 
+e perder 1d6, 1d8 ou 1d12 PV para diminuir o tempo 
+de execução da magia em um, dois ou três passos, 
+respectivamente (até um mínimo de ação livre). 
+Essa perda de vida só pode ser curada com descanso. 
+Pré-requisito: dois outros poderes da Tormenta.
+Prisão Gélida Aprimoramento
+A magia cobre os alvos com cristais de gelo. Um 
+alvo que falhe no teste de resistência fica enredado por 
+1 rodada. Este aprimoramento só pode ser aplicado 
+em magias que causam dano de frio e permitem testes 
+de resistência. Custo: +1 PM.
+Trovão Retumbante Aprimoramento
+A magia emite um estrondo poderoso. Um alvo 
+que falhe no teste de resistência fica caído (apenas uma 
+vez por cena) e surdo. Este aprimoramento só pode ser 
+aplicado em magias que causam dano de eletricidade 
+e permitem testes de resistência. Custo: +1 PM.
+Poderes da Tormenta
+Bolsões Insanos
+Seu corpo possui espaços vazios sob sua pele ou 
+carapaça, possibilitando que você carregue mais itens, 
+em lugares nos quais eles dificilmente serão achados. 
+Seu limite de carga aumenta em 2 espaços, mais 1 
+espaço para cada outro poder da Tormenta que você 
+possui, e você recebe +5 em testes de Ladinagem para 
+ocultar itens nesses espaços.
+Carapaça Corrompida
+As placas quitinosas que recobrem seu corpo são 
+especialmente grossas, formadas por matéria vermelha 
+que parece repelir os elementos físicos de Arton. Você 
+recebe redução de dano 1. Essa RD aumenta em +1 
+para cada dois outros poderes da Tormenta que você 
+possui. Pré-requisito: Carapaça.
+Repulsivo
+A presença da Tempestade Rubra em você é tão 
+forte que é difícil olhar em sua direção. O primeiro 
+ataque de cada inimigo contra você em cada cena 
+sofre uma penalidade igual ao total de poderes da 
+Tormenta que você possui (incluindo este). Após 
+o primeiro ataque, os inimigos já se acostuma-
+ram com sua aparência atroz e não sofrem mais 
+essa penalidade. Pré-requisito: Car –1 ou menor.
+Secreção Cicatrizante
+Você pode gastar uma ação padrão e 2 PM 
+para secretar um fluido rubro e viscoso sobre 
+você mesmo ou uma criatura adjacente. O 
+alvo recupera 2d6+2 PV mas fica enjoado por 
+1 rodada (Fort CD Con evita). Para cada dois 
+Tabela 1-21: Poderes da Tormenta
+Poder Pré-requisitos
+Bolsões Insanos —
+Carapaça Corrompida Carapaça
+Repulsivo  Car –1
+Secreção Cicatrizante —
+Simetria Radial Quatro poderes da Tormenta
+Tempo Místico Dois poderes da Tormenta
+
+
+===== PAGE_INDEX_85 (printed 86) =====
+84
+Capítulo 1
+poderes de raça
+P
+oderes de raça são um novo grupo de 
+poderes gerais. São caracterizados por 
+possuírem como pré-requisito per -
+tencer a uma raça específica. Exceto 
+por isso, funcionam como quaisquer outros 
+poderes gerais.
+Ajudante Nato Qareen
+Quando você passa em um teste para ajudar, o 
+bônus fornecido aumenta em +1. Além disso, se você 
+estiver flanqueando um inimigo, o bônus que seus 
+aliados recebem em testes de ataque contra esse inimigo 
+por flanquear aumenta em +1 (para um total de +3).
+Amo Qareen
+Escolha um personagem (jogador ou NPC). Você 
+adotou esse personagem como seu amo. Quando usa 
+a habilidade Desejos a pedido do seu amo, o custo 
+da magia diminui em –2 PM (em vez de apenas –1). 
+Contudo, sempre que seu amo estiver presente em 
+uma situação de perigo (como um combate) ou sob 
+efeito de uma condição, você sofre –2 em testes de 
+perícias. Se o amo morrer, essa penalidade permanece 
+até o fim da aventura (quando então você pode 
+escolher um novo amo).
+Arma Amada Anão, Hobgoblin
+Escolha uma arma. Com essa arma, você recebe 
++2 em rolagens de dano e +5 em testes de manobra 
+para resistir a desarmar e quebrar.
+Arma Natural Aprimorada Várias
+Escolha uma de suas armas naturais fornecidas 
+por raça. O dano dessa arma aumenta em um passo 
+e sua margem de ameaça aumenta em +1. Você pode 
+escolher este poder outras vezes para armas naturais 
+diferentes. Pré-requisito: arma natural fornecida por 
+uma habilidade de raça.
+Arma Natural Hábil Várias
+Escolha uma arma natural fornecida por raça com 
+a qual você possa gastar 1 PM para fazer um ataque 
+corpo a corpo extra quando faz a ação agredir. Você não 
+precisa gastar pontos de mana para isso. Você continua 
+só podendo fazer isso uma vez por rodada. Pré-requisito: 
+arma natural fornecida por uma habilidade de raça.
+Arquearia Élfica Elfo
+Para você, todos os arcos são armas simples. 
+Além disso, você recebe +2 nas rolagens de dano 
+com arcos.
+Arsenal de  Lisandra Dahllan
+Você aprende e pode lançar Armamento da 
+Natureza. Caso aprenda novamente essa magia, seu 
+custo diminui em –1 PM. Além disso, ao usar sua 
+habilidade Armadura de Allihanna, você recebe um 
+bônus na Defesa adicional de +1 por patamar (ou 
+seja, Defesa +3 no patamar iniciante, +4 no veterano 
+e assim por diante). e
+Asas de Aço  Harpia, Kallyanach, Pteros, Suraggel
+Suas asas são sobrenaturalmente resistentes. Elas 
+fornecem +2 na Defesa e podem ser usadas como 
+armas naturais (dano 2d4, crítico x2, impacto). Uma 
+vez por rodada, quando usa a ação agredir para atacar 
+com outra arma, você pode gastar 1 PM para fazer um 
+ataque corpo a corpo extra com as asas (exceto se as 
+estiver usando para voar). Pré-requisito: possuir asas.
+Asas Extraplanares Suraggel
+Você desenvolve um par de asas adequado à sua 
+herança planar — normalmente, emplumadas se você 
+for um aggelus ou coriáceas se você for um sulfure, 
+embora isso possa mudar. Você pode gastar 1 PM por 
+rodada para voar com deslocamento de 12m. Enquanto 
+estiver voando dessa forma, você fica vulnerável.
+Atração pela Pólvora  Anão, Goblin, Hobgoblin , Kliren
+Entre seu povo, existem aqueles que amam a 
+pólvora. Você é um deles! Você recebe +1 em testes de 
+ataque e +2 em rolagens de dano com armas de fogo. 
+Com bombas e itens similares baseados em pólvora, 
+você causa +1 de dano por dado de dano. Pré-requisito: 
+treinado em Ofício (alquimista).
+
+===== PAGE_INDEX_86 (printed 87) =====
+85
+Campeões de Arton
+Raça Poderes Raça Poderes
+Anão
+Arma Amada, Atração pela Pólvora,  
+Conforto do Aço, Coração de Pedra, 
+Duro como Aço, Tradição de Ayrelynn
+Medusa Coração de Pedra, Coro Sibilante, Magia Ofídica, 
+Olhar Petrificante, Veneno Aprimorado
+Centauro Cascos Poderosos Meio-elfo Citadino, Escapada Criativa, Vigilância Élfica
+Dahllan
+Arsenal de Lisandra, Constrição Atroz, Fragrância 
+de Rosas, Gavinhas, 
+Saraivada Florestal, Vitalidade das Fadas
+Minotauro
+Arma Natural Aprimorada, Arma Natural Hábil, 
+Cascos Poderosos, Faro Aprimorado, 
+Fúria Natural, Marrada Poderosa, 
+Protetor Eterno, Protetor Táurico
+Duende Crescimento Feérico, Fragrância de Rosas, 
+Glamour, Glamour Maior, Vitalidade das Fadas
+Moreau 
+da serpente Magia Ofídica
+Eiradaan Estirpe Arcana, Glamour, Glamour Maior, Herança 
+Erudita, Meditação Mística, Sangue Mágico
+Moreau 
+do lobo Faro Aprimorado
+Elfo
+Arquearia Élfica, Esgrima Élfica, Estirpe 
+Arcana, Herança Erudita, Meditação Mística, 
+Vigilância Élfica
+Nagah Estirpe Arcana, Magia Ofídica, 
+Quadridestria, Quatro Braços
+Galokk Fúria Aterrorizante, Golpe dos Titãs Naidora Vigilância Élfica
+Gnoll Duas Cabeças, Dupla Conjuração, Dupla 
+Inteligência, Dupla Prontidão Ogro Fúria Aterrorizante
+Goblin Atração pela Pólvora, Entre as Pernas, Escapada 
+Criativa, Falatório Criativo, Golpe no Joelho Orc
+Duas Cabeças, Dupla Conjuração, Dupla 
+Inteligência, Dupla Prontidão, Quadridestria, 
+Quatro Braços
+Golem Chassi Gracioso, Programação de Combate, 
+Programação Holística, Soco Foguete Osteon Explosão Óssea, Manipulação Esquelética, 
+Ossos Afiados
+Harpia Asas de Aço Pteros Asas de Aço
+Hobgoblin Arma Amada, Atração pela Pólvora Qareen
+Ajudante Nato, Amo, Familiar de <Elemento>, 
+Familiar de Luz, Familiar de Trevas, Grande 
+Marca de Wynna, Sangue Mágico
+Hynne Citadino, Entre as Pernas, 
+Golpe no Joelho, Valentia Inata Sátiro
+Arma Natural Aprimorada, Arma Natural 
+Hábil, Cascos Poderosos, Marrada Poderosa, 
+Vitalidade das Fadas
+Humano Citadino, Comandar Aprimorado, Estilo Clássico Sereia/
+tritão
+Camuflagem Mimética, Canto da Sereia, 
+Pirata Oceânico
+Kaijin
+Duas Cabeças, Dupla Conjuração, Dupla 
+Inteligência, Dupla Prontidão, Exaltação do 
+Rejeitado, Quadridestria, Quatro Braços
+Sílfide Crescimento Feérico, Glamour, Glamour Maior, 
+Sangue Mágico, Vitalidade das Fadas
+Kallyanach Asas de Aço, Herança Erudita Suraggel Asas de Aço, Asas Extraplanares, Criança da 
+Luz/das Trevas, Familiar de Luz/Trevas
+Kliren Atração pela Pólvora, Citadino, Lógica Gnômica Trog
+Arma Natural Aprimorada, Arma Natural Hábil, 
+Camuflagem Mimética, Duas Cabeças, 
+Dupla Conjuração, Dupla Inteligência, 
+Dupla Prontidão, Fúria Natural, Quadridestria, 
+Quatro Braços, Saliva Corrosiva
+Kobolds Entre as Pernas, Golpe no Joelho
+Várias
+Arma Natural Aprimorada, Arma Natural Hábil, 
+Devoção Iluminada, Fúria Natural, Tradição 
+Perdida, Tradição Perdida Aprimorada
+Lefou
+Duas Cabeças, Dupla Conjuração, Dupla 
+Inteligência, Dupla Prontidão, Exaltação do 
+Rejeitado, Quadridestria, Quatro Braços
+Tabela 1-22: Poderes de Raça
+
+===== PAGE_INDEX_87 (printed 88) =====
+86
+Capítulo 1
+Camuflagem Mimética Sereia/Tritão, Trog
+Você pode mudar sua cor e textura a ponto de ficar 
+quase invisível. Você pode gastar uma ação de movimento 
+e 2 PM para receber um bônus em Furtividade até o 
+fim da cena. O bônus varia conforme o que você estiver 
+vestindo: +10 se estiver sem armadura e com no máximo 
+um item vestido, +5 se estiver de armadura leve e/ou 
+com até dois itens vestidos, +2 se estiver de armadura 
+pesada e/ou com mais de dois itens vestidos.
+Canto da Sereia Sereia/Tritão
+Sua voz é melodiosa e encantadora, capaz de 
+fascinar até as pessoas mais cruéis. Você recebe +2 em 
+Atuação. Além disso, o alcance das magias adquiridas 
+por sua Canção dos Mares aumenta em um passo (de 
+curto para médio e de médio para longo) e a CD para 
+resistir a elas aumenta em +2.
+Cascos Poderosos 
+ Centauro, Minotauro, Sátiro
+Quando faz um ataque desarmado, você pode 
+gastar 1 PM para desferir esse ataque usando seus 
+cascos. Se fizer isso, causa +1 dado de dano do mesmo 
+tipo, mas não pode escolher causar dano não letal.
+Chassi Gracioso Golem
+Seu corpo artificial foi feito com materiais leves e 
+belos. Você recebe +2 em Diplomacia e não possui a 
+penalidade de armadura da habilidade Chassi.
+Citadino 
+ Humano, Hynne, Kliren, Meio-Elfo
+Você foi criado em uma metrópole, onde se acos-
+tumou a lidar com várias pessoas — mas também às 
+facilidades da civilização. Você recebe +2 em testes de 
+perícias baseadas em Carisma (exceto Adestramento).
+Comandar Aprimorado Humano
+Quando usa Comandar, você pode gastar +2 PM 
+para aumentar o bônus fornecido pelo poder em +1. 
+Pré-requisitos: Car 2, Comandar.
+Conforto do Aço Anão
+Seu povo veste metal como se fosse algodão. 
+Você não sofre penalidade de armadura por usar 
+armaduras (mas ainda sofre por escudos). Além 
+disso, se estiver usando armadura pesada, recebe 
++2 na Defesa.
+Constrição Atroz Dahllan
+Você pode gastar uma ação de movimento e 1 PM 
+para expelir gavinhas de seu corpo. No início de cada 
+um de seus turnos, qualquer inimigo em alcance curto 
+deve fazer um teste de Reflexos (CD Sab). Se falhar, 
+fica enredado. Um inimigo enredado pode escapar 
+gastando uma ação padrão e passando em um teste de 
+Acrobacia ou Atletismo (CD Sab), ou afastando-se 9m 
+de você. Este poder tem duração sustentada.
+Coração de Pedra Anão, Medusa
+Você recebe +1 PV por nível e imunidade a 
+petrificação.
+Coro Sibilante Medusa
+Você pode gastar 1 PM para fazer suas serpentes 
+ecoarem suas palavras. Até o fim da cena, você recebe 
++2 em testes de perícias originalmente baseadas em 
+Carisma (exceto testes de ataque).
+Crescimento Feérico Duende, Sílfide
+Você pode gastar uma ação de movimento e 
+1 PM para aumentar uma categoria de tamanho e 
+receber +1 em Força (máximo Grande). A partir do 
+patamar veterano, você também pode gastar 3 PM 
+para aumentar duas categorias de tamanho; nesse 
+caso, recebe +2 em Força (máximo Enorme). Seu 
+equipamento muda com você. A transformação 
+dura pelo tempo que você quiser, mas você reverte 
+ao tamanho normal se ficar inconsciente ou morrer. 
+Voltar ao seu tamanho original é uma ação livre.
+Criança da Luz  Aggelus
+O sangue extraplanar é mais forte em você. Seu 
+bônus racial em Diplomacia e Intuição aumenta para 
++5 e você recebe redução de eletricidade e frio 5.
+Criança das Trevas  Sulfure
+O sangue extraplanar é mais forte em você. Seu 
+bônus racial em Enganação e Furtividade aumenta para 
++5 e você recebe redução de fogo e trevas 5.
+Devoção Iluminada Várias
+Você recebe +2 em Vontade, perde a sensibilidade 
+a luz causada por sua raça e não pode mais ser 
+ofuscado. Pré-requisitos:  sensibilidade a luz como 
+habilidade racial, devoto de uma divindade que 
+canalize energia positiva.
+
+===== PAGE_INDEX_88 (printed 89) =====
+87
+Campeões de Arton
+Duas Cabeças  Gnoll, Kaijin, Lefou, Orc, Trog
+Você nasceu com duas cabeças, ou então uma 
+segunda cabeça brotou de seu corpo em determinado 
+momento. Elas podem ser iguais ou não (por exemplo, 
+uma pode ser menor ou atrofiada) e podem ter 
+personalidades compatíveis ou não — fique à vontade 
+para interpretar diálogos entre elas. Sempre que fizer 
+um teste de Vontade, você pode gastar 1 PM para rolar 
+dois dados e usar o melhor resultado. Além disso, se 
+você tem uma arma natural de mordida, recebe uma 
+arma natural extra do mesmo tipo e com as mesmas 
+estatísticas (se você pode fazer um ataque extra com 
+sua mordida original gastando 1 PM, agora poderá 
+fazer um ataque com cada mordida gastando 2 PM). 
+Se um efeito modificar uma de suas mordidas, escolha 
+qual é afetada.
+Dupla Conjuração  Gnoll, Kaijin, Lefou, Orc, Trog
+Uma vez por rodada, quando lança uma magia 
+usando uma ação padrão, você pode gastar 5 PM para 
+lançar uma magia adicional (mas somente magias cuja 
+execução seja ação de movimento ou padrão). Você 
+precisa gesticular com duas mãos livres, em vez de 
+uma, para isso. Pré-requisitos: Des 2, lançar magias, 
+Dupla Inteligência.
+Dupla Inteligência  Gnoll, Kaijin, Lefou, Orc, Trog
+Quando faz um teste de Inteligência ou de 
+perícias baseadas nesse atributo, você pode gastar 2 
+PM para rolar dois dados e usar o melhor resultado. 
+Pré-requisitos: Int 2, Duas Cabeças.
+Dupla Prontidão  Gnoll, Kaijin, Lefou, Orc, Trog
+Com campo de visão superior e órgãos sensoriais 
+duplicados, você recebe +2 em Percepção, nunca fica 
+desprevenido e não pode ser flanqueado. Pré-requisitos: 
+Sab 2, Duas Cabeças.
+Duro Como Aço Anão
+Se estiver usando armadura pesada, você pode 
+somar sua Constituição na Defesa. Se fizer isso, 
+não pode somar sua Destreza, mesmo que outras 
+habilidades ou efeitos permitam isso. Pré-requisito: 11º 
+nível de personagem.
+Entre as Pernas  Goblin, Hynne, Kobolds
+Você pode ocupar o mesmo espaço de criaturas 
+duas categorias de tamanho maiores que você (em 
+vez de três). Enquanto estiver ocupando o mesmo 
+espaço que uma criatura maior que você, ataques 
+contra você têm 25% de chance de acertar a criatura 
+maior (inclusive ataques feitos pela própria criatura!). 
+Pré-requisito: treinado em Acrobacia.
+Escapada Criativa Goblin, Meio-Elfo
+Quando faz um teste de resistência, você pode 
+gastar 2 PM para somar sua Inteligência ao resultado 
+do teste.
+Esgrima Élfica Elfo
+Sua raça mescla arte e guerra como nenhuma outra. 
+Você recebe +1 em testes de ataque com espadas e, para 
+você, todas as espadas são consideradas armas ágeis.
+Estilo Clássico Humano
+Enquanto estiver empunhando uma espada e um 
+escudo, você recebe +2 nas rolagens de dano com sua 
+arma e +2 na Defesa.
+Estirpe Arcana  Elfo, Eiradaan, Nagah (fêmea)
+Você recebe +2 pontos de mana por patamar e 
++2 em Misticismo.
+Exaltação do Rejeitado Kaijin, Lefou
+Muitos acreditam que você não merece sua 
+divindade, mas ela prova o contrário. Quando lança 
+uma magia divina, você recebe um bônus em testes 
+de resistência igual ao círculo da magia lançada, até 
+o início do seu próximo turno. Pré-requisito:  lançar 
+magias divinas.
+Explosão Óssea Osteon
+Sempre que você sofre dano, pode gastar 2 
+PM para fazer alguns de seus ossos se soltarem, 
+absorvendo o choque. Isso reduz o dano sofrido à 
+metade, mas o deixa fraco (já que você perde partes 
+de seu esqueleto). Essa condição é cumulativa — se 
+usar este poder duas vezes, você fica debilitado e, se 
+usá-lo três vezes, fica inconsciente. Essas condições 
+duram até você recolher seus ossos (uma ação 
+completa) ou até o fim do dia.
+Falatório Criativo Goblin
+Escolha uma perícia originalmente baseada em 
+Carisma. Você pode usar Inteligência como atributo-
+-chave dessa perícia.
+
+===== PAGE_INDEX_89 (printed 90) =====
+88
+Capítulo 1
+Familiar de <Elemento>  Qareen da Água, Ar, Fogo ou Terra
+Seu familiar se transforma em uma criatura 
+elemental (por exemplo, se você é um qareen do fogo e 
+seu familiar é um corvo, ele passa a ser um corvo feito 
+de chamas). Seu familiar se torna imune a dano do seu 
+elemento e, sempre que você lança uma magia que gere 
+um efeito desse elemento, recebe +1 PM para gastar 
+em aprimoramentos. Ele continua fornecendo seus 
+benefícios originais. Pré-requisito: possuir um familiar.
+Familiar de Luz  Aggelus, Qareen da Luz
+Seu familiar se transforma em uma criatura celestial. 
+Além dos benefícios normais, seu familiar se torna 
+imune a dano de luz e, sempre que lança uma magia que 
+gere um efeito de luz, você recebe +1 PM para gastar 
+em aprimoramentos. Pré-requisito: possuir um familiar.
+Familiar de Trevas  Sulfure, Qareen das Trevas
+Seu familiar se transforma em uma criatura 
+abissal. Além dos benefícios normais, seu familiar 
+se torna imune a dano de trevas e, sempre que lança 
+uma magia que gere um efeito de trevas, você recebe 
++1 PM para gastar em aprimoramentos. Pré-requisito: 
+possuir um familiar.
+Faro Aprimorado  Minotauro, Moreau do Lobo
+Seu olfato é ainda mais apurado que o padrão de 
+sua raça. Você recebe +2 em Intuição, Investigação 
+e Percepção, +5 em testes de Sobrevivência para 
+rastrear e percebe automaticamente a presença de 
+criaturas em alcance curto (mas não sua localização). 
+De acordo com o mestre, criaturas sem cheiro (como 
+alguns construtos ou seres incorpóreos) podem ser 
+indetectáveis ao seu faro.
+Fragrância de Rosas Dahllan, Duende
+Você cheira bem. Você recebe +2 em Diplomacia 
+e pode gastar uma ação padrão e 2 PM para forçar 
+todas as criaturas em alcance curto a fazerem um 
+teste de Fortitude (CD Car). Uma criatura que falhe 
+fica pasma por 1 rodada (apenas uma vez por cena) 
+como um efeito metabólico.
+Fúria ATERRORIZANTE Galokk, Ogro
+Quando você entra em fúria, inimigos em alcance 
+curto ficam abalados até o fim da cena (Von CD Con 
+reduz para 1 rodada). Pré-requisito: Fúria ou Fúria Divina.
+Fúria Natural Várias
+Quando você é dominado por seus instintos selva-
+gens, prefere usar suas armas naturais àquelas criadas 
+pela civilização. Quando você está em fúria, o dano de 
+suas armas naturais aumenta em um passo e a margem 
+de ameaça delas aumenta em +1. Pré-requisitos: Fúria, 
+arma natural fornecida por uma habilidade de raça.
+Gavinhas Dahllan
+Quando você usa Armadura de Allihanna, duas 
+gavinhas crescem de suas costas. Cada gavinha é uma 
+arma natural (dano 1d4 cada, crítico x2, impacto) com 
+3m de alcance e versátil, fornecendo +2 em testes para 
+desarmar e derrubar. Uma vez por rodada, quando 
+usa a ação agredir para atacar com uma arma, você 
+pode gastar 1 PM por gavinha para fazer um ataque 
+corpo a corpo extra com ela (desde que ela já não 
+tenha sido usada na rodada). Pré-requisito: 5º nível 
+de personagem.
+Ginete de Javali Anão
+Você recebe um javali doherita (veja o quadro) 
+iniciante, com o qual possui +2 em Adestramento e 
+Cavalgar. Se perder seu javali, você pode obter outro 
+com uma semana de busca e T$ 100.
+Glamour Duende, Eiradaan, Sílfide
+O mais icônico dos poderes feéricos, glamour é uma 
+ilusão tão poderosa que gera efeitos reais. Escolha três 
+magias de 1º círculo, arcanas ou divinas. Você pode 
+lançar essas magias (atributo-chave Carisma), com as 
+seguintes mudanças:
+• Elas contam como magias de ilusão além de 
+seus tipos normais (por exemplo, um glamour de 
+Explosão de Chamas conta como uma magia de evocação 
+e de ilusão).
+• Sempre que você lança uma magia de glamour 
+que não pede testes de resistência, precisa rolar 1d6. 
+Se rolar 1, a magia não funciona (mas você gasta os 
+PM mesmo assim) e você não pode mais lançar magias 
+de glamour até o fim da cena.
+• Sempre que você lança uma magia de glamour 
+que permite testes de resistência de Fortitude ou 
+Reflexos, os alvos podem substituir os testes originais 
+por Vontade. Além disso, se um alvo passar no teste 
+de resistência, você não pode mais lançar magias de 
+glamour até o fim da cena. 
+Se você aprender uma magia de glamour nova -
+mente, pode lançá-la como uma magia normal ou de 
+glamour — nesse caso, ela sofre as mudanças acima, 
+mas seu custo diminui em –1 PM. e
+
+===== PAGE_INDEX_90 (printed 91) =====
+89
+Campeões de Arton
+Glamour Maior  Duende, Eiradaan, Sílfide
+Você aprende mais três magias, de 1º ou 2º cír -
+culo, arcanas ou divinas, que pode lançar como ma-
+gias de glamour (veja o poder anterior). Pré-requisitos: 
+Glamour, 5º nível de personagem. e
+Golpe dos Titãs Galokk
+Quando você usa Força dos Titãs, resultados um 
+ponto abaixo do máximo (por exemplo, 9 ao rolar 
+1d10) também permitem rolar o dado extra.
+Golpe no Joelho Goblin, Hynne, Kobolds
+Se você fizer um ataque corpo a corpo contra uma 
+criatura maior que você enquanto ocupa o mesmo 
+espaço que ela, o dano desse ataque aumenta em 
+um passo e você recebe +2 na margem de ameaça. 
+Pré-requisito: Entre as Pernas.
+Grande Marca de Wynna Qareen
+Sua tatuagem mística é especialmente grande e 
+chamativa, e contém ainda mais poder mágico que o 
+normal. Você pode lançar uma magia de 1º círculo a 
+sua escolha (atributo-chave Carisma), além daquela 
+fornecida pela habilidade Tatuagem Mística e pode 
+usar os aprimoramentos de ambas como se tivesse 
+acesso aos mesmos círculos de magia que um feiticeiro 
+do seu nível.
+Herança Erudita Eiradaan, Elfo, Kallyanach
+Seu sangue não carrega apenas a fagulha mágica 
+que lhe dá poder, mas também conhecimento ancestral. 
+Escolha uma perícia originalmente baseada em 
+Inteligência. Você soma seu Carisma nessa perícia.
+Lógica Gnômica Kliren
+Uma vez por cena, quando faz um teste de 
+perícia (exceto testes de ataque), você pode gastar 
+3 PM para substituir o atributo-chave dessa perícia 
+por Inteligência. Por exemplo, ao fazer um teste de 
+Atletismo você pode gastar 3 PM para somar sua 
+Inteligência em vez de sua Força.
+Magia Ofídica  Medusa, Moreau da Serpente, Nagah
+Para cada círculo de magia que você é capaz de 
+lançar, a CD para resistir a seus efeitos de veneno 
+aumenta em +1 e esses venenos causam +1 ponto 
+de perda de vida por dado. Pré-requisito: lançar magias.
+Manipulação Esquelética Osteon
+Você pode gastar uma ação de movimento e 1 PM 
+para estender seus braços e aumentar seu alcance 
+natural em +1,5m, para estender suas pernas e 
+aumentar seu deslocamento terrestre em +3m ou 
+para se transformar numa pilha de ossos que fornece 
++5 em Furtividade (nessa forma você só pode fazer 
+reações ou cancelar esse efeito). A manipulação dura 
+até o fim da cena, até você usar outra manipulação ou 
+até você cancelar o efeito (uma ação livre).
+Marrada Poderosa Minotauro, Sátiro
+Quando você faz uma investida com seus chifres 
+e acerta o ataque, o dano deles aumenta em um passo 
+e você pode gastar 1 PM para fazer um ataque corpo 
+a corpo desarmado ou com uma arma que esteja 
+empunhando. Esse ataque também recebe o bônus 
+de +2 por investida. 
+Meditação Mística Eiradaan, Elfo
+Uma vez por dia, você pode entrar em um transe 
+místico por 1d4 minutos. Enquanto medita, você 
+fica fascinado. Você pode interromper sua meditação 
+a qualquer momento, mas, se concluí-la, recupera 
+um número de pontos de mana igual ao seu nível. 
+Pré-requisitos: Sab 1, treinado em Vontade.
+Olhar Petrificante Medusa
+Você pode gastar uma ação padrão e 3 PM para 
+forçar uma criatura em alcance curto a fazer um teste 
+de Fortitude (CD Car). Se a criatura falhar, fica lenta 
+por 1d4 rodadas. Se já estiver lenta por este efeito, em 
+vez disso é petrificada permanentemente — ela e seu 
+equipamento se transformam em uma estátua inerte 
+e sem consciência, com RD 8 e os mesmos PV que ela 
+tinha em vida. Se a estátua for quebrada, a criatura 
+morrerá. Pré-requisito: 9º nível de personagem.
+Novo Parceiro: Javali Doherita
+Este parceiro montaria (Grande) forne-
+ce os benefícios a seguir. Iniciante: seu des-
+locamento muda para 9m e, se você fizer 
+uma investida montada, causa +1d8 pon-
+tos de dano. Veterano: você recebe uma ação 
+de movimento extra por turno (apenas para 
+se deslocar) e seu bônus de dano em inves-
+tidas montadas aumenta para +2d6. Mestre: 
+seu deslocamento muda para 12m e, quan-
+do faz uma investida montada, você ignora 
+10 pontos de redução de dano do alvo.
+
+===== PAGE_INDEX_91 (printed 92) =====
+90
+Capítulo 1
+Ossos Afiados Osteon
+Você recebe +2 em Intimidação e +2 em rolagens 
+de dano com armas naturais e ataques desarmados.
+Pirata Oceânico Sereia/Tritão
+Sua habilidade Mestre do Tridente passa a afetar 
+também arpões. Além disso, você recebe +2 em 
+testes de ataque com todas as armas afetadas por essa 
+habilidade e as considera armas ágeis.
+Programação de Combate Golem
+Você pode gastar uma ação de movimento e 3 
+PM para ativar um modo de análise de inimigos, com 
+duração sustentada. Enquanto estiver com esse modo 
+ativo, quando faz um ataque você rola dois dados e 
+usa o melhor resultado.
+Programação Holística Golem
+Você pode gastar uma ação completa e 2 PM para 
+se tornar treinado em uma perícia a sua escolha até 
+o fim do dia. Sempre que usa este poder, role 1d4. 
+Em um resultado 1, você sobrecarrega seu cérebro 
+artificial — até o fim do dia, você fica frustrado e não 
+pode mais usar este poder.
+Protetor Eterno Minotauro
+Enquanto tiver pelo menos um aliado adjacente, 
+você continua consciente mesmo se estiver com 0 
+ou menos pontos de vida. Você ainda morre caso 
+seus PV cheguem no limite negativo, como normal. 
+Pré-requisito: Protetor Táurico.
+Protetor Táurico Minotauro
+Você pode gastar uma ação de movimento para 
+carregar consigo (no colo, sobre os ombros…) um 
+aliado adjacente Médio ou menor. Você precisa de 
+uma mão livre, que fica ocupada enquanto você estiver 
+carregando o aliado. Enquanto está sendo carregado, 
+o aliado é considerado sob cobertura leve (Defesa 
++5). Além disso, qualquer ataque contra o aliado tem 
+50% de chance de ter você, e não o aliado, como alvo.
+Quadridestria  Kaijin, Lefou, Nagah, Orc, Trog
+Você consegue agir com todos os seus braços 
+ao mesmo tempo. Uma vez por rodada, quando usa 
+o poder Estilo de Duas Armas, você pode gastar 2 
+PM para fazer um ataque com cada arma que estiver 
+empunhando, desde que todas, com exceção de uma, 
+sejam leves. Assim, se estiver empunhando três armas 
+(e pelo menos duas forem leves), pode fazer três 
+ataques; se estiver empunhando quatro armas (e pelo 
+menos três forem leves), pode fazer quatro ataques. 
+Poderes que modificam Estilo de Duas Armas também 
+se aplicam aos seus braços extras. Por exemplo, Arma 
+Secundária Grande permite que você use armas de uma 
+mão em todos os seus braços e Ambidestria elimina a 
+penalidade de todos os ataques. Pré-requisitos: Estilo de 
+Duas Armas, Quatro Braços, 5º nível de personagem.
+Jovem Maquius, se escolher Quatro Braços Jovem Maquius, se escolher Quatro Braços 
+você poderá fazer mais ataques!você poderá fazer mais ataques!
+
+===== PAGE_INDEX_92 (printed 93) =====
+91
+Campeões de Arton
+Quatro Braços  Kaijin, Lefou, Nagah, Orc, Trog
+Você possui um par de braços extras. Isso permite 
+que você empunhe até quatro objetos, mas não fornece 
+ações extras — por exemplo, você continua fazendo 
+apenas um ataque com a ação agredir (mas veja 
+Quadridestria).
+Saliva Corrosiva Trog
+Sua mordida causa +1d6 pontos de dano de ácido. 
+Além disso, você pode gastar uma ação de movimento 
+para cobrir de saliva uma arma que esteja usando. A 
+arma causa +1d6 pontos de dano de ácido. O ácido 
+dura até você acertar um ataque ou até o fim da cena 
+(o que acontecer primeiro).
+Sangue Mágico  Eiradaan, Qareen, Sílfide
+Você pode dar seu sangue para conjurar magias 
+— literalmente! Uma vez por dia, você pode receber 
+um número de PM a sua escolha, limitado pela sua 
+Constituição. Por exemplo, se você possui Con 3, 
+pode ganhar 1, 2 ou 3 PM. Se você fizer isso e lançar 
+uma magia no mesmo turno, os PM ganhos por este 
+poder podem ultrapassar seu limite de PM por nível. 
+Se usar este poder, no final do seu turno você perde 
+1d4 PV por PM recebido. Por exemplo, se escolheu 
+receber 3 PM, perde 3d4 PV . e
+Saraivada Florestal Dahllan
+Se estiver sob efeito de sua Armadura de Allihanna, 
+você pode gastar uma ação de movimento e 2 PM para 
+disparar folhas afiadas e lascas de madeira em um cone 
+de 9m. Todas as criaturas nessa área sofrem 2d8+2 
+pontos de dano de corte (Ref CD Sab reduz à meta -
+de). Para cada patamar acima de iniciante, você pode 
+gastar +1 PM para aumentar o dano em +1d8+1.
+Soco Foguete Golem
+Quando faz um ataque corpo a corpo, você pode 
+gastar 1 PM para disparar seu punho e atingir um alvo 
+em alcance curto. Após o ataque, sua mão volta voando 
+para você. Esse ataque não pode ser usado para agarrar.
+Valentia Nata Hynne
+Seu povo não tem medo. Nem juízo. Você recebe 
+imunidade a medo e +5 em Iniciativa.
+Tradição de Ayrelynn Anão
+Você recebe proficiência com armas de fogo e 
+pode usar Sabedoria em vez de Destreza nos testes 
+de ataque com essas armas (e, caso possua o poder 
+Estilo de Disparo, nas rolagens de dano).
+Tradição Perdida Várias
+Membros de sua raça sabem lançar magias de 
+uma forma diferente das conhecidas. Escolha um 
+atributo (Força, Destreza, Constituição, Inteligência, 
+Sabedoria ou Carisma) e uma de suas classes com 
+a habilidade Magias. Para essa classe, você soma o 
+atributo escolhido no seu total de PM, em vez do 
+atributo determinado por ela, até um limite de 6 
+pontos de atributo, +2 pontos por patamar acima de 
+iniciante — com parte de seu conhecimento perdido, 
+as tradições mais antigas possuem certas limitações. 
+Aumentos temporários nesse atributo não fornecem 
+PM adicionais. Pré-requisitos: não humano, habilidade 
+de classe Magias.
+Tradição Perdida Aprimorada Várias
+Seu atributo-chave para lançar magias para a classe 
+escolhida para Tradição Perdida passa a ser o atributo 
+escolhido para esse poder (sujeito aos mesmos limites 
+desse poder). Pré-requisito: Tradição Perdida.
+Veneno Aprimorado Medusa
+O veneno que você aplica com sua habilidade 
+Natureza Venenosa passa a causar a perda de 2d12 
+PV . Pré-requisito: Con 1.
+Vigilância Élfica 
+ 
+Elfo,  Meio-Elfo, Naidora
+Em seu primeiro turno de cada combate, você 
+recebe uma ação de movimento adicional.
+Vitalidade das Fadas 
+ 
+Dahllan, Duende,  Sátiro, Sílfide
+Sua energia vital não provém de simples saúde 
+física, mas de convicção, postura positiva e força 
+de personalidade. Você soma seu Carisma em seus 
+pontos de vida iniciais e em Fortitude, e recebe +1 
+PV por nível a partir do 2º.
+
+
+===== PAGE_INDEX_93 (printed 94) =====
+92 Capítulo 1
+poderes de grupo
+P
+oderes de grupo fornecem bônus maiores 
+que outros poderes; contudo, só funcio-
+nam se houver outro personagem com 
+o mesmo poder na cena. Assim, se ape-
+nas você comprar um poder de grupo, ele não 
+terá efeito! Muitas vezes, poderes de grupo se 
+tornam mais eficientes de acordo com o núme-
+ro de personagens com o mesmo poder na cena.
+O pré-requisito de ter um aliado com o mesmo 
+poder na cena nunca pode ser cumprido por NPCs, 
+parceiros e outros coadjuvantes — apenas por perso-
+nagens jogadores. Também não pode ser cumprido 
+por efeitos que permitam a um personagem usar um 
+poder sem possuí-lo. Em suma, funcionam apenas se 
+dois ou mais membros do grupo efetivamente tiverem 
+escolhido o poder. Caso um membro do grupo morra 
+e um poder de grupo fique inativo, você pode gastar 
+tempo entre aventuras para treinar e trocar o poder, 
+ou esperar que o jogador em questão faça outro 
+personagem com o mesmo poder de grupo.
+Abrir a Guarda
+Numa luta individual, as mãos e pés 
+de um combatente agem em conjunto, 
+bloqueando, fintando e golpeando. Seu 
+grupo é como um só corpo: em combate, 
+cada um assume um papel, de forma 
+perfeitamente coordenada. Quando você 
+agarra ou derruba um inimigo, aliados 
+com este poder em alcance curto desse 
+inimigo podem gastar 2 PM para fazer 
+um ataque contra ele. Cada personagem só 
+pode fazer um ataque dessa forma por rodada. 
+Pré-requisito: treinado em Luta ou Pontaria.
+Ajuda do Amador
+Num bom grupo de aventureiros, nem todos pre-
+cisam ser combatentes letais. Alguns podem apenas 
+auxiliar em combate, então brilhar em outras áreas. 
+Você pode gastar uma ação padrão e fazer um teste 
+para ajudar, mas para atrapalhar um inimigo em alcance 
+curto, usando qualquer perícia que possa justificar 
+e que seja aprovada pelo mestre. Se fizer isso, seus 
+aliados com este poder aplicam o bônus da ajuda em 
+seus testes de ataque contra esse inimigo por 1 rodada.
+Apontar Fraqueza
+Alguns membros do grupo são curandeiros, outros 
+são diplomatas, outros são furtivos… E outros sabem 
+bater onde dói. Vocês estão acostumados a seguir o 
+exemplo deles — ainda bem que esses desgraçados 
+estão do seu lado! Quando você faz um acerto crítico, 
+cada aliado com este poder pode gastar 2 PM em seu 
+primeiro ataque contra o mesmo alvo nessa rodada. 
+Se acertar, o ataque é um crítico. Cada personagem 
+só pode fazer um acerto crítico dessa forma por cena.
+Barragem de Golpes
+Quando um de vocês acerta, o golpe é duro. 
+Quando dois acertam, é ainda mais. E quanto mais 
+membros do grupo acertam, mais cada um castiga o 
+oponente. Quando você causa dano em um inimigo, 
+seus aliados com este poder recebem um bônus de +1 
+em rolagens de dano contra o mesmo alvo pela cena 
+(limitado, para cada personagem, pelo nível dele). O 
+bônus acaba se nenhum personagem com este 
+poder causar dano ao inimigo em uma rodada.
+
+===== PAGE_INDEX_94 (printed 95) =====
+93Campeões de Arton
+Bode Expiatório
+Você e seu grupo estão sempre dispostos a assumir 
+a culpa uns pelos outros, mesmo que precisem “forçar os 
+limites da verdade” para isso. Sempre que a categoria de 
+atitude de um NPC piorar em relação a um personagem 
+com este poder, você pode automaticamente assumir 
+a culpa por qualquer evento ou interação que tenha 
+causado isso. A categoria de atitude do NPC piora para 
+você, permanecendo a mesma para seu aliado.
+Bote Coletivo
+Seu grupo é especialista em saltar para a ação como 
+um só, surpreendendo os inimigos com uma saraivada 
+de ataques antes que eles consigam se preparar. Você 
+recebe um bônus igual ao número de aliados com este 
+poder em testes de Iniciativa e, na primeira rodada de 
+cada combate, em testes de perícia e na CD de suas 
+habilidades. Pré-requisito: treinado em Iniciativa.
+Conforto Familiar
+Sabendo que podem contar uns com os outros, 
+você e seu grupo conseguem relaxar e descansar 
+melhor quando estão juntos. Independente das 
+condições de descanso, sempre que você dorme perto 
+de aliados com este poder (na mesma estalagem, no 
+mesmo acampamento, na mesma ala do castelo...), 
+para cada um desses aliados com este poder, você 
+começa o dia seguinte com 3 PV e 1 PM temporários 
+por patamar. Por exemplo, se você e outros dois 
+personagens com este poder em patamar veterano 
+dormirem juntos, os três começarão o dia seguinte 
+com 18 PV e 6 PM temporários.
+Conselhos Salvadores
+Você e seu grupo sabem reconhecer as forças e 
+fraquezas uns dos outros, e ouvem os especialistas 
+quando suas vidas estão em jogo. Você pode gastar 
+2 PM para fazer um teste de resistência usando o 
+valor de perícia de um aliado em alcance curto que 
+tenha este poder.
+
+===== PAGE_INDEX_95 (printed 96) =====
+94
+Capítulo 1
+Corrente de Corpos
+No campo de batalha, entregar rapidamente itens 
+como preparados alquímicos, poções e até armas 
+pode ser a diferença entre a vida e a morte. Uma vez 
+por rodada, você pode entregar um item que esteja 
+empunhando a qualquer aliado com este poder como 
+uma ação livre. Para isso, vocês devem estar em alcance 
+curto um do outro ou deve haver outros aliados com 
+este poder entre os dois.
+Defesa do Mártir
+Lutando juntos há muito tempo, você e seu grupo 
+aprenderam a defender uns aos outros em momentos 
+de necessidade. Uma vez por rodada, quando um 
+aliado em alcance curto que também tenha este poder 
+sofrer dano, você pode gastar 2 PM para sofrer esse 
+dano no lugar dele.
+Dinheiro Atrai Dinheiro
+Cada um de vocês, sozinho, poderia fazer trabalhos 
+lucrativos... Mas juntos vocês são uma mina de ouro! 
+Cada personagem com este poder adiciona 5% ao 
+resultado das tabelas em todas as rolagens de tesouro 
+do grupo. Esse benefício só vale para tesouro rolado 
+(não recompensas fixas) e só para tesouro encontrado 
+por todo o grupo (não para algo que tenha surgido num 
+momento em que só um personagem está presente).
+Escudo Vivo
+Você e seu grupo são mais do que companheiros 
+de aventuras — são amigos leais, que dariam a vida 
+um pelo outro. Quando mais de um personagem com 
+este poder for afetado por dano em área, você pode 
+gastar 2 PM para sofrer o dano no lugar desses aliados 
+que estejam em alcance curto. Cada um faz um teste 
+de resistência normalmente. Você sofre todo o dano 
+que seus aliados sofreriam de acordo com seus testes 
+de resistência. Suas próprias imunidades e RD se 
+aplicam normalmente.
+ Espírito de União
+Seu grupo luta junto até o fim! Este poder é dife-
+rente de outros poderes de grupo — ele só funciona 
+se todos os membros do grupo o tiverem escolhido, 
+independente de quantos sejam. No início da rodada, 
+cada personagem com este poder pode gastar 2 PM. 
+Se fizerem isso, até o fim da cena, em vez de pontos 
+de vida individuais, esses personagens compartilham 
+de um total de PV igual à soma dos PV de cada um. 
+Dano, recuperação e perda de vida são todos aplicados 
+Tabela 1-23: Poderes de Grupo
+Poder Pré-requisitos
+Abrir a Guarda Luta ou Pontaria
+Ajuda do Amador –
+Apontar Fraqueza –
+Barragem de Golpes –
+Bode Expiatório –
+Bote Coletivo Iniciativa
+Conforto Familiar –
+Conselhos Salvadores –
+Corrente de Corpos –
+Defesa do Mártir –
+Dinheiro Atrai Dinheiro –
+Escudo Vivo –
+Espírito de União Exército de Um Grupo Só, 
+outro poder de grupo
+Exército de Um Grupo Só Guerra
+Magia Comunitária –
+Mão Amiga –
+Parede de Escudos –
+Presença Luminosa –
+Saúde Coletiva –
+Uma Mão Lava a Outra Mão Amiga
+O Dilema do Jogador Ausente
+Poderes de grupo são feitos para incentivar 
+a integração e o pensamento tático entre os 
+jogadores. Por isso só funcionam para heróis: não 
+estariam “incentivando a integração” se um só 
+jogador pudesse cumprir os requisitos sozinho.
+Contudo, isso leva a uma questão: o que fazer 
+com personagens cujos jogadores faltaram à 
+sessão? Se eles estiverem sendo tratados como 
+NPCs, continuam contando para cumprir os 
+pré-requisitos?
+Isso é uma decisão do grupo como um todo, mas 
+aconselhamos a seguinte regra: se o personagem 
+está em risco na sessão (ou seja, se pode morrer 
+ou sofrer consequências negativas, mesmo com o 
+jogador ausente), então deve contar para o pré-re-
+quisito. Caso contrário, não.
+
+===== PAGE_INDEX_96 (printed 97) =====
+95
+Campeões de Arton
+a esse total (após aplicar quaisquer habilidades, como 
+RD do alvo original do efeito). Entretanto, se o total 
+de PV acabar, todos os personagens sofrem os efeitos 
+de serem reduzidos a 0 PV ou menos (cada um ainda 
+morre no seu limite individual de pontos de vida). 
+No fim da cena, divida os PV restantes igualmente 
+entre os personagens. Pré-requisitos: Exército de Um 
+Grupo Só, outro poder de grupo.
+Exército de Um Grupo Só
+Você e seu grupo são mais que um bando de aven-
+tureiros — com disciplina inquebrável, estratégias co-
+ordenadas e planejamento meticuloso, são soldados e 
+generais de seu próprio exército. Juntos, lutam como 
+uma tropa organizada. Você pode gastar uma ação pa-
+drão e 2 PM para formar um bando com seus aliados 
+com este poder, desde que cada um gaste uma ação 
+padrão e 2 PM na mesma rodada. Enquanto estiverem 
+formando um bando com você, os aliados não podem 
+executar ações (exceto reações), mas cada um forne-
+ce +2 em seus testes de ataque. Quando você ataca, 
+causa metade do dano mesmo que erre e, se acertar 
+por 10 ou mais, seus aliados podem rolar o dano de 
+um único ataque que poderiam fazer com uma ação 
+padrão e somar ao dano do seu ataque (esse dano não 
+é multiplicado em caso de acerto crítico). O bando se 
+mantém até um personagem desfazer a formação (uma 
+ação livre) ou ficar inconsciente, ou até o fim da cena. 
+Pré-requisito: treinado em Guerra.
+Magia Comunitária
+Você e seu grupo são tão íntimos que sua magia 
+trata seus companheiros como se fossem você mesmo. 
+Uma vez por rodada, quando você lança uma magia com 
+alvo você ou 1 criatura, para cada aliado em alcance 
+curto com este poder você pode pagar o custo da magia 
+novamente para que ele também se beneficie do efeito. 
+Se o efeito tiver duração sustentada, cada personagem 
+afetado precisa pagar seu custo individualmente.
+Mão Amiga
+Você e seu grupo de aventureiros sabem assumir 
+o papel de ajudantes uns para os outros, facilitando 
+tarefas longas e maçantes. Sempre que você fizer uma 
+ação que demora mais de uma semana, seus aliados 
+com este poder podem ajudá-lo. Cada aliado que 
+gastar uma semana ao mesmo tempo que você 
+adiciona uma semana ao tempo de sua ação. Por 
+exemplo, se você quiser fabricar um item superior 
+(uma tarefa que exige um mês), três aliados com 
+este poder podem gastar cada um uma semana, 
+ao mesmo tempo que você. Assim, a fabricação 
+demora apenas uma semana (pois quatro semanas 
+equivalem a um mês).
+Parede de Escudos
+Você e seu grupo treinaram em uma das táticas 
+mais consagradas e eficientes da história militar ar -
+toniana, sendo capazes de proteger uns aos outros e 
+formar uma muralha intransponível contra os inimi -
+gos. Se você estiver usando um escudo, pode gastar 
+uma ação de movimento para formar uma parede 
+de escudos com um ou mais aliados adjacentes com 
+este poder que também estejam usando escudos. 
+Enquanto permanecerem adjacentes, os participantes 
+da parede recebem +5 na Defesa e RD 5.
+Presença Luminosa
+Todo grupo de aventureiros pode ter um druida 
+que não toma banho, um ladino que não sabe a 
+hora de calar a boca, um paladino rígido demais... 
+Mas os heróis carismáticos compensam por esses 
+chatos. Todos os personagens com este poder podem 
+gastar 2 PM. Se fizerem isso, até o fim da cena, cada 
+personagem pode usar o maior valor de cada perícia 
+baseada em Carisma de cada personagem com este 
+poder em suas rolagens.
+Saúde Coletiva
+Os sacerdotes e curandeiros de seu grupo conhe-
+cem muito bem seus pacientes, seu histórico e seu 
+organismo, sendo capazes de curá-los melhor do que 
+qualquer curandeiro desconhecido. Sempre que você 
+curar outro membro do grupo que também possui 
+este poder, os PV recuperados aumentam em +2 por 
+dado de cura.
+Uma Mão Lava a Outra
+É sempre mais fácil encarar desafios cercado de 
+companheiros. Mesmo quando tudo parece perdido, 
+basta uma olhada para seus amigos para saber que 
+tudo ficará bem. Quando faz um teste de perícia, você 
+pode gastar 1 PM para rolar novamente esse teste. 
+Você pode usar este poder um número de vezes por 
+cena igual ao total de membros do grupo com este 
+poder. Este poder não funciona em cenas de combate. 
+Pré-requisito: Mão Amiga.
+

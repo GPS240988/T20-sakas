@@ -5,12 +5,36 @@ import type { T20CanonicalEntity, EntityCategory, SpellEntity, MonsterEntity } f
 export const CANONICAL_DATABASE: T20CanonicalEntity[] = canonicalData as unknown as T20CanonicalEntity[];
 export const CONSOLIDATION_AUDIT = auditData;
 
+// ---------------------------------------------------------------------------
+// Categorias excluidas da interface E da busca (dados permanecem na base
+// canonica, mas nao sao navegaveis nem retornam em resultados).
+//   - pericia .............. excluida (Perícias)
+//   - origem_distincao ..... excluida (Origens & Lore)
+//
+// Alem disso, 'manobra' e 'regra' sao EXIBIDAS na interface, porem NAO
+// CLICAVEIS (ver flag `clickable: false` em CATEGORIES_LIST).
+// ---------------------------------------------------------------------------
+export const DISABLED_CATEGORIES: EntityCategory[] = ['pericia', 'origem_distincao'];
+
+export function isCategoryEnabled(cat: EntityCategory): boolean {
+  return !DISABLED_CATEGORIES.includes(cat);
+}
+
+/** Somente entidades de categorias visiveis na interface/busca. */
+export const VISIBLE_DATABASE: T20CanonicalEntity[] = CANONICAL_DATABASE.filter(
+  e => isCategoryEnabled(e.category)
+);
+
 export interface CategoryMetadata {
   id: EntityCategory | 'todas';
   label: string;
   iconName: string;
   count: number;
   badgeClass: string;
+  /** Quando false, a categoria existe mas fica desabilitada na UI. */
+  enabled?: boolean;
+  /** Quando false, a categoria é exibida mas NÃO pode ser selecionada. */
+  clickable?: boolean;
 }
 
 export interface BookMetadata {
@@ -37,7 +61,7 @@ export const BOOKS_LIST: BookMetadata[] = [
     label: 'Todos os Livros', 
     shortLabel: 'Todos os Livros', 
     version: '', 
-    count: CANONICAL_DATABASE.length, 
+    count: VISIBLE_DATABASE.length, 
     badgeClass: 'badge-gold' 
   },
   { 
@@ -45,7 +69,7 @@ export const BOOKS_LIST: BookMetadata[] = [
     label: 'Tormenta20', 
     shortLabel: 'Tormenta20', 
     version: '', 
-    count: CANONICAL_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Jogo do Ano'))).length, 
+    count: VISIBLE_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Jogo do Ano'))).length, 
     badgeClass: 'badge-gold' 
   },
   { 
@@ -53,7 +77,7 @@ export const BOOKS_LIST: BookMetadata[] = [
     label: 'Heróis', 
     shortLabel: 'Heróis', 
     version: '', 
-    count: CANONICAL_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Heróis'))).length, 
+    count: VISIBLE_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Heróis'))).length, 
     badgeClass: 'badge-ruby' 
   },
   { 
@@ -61,7 +85,7 @@ export const BOOKS_LIST: BookMetadata[] = [
     label: 'Ameaças', 
     shortLabel: 'Ameaças', 
     version: '', 
-    count: CANONICAL_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Ameaças'))).length, 
+    count: VISIBLE_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Ameaças'))).length, 
     badgeClass: 'badge-emerald' 
   },
   { 
@@ -69,24 +93,36 @@ export const BOOKS_LIST: BookMetadata[] = [
     label: 'Atlas', 
     shortLabel: 'Atlas', 
     version: '', 
-    count: CANONICAL_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Atlas'))).length, 
+    count: VISIBLE_DATABASE.filter(e => e.sources?.some(s => s.book.includes('Atlas'))).length, 
     badgeClass: 'badge-parchment' 
   }
 ];
 
+/**
+ * Lista de categorias da interface. 'pericia' e 'origem_distincao' foram
+ * removidas; 'regra' (Regras de Mesa) permanece cadastrada porém desabilitada.
+ */
 export const CATEGORIES_LIST: CategoryMetadata[] = [
-  { id: 'todas', label: 'Tudo', iconName: 'Compass', count: CANONICAL_DATABASE.length, badgeClass: 'badge-gold' },
+  { id: 'todas', label: 'Tudo', iconName: 'Compass', count: VISIBLE_DATABASE.length, badgeClass: 'badge-gold' },
   { id: 'equipamento', label: 'Equipamentos', iconName: 'Shield', count: CANONICAL_DATABASE.filter(e => e.category === 'equipamento').length, badgeClass: 'badge-gold' },
   { id: 'magia', label: 'Magias', iconName: 'Sparkles', count: CANONICAL_DATABASE.filter(e => e.category === 'magia').length, badgeClass: 'badge-mana' },
   { id: 'tesouro', label: 'Tesouros', iconName: 'Coins', count: CANONICAL_DATABASE.filter(e => e.category === 'tesouro').length, badgeClass: 'badge-gold' },
   { id: 'poder', label: 'Poderes', iconName: 'Zap', count: CANONICAL_DATABASE.filter(e => e.category === 'poder').length, badgeClass: 'badge-ruby' },
   { id: 'condicao', label: 'Condições', iconName: 'Activity', count: CANONICAL_DATABASE.filter(e => e.category === 'condicao').length, badgeClass: 'badge-ruby' },
-  { id: 'manobra', label: 'Manobras', iconName: 'Swords', count: CANONICAL_DATABASE.filter(e => e.category === 'manobra').length, badgeClass: 'badge-gold' },
-  { id: 'pericia', label: 'Perícias', iconName: 'BookOpen', count: CANONICAL_DATABASE.filter(e => e.category === 'pericia').length, badgeClass: 'badge-emerald' },
+  { id: 'manobra', label: 'Manobras', iconName: 'Swords', count: CANONICAL_DATABASE.filter(e => e.category === 'manobra').length, badgeClass: 'badge-gold', clickable: false },
   { id: 'ameaca', label: 'Ameaças', iconName: 'Skull', count: CANONICAL_DATABASE.filter(e => e.category === 'ameaca').length, badgeClass: 'badge-ruby' },
-  { id: 'origem_distincao', label: 'Origens & Lore', iconName: 'MapPin', count: CANONICAL_DATABASE.filter(e => e.category === 'origem_distincao').length, badgeClass: 'badge-emerald' },
-  { id: 'regra', label: 'Regras de Mesa', iconName: 'Scroll', count: CANONICAL_DATABASE.filter(e => e.category === 'regra').length, badgeClass: 'badge-parchment' }
+  { id: 'regra', label: 'Regras de Mesa', iconName: 'Scroll', count: CANONICAL_DATABASE.filter(e => e.category === 'regra').length, badgeClass: 'badge-parchment', clickable: false }
 ];
+
+/** Categorias efetivamente navegáveis (exclui as desabilitadas). */
+export const CATEGORIES_ENABLED_LIST: CategoryMetadata[] = CATEGORIES_LIST.filter(
+  cat => cat.enabled !== false
+);
+
+/** Categorias exibidas na UI, porém não selecionáveis. */
+export function isCategoryClickable(cat: CategoryMetadata): boolean {
+  return cat.clickable !== false;
+}
 
 export function getSubcategoriesForCategory(category: EntityCategory | 'todas'): string[] {
   if (category === 'todas') return [];

@@ -1,13 +1,12 @@
 import React from 'react';
 import { BookMarked, ShieldAlert } from 'lucide-react';
-import { CONSOLIDATION_AUDIT } from '../data/database';
+import cabecalho from '../../cabecalho.jpg';
 
 interface HeaderProps {
   onOpenCombatTracker: () => void;
   onOpenFavorites: () => void;
   onOpenTreasure: () => void;
   favoritesCount: number;
-  activeConditionsCount: number;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -15,29 +14,25 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenFavorites,
   onOpenTreasure,
   favoritesCount,
-  activeConditionsCount
 }) => {
   return (
     <header className="header-container">
       <div className="header-content">
-        <div className="brand-wrapper">
-          <div className="shield-icon">
-            <span className="heraldic-symbol">⚔️</span>
-          </div>
-          <div>
-            <div className="title-row">
-              <h1 className="header-title">TORMENTA 20</h1>
-              <span className="badge badge-gold">Compêndio Canônico</span>
-            </div>
-            <p className="header-subtitle">
-              Base Consolidada dos 4 Livros • <span className="highlight-text">{CONSOLIDATION_AUDIT.total} Regras & Entidades</span>
-            </p>
-          </div>
+        <div className="header-brand">
+          <img
+            src={cabecalho}
+            alt="Tormenta 20 - Cabecalho"
+            className="header-logo"
+          />
+        </div>
+
+        <div className="header-title-wrapper">
+          <h1 className="header-title">Tormenta 20 — SAKA'S</h1>
         </div>
 
         <div className="header-actions">
-          <button 
-            className="header-btn" 
+          <button
+            className="header-btn"
             onClick={onOpenTreasure}
             title="Simulador e Tabela de Tesouros"
           >
@@ -45,20 +40,17 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="btn-label">Tesouros</span>
           </button>
 
-          <button 
-            className={`header-btn ${activeConditionsCount > 0 ? 'header-btn-active-ruby' : ''}`} 
+          <button
+            className="header-btn"
             onClick={onOpenCombatTracker}
-            title="Condições de Mesa"
+            title="Condições"
           >
             <ShieldAlert size={18} className="btn-icon" />
             <span className="btn-label">Condições</span>
-            {activeConditionsCount > 0 && (
-              <span className="counter-badge badge-ruby">{activeConditionsCount}</span>
-            )}
           </button>
 
-          <button 
-            className="header-btn" 
+          <button
+            className="header-btn"
             onClick={onOpenFavorites}
             title="Favoritos e Regras Fixadas"
           >
@@ -73,3 +65,4 @@ export const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
+

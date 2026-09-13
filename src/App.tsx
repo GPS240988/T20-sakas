@@ -10,7 +10,6 @@ import { FavoritesDrawer } from './components/FavoritesDrawer';
 import { BottomNav } from './components/BottomNav';
 import { useUniversalSearch } from './hooks/useUniversalSearch';
 import { useFavorites } from './hooks/useFavorites';
-import { useCombatTracker } from './hooks/useCombatTracker';
 import type { T20CanonicalEntity } from './types/t20_schema';
 import './App.css';
 
@@ -30,7 +29,6 @@ export function App() {
   } = useUniversalSearch();
 
   const { favorites, toggleFavorite, isFavorite, count: favoritesCount } = useFavorites();
-  const combatTracker = useCombatTracker();
 
   // Modais de Estado
   const [selectedEntity, setSelectedEntity] = useState<T20CanonicalEntity | null>(null);
@@ -45,7 +43,6 @@ export function App() {
         onOpenFavorites={() => setIsFavoritesOpen(true)}
         onOpenTreasure={() => setIsTreasureOpen(true)}
         favoritesCount={favoritesCount}
-        activeConditionsCount={combatTracker.tracker.activeConditionIds.length}
       />
 
       <main className="main-content">
@@ -110,16 +107,10 @@ export function App() {
         onClose={() => setIsTreasureOpen(false)}
       />
 
-      {/* Rastreador de Combate & Condições */}
+      {/* Listagem de Condições Canônicas */}
       <CombatTrackerModal
         isOpen={isCombatTrackerOpen}
         onClose={() => setIsCombatTrackerOpen(false)}
-        tracker={combatTracker.tracker}
-        onToggleCondition={combatTracker.toggleCondition}
-        onRemoveCondition={combatTracker.removeCondition}
-        onUpdateHp={combatTracker.updateHp}
-        onUpdateMp={combatTracker.updateMp}
-        onSelectEntity={entity => setSelectedEntity(entity)}
       />
 
       {/* Gaveta de Favoritos */}
@@ -142,7 +133,6 @@ export function App() {
         onOpenCombatTracker={() => setIsCombatTrackerOpen(true)}
         onOpenFavorites={() => setIsFavoritesOpen(true)}
         favoritesCount={favoritesCount}
-        activeConditionsCount={combatTracker.tracker.activeConditionIds.length}
       />
     </div>
   );

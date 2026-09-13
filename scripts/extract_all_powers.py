@@ -1,86 +1,350 @@
-import pypdf
+# -*- coding: utf-8 -*-
+"""
+Extractor canónico del grupo PODERES para Tormenta20 (T20 Sakas).
+
+Lee el texto verbatim de los PDFs de los libros y consolida TODOS los poderes
+del grupo "Poder" con el texto EXACTO tal como aparece en el libro (sin
+alteración ni interpretación), siguiendo el patrón de extracción de magias.
+
+Fuentes (se excluyen las Distinções, formato narrativo aparte):
+  - Tormenta20 - Jogo do Ano (v1.3): Combate, Destino, Magia, Concedidos, da Tormenta
+  - T20 Heróis de Arton (v1.1):      Novos Poderes (Combate/Destino/Magia/Tormenta),
+                                     Raça y Grupo
+"""
 import json
-import re
 import os
+import re
 
-pdf_jda = "Tormenta20-Edicao-Jogo-do-Ano-v1.3_compressed.pdf"
-pdf_herois = "T20-Herois-de-Arton-v1-1_compressed.pdf"
+DUMP_JDA = "scripts/tmp_dump/jda_poderes_130_143.txt"
+DUMP_HEROIS = "scripts/tmp_dump/herois_poderes_80_97.txt"
+OUT = "data/categories/poderes.json"
 
-os.makedirs("data/categories", exist_ok=True)
+# ---------------------------------------------------------------------------
+# Sección determinada por PÁGINA IMPRESA (por el libro entrelaza descripciones
+# con páginas-tabla de resumen; "TABLE"/"SKIP" se descartan).
+# ---------------------------------------------------------------------------
+PAGE_SECTIONS = {
+    "JDA": {
+        130: "Combate", 131: "Combate", 132: "TABLE", 133: "TABLE",
+        134: "Combate", 135: "Combate", 136: "Destino", 137: "Destino",
+        138: "Concedidos", 139: "Concedidos", 140: "Concedidos",
+        141: "Concedidos", 142: "Tormenta", 143: "Tormenta",
+    },
+    "HEROIS": {
+        80: "Combate", 81: "Combate", 82: "Destino", 83: "TABLE",
+        84: "Magia", 85: "Tormenta", 86: "Raça", 87: "TABLE",
+        88: "Raça", 89: "Raça", 90: "Raça", 91: "Raça", 92: "Raça",
+        93: "Raça", 94: "Grupo", 95: "Grupo", 96: "Grupo", 97: "Grupo",
+    },
+}
 
-powers_list = []
+SECTION_NAME_MAP = {
+    "Combate": ("Poderes de Combate", "Combate", "none"),
+    "Destino": ("Poderes de Destino", "Destino", "none"),
+    "Magia": ("Poderes de Magia", "Magia", "none"),
+    "Concedidos": ("Poderes Concedidos", "Concedido", "deidad"),
+    "Tormenta": ("Poderes da Tormenta", "Tormenta", "none"),
+    "Aprimoramiento": ("Poderes de Magia", "Magia", "none"),
+    "Raça": ("Poderes de Raça", "Raça", "raza"),
+    "Grupo": ("Poderes de Grupo", "Grupo", "none"),
+}
 
-def clean_text(t):
-    if not t:
-        return ""
+SECTION_TITLE_MAP = {
+    "poderes de combate": "Combate",
+    "poderes de destino": "Destino",
+    "poderes de magia": "Magia",
+    "poderes concedidos": "Concedidos",
+    "poderes da tormenta": "Tormenta",
+    "poderes de aprimoramento": "Aprimoramiento",
+    "poderes de raça": "Raça",
+    "poderes de raza": "Raça",
+    "podéres de grupo": "Grupo",
+    "poderes de grupo": "Grupo",
+}
+
+
+def _norm_key(s):
+    s = s.lower()
+    for _a, _b in [('á','a'),('é','e'),('í','i'),('ó','o'),('ú','u'),('à','a'),
+                   ('è','e'),('ç','c'),('ã','a'),('õ','o'),('ñ','n')]:
+        s = s.replace(_a, _b)
+    return " ".join(s.split())
+
+
+SECTION_TITLE_NORM = {_norm_key(k): v for k, v in SECTION_TITLE_MAP.items()}
+
+BOOK_META = {
+    "JDA": {"book": "Tormenta20 - Jogo do Ano", "version": "v1.3"},
+    "HEROIS": {"book": "Heróis de Arton", "version": "v1.1"},
+}
+
+
+def looks_like_table_header(line):
+    s = line.strip()
+    if not s or s.endswith('.'):
+        return False
+    low = _norm_key(s)
+    return (low.startswith("tabela ")
+            or low in ("poder pre-requisitos", "poder prerequisitos")
+            or low.startswith("poder pre-requisitos"))
+# ---------------------------------------------------------------------------
+# Heurística de detección de NOMBRES de poder
+# ---------------------------------------------------------------------------
+_SENTENCE_LEADS = (
+    "quando ", "você ", "uma ", "se vle ", "escolha ", "todos los ", "todos os ",
+    "sempre que ", "no final ", "cada ", "a presença ", "se você ", "en este ",
+    "os ", "as ", "ao ", "membros ", "algu s ", "contudo ", "após ", "então ",
+    "toda ", "efeitos ", "para cada ", "busque ", "este ", "estes ", "como ",
+    "sua ", "tu ", "seu ", "sobre ", "quando você ", "sofre ", "quando faz ",
+    "capítulo ", "escolhendo poderes gerais", "grupos de poderes",
+    "campeões de arton", "um inexpugn", "poder pré-requisitos", "tabela ",
+    "nivel benefício", "nível benefício", "benefício cd", "poderes  de ", "87 cap", "86 cap",
+    "85 cap", "89 cap", "90 cap", "92 cap", "93", "91",
+)
+_POWER_NAME_RE = re.compile(r"^[A-ZÁÉÍÓÚÀ-ÜÑ][A-Za-z0-9áéíóúà-ÿñü'’“”—, \-\"]*$")
+
+
+def looks_like_power_name(line):
+    s = line.strip()
+    if not s or len(s) > 40:
+        return False
+    if s.endswith(('.', ':', ';', ',', '?', '!')):
+        return False
+    if not _POWER_NAME_RE.match(s):
+        return False
+    low = _norm_key(s)
+    if "pre-requisito" in low:
+        return False
+    if re.fullmatch(r'[\d\s–—-]+', s):
+        return False
+    _HARD_NOISE = (
+        "capítulo dois", "capítulo 1", "capítulo ", "grupos de poderes",
+        "escolhendo poderes gerais", "campeões de arton", "um inexpugn",
+        "poder pré-requisitos", "tabela 1", "benefício cd",
+        "nivel benefício", "nível benefício",
+        "perícias & poderes", "poderes gerais", "o dilema do jogador",
+    )
+    if s.lower().startswith(_HARD_NOISE):
+        return False
+    if low.startswith(_SENTENCE_LEADS) and len(s) > 25:
+        return False
+    words = [w for w in re.split(r'\s+', s) if w]
+    if not words:
+        return False
+    if len(words) == 1:
+        w0 = words[0].rstrip('.,')
+        return bool(w0 and w0[0].isupper() and not w0.isupper() and len(w0) > 2)
+    caps = sum(1 for w in words if w and w[0].isupper() and not w.isupper() and len(w) > 1)
+    return caps >= 2
+
+
+def split_trailing(line):
+    s = line.strip()
+    words = [w for w in line.split() if w]
+    if not words:
+        return s, ""
+    trail_words = []
+    i = len(words) - 1
+    while i >= 0:
+        bare = words[i].strip(" ,;")
+        if not bare:
+            i -= 1
+            continue
+        if bare[0].isupper() and len(bare) > 1 and bare.lower() not in ("de", "da", "do", "las", "los"):
+            trail_words.insert(0, words[i])
+            i -= 1
+        elif trail_words and _norm_key(bare) in ("ou", "y", "o", "e", ","):
+            trail_words.insert(0, words[i])
+            i -= 1
+        else:
+            break
+    if not trail_words:
+        return s, ""
+    name = " ".join(words[:len(words) - len(trail_words)]).strip().rstrip(",").strip()
+    tail = " ".join(trail_words).strip()
+    if not name:
+        return s, ""
+    return name, tail
+
+
+# ---------------------------------------------------------------------------
+# Utilidades de limpieza técnica (no alteran el texto del libro)
+# ---------------------------------------------------------------------------
+def join_lines(lines):
+    txt = " ".join(lines)
+    txt = txt.replace("\u00a0", " ")
+    txt = re.sub(r'\s+', ' ', txt)
+    return txt.strip()
+
+
+def sanitize_desc(t):
     t = t.replace('\x00', '')
-    t = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', t)
-    t = re.sub(r'\n+', ' ', t)
+    t = re.sub(r'\s+([,.;:])', r'\1', t)
+    t = re.sub(r'\s+e\s*$', '', t)
     t = re.sub(r'\s+', ' ', t)
     return t.strip()
 
-# =========================================================================
-# 1. PODERES GERAIS (JOGO DO ANO: PÁGINAS 130 A 143)
-# =========================================================================
-print("Consolidando Poderes de Jogo do Ano...")
 
-powers_sample = [
-    # Combate
-    {"name": "Ataque Poderoso", "sub": "Poderes de Combate", "type": "Combate", "req": ["For 1"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 130, "desc": "Sempre que fizer um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano (+10 se usar uma arma de duas mãos)."},
-    {"name": "Ataque Preciso", "sub": "Poderes de Combate", "type": "Combate", "req": ["Des 1"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 130, "desc": "Seus ataques corpo a corpo e à distância têm a margem de ameaça aumentada em +1."},
-    {"name": "Acuidade com Arma", "sub": "Poderes de Combate", "type": "Combate", "req": ["Des 1"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 130, "desc": "Quando usa uma arma leve ou uma arma de disparo, você pode usar seu modificador de Destreza em vez de Força nos testes de ataque."},
-    {"name": "Estilo de Disparo", "sub": "Poderes de Combate", "type": "Combate", "req": ["Pontaria"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 131, "desc": "Se estiver usando uma arma de disparo, você soma o modificador de Destreza nas rolagens de dano."},
-    {"name": "Estilo de Duas Armas", "sub": "Poderes de Combate", "type": "Combate", "req": ["Des 2", "treinado em Luta"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 131, "desc": "Se estiver empunhando duas armas (e atacar com ambas na mesma rodada), você pode fazer um ataque adicional com a arma secundária sofrendo –2 em todos os testes de ataque."},
-    {"name": "Estilo de Uma Arma", "sub": "Poderes de Combate", "type": "Combate", "req": ["treinado em Luta"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 131, "desc": "Se estiver usando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na Defesa e +2 nos testes de ataque."},
-    {"name": "Vitalidade", "sub": "Poderes de Destino", "type": "Destino", "req": ["Con 1"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 135, "desc": "Você recebe +1 ponto de vida por nível de personagem e +2 em testes de Fortitude."},
-    {"name": "Vontade de Ferro", "sub": "Poderes de Destino", "type": "Destino", "req": ["Sab 1"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 135, "desc": "Você recebe +1 ponto de mana por nível de personagem e +2 em testes de Vontade."},
-    {"name": "Surto Heroico", "sub": "Poderes de Destino", "type": "Destino", "req": ["Nível 5"], "cost": "5 PM", "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 135, "desc": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional."},
-    {"name": "Foco em Magia", "sub": "Poderes de Magia", "type": "Magia", "req": ["Habilidade de lançar magias"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 137, "desc": "Escolha uma magia que conheça. O custo dessa magia é reduzido em –1 PM (mínimo 1 PM)."},
-    {"name": "Magia Acelerada", "sub": "Poderes de Magia", "type": "Magia", "req": ["Lançar magias de 2º círculo"], "cost": "+4 PM", "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 137, "desc": "Uma vez por rodada, você pode lançar uma magia com execução de ação padrão ou de movimento como uma ação livre."},
-    {"name": "Anatomia Insana", "sub": "Poderes da Tormenta", "type": "Tormenta", "req": ["1 poder da Tormenta"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 142, "desc": "Seus órgãos internos são estranhos e mutáveis. Você tem 25% de chance de ignorar o dano extra de acertos críticos e ataques furtivos (+25% por dois outros poderes da Tormenta)."},
-    {"name": "Asas da Tormenta", "sub": "Poderes da Tormenta", "type": "Tormenta", "req": ["4 poderes da Tormenta"], "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 142, "desc": "Você desenvolve asas quitinosas e pontiagudas de lefeu. Você pode gastar 1 PM por rodada para voar com deslocamento de 12m."},
-    {"name": "Sangue de Ferro", "sub": "Poderes Concedidos", "type": "Concedido", "deity": "Arsenal", "cost": "1 PM", "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 138, "desc": "Você pode gastar 1 PM para receber +2 em rolagens de dano corpo a corpo e Redução de Dano 2 até o final da cena."},
-    {"name": "Coragem Total", "sub": "Poderes Concedidos", "type": "Concedido", "deity": "Arsenal, Valkaria, Khalmyr", "book": "Tormenta20 - Jogo do Ano (v1.3)", "page": 138, "desc": "Você é imune a efeitos de medo, mágicos ou não. Este poder não afeta o medo de aliados."}
-]
+def slugify_name(name):
+    s = name.lower()
+    for a, b in [('á','a'),('é','e'),('í','i'),('ó','o'),('ú','u'),('à','a'),
+                 ('è','e'),('ì','i'),('ò','o'),('ù','u'),('â','a'),('ê','e'),
+                 ('î','i'),('ô','o'),('û','u'),('ã','a'),('õ','o'),('ñ','n'),
+                 ('ç','c'),('ü','u'),('–','-'),('—','-'),('/','-'),('’',"'"),
+                 ('‘',"'"),('“','"'),('”','"')]:
+        s = s.replace(a, b)
+    s = re.sub(r'[^a-z0-9\'\- ]', '', s)
+    s = re.sub(r'\s+', '-', s.strip())
+    s = re.sub(r'-+', '-', s)
+    return f"poder-{s}"
+# ---------------------------------------------------------------------------
+# Extracción página por página
+# ---------------------------------------------------------------------------
+def extract(dump_path, book_key):
+    with open(dump_path, "r", encoding="utf-8") as fd:
+        raw = fd.read()
 
-# =========================================================================
-# 2. NOVOS PODERES E DISTINÇÕES (HERÓIS DE ARTON)
-# =========================================================================
-print("Consolidando Novos Poderes e Distinções de Heróis de Arton...")
+    pages = []
+    for line in raw.split("\n"):
+        pm = re.match(r'^=+ PAGE_INDEX_(\d+) \(printed (\d+)\)', line.strip())
+        if pm:
+            pages.append({"printed": int(pm.group(2)), "lines": []})
+        elif pages:
+            pages[-1]["lines"].append(line.strip())
 
-herois_powers = [
-    {"name": "Golpe Implacável", "sub": "Poderes de Combate", "type": "Combate", "req": ["Ataque Poderoso", "Luta 5"], "book": "Heróis de Arton (v1.1)", "page": 80, "desc": "Quando você ataca com Ataque Poderoso e erra o alvo, ainda assim causa metade do dano bônus em raspão."},
-    {"name": "Especialista em Armadilhas", "sub": "Distinções de Arton", "type": "Distinção", "req": ["Treinado em Ladinagem", "Ofício (Engenhoquinharia)"], "book": "Heróis de Arton (v1.1)", "page": 117, "desc": "Você dominou a arte dos Armadilheiros Mestres de Arton, criando engenhos explosivos, mecânicos e mágicos em combate."},
-    {"name": "Guerreiro Mágico de Wynna", "sub": "Distinções de Arton", "type": "Distinção", "req": ["Lançar magias arcanas", "Proficiência com armas marciais"], "book": "Heróis de Arton (v1.1)", "page": 171, "desc": "Você funde esgrima marcial e feitiçaria, desferindo golpes de espada que conduzem o efeito de magias de toque ou área."},
-    {"name": "Professor de Magia da Academia Real", "sub": "Distinções de Arton", "type": "Distinção", "req": ["Misticismo +10", "Conhecimento +10"], "book": "Heróis de Arton (v1.1)", "page": 207, "desc": "Você é um mestre acadêmico de Valkaria, ensinando truques eficientes e reduzindo o consumo de PM de aliados adjacentes."}
-]
+    powers = []
+    section = None
+    current = None
+    in_table = False
+    page_map = PAGE_SECTIONS[book_key]
 
-all_powers_data = powers_sample + herois_powers
+    def flush():
+        nonlocal current
+        if current and current.get("desc_lines"):
+            powers.append(current)
+        current = None
 
-for p in all_powers_data:
-    slug_id = f"poder-{p['name'].lower().replace(' ', '-').replace('í', 'i').replace('ã', 'a').replace('ç', 'c').replace('é', 'e').replace('ó', 'o').replace('ú', 'u')}"
-    slug_id = re.sub(r'[^a-z0-9\-]', '', slug_id)
-    powers_list.append({
-        "id": slug_id,
-        "name": p["name"],
-        "category": "poder",
-        "subcategory": p["sub"],
-        "powerType": p["type"],
-        "requirements": p.get("req", []),
-        "cost": p.get("cost"),
-        "deity": p.get("deity"),
-        "summary": f"{p['type']}. {p['desc'][:100]}...",
-        "description": p["desc"],
-        "sources": [{
-            "book": p["book"],
-            "page": p["page"],
-            "section": f"Poderes: {p['sub']}",
-            "version": "v1.0+"
-        }],
-        "tags": ["poder", p["name"].lower(), p["type"].lower(), p["sub"].lower()] + ([r.lower() for r in p.get("req", [])])
-    })
+    for page in pages:
+        printed = page["printed"]
+        default_sec = page_map.get(printed)
+        if default_sec in ("TABLE", "SKIP"):
+            flush()
+            continue
+        in_table = False
+        if default_sec is not None:
+            section = SECTION_NAME_MAP[default_sec]
 
-with open("data/categories/poderes.json", "w", encoding="utf-8") as f:
-    json.dump(powers_list, f, ensure_ascii=False, indent=2)
+        for line in page["lines"]:
+            s = line.strip()
+            lowk = _norm_key(s)
 
-print(f"Total de Poderes & Distinções Consolidados: {len(powers_list)} registros em data/categories/poderes.json")
+            if lowk in SECTION_TITLE_NORM:
+                flush()
+                section = SECTION_NAME_MAP[SECTION_TITLE_NORM[lowk]]
+                in_table = False
+                continue
+            if looks_like_table_header(line):
+                in_table = True
+                continue
+            if in_table or not s:
+                continue
+
+            if section and looks_like_power_name(s):
+                flush()
+                subcat, ptype, trailer = section
+                name = s
+                trail = ""
+                if trailer in ("deidad", "raza"):
+                    _, trail = split_trailing(s)
+                    if not trail:
+                        trail = ""
+                current = {"_section": subcat, "_type": ptype,
+                           "name": name, "trail": trail,
+                           "_page": page["printed"], "desc_lines": []}
+                continue
+
+            if current is not None:
+                current["desc_lines"].append(s)
+
+    flush()
+
+    out = []
+    for p in powers:
+        desc = sanitize_desc(join_lines(p["desc_lines"]))
+        if not desc:
+            continue
+        name = p["name"].rstrip(",").strip()
+        if not name:
+            continue
+        trail = p.get("trail", "")
+        trails = [t.strip().rstrip(",") for t in re.split(r'[,/]|\s+e\s+|\s+y\s+|\s+ou\s+', trail) if t.strip()]
+        requirements = []
+        deity = None
+
+        req = re.search(r'Pr[ée]-?requisito[s]?\s*:\s*(.*)$', desc, re.IGNORECASE | re.MULTILINE)
+        if req:
+            req_text = sanitize_desc(req.group(1).strip().rstrip('.'))
+            parts = [x.strip().rstrip('.').strip() for x
+                     in re.split(r'[,;]|\s+e\s+|\s+y\s+|\s+ou\s+|\.', req_text) if x.strip()]
+            requirements = [re.sub(r'\s+', ' ', x) for x in parts]
+
+        type_ = p["_type"]
+        if type_ == "Concedido":
+            deity = "; ".join(trails) if trails else None
+            if deity:
+                requirements = [f"Devoto de {deity}"] + [r for r in requirements
+                                                          if not r.lower().startswith("devoto")]
+        elif type_ == "Raça":
+            requirements = trails + requirements
+
+        meta = BOOK_META[book_key]
+        subcat = p["_section"]
+        out.append({
+            "id": slugify_name(name),
+            "name": name,
+            "category": "poder",
+            "subcategory": subcat,
+            "powerType": type_,
+            "requirements": requirements,
+            "cost": None,
+            "deity": deity,
+            "summary": f"{type_}. {desc[:90]}{'...' if len(desc) > 90 else ''}",
+            "description": desc,
+            "sources": [{
+                "book": meta["book"],
+                "page": p.get("_page"),
+                "section": f"Poderes: {subcat}",
+                "version": meta["version"]
+            }],
+            "tags": ["poder", name.lower(), type_.lower(), subcat.lower()] + [r.lower() for r in requirements]
+        })
+    return out
+
+
+def main():
+    all_powers = extract(DUMP_JDA, "JDA") + extract(DUMP_HEROIS, "HEROIS")
+    by_id = {}
+    for p in all_powers:
+        pid = p["id"]
+        if pid in by_id:
+            for src in p["sources"]:
+                if src not in by_id[pid]["sources"]:
+                    by_id[pid]["sources"].append(src)
+        else:
+            by_id[pid] = p
+    result = list(by_id.values())
+    result.sort(key=lambda x: (x["subcategory"], x["name"].lower()))
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    print(f"Total poderes consolidados: {len(result)}")
+    by_sub = {}
+    for p in result:
+        by_sub[p["subcategory"]] = by_sub.get(p["subcategory"], 0) + 1
+    for k in sorted(by_sub):
+        print(f"  * {k}: {by_sub[k]}")
+
+
+if __name__ == "__main__":
+    main()

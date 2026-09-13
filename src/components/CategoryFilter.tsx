@@ -17,7 +17,8 @@ import {
   Tag
 } from 'lucide-react';
 import { 
-  CATEGORIES_LIST, 
+  CATEGORIES_ENABLED_LIST, 
+  isCategoryClickable,
   BOOKS_LIST,
   getSubcategoriesForCategory, 
   getItemTypesForCategory
@@ -134,11 +135,12 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               value={filters.category}
               onChange={e => onSelectCategory(e.target.value as any)}
             >
-              {CATEGORIES_LIST.map(cat => {
+              {CATEGORIES_ENABLED_LIST.map(cat => {
                 const count = dynamicCounts.getCategoryCount(cat.id);
+                const isLocked = !isCategoryClickable(cat);
                 return (
-                  <option key={cat.id} value={cat.id}>
-                    {cat.label} ({count})
+                  <option key={cat.id} value={cat.id} disabled={isLocked}>
+                    {cat.label} ({count}){isLocked ? ' 🔒' : ''}
                   </option>
                 );
               })}
@@ -229,15 +231,19 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
         {/* 1. Abas Principais de Categoria */}
         <div className="category-tabs-scroll">
           <div className="category-tabs-wrapper">
-            {CATEGORIES_LIST.map(cat => {
+            {CATEGORIES_ENABLED_LIST.map(cat => {
               const isSelected = filters.category === cat.id;
               const count = dynamicCounts.getCategoryCount(cat.id);
+              const isLocked = !isCategoryClickable(cat);
               return (
                 <button
                   key={cat.id}
-                  className={`category-tab-btn ${isSelected ? 'category-tab-selected' : ''}`}
-                  onClick={() => onSelectCategory(cat.id)}
+                  className={`category-tab-btn ${isSelected ? 'category-tab-selected' : ''} ${isLocked ? 'category-tab-locked' : ''}`}
+                  onClick={isLocked ? undefined : () => onSelectCategory(cat.id)}
+                  disabled={isLocked}
                   aria-pressed={isSelected}
+                  aria-disabled={isLocked}
+                  title={isLocked ? `${cat.label} — em breve` : undefined}
                 >
                   <span className="tab-icon">{ICON_MAP[cat.iconName]}</span>
                   <span className="tab-label">{cat.label}</span>
@@ -254,7 +260,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
             <div className="streamlined-panel-header">
               <div className="streamlined-panel-title">
                 <Filter size={15} className="text-gold" />
-                <span>Filtro de {CATEGORIES_LIST.find(c => c.id === filters.category)?.label || 'Categoria'}:</span>
+                <span>Filtro de {CATEGORIES_ENABLED_LIST.find(c => c.id === filters.category)?.label || 'Categoria'}:</span>
               </div>
               {hasActiveFacets && (
                 <button className="btn-clean-pill" onClick={onResetFilters} title="Limpar subfiltros">

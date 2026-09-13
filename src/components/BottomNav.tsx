@@ -7,7 +7,6 @@ interface BottomNavProps {
   onOpenCombatTracker: () => void;
   onOpenFavorites: () => void;
   favoritesCount: number;
-  activeConditionsCount: number;
 }
 
 export const BottomNav: React.FC<BottomNavProps> = ({
@@ -16,7 +15,6 @@ export const BottomNav: React.FC<BottomNavProps> = ({
   onOpenCombatTracker,
   onOpenFavorites,
   favoritesCount,
-  activeConditionsCount
 }) => {
   return (
     <nav className="bottom-nav-container parchment-card">
@@ -31,12 +29,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
       </button>
 
       <button className="bottom-nav-btn" onClick={onOpenCombatTracker}>
-        <div className="nav-icon-wrapper">
-          <ShieldAlert size={20} />
-          {activeConditionsCount > 0 && (
-            <span className="nav-badge badge-ruby">{activeConditionsCount}</span>
-          )}
-        </div>
+        <ShieldAlert size={20} />
         <span>Condições</span>
       </button>
 
@@ -52,3 +45,4 @@ export const BottomNav: React.FC<BottomNavProps> = ({
     </nav>
   );
 };
+

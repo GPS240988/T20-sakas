@@ -1,10 +1,10 @@
 {
-  "total": 877,
+  "total": 1146,
   "categories": {
     "equipamento": 494,
     "tesouro": 40,
     "magia": 226,
-    "poder": 19,
+    "poder": 288,
     "ameaca": 6,
     "origem_distincao": 6,
     "condicao": 41,
@@ -26,12 +26,13 @@
     "magia > Magias Universals": 29,
     "magia > Magias de Ameaças": 6,
     "magia > Magias de Heróis": 22,
-    "poder > Poderes de Combate": 7,
-    "poder > Poderes de Destino": 3,
-    "poder > Poderes de Magia": 2,
-    "poder > Poderes da Tormenta": 2,
-    "poder > Poderes Concedidos": 2,
-    "poder > Distinções de Arton": 3,
+    "poder > Poderes Concedidos": 64,
+    "poder > Poderes da Tormenta": 34,
+    "poder > Poderes de Combate": 60,
+    "poder > Poderes de Destino": 31,
+    "poder > Poderes de Grupo": 20,
+    "poder > Poderes de Magia": 22,
+    "poder > Poderes de Raça": 57,
     "ameaca > Ameaça Lacaio": 2,
     "ameaca > Ameaça Solo": 2,
     "ameaca > Ameaça Chefe": 1,
@@ -46,9 +47,9 @@
     "regra > Combate": 9
   },
   "books_consolidated": {
-    "Tormenta20 - Jogo do Ano": 555,
+    "Tormenta20 - Jogo do Ano": 697,
     "Ameaças de Arton": 82,
     "Atlas de Arton": 6,
-    "Heróis de Arton": 234
+    "Heróis de Arton": 361
   }
 }
