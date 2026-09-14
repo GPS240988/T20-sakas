@@ -31,13 +31,23 @@ export function App() {
     totalCount
   } = useUniversalSearch();
 
-  const { favorites, toggleFavorite, isFavorite, count: favoritesCount } = useFavorites();
+  const { 
+    favorites, 
+    favoritesWithDate, 
+    toggleFavorite, 
+    updateFavoriteComment,
+    isFavorite, 
+    exportFavorites, 
+    importFavorites, 
+    count: favoritesCount 
+  } = useFavorites();
 
   // Modais de Estado
   const [selectedEntity, setSelectedEntity] = useState<T20CanonicalEntity | null>(null);
   const [isTreasureOpen, setIsTreasureOpen] = useState<boolean>(false);
   const [isCombatTrackerOpen, setIsCombatTrackerOpen] = useState<boolean>(false);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState<boolean>(false);
+  const [modalOrigin, setModalOrigin] = useState<'main' | 'favorites'>('main');
 
   return (
     <div className="app-root">
@@ -84,7 +94,10 @@ export function App() {
               <EntityCard
                 key={entity.id}
                 entity={entity}
-                onClick={() => setSelectedEntity(entity)}
+                onClick={() => {
+                  setModalOrigin('main');
+                  setSelectedEntity(entity);
+                }}
                 isFavorite={isFavorite(entity.id)}
                 onToggleFavorite={e => {
                   e.stopPropagation();
@@ -99,7 +112,14 @@ export function App() {
       {/* Visualizador Canônico de Tomo */}
       <EntityModal
         entity={selectedEntity}
-        onClose={() => setSelectedEntity(null)}
+        onClose={() => {
+          setSelectedEntity(null);
+          // Se o modal foi aberto a partir dos favoritos, reabre a gaveta
+          if (modalOrigin === 'favorites') {
+            setIsFavoritesOpen(true);
+            setModalOrigin('main'); // Reset para não reabrir em próximos fechamentos
+          }
+        }}
         isFavorite={selectedEntity ? isFavorite(selectedEntity.id) : false}
         onToggleFavorite={() => {
           if (selectedEntity) toggleFavorite(selectedEntity.id);
@@ -124,8 +144,16 @@ export function App() {
         isOpen={isFavoritesOpen}
         onClose={() => setIsFavoritesOpen(false)}
         favorites={favorites}
+        favoritesWithDate={favoritesWithDate}
         onToggleFavorite={toggleFavorite}
-        onSelectEntity={entity => setSelectedEntity(entity)}
+        onUpdateComment={updateFavoriteComment}
+        onExportFavorites={exportFavorites}
+        onImportFavorites={importFavorites}
+        onSelectEntity={entity => {
+          setModalOrigin('favorites');
+          setIsFavoritesOpen(false);
+          setSelectedEntity(entity);
+        }}
       />
 
       {/* Barra de Navegação Inferior Mobile */}

@@ -2,19 +2,22 @@ import React from 'react';
 import { Bookmark, Sparkles, Shield, Swords, Zap, Activity, BookOpen, Skull, MapPin, Scroll, Coins } from 'lucide-react';
 import type { T20CanonicalEntity, SpellEntity, EquipmentEntity, MonsterEntity, PowerEntity, TreasureTableEntity } from '../types/t20_schema';
 import { formatBookName } from '../data/database';
+import { formatDate } from '../utils/formatters';
 
 interface EntityCardProps {
   entity: T20CanonicalEntity;
   onClick: () => void;
   isFavorite: boolean;
   onToggleFavorite: (e: React.MouseEvent) => void;
+  dateAdded?: string | Date;
 }
 
 export const EntityCard: React.FC<EntityCardProps> = ({
   entity,
   onClick,
   isFavorite,
-  onToggleFavorite
+  onToggleFavorite,
+  dateAdded
 }) => {
   const getCategoryBadge = () => {
     switch (entity.category) {
@@ -113,13 +116,22 @@ export const EntityCard: React.FC<EntityCardProps> = ({
       {renderQuickStats()}
 
       <div className="card-footer">
-        {primarySource ? (
-          <span className="source-label" title={primarySource.book}>
-            📖 {formatBookName(primarySource.book)} • Pág. {primarySource.page}
-          </span>
-        ) : (
-          <span className="source-label">Tormenta20 Canônico</span>
-        )}
+        <div className="card-footer-left">
+          {primarySource ? (
+            <span className="source-label" title={primarySource.book}>
+              📖 {formatBookName(primarySource.book)} • Pág. {primarySource.page}
+            </span>
+          ) : (
+            <span className="source-label">Tormenta20 Canônico</span>
+          )}
+          {dateAdded && (
+            <span className="fav-date" title={`Adicionado aos favoritos em ${typeof dateAdded === 'string' ? formatDate(dateAdded) : dateAdded.toLocaleDateString('pt-BR')}`}>
+              <Bookmark size={11} className="text-gold" />
+              <span className="fav-date-label">Adicionado aos favoritos em:</span>
+              <span className="fav-date-value">{formatDate(dateAdded)}</span>
+            </span>
+          )}
+        </div>
         <span className="click-detail-hint">Ver Detalhes →</span>
       </div>
     </article>
