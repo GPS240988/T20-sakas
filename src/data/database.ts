@@ -26,6 +26,100 @@ export const VISIBLE_DATABASE: T20CanonicalEntity[] = CANONICAL_DATABASE.filter(
   e => isCategoryEnabled(e.category)
 );
 
+export type SearchableEntity = T20CanonicalEntity & {
+  _searchText: string;
+  _parsedPrice: number | null;
+  _itemType: string;
+  _normalizedBooks: string[];
+};
+
+export function parseEquipmentPrice(priceStr?: string): number | null {
+  if (!priceStr) return null;
+  const match = priceStr.match(/(\d[\d\.,]*)/);
+  if (!match) return null;
+  let raw = match[1];
+  if (raw.includes('.') && raw.includes(',')) {
+    raw = raw.replace(/\./g, '').replace(',', '.');
+  } else if (raw.includes('.')) {
+    const parts = raw.split('.');
+    if (parts[parts.length - 1].length === 3) {
+      raw = parts.join('');
+    }
+  } else if (raw.includes(',')) {
+    raw = raw.replace(',', '.');
+  }
+  const val = parseFloat(raw);
+  return isNaN(val) ? null : val;
+}
+
+function buildSearchText(item: any): string {
+  const parts: string[] = [
+    item.name || '',
+    (item.tags || []).join(' '),
+    item.subcategory || '',
+    item.description || '',
+    item.summary || '',
+    item.proficiency || '',
+    item.type || '',
+    item.school || '',
+    item.subtype || '',
+    item.chapter || '',
+    item.regionOrDeity || '',
+    item.deity || ''
+  ];
+  if (item.entries) {
+    for (const e of item.entries) {
+      if (e.label) parts.push(e.label);
+      if (e.description) parts.push(e.description);
+    }
+  }
+  if (item.enhancements) {
+    for (const e of item.enhancements) {
+      if (e.cost) parts.push(e.cost);
+      if (e.description) parts.push(e.description);
+    }
+  }
+  if (item.uses) {
+    for (const u of item.uses) {
+      if (u.name) parts.push(u.name);
+      if (u.description) parts.push(u.description);
+    }
+  }
+  if (item.attacks) {
+    for (const a of item.attacks) {
+      if (a.name) parts.push(a.name);
+      if (a.description) parts.push(a.description);
+    }
+  }
+  if (item.specialAbilities) {
+    for (const s of item.specialAbilities) {
+      if (s.name) parts.push(s.name);
+      if (s.description) parts.push(s.description);
+    }
+  }
+  if (item.auxiliaryNotes) {
+    for (const n of item.auxiliaryNotes) {
+      parts.push(n);
+    }
+  }
+  return parts.join(' ').toLowerCase();
+}
+
+export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item => {
+  const anyItem = item as any;
+  const rawType = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype || '';
+  const normalizedBooks = (item.sources || []).map(s => s.book).filter(Boolean);
+  
+  return {
+    ...item,
+    _searchText: buildSearchText(item),
+    _parsedPrice: item.category === 'equipamento' ? parseEquipmentPrice(anyItem.tableData?.price) : null,
+    _itemType: typeof rawType === 'string' ? rawType.trim() : '',
+    _normalizedBooks: normalizedBooks
+  };
+});
+
+
 export interface CategoryMetadata {
   id: EntityCategory | 'todas';
   label: string;
@@ -131,7 +225,7 @@ export function getSubcategoriesForCategory(category: EntityCategory | 'todas'):
   CANONICAL_DATABASE.filter(e => e.category === category).forEach(e => {
     if (e.subcategory) set.add(e.subcategory);
   });
-  return Array.from(set).sort();
+  return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'));
 }
 
 export function getSubcategoryCount(category: EntityCategory | 'todas', subcategory: string): number {
@@ -152,13 +246,13 @@ export function getItemTypesForCategory(category: EntityCategory | 'todas', subc
     const item = e as any;
     // For Equipments: proficiency/subtype holds the classification (Armas Simples, Armaduras Leves, Vestuário, etc.)
     // For Spells: school
-    // For Powers: powerType or subtype
-    const val = item.proficiency || item.type || item.school || item.subtype;
+    // For Powers: subtype (Classe, etc.) or powerType
+    const val = item.subtype || item.proficiency || item.type || item.school;
     if (val && val !== subcategory && typeof val === 'string' && val.trim() !== '') {
       set.add(val.trim());
     }
   });
-  return Array.from(set).sort();
+  return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'));
 }
 
 export function getItemTypeCount(category: EntityCategory | 'todas', subcategory: string | undefined, itemType: string): number {

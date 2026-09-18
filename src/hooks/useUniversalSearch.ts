@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { VISIBLE_DATABASE } from '../data/database';
+import { SEARCHABLE_DATABASE, type SearchableEntity } from '../data/database';
 import type { EntityCategory } from '../types/t20_schema';
 
 export interface SearchFilters {
@@ -11,65 +11,23 @@ export interface SearchFilters {
   maxPrice?: number | '';
 }
 
-export function parseEquipmentPrice(priceStr?: string): number | null {
-  if (!priceStr) return null;
-  const match = priceStr.match(/(\d[\d\.,]*)/);
-  if (!match) return null;
-  let raw = match[1];
-  if (raw.includes('.') && raw.includes(',')) {
-    raw = raw.replace(/\./g, '').replace(',', '.');
-  } else if (raw.includes('.')) {
-    const parts = raw.split('.');
-    if (parts[parts.length - 1].length === 3) {
-      raw = parts.join('');
-    }
-  } else if (raw.includes(',')) {
-    raw = raw.replace(',', '.');
-  }
-  const val = parseFloat(raw);
-  return isNaN(val) ? null : val;
+function matchesBook(item: SearchableEntity, bookId: string): boolean {
+  if (bookId === 'todos') return true;
+  return item._normalizedBooks.some(b => {
+    if (bookId.includes('Jogo do Ano')) return b.includes('Jogo do Ano');
+    if (bookId.includes('Heróis')) return b.includes('Heróis');
+    if (bookId.includes('Ameaças')) return b.includes('Ameaças');
+    if (bookId.includes('Atlas')) return b.includes('Atlas');
+    return b === bookId;
+  });
 }
 
-function checkItemMatchesQuery(item: any, q: string): boolean {
-  if (!q) return true;
-  
-  if (item.name?.toLowerCase().includes(q)) return true;
-  if (item.tags?.some((t: string) => t.toLowerCase().includes(q))) return true;
-  if (item.subcategory?.toLowerCase().includes(q)) return true;
-  if (item.description?.toLowerCase().includes(q)) return true;
-  if (item.summary?.toLowerCase().includes(q)) return true;
-  
-  const typeVal = item.proficiency || item.type || item.school || item.subtype || item.chapter || item.regionOrDeity || item.deity;
-  if (typeVal && String(typeVal).toLowerCase().includes(q)) return true;
-  
-  if (item.entries?.some((e: any) => 
-    (e.label && String(e.label).toLowerCase().includes(q)) || 
-    (e.description && String(e.description).toLowerCase().includes(q))
-  )) return true;
-
-  if (item.enhancements?.some((e: any) =>
-    (e.cost && String(e.cost).toLowerCase().includes(q)) ||
-    (e.description && String(e.description).toLowerCase().includes(q))
-  )) return true;
-
-  if (item.uses?.some((u: any) =>
-    (u.name && String(u.name).toLowerCase().includes(q)) ||
-    (u.description && String(u.description).toLowerCase().includes(q))
-  )) return true;
-
-  if (item.attacks?.some((a: any) =>
-    (a.name && String(a.name).toLowerCase().includes(q)) ||
-    (a.description && String(a.description).toLowerCase().includes(q))
-  )) return true;
-
-  if (item.specialAbilities?.some((s: any) =>
-    (s.name && String(s.name).toLowerCase().includes(q)) ||
-    (s.description && String(s.description).toLowerCase().includes(q))
-  )) return true;
-
-  if (item.auxiliaryNotes?.some((n: string) => n.toLowerCase().includes(q))) return true;
-
-  return false;
+function matchesQuery(item: SearchableEntity, qTokens: string[]): boolean {
+  if (qTokens.length === 0) return true;
+  for (let i = 0; i < qTokens.length; i++) {
+    if (!item._searchText.includes(qTokens[i])) return false;
+  }
+  return true;
 }
 
 export function useUniversalSearch() {
@@ -83,20 +41,14 @@ export function useUniversalSearch() {
 
   const filteredResults = useMemo(() => {
     const q = query.trim().toLowerCase();
-    
-    return VISIBLE_DATABASE.filter(item => {
+    const qTokens = q ? q.split(/\s+/).filter(Boolean) : [];
+    const minP = filters.minPrice !== undefined && filters.minPrice !== '' ? Number(filters.minPrice) : null;
+    const maxP = filters.maxPrice !== undefined && filters.maxPrice !== '' ? Number(filters.maxPrice) : null;
+
+    return SEARCHABLE_DATABASE.filter(item => {
       // 1. Filtro de Livro Oficial
-      if (filters.book !== 'todos') {
-        const matchesBook = item.sources?.some(s => {
-          if (filters.book.includes('Jogo do Ano')) return s.book.includes('Jogo do Ano');
-          if (filters.book.includes('Heróis')) return s.book.includes('Heróis');
-          if (filters.book.includes('Ameaças')) return s.book.includes('Ameaças');
-          if (filters.book.includes('Atlas')) return s.book.includes('Atlas');
-          return s.book === filters.book;
-        });
-        if (!matchesBook) {
-          return false;
-        }
+      if (filters.book !== 'todos' && !matchesBook(item, filters.book)) {
+        return false;
       }
 
       // 2. Filtro de Categoria Principal
@@ -110,118 +62,113 @@ export function useUniversalSearch() {
       }
 
       // 4. Filtro de Tipo / Classificação / Escola
-      if (filters.itemType !== 'todas') {
-        const anyItem = item as any;
-        const val = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype;
-        if (val !== filters.itemType) {
-          return false;
-        }
+      if (filters.itemType !== 'todas' && item._itemType !== filters.itemType) {
+        return false;
       }
 
       // 4.5. Filtro de Faixa de Valor (Exclusivo para Equipamentos)
-      if (item.category === 'equipamento' && (filters.category === 'equipamento' || filters.category === 'todas')) {
-        const price = parseEquipmentPrice((item as any).tableData?.price);
-        if (filters.minPrice !== undefined && filters.minPrice !== '') {
-          if (price === null || price < Number(filters.minPrice)) return false;
-        }
-        if (filters.maxPrice !== undefined && filters.maxPrice !== '') {
-          if (price === null || price > Number(filters.maxPrice)) return false;
-        }
+      if (item.category === 'equipamento') {
+        if (minP !== null && (item._parsedPrice === null || item._parsedPrice < minP)) return false;
+        if (maxP !== null && (item._parsedPrice === null || item._parsedPrice > maxP)) return false;
       }
 
-      // 5. Se não houver texto na busca, retorna aprovado pelos filtros
-      if (!q) return true;
+      // 5. Busca Universal Instantânea
+      if (qTokens.length > 0 && !matchesQuery(item, qTokens)) {
+        return false;
+      }
 
-      // 6. Busca Universal Instantânea (incluindo texto interno dos modals)
-      return checkItemMatchesQuery(item, q);
+      return true;
     });
   }, [query, filters]);
 
-  // Contadores dinâmicos para a interface em tempo real
+  // Contadores dinâmicos agregados em passada única O(N) com Map Hash
   const dynamicCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
+    const qTokens = q ? q.split(/\s+/).filter(Boolean) : [];
+    const minP = filters.minPrice !== undefined && filters.minPrice !== '' ? Number(filters.minPrice) : null;
+    const maxP = filters.maxPrice !== undefined && filters.maxPrice !== '' ? Number(filters.maxPrice) : null;
 
-    const matchesBook = (item: any, bookId: string) => {
-      if (bookId === 'todos') return true;
-      return item.sources?.some((s: any) => {
-        if (bookId.includes('Jogo do Ano')) return s.book.includes('Jogo do Ano');
-        if (bookId.includes('Heróis')) return s.book.includes('Heróis');
-        if (bookId.includes('Ameaças')) return s.book.includes('Ameaças');
-        if (bookId.includes('Atlas')) return s.book.includes('Atlas');
-        return s.book === bookId;
-      });
-    };
-
-    const matchesQuery = (item: any) => {
-      return checkItemMatchesQuery(item, q);
-    };
-
-    const matchesPrice = (item: any) => {
-      if (item.category !== 'equipamento') return true;
-      const price = parseEquipmentPrice((item as any).tableData?.price);
-      if (filters.minPrice !== undefined && filters.minPrice !== '') {
-        if (price === null || price < Number(filters.minPrice)) return false;
+    // 1. Filtrar entidades que atendem à Query e ao Preço (Pre-filter comum)
+    const baseCandidates = SEARCHABLE_DATABASE.filter(item => {
+      if (minP !== null && item.category === 'equipamento') {
+        if (item._parsedPrice === null || item._parsedPrice < minP) return false;
       }
-      if (filters.maxPrice !== undefined && filters.maxPrice !== '') {
-        if (price === null || price > Number(filters.maxPrice)) return false;
+      if (maxP !== null && item.category === 'equipamento') {
+        if (item._parsedPrice === null || item._parsedPrice > maxP) return false;
       }
+      if (qTokens.length > 0 && !matchesQuery(item, qTokens)) return false;
       return true;
-    };
+    });
 
-    const getBookCount = (bookId: string) => {
-      return VISIBLE_DATABASE.filter(item => {
-        if (!matchesBook(item, bookId)) return false;
-        if (filters.category !== 'todas' && item.category !== filters.category) return false;
-        if (filters.subcategory !== 'todas' && item.subcategory !== filters.subcategory) return false;
-        if (filters.itemType !== 'todas') {
-          const anyItem = item as any;
-          const val = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype;
-          if (val !== filters.itemType) return false;
+    const bookCountMap = new Map<string, number>();
+    const categoryCountMap = new Map<string, number>();
+    const subcategoryCountMap = new Map<string, number>();
+    const itemTypeCountMap = new Map<string, number>();
+
+    const targetCategory = filters.category;
+    const targetSubcat = filters.subcategory;
+    const targetType = filters.itemType;
+    const targetBook = filters.book;
+
+    for (let i = 0; i < baseCandidates.length; i++) {
+      const item = baseCandidates[i];
+
+      // Agregação de Categorias e Subcategorias (respeitando o filtro de Livro ativo)
+      if (matchesBook(item, targetBook)) {
+        categoryCountMap.set(item.category, (categoryCountMap.get(item.category) || 0) + 1);
+        categoryCountMap.set('todas', (categoryCountMap.get('todas') || 0) + 1);
+
+        if (item.subcategory) {
+          const subKey = `${item.category}:::${item.subcategory}`;
+          subcategoryCountMap.set(subKey, (subcategoryCountMap.get(subKey) || 0) + 1);
+
+          if (item._itemType) {
+            const typeKey = `${item.category}:::${item.subcategory}:::${item._itemType}`;
+            itemTypeCountMap.set(typeKey, (itemTypeCountMap.get(typeKey) || 0) + 1);
+          }
         }
-        if (!matchesPrice(item)) return false;
-        return matchesQuery(item);
-      }).length;
-    };
+      }
 
-    const getCategoryCount = (catId: string) => {
-      return VISIBLE_DATABASE.filter(item => {
-        if (!matchesBook(item, filters.book)) return false;
-        if (catId !== 'todas' && item.category !== catId) return false;
-        if (!matchesPrice(item)) return false;
-        return matchesQuery(item);
-      }).length;
-    };
+      // Agregação de Livros (respeitando filtros de Categoria, Subcategoria e Tipo ativos)
+      const matchesCurrentFacets = 
+        (targetCategory === 'todas' || item.category === targetCategory) &&
+        (targetSubcat === 'todas' || item.subcategory === targetSubcat) &&
+        (targetType === 'todas' || item._itemType === targetType);
 
-    const getSubcategoryCount = (category: string, subcat: string) => {
-      return VISIBLE_DATABASE.filter(item => {
-        if (!matchesBook(item, filters.book)) return false;
-        if (category !== 'todas' && item.category !== category) return false;
-        if (subcat !== 'todas' && item.subcategory !== subcat) return false;
-        if (!matchesPrice(item)) return false;
-        return matchesQuery(item);
-      }).length;
-    };
-
-    const getItemTypeCount = (category: string, subcategory: string, type: string) => {
-      return VISIBLE_DATABASE.filter(item => {
-        if (!matchesBook(item, filters.book)) return false;
-        if (category !== 'todas' && item.category !== category) return false;
-        if (subcategory !== 'todas' && item.subcategory !== subcategory) return false;
-        if (type !== 'todas') {
-          const anyItem = item as any;
-          const val = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype;
-          if (val !== type) return false;
+      if (matchesCurrentFacets) {
+        bookCountMap.set('todos', (bookCountMap.get('todos') || 0) + 1);
+        for (let b = 0; b < item._normalizedBooks.length; b++) {
+          const bk = item._normalizedBooks[b];
+          bookCountMap.set(bk, (bookCountMap.get(bk) || 0) + 1);
         }
-        if (!matchesPrice(item)) return false;
-        return matchesQuery(item);
-      }).length;
-    };
+      }
+    }
 
     return {
-      getBookCount,
-      getCategoryCount,
-      getSubcategoryCount,
-      getItemTypeCount
+      getBookCount: (bookId: string) => {
+        if (bookId === 'todos') return bookCountMap.get('todos') || 0;
+        let count = 0;
+        for (const [bk, cnt] of bookCountMap.entries()) {
+          if (bk === 'todos') continue;
+          if (bookId.includes('Jogo do Ano') && bk.includes('Jogo do Ano')) count += cnt;
+          else if (bookId.includes('Heróis') && bk.includes('Heróis')) count += cnt;
+          else if (bookId.includes('Ameaças') && bk.includes('Ameaças')) count += cnt;
+          else if (bookId.includes('Atlas') && bk.includes('Atlas')) count += cnt;
+          else if (bk === bookId) count += cnt;
+        }
+        return count;
+      },
+      getCategoryCount: (catId: string) => {
+        return categoryCountMap.get(catId) || 0;
+      },
+      getSubcategoryCount: (category: string, subcat: string) => {
+        if (subcat === 'todas') return categoryCountMap.get(category) || 0;
+        return subcategoryCountMap.get(`${category}:::${subcat}`) || 0;
+      },
+      getItemTypeCount: (category: string, subcategory: string, type: string) => {
+        if (type === 'todas') return subcategoryCountMap.get(`${category}:::${subcategory}`) || 0;
+        return itemTypeCountMap.get(`${category}:::${subcategory}:::${type}`) || 0;
+      }
     };
   }, [query, filters]);
 
@@ -296,6 +243,6 @@ export function useUniversalSearch() {
     resetFilters,
     dynamicCounts,
     results: filteredResults,
-    totalCount: VISIBLE_DATABASE.length
+    totalCount: SEARCHABLE_DATABASE.length
   };
 }

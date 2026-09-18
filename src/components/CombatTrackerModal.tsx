@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { X, ShieldAlert, Search, ChevronDown, ChevronUp, Copy, Check } from 'lucide-react';
+import { ScrollToTop } from './ScrollToTop';
 
 // ============================================================================
 // Dados canônicos das condições — Tormenta20 (Jogo do Ano), pág. 394–395
@@ -221,6 +222,7 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
   };
 
   const [copied, setCopied] = useState<boolean>(false);
+  const listRef = useRef<HTMLDivElement>(null);
 
   const handleCopyContent = () => {
     const lines: string[] = [];
@@ -286,7 +288,7 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
         </div>
 
         {/* ── Conditions List ── */}
-        <div className="conditions-list-body">
+        <div className="conditions-list-body" ref={listRef}>
           {filteredConditions.length === 0 ? (
             <div className="conditions-empty">
               <span style={{ fontSize: '2rem' }}>🔍</span>
@@ -321,6 +323,9 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
             </ul>
           )}
         </div>
+
+        {/* Botão Flutuante Voltar ao Topo das Condições */}
+        <ScrollToTop containerRef={listRef} isInsideContainer title="Voltar ao topo das condições" />
       </div>
     </div>
   );

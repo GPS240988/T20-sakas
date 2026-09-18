@@ -75,7 +75,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
 
   const showPriceFilter = filters.category === 'equipamento';
   const showSubcategories = subcategories.length > 0 && filters.category !== 'todas';
-  const showItemTypes = itemTypes.length > 1 && filters.subcategory !== 'todas';
+  const showItemTypes = itemTypes.length > 0 && filters.subcategory !== 'todas';
 
   const hasActiveFacets = 
     filters.subcategory !== 'todas' || 
@@ -89,7 +89,10 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
 
   const getTypeLabel = () => {
     if (filters.category === 'magia') return 'Escola:';
-    if (filters.category === 'poder') return 'Tipo de Poder:';
+    if (filters.category === 'poder') {
+      if (filters.subcategory === 'Poderes de Classe') return 'Classe:';
+      return 'Tipo:';
+    }
     if (filters.category === 'ameaca') return 'Tipo:';
     return 'Tipo:';
   };

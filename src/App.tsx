@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -8,10 +8,14 @@ import { TreasureRoller } from './components/TreasureRoller';
 import { CombatTrackerModal } from './components/CombatTrackerModal';
 import { FavoritesDrawer } from './components/FavoritesDrawer';
 import { BottomNav } from './components/BottomNav';
+import { ScrollToTop } from './components/ScrollToTop';
 import { useUniversalSearch } from './hooks/useUniversalSearch';
 import { useFavorites } from './hooks/useFavorites';
 import type { T20CanonicalEntity } from './types/t20_schema';
 import './App.css';
+
+const INITIAL_BATCH_SIZE = 36;
+const BATCH_INCREMENT = 24;
 
 export function App() {
   const {
@@ -48,6 +52,54 @@ export function App() {
   const [isCombatTrackerOpen, setIsCombatTrackerOpen] = useState<boolean>(false);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState<boolean>(false);
   const [modalOrigin, setModalOrigin] = useState<'main' | 'favorites'>('main');
+
+  // Renderização Incremental / Infinite Scroll
+  const [displayLimit, setDisplayLimit] = useState<number>(INITIAL_BATCH_SIZE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  // Reset do limite visível sempre que a busca ou os filtros mudarem
+  useEffect(() => {
+    setDisplayLimit(INITIAL_BATCH_SIZE);
+  }, [query, filters]);
+
+  const visibleResults = useMemo(() => {
+    return results.slice(0, displayLimit);
+  }, [results, displayLimit]);
+
+  const hasMore = displayLimit < results.length;
+
+  const handleLoadMore = useCallback(() => {
+    setDisplayLimit(prev => Math.min(prev + BATCH_INCREMENT, results.length));
+  }, [results.length]);
+
+  // Observer de Scroll Infinito
+  useEffect(() => {
+    if (!hasMore) return;
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          handleLoadMore();
+        }
+      },
+      { rootMargin: '300px' }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [hasMore, handleLoadMore]);
+
+  const handleSelectEntity = useCallback((entity: T20CanonicalEntity) => {
+    setModalOrigin('main');
+    setSelectedEntity(entity);
+  }, []);
+
+  const handleCardToggleFavorite = useCallback((id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    toggleFavorite(id);
+  }, [toggleFavorite]);
 
   return (
     <div className="app-root">
@@ -89,23 +141,30 @@ export function App() {
             </button>
           </div>
         ) : (
-          <div className="results-grid">
-            {results.map(entity => (
-              <EntityCard
-                key={entity.id}
-                entity={entity}
-                onClick={() => {
-                  setModalOrigin('main');
-                  setSelectedEntity(entity);
-                }}
-                isFavorite={isFavorite(entity.id)}
-                onToggleFavorite={e => {
-                  e.stopPropagation();
-                  toggleFavorite(entity.id);
-                }}
-              />
-            ))}
-          </div>
+          <>
+            <div className="results-grid">
+              {visibleResults.map(entity => (
+                <EntityCard
+                  key={entity.id}
+                  entity={entity}
+                  onClick={() => handleSelectEntity(entity)}
+                  isFavorite={isFavorite(entity.id)}
+                  onToggleFavorite={e => handleCardToggleFavorite(entity.id, e)}
+                />
+              ))}
+            </div>
+
+            {hasMore && (
+              <div className="load-more-container" ref={sentinelRef}>
+                <button 
+                  className="load-more-btn" 
+                  onClick={handleLoadMore}
+                >
+                  📜 Exibindo {visibleResults.length} de {results.length} tomos — Carregar Mais
+                </button>
+              </div>
+            )}
+          </>
         )}
       </main>
 
@@ -114,10 +173,9 @@ export function App() {
         entity={selectedEntity}
         onClose={() => {
           setSelectedEntity(null);
-          // Se o modal foi aberto a partir dos favoritos, reabre a gaveta
           if (modalOrigin === 'favorites') {
             setIsFavoritesOpen(true);
-            setModalOrigin('main'); // Reset para não reabrir em próximos fechamentos
+            setModalOrigin('main');
           }
         }}
         isFavorite={selectedEntity ? isFavorite(selectedEntity.id) : false}
@@ -168,6 +226,9 @@ export function App() {
         onOpenFavorites={() => setIsFavoritesOpen(true)}
         favoritesCount={favoritesCount}
       />
+
+      {/* Botão Flutuante Voltar ao Topo */}
+      <ScrollToTop />
     </div>
   );
 }

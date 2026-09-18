@@ -39,6 +39,7 @@ export interface BaseEntity {
   name: string; // Nome canônico em PT-BR
   category: EntityCategory;
   subcategory: string; // Ex: 'Armas', 'Armaduras & Escudos', 'Itens Gerais', 'Magias Arcanas'
+  subtype?: string; // Ex: 'Arcanista', 'Paladino', etc.
   proficiency?: string; // Ex: 'Armas Simples', 'Armas Marciais', 'Armaduras Leves'
   purpose?: string; // Ex: 'Corpo a Corpo', 'Disparo', 'Alquimias & Preparados'
   summary?: string;

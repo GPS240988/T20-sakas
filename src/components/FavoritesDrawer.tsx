@@ -24,6 +24,7 @@ import {
 import { CANONICAL_DATABASE, formatBookName, CATEGORIES_ENABLED_LIST } from '../data/database';
 import type { T20CanonicalEntity, SpellEntity, EquipmentEntity, MonsterEntity, PowerEntity, TreasureTableEntity, EntityCategory } from '../types/t20_schema';
 import { formatDate } from '../utils/formatters';
+import { ScrollToTop } from './ScrollToTop';
 
 interface FavoritesDrawerProps {
   isOpen: boolean;
@@ -145,6 +146,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
   const [commentDraft, setCommentDraft] = useState<string>('');
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
 
   // Reset filters and active edits when drawer opens
   React.useEffect(() => {
@@ -323,7 +325,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
           </div>
         </div>
 
-        <div className="favorites-body">
+        <div className="favorites-body" ref={bodyRef}>
           {importStatus && (
             <div className={`fav-status-banner ${importStatus.type === 'success' ? 'status-success' : 'status-error'}`}>
               <span>{importStatus.message}</span>
@@ -521,6 +523,9 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
             </div>
           )}
         </div>
+
+        {/* Botão Flutuante Voltar ao Topo dos Favoritos */}
+        <ScrollToTop containerRef={bodyRef} isInsideContainer title="Voltar ao topo dos favoritos" />
       </div>
     </div>
   );

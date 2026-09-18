@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { X, Dices, Coins, Sparkles, ListOrdered, Eye, ArrowLeft, Copy, Check } from 'lucide-react';
+import { ScrollToTop } from './ScrollToTop';
 import { 
   evaluateMoneyRoll, 
   resolveItemChain, 
@@ -26,6 +27,9 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
   // Estado para visualização do Sub-modal de Tabela Referenciada
   const [viewingTableId, setViewingTableId] = useState<string | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
+
+  const rollerBodyRef = useRef<HTMLDivElement>(null);
+  const tableBodyRef = useRef<HTMLDivElement>(null);
 
   if (!isOpen) return null;
 
@@ -130,8 +134,8 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="treasure-roller-modal parchment-card ornate-border" onClick={e => e.stopPropagation()} style={{ maxWidth: '960px', width: '95%', maxHeight: '90vh', overflowY: 'auto' }}>
-        <div className="modal-header" style={{ position: 'sticky', top: 0, zIndex: 10, background: 'var(--bg-surface-elevated)', borderBottom: '1px solid var(--border-parchment)' }}>
+      <div className="treasure-roller-modal parchment-card ornate-border" onClick={e => e.stopPropagation()} style={{ maxWidth: '960px', width: '95%', maxHeight: '90vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative' }}>
+        <div className="modal-header" style={{ flexShrink: 0, background: 'var(--bg-surface-elevated)', borderBottom: '1px solid var(--border-parchment)' }}>
           <div className="title-row">
             <span className="badge badge-gold"><Coins size={14} /> Recompensas</span>
             <h2 className="modal-title" style={{ fontSize: '1.25rem' }}>Tesouros</h2>
@@ -150,7 +154,7 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
           </div>
         </div>
 
-        <div className="treasure-roller-body" style={{ padding: '1rem' }}>
+        <div className="treasure-roller-body" ref={rollerBodyRef} style={{ padding: '1rem', overflowY: 'auto', flex: 1 }}>
           <p className="roller-instruction" style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
             Selecione o <strong>Nível de Desafio (ND)</strong> e role individualmente para <strong>Dinheiro</strong> e <strong>Itens</strong>, ou sorteie ambos de forma automática.
           </p>
@@ -437,6 +441,9 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
 
           </div>
         </div>
+
+        {/* Botão Flutuante Voltar ao Topo do Simulador */}
+        <ScrollToTop containerRef={rollerBodyRef} isInsideContainer title="Voltar ao início do simulador" />
       </div>
 
       {/* ========================================================================= */}
@@ -444,8 +451,8 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
       {/* ========================================================================= */}
       {tableToView && (
         <div className="modal-backdrop" style={{ zIndex: 1100, background: 'rgba(0, 0, 0, 0.65)' }} onClick={() => setViewingTableId(null)}>
-          <div className="referenced-table-modal parchment-card ornate-border" onClick={e => e.stopPropagation()} style={{ maxWidth: '850px', width: '92%', maxHeight: '85vh', overflowY: 'auto', padding: '1.2rem', background: 'var(--bg-surface-elevated)' }}>
-            <div className="modal-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '2px solid var(--accent-gold)', paddingBottom: '0.6rem', marginBottom: '1rem' }}>
+          <div className="referenced-table-modal parchment-card ornate-border" onClick={e => e.stopPropagation()} style={{ maxWidth: '850px', width: '92%', maxHeight: '85vh', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', padding: '1.2rem', background: 'var(--bg-surface-elevated)' }}>
+            <div className="modal-header" style={{ flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '2px solid var(--accent-gold)', paddingBottom: '0.6rem', marginBottom: '1rem' }}>
               <div>
                 <span className="badge badge-gold">Visualização de Tabela Oficial</span>
                 <h3 className="modal-title" style={{ fontSize: '1.2rem', margin: '0.2rem 0 0 0' }}>{tableToView.name}</h3>
@@ -455,7 +462,7 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
               </button>
             </div>
 
-            <div className="table-modal-body">
+            <div className="table-modal-body" ref={tableBodyRef} style={{ overflowY: 'auto', flex: 1, paddingRight: '0.4rem' }}>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: '1rem', lineHeight: '1.45' }}>
                 {tableToView.description || tableToView.summary}
               </p>
@@ -488,7 +495,7 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
               </div>
             </div>
 
-            <div className="table-modal-footer" style={{ marginTop: '1.2rem', paddingTop: '0.8rem', borderTop: '1px solid var(--border-parchment)', textAlign: 'right' }}>
+            <div className="table-modal-footer" style={{ flexShrink: 0, marginTop: '1.2rem', paddingTop: '0.8rem', borderTop: '1px solid var(--border-parchment)', textAlign: 'right' }}>
               <button 
                 className="vital-btn badge-gold" 
                 style={{ padding: '0.5rem 1.2rem', fontSize: '0.88rem', fontWeight: '700', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
@@ -497,6 +504,9 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                 <ArrowLeft size={16} /> Voltar para o Sorteio
               </button>
             </div>
+
+            {/* Botão Flutuante Voltar ao Topo da Tabela */}
+            <ScrollToTop containerRef={tableBodyRef} isInsideContainer title="Voltar ao início da tabela" />
           </div>
         </div>
       )}

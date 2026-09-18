@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { Search, X } from 'lucide-react';
 
 interface SearchBarProps {
@@ -15,6 +15,46 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   totalCount
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const [localValue, setLocalValue] = useState(query);
+  const timerRef = useRef<number | null>(null);
+
+  // Keep local value synced if parent query changes (e.g. resetFilters)
+  useEffect(() => {
+    setLocalValue(query);
+  }, [query]);
+
+  const triggerDebouncedChange = useCallback((val: string) => {
+    if (timerRef.current) {
+      window.clearTimeout(timerRef.current);
+    }
+    timerRef.current = window.setTimeout(() => {
+      onQueryChange(val);
+    }, 150);
+  }, [onQueryChange]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setLocalValue(val);
+    triggerDebouncedChange(val);
+  };
+
+  const handleClear = () => {
+    if (timerRef.current) {
+      window.clearTimeout(timerRef.current);
+    }
+    setLocalValue('');
+    onQueryChange('');
+    inputRef.current?.focus();
+  };
+
+  const handleKeyDownInput = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      if (timerRef.current) {
+        window.clearTimeout(timerRef.current);
+      }
+      onQueryChange(localValue);
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -29,7 +69,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      if (timerRef.current) window.clearTimeout(timerRef.current);
+    };
   }, []);
 
   return (
@@ -41,13 +84,14 @@ export const SearchBar: React.FC<SearchBarProps> = ({
           type="text"
           className="search-input"
           placeholder="Buscar qualquer regra, magia, manobra, arma, condição... (ex: Agarrar, Bola de Fogo, ND 5, Zakharov)"
-          value={query}
-          onChange={e => onQueryChange(e.target.value)}
+          value={localValue}
+          onChange={handleChange}
+          onKeyDown={handleKeyDownInput}
         />
-        {query && (
+        {localValue && (
           <button 
             className="clear-btn" 
-            onClick={() => onQueryChange('')}
+            onClick={handleClear}
             title="Limpar busca"
           >
             <X size={18} />

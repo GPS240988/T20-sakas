@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { X, Bookmark, ExternalLink, Copy, Check } from 'lucide-react';
+import { ScrollToTop } from './ScrollToTop';
 import type { 
   T20CanonicalEntity, 
   SpellEntity, 
@@ -28,6 +29,7 @@ export const EntityModal: React.FC<EntityModalProps> = ({
   onSelectRelatedEntity
 }) => {
   const [copied, setCopied] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   if (!entity) return null;
 
@@ -325,7 +327,7 @@ export const EntityModal: React.FC<EntityModalProps> = ({
         </div>
 
         {/* Corpo do Tomo */}
-        <div className="modal-body-content">
+        <div className="modal-body-content" ref={contentRef}>
           {renderSpecificDetails()}
 
           <div className="modal-description-box">
@@ -349,6 +351,9 @@ export const EntityModal: React.FC<EntityModalProps> = ({
             </div>
           </div>
         </div>
+
+        {/* Botão Flutuante Voltar ao Topo do Tomo */}
+        <ScrollToTop containerRef={contentRef} isInsideContainer title="Voltar ao topo do tomo" />
       </div>
     </div>
   );

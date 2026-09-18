@@ -936,7 +936,9 @@
 
 .modal-tome-wrapper,
 .treasure-roller-modal,
+.referenced-table-modal,
 .combat-tracker-modal,
+.conditions-listing-modal,
 .favorites-drawer {
   background: var(--bg-surface-elevated);
   max-width: 720px;
@@ -947,6 +949,7 @@
   flex-direction: column;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  position: relative;
 }
 
 .modal-header {
@@ -2175,3 +2178,148 @@
   border-color: var(--accent-gold) !important;
   box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
+
+/* ==========================================================================
+   📜 CARREGAMENTO INCREMENTAL & INFINITE SCROLL
+   ========================================================================== */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem 2rem 1rem;
+  margin-top: 1rem;
+}
+
+.load-more-btn {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-ornate);
+  color: var(--text-primary);
+  font-family: var(--font-title);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.load-more-btn:hover {
+  background: var(--bg-surface-muted);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.load-more-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   🔝 FLOATING ACTION BUTTON (FAB) - SCROLL TO TOP UNIVERSAL
+   ========================================================================== */
+.scroll-to-top-fab {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: hsla(40, 45%, 98%, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid hsl(38, 82%, 45%) !important;
+  color: hsl(38, 82%, 38%) !important;
+  box-shadow: 0 4px 16px hsla(35, 40%, 15%, 0.2), 0 0 0 1px hsla(38, 80%, 55%, 0.25) !important;
+  cursor: pointer;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none;
+  box-sizing: border-box;
+  animation: fabFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.2s ease,
+              background-color 0.2s ease,
+              border-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.scroll-to-top-fab:hover {
+  background: hsl(40, 50%, 100%) !important;
+  border-color: hsl(38, 90%, 40%) !important;
+  color: hsl(38, 90%, 30%) !important;
+  box-shadow: 0 8px 24px hsla(38, 80%, 40%, 0.4), 0 0 0 2px hsla(38, 80%, 55%, 0.4) !important;
+  transform: translateY(-3px) scale(1.08);
+}
+
+.scroll-to-top-fab:active {
+  transform: translateY(0) scale(0.94);
+  box-shadow: 0 2px 8px hsla(38, 60%, 20%, 0.3) !important;
+}
+
+.scroll-to-top-fab .fab-icon {
+  stroke-width: 2.5px;
+  transition: transform 0.2s ease;
+}
+
+.scroll-to-top-fab:hover .fab-icon {
+  transform: translateY(-2px);
+}
+
+/* Posição na Janela Principal (Desktop & Mobile) */
+.scroll-to-top-fab.fab-window {
+  position: fixed !important;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+}
+
+/* Posição Dentro de Containers (Modais e Gavetas com scroll interno) */
+.scroll-to-top-fab.fab-inside-container {
+  position: absolute !important;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 100;
+}
+
+@keyframes fabFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top-fab {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+  }
+
+  .scroll-to-top-fab.fab-window {
+    bottom: 78px !important; /* Acima da BottomNav no mobile */
+    right: 1.1rem !important;
+  }
+
+  .scroll-to-top-fab.fab-inside-container {
+    bottom: 1rem !important;
+    right: 1rem !important;
+  }
+}
+
+

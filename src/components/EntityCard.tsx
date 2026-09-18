@@ -12,7 +12,7 @@ interface EntityCardProps {
   dateAdded?: string | Date;
 }
 
-export const EntityCard: React.FC<EntityCardProps> = ({
+const EntityCardComponent: React.FC<EntityCardProps> = ({
   entity,
   onClick,
   isFavorite,
@@ -137,3 +137,12 @@ export const EntityCard: React.FC<EntityCardProps> = ({
     </article>
   );
 };
+
+export const EntityCard = React.memo(EntityCardComponent, (prev, next) => {
+  return (
+    prev.entity.id === next.entity.id &&
+    prev.isFavorite === next.isFavorite &&
+    prev.dateAdded === next.dateAdded
+  );
+});
+
