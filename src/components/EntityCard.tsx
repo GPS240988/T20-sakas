@@ -81,6 +81,36 @@ const EntityCardComponent: React.FC<EntityCardProps> = ({
       );
     }
 
+    if (entity.category === 'manobra') {
+      const man = entity as any;
+      return (
+        <div className="card-quick-stats">
+          {man.actionType && <span className="stat-pill stat-gold"><strong>Ação:</strong> {man.actionType}</span>}
+          {man.opposedTest && <span className="stat-pill"><strong>Oposto:</strong> {man.opposedTest}</span>}
+        </div>
+      );
+    }
+
+    if (entity.category === 'condicao') {
+      const cond = entity as any;
+      return (
+        <div className="card-quick-stats">
+          {cond.type && <span className="stat-pill stat-ruby"><strong>Tipo:</strong> {cond.type}</span>}
+          {cond.subcategory && <span className="stat-pill"><strong>Grupo:</strong> {cond.subcategory}</span>}
+        </div>
+      );
+    }
+
+    if (entity.category === 'regra') {
+      const reg = entity as any;
+      return (
+        <div className="card-quick-stats">
+          {reg.chapter && <span className="stat-pill"><strong>Capítulo:</strong> {reg.chapter}</span>}
+          {reg.subchapter && <span className="stat-pill stat-gold"><strong>Seção:</strong> {reg.subchapter}</span>}
+        </div>
+      );
+    }
+
     if (entity.category === 'ameaca') {
       const mon = entity as MonsterEntity;
       return (

@@ -1,16 +1,16 @@
 import React from 'react';
-import { BookMarked, ShieldAlert } from 'lucide-react';
+import { BookMarked, BookOpen } from 'lucide-react';
 import cabecalho from '../../cabecalho.jpg';
 
 interface HeaderProps {
-  onOpenCombatTracker: () => void;
+  onOpenQuickReference: () => void;
   onOpenFavorites: () => void;
   onOpenTreasure: () => void;
   favoritesCount: number;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  onOpenCombatTracker,
+  onOpenQuickReference,
   onOpenFavorites,
   onOpenTreasure,
   favoritesCount,
@@ -33,20 +33,20 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="header-actions">
           <button
             className="header-btn"
+            onClick={onOpenQuickReference}
+            title="Tomo de Regras (Pág. 220) e Condições (Pág. 240)"
+          >
+            <BookOpen size={18} className="btn-icon" />
+            <span className="btn-label">Regras & Manobras</span>
+          </button>
+
+          <button
+            className="header-btn"
             onClick={onOpenTreasure}
             title="Simulador e Tabela de Tesouros"
           >
             <span className="btn-icon">🎲</span>
             <span className="btn-label">Tesouros</span>
-          </button>
-
-          <button
-            className="header-btn"
-            onClick={onOpenCombatTracker}
-            title="Condições"
-          >
-            <ShieldAlert size={18} className="btn-icon" />
-            <span className="btn-label">Condições</span>
           </button>
 
           <button
@@ -65,4 +65,3 @@ export const Header: React.FC<HeaderProps> = ({
     </header>
   );
 };
-

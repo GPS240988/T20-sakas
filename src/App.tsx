@@ -6,6 +6,7 @@ import { EntityCard } from './components/EntityCard';
 import { EntityModal } from './components/EntityModal';
 import { TreasureRoller } from './components/TreasureRoller';
 import { CombatTrackerModal } from './components/CombatTrackerModal';
+import { QuickReferenceModal } from './components/QuickReferenceModal';
 import { FavoritesDrawer } from './components/FavoritesDrawer';
 import { BottomNav } from './components/BottomNav';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -50,6 +51,7 @@ export function App() {
   const [selectedEntity, setSelectedEntity] = useState<T20CanonicalEntity | null>(null);
   const [isTreasureOpen, setIsTreasureOpen] = useState<boolean>(false);
   const [isCombatTrackerOpen, setIsCombatTrackerOpen] = useState<boolean>(false);
+  const [isQuickReferenceOpen, setIsQuickReferenceOpen] = useState<boolean>(false);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState<boolean>(false);
   const [modalOrigin, setModalOrigin] = useState<'main' | 'favorites'>('main');
 
@@ -104,7 +106,7 @@ export function App() {
   return (
     <div className="app-root">
       <Header
-        onOpenCombatTracker={() => setIsCombatTrackerOpen(true)}
+        onOpenQuickReference={() => setIsQuickReferenceOpen(true)}
         onOpenFavorites={() => setIsFavoritesOpen(true)}
         onOpenTreasure={() => setIsTreasureOpen(true)}
         favoritesCount={favoritesCount}
@@ -185,16 +187,23 @@ export function App() {
         onSelectRelatedEntity={rel => setSelectedEntity(rel)}
       />
 
+      {/* Tomo de Consulta Rápida (Pág. 220 e 240 + Cheat-sheet) */}
+      <QuickReferenceModal
+        isOpen={isQuickReferenceOpen}
+        onClose={() => setIsQuickReferenceOpen(false)}
+      />
+
       {/* Simulador & Filtro de Tesouros D% */}
       <TreasureRoller
         isOpen={isTreasureOpen}
         onClose={() => setIsTreasureOpen(false)}
       />
 
-      {/* Listagem de Condições Canônicas */}
+      {/* Rastreador de Combate & Condições Dinâmicas */}
       <CombatTrackerModal
         isOpen={isCombatTrackerOpen}
         onClose={() => setIsCombatTrackerOpen(false)}
+        onOpenQuickReference={() => setIsQuickReferenceOpen(true)}
       />
 
       {/* Gaveta de Favoritos */}
@@ -221,8 +230,8 @@ export function App() {
           const searchInput = document.querySelector('.search-input') as HTMLInputElement;
           searchInput?.focus();
         }}
+        onOpenQuickReference={() => setIsQuickReferenceOpen(true)}
         onOpenTreasure={() => setIsTreasureOpen(true)}
-        onOpenCombatTracker={() => setIsCombatTrackerOpen(true)}
         onOpenFavorites={() => setIsFavoritesOpen(true)}
         favoritesCount={favoritesCount}
       />

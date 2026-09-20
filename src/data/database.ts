@@ -107,7 +107,7 @@ function buildSearchText(item: any): string {
 
 export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item => {
   const anyItem = item as any;
-  const rawType = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype || '';
+  const rawType = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype || anyItem.actionType || anyItem.effectType || anyItem.subchapter || '';
   const normalizedBooks = (item.sources || []).map(s => s.book).filter(Boolean);
   
   return {
@@ -194,8 +194,7 @@ export const BOOKS_LIST: BookMetadata[] = [
 ];
 
 /**
- * Lista de categorias da interface. 'pericia' e 'origem_distincao' foram
- * removidas; 'regra' (Regras de Mesa) permanece cadastrada porém desabilitada.
+ * Lista de categorias da interface.
  */
 export const CATEGORIES_LIST: CategoryMetadata[] = [
   { id: 'todas', label: 'Tudo', iconName: 'Compass', count: VISIBLE_DATABASE.length, badgeClass: 'badge-gold' },
@@ -204,9 +203,9 @@ export const CATEGORIES_LIST: CategoryMetadata[] = [
   { id: 'tesouro', label: 'Tesouros', iconName: 'Coins', count: CANONICAL_DATABASE.filter(e => e.category === 'tesouro').length, badgeClass: 'badge-gold' },
   { id: 'poder', label: 'Poderes', iconName: 'Zap', count: CANONICAL_DATABASE.filter(e => e.category === 'poder').length, badgeClass: 'badge-ruby' },
   { id: 'condicao', label: 'Condições', iconName: 'Activity', count: CANONICAL_DATABASE.filter(e => e.category === 'condicao').length, badgeClass: 'badge-ruby' },
-  { id: 'manobra', label: 'Manobras', iconName: 'Swords', count: CANONICAL_DATABASE.filter(e => e.category === 'manobra').length, badgeClass: 'badge-gold', clickable: false },
+  { id: 'manobra', label: 'Manobras', iconName: 'Swords', count: CANONICAL_DATABASE.filter(e => e.category === 'manobra').length, badgeClass: 'badge-gold' },
   { id: 'ameaca', label: 'Ameaças', iconName: 'Skull', count: CANONICAL_DATABASE.filter(e => e.category === 'ameaca').length, badgeClass: 'badge-ruby', enabled: false },
-  { id: 'regra', label: 'Regras de Mesa', iconName: 'Scroll', count: CANONICAL_DATABASE.filter(e => e.category === 'regra').length, badgeClass: 'badge-parchment', clickable: false }
+  { id: 'regra', label: 'Regras de Mesa', iconName: 'Scroll', count: CANONICAL_DATABASE.filter(e => e.category === 'regra').length, badgeClass: 'badge-parchment' }
 ];
 
 /** Categorias efetivamente navegáveis (exclui as desabilitadas). */

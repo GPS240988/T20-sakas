@@ -93,6 +93,9 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
       if (filters.subcategory === 'Poderes de Classe') return 'Classe:';
       return 'Tipo:';
     }
+    if (filters.category === 'manobra') return 'Tipo de Ação:';
+    if (filters.category === 'regra') return 'Capítulo:';
+    if (filters.category === 'condicao') return 'Categoria:';
     if (filters.category === 'ameaca') return 'Tipo:';
     return 'Tipo:';
   };

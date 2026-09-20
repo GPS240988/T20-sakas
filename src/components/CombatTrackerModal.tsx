@@ -1,237 +1,195 @@
 import React, { useState, useMemo, useRef } from 'react';
-import { X, ShieldAlert, Search, ChevronDown, ChevronUp, Copy, Check } from 'lucide-react';
+import { 
+  X, 
+  ShieldAlert, 
+  Search, 
+  ChevronDown, 
+  ChevronUp, 
+  Copy, 
+  Check, 
+  Plus, 
+  Trash2, 
+  Play, 
+  RotateCcw, 
+  Heart, 
+  UserPlus, 
+  Flame, 
+  BookOpen,
+  Swords,
+  Activity
+} from 'lucide-react';
 import { ScrollToTop } from './ScrollToTop';
+import { CANONICAL_CONDITIONS, type ConditionCanonical } from './QuickReferenceModal';
 
 // ============================================================================
-// Dados canônicos das condições — Tormenta20 (Jogo do Ano), pág. 394–395
-// Texto preservado LITERALMENTE conforme publicação oficial.
+// Modelo de Combatente
 // ============================================================================
 
-interface ConditionData {
+export interface Combatant {
+  id: string;
   name: string;
-  description: string;
-  page: string;
+  initiative: number;
+  currentHp: number;
+  maxHp: number;
+  isPlayer: boolean;
+  conditions: string[]; // Nomes das condições ativas
+  notes?: string;
 }
 
-const CONDITIONS_CANONICAL: ConditionData[] = [
-  {
-    name: 'Abalado',
-    description: 'O personagem sofre –2 em testes de ataque, testes de perícia e testes de habilidade. Se ficar abalado novamente, em vez disso fica apavorado.',
-    page: '394'
-  },
-  {
-    name: 'Agarrado',
-    description: 'O personagem fica desprevenido e imóvel, sofre –2 nos testes de ataque e só pode atacar com armas leves. Além disso, precisa fazer testes de concentração para lançar magias (CD 10 + nível da magia).',
-    page: '394'
-  },
-  {
-    name: 'Alquebrado',
-    description: 'O personagem sofre –5 em testes de ataque, testes de perícia e testes de habilidade. Se ficar alquebrado novamente, em vez disso fica inconsciente.',
-    page: '394'
-  },
-  {
-    name: 'Apavorado',
-    description: 'O personagem sofre –5 em testes de ataque, testes de perícia e testes de habilidade e deve fugir da fonte de medo. Se não puder fugir, pode lutar, mas ainda sofre as penalidades. Se ficar apavorado novamente, em vez disso fica alquebrado.',
-    page: '394'
-  },
-  {
-    name: 'Atordoado',
-    description: 'O personagem fica desprevenido e não pode fazer ações.',
-    page: '394'
-  },
-  {
-    name: 'Caído',
-    description: 'O personagem está no chão. Sofre –5 em ataques corpo a corpo e não pode usar ataques à distância, exceto com bestas. Além disso, sofre –5 na Defesa contra ataques corpo a corpo, mas recebe +5 na Defesa contra ataques à distância. Levantar-se exige uma ação de movimento.',
-    page: '394'
-  },
-  {
-    name: 'Cego',
-    description: 'O personagem não pode enxergar. Fica desprevenido, sofre –5 em testes de Força e Destreza e em testes de perícias baseadas nesses atributos, se move com metade do deslocamento e sofre –10 em testes de Percepção. Todos os outros personagens têm camuflagem total contra ele.',
-    page: '394'
-  },
-  {
-    name: 'Confuso',
-    description: 'O personagem não pode tomar ações normais. No início de cada turno, role 1d6: 1 — age normalmente; 2-3 — não faz nada além de balbuciar; 4-5 — ataca a criatura mais próxima (considere desprevenido se for um aliado); 6 — ataca a si mesmo automaticamente.',
-    page: '394'
-  },
-  {
-    name: 'Debilitado',
-    description: 'O personagem sofre –2 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se ficar debilitado novamente, em vez disso fica fraco.',
-    page: '394'
-  },
-  {
-    name: 'Desprevenido',
-    description: 'O personagem não pode usar o bônus de Destreza na Defesa. Algumas habilidades e ataques só podem ser usados contra alvos desprevenidos.',
-    page: '394'
-  },
-  {
-    name: 'Doente',
-    description: 'O personagem sofre –2 em testes de ataque, testes de perícia e testes de habilidade. Se não for tratado, a cada dia deve fazer um teste de Fortitude com a CD da doença. Se falhar, a condição piora (o mestre dita os efeitos, podendo incluir dano de atributo ou morte).',
-    page: '394'
-  },
-  {
-    name: 'Em Chamas',
-    description: 'O personagem está pegando fogo. No início de cada turno, sofre 1d6 pontos de dano de fogo e pode gastar uma ação padrão para se apagar (teste de Reflexos, CD 15). Se não tentar se apagar, o dano aumenta em +1d6 cumulativo.',
-    page: '394'
-  },
-  {
-    name: 'Enfeitiçado',
-    description: 'O personagem é considerado amigável pela criatura que o enfeitiçou. Obedece sugestões que não sejam evidentemente perigosas. Ameaçar ou atacar o alvo enfeitiçado quebra o efeito. Qualquer ação nociva contra o alvo permite um novo teste de resistência.',
-    page: '394'
-  },
-  {
-    name: 'Enjoado',
-    description: 'O personagem só pode realizar uma ação padrão ou de movimento por turno (não ambas) e não pode fazer ações completas. Se ficar enjoado novamente, em vez disso fica nauseado (não pode atacar, lançar magias ou fazer qualquer coisa que exija concentração).',
-    page: '394'
-  },
-  {
-    name: 'Enredado',
-    description: 'O personagem fica lento e sofre –2 em testes de ataque e –4 na Destreza.',
-    page: '395'
-  },
-  {
-    name: 'Envenenado',
-    description: 'Efeitos variados conforme o veneno específico. Venenos normalmente causam dano de atributo ou condições (como enjoado ou debilitado). A frequência e a cura dependem da descrição do veneno.',
-    page: '395'
-  },
-  {
-    name: 'Esmorecido',
-    description: 'O personagem sofre –5 em testes de ataque, testes de perícia e testes de habilidade. Se ficar esmorecido novamente, em vez disso fica inconsciente.',
-    page: '395'
-  },
-  {
-    name: 'Exausto',
-    description: 'O personagem sofre –6 em Força e Destreza e seu deslocamento é reduzido à metade. Após um descanso de pelo menos 1 hora, um personagem exausto passa a estar fatigado.',
-    page: '395'
-  },
-  {
-    name: 'Fascinado',
-    description: 'O personagem fica parado, prestando atenção na fonte de fascinação. Sofre –5 em testes de Percepção. Qualquer ameaça potencial permite um novo teste para quebrar o efeito. Uma ameaça óbvia quebra automaticamente.',
-    page: '395'
-  },
-  {
-    name: 'Fatigado',
-    description: 'O personagem sofre –2 em Força e Destreza e não pode correr ou fazer investidas. Após um descanso de pelo menos 8 horas, não está mais fatigado.',
-    page: '395'
-  },
-  {
-    name: 'Fraco',
-    description: 'O personagem sofre –5 em testes de atributos físicos (Força, Destreza, Constituição) e de perícias baseadas nesses atributos. Se ficar fraco novamente, em vez disso fica inconsciente.',
-    page: '395'
-  },
-  {
-    name: 'Frustrado',
-    description: 'O personagem sofre –2 em testes de atributos mentais (Inteligência, Sabedoria, Carisma) e de perícias baseadas nesses atributos. Se ficar frustrado novamente, em vez disso fica esmorecido.',
-    page: '395'
-  },
-  {
-    name: 'Imóvel',
-    description: 'O deslocamento do personagem se torna 0m e ele não pode se movimentar.',
-    page: '395'
-  },
-  {
-    name: 'Inconsciente',
-    description: 'O personagem fica indefeso e não pode fazer ações, inclusive reações. Balbucia inconscientemente ou fica totalmente apagado.',
-    page: '395'
-  },
-  {
-    name: 'Indefeso',
-    description: 'O personagem fica desprevenido, sofre –10 na Defesa, falha automaticamente em testes de Reflexos e pode sofrer golpes de misericórdia.',
-    page: '395'
-  },
-  {
-    name: 'Lento',
-    description: 'O deslocamento do personagem é reduzido à metade e ele não pode correr ou fazer investidas.',
-    page: '395'
-  },
-  {
-    name: 'Ofuscado',
-    description: 'O personagem sofre –2 em testes de ataque e em testes de Percepção para observar.',
-    page: '395'
-  },
-  {
-    name: 'Paralisado',
-    description: 'O personagem fica imóvel e indefeso e só pode realizar ações puramente mentais.',
-    page: '395'
-  },
-  {
-    name: 'Pasmo',
-    description: 'O personagem não pode fazer ações.',
-    page: '395'
-  },
-  {
-    name: 'Petrificado',
-    description: 'O personagem se transforma em pedra. Fica inconsciente e recebe redução de dano 10.',
-    page: '395'
-  },
-  {
-    name: 'Sangrando',
-    description: 'No início de seu turno, o personagem deve fazer um teste de Constituição (CD 15). Se falhar, perde 1d6 pontos de vida e continua sangrando. Se passar, estabiliza e para de sangrar.',
-    page: '395'
-  },
-  {
-    name: 'Sobrecarregado',
-    description: 'O personagem sofre penalidade de armadura –5 e seu deslocamento é reduzido em 3m.',
-    page: '395'
-  },
-  {
-    name: 'Surdo',
-    description: 'O personagem não pode fazer testes de Percepção para ouvir e sofre –5 em testes de Iniciativa.',
-    page: '395'
-  },
-  {
-    name: 'Surpreendido',
-    description: 'O personagem fica desprevenido e não pode realizar ações na primeira rodada de combate.',
-    page: '395'
-  },
-  {
-    name: 'Vulnerável',
-    description: 'O personagem sofre –2 na Defesa.',
-    page: '395'
-  },
-];
-
-// ============================================================================
-// Props — simplificada para listagem pura
-// ============================================================================
-
-interface ConditionsModalProps {
+interface CombatTrackerModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onOpenQuickReference?: () => void;
 }
 
-export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
+export const CombatTrackerModal: React.FC<CombatTrackerModalProps> = ({
   isOpen,
   onClose,
+  onOpenQuickReference,
 }) => {
+  const [activeTab, setActiveTab] = useState<'tracker' | 'consulta'>('tracker');
+  const trackerBodyRef = useRef<HTMLDivElement>(null);
+  
+  // Estado do Combate
+  const [round, setRound] = useState<number>(1);
+  const [currentTurnIndex, setCurrentTurnIndex] = useState<number>(0);
+  const [combatants, setCombatants] = useState<Combatant[]>([
+    {
+      id: 'c1',
+      name: 'Guerreiro (Jogador)',
+      initiative: 18,
+      currentHp: 38,
+      maxHp: 42,
+      isPlayer: true,
+      conditions: []
+    },
+    {
+      id: 'c2',
+      name: 'Líder Ogro',
+      initiative: 14,
+      currentHp: 65,
+      maxHp: 80,
+      isPlayer: false,
+      conditions: ['Abalado']
+    },
+    {
+      id: 'c3',
+      name: 'Goblinoide Arqueiro',
+      initiative: 12,
+      currentHp: 18,
+      maxHp: 18,
+      isPlayer: false,
+      conditions: ['Caído']
+    }
+  ]);
+
+  // Form para novo combatente
+  const [newName, setNewName] = useState('');
+  const [newInit, setNewInit] = useState('');
+  const [newHp, setNewHp] = useState('');
+  const [newIsPlayer, setNewIsPlayer] = useState(false);
+  const [isAddingCombatant, setIsAddingCombatant] = useState(false);
+
+  // Popover de visualização de condição
+  const [inspectCondition, setInspectCondition] = useState<ConditionCanonical | null>(null);
+  const [conditionPickerTargetId, setConditionPickerTargetId] = useState<string | null>(null);
+
+  // Aba de Consulta Rápida
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  // Ordenação por Iniciativa Decrescente
+  const sortedCombatants = useMemo(() => {
+    return [...combatants].sort((a, b) => b.initiative - a.initiative);
+  }, [combatants]);
 
   const filteredConditions = useMemo(() => {
-    if (!searchTerm.trim()) return CONDITIONS_CANONICAL;
+    if (!searchTerm.trim()) return CANONICAL_CONDITIONS;
     const term = searchTerm.toLowerCase();
-    return CONDITIONS_CANONICAL.filter(
+    return CANONICAL_CONDITIONS.filter(
       c =>
         c.name.toLowerCase().includes(term) ||
-        c.description.toLowerCase().includes(term)
+        c.description.toLowerCase().includes(term) ||
+        (c.type && c.type.toLowerCase().includes(term))
     );
   }, [searchTerm]);
 
-  const handleToggle = (idx: number) => {
-    setExpandedIndex(prev => (prev === idx ? null : idx));
+  const handleAddCombatant = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newName.trim()) return;
+    const initVal = parseInt(newInit, 10) || 10;
+    const hpVal = parseInt(newHp, 10) || 20;
+
+    const newCombatant: Combatant = {
+      id: `c_${Date.now()}`,
+      name: newName.trim(),
+      initiative: initVal,
+      currentHp: hpVal,
+      maxHp: hpVal,
+      isPlayer: newIsPlayer,
+      conditions: []
+    };
+
+    setCombatants(prev => [...prev, newCombatant]);
+    setNewName('');
+    setNewInit('');
+    setNewHp('');
+    setIsAddingCombatant(false);
   };
 
-  const [copied, setCopied] = useState<boolean>(false);
-  const listRef = useRef<HTMLDivElement>(null);
+  const handleRemoveCombatant = (id: string) => {
+    setCombatants(prev => prev.filter(c => c.id !== id));
+  };
+
+  const handleUpdateHp = (id: string, delta: number) => {
+    setCombatants(prev =>
+      prev.map(c => {
+        if (c.id !== id) return c;
+        const updated = Math.max(0, c.currentHp + delta);
+        return { ...c, currentHp: updated };
+      })
+    );
+  };
+
+  const handleToggleConditionOnCombatant = (combatantId: string, conditionName: string) => {
+    setCombatants(prev =>
+      prev.map(c => {
+        if (c.id !== combatantId) return c;
+        const exists = c.conditions.includes(conditionName);
+        const nextConditions = exists
+          ? c.conditions.filter(name => name !== conditionName)
+          : [...c.conditions, conditionName];
+        return { ...c, conditions: nextConditions };
+      })
+    );
+    setConditionPickerTargetId(null);
+  };
+
+  const handleNextTurn = () => {
+    if (sortedCombatants.length === 0) return;
+    if (currentTurnIndex + 1 >= sortedCombatants.length) {
+      setCurrentTurnIndex(0);
+      setRound(prev => prev + 1);
+    } else {
+      setCurrentTurnIndex(prev => prev + 1);
+    }
+  };
+
+  const handleResetCombat = () => {
+    setRound(1);
+    setCurrentTurnIndex(0);
+  };
 
   const handleCopyContent = () => {
     const lines: string[] = [];
     lines.push(`========================================`);
-    lines.push(`CONDIÇÕES DE JOGO (TORMENTA20)`);
+    lines.push(`CONDIÇÕES DE JOGO (TORMENTA20 - PÁG. 394-395)`);
     lines.push(`========================================\n`);
 
     filteredConditions.forEach(cond => {
-      lines.push(`• ${cond.name.toUpperCase()}`);
+      const typeStr = cond.type ? ` [${cond.type}]` : '';
+      lines.push(`• ${cond.name.toUpperCase()}${typeStr} (pág. ${cond.page})`);
       lines.push(`  ${cond.description}\n`);
     });
 
@@ -245,87 +203,368 @@ export const CombatTrackerModal: React.FC<ConditionsModalProps> = ({
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div
-        className="conditions-listing-modal parchment-card ornate-border"
+        className="combat-tracker-modal parchment-card ornate-border"
         onClick={e => e.stopPropagation()}
       >
-        {/* ── Header ── */}
-        <div className="modal-header">
-          <div className="title-row">
-            <span className="badge badge-ruby">
-              <ShieldAlert size={14} /> Apêndice
-            </span>
-            <h2 className="modal-title">Condições</h2>
-          </div>
-          <div className="modal-header-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <button 
-              className={`copy-btn ${copied ? 'copy-success' : ''}`}
-              onClick={handleCopyContent}
-              title={copied ? 'Copiado!' : 'Copiar todas as condições'}
-            >
-              {copied ? <Check size={20} className="text-gold" /> : <Copy size={20} />}
-            </button>
-            <button className="modal-close-btn" onClick={onClose} aria-label="Fechar">
-              <X size={24} />
-            </button>
-          </div>
-        </div>
-
-        {/* ── Search / Filter ── */}
-        <div className="conditions-search-bar">
-          <div className="conditions-search-field">
-            <Search size={16} className="conditions-search-icon" />
-            <input
-              type="text"
-              placeholder="Filtrar condições... (ex: Cego, Abalado)"
-              value={searchTerm}
-              onChange={e => setSearchTerm(e.target.value)}
-              className="conditions-search-input"
-            />
-          </div>
-          <span className="conditions-count-label">
-            {filteredConditions.length} de {CONDITIONS_CANONICAL.length}
-          </span>
-        </div>
-
-        {/* ── Conditions List ── */}
-        <div className="conditions-list-body" ref={listRef}>
-          {filteredConditions.length === 0 ? (
-            <div className="conditions-empty">
-              <span style={{ fontSize: '2rem' }}>🔍</span>
-              <p>Nenhuma condição encontrada para "<strong>{searchTerm}</strong>".</p>
+        {/* Header do Tracker */}
+        <div className="tracker-header">
+          <div className="tracker-title-group">
+            <div className="tracker-icon-ruby">
+              <ShieldAlert size={24} />
             </div>
-          ) : (
-            <ul className="conditions-accordion">
-              {filteredConditions.map((cond, idx) => {
-                const isExpanded = expandedIndex === idx;
-                return (
-                  <li key={cond.name} className="conditions-accordion-item">
-                    <button
-                      className={`conditions-accordion-trigger ${isExpanded ? 'conditions-accordion-trigger--open' : ''}`}
-                      onClick={() => handleToggle(idx)}
-                      aria-expanded={isExpanded}
-                    >
-                      <span className="conditions-accordion-name">{cond.name}</span>
-                      <div className="conditions-accordion-meta">
-                        {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                      </div>
+            <div>
+              <h2 className="tracker-title">Rastreador de Combate & Condições</h2>
+              <p className="tracker-subtitle">Controle de Turnos, PV e Status de Jogo (Pág. 394)</p>
+            </div>
+          </div>
+          <button className="tracker-close-btn" onClick={onClose} aria-label="Fechar Tracker">
+            <X size={20} />
+          </button>
+        </div>
+
+        {/* Abas Superiores */}
+        <div className="tracker-nav-tabs">
+          <button
+            className={`tracker-tab-btn ${activeTab === 'tracker' ? 'active' : ''}`}
+            onClick={() => setActiveTab('tracker')}
+          >
+            <Swords size={18} />
+            <span>Mesa de Combate ({sortedCombatants.length})</span>
+          </button>
+
+          <button
+            className={`tracker-tab-btn ${activeTab === 'consulta' ? 'active' : ''}`}
+            onClick={() => setActiveTab('consulta')}
+          >
+            <Activity size={18} />
+            <span>Guia Geral de Condições ({CANONICAL_CONDITIONS.length})</span>
+          </button>
+        </div>
+
+        {/* Corpo do Tracker */}
+        <div className="tracker-body" ref={trackerBodyRef}>
+          {/* ============================================================= */}
+          {/* MODO 1: RASTREADOR DE COMBATE EM TEMPO REAL                   */}
+          {/* ============================================================= */}
+          {activeTab === 'tracker' && (
+            <div className="tracker-content-flow">
+              {/* Barra de Rodadas & Controles */}
+              <div className="tracker-round-banner parchment-subcard">
+                <div className="round-info">
+                  <span className="round-label">Rodada</span>
+                  <span className="round-number">{round}</span>
+                </div>
+
+                <div className="round-actions">
+                  <button className="parchment-btn btn-gold btn-next-turn" onClick={handleNextTurn}>
+                    <Play size={16} />
+                    <span>Próximo Turno</span>
+                  </button>
+
+                  <button className="parchment-btn btn-ghost" onClick={handleResetCombat} title="Reiniciar Rodadas">
+                    <RotateCcw size={16} />
+                  </button>
+
+                  <button 
+                    className="parchment-btn btn-gold btn-add-combatant"
+                    onClick={() => setIsAddingCombatant(!isAddingCombatant)}
+                  >
+                    <UserPlus size={16} />
+                    <span>{isAddingCombatant ? 'Cancelar' : 'Adicionar'}</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Form de Adicionar Combatente */}
+              {isAddingCombatant && (
+                <form className="add-combatant-form parchment-subcard" onSubmit={handleAddCombatant}>
+                  <h4>Novo Combatente</h4>
+                  <div className="form-row">
+                    <input
+                      type="text"
+                      placeholder="Nome do personagem / monstro"
+                      value={newName}
+                      onChange={e => setNewName(e.target.value)}
+                      className="form-input flex-2"
+                      required
+                    />
+                    <input
+                      type="number"
+                      placeholder="Iniciativa"
+                      value={newInit}
+                      onChange={e => setNewInit(e.target.value)}
+                      className="form-input flex-1"
+                    />
+                    <input
+                      type="number"
+                      placeholder="PV Máx"
+                      value={newHp}
+                      onChange={e => setNewHp(e.target.value)}
+                      className="form-input flex-1"
+                    />
+                  </div>
+                  <div className="form-actions-row">
+                    <label className="checkbox-label">
+                      <input
+                        type="checkbox"
+                        checked={newIsPlayer}
+                        onChange={e => setNewIsPlayer(e.target.checked)}
+                      />
+                      <span>Jogador / Aliado</span>
+                    </label>
+
+                    <button type="submit" className="parchment-btn btn-ruby">
+                      Salvar Combatente
                     </button>
-                    {isExpanded && (
-                      <div className="conditions-accordion-panel">
-                        <p className="conditions-description-text">
-                          {cond.description}
-                        </p>
+                  </div>
+                </form>
+              )}
+
+              {/* Lista de Combatentes Ordenados */}
+              <div className="combatants-list">
+                {sortedCombatants.map((c, index) => {
+                  const isCurrentTurn = index === currentTurnIndex;
+                  return (
+                    <div 
+                      key={c.id} 
+                      className={`combatant-card parchment-subcard ${isCurrentTurn ? 'active-turn' : ''} ${c.isPlayer ? 'is-player' : 'is-enemy'}`}
+                    >
+                      {/* Topo do Combatente */}
+                      <div className="combatant-top">
+                        <div className="combatant-name-block">
+                          {isCurrentTurn && <span className="active-turn-indicator">★ Turno Atual</span>}
+                          <h3 className="combatant-name">{c.name}</h3>
+                          <span className={`badge-${c.isPlayer ? 'emerald' : 'ruby'} combatant-type-tag`}>
+                            {c.isPlayer ? 'Jogador' : 'Ameaça'}
+                          </span>
+                        </div>
+
+                        <div className="combatant-init-badge">
+                          <span className="init-label">Inic.</span>
+                          <span className="init-val">{c.initiative}</span>
+                        </div>
                       </div>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+
+                      {/* Controle de PV */}
+                      <div className="combatant-hp-bar-row">
+                        <div className="hp-info">
+                          <Heart size={16} className={c.currentHp > 0 ? 'text-ruby' : 'text-muted'} />
+                          <span className="hp-text"><strong>{c.currentHp}</strong> / {c.maxHp} PV</span>
+                        </div>
+
+                        <div className="hp-controls">
+                          <button className="hp-btn" onClick={() => handleUpdateHp(c.id, -5)}>-5</button>
+                          <button className="hp-btn" onClick={() => handleUpdateHp(c.id, -1)}>-1</button>
+                          <button className="hp-btn" onClick={() => handleUpdateHp(c.id, 1)}>+1</button>
+                          <button className="hp-btn" onClick={() => handleUpdateHp(c.id, 5)}>+5</button>
+                        </div>
+
+                        <button 
+                          className="combatant-del-btn" 
+                          onClick={() => handleRemoveCombatant(c.id)}
+                          title="Remover combatente"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      </div>
+
+                      {/* Condições Ativas do Combatente */}
+                      <div className="combatant-conditions-section">
+                        <div className="conditions-header-row">
+                          <span className="cond-title">Condições ({c.conditions.length}):</span>
+                          <button 
+                            className="add-cond-btn"
+                            onClick={() => setConditionPickerTargetId(conditionPickerTargetId === c.id ? null : c.id)}
+                          >
+                            <Plus size={14} />
+                            <span>Aplicar Condição</span>
+                          </button>
+                        </div>
+
+                        <div className="combatant-cond-chips-wrap">
+                          {c.conditions.length === 0 ? (
+                            <span className="no-cond-text">Nenhuma condição ativa</span>
+                          ) : (
+                            c.conditions.map(condName => {
+                              const found = CANONICAL_CONDITIONS.find(x => x.name === condName);
+                              return (
+                                <button
+                                  key={condName}
+                                  className="combatant-cond-pill"
+                                  onClick={() => found && setInspectCondition(found)}
+                                  title="Clique para ler a regra desta condição"
+                                >
+                                  <Flame size={12} className="cond-flame-icon" />
+                                  <span>{condName}</span>
+                                  <span 
+                                    className="remove-cond-x" 
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handleToggleConditionOnCombatant(c.id, condName);
+                                    }}
+                                  >
+                                    ×
+                                  </span>
+                                </button>
+                              );
+                            })
+                          )}
+                        </div>
+
+                        {/* Picker retrátil de condições */}
+                        {conditionPickerTargetId === c.id && (
+                          <div className="condition-picker-dropdown parchment-subcard ornate-border">
+                            <div className="picker-header">
+                              <span>Selecione a condição para {c.name}:</span>
+                              <button onClick={() => setConditionPickerTargetId(null)}>
+                                <X size={14} />
+                              </button>
+                            </div>
+                            <div className="picker-grid">
+                              {CANONICAL_CONDITIONS.map(cd => {
+                                const has = c.conditions.includes(cd.name);
+                                return (
+                                  <button
+                                    key={cd.name}
+                                    className={`picker-cond-btn ${has ? 'active' : ''}`}
+                                    onClick={() => handleToggleConditionOnCombatant(c.id, cd.name)}
+                                  >
+                                    {cd.name}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* ============================================================= */}
+          {/* MODO 2: CONSULTA GERAL DE CONDIÇÕES (PÁG. 240 / 394-395)      */}
+          {/* ============================================================= */}
+          {activeTab === 'consulta' && (
+            <div className="tracker-content-flow">
+              <div className="tracker-search-row">
+                <div className="tracker-search-box">
+                  <Search size={18} className="search-icon-muted" />
+                  <input
+                    type="text"
+                    placeholder="Filtrar por nome ou efeito..."
+                    value={searchTerm}
+                    onChange={e => setSearchTerm(e.target.value)}
+                    className="tracker-search-input"
+                  />
+                  {searchTerm && (
+                    <button className="clear-search-btn" onClick={() => setSearchTerm('')}>
+                      <X size={16} />
+                    </button>
+                  )}
+                </div>
+
+                <button
+                  className={`copy-btn parchment-btn ${copied ? 'btn-copied' : ''}`}
+                  onClick={handleCopyContent}
+                  title="Copiar lista"
+                >
+                  {copied ? <Check size={16} /> : <Copy size={16} />}
+                  <span>{copied ? 'Copiado!' : 'Copiar'}</span>
+                </button>
+              </div>
+
+              <div className="conditions-list-flow">
+                {filteredConditions.map((cond, idx) => {
+                  const isExpanded = expandedIndex === idx;
+                  return (
+                    <div 
+                      key={cond.name}
+                      className={`cond-card-item parchment-subcard ${isExpanded ? 'expanded' : ''}`}
+                    >
+                      <div 
+                        className="cond-card-header"
+                        onClick={() => setExpandedIndex(isExpanded ? null : idx)}
+                      >
+                        <div className="cond-title-left">
+                          <h4 className="cond-name-title">{cond.name}</h4>
+                          {cond.type && (
+                            <span className="badge-ruby cond-type-badge"><em>{cond.type}</em></span>
+                          )}
+                          <span className="badge-parchment cond-page-badge">pág. {cond.page}</span>
+                        </div>
+
+                        <div className="cond-header-right">
+                          <button className="expand-icon-btn">
+                            {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="cond-card-body">
+                        <p className="cond-desc-text">{cond.description}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           )}
         </div>
 
-        {/* Botão Flutuante Voltar ao Topo das Condições */}
-        <ScrollToTop containerRef={listRef} isInsideContainer title="Voltar ao topo das condições" />
+        {/* Modal Popover de Inspeção de Regra de Condição */}
+        {inspectCondition && (
+          <div className="condition-inspect-popover" onClick={() => setInspectCondition(null)}>
+            <div className="inspect-box parchment-card ornate-border" onClick={e => e.stopPropagation()}>
+              <div className="inspect-header">
+                <div className="inspect-title-group">
+                  <ShieldAlert size={20} className="text-ruby" />
+                  <h3>{inspectCondition.name}</h3>
+                  {inspectCondition.type && (
+                    <span className="badge-ruby"><em>{inspectCondition.type}</em></span>
+                  )}
+                  <span className="badge-gold">pág. {inspectCondition.page}</span>
+                </div>
+                <button onClick={() => setInspectCondition(null)}>
+                  <X size={18} />
+                </button>
+              </div>
+
+              <div className="inspect-body">
+                <p>{inspectCondition.description}</p>
+              </div>
+
+              <div className="inspect-footer">
+                <button className="parchment-btn btn-gold" onClick={() => setInspectCondition(null)}>
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Footer do Tracker */}
+        <div className="tracker-footer">
+          <span className="tracker-meta-text">
+            Tormenta20 • Rastreamento oficial de combate e condições canônicas
+          </span>
+          {onOpenQuickReference && (
+            <button 
+              className="parchment-btn btn-gold"
+              onClick={() => {
+                onClose();
+                onOpenQuickReference();
+              }}
+            >
+              <BookOpen size={16} />
+              <span>Abrir Tomo de Regras (Pág. 220)</span>
+            </button>
+          )}
+        </div>
+
+        <ScrollToTop containerRef={trackerBodyRef} isInsideContainer />
       </div>
     </div>
   );
