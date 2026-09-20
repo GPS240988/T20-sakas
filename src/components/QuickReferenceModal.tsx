@@ -53,6 +53,32 @@ export interface ConditionCanonical {
   type?: 'Mental' | 'Medo' | 'Movimento' | 'Sentidos' | 'Metabolismo' | 'Metamorfose' | 'Cansaço' | 'Veneno' | null;
   description: string;
   page: string;
+  relatedConditions?: string[];
+}
+
+export interface HealthRuleCanonical {
+  title: string;
+  badge: string;
+  badgeClass: 'ruby' | 'gold' | 'mana' | 'emerald' | 'amber';
+  page: string;
+  description: string;
+  mechanicalDetails: string;
+  relatedConditions?: string[];
+}
+
+export interface RangeCanonical {
+  name: string;
+  distance: string;
+  description: string;
+  examples: string;
+}
+
+export interface CreatureSizeCanonical {
+  size: string;
+  space: string;
+  reach: string;
+  stealthMod: string;
+  maneuverMod: string;
 }
 
 export const CANONICAL_ACTIONS: ActionCanonical[] = [
@@ -156,6 +182,15 @@ export const CANONICAL_MANEUVERS: ManeuverCanonical[] = [
   }
 ];
 
+export const CANONICAL_CREATURE_SIZES: CreatureSizeCanonical[] = [
+  { size: 'Minúsculo', space: '0,75m (0,5q)', reach: '1,5m', stealthMod: '+5', maneuverMod: '–5' },
+  { size: 'Pequeno', space: '1,5m (1q)', reach: '1,5m', stealthMod: '+2', maneuverMod: '–2' },
+  { size: 'Médio', space: '1,5m (1q)', reach: '1,5m', stealthMod: '+0', maneuverMod: '+0' },
+  { size: 'Grande', space: '3m (2q)', reach: '3m', stealthMod: '–2', maneuverMod: '+2' },
+  { size: 'Enorme', space: '4,5m (3q)', reach: '4,5m', stealthMod: '–5', maneuverMod: '+5' },
+  { size: 'Colossal', space: '9m+ (6q+)', reach: '6m+', stealthMod: '–10', maneuverMod: '+10' }
+];
+
 export const CANONICAL_SIZE_MODIFIERS = [
   { size: 'Minúsculo', mod: '–5' },
   { size: 'Pequeno', mod: '–2' },
@@ -163,6 +198,84 @@ export const CANONICAL_SIZE_MODIFIERS = [
   { size: 'Grande', mod: '+2' },
   { size: 'Enorme', mod: '+5' },
   { size: 'Colossal', mod: '+10' }
+];
+
+export const CANONICAL_HEALTH_RULES: HealthRuleCanonical[] = [
+  {
+    title: 'PV Negativos & Sangramento',
+    badge: 'Morte & Sangramento',
+    badgeClass: 'ruby',
+    page: '239',
+    description: 'Quando seus Pontos de Vida caem para 0 ou menos, você cai inconsciente e fica sangrando. No início de cada um dos seus turnos, você deve fazer um teste de Constituição (CD 15).',
+    mechanicalDetails: '• Sucesso: você se estabiliza (para de sangrar e permanece com 0 PV, porém inconsciente).\n• Falha: perde 1d6 PV e continua sangrando.\n• Morte: se seus PV negativos atingirem metade do seu valor total de PV máximos (ou –10 para nível 1), você morre instantaneamente.',
+    relatedConditions: ['Inconsciente', 'Sangrando', 'Indefeso']
+  },
+  {
+    title: 'Primeiros Socorros',
+    badge: 'Estabilização de Emergência',
+    badgeClass: 'emerald',
+    page: '240',
+    description: 'Você pode gastar uma ação padrão para prestar primeiros socorros em uma criatura sangrando que esteja ao seu alcance.',
+    mechanicalDetails: '• Faça um teste de Cura (CD 15).\n• Se passar, a criatura se estabiliza e para de perder PV no início dos turnos dela, mas permanece inconsciente.',
+    relatedConditions: ['Sangrando', 'Inconsciente']
+  },
+  {
+    title: 'Golpe de Misericórdia',
+    badge: 'Ataque Fatal Completo',
+    badgeClass: 'ruby',
+    page: '240',
+    description: 'Um ataque com ação completa direcionado a uma criatura adjacente que esteja indefesa (como um inimigo inconsciente ou paralisado).',
+    mechanicalDetails: '• Acerto Crítico Automático: o ataque atinge automaticamente e causa dano crítico.\n• Teste de Morte: se o alvo sobreviver ao dano, deve passar em um teste de Fortitude (CD 10 + dano sofrido) ou morrerá imediatamente.',
+    relatedConditions: ['Indefeso', 'Inconsciente', 'Paralisado']
+  },
+  {
+    title: 'Dano Massivo',
+    badge: 'Trauma Grave',
+    badgeClass: 'amber',
+    page: '240',
+    description: 'Se você sofrer um único ataque ou fonte de dano que cause dano igual ou superior a metade dos seus PV máximos (mínimo 50 pontos de dano).',
+    mechanicalDetails: '• Faça um teste de Fortitude (CD 15 + 1 para cada 10 pontos de dano acima de 50).\n• Se falhar, seus PV caem imediatamente para 0 e você fica sangrando.',
+    relatedConditions: ['Sangrando', 'Inconsciente']
+  }
+];
+
+export const CANONICAL_RANGES: RangeCanonical[] = [
+  {
+    name: 'Pessoal',
+    distance: '0 metros',
+    description: 'O efeito afeta apenas o próprio executante/conjurador ou um objeto por ele empunhado.',
+    examples: 'Magia Armadura Arcana, habilidades corporais do próprio personagem.'
+  },
+  {
+    name: 'Toque',
+    distance: '1,5 metros (Adjacente)',
+    description: 'Requer contato físico ou toque com a mão/corpo na criatura ou objeto alvo.',
+    examples: 'Magia Curar Ferimentos, manobras de toque, primeiros socorros.'
+  },
+  {
+    name: 'Curto',
+    distance: '9 metros (6 quadrados)',
+    description: 'Alcance padrão para arremessos de armas, pistolas e magias de curta distância.',
+    examples: 'Arremesso de adaga/machadinha, disparo de pistola, magia Flecha Ácida.'
+  },
+  {
+    name: 'Médio',
+    distance: '18 metros (12 quadrados)',
+    description: 'Alcance intermediário de combate tático, cobrindo a maioria das salas e arenas.',
+    examples: 'Magia Bola de Fogo, arcos curtos, habilidades de comando.'
+  },
+  {
+    name: 'Longo',
+    distance: '30 metros (20 quadrados)',
+    description: 'Alcance estendido para atiradores de elite e magias de grande alcance.',
+    examples: 'Disparo de arco longo, besta leve/pesada, magia Relâmpago.'
+  },
+  {
+    name: 'Extremo',
+    distance: '90 metros (60 quadrados)',
+    description: 'Alcance de artilharia e imensa distância para grandes descampados e cercos.',
+    examples: 'Magia Meteoro, disparos de cerco, armas à distância com encantos de alcance.'
+  }
 ];
 
 export const CANONICAL_CONDITIONS: ConditionCanonical[] = [
@@ -440,6 +553,34 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const handleSelectChip = (targetName: string) => {
+    const condMatch = CANONICAL_CONDITIONS.find(
+      c => c.name.toLowerCase() === targetName.toLowerCase()
+    );
+    if (condMatch) {
+      setActiveTab('condicoes');
+      setCondSearch(condMatch.name);
+      setSelectedCondType('Todas');
+      setExpandedCondName(condMatch.name);
+      if (bodyRef.current) bodyRef.current.scrollTop = 0;
+      return;
+    }
+
+    const manMatch = CANONICAL_MANEUVERS.find(
+      m => m.name.toLowerCase() === targetName.toLowerCase()
+    );
+    if (manMatch) {
+      setActiveTab('manobras');
+      setExpandedManeuverId(manMatch.id);
+      if (bodyRef.current) bodyRef.current.scrollTop = 0;
+      return;
+    }
+
+    setActiveTab('condicoes');
+    setCondSearch(targetName);
+    if (bodyRef.current) bodyRef.current.scrollTop = 0;
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -563,7 +704,17 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                           <div className="maneuver-conditions-row">
                             <span className="cond-rel-label">Condições associadas:</span>
                             {man.relatedConditions.map(c => (
-                              <span key={c} className="badge-ruby cond-chip">{c}</span>
+                              <button 
+                                key={c} 
+                                className="badge-ruby cond-chip interactive-chip"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  handleSelectChip(c);
+                                }}
+                                title={`Ver detalhes da condição ${c}`}
+                              >
+                                {c}
+                              </button>
                             ))}
                           </div>
                         )}
@@ -678,6 +829,25 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
 
                         <div className="condition-item-body">
                           <p className="condition-text">{cond.description}</p>
+
+                          {cond.relatedConditions && cond.relatedConditions.length > 0 && (
+                            <div className="maneuver-conditions-row mt-2">
+                              <span className="cond-rel-label">Gera / relaciona com:</span>
+                              {cond.relatedConditions.map(r => (
+                                <button
+                                  key={r}
+                                  className="badge-ruby cond-chip interactive-chip"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleSelectChip(r);
+                                  }}
+                                  title={`Ver detalhes da condição ${r}`}
+                                >
+                                  {r}
+                                </button>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     );
@@ -770,50 +940,191 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                       <tr>
                         <th>Situação</th>
                         <th>Efeito Mecânico</th>
-                        <th>Referência Oficial</th>
+                        <th>Referência & Condição</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Cobertura Leve</strong></td>
                         <td><span className="badge-emerald">+2 na Defesa</span></td>
-                        <td>Mureta baixa, criatura no caminho</td>
+                        <td>Mureta baixa, criatura no caminho (Pág. 237)</td>
                       </tr>
                       <tr>
                         <td><strong>Cobertura Total</strong></td>
                         <td><span className="badge-emerald">+5 na Defesa</span></td>
-                        <td>Parede inteira, obstáculo sólido total</td>
+                        <td>Parede inteira, obstáculo sólido total (Pág. 237)</td>
                       </tr>
                       <tr>
                         <td><strong>Camuflagem Leve</strong></td>
                         <td><span className="badge-amber">20% de chance de erro (1 em 1d5)</span></td>
-                        <td>Névoa suave, penumbra, folhagem</td>
+                        <td>Névoa suave, penumbra, folhagem (Pág. 238)</td>
                       </tr>
                       <tr>
                         <td><strong>Camuflagem Total</strong></td>
                         <td><span className="badge-ruby">50% de chance de erro (1-5 em 1d10)</span></td>
-                        <td>Escuridão total, invisibilidade, cegueira</td>
+                        <td>
+                          Escuridão total, invisibilidade. Alvo considerado{' '}
+                          <button
+                            className="badge-ruby cond-chip interactive-chip inline-chip"
+                            onClick={() => handleSelectChip('Cego')}
+                          >
+                            Cego
+                          </button>
+                        </td>
                       </tr>
                       <tr>
                         <td><strong>Flanquear</strong></td>
                         <td><span className="badge-gold">+2 no teste de ataque corpo a corpo</span></td>
-                        <td>Você e um aliado em lados opostos do alvo</td>
+                        <td>Aliado no lado oposto do alvo (Pág. 237)</td>
                       </tr>
                       <tr>
                         <td><strong>Posição Elevada</strong></td>
                         <td><span className="badge-gold">+2 no teste de ataque corpo a corpo</span></td>
-                        <td>Atacando de cima de mesa, montaria ou terreno alto</td>
+                        <td>Atacando de cima de mesa, montaria ou terreno alto (Pág. 237)</td>
                       </tr>
                       <tr>
                         <td><strong>Investida</strong></td>
                         <td><span className="badge-gold">+2 no teste de ataque</span> / <span className="badge-ruby">–2 na Defesa</span></td>
-                        <td>Avança o dobro do deslocamento em linha reta</td>
+                        <td>Avança o dobro do deslocamento em linha reta (Pág. 238)</td>
                       </tr>
                       <tr>
                         <td><strong>Alvo Caído</strong></td>
                         <td><span className="badge-ruby">–5 Defesa (C. a C.)</span> / <span className="badge-emerald">+5 Defesa (Distância)</span></td>
-                        <td>Sofre –5 em ataques corpo a corpo e deslocamento 1,5m</td>
+                        <td>
+                          Alvo na condição{' '}
+                          <button
+                            className="badge-ruby cond-chip interactive-chip inline-chip"
+                            onClick={() => handleSelectChip('Caído')}
+                          >
+                            Caído
+                          </button>
+                        </td>
                       </tr>
+                      <tr>
+                        <td><strong>Alvo Desprevenido</strong></td>
+                        <td><span className="badge-ruby">–5 na Defesa e –5 em Reflexos</span></td>
+                        <td>
+                          Alvo na condição{' '}
+                          <button
+                            className="badge-ruby cond-chip interactive-chip inline-chip"
+                            onClick={() => handleSelectChip('Desprevenido')}
+                          >
+                            Desprevenido
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>Alvo Indefeso</strong></td>
+                        <td><span className="badge-ruby">–10 Defesa / Falha auto em Reflexos</span></td>
+                        <td>
+                          Alvo na condição{' '}
+                          <button
+                            className="badge-ruby cond-chip interactive-chip inline-chip"
+                            onClick={() => handleSelectChip('Indefeso')}
+                          >
+                            Indefeso
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Saúde, Sangramento e Morte */}
+              <div className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header">
+                  <ShieldAlert size={20} className="text-ruby" />
+                  <h3>Saúde, Sangramento e Morte (Pág. 239–240)</h3>
+                </div>
+                <div className="health-rules-grid">
+                  {CANONICAL_HEALTH_RULES.map(rule => (
+                    <div key={rule.title} className="health-card parchment-subcard">
+                      <div className="health-card-header">
+                        <span className={`badge-${rule.badgeClass}`}>{rule.badge}</span>
+                        <span className="maneuver-page">pág. {rule.page}</span>
+                      </div>
+                      <h4 className="health-card-title">{rule.title}</h4>
+                      <p className="health-card-desc">{rule.description}</p>
+                      <pre className="health-card-details">{rule.mechanicalDetails}</pre>
+                      
+                      {rule.relatedConditions && rule.relatedConditions.length > 0 && (
+                        <div className="maneuver-conditions-row mt-2">
+                          <span className="cond-rel-label">Condições:</span>
+                          {rule.relatedConditions.map(c => (
+                            <button
+                              key={c}
+                              className="badge-ruby cond-chip interactive-chip"
+                              onClick={() => handleSelectChip(c)}
+                              title={`Ir para condição ${c}`}
+                            >
+                              {c}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Categorias de Alcance */}
+              <div className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header">
+                  <Zap size={20} className="text-gold" />
+                  <h3>Categorias de Alcance (Pág. 138, 224)</h3>
+                </div>
+                <div className="range-grid">
+                  {CANONICAL_RANGES.map(r => (
+                    <div key={r.name} className="range-card parchment-subcard">
+                      <div className="range-card-header">
+                        <span className="range-name">{r.name}</span>
+                        <span className="badge-gold range-dist">{r.distance}</span>
+                      </div>
+                      <p className="range-desc">{r.description}</p>
+                      <div className="range-examples">
+                        <strong>Exemplos:</strong> {r.examples}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Espaço Ocupado e Alcance por Tamanho */}
+              <div className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header">
+                  <Layers size={20} className="text-mana" />
+                  <h3>Espaço Ocupado, Alcance Natural e Tamanho (Pág. 106, 238)</h3>
+                </div>
+                <div className="cheat-table-wrapper">
+                  <table className="cheat-table">
+                    <thead>
+                      <tr>
+                        <th>Tamanho da Criatura</th>
+                        <th>Espaço Ocupado (Quadrados)</th>
+                        <th>Alcance Natural</th>
+                        <th>Furtividade</th>
+                        <th>Manobra (Luta)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {CANONICAL_CREATURE_SIZES.map(s => (
+                        <tr key={s.size}>
+                          <td><strong>{s.size}</strong></td>
+                          <td>{s.space}</td>
+                          <td>{s.reach}</td>
+                          <td>
+                            <span className={s.stealthMod.startsWith('+') ? 'text-emerald' : s.stealthMod.startsWith('–') ? 'text-ruby' : ''}>
+                              {s.stealthMod}
+                            </span>
+                          </td>
+                          <td>
+                            <span className={s.maneuverMod.startsWith('+') ? 'text-emerald font-bold' : s.maneuverMod.startsWith('–') ? 'text-ruby font-bold' : ''}>
+                              {s.maneuverMod}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>

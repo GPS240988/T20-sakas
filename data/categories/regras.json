@@ -5,22 +5,23 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Tipos de Ações",
-    "summary": "Uma ação padrão representa a coisa mais importante que você faz em seu turno. Atacar com uma arma ou lançar uma magia comum são os...",
+    "summary": "Uma ação padrão representa a coisa mais importante que você faz em seu turno. Atacar com uma arma ou lançar uma magia comum são os exemplos mais típicos.",
     "description": "Uma ação padrão representa a coisa mais importante que você faz em seu turno. Atacar com uma arma ou lançar uma magia comum são os exemplos mais típicos de ações padrão.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
-        "page": 236,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "page": 234,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
       "combate",
       "ação",
       "ação padrão",
-      "turno"
+      "turno",
+      "agredir"
     ],
     "subcategory": "Combate"
   },
@@ -30,15 +31,15 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Tipos de Ações",
-    "summary": "Uma ação de movimento representa deslocamento físico ou manipulação rápida de objetos. Exemplos: andar até o seu deslocamento, sac...",
+    "summary": "Uma ação de movimento representa deslocamento físico ou manipulação rápida de objetos.",
     "description": "Uma ação de movimento representa deslocamento físico ou manipulação rápida de objetos. Exemplos: andar até o seu deslocamento, sacar ou guardar uma arma, levantar-se do chão, abrir uma porta não trancada.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
-        "page": 236,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "page": 234,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
@@ -56,15 +57,15 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Tipos de Ações",
-    "summary": "Uma ação completa consome todo o seu esforço e tempo do turno. Se fizer uma ação completa, você não pode fazer nenhuma ação padrão...",
+    "summary": "Uma ação completa consome todo o seu esforço e tempo do turno.",
     "description": "Uma ação completa consome todo o seu esforço e tempo do turno. Se fizer uma ação completa, você não pode fazer nenhuma ação padrão nem de movimento. Exemplos: Investida, Golpe de Misericórdia, Correr.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
-        "page": 236,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "page": 235,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
@@ -82,21 +83,23 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Tipos de Ações",
-    "summary": "Ações livres consomem pouquíssimo tempo e esforço. Você pode realizar qualquer quantidade razoável de ações livres por turno, a cr...",
+    "summary": "Ações livres consomem pouquíssimo tempo e esforço.",
     "description": "Ações livres consomem pouquíssimo tempo e esforço. Você pode realizar qualquer quantidade razoável de ações livres por turno, a critério do mestre. Exemplos: falar uma frase curta, soltar um item empunhado.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
-        "page": 236,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "page": 235,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
       "combate",
       "ação",
-      "ação livre"
+      "ação livre",
+      "falar",
+      "soltar"
     ],
     "subcategory": "Combate"
   },
@@ -106,22 +109,266 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Tipos de Ações",
-    "summary": "Uma reação é uma resposta instantânea a um gatilho específico, que pode acontecer fora do seu turno. Você só pode reagir se não es...",
+    "summary": "Uma reação é uma resposta instantânea a um gatilho específico, que pode acontecer fora do seu turno.",
     "description": "Uma reação é uma resposta instantânea a um gatilho específico, que pode acontecer fora do seu turno. Você só pode reagir se não estiver indefeso ou sob efeito que impeça ações. Exemplos: teste de Reflexos contra uma bola de fogo, teste de Percepção contra Furtividade.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
-        "page": 236,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "page": 235,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
       "combate",
       "ação",
       "reação",
-      "resposta"
+      "resposta",
+      "gatilho"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-flanqueamento",
+    "name": "Flanqueamento",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Modificadores de Combate",
+    "summary": "+2 nos testes de ataque corpo a corpo quando você e um aliado estão em lados opostos do mesmo alvo.",
+    "description": "Você e um aliado estão em lados opostos de um mesmo alvo. Ao fazer um ataque corpo a corpo contra um alvo flanqueado, você recebe +2 no teste de ataque.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "flanquear",
+      "flanqueamento",
+      "bônus",
+      "ataque",
+      "posicionamento"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-posicao-elevada",
+    "name": "Posição Elevada",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Modificadores de Combate",
+    "summary": "+2 nos testes de ataque corpo a corpo ao atacar de um ponto mais alto.",
+    "description": "Atacar de um ponto mais alto que seu oponente (de cima de uma mesa, de uma montaria ou de um barranco) concede +2 no teste de ataque corpo a corpo.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "posição elevada",
+      "altura",
+      "montaria",
+      "bônus"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-cobertura-leve",
+    "name": "Cobertura Leve",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Cobertura e Camuflagem",
+    "summary": "+2 na Defesa do alvo protegido por mureta baixa, vegetação ou outra criatura no caminho.",
+    "description": "Uma mureta baixa, uma mesa inclinada, vegetação moderada ou outra criatura no caminho fornecem cobertura leve. O alvo recebe +2 na Defesa.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "cobertura",
+      "cobertura leve",
+      "defesa",
+      "obstáculo"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-cobertura-total",
+    "name": "Cobertura Total",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Cobertura e Camuflagem",
+    "summary": "+5 na Defesa e +2 em Reflexos para alvos protegidos por obstáculo sólido completo.",
+    "description": "Uma parede inteira, uma rocha sólida ou uma porta fechada fornecem cobertura total. O alvo recebe +5 na Defesa e +2 em testes de Reflexos. Ataques diretos que exigem linha de visão não podem ser realizados.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "cobertura",
+      "cobertura total",
+      "defesa",
+      "reflexos",
+      "parede"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-camuflagem-leve",
+    "name": "Camuflagem Leve",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Cobertura e Camuflagem",
+    "summary": "20% de chance de falha em ataques contra alvos em névoa suave, penumbra ou folhagem.",
+    "description": "Névoa suave, penumbra, folhagem densa ou chuva forte fornecem camuflagem leve. Qualquer ataque contra o alvo tem 20% de chance de falhar (1 em 1d5 ou 1-2 em 1d10).",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "camuflagem",
+      "camuflagem leve",
+      "névoa",
+      "penumbra",
+      "chance de falha"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-camuflagem-total",
+    "name": "Camuflagem Total",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Cobertura e Camuflagem",
+    "summary": "50% de chance de falha em ataques contra alvos em escuridão total ou invisibilidade.",
+    "description": "Escuridão total, névoa espessa, invisibilidade ou estar cego fornecem camuflagem total. Qualquer ataque contra o alvo tem 50% de chance de falhar (1-5 em 1d10).",
+    "relatedIds": [
+      "condicao-cego"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "camuflagem",
+      "camuflagem total",
+      "escuridão",
+      "invisibilidade",
+      "cegueira"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-terreno-dificil",
+    "name": "Terreno Difícil",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Movimento e Posição",
+    "summary": "Cada 1,5m de deslocamento em terreno difícil consome 3m de movimento. Impede investidas e correr.",
+    "description": "Entulho, lama, água rasa, neve ou vegetação densa contam como terreno difícil. Cada 1,5m de movimento no terreno difícil consome 3m do seu deslocamento. Não é possível realizar investidas nem correr em terreno difícil.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 238,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "terreno difícil",
+      "movimento",
+      "deslocamento",
+      "lama",
+      "investida"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-atirar-em-combate-corpo-a-corpo",
+    "name": "Ataque à Distância em Combate Corpo a Corpo",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Modificadores de Combate",
+    "summary": "Penalidade de –5 no teste de ataque à distância contra alvo engajado em combate corpo a corpo com aliado.",
+    "description": "Fazer um ataque à distância contra um alvo que esteja engajado em combate corpo a corpo com um aliado impõe penalidade de –5 no seu teste de ataque (a menos que você possua o poder Tiro Preciso).",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "ataque à distância",
+      "tiro",
+      "penalidade",
+      "engajado"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-alvo-caido",
+    "name": "Alvo Caído em Combate",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Modificadores de Combate",
+    "summary": "Criatura caída sofre –5 nos seus ataques CaC; na Defesa sofre –5 contra CaC e recebe +5 contra ataques à distância.",
+    "description": "Uma criatura caída sofre –5 em testes de ataque corpo a corpo. Na Defesa, ela sofre –5 contra ataques corpo a corpo sofridos, mas recebe +5 na Defesa contra ataques à distância sofridos.",
+    "relatedIds": [
+      "condicao-caido"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 237,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "caído",
+      "defesa",
+      "ataque corpo a corpo",
+      "ataque à distância"
     ],
     "subcategory": "Combate"
   },
@@ -131,22 +378,23 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Ações Completas",
-    "summary": "Você avança até o dobro de seu deslocamento em linha reta e faz um ataque corpo a corpo no final do movimento. Você recebe +2 no t...",
+    "summary": "Avança até o dobro do deslocamento em linha reta e ataca no final. Recebe +2 no ataque e –2 na Defesa.",
     "description": "Você avança até o dobro de seu deslocamento em linha reta e faz um ataque corpo a corpo no final do movimento. Você recebe +2 no teste de ataque, mas sofre –2 na Defesa até o início do seu próximo turno.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
         "page": 237,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
       "combate",
       "investida",
       "ação completa",
-      "ataque corpo a corpo"
+      "ataque corpo a corpo",
+      "deslocamento"
     ],
     "subcategory": "Combate"
   },
@@ -156,7 +404,7 @@
     "category": "regra",
     "chapter": "Combate",
     "subchapter": "Ações Completas",
-    "summary": "Você desfere um golpe letal contra um alvo indefeso adjacente. Como uma ação completa, você acerta automaticamente e causa um acer...",
+    "summary": "Golpe letal automático em alvo indefeso adjacente (Crítico automático + Teste de Fortitude CD 10+dano ou morre).",
     "description": "Você desfere um golpe letal contra um alvo indefeso adjacente. Como uma ação completa, você acerta automaticamente e causa um acerto crítico automático. O alvo deve fazer um teste de Fortitude (CD 10 + dano sofrido) ou morre imediatamente.",
     "relatedIds": [
       "condicao-indefeso"
@@ -165,8 +413,8 @@
       {
         "book": "Tormenta20 - Jogo do Ano",
         "page": 237,
-        "section": "Capítulo: Combate",
-        "version": ""
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
       }
     ],
     "tags": [
@@ -179,20 +427,263 @@
     "subcategory": "Combate"
   },
   {
+    "id": "regra-sangrando-e-morrendo",
+    "name": "Sangrando e PV Negativos",
+    "category": "regra",
+    "chapter": "Jogando",
+    "subchapter": "Ferimentos e Morte",
+    "summary": "Com 0 PV ou menos, você fica inconsciente e sangrando (Teste de Constituição CD 15 por rodada para estabilizar).",
+    "description": "Quando seus Pontos de Vida caem para 0 ou menos, você fica inconsciente e sangrando. No início de cada turno, faça um teste de Constituição (CD 15). Se falhar, perde 1d6 PV e continua sangrando. Se passar, você estabiliza e para de perder PV.",
+    "relatedIds": [
+      "condicao-inconsciente",
+      "condicao-sangrando"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 223,
+        "section": "Capítulo 4: Regras do Jogo",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "saúde",
+      "sangrando",
+      "morrendo",
+      "pv",
+      "inconsciente",
+      "estabilizar"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-morte-massiva",
+    "name": "Morte Instantânea por Dano Massivo",
+    "category": "regra",
+    "chapter": "Jogando",
+    "subchapter": "Ferimentos e Morte",
+    "summary": "Ficar com PV negativos iguais ou superiores à metade dos seus PV máximos causa morte imediata.",
+    "description": "Se um ataque ou efeito reduzir seus Pontos de Vida para um valor negativo igual ou superior à metade dos seus PV máximos, seu personagem morre instantaneamente.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 224,
+        "section": "Capítulo 4: Regras do Jogo",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "morte",
+      "dano massivo",
+      "morte instantânea",
+      "pv negativos"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-primeiros-socorros",
+    "name": "Primeiros Socorros",
+    "category": "regra",
+    "chapter": "Jogando",
+    "subchapter": "Ferimentos e Morte",
+    "summary": "Ação padrão e teste de Cura (CD 15) para estabilizar um personagem sangrando.",
+    "description": "Você pode gastar uma ação padrão e fazer um teste de Cura (CD 15) em um personagem sangrando. Se passar, o personagem estabiliza e para de sangrar.",
+    "relatedIds": [
+      "condicao-sangrando"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 224,
+        "section": "Capítulo 4: Regras do Jogo",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "cura",
+      "primeiros socorros",
+      "estabilizar",
+      "sangrando",
+      "perícia"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acao-preparar",
+    "name": "Preparar Ação",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Ações em Combate",
+    "summary": "Gasta ação padrão para preparar uma ação com gatilho específico, disparando com a Reação.",
+    "description": "Você pode usar uma ação padrão para preparar uma ação (padrão, de movimento ou livre) e especificar um gatilho claro. Quando o gatilho ocorrer antes do seu próximo turno, você pode gastar sua Reação para realizar a ação preparada.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "preparar",
+      "gatilho",
+      "reação",
+      "estratégia"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-acao-ajudar",
+    "name": "Ação Ajudar",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Ações em Combate",
+    "summary": "Ação padrão para fazer teste de perícia ou ataque (CD 10/Defesa 10) e conceder +2 no teste de um aliado.",
+    "description": "Você pode usar uma ação padrão para ajudar um aliado em um teste de perícia ou de ataque. Faça um teste da mesma perícia (CD 10) ou um teste de ataque contra Defesa 10. Se passar, seu aliado recebe +2 no teste dele.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 235,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "ajudar",
+      "trabalho em equipe",
+      "bônus",
+      "perícia"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-passo-de-ajuste",
+    "name": "Passo de Ajuste",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Movimento e Posição",
+    "summary": "Mover 1,5m (1 quadrado) com ação de movimento sem provocar reações inimigas.",
+    "description": "Você pode gastar uma ação de movimento para se mover 1,5m (1 quadrado). Este movimento não provoca reações nem ataques de oportunidade de inimigos.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "passo de ajuste",
+      "movimento",
+      "recuo",
+      "sem reação"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-recarregar-armas",
+    "name": "Recarregar Armas",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Equipamentos em Combate",
+    "summary": "Tempo exigido para recarregar bestas e armas de fogo (Movimento, Padrão ou Completa).",
+    "description": "Recarregar uma arma à distância exige tempo conforme o tipo: besta leve ou pistola exige uma ação de movimento; besta pesada exige uma ação padrão; mosquete exige uma ação completa.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 236,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "recarregar",
+      "besta",
+      "arma de fogo",
+      "pistola",
+      "mosquete"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-lançar-magia-em-combate",
+    "name": "Lançar Magia em Combate",
+    "category": "regra",
+    "chapter": "Magia",
+    "subchapter": "Conjurando Magias",
+    "summary": "Teste de Vontade (CD 10+dano+PM) ao sofrer dano lançando magia para não perder os PM e a magia.",
+    "description": "Lançar uma magia enquanto é atacado ou em condição ruim exige concentrar-se. Se sofrer dano enquanto lança uma magia, faça um teste de Vontade (CD 10 + dano sofrido + nível da magia). Se falhar, a magia é perdida e os PM são gastos.",
+    "relatedIds": [],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 170,
+        "section": "Capítulo 4: Magia",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "magia",
+      "combate",
+      "concentração",
+      "vontade",
+      "perder magia"
+    ],
+    "subcategory": "Combate"
+  },
+  {
+    "id": "regra-quebrando-objetos",
+    "name": "Quebrando Objetos e Equipamentos",
+    "category": "regra",
+    "chapter": "Combate",
+    "subchapter": "Regras de Objetos",
+    "summary": "Regras de RD de materiais (Madeira RD 5, Pedra RD 10, Ferro RD 15, Adamante RD 20) ao danificar itens.",
+    "description": "Atacar um objeto (como uma arma, escudo ou estrutura) exige atingir a Defesa do objeto (geralmente 5 + mod. Des do detentor se empunhado). Danos aplicados sofrem a Resistência a Dano (RD) do material: Madeira RD 5, Pedra RD 10, Ferro RD 15, Adamante RD 20.",
+    "relatedIds": [
+      "manobra-quebrar"
+    ],
+    "sources": [
+      {
+        "book": "Tormenta20 - Jogo do Ano",
+        "page": 242,
+        "section": "Capítulo 5: Combate",
+        "version": "1.3"
+      }
+    ],
+    "tags": [
+      "combate",
+      "quebrar",
+      "objetos",
+      "resistência a dano",
+      "rd",
+      "material"
+    ],
+    "subcategory": "Combate"
+  },
+  {
     "id": "regra-acumulo-de-bonus",
     "name": "Acúmulo de Bônus e Efeitos",
     "category": "regra",
     "chapter": "Regras do Jogo",
     "subchapter": "Benefícios e Penalidades",
-    "summary": "Bônus de mesma fonte (duas magias, dois itens com o mesmo encanto, ou a mesma habilidade usada duas vezes) NÃO se acumulam — apliq...",
+    "summary": "Bônus de mesma fonte NÃO se acumulam — aplique o maior. Fontes diferentes se acumulam. Penalidades acumulam.",
     "description": "Bônus de mesma fonte (duas magias, dois itens com o mesmo encanto, ou a mesma habilidade usada duas vezes) NÃO se acumulam — aplique apenas o maior. Bônus de tipos e fontes diferentes (um item, uma magia e uma habilidade de classe) se acumulam normalmente. Penalidades sempre se acumulam, a menos que venham da mesma condição ou efeito idêntico.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
         "page": 226,
-        "section": "Capítulo: Regras do Jogo",
-        "version": ""
+        "section": "Capítulo 4: Regras do Jogo",
+        "version": "1.3"
       }
     ],
     "tags": [
@@ -210,15 +701,15 @@
     "category": "regra",
     "chapter": "Jogando",
     "subchapter": "Recuperação",
-    "summary": "Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM). Condições de descanso: 1) Ruim (acampamento ex...",
+    "summary": "Um descanso de 8 horas permite recuperar PV e PM conforme o nível de conforto do local.",
     "description": "Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM). Condições de descanso: 1) Ruim (acampamento exposto): PV e PM = nível; 2) Normal (estalagem comum, barraca confortável): PV e PM = dobro do nível; 3) Confortável (quarto de luxo, mansão): PV e PM = triplo do nível; 4) Luxuoso (palácio): PV e PM = quatro vezes o nível.",
     "relatedIds": [],
     "sources": [
       {
         "book": "Tormenta20 - Jogo do Ano",
         "page": 224,
-        "section": "Capítulo: Jogando",
-        "version": ""
+        "section": "Capítulo 4: Regras do Jogo",
+        "version": "1.3"
       }
     ],
     "tags": [

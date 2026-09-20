@@ -4,50 +4,7 @@ import os
 categories_dir = "data/categories"
 os.makedirs(categories_dir, exist_ok=True)
 
-# 1. Carregar as condições, manobras, perícias e regras existentes
-with open("data/t20_canonical_database.json", "r", encoding="utf-8") as f:
-    existing_db = json.load(f)
-
-condicoes = [e for e in existing_db if e.get("category") == "condicao"]
-for c in condicoes:
-    if not c.get("subcategory"):
-        if c.get("type") in ["Mental", "Medo"]:
-            c["subcategory"] = "Condições Mentais"
-        elif c.get("type") in ["Movimento", "Sentidos"]:
-            c["subcategory"] = "Condições Físicas"
-        elif c.get("type") == "Metabólica":
-            c["subcategory"] = "Condições Metabólicas"
-        elif c["name"] in ["Machucado", "Moribundo", "Morto", "Asfixiado"]:
-            c["subcategory"] = "Condições de Saúde"
-        else:
-            c["subcategory"] = "Condições Físicas"
-
-with open(f"{categories_dir}/condicoes.json", "w", encoding="utf-8") as f:
-    json.dump(condicoes, f, ensure_ascii=False, indent=2)
-
-manobras = [e for e in existing_db if e.get("category") == "manobra"]
-for m in manobras:
-    m["subcategory"] = "Manobras de Combate"
-
-with open(f"{categories_dir}/manobras.json", "w", encoding="utf-8") as f:
-    json.dump(manobras, f, ensure_ascii=False, indent=2)
-
-pericias = [e for e in existing_db if e.get("category") == "pericia"]
-for p in pericias:
-    p["subcategory"] = "Perícias Gerais"
-
-with open(f"{categories_dir}/pericias.json", "w", encoding="utf-8") as f:
-    json.dump(pericias, f, ensure_ascii=False, indent=2)
-
-regras = [e for e in existing_db if e.get("category") == "regra"]
-for r in regras:
-    if not r.get("subcategory"):
-        r["subcategory"] = "Combate"
-
-with open(f"{categories_dir}/regras.json", "w", encoding="utf-8") as f:
-    json.dump(regras, f, ensure_ascii=False, indent=2)
-
-# 2. Carregar todos os arquivos de categorias
+# 1. Carregar todos os arquivos de categorias como fontes canônicas
 category_files = [
     "equipamentos.json",
     "tesouros.json",

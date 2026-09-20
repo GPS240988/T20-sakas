@@ -1,5 +1,5 @@
 {
-  "total": 1240,
+  "total": 1258,
   "categories": {
     "equipamento": 494,
     "tesouro": 40,
@@ -10,7 +10,7 @@
     "condicao": 41,
     "manobra": 7,
     "pericia": 29,
-    "regra": 9
+    "regra": 27
   },
   "subcategories": {
     "equipamento > Armas": 96,
@@ -45,10 +45,10 @@
     "condicao > Condições de Saúde": 4,
     "manobra > Manobras de Combate": 7,
     "pericia > Perícias Gerais": 29,
-    "regra > Combate": 9
+    "regra > Combate": 27
   },
   "books_consolidated": {
-    "Tormenta20 - Jogo do Ano": 749,
+    "Tormenta20 - Jogo do Ano": 767,
     "Ameaças de Arton": 82,
     "Atlas de Arton": 6,
     "Heróis de Arton": 403
