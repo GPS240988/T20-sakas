@@ -762,6 +762,37 @@
   font-weight: normal;
 }
 
+.pill-btn-mana.pill-btn-active {
+  background: var(--accent-mana-subtle);
+  border-color: var(--accent-mana);
+  color: var(--accent-mana);
+  font-weight: 700;
+  box-shadow: 0 1px 4px hsla(215, 65%, 45%, 0.18);
+}
+
+.pill-pm-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  background: hsla(215, 65%, 45%, 0.12);
+  color: var(--accent-mana);
+  margin-inline: 0.15rem;
+}
+
+.pill-btn-active .pill-pm-tag {
+  background: var(--accent-mana);
+  color: #fff;
+}
+
+.text-mana {
+  color: var(--accent-mana) !important;
+}
+
+.text-ruby {
+  color: var(--accent-ruby) !important;
+}
+
 .pill-btn-active .pill-badge {
   font-weight: 700;
   opacity: 1;

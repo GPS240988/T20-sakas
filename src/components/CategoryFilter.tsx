@@ -14,14 +14,19 @@ import {
   Filter,
   X,
   Layers,
-  Tag
+  Tag,
+  Wand2,
+  Target
 } from 'lucide-react';
 import { 
   CATEGORIES_ENABLED_LIST, 
   isCategoryClickable,
   BOOKS_LIST,
   getSubcategoriesForCategory, 
-  getItemTypesForCategory
+  getItemTypesForCategory,
+  SPELL_CIRCLES_INFO,
+  getMagicRarities,
+  getTreasureNDRanges
 } from '../data/database';
 import type { EntityCategory } from '../types/t20_schema';
 import type { SearchFilters } from '../hooks/useUniversalSearch';
@@ -33,11 +38,17 @@ interface CategoryFilterProps {
     getCategoryCount: (catId: string) => number;
     getSubcategoryCount: (category: string, subcat: string) => number;
     getItemTypeCount: (category: string, subcategory: string, type: string) => number;
+    getSpellCircleCount?: (circle: number | 'todos') => number;
+    getMagicRarityCount?: (rarity: string | 'todas') => number;
+    getNdRangeCount?: (ndRange: string | 'todos') => number;
   };
   onSelectCategory: (cat: EntityCategory | 'todas') => void;
   onSelectSubcategory: (subcat: string | 'todas') => void;
   onSelectItemType: (type: string | 'todas') => void;
   onSelectBook: (bookId: string | 'todos') => void;
+  onSelectSpellCircle?: (circle: number | 'todos') => void;
+  onSelectMagicRarity?: (rarity: string | 'todas') => void;
+  onSelectNdRange?: (ndRange: string | 'todos') => void;
   onMinPriceChange?: (val: number | '') => void;
   onMaxPriceChange?: (val: number | '') => void;
   onSelectPricePreset?: (min: number | '', max: number | '') => void;
@@ -65,6 +76,9 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onSelectSubcategory,
   onSelectItemType,
   onSelectBook,
+  onSelectSpellCircle,
+  onSelectMagicRarity,
+  onSelectNdRange,
   onMinPriceChange,
   onMaxPriceChange,
   onSelectPricePreset,
@@ -76,11 +90,20 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   const showPriceFilter = filters.category === 'equipamento';
   const showSubcategories = subcategories.length > 0 && filters.category !== 'todas';
   const showItemTypes = itemTypes.length > 0 && filters.subcategory !== 'todas';
+  const showSpellCircles = filters.category === 'magia';
+  const showMagicRarities = filters.category === 'equipamento' && filters.subcategory === 'Itens Mágicos';
+  const showNdRanges = filters.category === 'tesouro';
+
+  const magicRarities = getMagicRarities();
+  const ndRanges = getTreasureNDRanges();
 
   const hasActiveFacets = 
     filters.subcategory !== 'todas' || 
     filters.itemType !== 'todas' ||
     filters.book !== 'todos' ||
+    filters.spellCircle !== 'todos' ||
+    filters.magicRarity !== 'todas' ||
+    filters.ndRange !== 'todos' ||
     (filters.minPrice !== undefined && filters.minPrice !== '') ||
     (filters.maxPrice !== undefined && filters.maxPrice !== '');
 
@@ -99,6 +122,8 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     if (filters.category === 'ameaca') return 'Tipo:';
     return 'Tipo:';
   };
+
+  const showPanel = showSubcategories || showItemTypes || showPriceFilter || showSpellCircles || showMagicRarities || showNdRanges;
 
   return (
     <div className="category-filter-section">
@@ -186,7 +211,31 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
             </div>
           )}
 
-          {/* Combo 4: Tipo / Classificação (Quando aplicável) */}
+          {/* Combo 4: Círculo de Magias (Exclusivo Magias) */}
+          {showSpellCircles && (
+            <div className="mobile-select-group">
+              <label className="mobile-select-label">
+                <Wand2 size={13} className="text-mana" /> Círculo da Magia
+              </label>
+              <select
+                className="mobile-select-combo"
+                value={filters.spellCircle ?? 'todos'}
+                onChange={e => onSelectSpellCircle?.(e.target.value === 'todos' ? 'todos' : Number(e.target.value))}
+              >
+                <option value="todos">Todos os Círculos ({dynamicCounts.getSpellCircleCount?.('todos') ?? totalCatCount})</option>
+                {SPELL_CIRCLES_INFO.map(sc => {
+                  const count = dynamicCounts.getSpellCircleCount?.(sc.circle) ?? 0;
+                  return (
+                    <option key={sc.circle} value={sc.circle}>
+                      {sc.label} ({sc.pm}) — {count} magias
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          )}
+
+          {/* Combo 5: Tipo / Classificação / Escola (Quando aplicável) */}
           {showItemTypes && (
             <div className="mobile-select-group">
               <label className="mobile-select-label">
@@ -210,7 +259,55 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
             </div>
           )}
 
-          {/* Combo 5: Faixa de Preço (Exclusivo Equipamentos - Mobile) */}
+          {/* Combo 6: Raridade Mágica (Exclusivo Itens Mágicos) */}
+          {showMagicRarities && (
+            <div className="mobile-select-group">
+              <label className="mobile-select-label">
+                <Sparkles size={13} className="text-gold" /> Raridade Mágica
+              </label>
+              <select
+                className="mobile-select-combo"
+                value={filters.magicRarity ?? 'todas'}
+                onChange={e => onSelectMagicRarity?.(e.target.value)}
+              >
+                <option value="todas">Todas as Raridades ({totalSubcatCount})</option>
+                {magicRarities.map(r => {
+                  const count = dynamicCounts.getMagicRarityCount?.(r) ?? 0;
+                  return (
+                    <option key={r} value={r}>
+                      {r} ({count})
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          )}
+
+          {/* Combo 7: Faixa de ND (Exclusivo Tesouros) */}
+          {showNdRanges && (
+            <div className="mobile-select-group">
+              <label className="mobile-select-label">
+                <Target size={13} className="text-gold" /> Nível de Desafio (ND)
+              </label>
+              <select
+                className="mobile-select-combo"
+                value={filters.ndRange ?? 'todos'}
+                onChange={e => onSelectNdRange?.(e.target.value)}
+              >
+                <option value="todos">Todos os NDs ({totalCatCount})</option>
+                {ndRanges.map(nd => {
+                  const count = dynamicCounts.getNdRangeCount?.(nd) ?? 0;
+                  return (
+                    <option key={nd} value={nd}>
+                      {nd} ({count})
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          )}
+
+          {/* Combo 8: Faixa de Preço (Exclusivo Equipamentos - Mobile) */}
           {showPriceFilter && (
             <div className="mobile-select-group" style={{ gridColumn: '1 / -1' }}>
               <label className="mobile-select-label">
@@ -298,7 +395,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
         </div>
 
         {/* 2. Painel de Subfiltros Diretos */}
-        {(showSubcategories || showItemTypes || showPriceFilter) && (
+        {showPanel && (
           <div className="streamlined-filter-panel parchment-card">
             <div className="streamlined-panel-header">
               <div className="streamlined-panel-title">
@@ -343,7 +440,38 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               </div>
             )}
 
-            {/* Tipos / Classificação */}
+            {/* Círculo da Magia (1º ao 5º) */}
+            {showSpellCircles && (
+              <div className="filter-pill-row circle-pill-row">
+                <div className="filter-row-prefix">
+                  <Wand2 size={14} className="text-mana" />
+                  <span>Círculo:</span>
+                </div>
+                <div className="filter-pills-container">
+                  <button
+                    className={`pill-btn pill-btn-mana ${filters.spellCircle === 'todos' ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectSpellCircle?.('todos')}
+                  >
+                    Todos <span className="pill-badge">({dynamicCounts.getSpellCircleCount?.('todos') ?? totalCatCount})</span>
+                  </button>
+                  {SPELL_CIRCLES_INFO.map(sc => {
+                    const count = dynamicCounts.getSpellCircleCount?.(sc.circle) ?? 0;
+                    const isSelected = filters.spellCircle === sc.circle;
+                    return (
+                      <button
+                        key={sc.circle}
+                        className={`pill-btn pill-btn-mana ${isSelected ? 'pill-btn-active' : ''}`}
+                        onClick={() => onSelectSpellCircle?.(sc.circle)}
+                      >
+                        {sc.label} <span className="pill-pm-tag">({sc.pm})</span> <span className="pill-badge">({count})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Tipos / Classificação / Escola */}
             {showItemTypes && (
               <div className="filter-pill-row type-pill-row">
                 <div className="filter-row-prefix">
@@ -367,6 +495,68 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                         onClick={() => onSelectItemType(type)}
                       >
                         {type} <span className="pill-badge">({count})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Raridade Mágica (Exclusivo Itens Mágicos) */}
+            {showMagicRarities && (
+              <div className="filter-pill-row rarity-pill-row">
+                <div className="filter-row-prefix">
+                  <Sparkles size={14} className="text-gold" />
+                  <span>Raridade:</span>
+                </div>
+                <div className="filter-pills-container">
+                  <button
+                    className={`pill-btn ${filters.magicRarity === 'todas' ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectMagicRarity?.('todas')}
+                  >
+                    Todas <span className="pill-badge">({totalSubcatCount})</span>
+                  </button>
+                  {magicRarities.map(r => {
+                    const count = dynamicCounts.getMagicRarityCount?.(r) ?? 0;
+                    const isSelected = filters.magicRarity === r;
+                    return (
+                      <button
+                        key={r}
+                        className={`pill-btn ${isSelected ? 'pill-btn-active' : ''}`}
+                        onClick={() => onSelectMagicRarity?.(r)}
+                      >
+                        {r} <span className="pill-badge">({count})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Faixa de ND (Exclusivo Tesouros) */}
+            {showNdRanges && (
+              <div className="filter-pill-row nd-pill-row">
+                <div className="filter-row-prefix">
+                  <Target size={14} className="text-gold" />
+                  <span>Faixa de ND:</span>
+                </div>
+                <div className="filter-pills-container">
+                  <button
+                    className={`pill-btn ${filters.ndRange === 'todos' ? 'pill-btn-active' : ''}`}
+                    onClick={() => onSelectNdRange?.('todos')}
+                  >
+                    Todos <span className="pill-badge">({totalCatCount})</span>
+                  </button>
+                  {ndRanges.map(nd => {
+                    const count = dynamicCounts.getNdRangeCount?.(nd) ?? 0;
+                    const isSelected = filters.ndRange === nd;
+                    return (
+                      <button
+                        key={nd}
+                        className={`pill-btn ${isSelected ? 'pill-btn-active' : ''}`}
+                        onClick={() => onSelectNdRange?.(nd)}
+                      >
+                        {nd} <span className="pill-badge">({count})</span>
                       </button>
                     );
                   })}
@@ -439,3 +629,4 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     </div>
   );
 };
+

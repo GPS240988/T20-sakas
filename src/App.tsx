@@ -27,6 +27,9 @@ export function App() {
     setSubcategory,
     setItemType,
     setBook,
+    setSpellCircle,
+    setMagicRarity,
+    setNdRange,
     setMinPrice,
     setMaxPrice,
     setPriceRange,
@@ -127,6 +130,9 @@ export function App() {
           onSelectSubcategory={setSubcategory}
           onSelectItemType={setItemType}
           onSelectBook={setBook}
+          onSelectSpellCircle={setSpellCircle}
+          onSelectMagicRarity={setMagicRarity}
+          onSelectNdRange={setNdRange}
           onMinPriceChange={setMinPrice}
           onMaxPriceChange={setMaxPrice}
           onSelectPricePreset={setPriceRange}

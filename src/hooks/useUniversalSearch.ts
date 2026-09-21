@@ -10,6 +10,9 @@ export interface SearchFilters {
   book: string | 'todos';
   minPrice?: number | '';
   maxPrice?: number | '';
+  spellCircle?: number | 'todos';
+  magicRarity?: string | 'todas';
+  ndRange?: string | 'todos';
 }
 
 function matchesBook(item: SearchableEntity, bookId: string): boolean {
@@ -37,7 +40,10 @@ export function useUniversalSearch() {
     category: 'todas',
     subcategory: 'todas',
     itemType: 'todas',
-    book: 'todos'
+    book: 'todos',
+    spellCircle: 'todos',
+    magicRarity: 'todas',
+    ndRange: 'todos'
   });
 
   const filteredResults = useMemo(() => {
@@ -73,6 +79,21 @@ export function useUniversalSearch() {
         if (maxP !== null && (item._parsedPrice === null || item._parsedPrice > maxP)) return false;
       }
 
+      // 4.6. Filtro de Círculo de Magia
+      if (filters.spellCircle !== undefined && filters.spellCircle !== 'todos' && item.category === 'magia') {
+        if (item._spellCircle !== filters.spellCircle) return false;
+      }
+
+      // 4.7. Filtro de Raridade Mágica
+      if (filters.magicRarity !== undefined && filters.magicRarity !== 'todas' && item.category === 'equipamento') {
+        if (item._magicRarity !== filters.magicRarity) return false;
+      }
+
+      // 4.8. Filtro de Faixa de ND (Tesouros)
+      if (filters.ndRange !== undefined && filters.ndRange !== 'todos' && item.category === 'tesouro') {
+        if (item._ndRange !== filters.ndRange) return false;
+      }
+
       // 5. Busca Universal Instantânea
       if (qTokens.length > 0 && !matchesQuery(item, qTokens)) {
         return false;
@@ -89,7 +110,7 @@ export function useUniversalSearch() {
     const minP = filters.minPrice !== undefined && filters.minPrice !== '' ? Number(filters.minPrice) : null;
     const maxP = filters.maxPrice !== undefined && filters.maxPrice !== '' ? Number(filters.maxPrice) : null;
 
-    // 1. Filtrar entidades que atendem à Query e ao Preço (Pre-filter comum)
+    // Pre-filter comum por Query e Preço
     const baseCandidates = SEARCHABLE_DATABASE.filter(item => {
       if (minP !== null && item.category === 'equipamento') {
         if (item._parsedPrice === null || item._parsedPrice < minP) return false;
@@ -105,11 +126,17 @@ export function useUniversalSearch() {
     const categoryCountMap = new Map<string, number>();
     const subcategoryCountMap = new Map<string, number>();
     const itemTypeCountMap = new Map<string, number>();
+    const spellCircleCountMap = new Map<number | 'todos', number>();
+    const magicRarityCountMap = new Map<string, number>();
+    const ndRangeCountMap = new Map<string, number>();
 
     const targetCategory = filters.category;
     const targetSubcat = filters.subcategory;
     const targetType = filters.itemType;
     const targetBook = filters.book;
+    const targetCircle = filters.spellCircle;
+    const targetRarity = filters.magicRarity;
+    const targetNdRange = filters.ndRange;
 
     for (let i = 0; i < baseCandidates.length; i++) {
       const item = baseCandidates[i];
@@ -122,19 +149,52 @@ export function useUniversalSearch() {
         if (item.subcategory) {
           const subKey = `${item.category}:::${item.subcategory}`;
           subcategoryCountMap.set(subKey, (subcategoryCountMap.get(subKey) || 0) + 1);
+        }
 
-          if (item._itemType) {
+        // Agregação de Tipos / Escolas (itemType):
+        // Para Magias: respeita targetCircle (quando filtrado por Círculo, a contagem de cada Escola atualiza)
+        const matchesCategoryForType = targetCategory === 'todas' || item.category === targetCategory;
+        const matchesCircleForType = item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || item._spellCircle === targetCircle;
+
+        if (matchesCategoryForType && matchesCircleForType && item._itemType) {
+          if (item.subcategory) {
             const typeKey = `${item.category}:::${item.subcategory}:::${item._itemType}`;
             itemTypeCountMap.set(typeKey, (itemTypeCountMap.get(typeKey) || 0) + 1);
           }
+          const globalTypeKey = `${item.category}:::todas:::${item._itemType}`;
+          itemTypeCountMap.set(globalTypeKey, (itemTypeCountMap.get(globalTypeKey) || 0) + 1);
+        }
+
+        // Agregação de Círculos de Magia:
+        // Respeita targetSubcat (Grupo) e targetType (Escola) se ativos!
+        if (item.category === 'magia' && item._spellCircle !== undefined) {
+          const matchesSubcatForCircle = targetSubcat === 'todas' || item.subcategory === targetSubcat;
+          const matchesTypeForCircle = targetType === 'todas' || item._itemType === targetType;
+          if (matchesSubcatForCircle && matchesTypeForCircle) {
+            spellCircleCountMap.set(item._spellCircle, (spellCircleCountMap.get(item._spellCircle) || 0) + 1);
+            spellCircleCountMap.set('todos', (spellCircleCountMap.get('todos') || 0) + 1);
+          }
+        }
+
+        // Agregação de Raridade Mágica (Equipamentos)
+        if (item.category === 'equipamento' && item._magicRarity) {
+          magicRarityCountMap.set(item._magicRarity, (magicRarityCountMap.get(item._magicRarity) || 0) + 1);
+        }
+
+        // Agregação de Faixa de ND (Tesouros)
+        if (item.category === 'tesouro' && item._ndRange) {
+          ndRangeCountMap.set(item._ndRange, (ndRangeCountMap.get(item._ndRange) || 0) + 1);
         }
       }
 
-      // Agregação de Livros (respeitando filtros de Categoria, Subcategoria e Tipo ativos)
+      // Agregação de Livros
       const matchesCurrentFacets = 
         (targetCategory === 'todas' || item.category === targetCategory) &&
         (targetSubcat === 'todas' || item.subcategory === targetSubcat) &&
-        (targetType === 'todas' || item._itemType === targetType);
+        (targetType === 'todas' || item._itemType === targetType) &&
+        (item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || item._spellCircle === targetCircle) &&
+        (item.category !== 'equipamento' || targetRarity === undefined || targetRarity === 'todas' || item._magicRarity === targetRarity) &&
+        (item.category !== 'tesouro' || targetNdRange === undefined || targetNdRange === 'todos' || item._ndRange === targetNdRange);
 
       if (matchesCurrentFacets) {
         bookCountMap.set('todos', (bookCountMap.get('todos') || 0) + 1);
@@ -169,6 +229,17 @@ export function useUniversalSearch() {
       getItemTypeCount: (category: string, subcategory: string, type: string) => {
         if (type === 'todas') return subcategoryCountMap.get(`${category}:::${subcategory}`) || 0;
         return itemTypeCountMap.get(`${category}:::${subcategory}:::${type}`) || 0;
+      },
+      getSpellCircleCount: (circle: number | 'todos') => {
+        return spellCircleCountMap.get(circle) || 0;
+      },
+      getMagicRarityCount: (rarity: string | 'todas') => {
+        if (rarity === 'todas') return subcategoryCountMap.get('equipamento:::Itens Mágicos') || 0;
+        return magicRarityCountMap.get(rarity) || 0;
+      },
+      getNdRangeCount: (ndRange: string | 'todos') => {
+        if (ndRange === 'todos') return categoryCountMap.get('tesouro') || 0;
+        return ndRangeCountMap.get(ndRange) || 0;
       }
     };
   }, [query, filters]);
@@ -179,6 +250,9 @@ export function useUniversalSearch() {
       category: cat, 
       subcategory: 'todas',
       itemType: 'todas',
+      spellCircle: 'todos',
+      magicRarity: 'todas',
+      ndRange: 'todos',
       minPrice: cat === 'equipamento' ? prev.minPrice : '',
       maxPrice: cat === 'equipamento' ? prev.maxPrice : ''
     }));
@@ -188,7 +262,8 @@ export function useUniversalSearch() {
     setFilters(prev => ({ 
       ...prev, 
       subcategory: subcat, 
-      itemType: 'todas'
+      itemType: 'todas',
+      magicRarity: 'todas'
     }));
   };
 
@@ -204,6 +279,18 @@ export function useUniversalSearch() {
       ...prev,
       book: bookId
     }));
+  };
+
+  const setSpellCircle = (circle: number | 'todos') => {
+    setFilters(prev => ({ ...prev, spellCircle: circle }));
+  };
+
+  const setMagicRarity = (rarity: string | 'todas') => {
+    setFilters(prev => ({ ...prev, magicRarity: rarity }));
+  };
+
+  const setNdRange = (ndRange: string | 'todos') => {
+    setFilters(prev => ({ ...prev, ndRange: ndRange }));
   };
 
   const setMinPrice = (val: number | '') => {
@@ -226,7 +313,10 @@ export function useUniversalSearch() {
       itemType: 'todas',
       book: 'todos',
       minPrice: '',
-      maxPrice: ''
+      maxPrice: '',
+      spellCircle: 'todos',
+      magicRarity: 'todas',
+      ndRange: 'todos'
     });
   };
 
@@ -238,6 +328,9 @@ export function useUniversalSearch() {
     setSubcategory,
     setItemType,
     setBook,
+    setSpellCircle,
+    setMagicRarity,
+    setNdRange,
     setMinPrice,
     setMaxPrice,
     setPriceRange,
@@ -247,3 +340,4 @@ export function useUniversalSearch() {
     totalCount: SEARCHABLE_DATABASE.length
   };
 }
+

@@ -162,7 +162,7 @@ export interface SpellEnhancement {
 
 export interface SpellEntity extends BaseEntity {
   category: 'magia';
-  subcategory: 'Magias Arcanas' | 'Magias Divinas' | 'Magias Universais' | 'Magias de Ameaças' | 'Magias de Heróis';
+  subcategory: 'Magias Arcanas' | 'Magias Divinas' | 'Magias Universais' | 'Magias de Ameaças';
   spellType: 'Arcana' | 'Divina' | 'Universal';
   circle: 1 | 2 | 3 | 4 | 5;
   school: 'Abjuração' | 'Adivinhação' | 'Convocação' | 'Encantamento' | 'Evocação' | 'Ilusão' | 'Necromancia' | 'Transmutação';

@@ -32,6 +32,9 @@ export type SearchableEntity = T20CanonicalEntity & {
   _parsedPrice: number | null;
   _itemType: string;
   _normalizedBooks: string[];
+  _spellCircle?: number;
+  _magicRarity?: string;
+  _ndRange?: string;
 };
 
 export function parseEquipmentPrice(priceStr?: string): number | null {
@@ -110,13 +113,25 @@ export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item
   const anyItem = item as any;
   const rawType = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype || anyItem.actionType || anyItem.effectType || anyItem.subchapter || '';
   const normalizedBooks = (item.sources || []).map(s => s.book).filter(Boolean);
+
+  let ndRange = '';
+  if (item.category === 'tesouro') {
+    const min = anyItem.threatLevelMin ?? 0;
+    if (min <= 4) ndRange = 'ND 1-4';
+    else if (min <= 10) ndRange = 'ND 5-10';
+    else if (min <= 16) ndRange = 'ND 11-16';
+    else ndRange = 'ND 17+';
+  }
   
   return {
     ...item,
     _searchText: buildSearchText(item),
     _parsedPrice: item.category === 'equipamento' ? parseEquipmentPrice(anyItem.tableData?.price) : null,
     _itemType: typeof rawType === 'string' ? rawType.trim() : '',
-    _normalizedBooks: normalizedBooks
+    _normalizedBooks: normalizedBooks,
+    _spellCircle: item.category === 'magia' ? anyItem.circle : undefined,
+    _magicRarity: item.category === 'equipamento' ? anyItem.magicRarity : undefined,
+    _ndRange: ndRange || undefined
   };
 });
 
@@ -292,6 +307,28 @@ export function getSpellCircles(): number[] {
     if (sp.circle) set.add(sp.circle);
   });
   return Array.from(set).sort((a, b) => a - b);
+}
+
+export interface SpellCircleInfo {
+  circle: number;
+  label: string;
+  pm: string;
+}
+
+export const SPELL_CIRCLES_INFO: SpellCircleInfo[] = [
+  { circle: 1, label: '1º Círculo', pm: '1 PM' },
+  { circle: 2, label: '2º Círculo', pm: '3 PM' },
+  { circle: 3, label: '3º Círculo', pm: '6 PM' },
+  { circle: 4, label: '4º Círculo', pm: '10 PM' },
+  { circle: 5, label: '5º Círculo', pm: '15 PM' }
+];
+
+export function getMagicRarities(): string[] {
+  return ['Menor', 'Médio', 'Maior', 'Artefato'];
+}
+
+export function getTreasureNDRanges(): string[] {
+  return ['ND 1-4', 'ND 5-10', 'ND 11-16', 'ND 17+'];
 }
 
 export function getThreatLevels(): string[] {
