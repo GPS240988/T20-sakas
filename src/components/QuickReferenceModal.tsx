@@ -14,9 +14,12 @@ import {
   HelpCircle,
   Moon,
   Sparkles,
-  Layers
+  Layers,
+  Target,
+  Maximize2
 } from 'lucide-react';
 import { ScrollToTop } from './ScrollToTop';
+import { removeAccents } from '../utils/textUtils';
 
 // ============================================================================
 // Tipagens e Dados Canônicos — Tormenta20 (Jogo do Ano)
@@ -80,6 +83,95 @@ export interface CreatureSizeCanonical {
   stealthMod: string;
   maneuverMod: string;
 }
+
+import bookAreasImg from '../assets/regras/areas_de_efeito_livro.png';
+
+export interface AreaEffectCanonical {
+  shape: string;
+  name: string;
+  page: string;
+  description: string;
+  gridRule: string;
+}
+
+export interface SpellTargetTypeCanonical {
+  title: string;
+  badge: string;
+  page: string;
+  description: string;
+}
+
+export const CANONICAL_AREA_EFFECTS: AreaEffectCanonical[] = [
+  {
+    shape: 'Cone',
+    name: 'Cone',
+    page: '225',
+    description: 'Surge adjacente a você e se afasta de você na direção escolhida, ficando mais largo com a distância, conforme os modelos da ilustração oficial do livro.',
+    gridRule: 'A largura final do cone é igual ao seu comprimento (ex: cone de 6m atinge 6m de largura na extremidade).'
+  },
+  {
+    shape: 'Linha',
+    name: 'Linha',
+    page: '225',
+    description: 'Surge adjacente a você e se afasta de você reta até o fim do alcance.',
+    gridRule: 'A menos que indicado o contrário, uma linha tem 1,5m de largura (1 quadrado).'
+  },
+  {
+    shape: 'Esfera',
+    name: 'Esfera',
+    page: '225',
+    description: 'Surge na interseção de quatro quadrados, estendendo-se em todas as direções até o limite de seu raio.',
+    gridRule: 'O ponto de origem deve ser uma interseção de cruzamento na grade tática.'
+  },
+  {
+    shape: 'Cilindro',
+    name: 'Cilindro',
+    page: '225',
+    description: 'Surge na interseção de quatro quadrados, estendendo-se pela largura indicada e subindo até o fim da altura indicada.',
+    gridRule: 'Possui raio circular no solo e projeção tridimensional de altura vertical.'
+  },
+  {
+    shape: 'Quadrado',
+    name: 'Quadrado / Cubo',
+    page: '225',
+    description: 'Surge no quadrado ou quadrados escolhidos, afetando o piso. Um "cubo" é como um quadrado, mas afeta também a altura.',
+    gridRule: 'Um quadrado de 3m de lado afeta uma área de 2x2 quadrados de 1,5m.'
+  },
+  {
+    shape: 'Outros',
+    name: 'Outros Formatos',
+    page: '225',
+    description: 'Algumas habilidades podem ter áreas específicas, citadas em sua descrição oficial.',
+    gridRule: 'Consulte o texto descritivo da habilidade ou magia específica.'
+  }
+];
+
+export const CANONICAL_SPELL_TARGET_TYPES: SpellTargetTypeCanonical[] = [
+  {
+    title: 'Alvo',
+    badge: 'Criatura / Objeto',
+    page: '225',
+    description: 'O efeito afeta diretamente uma ou mais criaturas ou objetos específicos escolhidos pelo conjurador dentro do alcance. Você precisa ter linha de efeito até o alvo.'
+  },
+  {
+    title: 'Área',
+    badge: 'Espaço Físico',
+    page: '225',
+    description: 'O efeito afeta um espaço físico inteiro e tudo o que estiver contido dentro dele. Você escolhe onde o efeito se inicia (ponto de origem), mas não quais criaturas são afetadas.'
+  },
+  {
+    title: 'Efeito',
+    badge: 'Criação / Convocação',
+    page: '225',
+    description: 'O efeito cria algo físico ou mágico no campo de batalha (como um monstro convocado, uma parede de pedra ou uma ilusão), em vez de afetar algo pré-existente.'
+  },
+  {
+    title: 'Duração',
+    badge: 'Tempo de Ação',
+    page: '225',
+    description: 'Especifica quanto tempo o efeito permanece ativo: Instantânea (imediata), Cena (todo o combate/encontro ~10 min), Sustentada (gasta 1 PM no início do turno para manter), ou Permanente.'
+  }
+];
 
 export const CANONICAL_ACTIONS: ActionCanonical[] = [
   {
@@ -507,6 +599,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
   const [selectedCondType, setSelectedCondType] = useState<string>('Todas');
   const [expandedCondName, setExpandedCondName] = useState<string | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
+  const [isImageZoomed, setIsImageZoomed] = useState<boolean>(false);
 
   // Tipos de efeito de condição disponíveis
   const conditionTypesList = useMemo(() => {
@@ -527,11 +620,11 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
       }
 
       if (!condSearch.trim()) return true;
-      const term = condSearch.toLowerCase();
+      const term = removeAccents(condSearch.trim());
       return (
-        item.name.toLowerCase().includes(term) ||
-        item.description.toLowerCase().includes(term) ||
-        (item.type && item.type.toLowerCase().includes(term))
+        removeAccents(item.name).includes(term) ||
+        removeAccents(item.description).includes(term) ||
+        (item.type && removeAccents(item.type).includes(term))
       );
     });
   }, [selectedCondType, condSearch]);
@@ -554,8 +647,9 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
   };
 
   const handleSelectChip = (targetName: string) => {
+    const normTarget = removeAccents(targetName);
     const condMatch = CANONICAL_CONDITIONS.find(
-      c => c.name.toLowerCase() === targetName.toLowerCase()
+      c => removeAccents(c.name) === normTarget
     );
     if (condMatch) {
       setActiveTab('condicoes');
@@ -567,7 +661,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
     }
 
     const manMatch = CANONICAL_MANEUVERS.find(
-      m => m.name.toLowerCase() === targetName.toLowerCase()
+      m => removeAccents(m.name) === normTarget
     );
     if (manMatch) {
       setActiveTab('manobras');
@@ -1129,6 +1223,74 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                   </table>
                 </div>
               </div>
+
+              {/* Áreas de Efeito, Alvos e Duração (Pág. 225) */}
+              <div className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header">
+                  <Target size={20} className="text-ruby" />
+                  <h3>Áreas de Efeito, Alvos e Duração (Pág. 225)</h3>
+                </div>
+                <p className="cheat-desc">
+                  Muitas magias e habilidades afetam áreas específicas da grade tática ou alvos individuais. Conforme as regras oficiais de Tormenta20 (Jogo do Ano, Pág. 225):
+                </p>
+
+                {/* Categorias de Alvo, Área, Efeito e Duração */}
+                <div className="stacking-rules-grid mb-4">
+                  {CANONICAL_SPELL_TARGET_TYPES.map(t => (
+                    <div key={t.title} className="stacking-box rule-stack">
+                      <div className="flex items-center justify-between mb-1">
+                        <h4>{t.title}</h4>
+                        <span className="badge-gold text-xs">{t.badge}</span>
+                      </div>
+                      <p>{t.description}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Banner com a Imagem Oficial do Livro (Pág. 225) */}
+                <div className="section-divider-title mb-3">
+                  <Maximize2 size={16} />
+                  <span>Ilustração Oficial: Grade Tática de Áreas de Efeito (Livro Pág. 225)</span>
+                </div>
+
+                <div 
+                  className="official-book-image-card parchment-subcard"
+                  onClick={() => setIsImageZoomed(true)}
+                  title="Clique para ampliar o diagrama oficial em tela cheia"
+                >
+                  <div className="book-image-wrapper">
+                    <img 
+                      src={bookAreasImg} 
+                      alt="Modelos Oficiais de Áreas de Efeito - Tormenta20 Edição Jogo do Ano Pág. 225" 
+                      className="official-book-img"
+                      loading="lazy"
+                    />
+                    <div className="image-zoom-overlay">
+                      <Maximize2 size={24} />
+                      <span>Clique para Zoom em Alta Resolução</span>
+                    </div>
+                  </div>
+                  <div className="book-image-caption">
+                    <span>📜 <em>Tormenta20: Edição Jogo do Ano • Pág. 225</em> — Ilustração oficial com modelos em grade tática</span>
+                  </div>
+                </div>
+
+                {/* Lista de Formas de Área Canônicas */}
+                <div className="area-effects-grid mt-4">
+                  {CANONICAL_AREA_EFFECTS.map(area => (
+                    <div key={area.shape} className="area-card parchment-subcard">
+                      <div className="area-card-header">
+                        <h4 className="area-card-title">{area.name}</h4>
+                        <span className="maneuver-page">pág. {area.page}</span>
+                      </div>
+                      <p className="area-card-desc">{area.description}</p>
+                      <div className="area-card-rule">
+                        <strong>Grade:</strong> {area.gridRule}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -1144,6 +1306,40 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
         </div>
 
         <ScrollToTop containerRef={bodyRef} isInsideContainer />
+
+        {/* Lightbox / Modal de Zoom em Alta Resolução da Imagem do Livro */}
+        {isImageZoomed && (
+          <div className="image-lightbox-backdrop" onClick={() => setIsImageZoomed(false)}>
+            <div className="image-lightbox-content parchment-card ornate-border" onClick={e => e.stopPropagation()}>
+              <div className="image-lightbox-header">
+                <div className="flex items-center gap-2">
+                  <Target size={18} className="text-ruby" />
+                  <h3 className="lightbox-title">Áreas de Efeito na Grade Tática (Pág. 225)</h3>
+                </div>
+                <button 
+                  className="quick-ref-close-btn" 
+                  onClick={() => setIsImageZoomed(false)}
+                  aria-label="Fechar Zoom"
+                >
+                  <X size={22} />
+                </button>
+              </div>
+              <div className="image-lightbox-body">
+                <img 
+                  src={bookAreasImg} 
+                  alt="Modelos Oficiais de Áreas de Efeito Ampliados" 
+                  className="lightbox-full-img"
+                />
+              </div>
+              <div className="image-lightbox-footer">
+                <span className="footer-meta-note">Tormenta20: Edição Jogo do Ano • Ilustração Original Pág. 225</span>
+                <button className="parchment-btn btn-gold" onClick={() => setIsImageZoomed(false)}>
+                  Fechar Visualização
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

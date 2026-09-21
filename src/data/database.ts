@@ -1,3 +1,4 @@
+import { removeAccents } from '../utils/textUtils';
 import canonicalData from '../../data/t20_canonical_database.json';
 import auditData from '../../data/consolidation_audit.json';
 import type { T20CanonicalEntity, EntityCategory, SpellEntity, MonsterEntity } from '../types/t20_schema';
@@ -102,7 +103,7 @@ function buildSearchText(item: any): string {
       parts.push(n);
     }
   }
-  return parts.join(' ').toLowerCase();
+  return removeAccents(parts.join(' '));
 }
 
 export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item => {

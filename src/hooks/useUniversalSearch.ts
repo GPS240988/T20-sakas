@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { SEARCHABLE_DATABASE, type SearchableEntity } from '../data/database';
 import type { EntityCategory } from '../types/t20_schema';
+import { removeAccents } from '../utils/textUtils';
 
 export interface SearchFilters {
   category: EntityCategory | 'todas';
@@ -40,7 +41,7 @@ export function useUniversalSearch() {
   });
 
   const filteredResults = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = removeAccents(query.trim());
     const qTokens = q ? q.split(/\s+/).filter(Boolean) : [];
     const minP = filters.minPrice !== undefined && filters.minPrice !== '' ? Number(filters.minPrice) : null;
     const maxP = filters.maxPrice !== undefined && filters.maxPrice !== '' ? Number(filters.maxPrice) : null;
@@ -83,7 +84,7 @@ export function useUniversalSearch() {
 
   // Contadores dinâmicos agregados em passada única O(N) com Map Hash
   const dynamicCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = removeAccents(query.trim());
     const qTokens = q ? q.split(/\s+/).filter(Boolean) : [];
     const minP = filters.minPrice !== undefined && filters.minPrice !== '' ? Number(filters.minPrice) : null;
     const maxP = filters.maxPrice !== undefined && filters.maxPrice !== '' ? Number(filters.maxPrice) : null;

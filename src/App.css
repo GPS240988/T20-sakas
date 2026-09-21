@@ -3103,6 +3103,338 @@
   font-weight: 800;
 }
 
+/* ========================================================================== */
+/* ⬆️ BOTÃO DE ACESSO AO TOPO (FAB SCROLL-TO-TOP)                             */
+/* ========================================================================== */
+
+.scroll-to-top-fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  color: var(--text-inverse);
+  border: 1.5px solid var(--border-ornate);
+  box-shadow: 0 4px 14px hsla(35, 30%, 20%, 0.25);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  user-select: none;
+  outline: none;
+}
+
+.scroll-to-top-fab:hover {
+  transform: scale(1.08) translateY(-2px);
+  background: var(--accent-gold-light);
+  box-shadow: 0 6px 18px hsla(35, 30%, 20%, 0.35);
+}
+
+.scroll-to-top-fab:active {
+  transform: scale(0.95);
+}
+
+.scroll-to-top-fab.fab-window {
+  position: fixed;
+  bottom: 5.2rem;
+  right: 1.5rem;
+  z-index: 99;
+}
+
+.scroll-to-top-fab.fab-inside-container {
+  position: sticky;
+  bottom: 0.85rem;
+  float: right;
+  margin-top: -44px;
+  margin-right: 0.25rem;
+  z-index: 50;
+  background: var(--accent-ruby);
+  border-color: var(--accent-ruby);
+}
+
+.scroll-to-top-fab.fab-inside-container:hover {
+  background: hsl(350, 75%, 48%);
+}
+
+/* Imagem Oficial do Livro (Pág. 225) & Lightbox */
+.official-book-image-card {
+  background: var(--bg-surface-elevated);
+  border: 1.5px solid var(--border-ornate);
+  border-radius: var(--radius-md, 8px);
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.official-book-image-card:hover {
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.book-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 380px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--bg-canvas);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.official-book-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.image-zoom-overlay {
+  position: absolute;
+  inset: 0;
+  background: hsla(40, 45%, 98%, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: var(--accent-ruby);
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.official-book-image-card:hover .image-zoom-overlay {
+  opacity: 1;
+}
+
+.book-image-caption {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 0.55rem;
+  border-top: 1px dashed var(--border-parchment);
+  padding-top: 0.4rem;
+}
+
+/* Lightbox Modal de Imagem */
+.image-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: hsla(220, 24%, 15%, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 0.18s ease-out;
+}
+
+.image-lightbox-content {
+  width: 95vw;
+  max-width: 960px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg, 12px);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: modalScaleIn 0.2s ease-out;
+}
+
+.image-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 2px solid var(--border-ornate);
+  background: var(--bg-surface-elevated);
+}
+
+.lightbox-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.image-lightbox-body {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  background: var(--bg-canvas);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-full-img {
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--border-ornate);
+  box-shadow: var(--shadow-md);
+}
+
+.image-lightbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border-parchment);
+  background: var(--bg-surface);
+}
+
+/* Áreas de Efeito (Pág. 225) Diagram Cards */
+.area-effects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.85rem;
+}
+
+.area-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-parchment);
+  border-radius: var(--radius-md, 8px);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.area-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area-card-title {
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.area-card-desc {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.area-card-rule {
+  font-size: 0.78rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  background: var(--accent-gold-subtle);
+  padding: 0.35rem 0.55rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--accent-gold);
+}
+
+/* Mobile Responsiveness Optimizations */
+@media (max-width: 640px) {
+  .quick-ref-modal {
+    width: 98vw;
+    max-width: 100vw;
+    max-height: 94vh;
+    border-radius: var(--radius-md, 8px);
+  }
+
+  .quick-ref-header {
+    padding: 0.75rem 0.9rem;
+  }
+
+  .quick-ref-title {
+    font-size: 1.05rem;
+  }
+
+  .quick-ref-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .quick-ref-body {
+    padding: 0.75rem;
+  }
+
+  .scroll-to-top-fab {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-to-top-fab.fab-window {
+    bottom: 4.8rem;
+    right: 1rem;
+  }
+
+  .scroll-to-top-fab.fab-inside-container {
+    bottom: 0.65rem;
+    margin-top: -40px;
+  }
+
+  .size-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .area-effects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cheat-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 6px;
+    border: 1px solid var(--border-parchment);
+  }
+
+  .cheat-table th, 
+  .cheat-table td {
+    padding: 0.45rem 0.55rem;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .maneuver-card-header,
+  .condition-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .maneuver-header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .opposed-test-badge {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.45rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .cond-toolbar {
+    flex-direction: column;
+  }
+
+  .copy-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .quick-ref-footer {
   display: flex;
   align-items: center;
