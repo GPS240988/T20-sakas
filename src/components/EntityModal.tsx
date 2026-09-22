@@ -293,7 +293,7 @@ export const EntityModal: React.FC<EntityModalProps> = ({
   };
 
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className="modal-backdrop" style={{ zIndex: 1200 }} onClick={onClose}>
       <div className="modal-tome-wrapper parchment-card ornate-border" onClick={e => e.stopPropagation()}>
         {/* Cabeçalho do Tomo */}
         <div className="modal-header">

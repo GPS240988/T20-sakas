@@ -211,13 +211,33 @@ export const CANONICAL_ACTIONS: ActionCanonical[] = [
   }
 ];
 
+export interface ManeuverGeneralRuleCanonical {
+  title: string;
+  page: string;
+  description: string;
+  keyPoints: string[];
+}
+
+export const CANONICAL_MANEUVER_GENERAL_RULES: ManeuverGeneralRuleCanonical = {
+  title: 'Regras Gerais de Manobras de Combate (Pág. 238)',
+  page: '238',
+  description: 'Uma manobra é um ataque corpo a corpo para realizar algo que não seja causar dano — como desarmar o oponente ou empurrá-lo para um precipício.',
+  keyPoints: [
+    'Teste de Manobra: Faça um teste de ataque corpo a corpo (Luta) oposto ao teste de ataque corpo a corpo do alvo.',
+    'Resolução de Empates: Em caso de empate, o personagem com o maior modificador vence. Se os modificadores forem iguais, outro teste deve ser feito.',
+    'Bônus de Arma: Você pode usar qualquer arma corpo a corpo para fazer uma manobra, recebendo todos os bônus normais da arma (exceto por bônus numéricos de dano).',
+    'Exigências Específicas: Algumas manobras exigem armas específicas ou requerem uma mão livre (veja a descrição de cada manobra).',
+    'Modificadores de Tamanho: Criaturas de tamanhos diferentes recebem bônus ou sofrem penalidades no teste de manobra (de –5 para Minúsculo até +10 para Colossal).'
+  ]
+};
+
 export const CANONICAL_MANEUVERS: ManeuverCanonical[] = [
   {
     id: 'manobra-agarrar',
     name: 'Agarrar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta (ataque corpo a corpo) oposto pelo teste de Luta do alvo.',
-    description: 'Você usa uma mão livre para segurar o alvo. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, o alvo fica agarrado. Um personagem agarrado fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Para se soltar, a criatura agarrada precisa gastar uma ação padrão e passar em um teste de Luta ou Acrobacia oposto ao seu teste de Luta. Manter a manobra nas rodadas seguintes exige gastar uma ação padrão e passar em um novo teste de Luta oposto.',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Luta do alvo.',
+    description: 'Você usa uma mão livre para segurar o alvo. Faça um teste de manobra (Luta). Se você vencer, o alvo fica agarrado. Um personagem agarrado fica desprevenido e imóvel, sofre –2 em testes de ataque e só pode atacar com armas leves. Para se soltar, a criatura agarrada precisa gastar uma ação padrão e passar em um teste de Luta ou Acrobacia oposto ao seu teste de Luta. Você pode soltar o alvo com uma ação livre. Enquanto estiver agarrando uma criatura, você pode se movimentar à metade do seu deslocamento normal, arrastando o alvo com você. Você pode atacar a criatura agarrada com sua mão livre ou com uma arma leve. Em vez de fazer um ataque, você pode fazer um novo teste de manobra contra a criatura agarrada; se vencer, causa dano desarmado ou da arma natural. Ataques à distância contra um alvo envolvido em uma manobra agarrar têm 50% de chance de acertar o alvo errado.',
     page: '238',
     relatedConditions: ['Agarrado', 'Desprevenido', 'Imóvel']
   },
@@ -225,17 +245,17 @@ export const CANONICAL_MANEUVERS: ManeuverCanonical[] = [
     id: 'manobra-atropelar',
     name: 'Atropelar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo.',
-    description: 'Você avança contra o alvo montado ou correndo. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo. Se vencer, você derruba o alvo e pode continuar seu movimento até o limite do seu deslocamento, inclusive passando pelo espaço ocupado por ele. Se perder, você é impedido de avançar e seu movimento termina.',
-    page: '239',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Luta ou Acrobacia do alvo.',
+    description: 'Você tenta passar pelo espaço ocupado por uma criatura durante um movimento (requer uma ação padrão durante o movimento ou faz parte de uma ação de investida). A criatura pode escolher deixá-lo passar (ela não sofre nada e você continua o movimento) ou resistir. Se ela resistir, faça um teste de manobra oposto. Se você vencer, a criatura cai no chão (fica caída) e você continua seu movimento, atravessando o espaço dela. Se você perder, é empurrado de volta para o quadrado de onde tentou entrar no espaço da criatura e seu movimento termina.',
+    page: '238–239',
     relatedConditions: ['Caído']
   },
   {
     id: 'manobra-derrubar',
     name: 'Derrubar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo.',
-    description: 'Você faz uma rasteira ou golpe corporal para fazer o alvo cair. Faça um teste de Luta oposto pelo teste de Luta ou Acrobacia do alvo. Se você vencer, o alvo cai no chão e fica caído.',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Luta ou Acrobacia do alvo.',
+    description: 'Você faz o alvo cair no chão. Faça um teste de manobra. Se você vencer, o alvo cai no chão e fica caído. Se você vencer o teste por 5 pontos ou mais, além de cair, o alvo é empurrado 1,5m (um quadrado) em uma direção à sua escolha. Se empurrado para um precipício ou superfície perigosa, o alvo tem direito a um teste de Reflexos (CD 20) para se segurar em uma borda.',
     page: '239',
     relatedConditions: ['Caído']
   },
@@ -243,24 +263,24 @@ export const CANONICAL_MANEUVERS: ManeuverCanonical[] = [
     id: 'manobra-desarmar',
     name: 'Desarmar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta oposto pelo teste de Luta do alvo.',
-    description: 'Você atinge a arma ou item empunhado pelo alvo para fazê-lo soltar o objeto. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, a arma ou item cai no chão no mesmo quadrado do alvo. Se você tiver uma mão livre e vencer por 5 ou mais, pode ficar com o item para si.',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Luta do alvo.',
+    description: 'Você atinge a arma ou item que o alvo está segurando. Faça um teste de manobra. Se você vencer, o item cai no mesmo espaço do alvo. Se você vencer o teste por 5 pontos ou mais, o item voa para longe, caindo a 1,5m (um quadrado) de distância em uma direção à sua escolha.',
     page: '239'
   },
   {
     id: 'manobra-empurrar',
     name: 'Empurrar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta oposto pelo teste de Atletismo ou Luta do alvo.',
-    description: 'Você empurra o alvo para afastá-lo. Faça um teste de Luta oposto pelo teste de Atletismo ou Luta do alvo. Se vencer, você empurra o alvo 1,5m mais 1,5m para cada 5 pontos de diferença no teste. Você pode avançar junto com o alvo para empurrá-lo ainda mais longe.',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Atletismo ou Luta do alvo.',
+    description: 'Você empurra o alvo para longe de você. Faça um teste de manobra (Luta). Se você vencer, empurra o alvo 1,5m. Para cada 5 pontos de diferença a seu favor no resultado do teste, empurra o alvo mais 1,5m. Você pode avançar junto com o alvo para empurrá-lo além do seu alcance natural, gastando seu deslocamento normal para isso.',
     page: '239'
   },
   {
     id: 'manobra-fintar',
     name: 'Fintar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Enganação oposto pelo teste de Percepção do alvo.',
-    description: 'Você faz um movimento falso para confundir o oponente. Faça um teste de Enganação oposto pelo teste de Percepção do alvo. Se vencer, o alvo fica desprevenido contra o seu próximo ataque até o final do seu próximo turno.',
+    opposedTest: 'Teste de Enganação oposto pelo teste de Reflexos do alvo (alcance curto).',
+    description: 'Você faz um movimento falso para desestabilizar o alvo. Faça um teste de Enganação oposto ao teste de Reflexos do alvo (ele deve estar em alcance curto e ser capaz de vê-lo). Se você vencer, o alvo fica desprevenido contra o seu próximo ataque corpo a corpo ou à distância realizado até o fim do seu próximo turno.',
     page: '239',
     relatedConditions: ['Desprevenido']
   },
@@ -268,8 +288,8 @@ export const CANONICAL_MANEUVERS: ManeuverCanonical[] = [
     id: 'manobra-quebrar',
     name: 'Quebrar',
     actionType: 'Ação Padrão',
-    opposedTest: 'Teste de Luta oposto pelo teste de Luta do alvo empunhando o item.',
-    description: 'Você atinge um item que o alvo está empunhando ou vestindo para danificá-lo. Faça um teste de Luta oposto pelo teste de Luta do alvo. Se você vencer, causa o dano do seu ataque diretamente no item. Veja as regras de quebrando objetos na página 242.',
+    opposedTest: 'Teste de manobra (Luta) oposto pelo teste de Luta do alvo empunhando o item.',
+    description: 'Você golpeia um item empunhado ou vestido pelo alvo para danificá-lo. Faça um teste de manobra. Se vencer, você causa o dano do seu ataque diretamente no item. Veja as regras de quebrando objetos na página 242 (RD e PV dos objetos).',
     page: '239'
   }
 ];
@@ -583,6 +603,97 @@ export const CANONICAL_CONDITIONS: ConditionCanonical[] = [
   }
 ];
 
+// ============================================================================
+// Regras e Termos para Detecção Inteligente de Links (Chips Interativos)
+// ============================================================================
+
+interface KeywordRule {
+  regex: RegExp;
+  type: 'condition' | 'maneuver' | 'section';
+  target: string;
+  badgeClass: 'ruby' | 'gold' | 'mana' | 'emerald' | 'amber';
+  tooltip: string;
+  tab?: 'manobras' | 'condicoes' | 'tabela';
+}
+
+const KEYWORD_RULES: KeywordRule[] = [
+  // Específicos compostos de tabela, combate e saúde
+  { regex: /\b(golpe de miseric[oó]rdia)\b/gi, type: 'section', tab: 'tabela', target: 'section-health', badgeClass: 'ruby', tooltip: 'Ver Golpe de Misericórdia (Pág. 240)' },
+  { regex: /\b(dano massivo)\b/gi, type: 'section', tab: 'tabela', target: 'section-health', badgeClass: 'amber', tooltip: 'Ver Dano Massivo (Pág. 240)' },
+  { regex: /\b(primeiros socorros)\b/gi, type: 'section', tab: 'tabela', target: 'section-health', badgeClass: 'emerald', tooltip: 'Ver Primeiros Socorros (Pág. 240)' },
+  { regex: /\b(pv negativos)\b/gi, type: 'section', tab: 'tabela', target: 'section-health', badgeClass: 'ruby', tooltip: 'Ver PV Negativos & Sangramento (Pág. 239)' },
+  { regex: /\b(descanso e recupera[cç][aã]o)\b/gi, type: 'section', tab: 'tabela', target: 'section-rest', badgeClass: 'mana', tooltip: 'Ver Descanso e Recuperação (Pág. 224)' },
+  { regex: /\b(cobertura total)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'emerald', tooltip: 'Ver Cobertura Total (+5 Defesa - Pág. 237)' },
+  { regex: /\b(cobertura leve)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'emerald', tooltip: 'Ver Cobertura Leve (+2 Defesa - Pág. 237)' },
+  { regex: /\b(camuflagem total)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'ruby', tooltip: 'Ver Camuflagem Total (50% de erro - Pág. 238)' },
+  { regex: /\b(camuflagem leve)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'amber', tooltip: 'Ver Camuflagem Leve (20% de erro - Pág. 238)' },
+  { regex: /\b(posi[cç][aã]o elevada)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'gold', tooltip: 'Ver Posição Elevada (+2 Ataque C.a C. - Pág. 237)' },
+  { regex: /\b(modificadores de tamanho)\b/gi, type: 'section', tab: 'manobras', target: 'section-size-modifiers', badgeClass: 'gold', tooltip: 'Ver Modificadores de Tamanho em Manobras (Pág. 238)' },
+  { regex: /\b([aá]reas? de efeito)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'ruby', tooltip: 'Ver Áreas de Efeito, Alvos e Duração (Pág. 225)' },
+  { regex: /\b(linha de efeito)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'mana', tooltip: 'Ver Linha de Efeito (Pág. 225)' },
+  { regex: /\b(ponto de origem)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'mana', tooltip: 'Ver Ponto de Origem na Grade (Pág. 225)' },
+  { regex: /\b(alcance curto)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Curto (9m - Pág. 138, 224)' },
+  { regex: /\b(alcance m[eé]dio)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Médio (18m - Pág. 138, 224)' },
+  { regex: /\b(alcance longo)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Longo (30m - Pág. 138, 224)' },
+  { regex: /\b(alcance extremo)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Extremo (90m - Pág. 138, 224)' },
+  { regex: /\b(alcance de toque)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Toque (1,5m - Pág. 138, 224)' },
+  { regex: /\b(alcance pessoal)\b/gi, type: 'section', tab: 'tabela', target: 'section-ranges', badgeClass: 'gold', tooltip: 'Ver Alcance Pessoal (0m - Pág. 138, 224)' },
+  { regex: /\b(flanquear)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'gold', tooltip: 'Ver Flanquear (+2 no ataque - Pág. 237)' },
+  { regex: /\b(investida(?:s)?)\b/gi, type: 'section', tab: 'tabela', target: 'section-modifiers', badgeClass: 'gold', tooltip: 'Ver Investida (+2 ataque / –2 Defesa - Pág. 238)' },
+  { regex: /\b(manobras? de combate|testes? de manobra)\b/gi, type: 'section', tab: 'manobras', target: 'section-maneuver-rules', badgeClass: 'gold', tooltip: 'Ver Regras Gerais de Manobras de Combate (Pág. 238)' },
+  
+  // Manobras de combate individuais
+  { regex: /\b(agarrar)\b/gi, type: 'maneuver', target: 'manobra-agarrar', badgeClass: 'gold', tooltip: 'Ver Manobra Agarrar (Pág. 238)' },
+  { regex: /\b(atropelar)\b/gi, type: 'maneuver', target: 'manobra-atropelar', badgeClass: 'gold', tooltip: 'Ver Manobra Atropelar (Pág. 238–239)' },
+  { regex: /\b(derrubar)\b/gi, type: 'maneuver', target: 'manobra-derrubar', badgeClass: 'gold', tooltip: 'Ver Manobra Derrubar (Pág. 239)' },
+  { regex: /\b(desarmar)\b/gi, type: 'maneuver', target: 'manobra-desarmar', badgeClass: 'gold', tooltip: 'Ver Manobra Desarmar (Pág. 239)' },
+  { regex: /\b(empurrar)\b/gi, type: 'maneuver', target: 'manobra-empurrar', badgeClass: 'gold', tooltip: 'Ver Manobra Empurrar (Pág. 239)' },
+  { regex: /\b(fintar)\b/gi, type: 'maneuver', target: 'manobra-fintar', badgeClass: 'gold', tooltip: 'Ver Manobra Fintar (Pág. 239)' },
+  { regex: /\b(quebrar)\b/gi, type: 'maneuver', target: 'manobra-quebrar', badgeClass: 'gold', tooltip: 'Ver Manobra Quebrar (Pág. 239)' },
+
+  // Condições canônicas de T20 (com flexões)
+  { regex: /\b(agarrad[oas]|agarrando)\b/gi, type: 'condition', target: 'Agarrado', badgeClass: 'ruby', tooltip: 'Ver Condição Agarrado (Pág. 394)' },
+  { regex: /\b(desprevenid[oas])\b/gi, type: 'condition', target: 'Desprevenido', badgeClass: 'ruby', tooltip: 'Ver Condição Desprevenido (Pág. 394)' },
+  { regex: /\b(im[oó]ve(?:l|is))\b/gi, type: 'condition', target: 'Imóvel', badgeClass: 'ruby', tooltip: 'Ver Condição Imóvel (Pág. 395)' },
+  { regex: /\b(ca[ií]d[oas])\b/gi, type: 'condition', target: 'Caído', badgeClass: 'ruby', tooltip: 'Ver Condição Caído (Pág. 394)' },
+  { regex: /\b(inconsciente(?:s)?)\b/gi, type: 'condition', target: 'Inconsciente', badgeClass: 'ruby', tooltip: 'Ver Condição Inconsciente (Pág. 395)' },
+  { regex: /\b(sangrando)\b/gi, type: 'condition', target: 'Sangrando', badgeClass: 'ruby', tooltip: 'Ver Condição Sangrando (Pág. 395)' },
+  { regex: /\b(indefes[oas])\b/gi, type: 'condition', target: 'Indefeso', badgeClass: 'ruby', tooltip: 'Ver Condição Indefeso (Pág. 395)' },
+  { regex: /\b(paralisad[oas])\b/gi, type: 'condition', target: 'Paralisado', badgeClass: 'ruby', tooltip: 'Ver Condição Paralisado (Pág. 395)' },
+  { regex: /\b(ceg[oas])\b/gi, type: 'condition', target: 'Cego', badgeClass: 'ruby', tooltip: 'Ver Condição Cego (Pág. 394)' },
+  { regex: /\b(lent[oas])\b/gi, type: 'condition', target: 'Lento', badgeClass: 'ruby', tooltip: 'Ver Condição Lento (Pág. 395)' },
+  { regex: /\b(vulner[aá]ve(?:l|is))\b/gi, type: 'condition', target: 'Vulnerável', badgeClass: 'ruby', tooltip: 'Ver Condição Vulnerável (Pág. 395)' },
+  { regex: /\b(frac[oas])\b/gi, type: 'condition', target: 'Fraco', badgeClass: 'ruby', tooltip: 'Ver Condição Fraco (Pág. 395)' },
+  { regex: /\b(debilitad[oas])\b/gi, type: 'condition', target: 'Debilitado', badgeClass: 'ruby', tooltip: 'Ver Condição Debilitado (Pág. 394)' },
+  { regex: /\b(exausto(?:s)?|exaust[as])\b/gi, type: 'condition', target: 'Exausto', badgeClass: 'ruby', tooltip: 'Ver Condição Exausto (Pág. 395)' },
+  { regex: /\b(fatigad[oas])\b/gi, type: 'condition', target: 'Fatigado', badgeClass: 'ruby', tooltip: 'Ver Condição Fatigado (Pág. 395)' },
+  { regex: /\b(enjoad[oas])\b/gi, type: 'condition', target: 'Enjoado', badgeClass: 'ruby', tooltip: 'Ver Condição Enjoado (Pág. 394)' },
+  { regex: /\b(enredad[oas])\b/gi, type: 'condition', target: 'Enredado', badgeClass: 'ruby', tooltip: 'Ver Condição Enredado (Pág. 395)' },
+  { regex: /\b(envenenad[oas])\b/gi, type: 'condition', target: 'Envenenado', badgeClass: 'ruby', tooltip: 'Ver Condição Envenenado (Pág. 395)' },
+  { regex: /\b(fascinad[oas])\b/gi, type: 'condition', target: 'Fascinado', badgeClass: 'ruby', tooltip: 'Ver Condição Fascinado (Pág. 395)' },
+  { regex: /\b(ofuscad[oas])\b/gi, type: 'condition', target: 'Ofuscado', badgeClass: 'ruby', tooltip: 'Ver Condição Ofuscado (Pág. 395)' },
+  { regex: /\b(petrificad[oas])\b/gi, type: 'condition', target: 'Petrificado', badgeClass: 'ruby', tooltip: 'Ver Condição Petrificado (Pág. 395)' },
+  { regex: /\b(sobrecarregad[oas])\b/gi, type: 'condition', target: 'Sobrecarregado', badgeClass: 'ruby', tooltip: 'Ver Condição Sobrecarregado (Pág. 395)' },
+  { regex: /\b(surd[oas])\b/gi, type: 'condition', target: 'Surdo', badgeClass: 'ruby', tooltip: 'Ver Condição Surdo (Pág. 395)' },
+  { regex: /\b(surpreendid[oas])\b/gi, type: 'condition', target: 'Surpreendido', badgeClass: 'ruby', tooltip: 'Ver Condição Surpreendido (Pág. 395)' },
+  { regex: /\b(esmorecid[oas])\b/gi, type: 'condition', target: 'Esmorecido', badgeClass: 'ruby', tooltip: 'Ver Condição Esmorecido (Pág. 395)' },
+  { regex: /\b(frustrad[oas])\b/gi, type: 'condition', target: 'Frustrado', badgeClass: 'ruby', tooltip: 'Ver Condição Frustrado (Pág. 395)' },
+  { regex: /\b(abalad[oas])\b/gi, type: 'condition', target: 'Abalado', badgeClass: 'ruby', tooltip: 'Ver Condição Abalado (Pág. 394)' },
+  { regex: /\b(apavorad[oas])\b/gi, type: 'condition', target: 'Apavorado', badgeClass: 'ruby', tooltip: 'Ver Condição Apavorado (Pág. 394)' },
+  { regex: /\b(atordoad[oas])\b/gi, type: 'condition', target: 'Atordoado', badgeClass: 'ruby', tooltip: 'Ver Condição Atordoado (Pág. 394)' },
+  { regex: /\b(confus[oas])\b/gi, type: 'condition', target: 'Confuso', badgeClass: 'ruby', tooltip: 'Ver Condição Confuso (Pág. 394)' },
+  { regex: /\b(doente(?:s)?)\b/gi, type: 'condition', target: 'Doente', badgeClass: 'ruby', tooltip: 'Ver Condição Doente (Pág. 394)' },
+  { regex: /\b(em chamas)\b/gi, type: 'condition', target: 'Em Chamas', badgeClass: 'ruby', tooltip: 'Ver Condição Em Chamas (Pág. 394)' },
+  { regex: /\b(enfeiti[cç]ad[oas])\b/gi, type: 'condition', target: 'Enfeitiçado', badgeClass: 'ruby', tooltip: 'Ver Condição Enfeitiçado (Pág. 394)' },
+  { regex: /\b(pasm[oas])\b/gi, type: 'condition', target: 'Pasmo', badgeClass: 'ruby', tooltip: 'Ver Condição Pasmo (Pág. 395)' },
+  { regex: /\b(alquebrad[oas])\b/gi, type: 'condition', target: 'Alquebrado', badgeClass: 'ruby', tooltip: 'Ver Condição Alquebrado (Pág. 394)' },
+
+  // Formas de Área
+  { regex: /\b(cilindro)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'mana', tooltip: 'Ver Forma Cilindro (Pág. 225)' },
+  { regex: /\b(esfera)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'mana', tooltip: 'Ver Forma Esfera (Pág. 225)' },
+  { regex: /\b(cone)\b/gi, type: 'section', tab: 'tabela', target: 'section-areas', badgeClass: 'mana', tooltip: 'Ver Forma Cone (Pág. 225)' }
+];
+
 export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
   isOpen,
   onClose,
@@ -599,7 +710,43 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
   const [selectedCondType, setSelectedCondType] = useState<string>('Todas');
   const [expandedCondName, setExpandedCondName] = useState<string | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
+  const [copiedSectionId, setCopiedSectionId] = useState<string | null>(null);
   const [isImageZoomed, setIsImageZoomed] = useState<boolean>(false);
+
+  // Helper de cópia individual por seção/card com feedback visual
+  const handleCopySection = (id: string, text: string) => {
+    navigator.clipboard.writeText(text.trim());
+    setCopiedSectionId(id);
+    setTimeout(() => {
+      setCopiedSectionId(prev => (prev === id ? null : prev));
+    }, 2200);
+  };
+
+  // Navegação entre abas e scroll suave para âncora/elemento
+  const handleNavigateToSection = (tab: 'manobras' | 'condicoes' | 'tabela', elementId?: string) => {
+    setActiveTab(tab);
+    setTimeout(() => {
+      if (elementId) {
+        const el = document.getElementById(elementId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+      }
+      if (bodyRef.current) bodyRef.current.scrollTop = 0;
+    }, 60);
+  };
+
+  const handleSelectManeuver = (maneuverId: string) => {
+    setActiveTab('manobras');
+    setExpandedManeuverId(maneuverId);
+    setTimeout(() => {
+      const el = document.getElementById(maneuverId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 60);
+  };
 
   // Tipos de efeito de condição disponíveis
   const conditionTypesList = useMemo(() => {
@@ -675,6 +822,86 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
     if (bodyRef.current) bodyRef.current.scrollTop = 0;
   };
 
+  // Renderizador inteligente de links e chips dentro de qualquer texto de regra
+  const renderLinkedRuleText = (text: string, currentSelfTerm?: string): React.ReactNode => {
+    if (!text) return null;
+    const selfNormalized = currentSelfTerm ? removeAccents(currentSelfTerm) : null;
+
+    interface FoundMatch {
+      start: number;
+      end: number;
+      matchedText: string;
+      rule: KeywordRule;
+    }
+
+    const matches: FoundMatch[] = [];
+
+    for (const rule of KEYWORD_RULES) {
+      if (selfNormalized && removeAccents(rule.target) === selfNormalized) {
+        continue;
+      }
+      const regex = new RegExp(rule.regex.source, rule.regex.flags);
+      let m: RegExpExecArray | null;
+      while ((m = regex.exec(text)) !== null) {
+        const start = m.index;
+        const end = start + m[0].length;
+        const overlaps = matches.some(existing => !(end <= existing.start || start >= existing.end));
+        if (!overlaps) {
+          matches.push({
+            start,
+            end,
+            matchedText: m[0],
+            rule
+          });
+        }
+      }
+    }
+
+    if (matches.length === 0) {
+      return text;
+    }
+
+    matches.sort((a, b) => a.start - b.start);
+
+    const elements: React.ReactNode[] = [];
+    let cursor = 0;
+
+    matches.forEach((match, idx) => {
+      if (match.start > cursor) {
+        elements.push(text.substring(cursor, match.start));
+      }
+
+      elements.push(
+        <button
+          key={`chip-${match.rule.target}-${idx}-${match.start}`}
+          type="button"
+          className={`badge-${match.rule.badgeClass} cond-chip interactive-chip inline-chip`}
+          onClick={(e) => {
+            e.stopPropagation();
+            if (match.rule.type === 'condition') {
+              handleSelectChip(match.rule.target);
+            } else if (match.rule.type === 'maneuver') {
+              handleSelectManeuver(match.rule.target);
+            } else if (match.rule.tab) {
+              handleNavigateToSection(match.rule.tab, match.rule.target);
+            }
+          }}
+          title={match.rule.tooltip}
+        >
+          {match.matchedText}
+        </button>
+      );
+
+      cursor = match.end;
+    });
+
+    if (cursor < text.length) {
+      elements.push(text.substring(cursor));
+    }
+
+    return <>{elements}</>;
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -735,13 +962,43 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
           {activeTab === 'manobras' && (
             <div className="quick-ref-tab-content">
               {/* Tabela de Modificadores de Tamanho */}
-              <div className="size-modifiers-banner parchment-subcard">
+              <div id="section-size-modifiers" className="size-modifiers-banner parchment-subcard">
                 <div className="size-banner-header">
-                  <Zap size={18} className="text-gold" />
-                  <h4>Modificadores de Tamanho em Manobras (Pág. 238)</h4>
+                  <div className="flex items-center gap-2">
+                    <Zap size={18} className="text-gold" />
+                    <h4>Modificadores de Tamanho em Manobras (Pág. 238)</h4>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'size-mods' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '⚖️ MODIFICADORES DE TAMANHO EM MANOBRAS (Pág. 238)',
+                        'Ao realizar ou resistir a qualquer manobra de combate, aplique o modificador no teste de Luta:',
+                        ...CANONICAL_SIZE_MODIFIERS.map(s => `• ${s.size}: ${s.mod}`),
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('size-mods', text);
+                    }}
+                    title="Copiar Modificadores de Tamanho formatados"
+                    aria-label="Copiar Modificadores de Tamanho"
+                  >
+                    {copiedSectionId === 'size-mods' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <p className="size-banner-text">
-                  Ao realizar ou resistir a qualquer manobra de combate, aplique o modificador da criatura no teste de Luta:
+                  Ao realizar ou resistir a qualquer {renderLinkedRuleText('manobra de combate', 'modificadores de tamanho')}, aplique o modificador da criatura no teste de Luta:
                 </p>
                 <div className="size-grid">
                   {CANONICAL_SIZE_MODIFIERS.map(item => (
@@ -755,18 +1012,79 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                 </div>
               </div>
 
+              {/* Banner das Regras Gerais de Manobras */}
+              <div id="section-maneuver-rules" className="cheat-section parchment-subcard">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Swords size={18} className="text-gold" />
+                    <h3>{CANONICAL_MANEUVER_GENERAL_RULES.title}</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'maneuver-rules-general' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        `⚔️ ${CANONICAL_MANEUVER_GENERAL_RULES.title}`,
+                        `${CANONICAL_MANEUVER_GENERAL_RULES.description}\n`,
+                        ...CANONICAL_MANEUVER_GENERAL_RULES.keyPoints.map(p => `• ${p}`),
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('maneuver-rules-general', text);
+                    }}
+                    title="Copiar Regras Gerais de Manobras formatadas"
+                    aria-label="Copiar Regras Gerais de Manobras"
+                  >
+                    {copiedSectionId === 'maneuver-rules-general' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <p className="cheat-desc">
+                  {renderLinkedRuleText(CANONICAL_MANEUVER_GENERAL_RULES.description)}
+                </p>
+                <div className="maneuver-keypoints-list">
+                  {CANONICAL_MANEUVER_GENERAL_RULES.keyPoints.map((point, idx) => (
+                    <div key={idx} className="maneuver-keypoint-item">
+                      <span className="keypoint-bullet">⚔️</span>
+                      <div className="keypoint-text">{renderLinkedRuleText(point)}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Seção de Manobras Canônicas */}
               <div className="section-divider-title">
                 <Swords size={16} />
                 <span>Manobras de Combate (Pág. 238–239)</span>
               </div>
 
-              <div className="maneuvers-list">
+              <div id="section-maneuvers" className="maneuvers-list">
                 {CANONICAL_MANEUVERS.map(man => {
                   const isExpanded = expandedManeuverId === man.id;
+                  const copyKey = `man-${man.id}`;
+                  const formatText = () => {
+                    const conds = man.relatedConditions?.length ? `\n• Condições associadas: ${man.relatedConditions.join(', ')}` : '';
+                    return [
+                      `⚔️ ${man.name.toUpperCase()} (${man.actionType} • Pág. ${man.page})`,
+                      `• Teste Oposto: ${man.opposedTest}`,
+                      `• Descrição: ${man.description}${conds}`,
+                      '— Tormenta20: Edição Jogo do Ano'
+                    ].join('\n');
+                  };
+
                   return (
                     <div 
                       key={man.id} 
+                      id={man.id}
                       className={`maneuver-card parchment-subcard ${isExpanded ? 'expanded' : ''}`}
                     >
                       <div 
@@ -784,6 +1102,30 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                             <span className="opposed-label">Teste Oposto:</span>
                             <span className="opposed-val">{man.opposedTest}</span>
                           </div>
+                          
+                          <button
+                            type="button"
+                            className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCopySection(copyKey, formatText());
+                            }}
+                            title={`Copiar manobra ${man.name} formatada`}
+                            aria-label={`Copiar manobra ${man.name}`}
+                          >
+                            {copiedSectionId === copyKey ? (
+                              <>
+                                <Check size={13} className="text-emerald" />
+                                <span className="copy-label">Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={13} />
+                                <span className="copy-label">Copiar</span>
+                              </>
+                            )}
+                          </button>
+
                           <button className="expand-icon-btn" aria-label="Expandir Manobra">
                             {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                           </button>
@@ -792,7 +1134,9 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
 
                       {/* Texto Integral */}
                       <div className="maneuver-body">
-                        <p className="maneuver-description">{man.description}</p>
+                        <p className="maneuver-description">
+                          {renderLinkedRuleText(man.description, man.name)}
+                        </p>
 
                         {man.relatedConditions && man.relatedConditions.length > 0 && (
                           <div className="maneuver-conditions-row">
@@ -800,7 +1144,8 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                             {man.relatedConditions.map(c => (
                               <button 
                                 key={c} 
-                                className="badge-ruby cond-chip interactive-chip"
+                                type="button"
+                                className="badge-ruby cond-chip interactive-chip inline-chip"
                                 onClick={(e) => {
                                   e.stopPropagation();
                                   handleSelectChip(c);
@@ -812,6 +1157,44 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                             ))}
                           </div>
                         )}
+
+                        {/* Barra de ações quando o card está expandido (Permite fechar o modal no mobile e copiar) */}
+                        <div className="card-expanded-actions">
+                          <button
+                            type="button"
+                            className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCopySection(copyKey, formatText());
+                            }}
+                          >
+                            {copiedSectionId === copyKey ? (
+                              <>
+                                <Check size={13} className="text-emerald" />
+                                <span>Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={13} />
+                                <span>Copiar Manobra</span>
+                              </>
+                            )}
+                          </button>
+
+                          <button
+                            type="button"
+                            className="card-close-modal-btn"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onClose();
+                            }}
+                            title="Fechar Tomo de Consulta"
+                            aria-label="Fechar Tomo"
+                          >
+                            <X size={14} />
+                            <span>Fechar Tomo</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   );
@@ -824,19 +1207,56 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                 <span>Tipos de Ação em Combate (Pág. 233–236)</span>
               </div>
 
-              <div className="actions-info-grid">
-                {CANONICAL_ACTIONS.map(act => (
-                  <div key={act.name} className="action-info-card parchment-subcard">
-                    <div className="action-info-header">
-                      <span className="badge-parchment action-badge-name">{act.name}</span>
-                      <span className="maneuver-page">pág. {act.page}</span>
+              <div id="section-actions" className="actions-info-grid">
+                {CANONICAL_ACTIONS.map(act => {
+                  const copyKey = `act-${act.name}`;
+                  const formatText = () => {
+                    return [
+                      `⏱️ ${act.name.toUpperCase()} (Pág. ${act.page})`,
+                      `• Tipo: ${act.type}`,
+                      `• Descrição: ${act.description}`,
+                      `• Exemplos: ${act.examples}`,
+                      '— Tormenta20: Edição Jogo do Ano'
+                    ].join('\n');
+                  };
+
+                  return (
+                    <div key={act.name} className="action-info-card parchment-subcard">
+                      <div className="action-info-header justify-between">
+                        <div className="flex items-center gap-2">
+                          <span className="badge-parchment action-badge-name">{act.name}</span>
+                          <span className="maneuver-page">pág. {act.page}</span>
+                        </div>
+                        <button
+                          type="button"
+                          className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleCopySection(copyKey, formatText());
+                          }}
+                          title={`Copiar ${act.name} formatada`}
+                          aria-label={`Copiar ${act.name}`}
+                        >
+                          {copiedSectionId === copyKey ? (
+                            <>
+                              <Check size={12} className="text-emerald" />
+                              <span className="copy-label">Copiado!</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy size={12} />
+                              <span className="copy-label">Copiar</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                      <p className="action-info-desc">{renderLinkedRuleText(act.description, act.name)}</p>
+                      <div className="action-info-examples">
+                        <strong>Exemplos:</strong> {renderLinkedRuleText(act.examples)}
+                      </div>
                     </div>
-                    <p className="action-info-desc">{act.description}</p>
-                    <div className="action-info-examples">
-                      <strong>Exemplos:</strong> {act.examples}
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           )}
@@ -867,10 +1287,10 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                 <button 
                   className={`copy-btn parchment-btn ${copied ? 'btn-copied' : ''}`}
                   onClick={handleCopyConditions}
-                  title="Copiar lista de condições"
+                  title="Copiar lista de condições filtradas"
                 >
                   {copied ? <Check size={16} /> : <Copy size={16} />}
-                  <span>{copied ? 'Copiado!' : 'Copiar'}</span>
+                  <span>{copied ? 'Copiado!' : 'Copiar Todas'}</span>
                 </button>
               </div>
 
@@ -897,9 +1317,21 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                 ) : (
                   filteredConditions.map(cond => {
                     const isExpanded = expandedCondName === cond.name;
+                    const copyKey = `cond-${cond.name}`;
+                    const formatText = () => {
+                      const typeStr = cond.type ? ` [${cond.type}]` : '';
+                      const rel = cond.relatedConditions?.length ? `\n• Gera / relaciona com: ${cond.relatedConditions.join(', ')}` : '';
+                      return [
+                        `🩸 ${cond.name.toUpperCase()}${typeStr} (Pág. ${cond.page})`,
+                        cond.description + rel,
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                    };
+
                     return (
                       <div 
                         key={cond.name} 
+                        id={`cond-${cond.name}`}
                         className={`condition-item-card parchment-subcard ${isExpanded ? 'expanded' : ''}`}
                       >
                         <div 
@@ -916,13 +1348,40 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                             <span className="cond-page-ref">pág. {cond.page}</span>
                           </div>
 
-                          <button className="expand-icon-btn" aria-label="Expandir Condição">
-                            {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                          </button>
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleCopySection(copyKey, formatText());
+                              }}
+                              title={`Copiar condição ${cond.name} formatada`}
+                              aria-label={`Copiar condição ${cond.name}`}
+                            >
+                              {copiedSectionId === copyKey ? (
+                                <>
+                                  <Check size={13} className="text-emerald" />
+                                  <span className="copy-label">Copiado!</span>
+                                </>
+                              ) : (
+                                <>
+                                  <Copy size={13} />
+                                  <span className="copy-label">Copiar</span>
+                                </>
+                              )}
+                            </button>
+
+                            <button className="expand-icon-btn" aria-label="Expandir Condição">
+                              {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                            </button>
+                          </div>
                         </div>
 
                         <div className="condition-item-body">
-                          <p className="condition-text">{cond.description}</p>
+                          <p className="condition-text">
+                            {renderLinkedRuleText(cond.description, cond.name)}
+                          </p>
 
                           {cond.relatedConditions && cond.relatedConditions.length > 0 && (
                             <div className="maneuver-conditions-row mt-2">
@@ -930,7 +1389,8 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                               {cond.relatedConditions.map(r => (
                                 <button
                                   key={r}
-                                  className="badge-ruby cond-chip interactive-chip"
+                                  type="button"
+                                  className="badge-ruby cond-chip interactive-chip inline-chip"
                                   onClick={(e) => {
                                     e.stopPropagation();
                                     handleSelectChip(r);
@@ -942,6 +1402,44 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                               ))}
                             </div>
                           )}
+
+                          {/* Ações do card expandido: copiar e fechar modal no mobile */}
+                          <div className="card-expanded-actions">
+                            <button
+                              type="button"
+                              className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleCopySection(copyKey, formatText());
+                              }}
+                            >
+                              {copiedSectionId === copyKey ? (
+                                <>
+                                  <Check size={13} className="text-emerald" />
+                                  <span>Copiado!</span>
+                                </>
+                              ) : (
+                                <>
+                                  <Copy size={13} />
+                                  <span>Copiar Condição</span>
+                                </>
+                              )}
+                            </button>
+
+                            <button
+                              type="button"
+                              className="card-close-modal-btn"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onClose();
+                              }}
+                              title="Fechar Tomo de Consulta"
+                              aria-label="Fechar Tomo"
+                            >
+                              <X size={14} />
+                              <span>Fechar Tomo</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     );
@@ -957,10 +1455,43 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
           {activeTab === 'tabela' && (
             <div className="quick-ref-tab-content">
               {/* Tabela de Descanso */}
-              <div className="cheat-section parchment-subcard">
-                <div className="cheat-section-header">
-                  <Moon size={20} className="text-mana" />
-                  <h3>Descanso e Recuperação (Pág. 224)</h3>
+              <div id="section-rest" className="cheat-section parchment-subcard">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Moon size={20} className="text-mana" />
+                    <h3>Descanso e Recuperação (Pág. 224)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-rest' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '🌙 DESCANSO E RECUPERAÇÃO (Pág. 224)',
+                        'Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM):',
+                        '• Ruim (Acampamento ao relento): PV e PM = 1x nível',
+                        '• Normal (Estalagem comum, barraca confortável): PV e PM = 2x nível',
+                        '• Confortável (Quarto de luxo, mansão nobre): PV e PM = 3x nível',
+                        '• Luxuoso (Palácio real, santuário protegido): PV e PM = 4x nível',
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-rest', text);
+                    }}
+                    title="Copiar tabela de Descanso e Recuperação formatada"
+                    aria-label="Copiar Descanso e Recuperação"
+                  >
+                    {copiedSectionId === 'sec-rest' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <p className="cheat-desc">
                   Um descanso de 8 horas permite recuperar Pontos de Vida (PV) e Pontos de Mana (PM). Condições de descanso:
@@ -1001,10 +1532,41 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
               </div>
 
               {/* Regras de Acúmulo de Bônus */}
-              <div className="cheat-section parchment-subcard mt-4">
-                <div className="cheat-section-header">
-                  <Sparkles size={20} className="text-gold" />
-                  <h3>Acúmulo de Bônus e Efeitos (Pág. 226)</h3>
+              <div id="section-stacking" className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Sparkles size={20} className="text-gold" />
+                    <h3>Acúmulo de Bônus e Efeitos (Pág. 226)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-stacking' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '✨ ACÚMULO DE BÔNUS E EFEITOS (Pág. 226)',
+                        '• Mesma Fonte: Bônus de mesma fonte (duas magias, dois itens com o mesmo encanto, ou a mesma habilidade usada duas vezes) NÃO se acumulam — aplique apenas o maior.',
+                        '• Fontes Diferentes: Bônus de tipos e fontes diferentes (um item, uma magia e uma habilidade de classe) se acumulam normalmente.',
+                        '• Penalidades: Penalidades sempre se acumulam, a menos que venham da mesma condição ou efeito idêntico.',
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-stacking', text);
+                    }}
+                    title="Copiar regras de Acúmulo de Bônus formatadas"
+                    aria-label="Copiar Acúmulo de Bônus"
+                  >
+                    {copiedSectionId === 'sec-stacking' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <div className="stacking-rules-grid">
                   <div className="stacking-box rule-no-stack">
@@ -1023,10 +1585,48 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
               </div>
 
               {/* Cobertura, Camuflagem e Modificadores */}
-              <div className="cheat-section parchment-subcard mt-4">
-                <div className="cheat-section-header">
-                  <ShieldAlert size={20} className="text-ruby" />
-                  <h3>Cobertura, Camuflagem e Modificadores de Combate (Pág. 225, 237)</h3>
+              <div id="section-modifiers" className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <ShieldAlert size={20} className="text-ruby" />
+                    <h3>Cobertura, Camuflagem e Modificadores de Combate (Pág. 225, 237)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-modifiers' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '🛡️ COBERTURA, CAMUFLAGEM E MODIFICADORES DE COMBATE (Pág. 225, 237)',
+                        '• Cobertura Leve: +2 na Defesa (Mureta baixa, criatura no caminho - Pág. 237)',
+                        '• Cobertura Total: +5 na Defesa (Parede inteira, obstáculo sólido - Pág. 237)',
+                        '• Camuflagem Leve: 20% de chance de erro (Névoa suave, penumbra, folhagem - Pág. 238)',
+                        '• Camuflagem Total: 50% de chance de erro (Escuridão total, invisibilidade. Alvo considerado Cego - Pág. 238)',
+                        '• Flanquear: +2 no teste de ataque corpo a corpo (Aliado no lado oposto do alvo - Pág. 237)',
+                        '• Posição Elevada: +2 no teste de ataque corpo a corpo (Atacando de cima de mesa, montaria ou terreno alto - Pág. 237)',
+                        '• Investida: +2 no teste de ataque / –2 na Defesa (Avança o dobro do deslocamento em linha reta - Pág. 238)',
+                        '• Alvo Caído: –5 Defesa (C. a C.) / +5 Defesa (Distância)',
+                        '• Alvo Desprevenido: –5 na Defesa e –5 em Reflexos',
+                        '• Alvo Indefeso: –10 na Defesa / Falha automática em Reflexos',
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-modifiers', text);
+                    }}
+                    title="Copiar tabela de Cobertura, Camuflagem e Modificadores formatada"
+                    aria-label="Copiar Modificadores de Combate"
+                  >
+                    {copiedSectionId === 'sec-modifiers' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <div className="cheat-table-wrapper">
                   <table className="cheat-table">
@@ -1059,6 +1659,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                         <td>
                           Escuridão total, invisibilidade. Alvo considerado{' '}
                           <button
+                            type="button"
                             className="badge-ruby cond-chip interactive-chip inline-chip"
                             onClick={() => handleSelectChip('Cego')}
                           >
@@ -1087,6 +1688,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                         <td>
                           Alvo na condição{' '}
                           <button
+                            type="button"
                             className="badge-ruby cond-chip interactive-chip inline-chip"
                             onClick={() => handleSelectChip('Caído')}
                           >
@@ -1100,6 +1702,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                         <td>
                           Alvo na condição{' '}
                           <button
+                            type="button"
                             className="badge-ruby cond-chip interactive-chip inline-chip"
                             onClick={() => handleSelectChip('Desprevenido')}
                           >
@@ -1113,6 +1716,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                         <td>
                           Alvo na condição{' '}
                           <button
+                            type="button"
                             className="badge-ruby cond-chip interactive-chip inline-chip"
                             onClick={() => handleSelectChip('Indefeso')}
                           >
@@ -1126,69 +1730,200 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
               </div>
 
               {/* Saúde, Sangramento e Morte */}
-              <div className="cheat-section parchment-subcard mt-4">
+              <div id="section-health" className="cheat-section parchment-subcard mt-4">
                 <div className="cheat-section-header">
                   <ShieldAlert size={20} className="text-ruby" />
                   <h3>Saúde, Sangramento e Morte (Pág. 239–240)</h3>
                 </div>
                 <div className="health-rules-grid">
-                  {CANONICAL_HEALTH_RULES.map(rule => (
-                    <div key={rule.title} className="health-card parchment-subcard">
-                      <div className="health-card-header">
-                        <span className={`badge-${rule.badgeClass}`}>{rule.badge}</span>
-                        <span className="maneuver-page">pág. {rule.page}</span>
-                      </div>
-                      <h4 className="health-card-title">{rule.title}</h4>
-                      <p className="health-card-desc">{rule.description}</p>
-                      <pre className="health-card-details">{rule.mechanicalDetails}</pre>
-                      
-                      {rule.relatedConditions && rule.relatedConditions.length > 0 && (
-                        <div className="maneuver-conditions-row mt-2">
-                          <span className="cond-rel-label">Condições:</span>
-                          {rule.relatedConditions.map(c => (
-                            <button
-                              key={c}
-                              className="badge-ruby cond-chip interactive-chip"
-                              onClick={() => handleSelectChip(c)}
-                              title={`Ir para condição ${c}`}
-                            >
-                              {c}
-                            </button>
-                          ))}
+                  {CANONICAL_HEALTH_RULES.map(rule => {
+                    const copyKey = `health-${rule.title}`;
+                    const formatText = () => {
+                      return [
+                        `❤️ ${rule.title.toUpperCase()} [${rule.badge}] (Pág. ${rule.page})`,
+                        rule.description,
+                        rule.mechanicalDetails,
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                    };
+
+                    return (
+                      <div key={rule.title} className="health-card parchment-subcard">
+                        <div className="health-card-header justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className={`badge-${rule.badgeClass}`}>{rule.badge}</span>
+                            <span className="maneuver-page">pág. {rule.page}</span>
+                          </div>
+                          <button
+                            type="button"
+                            className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCopySection(copyKey, formatText());
+                            }}
+                            title={`Copiar regra ${rule.title} formatada`}
+                            aria-label={`Copiar regra ${rule.title}`}
+                          >
+                            {copiedSectionId === copyKey ? (
+                              <>
+                                <Check size={12} className="text-emerald" />
+                                <span className="copy-label">Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={12} />
+                                <span className="copy-label">Copiar</span>
+                              </>
+                            )}
+                          </button>
                         </div>
-                      )}
-                    </div>
-                  ))}
+                        <h4 className="health-card-title">{rule.title}</h4>
+                        <p className="health-card-desc">{renderLinkedRuleText(rule.description)}</p>
+                        <pre className="health-card-details">{rule.mechanicalDetails}</pre>
+                        
+                        {rule.relatedConditions && rule.relatedConditions.length > 0 && (
+                          <div className="maneuver-conditions-row mt-2">
+                            <span className="cond-rel-label">Condições:</span>
+                            {rule.relatedConditions.map(c => (
+                              <button
+                                key={c}
+                                type="button"
+                                className="badge-ruby cond-chip interactive-chip inline-chip"
+                                onClick={() => handleSelectChip(c)}
+                                title={`Ir para condição ${c}`}
+                              >
+                                {c}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
               {/* Categorias de Alcance */}
-              <div className="cheat-section parchment-subcard mt-4">
-                <div className="cheat-section-header">
-                  <Zap size={20} className="text-gold" />
-                  <h3>Categorias de Alcance (Pág. 138, 224)</h3>
+              <div id="section-ranges" className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Zap size={20} className="text-gold" />
+                    <h3>Categorias de Alcance (Pág. 138, 224)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-ranges' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '🎯 CATEGORIAS DE ALCANCE (Pág. 138, 224)',
+                        ...CANONICAL_RANGES.map(r => `• ${r.name} (${r.distance}): ${r.description} (Exemplos: ${r.examples})`),
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-ranges', text);
+                    }}
+                    title="Copiar todas as Categorias de Alcance formatadas"
+                    aria-label="Copiar Categorias de Alcance"
+                  >
+                    {copiedSectionId === 'sec-ranges' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar Todos</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <div className="range-grid">
-                  {CANONICAL_RANGES.map(r => (
-                    <div key={r.name} className="range-card parchment-subcard">
-                      <div className="range-card-header">
-                        <span className="range-name">{r.name}</span>
-                        <span className="badge-gold range-dist">{r.distance}</span>
+                  {CANONICAL_RANGES.map(r => {
+                    const copyKey = `range-${r.name}`;
+                    const formatText = () => {
+                      return [
+                        `🎯 ALCANCE ${r.name.toUpperCase()} (${r.distance}) (Pág. 138, 224)`,
+                        `• Descrição: ${r.description}`,
+                        `• Exemplos: ${r.examples}`,
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                    };
+
+                    return (
+                      <div key={r.name} className="range-card parchment-subcard">
+                        <div className="range-card-header justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="range-name">{r.name}</span>
+                            <span className="badge-gold range-dist">{r.distance}</span>
+                          </div>
+                          <button
+                            type="button"
+                            className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCopySection(copyKey, formatText());
+                            }}
+                            title={`Copiar alcance ${r.name} formatado`}
+                            aria-label={`Copiar alcance ${r.name}`}
+                          >
+                            {copiedSectionId === copyKey ? (
+                              <>
+                                <Check size={12} className="text-emerald" />
+                                <span className="copy-label">Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={12} />
+                                <span className="copy-label">Copiar</span>
+                              </>
+                            )}
+                          </button>
+                        </div>
+                        <p className="range-desc">{renderLinkedRuleText(r.description, r.name)}</p>
+                        <div className="range-examples">
+                          <strong>Exemplos:</strong> {renderLinkedRuleText(r.examples)}
+                        </div>
                       </div>
-                      <p className="range-desc">{r.description}</p>
-                      <div className="range-examples">
-                        <strong>Exemplos:</strong> {r.examples}
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
 
               {/* Espaço Ocupado e Alcance por Tamanho */}
-              <div className="cheat-section parchment-subcard mt-4">
-                <div className="cheat-section-header">
-                  <Layers size={20} className="text-mana" />
-                  <h3>Espaço Ocupado, Alcance Natural e Tamanho (Pág. 106, 238)</h3>
+              <div id="section-creature-sizes" className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Layers size={20} className="text-mana" />
+                    <h3>Espaço Ocupado, Alcance Natural e Tamanho (Pág. 106, 238)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-creature-sizes' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '📐 ESPAÇO OCUPADO, ALCANCE NATURAL E TAMANHO (Pág. 106, 238)',
+                        ...CANONICAL_CREATURE_SIZES.map(s => `• ${s.size}: Espaço ${s.space} | Alcance ${s.reach} | Furtividade ${s.stealthMod} | Manobra ${s.maneuverMod}`),
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-creature-sizes', text);
+                    }}
+                    title="Copiar tabela de Espaço e Alcance por Tamanho formatada"
+                    aria-label="Copiar Espaço e Tamanho"
+                  >
+                    {copiedSectionId === 'sec-creature-sizes' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <div className="cheat-table-wrapper">
                   <table className="cheat-table">
@@ -1225,10 +1960,44 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
               </div>
 
               {/* Áreas de Efeito, Alvos e Duração (Pág. 225) */}
-              <div className="cheat-section parchment-subcard mt-4">
-                <div className="cheat-section-header">
-                  <Target size={20} className="text-ruby" />
-                  <h3>Áreas de Efeito, Alvos e Duração (Pág. 225)</h3>
+              <div id="section-areas" className="cheat-section parchment-subcard mt-4">
+                <div className="cheat-section-header justify-between">
+                  <div className="flex items-center gap-2">
+                    <Target size={20} className="text-ruby" />
+                    <h3>Áreas de Efeito, Alvos e Duração (Pág. 225)</h3>
+                  </div>
+                  <button
+                    type="button"
+                    className={`section-copy-btn ${copiedSectionId === 'sec-areas-summary' ? 'copied' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const text = [
+                        '🔮 ÁREAS DE EFEITO, ALVOS E DURAÇÃO (Pág. 225)',
+                        '• ALVO: Afeta diretamente uma ou mais criaturas/objetos específicos escolhidos dentro do alcance (requer linha de efeito).',
+                        '• ÁREA: Afeta um espaço físico inteiro e tudo contido nele (origem definida na grade tática).',
+                        '• EFEITO: Cria algo físico ou mágico no campo de batalha em vez de afetar algo pré-existente.',
+                        '• DURAÇÃO: Instantânea, Cena (~10 min), Sustentada (gasta 1 PM no início do turno) ou Permanente.',
+                        '\nModelos de Formas:',
+                        ...CANONICAL_AREA_EFFECTS.map(a => `• ${a.name}: ${a.description} (${a.gridRule})`),
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                      handleCopySection('sec-areas-summary', text);
+                    }}
+                    title="Copiar resumo de Áreas de Efeito formatado"
+                    aria-label="Copiar Áreas de Efeito"
+                  >
+                    {copiedSectionId === 'sec-areas-summary' ? (
+                      <>
+                        <Check size={13} className="text-emerald" />
+                        <span className="copy-label">Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={13} />
+                        <span className="copy-label">Copiar Resumo</span>
+                      </>
+                    )}
+                  </button>
                 </div>
                 <p className="cheat-desc">
                   Muitas magias e habilidades afetam áreas específicas da grade tática ou alvos individuais. Conforme as regras oficiais de Tormenta20 (Jogo do Ano, Pág. 225):
@@ -1242,7 +2011,7 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
                         <h4>{t.title}</h4>
                         <span className="badge-gold text-xs">{t.badge}</span>
                       </div>
-                      <p>{t.description}</p>
+                      <p>{renderLinkedRuleText(t.description, t.title)}</p>
                     </div>
                   ))}
                 </div>
@@ -1277,18 +2046,54 @@ export const QuickReferenceModal: React.FC<QuickReferenceModalProps> = ({
 
                 {/* Lista de Formas de Área Canônicas */}
                 <div className="area-effects-grid mt-4">
-                  {CANONICAL_AREA_EFFECTS.map(area => (
-                    <div key={area.shape} className="area-card parchment-subcard">
-                      <div className="area-card-header">
-                        <h4 className="area-card-title">{area.name}</h4>
-                        <span className="maneuver-page">pág. {area.page}</span>
+                  {CANONICAL_AREA_EFFECTS.map(area => {
+                    const copyKey = `area-${area.shape}`;
+                    const formatText = () => {
+                      return [
+                        `📐 ÁREA DE EFEITO: ${area.name.toUpperCase()} (Pág. ${area.page})`,
+                        `• Descrição: ${area.description}`,
+                        `• Regra na Grade: ${area.gridRule}`,
+                        '— Tormenta20: Edição Jogo do Ano'
+                      ].join('\n');
+                    };
+
+                    return (
+                      <div key={area.shape} className="area-card parchment-subcard">
+                        <div className="area-card-header justify-between">
+                          <div className="flex items-center gap-2">
+                            <h4 className="area-card-title">{area.name}</h4>
+                            <span className="maneuver-page">pág. {area.page}</span>
+                          </div>
+                          <button
+                            type="button"
+                            className={`section-copy-btn ${copiedSectionId === copyKey ? 'copied' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleCopySection(copyKey, formatText());
+                            }}
+                            title={`Copiar modelo ${area.name} formatado`}
+                            aria-label={`Copiar modelo ${area.name}`}
+                          >
+                            {copiedSectionId === copyKey ? (
+                              <>
+                                <Check size={12} className="text-emerald" />
+                                <span className="copy-label">Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy size={12} />
+                                <span className="copy-label">Copiar</span>
+                              </>
+                            )}
+                          </button>
+                        </div>
+                        <p className="area-card-desc">{renderLinkedRuleText(area.description, area.name)}</p>
+                        <div className="area-card-rule">
+                          <strong>Grade:</strong> {renderLinkedRuleText(area.gridRule)}
+                        </div>
                       </div>
-                      <p className="area-card-desc">{area.description}</p>
-                      <div className="area-card-rule">
-                        <strong>Grade:</strong> {area.gridRule}
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>

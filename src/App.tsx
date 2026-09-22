@@ -56,7 +56,7 @@ export function App() {
   const [isCombatTrackerOpen, setIsCombatTrackerOpen] = useState<boolean>(false);
   const [isQuickReferenceOpen, setIsQuickReferenceOpen] = useState<boolean>(false);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState<boolean>(false);
-  const [modalOrigin, setModalOrigin] = useState<'main' | 'favorites'>('main');
+  const [modalOrigin, setModalOrigin] = useState<'main' | 'favorites' | 'treasure'>('main');
 
   // Renderização Incremental / Infinite Scroll
   const [displayLimit, setDisplayLimit] = useState<number>(INITIAL_BATCH_SIZE);
@@ -184,6 +184,9 @@ export function App() {
           if (modalOrigin === 'favorites') {
             setIsFavoritesOpen(true);
             setModalOrigin('main');
+          } else if (modalOrigin === 'treasure') {
+            setIsTreasureOpen(true);
+            setModalOrigin('main');
           }
         }}
         isFavorite={selectedEntity ? isFavorite(selectedEntity.id) : false}
@@ -203,6 +206,10 @@ export function App() {
       <TreasureRoller
         isOpen={isTreasureOpen}
         onClose={() => setIsTreasureOpen(false)}
+        onSelectEntity={entity => {
+          setModalOrigin('treasure');
+          setSelectedEntity(entity);
+        }}
       />
 
       {/* Rastreador de Combate & Condições Dinâmicas */}

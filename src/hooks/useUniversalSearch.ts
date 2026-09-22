@@ -5,15 +5,19 @@ import { removeAccents } from '../utils/textUtils';
 
 export interface SearchFilters {
   category: EntityCategory | 'todas';
-  subcategory: string | 'todas';
-  itemType: string | 'todas';
+  subcategory: string[] | 'todas';
+  itemType: string[] | 'todas';
   book: string | 'todos';
   minPrice?: number | '';
   maxPrice?: number | '';
-  spellCircle?: number | 'todos';
+  spellCircle?: number[] | 'todos';
   magicRarity?: string | 'todas';
   ndRange?: string | 'todos';
 }
+
+// ============================================================================
+// Helpers de Matching
+// ============================================================================
 
 function matchesBook(item: SearchableEntity, bookId: string): boolean {
   if (bookId === 'todos') return true;
@@ -32,6 +36,13 @@ function matchesQuery(item: SearchableEntity, qTokens: string[]): boolean {
     if (!item._searchText.includes(qTokens[i])) return false;
   }
   return true;
+}
+
+/** Verifica se um valor está incluído em um filtro multi-seleção */
+function matchesMultiFilter<T>(filterVal: T[] | 'todas' | 'todos', itemVal: T | undefined): boolean {
+  if (filterVal === 'todas' || filterVal === 'todos') return true;
+  if (itemVal === undefined) return false;
+  return (filterVal as T[]).includes(itemVal);
 }
 
 export function useUniversalSearch() {
@@ -63,13 +74,13 @@ export function useUniversalSearch() {
         return false;
       }
 
-      // 3. Filtro de Subcategoria Direta
-      if (filters.subcategory !== 'todas' && item.subcategory !== filters.subcategory) {
+      // 3. Filtro de Subcategoria Direta (Multi-Seleção)
+      if (!matchesMultiFilter(filters.subcategory, item.subcategory)) {
         return false;
       }
 
-      // 4. Filtro de Tipo / Classificação / Escola
-      if (filters.itemType !== 'todas' && item._itemType !== filters.itemType) {
+      // 4. Filtro de Tipo / Classificação / Escola (Multi-Seleção)
+      if (!matchesMultiFilter(filters.itemType, item._itemType || undefined)) {
         return false;
       }
 
@@ -79,9 +90,9 @@ export function useUniversalSearch() {
         if (maxP !== null && (item._parsedPrice === null || item._parsedPrice > maxP)) return false;
       }
 
-      // 4.6. Filtro de Círculo de Magia
+      // 4.6. Filtro de Círculo de Magia (Multi-Seleção)
       if (filters.spellCircle !== undefined && filters.spellCircle !== 'todos' && item.category === 'magia') {
-        if (item._spellCircle !== filters.spellCircle) return false;
+        if (!matchesMultiFilter(filters.spellCircle, item._spellCircle)) return false;
       }
 
       // 4.7. Filtro de Raridade Mágica
@@ -126,6 +137,7 @@ export function useUniversalSearch() {
     const categoryCountMap = new Map<string, number>();
     const subcategoryCountMap = new Map<string, number>();
     const itemTypeCountMap = new Map<string, number>();
+    const itemTypeTotalCountMap = new Map<string, number>();
     const spellCircleCountMap = new Map<number | 'todos', number>();
     const magicRarityCountMap = new Map<string, number>();
     const ndRangeCountMap = new Map<string, number>();
@@ -154,22 +166,26 @@ export function useUniversalSearch() {
         // Agregação de Tipos / Escolas (itemType):
         // Para Magias: respeita targetCircle (quando filtrado por Círculo, a contagem de cada Escola atualiza)
         const matchesCategoryForType = targetCategory === 'todas' || item.category === targetCategory;
-        const matchesCircleForType = item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || item._spellCircle === targetCircle;
+        const matchesCircleForType = item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || matchesMultiFilter(targetCircle, item._spellCircle);
+        const matchesSubcatForType = targetSubcat === 'todas' || matchesMultiFilter(targetSubcat, item.subcategory);
 
-        if (matchesCategoryForType && matchesCircleForType && item._itemType) {
-          if (item.subcategory) {
-            const typeKey = `${item.category}:::${item.subcategory}:::${item._itemType}`;
-            itemTypeCountMap.set(typeKey, (itemTypeCountMap.get(typeKey) || 0) + 1);
+        if (matchesCategoryForType && matchesCircleForType && matchesSubcatForType) {
+          itemTypeTotalCountMap.set(item.category, (itemTypeTotalCountMap.get(item.category) || 0) + 1);
+          if (item._itemType) {
+            if (item.subcategory) {
+              const typeKey = `${item.category}:::${item.subcategory}:::${item._itemType}`;
+              itemTypeCountMap.set(typeKey, (itemTypeCountMap.get(typeKey) || 0) + 1);
+            }
+            const globalTypeKey = `${item.category}:::todas:::${item._itemType}`;
+            itemTypeCountMap.set(globalTypeKey, (itemTypeCountMap.get(globalTypeKey) || 0) + 1);
           }
-          const globalTypeKey = `${item.category}:::todas:::${item._itemType}`;
-          itemTypeCountMap.set(globalTypeKey, (itemTypeCountMap.get(globalTypeKey) || 0) + 1);
         }
 
         // Agregação de Círculos de Magia:
         // Respeita targetSubcat (Grupo) e targetType (Escola) se ativos!
         if (item.category === 'magia' && item._spellCircle !== undefined) {
-          const matchesSubcatForCircle = targetSubcat === 'todas' || item.subcategory === targetSubcat;
-          const matchesTypeForCircle = targetType === 'todas' || item._itemType === targetType;
+          const matchesSubcatForCircle = targetSubcat === 'todas' || matchesMultiFilter(targetSubcat, item.subcategory);
+          const matchesTypeForCircle = targetType === 'todas' || matchesMultiFilter(targetType, item._itemType);
           if (matchesSubcatForCircle && matchesTypeForCircle) {
             spellCircleCountMap.set(item._spellCircle, (spellCircleCountMap.get(item._spellCircle) || 0) + 1);
             spellCircleCountMap.set('todos', (spellCircleCountMap.get('todos') || 0) + 1);
@@ -190,9 +206,9 @@ export function useUniversalSearch() {
       // Agregação de Livros
       const matchesCurrentFacets = 
         (targetCategory === 'todas' || item.category === targetCategory) &&
-        (targetSubcat === 'todas' || item.subcategory === targetSubcat) &&
-        (targetType === 'todas' || item._itemType === targetType) &&
-        (item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || item._spellCircle === targetCircle) &&
+        (targetSubcat === 'todas' || matchesMultiFilter(targetSubcat, item.subcategory)) &&
+        (targetType === 'todas' || matchesMultiFilter(targetType, item._itemType || undefined)) &&
+        (item.category !== 'magia' || targetCircle === undefined || targetCircle === 'todos' || matchesMultiFilter(targetCircle, item._spellCircle)) &&
         (item.category !== 'equipamento' || targetRarity === undefined || targetRarity === 'todas' || item._magicRarity === targetRarity) &&
         (item.category !== 'tesouro' || targetNdRange === undefined || targetNdRange === 'todos' || item._ndRange === targetNdRange);
 
@@ -226,9 +242,9 @@ export function useUniversalSearch() {
         if (subcat === 'todas') return categoryCountMap.get(category) || 0;
         return subcategoryCountMap.get(`${category}:::${subcat}`) || 0;
       },
-      getItemTypeCount: (category: string, subcategory: string, type: string) => {
-        if (type === 'todas') return subcategoryCountMap.get(`${category}:::${subcategory}`) || 0;
-        return itemTypeCountMap.get(`${category}:::${subcategory}:::${type}`) || 0;
+      getItemTypeCount: (category: string, _subcategory: string | string[] | 'todas', type: string) => {
+        if (type === 'todas') return itemTypeTotalCountMap.get(category) || 0;
+        return itemTypeCountMap.get(`${category}:::todas:::${type}`) || 0;
       },
       getSpellCircleCount: (circle: number | 'todos') => {
         return spellCircleCountMap.get(circle) || 0;
@@ -244,6 +260,10 @@ export function useUniversalSearch() {
     };
   }, [query, filters]);
 
+  // ============================================================================
+  // Setters com Toggle Multi-Seleção
+  // ============================================================================
+
   const setCategory = (cat: EntityCategory | 'todas') => {
     setFilters(prev => ({ 
       ...prev,
@@ -258,20 +278,46 @@ export function useUniversalSearch() {
     }));
   };
 
+  /** Toggle multi-seleção para subcategoria (Grupo) */
   const setSubcategory = (subcat: string | 'todas') => {
-    setFilters(prev => ({ 
-      ...prev, 
-      subcategory: subcat, 
-      itemType: 'todas',
-      magicRarity: 'todas'
-    }));
+    setFilters(prev => {
+      if (subcat === 'todas') {
+        return { ...prev, subcategory: 'todas', itemType: 'todas', magicRarity: 'todas' };
+      }
+      const current = prev.subcategory === 'todas' ? [] : (prev.subcategory as string[]);
+      const idx = current.indexOf(subcat);
+      let next: string[];
+      if (idx >= 0) {
+        next = current.filter(s => s !== subcat);
+      } else {
+        next = [...current, subcat];
+      }
+      if (next.length === 0) {
+        return { ...prev, subcategory: 'todas', itemType: 'todas', magicRarity: 'todas' };
+      }
+      return { ...prev, subcategory: next, itemType: 'todas', magicRarity: 'todas' };
+    });
   };
 
+  /** Toggle multi-seleção para itemType (Escola/Tipo) */
   const setItemType = (type: string | 'todas') => {
-    setFilters(prev => ({ 
-      ...prev, 
-      itemType: type
-    }));
+    setFilters(prev => {
+      if (type === 'todas') {
+        return { ...prev, itemType: 'todas' };
+      }
+      const current = prev.itemType === 'todas' ? [] : (prev.itemType as string[]);
+      const idx = current.indexOf(type);
+      let next: string[];
+      if (idx >= 0) {
+        next = current.filter(t => t !== type);
+      } else {
+        next = [...current, type];
+      }
+      if (next.length === 0) {
+        return { ...prev, itemType: 'todas' };
+      }
+      return { ...prev, itemType: next };
+    });
   };
 
   const setBook = (bookId: string | 'todos') => {
@@ -281,8 +327,25 @@ export function useUniversalSearch() {
     }));
   };
 
+  /** Toggle multi-seleção para Círculo de Magia */
   const setSpellCircle = (circle: number | 'todos') => {
-    setFilters(prev => ({ ...prev, spellCircle: circle }));
+    setFilters(prev => {
+      if (circle === 'todos') {
+        return { ...prev, spellCircle: 'todos' };
+      }
+      const current = prev.spellCircle === 'todos' || prev.spellCircle === undefined ? [] : (prev.spellCircle as number[]);
+      const idx = current.indexOf(circle);
+      let next: number[];
+      if (idx >= 0) {
+        next = current.filter(c => c !== circle);
+      } else {
+        next = [...current, circle];
+      }
+      if (next.length === 0) {
+        return { ...prev, spellCircle: 'todos' };
+      }
+      return { ...prev, spellCircle: next };
+    });
   };
 
   const setMagicRarity = (rarity: string | 'todas') => {
@@ -340,4 +403,3 @@ export function useUniversalSearch() {
     totalCount: SEARCHABLE_DATABASE.length
   };
 }
-

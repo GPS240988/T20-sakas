@@ -1,28 +1,68 @@
 import React, { useState, useRef } from 'react';
-import { X, Dices, Coins, Sparkles, ListOrdered, Eye, ArrowLeft, Copy, Check } from 'lucide-react';
+import { X, Dices, Coins, Sparkles, ListOrdered, Eye, ArrowLeft, Copy, Check, BookOpen } from 'lucide-react';
 import { ScrollToTop } from './ScrollToTop';
 import { 
   evaluateMoneyRoll, 
   resolveItemChain, 
   getTreasureTableById,
+  findEntityForTreasureItem,
   type MoneyRollResult, 
   type ItemRollResult 
 } from '../utils/treasureResolver';
+import type { T20CanonicalEntity } from '../types/t20_schema';
 
 interface TreasureRollerProps {
   isOpen: boolean;
   onClose: () => void;
+  onSelectEntity?: (entity: T20CanonicalEntity) => void;
 }
+
+interface TreasureRollerState {
+  selectedNd: string;
+  moneyRoll: number | '';
+  itemRoll: number | '';
+  moneyResult: MoneyRollResult | null;
+  itemResult: ItemRollResult | null;
+}
+
+let lastRollerState: TreasureRollerState = {
+  selectedNd: '5',
+  moneyRoll: '',
+  itemRoll: '',
+  moneyResult: null,
+  itemResult: null
+};
 
 const ND_OPTIONS = ['1/4', '1/2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'];
 
-export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose }) => {
-  const [selectedNd, setSelectedNd] = useState<string>('5');
-  const [moneyRoll, setMoneyRoll] = useState<number | ''>('');
-  const [itemRoll, setItemRoll] = useState<number | ''>('');
+export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose, onSelectEntity }) => {
+  const [selectedNd, setSelectedNdState] = useState<string>(() => lastRollerState.selectedNd);
+  const [moneyRoll, setMoneyRollState] = useState<number | ''>(() => lastRollerState.moneyRoll);
+  const [itemRoll, setItemRollState] = useState<number | ''>(() => lastRollerState.itemRoll);
   
-  const [moneyResult, setMoneyResult] = useState<MoneyRollResult | null>(null);
-  const [itemResult, setItemResult] = useState<ItemRollResult | null>(null);
+  const [moneyResult, setMoneyResultState] = useState<MoneyRollResult | null>(() => lastRollerState.moneyResult);
+  const [itemResult, setItemResultState] = useState<ItemRollResult | null>(() => lastRollerState.itemResult);
+
+  const setSelectedNd = (val: string) => {
+    lastRollerState.selectedNd = val;
+    setSelectedNdState(val);
+  };
+  const setMoneyRoll = (val: number | '') => {
+    lastRollerState.moneyRoll = val;
+    setMoneyRollState(val);
+  };
+  const setItemRoll = (val: number | '') => {
+    lastRollerState.itemRoll = val;
+    setItemRollState(val);
+  };
+  const setMoneyResult = (val: MoneyRollResult | null) => {
+    lastRollerState.moneyResult = val;
+    setMoneyResultState(val);
+  };
+  const setItemResult = (val: ItemRollResult | null) => {
+    lastRollerState.itemResult = val;
+    setItemResultState(val);
+  };
 
   // Estado para visualização do Sub-modal de Tabela Referenciada
   const [viewingTableId, setViewingTableId] = useState<string | null>(null);
@@ -323,14 +363,31 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                           <div key={idx} style={{ fontSize: '0.8rem', margin: '0.35rem 0', paddingLeft: '0.5rem', borderLeft: '2px solid var(--accent-gold)' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                               <strong>{w.label}:</strong>
-                              {w.tableId && (
-                                <button 
-                                  style={{ background: 'none', border: 'none', color: 'var(--accent-gold)', cursor: 'pointer', fontSize: '0.73rem', fontWeight: '700' }}
-                                  onClick={() => setViewingTableId(w.tableId!)}
-                                >
-                                  🔍 Ver Tabela
-                                </button>
-                              )}
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                {onSelectEntity && (() => {
+                                  const wEnt = findEntityForTreasureItem(w.label);
+                                  if (wEnt) {
+                                    return (
+                                      <button
+                                        className="treasure-step-card-btn"
+                                        onClick={() => onSelectEntity(wEnt)}
+                                        title={`Ver ficha de ${wEnt.name}`}
+                                      >
+                                        <BookOpen size={12} /> Ver Ficha
+                                      </button>
+                                    );
+                                  }
+                                  return null;
+                                })()}
+                                {w.tableId && (
+                                  <button 
+                                    style={{ background: 'none', border: 'none', color: 'var(--accent-gold)', cursor: 'pointer', fontSize: '0.73rem', fontWeight: '700' }}
+                                    onClick={() => setViewingTableId(w.tableId!)}
+                                  >
+                                    🔍 Ver Tabela
+                                  </button>
+                                )}
+                              </div>
                             </div>
                             <div style={{ color: 'var(--text-secondary)' }}>{w.description}</div>
                           </div>
@@ -361,9 +418,27 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                 {itemResult ? (
                   <div className="result-highlight">
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem' }}>
-                      <span className="badge badge-mana" style={{ fontSize: '0.92rem', fontWeight: '800' }}>
-                        {itemResult.finalItemName}
-                      </span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                        <span className="badge badge-mana" style={{ fontSize: '0.92rem', fontWeight: '800' }}>
+                          {itemResult.finalItemName}
+                        </span>
+                        {/* Chip direto para o item principal se reconhecido */}
+                        {onSelectEntity && (() => {
+                          const directEnt = findEntityForTreasureItem(itemResult.finalItemName);
+                          if (directEnt) {
+                            return (
+                              <button
+                                className="treasure-entity-chip treasure-chip-main"
+                                onClick={() => onSelectEntity(directEnt)}
+                                title={`Abrir ficha de ${directEnt.name}`}
+                              >
+                                <BookOpen size={12} /> Ver Ficha Canônica
+                              </button>
+                            );
+                          }
+                          return null;
+                        })()}
+                      </div>
                       {itemResult.finalItemPrice && (
                         <span className="badge badge-gold" style={{ fontSize: '0.85rem' }}>
                           {itemResult.finalItemPrice}
@@ -375,6 +450,68 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                       <span className="badge badge-parchment" style={{ fontSize: '0.75rem', marginBottom: '0.4rem', display: 'inline-block' }}>
                         Categoria: {itemResult.finalItemCategory}
                       </span>
+                    )}
+
+                    {/* Chips de Melhorias para Itens Superiores */}
+                    {itemResult.improvements && itemResult.improvements.length > 0 && (
+                      <div className="treasure-subitems-chips" style={{ margin: '0.55rem 0', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                        <span style={{ fontSize: '0.78rem', fontWeight: '700', color: 'var(--accent-gold)' }}>
+                          ✨ Melhoria(s) Sorteada(s) (Clique para abrir o card da regra):
+                        </span>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                          {itemResult.improvements.map((modName, mIdx) => {
+                            const modEnt = findEntityForTreasureItem(modName);
+                            if (modEnt && onSelectEntity) {
+                              return (
+                                <button
+                                  key={mIdx}
+                                  className="treasure-entity-chip treasure-chip-gold"
+                                  onClick={() => onSelectEntity(modEnt)}
+                                  title={`Ver ficha da melhoria: ${modEnt.name}`}
+                                >
+                                  <Sparkles size={12} className="text-gold" /> {modName}
+                                </button>
+                              );
+                            }
+                            return (
+                              <span key={mIdx} className="badge badge-gold" style={{ fontSize: '0.78rem' }}>
+                                {modName}
+                              </span>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Chips de Poções Geradas */}
+                    {itemResult.subItems && itemResult.subItems.length > 0 && (
+                      <div className="treasure-subitems-chips" style={{ margin: '0.55rem 0', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                        <span style={{ fontSize: '0.78rem', fontWeight: '700', color: 'var(--accent-mana)' }}>
+                          🧪 Poção(ões) Sorteada(s) (Clique para abrir a ficha da magia):
+                        </span>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                          {itemResult.subItems.map((poc, pIdx) => {
+                            const spellEnt = findEntityForTreasureItem(poc.name);
+                            if (spellEnt && onSelectEntity) {
+                              return (
+                                <button
+                                  key={pIdx}
+                                  className="treasure-entity-chip treasure-chip-mana"
+                                  onClick={() => onSelectEntity(spellEnt)}
+                                  title={`Ver ficha canônica da magia ${spellEnt.name}`}
+                                >
+                                  <Sparkles size={12} className="text-mana" /> {poc.name}
+                                </button>
+                              );
+                            }
+                            return (
+                              <span key={pIdx} className="badge badge-parchment" style={{ fontSize: '0.78rem' }}>
+                                {poc.name}
+                              </span>
+                            );
+                          })}
+                        </div>
+                      </div>
                     )}
 
                     <p className="result-desc" style={{ fontSize: '0.88rem', lineHeight: '1.45', margin: '0.5rem 0', color: 'var(--text-primary)', background: 'var(--bg-surface-elevated)', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--border-parchment)', whiteSpace: 'pre-line' }}>
@@ -406,6 +543,21 @@ export const TreasureRoller: React.FC<TreasureRollerProps> = ({ isOpen, onClose 
                                   {step.d100Rolled !== undefined && (
                                     <span className="badge badge-parchment" style={{ fontSize: '0.7rem' }}>D% {step.d100Rolled}</span>
                                   )}
+                                  {onSelectEntity && (() => {
+                                    const stepEnt = findEntityForTreasureItem(step.resultLabel);
+                                    if (stepEnt) {
+                                      return (
+                                        <button
+                                          className="treasure-step-card-btn"
+                                          onClick={() => onSelectEntity(stepEnt)}
+                                          title={`Ver ficha canônica de ${stepEnt.name}`}
+                                        >
+                                          <BookOpen size={12} /> Ver Ficha
+                                        </button>
+                                      );
+                                    }
+                                    return null;
+                                  })()}
                                   {step.tableId && (
                                     <button 
                                       style={{ background: 'none', border: 'none', color: 'var(--accent-gold)', cursor: 'pointer', fontSize: '0.75rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}

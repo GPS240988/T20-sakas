@@ -109,10 +109,26 @@ function buildSearchText(item: any): string {
   return removeAccents(parts.join(' '));
 }
 
+/**
+ * Normaliza subcategorias com variações ortográficas no banco canônico.
+ * Unifica "Magias Universals" e "Magias Universais" → "Magia Universal".
+ * NÃO altera o JSON canônico original — apenas a camada de busca indexada.
+ */
+function normalizeSubcategory(category: string, subcategory: string): string {
+  if (category === 'magia') {
+    const lower = subcategory.toLowerCase().trim();
+    if (lower === 'magias universals' || lower === 'magias universais') {
+      return 'Magia Universal';
+    }
+  }
+  return subcategory;
+}
+
 export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item => {
   const anyItem = item as any;
   const rawType = anyItem.proficiency || anyItem.type || anyItem.school || anyItem.subtype || anyItem.actionType || anyItem.effectType || anyItem.subchapter || '';
   const normalizedBooks = (item.sources || []).map(s => s.book).filter(Boolean);
+  const normalizedSubcategory = item.subcategory ? normalizeSubcategory(item.category, item.subcategory) : item.subcategory;
 
   let ndRange = '';
   if (item.category === 'tesouro') {
@@ -125,6 +141,7 @@ export const SEARCHABLE_DATABASE: SearchableEntity[] = VISIBLE_DATABASE.map(item
   
   return {
     ...item,
+    subcategory: normalizedSubcategory,
     _searchText: buildSearchText(item),
     _parsedPrice: item.category === 'equipamento' ? parseEquipmentPrice(anyItem.tableData?.price) : null,
     _itemType: typeof rawType === 'string' ? rawType.trim() : '',
@@ -237,7 +254,7 @@ export function isCategoryClickable(cat: CategoryMetadata): boolean {
 export function getSubcategoriesForCategory(category: EntityCategory | 'todas'): string[] {
   if (category === 'todas') return [];
   const set = new Set<string>();
-  CANONICAL_DATABASE.filter(e => e.category === category).forEach(e => {
+  SEARCHABLE_DATABASE.filter(e => e.category === category).forEach(e => {
     if (e.subcategory) set.add(e.subcategory);
   });
   return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'));
@@ -245,59 +262,71 @@ export function getSubcategoriesForCategory(category: EntityCategory | 'todas'):
 
 export function getSubcategoryCount(category: EntityCategory | 'todas', subcategory: string): number {
   if (category === 'todas') {
-    return CANONICAL_DATABASE.filter(e => e.subcategory === subcategory).length;
+    return SEARCHABLE_DATABASE.filter(e => e.subcategory === subcategory).length;
   }
-  return CANONICAL_DATABASE.filter(e => e.category === category && e.subcategory === subcategory).length;
+  return SEARCHABLE_DATABASE.filter(e => e.category === category && e.subcategory === subcategory).length;
 }
 
-export function getItemTypesForCategory(category: EntityCategory | 'todas', subcategory?: string): string[] {
+export function getItemTypesForCategory(category: EntityCategory | 'todas', subcategory?: string | string[]): string[] {
   if (category === 'todas') return [];
   const set = new Set<string>();
-  let items = CANONICAL_DATABASE.filter(e => e.category === category);
+  let items = SEARCHABLE_DATABASE.filter(e => e.category === category);
   if (subcategory && subcategory !== 'todas') {
-    items = items.filter(e => e.subcategory === subcategory);
+    if (Array.isArray(subcategory)) {
+      if (subcategory.length > 0) {
+        items = items.filter(e => e.subcategory && subcategory.includes(e.subcategory));
+      }
+    } else {
+      items = items.filter(e => e.subcategory === subcategory);
+    }
   }
   items.forEach(e => {
-    const item = e as any;
-    // For Equipments: proficiency/subtype holds the classification (Armas Simples, Armaduras Leves, Vestuário, etc.)
-    // For Spells: school
-    // For Powers: subtype (Classe, etc.) or powerType
-    const val = item.subtype || item.proficiency || item.type || item.school;
-    if (val && val !== subcategory && typeof val === 'string' && val.trim() !== '') {
-      set.add(val.trim());
+    const val = e._itemType;
+    if (val && typeof val === 'string' && val.trim() !== '') {
+      if (Array.isArray(subcategory) ? !subcategory.includes(val) : val !== subcategory) {
+        set.add(val.trim());
+      }
     }
   });
   return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'));
 }
 
-export function getItemTypeCount(category: EntityCategory | 'todas', subcategory: string | undefined, itemType: string): number {
-  let items = category === 'todas' ? CANONICAL_DATABASE : CANONICAL_DATABASE.filter(e => e.category === category);
+export function getItemTypeCount(category: EntityCategory | 'todas', subcategory: string | string[] | undefined, itemType: string): number {
+  let items = category === 'todas' ? SEARCHABLE_DATABASE : SEARCHABLE_DATABASE.filter(e => e.category === category);
   if (subcategory && subcategory !== 'todas') {
-    items = items.filter(e => e.subcategory === subcategory);
+    if (Array.isArray(subcategory)) {
+      if (subcategory.length > 0) {
+        items = items.filter(e => e.subcategory && subcategory.includes(e.subcategory));
+      }
+    } else {
+      items = items.filter(e => e.subcategory === subcategory);
+    }
   }
-  return items.filter(e => {
-    const item = e as any;
-    const val = item.proficiency || item.type || item.school || item.subtype;
-    return val === itemType;
-  }).length;
+  return items.filter(e => e._itemType === itemType).length;
 }
 
-export function getTotalCountForCategory(category: EntityCategory | 'todas', subcategory?: string): number {
-  if (category === 'todas') return CANONICAL_DATABASE.length;
-  let items = CANONICAL_DATABASE.filter(e => e.category === category);
+export function getTotalCountForCategory(category: EntityCategory | 'todas', subcategory?: string | string[]): number {
+  if (category === 'todas') return SEARCHABLE_DATABASE.length;
+  let items = SEARCHABLE_DATABASE.filter(e => e.category === category);
   if (subcategory && subcategory !== 'todas') {
-    items = items.filter(e => e.subcategory === subcategory);
+    if (Array.isArray(subcategory)) {
+      if (subcategory.length > 0) {
+        items = items.filter(e => e.subcategory && subcategory.includes(e.subcategory));
+      }
+    } else {
+      items = items.filter(e => e.subcategory === subcategory);
+    }
   }
   return items.length;
 }
 
 export function getSpellSchools(): string[] {
   const set = new Set<string>();
-  CANONICAL_DATABASE.filter(e => e.category === 'magia').forEach(e => {
+  SEARCHABLE_DATABASE.filter(e => e.category === 'magia').forEach(e => {
     const sp = e as SpellEntity;
     if (sp.school) set.add(sp.school);
   });
-  return Array.from(set).sort();
+  return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'));
 }
 
 export function getSpellCircles(): number[] {

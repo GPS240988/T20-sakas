@@ -37,7 +37,7 @@ interface CategoryFilterProps {
     getBookCount: (bookId: string) => number;
     getCategoryCount: (catId: string) => number;
     getSubcategoryCount: (category: string, subcat: string) => number;
-    getItemTypeCount: (category: string, subcategory: string, type: string) => number;
+    getItemTypeCount: (category: string, subcategory: string | string[] | 'todas', type: string) => number;
     getSpellCircleCount?: (circle: number | 'todos') => number;
     getMagicRarityCount?: (rarity: string | 'todas') => number;
     getNdRangeCount?: (ndRange: string | 'todos') => number;
@@ -69,6 +69,33 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   Scroll: <Scroll size={17} />
 };
 
+// ============================================================================
+// Helpers de Multi-Seleção
+// ============================================================================
+
+/** Verifica se um valor está selecionado num filtro multi-select */
+function isSubcatSelected(filter: string[] | 'todas', value: string): boolean {
+  if (filter === 'todas') return false;
+  return (filter as string[]).includes(value);
+}
+
+function isItemTypeSelected(filter: string[] | 'todas', value: string): boolean {
+  if (filter === 'todas') return false;
+  return (filter as string[]).includes(value);
+}
+
+function isCircleSelected(filter: number[] | 'todos' | undefined, value: number): boolean {
+  if (filter === undefined || filter === 'todos') return false;
+  return (filter as number[]).includes(value);
+}
+
+/** Conta quantas seleções ativas existem num filtro */
+function multiSelectCount(filter: string[] | number[] | 'todas' | 'todos' | undefined): number {
+  if (filter === undefined || filter === 'todas' || filter === 'todos') return 0;
+  return (filter as any[]).length;
+}
+
+
 export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   filters,
   dynamicCounts,
@@ -85,13 +112,15 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onResetFilters
 }) => {
   const subcategories = getSubcategoriesForCategory(filters.category);
-  const itemTypes = getItemTypesForCategory(filters.category, filters.subcategory);
+  const itemTypes = getItemTypesForCategory(filters.category, filters.subcategory === 'todas' ? undefined : filters.subcategory);
 
   const showPriceFilter = filters.category === 'equipamento';
   const showSubcategories = subcategories.length > 0 && filters.category !== 'todas';
-  const showItemTypes = itemTypes.length > 0 && filters.subcategory !== 'todas';
+  const showItemTypes = itemTypes.length > 0 && (filters.category === 'magia' || filters.subcategory !== 'todas');
   const showSpellCircles = filters.category === 'magia';
-  const showMagicRarities = filters.category === 'equipamento' && filters.subcategory === 'Itens Mágicos';
+  const showMagicRarities = filters.category === 'equipamento' && 
+    filters.subcategory !== 'todas' && 
+    (filters.subcategory as string[]).includes('Itens Mágicos');
   const showNdRanges = filters.category === 'tesouro';
 
   const magicRarities = getMagicRarities();
@@ -108,12 +137,21 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     (filters.maxPrice !== undefined && filters.maxPrice !== '');
 
   const totalCatCount = dynamicCounts.getCategoryCount(filters.category);
-  const totalSubcatCount = dynamicCounts.getSubcategoryCount(filters.category, filters.subcategory);
+  const totalSubcatCount = (() => {
+    if (filters.subcategory === 'todas') return totalCatCount;
+    // Para multi-seleção, soma as contagens das subcategorias selecionadas
+    const subs = filters.subcategory as string[];
+    let sum = 0;
+    for (const sub of subs) {
+      sum += dynamicCounts.getSubcategoryCount(filters.category, sub);
+    }
+    return sum;
+  })();
 
   const getTypeLabel = () => {
     if (filters.category === 'magia') return 'Escola:';
     if (filters.category === 'poder') {
-      if (filters.subcategory === 'Poderes de Classe') return 'Classe:';
+      if (filters.subcategory !== 'todas' && (filters.subcategory as string[]).includes('Poderes de Classe')) return 'Classe:';
       return 'Tipo:';
     }
     if (filters.category === 'manobra') return 'Tipo de Ação:';
@@ -122,6 +160,11 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     if (filters.category === 'ameaca') return 'Tipo:';
     return 'Tipo:';
   };
+
+  // Para mobile: chips dos filtros ativos de subcategoria
+  const activeSubcatChips: string[] = filters.subcategory === 'todas' ? [] : (filters.subcategory as string[]);
+  const activeTypeChips: string[] = filters.itemType === 'todas' ? [] : (filters.itemType as string[]);
+  const activeCircleChips: number[] = filters.spellCircle === 'todos' || filters.spellCircle === undefined ? [] : (filters.spellCircle as number[]);
 
   const showPanel = showSubcategories || showItemTypes || showPriceFilter || showSpellCircles || showMagicRarities || showNdRanges;
 
@@ -187,75 +230,165 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
             </select>
           </div>
 
-          {/* Combo 3: Subcategoria / Grupo (Quando aplicável) */}
+          {/* Combo 3: Subcategoria / Grupo (Multi-Seleção via Select + Chips) */}
           {showSubcategories && (
-            <div className="mobile-select-group">
+            <div className="mobile-select-group" style={{ gridColumn: '1 / -1' }}>
               <label className="mobile-select-label">
                 <Layers size={13} /> Grupo / Subcategoria
+                {activeSubcatChips.length > 0 && (
+                  <span className="mobile-filter-badge">{activeSubcatChips.length}</span>
+                )}
               </label>
               <select
                 className="mobile-select-combo"
-                value={filters.subcategory}
-                onChange={e => onSelectSubcategory(e.target.value)}
+                value=""
+                onChange={e => {
+                  const val = e.target.value;
+                  if (val === 'todas') onSelectSubcategory('todas');
+                  else if (val) onSelectSubcategory(val);
+                }}
               >
-                <option value="todas">Todas as Subcategorias ({totalCatCount})</option>
+                <option value="" disabled>
+                  {activeSubcatChips.length > 0 ? `${activeSubcatChips.length} filtros ativos` : 'Selecionar Grupo…'}
+                </option>
+                <option value="todas">✦ Todas as Subcategorias ({totalCatCount})</option>
                 {subcategories.map(sub => {
                   const count = dynamicCounts.getSubcategoryCount(filters.category, sub);
+                  const isSelected = isSubcatSelected(filters.subcategory, sub);
                   return (
                     <option key={sub} value={sub}>
-                      {sub} ({count})
+                      {isSelected ? '✓ ' : ''}{sub} ({count})
                     </option>
                   );
                 })}
               </select>
+              {/* Chips ativas mostrando filtros selecionados */}
+              {activeSubcatChips.length > 0 && (
+                <div className="active-filter-chips">
+                  {activeSubcatChips.map(chip => (
+                    <button
+                      key={chip}
+                      className="active-chip"
+                      onClick={() => onSelectSubcategory(chip)}
+                      title={`Remover filtro: ${chip}`}
+                    >
+                      {chip}
+                      <X size={11} />
+                    </button>
+                  ))}
+                  {activeSubcatChips.length > 1 && (
+                    <button
+                      className="active-chip active-chip-clear"
+                      onClick={() => onSelectSubcategory('todas')}
+                    >
+                      Limpar todos
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
           )}
 
-          {/* Combo 4: Círculo de Magias (Exclusivo Magias) */}
+          {/* Combo 4: Círculo de Magias (Multi-Seleção) */}
           {showSpellCircles && (
             <div className="mobile-select-group">
               <label className="mobile-select-label">
                 <Wand2 size={13} className="text-mana" /> Círculo da Magia
+                {activeCircleChips.length > 0 && (
+                  <span className="mobile-filter-badge">{activeCircleChips.length}</span>
+                )}
               </label>
               <select
                 className="mobile-select-combo"
-                value={filters.spellCircle ?? 'todos'}
-                onChange={e => onSelectSpellCircle?.(e.target.value === 'todos' ? 'todos' : Number(e.target.value))}
+                value=""
+                onChange={e => {
+                  const val = e.target.value;
+                  if (val === 'todos') onSelectSpellCircle?.('todos');
+                  else if (val) onSelectSpellCircle?.(Number(val));
+                }}
               >
-                <option value="todos">Todos os Círculos ({dynamicCounts.getSpellCircleCount?.('todos') ?? totalCatCount})</option>
+                <option value="" disabled>
+                  {activeCircleChips.length > 0 ? `${activeCircleChips.length} círculos ativos` : 'Selecionar Círculo…'}
+                </option>
+                <option value="todos">✦ Todos os Círculos ({dynamicCounts.getSpellCircleCount?.('todos') ?? totalCatCount})</option>
                 {SPELL_CIRCLES_INFO.map(sc => {
                   const count = dynamicCounts.getSpellCircleCount?.(sc.circle) ?? 0;
+                  const isSelected = isCircleSelected(filters.spellCircle, sc.circle);
                   return (
                     <option key={sc.circle} value={sc.circle}>
-                      {sc.label} ({sc.pm}) — {count} magias
+                      {isSelected ? '✓ ' : ''}{sc.label} ({sc.pm}) — {count} magias
                     </option>
                   );
                 })}
               </select>
+              {activeCircleChips.length > 0 && (
+                <div className="active-filter-chips">
+                  {activeCircleChips.map(circle => {
+                    const info = SPELL_CIRCLES_INFO.find(sc => sc.circle === circle);
+                    return (
+                      <button
+                        key={circle}
+                        className="active-chip active-chip-mana"
+                        onClick={() => onSelectSpellCircle?.(circle)}
+                        title={`Remover filtro: ${info?.label}`}
+                      >
+                        {info?.label}
+                        <X size={11} />
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           )}
 
-          {/* Combo 5: Tipo / Classificação / Escola (Quando aplicável) */}
+          {/* Combo 5: Tipo / Classificação / Escola (Multi-Seleção) */}
           {showItemTypes && (
-            <div className="mobile-select-group">
+            <div className="mobile-select-group" style={{ gridColumn: '1 / -1' }}>
               <label className="mobile-select-label">
                 <Tag size={13} /> {getTypeLabel()}
+                {activeTypeChips.length > 0 && (
+                  <span className="mobile-filter-badge">{activeTypeChips.length}</span>
+                )}
               </label>
               <select
                 className="mobile-select-combo"
-                value={filters.itemType}
-                onChange={e => onSelectItemType(e.target.value)}
+                value=""
+                onChange={e => {
+                  const val = e.target.value;
+                  if (val === 'todas') onSelectItemType('todas');
+                  else if (val) onSelectItemType(val);
+                }}
               >
-                <option value="todas">Todos ({totalSubcatCount})</option>
+                <option value="" disabled>
+                  {activeTypeChips.length > 0 ? `${activeTypeChips.length} tipos ativos` : 'Selecionar Tipo…'}
+                </option>
+                <option value="todas">✦ Todos ({dynamicCounts.getItemTypeCount(filters.category, filters.subcategory, 'todas')})</option>
                 {itemTypes.map(type => {
                   const count = dynamicCounts.getItemTypeCount(filters.category, filters.subcategory, type);
+                  const isSelected = isItemTypeSelected(filters.itemType, type);
                   return (
                     <option key={type} value={type}>
-                      {type} ({count})
+                      {isSelected ? '✓ ' : ''}{type} ({count})
                     </option>
                   );
                 })}
               </select>
+              {activeTypeChips.length > 0 && (
+                <div className="active-filter-chips">
+                  {activeTypeChips.map(type => (
+                    <button
+                      key={type}
+                      className="active-chip"
+                      onClick={() => onSelectItemType(type)}
+                      title={`Remover filtro: ${type}`}
+                    >
+                      {type}
+                      <X size={11} />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
@@ -401,6 +534,11 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               <div className="streamlined-panel-title">
                 <Filter size={15} className="text-gold" />
                 <span>Filtro de {CATEGORIES_ENABLED_LIST.find(c => c.id === filters.category)?.label || 'Categoria'}:</span>
+                {multiSelectCount(filters.subcategory) + multiSelectCount(filters.itemType) + multiSelectCount(filters.spellCircle) > 0 && (
+                  <span className="multi-select-indicator">
+                    {multiSelectCount(filters.subcategory) + multiSelectCount(filters.itemType) + multiSelectCount(filters.spellCircle)} filtros ativos
+                  </span>
+                )}
               </div>
               {hasActiveFacets && (
                 <button className="btn-clean-pill" onClick={onResetFilters} title="Limpar subfiltros">
@@ -409,7 +547,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               )}
             </div>
 
-            {/* Subcategorias Diretas */}
+            {/* Subcategorias Diretas (Multi-Seleção Toggle) */}
             {showSubcategories && (
               <div className="filter-pill-row">
                 <div className="filter-row-prefix">
@@ -425,13 +563,14 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                   </button>
                   {subcategories.map(sub => {
                     const count = dynamicCounts.getSubcategoryCount(filters.category, sub);
-                    const isSelected = filters.subcategory === sub;
+                    const isSelected = isSubcatSelected(filters.subcategory, sub);
                     return (
                       <button
                         key={sub}
-                        className={`pill-btn ${isSelected ? 'pill-btn-active' : ''}`}
+                        className={`pill-btn ${isSelected ? 'pill-btn-active pill-btn-multi' : ''}`}
                         onClick={() => onSelectSubcategory(sub)}
                       >
+                        {isSelected && <span className="pill-check">✓</span>}
                         {sub} <span className="pill-badge">({count})</span>
                       </button>
                     );
@@ -440,7 +579,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               </div>
             )}
 
-            {/* Círculo da Magia (1º ao 5º) */}
+            {/* Círculo da Magia (1º ao 5º — Multi-Seleção) */}
             {showSpellCircles && (
               <div className="filter-pill-row circle-pill-row">
                 <div className="filter-row-prefix">
@@ -456,13 +595,14 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                   </button>
                   {SPELL_CIRCLES_INFO.map(sc => {
                     const count = dynamicCounts.getSpellCircleCount?.(sc.circle) ?? 0;
-                    const isSelected = filters.spellCircle === sc.circle;
+                    const isSelected = isCircleSelected(filters.spellCircle, sc.circle);
                     return (
                       <button
                         key={sc.circle}
-                        className={`pill-btn pill-btn-mana ${isSelected ? 'pill-btn-active' : ''}`}
+                        className={`pill-btn pill-btn-mana ${isSelected ? 'pill-btn-active pill-btn-multi' : ''}`}
                         onClick={() => onSelectSpellCircle?.(sc.circle)}
                       >
+                        {isSelected && <span className="pill-check">✓</span>}
                         {sc.label} <span className="pill-pm-tag">({sc.pm})</span> <span className="pill-badge">({count})</span>
                       </button>
                     );
@@ -471,7 +611,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               </div>
             )}
 
-            {/* Tipos / Classificação / Escola */}
+            {/* Tipos / Classificação / Escola (Multi-Seleção) */}
             {showItemTypes && (
               <div className="filter-pill-row type-pill-row">
                 <div className="filter-row-prefix">
@@ -483,17 +623,18 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                     className={`pill-btn pill-btn-secondary ${filters.itemType === 'todas' ? 'pill-btn-active' : ''}`}
                     onClick={() => onSelectItemType('todas')}
                   >
-                    Todos <span className="pill-badge">({totalSubcatCount})</span>
+                    Todos <span className="pill-badge">({dynamicCounts.getItemTypeCount(filters.category, filters.subcategory, 'todas')})</span>
                   </button>
                   {itemTypes.map(type => {
                     const count = dynamicCounts.getItemTypeCount(filters.category, filters.subcategory, type);
-                    const isSelected = filters.itemType === type;
+                    const isSelected = isItemTypeSelected(filters.itemType, type);
                     return (
                       <button
                         key={type}
-                        className={`pill-btn pill-btn-secondary ${isSelected ? 'pill-btn-active' : ''}`}
+                        className={`pill-btn pill-btn-secondary ${isSelected ? 'pill-btn-active pill-btn-multi' : ''}`}
                         onClick={() => onSelectItemType(type)}
                       >
+                        {isSelected && <span className="pill-check">✓</span>}
                         {type} <span className="pill-badge">({count})</span>
                       </button>
                     );
@@ -629,4 +770,3 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     </div>
   );
 };
-

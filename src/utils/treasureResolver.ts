@@ -1,5 +1,6 @@
 import { CANONICAL_DATABASE } from '../data/database';
-import type { TreasureTableEntity } from '../types/t20_schema';
+import type { TreasureTableEntity, T20CanonicalEntity } from '../types/t20_schema';
+import { removeAccents } from './textUtils';
 
 export interface MoneyRollResult {
   nd: string;
@@ -35,6 +36,7 @@ export interface ItemRollResult {
   finalItemDescription: string;
   traceSteps: TraceStep[];
   subItems?: Array<{ name: string; price?: string; description: string }>;
+  improvements?: string[];
 }
 
 /**
@@ -481,7 +483,8 @@ export function resolveItemChain(nd: string, rawD100: number | string): ItemRoll
       finalItemName: `${catName} (${mods.join(' + ')})`,
       finalItemCategory: `Item Superior (${catName})`,
       finalItemDescription: `Item Superior com ${improvementsCount} melhoria(s):\n` + modDescs.join('\n'),
-      traceSteps
+      traceSteps,
+      improvements: mods
     };
   }
 
@@ -620,4 +623,42 @@ export function resolveItemChain(nd: string, rawD100: number | string): ItemRoll
     finalItemDescription: entry?.description || `Item sorteado conforme a Tabela de ND ${nd}: ${label}`,
     traceSteps
   };
+}
+
+/**
+ * Busca uma entidade canônica no compêndio que corresponda ao nome de um item sorteado,
+ * poção, óleo, melhoria de item superior ou equipamento comum.
+ */
+export function findEntityForTreasureItem(name: string): T20CanonicalEntity | undefined {
+  if (!name || typeof name !== 'string') return undefined;
+  const clean = name.trim();
+  if (!clean || clean === 'Nenhum' || clean.startsWith('Nenhum')) return undefined;
+
+  // 1. Busca direta por nome exato
+  const direct = CANONICAL_DATABASE.find(e => e.name.toLowerCase() === clean.toLowerCase());
+  if (direct) return direct;
+
+  // 2. Remoção de sufixos de poções / óleos / granadas (ex: "(óleo)", "(granada)", "(2d8+2 PV)", "(Arma)", "(poção)")
+  const cleanPotion = clean.replace(/\s*\([^)]*\)/g, '').trim();
+  if (cleanPotion) {
+    const potionMatch = CANONICAL_DATABASE.find(e => e.name.toLowerCase() === cleanPotion.toLowerCase());
+    if (potionMatch) return potionMatch;
+
+    const nfdClean = removeAccents(cleanPotion);
+    const nfdMatch = CANONICAL_DATABASE.find(e => removeAccents(e.name) === nfdClean);
+    if (nfdMatch) return nfdMatch;
+  }
+
+  // 3. Busca insensível a acentos no nome original
+  const nfdOriginal = removeAccents(clean);
+  const nfdDirect = CANONICAL_DATABASE.find(e => removeAccents(e.name) === nfdOriginal);
+  if (nfdDirect) return nfdDirect;
+
+  // 4. Melhorias em "Itens Superiores" (ex: "Harmonizada" -> "Harmonizada (Arma)", "Adamante", "Certeira")
+  const enhancement = CANONICAL_DATABASE.find(e => e.subcategory === 'Itens Superiores' && (
+    removeAccents(e.name).includes(nfdOriginal) || nfdOriginal.includes(removeAccents(e.name))
+  ));
+  if (enhancement) return enhancement;
+
+  return undefined;
 }
